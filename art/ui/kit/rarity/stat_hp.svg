@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="stat_hp-red" cx=".34" cy=".28" r=".85">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="16" cy="29.2" rx="8" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <!-- red lacquer heart -->
+  <path d="M16 28C8 22.5 2.5 17 2.5 11.2C2.5 6.8 5.7 3.8 9.6 3.8C12.5 3.8 14.8 5.5 16 7.8C17.2 5.5 19.5 3.8 22.4 3.8C26.3 3.8 29.5 6.8 29.5 11.2C29.5 17 24 22.5 16 28Z"
+    fill="url(#stat_hp-red)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- bottom-edge rim light -->
+  <path d="M8.2 19.5C10.5 22 13 24.2 16 26.3C19 24.2 21.5 22 23.8 19.5" fill="none" stroke="#FF9A78" stroke-width=".9" stroke-linecap="round" opacity=".45"/>
+  <!-- glints -->
+  <ellipse cx="9.4" cy="9.4" rx="3" ry="1.9" transform="rotate(-32 9.4 9.4)" fill="#FFFFFF" opacity=".9"/>
+  <circle cx="7.6" cy="13.2" r=".9" fill="#FFFFFF" opacity=".7"/>
+  <path d="M23.4 17.4Q25.6 15.2 26.2 12.2" fill="none" stroke="#FF9A78" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+</svg>

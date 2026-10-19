@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="starter-disc" gradientUnits="userSpaceOnUse" cx="24" cy="25" r="31">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".45" stop-color="#E8A030"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </radialGradient>
+    <radialGradient id="starter-discHi" gradientUnits="userSpaceOnUse" cx="22" cy="20" r="17">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="starter-glow" gradientUnits="userSpaceOnUse" cx="32" cy="26" r="26">
+      <stop offset="0" stop-color="#FFF6C8" stop-opacity=".95"/>
+      <stop offset=".4" stop-color="#FFE08A" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FFD45A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="starter-lacquer" gradientUnits="userSpaceOnUse" cx="20" cy="26" r="42">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="starter-goldH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="starter-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="starter-jade" cx=".35" cy=".3" r=".85">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <linearGradient id="starter-lightLeak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF6C8" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#FFF6C8"/>
+      <stop offset=".8" stop-color="#FFF6C8"/>
+      <stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- backing disc -->
+  <circle cx="32" cy="33" r="22" fill="url(#starter-disc)" stroke="#2A1008" stroke-width="2.5"/>
+  <circle cx="32" cy="33" r="22" fill="url(#starter-discHi)"/>
+  <circle cx="32" cy="33" r="19.8" fill="none" stroke="#FFE7A0" stroke-opacity=".8" stroke-width="1.2"/>
+
+  <!-- warm glow spilling from the chest -->
+  <circle cx="32" cy="26" r="26" fill="url(#starter-glow)"/>
+
+  <!-- cast shadow -->
+  <ellipse cx="32" cy="56" rx="22" ry="2.3" fill="#2A1008" opacity=".3"/>
+
+  <!-- chest body -->
+  <rect x="12" y="33" width="40" height="22.5" rx="2.6" fill="url(#starter-lacquer)" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- gold corner brackets and foot rail -->
+  <g fill="none" stroke="#FFD45A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14.5 48V52.5H19"/>
+    <path d="M49.5 48V52.5H45"/>
+    <path d="M14.5 40.5V36.5H19"/>
+    <path d="M49.5 40.5V36.5H45"/>
+  </g>
+  <path d="M14.8 36.5V51" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".45"/>
+  <!-- light leaking from the lid seam -->
+  <rect x="11" y="32.2" width="42" height="1.8" fill="url(#starter-lightLeak)"/>
+
+  <!-- lid -->
+  <path d="M9 33.5V27.5C9 22.5 20 20 32 20C44 20 55 22.5 55 27.5V33.5Z" fill="url(#starter-lacquer)" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M10.5 32.3H53.5" fill="none" stroke="#FFD45A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M12.5 27C13.5 24.5 18.5 22.8 24 22.2" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity=".75"/>
+
+  <!-- gold ribbon band -->
+  <rect x="28.5" y="20.8" width="7" height="34.7" fill="url(#starter-goldH)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M30.3 23V53" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".7"/>
+  <!-- ribbon tails -->
+  <path d="M29 23L22 31.5H27.5L30.5 25.5Z" fill="url(#starter-gold)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M35 23L42 31.5H36.5L33.5 25.5Z" fill="url(#starter-gold)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- bow loops -->
+  <path d="M31 21C24 10.5 14 10.5 17 17.5C19 22.5 27 23 31 21Z" fill="url(#starter-gold)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M33 21C39 12.5 46.5 13 45 18.5C43.5 22.5 37 23 33 21Z" fill="url(#starter-gold)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M19.5 14.5C21.5 12.8 24.5 13 27 15.5" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".85"/>
+  <path d="M37.5 16.5C39.5 15.3 41.5 15.3 43 16.2" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+  <path d="M26 19.8C24 18.3 20 17.8 18.8 19.3" fill="none" stroke="#2A1008" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+  <!-- jade bead knot -->
+  <circle cx="32" cy="21" r="3.3" fill="url(#starter-jade)" stroke="#2A1008" stroke-width="1.6"/>
+  <ellipse cx="30.9" cy="19.8" rx="1.1" ry=".75" fill="#FFFFFF" opacity=".9"/>
+
+  <!-- sparkles and glitter -->
+  <g fill="#FFD45A" opacity=".9">
+    <circle cx="14" cy="22.5" r="1"/>
+    <circle cx="50" cy="24" r="1"/>
+    <circle cx="10" cy="29.5" r=".8"/>
+    <circle cx="54.5" cy="38" r=".8"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5" stroke-linejoin="round">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(9.5 15) scale(2.8)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(20 7) scale(1.8)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(43 7.5) scale(1.6)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(56.5 29) scale(2.2)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(6 42) scale(1.5)"/>
+  </g>
+</svg>

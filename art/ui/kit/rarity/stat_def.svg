@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="stat_def-bronze" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFF2BE"/>
+      <stop offset=".3" stop-color="#F6C85A"/>
+      <stop offset=".7" stop-color="#CF8E26"/>
+      <stop offset="1" stop-color="#8A5012"/>
+    </radialGradient>
+    <radialGradient id="stat_def-boss" cx=".36" cy=".32" r=".8">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".45" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="16" cy="30" rx="10" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <!-- bronze round shield -->
+  <circle cx="16" cy="16" r="13.2" fill="url(#stat_def-bronze)" stroke="#2A1008" stroke-width="1.4"/>
+  <!-- rim ring and inner band -->
+  <circle cx="16" cy="16" r="11.4" fill="none" stroke="#8A5012" stroke-width="1.1" opacity=".65"/>
+  <circle cx="16" cy="16" r="10.2" fill="none" stroke="#FFE7A0" stroke-width=".8" opacity=".55"/>
+  <!-- rivets -->
+  <g fill="#6E3A0C" stroke="#2A1008" stroke-width=".6">
+    <circle cx="16" cy="4.6" r="1.1"/><circle cx="27.4" cy="16" r="1.1"/><circle cx="16" cy="27.4" r="1.1"/><circle cx="4.6" cy="16" r="1.1"/>
+  </g>
+  <g fill="#FFF2BE" opacity=".8">
+    <circle cx="15.7" cy="4.3" r=".4"/><circle cx="27.1" cy="15.7" r=".4"/><circle cx="15.7" cy="27.1" r=".4"/><circle cx="4.3" cy="15.7" r=".4"/>
+  </g>
+  <!-- gold boss -->
+  <circle cx="16" cy="16" r="4.8" fill="url(#stat_def-boss)" stroke="#2A1008" stroke-width="1.3"/>
+  <ellipse cx="14.4" cy="14.2" rx="1.5" ry=".9" transform="rotate(-35 14.4 14.2)" fill="#FFFFFF" opacity=".9"/>
+  <!-- shield glint -->
+  <path d="M6.6 12.4C7.6 9.4 9.8 7.2 12.6 6.2" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".85"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 40 40">
+  <defs>
+    <radialGradient id="el_metal-core" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#9AA3B6"/>
+    </radialGradient>
+    <linearGradient id="el_metal-blade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+  </defs>
+
+  <!-- triangular blade points behind the octagon -->
+  <g fill="url(#el_metal-blade)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M16.3 6.5L20 1.6L23.7 6.5Z"/>
+    <path d="M16.3 33.5L20 38.4L23.7 33.5Z"/>
+    <path d="M6.5 16.3L1.6 20L6.5 23.7Z"/>
+    <path d="M33.5 16.3L38.4 20L33.5 23.7Z"/>
+  </g>
+  <path d="M18.4 5.2L19.8 3.3" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+  <path d="M5.2 18.4L3.3 19.8" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+
+  <!-- bevelled facets: one per side, lit from the top-left -->
+  <path d="M14.1 5.7H25.9L24.4 9.4H15.6Z" fill="#F7F9FD"/>
+  <path d="M25.9 5.7L34.3 14.1L30.6 15.6L24.4 9.4Z" fill="#D7DEE9"/>
+  <path d="M34.3 14.1V25.9L30.6 24.4V15.6Z" fill="#AEB7C8"/>
+  <path d="M34.3 25.9L25.9 34.3L24.4 30.6L30.6 24.4Z" fill="#848D9F"/>
+  <path d="M25.9 34.3H14.1L15.6 30.6H24.4Z" fill="#6A7286"/>
+  <path d="M14.1 34.3L5.7 25.9L9.4 24.4L15.6 30.6Z" fill="#848D9F"/>
+  <path d="M5.7 25.9V14.1L9.4 15.6V24.4Z" fill="#B9C2D2"/>
+  <path d="M5.7 14.1L14.1 5.7L15.6 9.4L9.4 15.6Z" fill="#E4E9F1"/>
+  <!-- facet seams -->
+  <g fill="none" stroke="#5F6778" stroke-width=".7" opacity=".55">
+    <path d="M14.1 5.7L15.6 9.4M25.9 5.7L24.4 9.4M34.3 14.1L30.6 15.6M34.3 25.9L30.6 24.4M25.9 34.3L24.4 30.6M14.1 34.3L15.6 30.6M5.7 25.9L9.4 24.4M5.7 14.1L9.4 15.6"/>
+  </g>
+
+  <!-- clear silver centre (inner octagon, apothem 10.6) -->
+  <path d="M15.6 9.4H24.4L30.6 15.6V24.4L24.4 30.6H15.6L9.4 24.4V15.6Z" fill="url(#el_metal-core)" stroke="#2A1008" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M12.6 14.4L15.2 11.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".9"/>
+
+  <!-- outer outline and lit edge -->
+  <path d="M14.1 5.7H25.9L34.3 14.1V25.9L25.9 34.3H14.1L5.7 25.9V14.1Z" fill="none" stroke="#2A1008" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M7 13.7L13.7 7H24.6" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".8"/>
+</svg>

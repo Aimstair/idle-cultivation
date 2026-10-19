@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="32" viewBox="0 0 128 16">
+  <defs>
+    <linearGradient id="bar_progress-trough" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E0302"/>
+      <stop offset="1" stop-color="#22100A"/>
+    </linearGradient>
+    <linearGradient id="bar_progress-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="bar_progress-capGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="bar_progress-innerShadow" gradientUnits="userSpaceOnUse" x1="0" y1="2.8" x2="0" y2="7.5">
+      <stop offset="0" stop-color="#000000" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <path id="bar_progress-shape" d="M8 2 H120 A6 6 0 0 1 120 14 H8 A6 6 0 0 1 8 2 Z"/>
+    <clipPath id="bar_progress-clip"><use href="#bar_progress-shape"/></clipPath>
+    <g id="bar_progress-cap">
+      <rect x="0.8" y="1" width="3.2" height="14" rx="1.5" fill="url(#bar_progress-capGold)" stroke="#2A1008" stroke-width="1.2"/>
+      <path d="M1.9 3 V6.5" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+    </g>
+  </defs>
+
+  <!-- trough with gold rim -->
+  <use href="#bar_progress-shape" fill="none" stroke="#2A1008" stroke-width="3" stroke-linejoin="round"/>
+  <use href="#bar_progress-shape" fill="url(#bar_progress-trough)"/>
+  <g clip-path="url(#bar_progress-clip)">
+    <rect x="2" y="2" width="124" height="5.5" fill="url(#bar_progress-innerShadow)"/>
+  </g>
+  <use href="#bar_progress-shape" fill="none" stroke="url(#bar_progress-gold)" stroke-width="1.6" stroke-linejoin="round"/>
+
+  <!-- gold end caps (outside the fill area x 4-124) -->
+  <use href="#bar_progress-cap"/>
+  <use href="#bar_progress-cap" transform="matrix(-1 0 0 1 128 0)"/>
+</svg>

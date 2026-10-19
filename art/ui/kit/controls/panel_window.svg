@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 160 160">
+<!-- 9slice: 36 -->
+  <defs>
+    <linearGradient id="panel_window-interior" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0905"/>
+    </linearGradient>
+    <linearGradient id="panel_window-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="17" x2="0" y2="34">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel_window-inTop" gradientUnits="userSpaceOnUse" x1="0" y1="16" x2="0" y2="24">
+      <stop offset="0" stop-color="#000000" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel_window-inLeft" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="23" y2="0">
+      <stop offset="0" stop-color="#000000" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel_window-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="panel_window-jade" cx=".36" cy=".32" r=".8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <filter id="panel_window-blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <clipPath id="panel_window-innerClip"><rect x="16" y="16" width="128" height="128" rx="6"/></clipPath>
+    <!-- gold filigree corner (top-left; mirrored for the others). Everything stays inside the 36-unit corner square. -->
+    <g id="panel_window-corner">
+      <path d="M33 6.5 H13.5 Q6.5 6.5 6.5 13.5 V33 C6.5 35.4 9.9 35.7 10.9 33.6 C11.4 32.6 11.5 31.6 11.5 30 V16 Q11.5 11.5 16 11.5 H30 C31.6 11.5 32.6 11.4 33.6 10.9 C35.7 9.9 35.4 6.5 33 6.5 Z"
+        fill="url(#panel_window-goldSmall)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M29 8.3 H15 Q8.3 8.3 8.3 15 V29" fill="none" stroke="#FFF6C8" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+      <path d="M31.2 8.4 C33.6 7.6 34.6 10 32.8 10.6 M8.4 31.2 C7.6 33.6 10 34.6 10.6 32.8" fill="none" stroke="#8A4A1E" stroke-width="1.1" stroke-linecap="round"/>
+      <!-- cloud-scroll curls unfurling from the corner into the panel -->
+      <path d="M12.5 12.5 C17.5 13.5 22 17.5 21.5 22.5 C21.2 25.6 17.4 26.1 16.7 23.4 C16.2 21.4 18.6 20.3 19.7 21.9 M12.5 12.5 C13.5 17.5 17.5 22 22.5 21.5 C25.6 21.2 26.1 17.4 23.4 16.7 C21.4 16.2 20.3 18.6 21.9 19.7"
+        fill="none" stroke="#2A1008" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.5 12.5 C17.5 13.5 22 17.5 21.5 22.5 C21.2 25.6 17.4 26.1 16.7 23.4 C16.2 21.4 18.6 20.3 19.7 21.9 M12.5 12.5 C13.5 17.5 17.5 22 22.5 21.5 C25.6 21.2 26.1 17.4 23.4 16.7 C21.4 16.2 20.3 18.6 21.9 19.7"
+        fill="none" stroke="url(#panel_window-goldSmall)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.5 13.4 C18 14.4 20.6 16.8 21 20" fill="none" stroke="#FFF6C8" stroke-width=".9" stroke-linecap="round" opacity=".8"/>
+      <path d="M16.5 16.5 L19.5 18.2 L18.2 19.5 Z" fill="url(#panel_window-goldSmall)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+    </g>
+    <g id="panel_window-gem">
+      <circle r="4.3" fill="url(#panel_window-jade)" stroke="#2A1008" stroke-width="1.6"/>
+      <circle cx="-1.5" cy="-1.5" r="1.1" fill="#FFFFFF" opacity=".85"/>
+    </g>
+  </defs>
+
+  <!-- cast shadow -->
+  <rect x="5" y="7.5" width="150" height="150" rx="14" fill="#2A1008" opacity=".4" filter="url(#panel_window-blur)"/>
+
+  <!-- carved rosewood frame -->
+  <rect x="5" y="5" width="150" height="150" rx="14" fill="#3A190C" stroke="#2A1008" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M7.4 136 V19 A11.6 11.6 0 0 1 19 7.4 H136" fill="none" stroke="#7A4020" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M152.6 24 V141 A11.6 11.6 0 0 1 141 152.6 H24" fill="none" stroke="#120402" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M10.6 136 V19 A8.4 8.4 0 0 1 19 10.6 H136" fill="none" stroke="#1E0A05" stroke-width="1" stroke-linecap="round"/>
+  <path d="M149.4 24 V141 A8.4 8.4 0 0 1 141 149.4 H24" fill="none" stroke="#5A2A16" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+
+  <!-- dark lacquer interior -->
+  <rect x="16" y="16" width="128" height="128" rx="6" fill="url(#panel_window-interior)"/>
+  <g clip-path="url(#panel_window-innerClip)">
+    <rect x="16" y="16" width="128" height="18" fill="url(#panel_window-sheen)"/>
+    <rect x="16" y="16" width="128" height="8" fill="url(#panel_window-inTop)"/>
+    <rect x="16" y="16" width="7" height="128" fill="url(#panel_window-inLeft)"/>
+  </g>
+
+  <!-- bevelled gold inner rim -->
+  <rect x="16" y="16" width="128" height="128" rx="6" fill="none" stroke="#1A0804" stroke-width="5.2"/>
+  <rect x="16" y="16" width="128" height="128" rx="6" fill="none" stroke="#D69A2A" stroke-width="3"/>
+  <path d="M15.3 138 V22 A6.7 6.7 0 0 1 22 15.3 H138" fill="none" stroke="#FFF0B0" stroke-width="1" stroke-linecap="round"/>
+  <path d="M144.7 22 V138 A6.7 6.7 0 0 1 138 144.7 H22" fill="none" stroke="#8A5212" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- filigree corners and jade gems -->
+  <use href="#panel_window-corner"/>
+  <use href="#panel_window-corner" transform="matrix(-1 0 0 1 160 0)"/>
+  <use href="#panel_window-corner" transform="matrix(1 0 0 -1 0 160)"/>
+  <use href="#panel_window-corner" transform="matrix(-1 0 0 -1 160 160)"/>
+  <use href="#panel_window-gem" transform="translate(10.5 10.5)"/>
+  <use href="#panel_window-gem" transform="translate(149.5 10.5)"/>
+  <use href="#panel_window-gem" transform="translate(10.5 149.5)"/>
+  <use href="#panel_window-gem" transform="translate(149.5 149.5)"/>
+</svg>

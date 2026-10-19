@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="40" viewBox="0 0 44 20">
+  <defs>
+    <radialGradient id="tag_new-lacquer" gradientUnits="userSpaceOnUse" cx="16" cy="5" r="30">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="tag_new-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".5" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="tag_new-shade" gradientUnits="userSpaceOnUse" x1="0" y1="12" x2="0" y2="17.5">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".3"/>
+    </linearGradient>
+    <path id="tag_new-shape" d="M3 2.5H37.5Q41.5 2.5 41.5 6.5V13.5Q41.5 17.5 37.5 17.5H3L8.5 10Z"/>
+    <clipPath id="tag_new-clip"><use href="#tag_new-shape"/></clipPath>
+  </defs>
+
+  <!-- notched tag body -->
+  <use href="#tag_new-shape" fill="url(#tag_new-lacquer)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <g clip-path="url(#tag_new-clip)">
+    <rect x="0" y="12" width="44" height="6" fill="url(#tag_new-shade)"/>
+  </g>
+  <!-- gold rim -->
+  <path d="M6.3 4.5H37.5Q39.5 4.5 39.5 6.5V13.5Q39.5 15.5 37.5 15.5H6.3L10.3 10Z" fill="none" stroke="url(#tag_new-gold)" stroke-width="1" stroke-linejoin="round"/>
+  <!-- highlight -->
+  <path d="M9.5 6.2H34" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".45"/>
+</svg>

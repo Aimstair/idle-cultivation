@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="drop_yin_soul_jade-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FDCFF" stop-opacity=".55"/>
+      <stop offset=".6" stop-color="#8FDCFF" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#8FDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="drop_yin_soul_jade-disc" gradientUnits="userSpaceOnUse" cx="26" cy="27" r="26">
+      <stop offset="0" stop-color="#F8FFFC"/>
+      <stop offset=".45" stop-color="#D2EFE6"/>
+      <stop offset=".8" stop-color="#8EC4B8"/>
+      <stop offset="1" stop-color="#5A9488"/>
+    </radialGradient>
+    <linearGradient id="drop_yin_soul_jade-rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#B8E0D4"/>
+      <stop offset="1" stop-color="#4E8478"/>
+    </linearGradient>
+    <radialGradient id="drop_yin_soul_jade-wispglow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#B8E4FF" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#B8E4FF" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#B8E4FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop_yin_soul_jade-wisp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".6" stop-color="#D8F0FF"/>
+      <stop offset="1" stop-color="#8FC8F0" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="drop_yin_soul_jade-cord" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset="1" stop-color="#5C7CC8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cold halo and contact shadow -->
+  <circle cx="32" cy="34" r="27" fill="url(#drop_yin_soul_jade-halo)"/>
+  <ellipse cx="32" cy="57.2" rx="15" ry="1.7" fill="#2A1008" opacity=".3"/>
+
+  <!-- hanging cord loop -->
+  <path d="M32 7.5C27.5 7.5 27 12.5 32 15.5C37 12.5 36.5 7.5 32 7.5Z" fill="none" stroke="#2A1008" stroke-width="4.2" stroke-linejoin="round"/>
+  <path d="M32 7.5C27.5 7.5 27 12.5 32 15.5C37 12.5 36.5 7.5 32 7.5Z" fill="none" stroke="url(#drop_yin_soul_jade-cord)" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- jade disc -->
+  <circle cx="32" cy="34" r="21" fill="url(#drop_yin_soul_jade-disc)" stroke="#2A1008" stroke-width="2.5"/>
+  <!-- carved rim groove -->
+  <circle cx="32" cy="34" r="16.5" fill="none" stroke="#4E8478" stroke-width="1.3" opacity=".55"/>
+  <circle cx="32" cy="34" r="16.5" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6" stroke-dasharray="26 78" transform="rotate(-150 32 34)"/>
+  <!-- cold veins in the stone -->
+  <path d="M15 40C20 36 22 44 27 42" fill="none" stroke="#6EA898" stroke-width="1" stroke-linecap="round" opacity=".4"/>
+  <path d="M38 49C43 46 44 42 47 39" fill="none" stroke="#6EA898" stroke-width="1" stroke-linecap="round" opacity=".4"/>
+
+  <!-- trapped wisp -->
+  <circle cx="32" cy="34" r="12" fill="url(#drop_yin_soul_jade-wispglow)"/>
+  <path d="M31.5 21C37 21 39.5 26.5 37 31.5C35.2 35 37 38.5 35 42C33.8 44.2 31.6 45.6 32 48.5C28.2 45.5 28.4 41 29.6 37.5C30.6 34.5 26.4 32 25.6 28.5C24.8 24.5 27.5 21 31.5 21Z" fill="url(#drop_yin_soul_jade-wisp)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round" opacity=".95"/>
+  <path d="M28.2 24.6C29 23.4 30.2 22.8 31.6 22.8" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- the soul's two hollow eyes -->
+  <g fill="#2E4A8A" opacity=".8">
+    <ellipse cx="29.8" cy="28" rx="1.1" ry="1.6"/>
+    <ellipse cx="34" cy="28.4" rx="1.1" ry="1.6"/>
+  </g>
+  <!-- wisp tail drifting -->
+  <path d="M33.2 46.5C35.6 47.5 37.4 49.4 37 52" fill="none" stroke="#D8F0FF" stroke-width="1.6" stroke-linecap="round" opacity=".85"/>
+
+  <!-- jade highlight -->
+  <path d="M16.5 26C18.5 21 22.5 17.5 27.5 15.8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+
+  <!-- cold sparkles -->
+  <g fill="#FFFFFF">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(50 20) scale(1.9)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(12 47) scale(1.5)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(44 51) scale(1.2)"/>
+  </g>
+</svg>

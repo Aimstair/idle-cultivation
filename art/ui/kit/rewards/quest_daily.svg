@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 40 40">
+  <defs>
+    <radialGradient id="quest_daily-disc" gradientUnits="userSpaceOnUse" cx="15" cy="15" r="20">
+      <stop offset="0" stop-color="#FFB870"/>
+      <stop offset=".5" stop-color="#E06A20"/>
+      <stop offset="1" stop-color="#8A3008"/>
+    </radialGradient>
+    <radialGradient id="quest_daily-dischi" gradientUnits="userSpaceOnUse" cx="14" cy="13" r="11">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="quest_daily-sun" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".5" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#D69A2A"/>
+    </radialGradient>
+    <linearGradient id="quest_daily-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#E9CF98"/>
+    </linearGradient>
+    <linearGradient id="quest_daily-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C07A3E"/>
+      <stop offset="1" stop-color="#5A2A10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- badge disc -->
+  <circle cx="20" cy="20.5" r="17" fill="url(#quest_daily-disc)" stroke="#2A1008" stroke-width="1.6"/>
+  <circle cx="20" cy="20.5" r="17" fill="url(#quest_daily-dischi)"/>
+  <circle cx="20" cy="20.5" r="15.4" fill="none" stroke="#FFE7A0" stroke-opacity=".8" stroke-width=".8"/>
+
+  <!-- sun rays -->
+  <g fill="none" stroke-linecap="round">
+    <g stroke="#2A1008" stroke-width="3.2">
+      <path d="M20 6.6V3.6"/><path d="M25.3 8.7L27.2 6.8"/><path d="M27.5 14H30.5"/>
+      <path d="M14.7 8.7L12.8 6.8"/><path d="M12.5 14H9.5"/>
+      <path d="M25.3 19.3L27.2 21.2"/><path d="M14.7 19.3L12.8 21.2"/>
+    </g>
+    <g stroke="#FFD45A" stroke-width="1.6">
+      <path d="M20 6.6V3.6"/><path d="M25.3 8.7L27.2 6.8"/><path d="M27.5 14H30.5"/>
+      <path d="M14.7 8.7L12.8 6.8"/><path d="M12.5 14H9.5"/>
+      <path d="M25.3 19.3L27.2 21.2"/><path d="M14.7 19.3L12.8 21.2"/>
+    </g>
+  </g>
+  <!-- sun -->
+  <circle cx="20" cy="14" r="5.6" fill="url(#quest_daily-sun)" stroke="#2A1008" stroke-width="1.6"/>
+  <ellipse cx="18.2" cy="12" rx="1.5" ry="1" fill="#FFFFFF" opacity=".9"/>
+
+  <!-- scroll -->
+  <rect x="11.5" y="23" width="17" height="9.5" fill="url(#quest_daily-paper)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <g fill="none" stroke="#3A2A4A" stroke-width="1" stroke-linecap="round" opacity=".85">
+    <path d="M14.5 26.6H21.5"/><path d="M14.5 29.2H25"/>
+  </g>
+  <rect x="9.5" y="21.5" width="21" height="3.4" rx="1.7" fill="url(#quest_daily-wood)" stroke="#2A1008" stroke-width="1.3"/>
+  <rect x="9.5" y="31.5" width="21" height="3.4" rx="1.7" fill="url(#quest_daily-wood)" stroke="#2A1008" stroke-width="1.3"/>
+  <path d="M12.5 22.5H26" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".55"/>
+  <path d="M12.5 32.5H26" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".45"/>
+</svg>

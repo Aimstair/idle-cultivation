@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fx_leaf-light" gradientUnits="userSpaceOnUse" x1="4" y1="28" x2="28" y2="4">
+      <stop offset="0" stop-color="#3FC79A"/>
+      <stop offset=".5" stop-color="#6ED9AE"/>
+      <stop offset="1" stop-color="#A4F0CF"/>
+    </linearGradient>
+    <linearGradient id="fx_leaf-dark" gradientUnits="userSpaceOnUse" x1="4" y1="28" x2="28" y2="4">
+      <stop offset="0" stop-color="#0E6A50"/>
+      <stop offset=".55" stop-color="#1E8C68"/>
+      <stop offset="1" stop-color="#3FC79A"/>
+    </linearGradient>
+  </defs>
+  <!-- upper (lit) half -->
+  <path d="M3 29C5 16 16 5 29 3C20 10 11 19 3 29Z" fill="url(#fx_leaf-light)"/>
+  <!-- lower (shaded) half -->
+  <path d="M3 29C11 19 20 10 29 3C27 14 17 25 3 29Z" fill="url(#fx_leaf-dark)"/>
+  <!-- central vein -->
+  <path d="M4 28C11.5 19.5 20 11 28 4" fill="none" stroke="#D6FFEC" stroke-width="1" stroke-linecap="round" opacity=".9"/>
+  <!-- sheen on the lit half -->
+  <path d="M8 22C11 16 16 11 22 7" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".35"/>
+</svg>

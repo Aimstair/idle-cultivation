@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 20 16">
+  <defs>
+    <linearGradient id="fx_petal-body" gradientUnits="userSpaceOnUse" x1="1.5" y1="8" x2="19" y2="8">
+      <stop offset="0" stop-color="#E0607E"/>
+      <stop offset=".45" stop-color="#FFA8C6"/>
+      <stop offset="1" stop-color="#FFE8F1"/>
+    </linearGradient>
+  </defs>
+  <!-- petal: narrow base at the left, broad tip with the sakura notch at the right -->
+  <path d="M1.5 8C2.6 5.2 7 1.6 12.5 1.6C16.3 1.6 19 3.6 19.2 5.8L16.3 8L19.2 10.2C19 12.4 16.3 14.4 12.5 14.4C7 14.4 2.6 10.8 1.5 8Z" fill="url(#fx_petal-body)"/>
+  <!-- soft sheen on the upper half -->
+  <path d="M4.5 6.6C6.4 4.4 9.6 3 13 3.1" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".6"/>
+  <!-- faint centre crease -->
+  <path d="M3 8H14" fill="none" stroke="#E0607E" stroke-width=".55" stroke-linecap="round" opacity=".3"/>
+</svg>

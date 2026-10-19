@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="art_verdant_heal-tile" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#5CD9A8"/><stop offset="0.5" stop-color="#2BA37A"/><stop offset="1" stop-color="#0E5A44"/></radialGradient>
+    <radialGradient id="art_verdant_heal-sheen" cx="0.25" cy="0.18" r="0.6"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="art_verdant_heal-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset="0.45" stop-color="#FFD45A"/><stop offset="0.8" stop-color="#D69A2A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+    <clipPath id="art_verdant_heal-clip"><rect x="9.5" y="9.5" width="45" height="45" rx="6"/></clipPath>
+    <linearGradient id="art_verdant_heal-leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF8E4"/><stop offset="1" stop-color="#C8FFE6"/></linearGradient>
+    <radialGradient id="art_verdant_heal-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#C8FFE6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="33" cy="58" rx="22" ry="2" fill="#2A1008" opacity=".22"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_verdant_heal-tile)" stroke="#2A1008" stroke-width="2.5"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_verdant_heal-sheen)"/>
+  <g clip-path="url(#art_verdant_heal-clip)">
+    <path d="M15.5 48.5C14.5 32 27.5 17.5 48 15.5C49 36 36 49.5 15.5 48.5Z" fill="url(#art_verdant_heal-leaf)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M18 46C27 36.5 36.5 27 46 17.5" fill="none" stroke="#3FC79A" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M26 38C29.5 36.8 33 37 36.5 39M32.5 31.5C36 30.3 39.5 30.5 43 32.5M22 43.5C25 42.8 27.5 43 30 44.5" fill="none" stroke="#3FC79A" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+    <path d="M19 44C19.5 36 25 28 32 23" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".9"/>
+    <circle cx="44.5" cy="20" r="8" fill="url(#art_verdant_heal-glow)"/>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(44.5 20) scale(6.5)" fill="#FFFFFF" opacity="1"/>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(36 14) scale(2.2)" fill="#FFFFFF" opacity="1"/>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(50.5 29) scale(1.8)" fill="#FFFFFF" opacity="1"/>
+  </g>
+  <rect x="9.5" y="9.5" width="45" height="45" rx="6" fill="none" stroke="url(#art_verdant_heal-gold)" stroke-width="1.6"/>
+  <path d="M11.5 20V15Q11.5 11.5 15 11.5H20" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+</svg>

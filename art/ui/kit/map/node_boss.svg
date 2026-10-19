@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 72 72">
+  <defs>
+    <radialGradient id="node_boss-lacquer" gradientUnits="userSpaceOnUse" cx="30" cy="22" r="40">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".45" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="node_boss-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="node_boss-goldD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="node_boss-silver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <path id="node_boss-shield" d="M36 12 C44 14.5 50 16.5 56 17.5 C57.5 36 51 52 36 64 C21 52 14.5 36 16 17.5 C22 16.5 28 14.5 36 12 Z"/>
+    <clipPath id="node_boss-clip"><use href="#node_boss-shield"/></clipPath>
+    <g id="node_boss-horn">
+      <path d="M18 18 C13 16 9 11 10.5 5.5 C13.5 8.5 15 11 16 14.5 C13 11.5 9.5 10 6.5 10.5 C10 11.5 13.5 14.5 16.5 19" fill="url(#node_boss-goldD)" stroke="#2A1008" stroke-width="1.9" stroke-linejoin="round"/>
+      <path d="M11.5 8 C13.2 10 14 11.6 14.7 13.6" fill="none" stroke="#FFF6C8" stroke-width="1" stroke-linecap="round" opacity=".85"/>
+    </g>
+    <g id="node_boss-sword">
+      <!-- blade -->
+      <path d="M22.5 22.5 L26 22.2 L45 42.5 L43 44.5 Z" fill="url(#node_boss-silver)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M25 24 L41.5 41.5" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".85"/>
+      <!-- crossguard -->
+      <path d="M41.2 46.4 L47.6 40" fill="none" stroke="#2A1008" stroke-width="5.2" stroke-linecap="round"/>
+      <path d="M41.2 46.4 L47.6 40" fill="none" stroke="url(#node_boss-goldD)" stroke-width="3" stroke-linecap="round"/>
+      <!-- grip + pommel -->
+      <path d="M44.6 43.4 L49 48" fill="none" stroke="#2A1008" stroke-width="4.6" stroke-linecap="round"/>
+      <path d="M44.6 43.4 L49 48" fill="none" stroke="#3A190C" stroke-width="2.6" stroke-linecap="round"/>
+      <circle cx="50" cy="49" r="2.4" fill="url(#node_boss-goldD)" stroke="#2A1008" stroke-width="1.4"/>
+    </g>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="36" cy="66.5" rx="17" ry="2.6" fill="#2A1008" opacity=".38"/>
+
+  <!-- horns -->
+  <use href="#node_boss-horn"/>
+  <use href="#node_boss-horn" transform="matrix(-1 0 0 1 72 0)"/>
+
+  <!-- lacquer shield plaque -->
+  <use href="#node_boss-shield" fill="url(#node_boss-lacquer)" stroke="#2A1008" stroke-width="2.8" stroke-linejoin="round"/>
+  <g clip-path="url(#node_boss-clip)">
+    <path d="M12 44 C20 58 30 63 40 70 L8 70 Z" fill="#2A1008" opacity=".3"/>
+  </g>
+  <!-- gold rim -->
+  <path d="M36 15.5 C43 17.7 48.5 19.5 52.8 20.3 C53.9 36 48.3 50 36 60.3 C23.7 50 18.1 36 19.2 20.3 C23.5 19.5 29 17.7 36 15.5 Z" fill="none" stroke="#2A1008" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M36 15.5 C43 17.7 48.5 19.5 52.8 20.3 C53.9 36 48.3 50 36 60.3 C23.7 50 18.1 36 19.2 20.3 C23.5 19.5 29 17.7 36 15.5 Z" fill="none" stroke="url(#node_boss-gold)" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- lacquer highlight -->
+  <path d="M21.5 22.5 C26 21.5 30 20 33.5 18.4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".55"/>
+
+  <!-- crossed swords -->
+  <use href="#node_boss-sword"/>
+  <use href="#node_boss-sword" transform="matrix(-1 0 0 1 72 0)"/>
+
+  <!-- crest gem -->
+  <path d="M36 9 L39.5 13 L36 17 L32.5 13 Z" fill="url(#node_boss-goldD)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M34.6 11.6 L36 10.4" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+</svg>

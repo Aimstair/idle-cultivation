@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="leg_thunder_tempered_blade-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A0A6B8"/>
+      <stop offset=".42" stop-color="#5A6074"/>
+      <stop offset=".58" stop-color="#30344A"/>
+      <stop offset="1" stop-color="#14161F"/>
+    </linearGradient>
+    <linearGradient id="leg_thunder_tempered_blade-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".72" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="leg_thunder_tempered_blade-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9A6AE8"/>
+      <stop offset=".5" stop-color="#5A3AA8"/>
+      <stop offset="1" stop-color="#2A1460"/>
+    </linearGradient>
+    <radialGradient id="leg_thunder_tempered_blade-aura" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C8A4FF" stop-opacity=".6"/>
+      <stop offset=".55" stop-color="#9A6AE8" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#9A6AE8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="leg_thunder_tempered_blade-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- radiant storm aura -->
+  <ellipse cx="0" cy="0" rx="29" ry="13" fill="url(#leg_thunder_tempered_blade-aura)" transform="translate(35 31) rotate(-45)"/>
+
+  <ellipse cx="0" cy="0" rx="26" ry="4.6" fill="url(#leg_thunder_tempered_blade-shadow)" transform="translate(35.5 34.5) rotate(-45)"/>
+
+  <!-- saber: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal -->
+  <g transform="translate(34.5 31.5) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="none" stroke="#C8A4FF" stroke-width="5.4" opacity=".45"/>
+    <!-- curved single-edged blade -->
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="url(#leg_thunder_tempered_blade-blade)" stroke-width="2.4"/>
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="#9A6AE8" stroke-width="1.1" opacity=".85"/>
+    <path d="M-3.4 -23.5C-2.4 -16 -1.5 -4 -1.4 11" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".85"/>
+    <!-- glowing violet edge -->
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="#9A6AE8" stroke-width="3.2" opacity=".6"/>
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="#E6D6FF" stroke-width="1.3"/>
+    <!-- lightning-scar pattern tempered into the steel -->
+    <path d="M-2.2 -19L-.6 -16.2L-2.4 -13.4M-1.8 -7L-.2 -4.2L-2 -1.4M-1.6 5L0 7.8L-1.8 10.6" fill="none" stroke="#C8A4FF" stroke-width="1" opacity=".9"/>
+    <!-- disc guard -->
+    <ellipse cx="0" cy="14.4" rx="6" ry="2.1" fill="url(#leg_thunder_tempered_blade-gold)" stroke-width="2"/>
+    <!-- wrapped handle -->
+    <rect x="-2.3" y="16.4" width="4.6" height="10.2" rx="1" fill="url(#leg_thunder_tempered_blade-grip)" stroke-width="2.1"/>
+    <path d="M-2.3 19.4H2.3M-2.3 23.4H2.3" fill="none" stroke="#FFD45A" stroke-width="1"/>
+    <path d="M-1.4 17.4V18.4" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".8"/>
+    <!-- ring pommel -->
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke-width="3.8"/>
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke="url(#leg_thunder_tempered_blade-gold)" stroke-width="1.7"/>
+    <path d="M-2.4 28.2A3 3 0 0 1 -.6 27" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".9"/>
+  </g>
+  <!-- crackling arcs around the blade (canvas space) -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M41 11L44 13.2L42 15.6L45 17.6M24.6 24.4L27.4 26L25.6 28.6M50.2 24.6L52.2 27L49.8 28.8M31.4 15.4L33.4 17.2L31.8 19.2" stroke="#9A6AE8" stroke-width="2.6" opacity=".5"/>
+    <path d="M41 11L44 13.2L42 15.6L45 17.6M24.6 24.4L27.4 26L25.6 28.6M50.2 24.6L52.2 27L49.8 28.8M31.4 15.4L33.4 17.2L31.8 19.2" stroke="#F4ECFF" stroke-width="1.1"/>
+  </g>
+</svg>

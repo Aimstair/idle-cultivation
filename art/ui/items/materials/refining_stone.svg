@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="refining_stone-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4DEEC"/>
+      <stop offset="1" stop-color="#B4ACC4"/>
+    </linearGradient>
+    <linearGradient id="refining_stone-front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A69EB8"/>
+      <stop offset="1" stop-color="#6E6684"/>
+    </linearGradient>
+    <linearGradient id="refining_stone-side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A8299"/>
+      <stop offset="1" stop-color="#524A64"/>
+    </linearGradient>
+    <radialGradient id="refining_stone-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FDCFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#8FDCFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="32" cy="55.5" rx="22" ry="2.6" fill="#2A1008" opacity=".3"/>
+
+  <!-- block: top / front / right faces, rounded corners -->
+  <path d="M12 32Q12 30 14 28.5L22 22Q23.5 21 26 21H52Q55 21 53.5 23.5L46 31.5Q44.5 33 42 33H14Q12 33 12 32Z" fill="url(#refining_stone-top)"/>
+  <path d="M12 33H42Q44 33 44 35V49Q44 51 42 51H14Q12 51 12 49Z" fill="url(#refining_stone-front)"/>
+  <path d="M44 33L53.5 23.5Q55 22 55 24V38Q55 40 54 41L44 51Z" fill="url(#refining_stone-side)"/>
+  <g fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M12 33H42Q44 33 44 35V51"/>
+    <path d="M44 33L53.5 23.5"/>
+  </g>
+
+  <!-- glowing rune line on the top face -->
+  <ellipse cx="33" cy="27.5" rx="19" ry="7" fill="url(#refining_stone-glow)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 30C21 25 24 31 29 26.5S37 28.5 41 24.5S47.5 25 50 23" stroke="#3B7FE0" stroke-width="3.6" opacity=".55"/>
+    <path d="M17 30C21 25 24 31 29 26.5S37 28.5 41 24.5S47.5 25 50 23" stroke="#8FDCFF" stroke-width="2"/>
+    <path d="M17 30C21 25 24 31 29 26.5S37 28.5 41 24.5S47.5 25 50 23" stroke="#FFFFFF" stroke-width=".9" opacity=".9"/>
+  </g>
+  <circle cx="24" cy="27" r="1.6" fill="#FFFFFF" stroke="#3B7FE0" stroke-width="1"/>
+  <!-- rune glow spilling down the front face -->
+  <path d="M20 40C26 37 32 43 38 40" fill="none" stroke="#3B7FE0" stroke-width="3" stroke-linecap="round" opacity=".35"/>
+  <path d="M20 40C26 37 32 43 38 40" fill="none" stroke="#8FDCFF" stroke-width="1.4" stroke-linecap="round" opacity=".9"/>
+
+  <!-- highlight on the top-left edge -->
+  <path d="M15 29L24 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+  <path d="M14.5 36V48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".35"/>
+
+  <!-- outline -->
+  <path d="M12 32Q12 30 14 28.5L22 22Q23.5 21 26 21H52Q55 21 55 24V38Q55 40 54 41L44 51H14Q12 51 12 49Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

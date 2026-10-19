@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ach_jade-jade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".4" stop-color="#E6FFF4"/>
+      <stop offset=".8" stop-color="#9ADFC0"/>
+      <stop offset="1" stop-color="#4FA888"/>
+    </linearGradient>
+    <linearGradient id="ach_jade-jadeRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4FA888"/>
+      <stop offset=".3" stop-color="#9ADFC0"/>
+      <stop offset=".7" stop-color="#E6FFF4"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="ach_jade-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="ach_jade-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <radialGradient id="ach_jade-gem" cx=".35" cy=".3" r=".85">
+      <stop offset="0" stop-color="#FF9A7A"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <radialGradient id="ach_jade-halo" gradientUnits="userSpaceOnUse" cx="32" cy="32" r="32">
+      <stop offset=".8" stop-color="#FFE7A0" stop-opacity="0"/>
+      <stop offset=".86" stop-color="#FFE7A0" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#FFD45A" stop-opacity="0"/>
+    </radialGradient>
+    <path id="ach_jade-ray" d="M-2.6 -24.5L0 -31.5L2.6 -24.5Z" fill="url(#ach_jade-gold)" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+  </defs>
+
+  <!-- halo: soft glow and gold rays behind the ring -->
+  <circle cx="32" cy="32" r="32" fill="url(#ach_jade-halo)"/>
+  <g transform="translate(32 32)">
+    <use href="#ach_jade-ray" transform="rotate(30)"/>
+    <use href="#ach_jade-ray" transform="rotate(60)"/>
+    <use href="#ach_jade-ray" transform="rotate(90)"/>
+    <use href="#ach_jade-ray" transform="rotate(120)"/>
+    <use href="#ach_jade-ray" transform="rotate(150)"/>
+    <use href="#ach_jade-ray" transform="rotate(180)"/>
+    <use href="#ach_jade-ray" transform="rotate(210)"/>
+    <use href="#ach_jade-ray" transform="rotate(240)"/>
+    <use href="#ach_jade-ray" transform="rotate(270)"/>
+    <use href="#ach_jade-ray" transform="rotate(300)"/>
+    <use href="#ach_jade-ray" transform="rotate(330)"/>
+  </g>
+
+  <!-- cast shadow -->
+  <circle cx="33" cy="34" r="27" fill="#2A1008" opacity=".22"/>
+
+  <!-- gold outer rim -->
+  <path fill-rule="evenodd" fill="url(#ach_jade-gold)" d="M5 32A27 27 0 1 1 59 32A27 27 0 1 1 5 32ZM8.5 32A23.5 23.5 0 1 0 55.5 32A23.5 23.5 0 1 0 8.5 32Z"/>
+  <!-- white jade slopes -->
+  <path fill-rule="evenodd" fill="url(#ach_jade-jade)" d="M8.5 32A23.5 23.5 0 1 1 55.5 32A23.5 23.5 0 1 1 8.5 32ZM12 32A20 20 0 1 0 52 32A20 20 0 1 0 12 32Z"/>
+  <path fill-rule="evenodd" fill="url(#ach_jade-jadeRev)" d="M10 32A22 22 0 1 1 54 32A22 22 0 1 1 10 32ZM12 32A20 20 0 1 0 52 32A20 20 0 1 0 12 32Z"/>
+  <circle cx="32" cy="32" r="23.5" fill="none" stroke="#2A1008" stroke-width="1.2" opacity=".7"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#FFFFFF" stroke-width=".8" opacity=".8"/>
+  <path d="M11.6 22.5A22 22 0 0 1 21.5 12.2" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".95"/>
+
+  <!-- outlines -->
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#2A1008" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#2A1008" stroke-width="1.8"/>
+  <circle cx="32" cy="32" r="20.9" fill="none" stroke="url(#ach_jade-gold)" stroke-width="1"/>
+
+  <!-- gold cloud scrolls at the sides -->
+  <g fill="url(#ach_jade-goldSmall)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round">
+    <path d="M7.5 25C4 25 2.8 28.5 4.8 30.5C1.7 31 1.7 33 4.8 33.5C2.8 35.5 4 39 7.5 39Z"/>
+    <path d="M56.5 25C60 25 61.2 28.5 59.2 30.5C62.3 31 62.3 33 59.2 33.5C61.2 35.5 60 39 56.5 39Z"/>
+  </g>
+
+  <!-- top gold crest with a red gem -->
+  <path d="M21 10.5C21 5.5 26 3.4 29.3 5.8C30 1.8 34 1.8 34.7 5.8C38 3.4 43 5.5 43 10.5Z" fill="url(#ach_jade-goldSmall)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="26.4" cy="5.8" rx="1.5" ry="1" fill="#FFFFFF" opacity=".85"/>
+  <circle cx="32" cy="8.6" r="3" fill="url(#ach_jade-gem)" stroke="#2A1008" stroke-width="1.4"/>
+  <ellipse cx="31" cy="7.6" rx="1" ry=".65" fill="#FFFFFF" opacity=".9"/>
+</svg>

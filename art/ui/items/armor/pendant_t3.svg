@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="pendant_t3-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="pendant_t3-crystal" gradientUnits="userSpaceOnUse" cx="27" cy="29" r="17">
+      <stop offset="0" stop-color="#EAD8FF"/>
+      <stop offset=".5" stop-color="#9A6AE8"/>
+      <stop offset="1" stop-color="#3A1E7A"/>
+    </radialGradient>
+    <linearGradient id="pendant_t3-red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </linearGradient>
+    <filter id="pendant_t3-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <path id="pendant_t3-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="57.4" rx="8" ry="1.3" fill="#2A1008" opacity=".25"/>
+
+  <!-- red silk cord -->
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="url(#pendant_t3-red)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17.5 7.3L23 12" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".8"/>
+
+  <!-- red tassel (behind the disc) -->
+  <path d="M32 46V49" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M29.6 50.5L28.6 57H35.4L34.4 50.5Z" fill="url(#pendant_t3-red)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M31.2 52V55.5M33 52V55.5" fill="none" stroke="#5A0A04" stroke-width=".8" stroke-linecap="round" opacity=".8"/>
+  <circle cx="32" cy="49.4" r="1.8" fill="url(#pendant_t3-gold)" stroke="#2A1008" stroke-width="1.1"/>
+
+  <!-- violet glow -->
+  <circle cx="32" cy="34.5" r="13" fill="#B48CFF" opacity=".6" filter="url(#pendant_t3-glow)"/>
+  <!-- gold frame -->
+  <circle cx="32" cy="34.5" r="14" fill="url(#pendant_t3-gold)" stroke="#2A1008" stroke-width="2.4"/>
+  <!-- violet crystal -->
+  <circle cx="32" cy="34.5" r="10.4" fill="url(#pendant_t3-crystal)" stroke="#2A1008" stroke-width="1.4"/>
+  <!-- gold lightning motif -->
+  <path d="M34 25.5L28.6 35.2H32.4L30.2 43.5L37.2 32.8H33.4L35.6 25.5Z" fill="url(#pendant_t3-gold)" stroke="#2A1008" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M33.6 27.5L30.6 33" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+  <!-- frame bevel and highlight -->
+  <circle cx="32" cy="34.5" r="12.2" fill="none" stroke="#FFE7A0" stroke-width=".9" opacity=".7"/>
+  <path d="M21.5 29.5Q24 23.5 30.5 21.8" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".95"/>
+  <!-- gold knot -->
+  <circle cx="32" cy="20" r="2.4" fill="url(#pendant_t3-gold)" stroke="#2A1008" stroke-width="1.3"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#pendant_t3-spark" transform="translate(13 24) scale(1.8)"/>
+    <use href="#pendant_t3-spark" transform="translate(51 40) scale(1.4)"/>
+    <use href="#pendant_t3-spark" transform="translate(47 16) scale(1.2)"/>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="menu-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset=".55" stop-color="#F7E6BE"/>
+      <stop offset="1" stop-color="#E9CF98"/>
+    </linearGradient>
+    <radialGradient id="menu-band" gradientUnits="userSpaceOnUse" cx="24" cy="18" r="36">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="menu-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".65" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="menu-wood" gradientUnits="userSpaceOnUse" x1="10" y1="0" x2="54" y2="0">
+      <stop offset="0" stop-color="#C07A3E"/>
+      <stop offset=".5" stop-color="#A2602A"/>
+      <stop offset="1" stop-color="#6A3414"/>
+    </linearGradient>
+    <radialGradient id="menu-sun" cx=".38" cy=".34" r=".8">
+      <stop offset="0" stop-color="#FF8A66"/>
+      <stop offset=".6" stop-color="#D8301C"/>
+      <stop offset="1" stop-color="#8E1810"/>
+    </radialGradient>
+    <linearGradient id="menu-tassel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#7A1008"/>
+    </linearGradient>
+    <linearGradient id="menu-shadeR" gradientUnits="userSpaceOnUse" x1="36" y1="0" x2="62" y2="0">
+      <stop offset="0" stop-color="#8A6A30" stop-opacity="0"/>
+      <stop offset="1" stop-color="#8A6A30" stop-opacity=".4"/>
+    </linearGradient>
+    <clipPath id="menu-leafclip">
+      <path d="M1.47 32.92A36 36 0 0 1 62.53 32.92L43.87 44.58A14 14 0 0 0 20.13 44.58Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- soft shadow -->
+  <path d="M1.47 32.92A36 36 0 0 1 62.53 32.92L43.87 44.58A14 14 0 0 0 20.13 44.58Z" fill="#2A1008" opacity=".2" transform="translate(1.2 1.6)"/>
+
+  <!-- bamboo sticks under the leaf -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M32 52L19.28 44.05M32 52L21.67 41.12M32 52L24.73 38.88M32 52L28.24 37.48M32 52V37M32 52L35.76 37.48M32 52L39.27 38.88M32 52L42.33 41.12M32 52L44.72 44.05" stroke="#2A1008" stroke-width="3.4"/>
+    <path d="M32 52L19.28 44.05M32 52L21.67 41.12M32 52L24.73 38.88M32 52L28.24 37.48M32 52V37M32 52L35.76 37.48M32 52L39.27 38.88M32 52L42.33 41.12M32 52L44.72 44.05" stroke="url(#menu-wood)" stroke-width="1.7"/>
+    <path d="M30.6 49L23 41.6" stroke="#FFE0B0" stroke-width=".7" opacity=".6"/>
+  </g>
+
+  <!-- leaf -->
+  <path d="M1.47 32.92A36 36 0 0 1 62.53 32.92L43.87 44.58A14 14 0 0 0 20.13 44.58Z" fill="url(#menu-paper)"/>
+  <g clip-path="url(#menu-leafclip)">
+    <!-- ink-wash mountains -->
+    <path d="M-2 42L8 29L15 34L23 23L31 31L39 25L47 32L55 27L66 37V64H-2Z" fill="#3B7FE0" opacity=".22"/>
+    <path d="M-2 48L10 37L18 41L27 31L36 39L45 34L53 41L66 36V64H-2Z" fill="#1A2A6E" opacity=".3"/>
+    <path d="M10 37L18 41L27 31" fill="none" stroke="#B8E4FF" stroke-width=".9" opacity=".5"/>
+    <!-- red sun -->
+    <circle cx="46" cy="22.5" r="3.4" fill="url(#menu-sun)" stroke="#2A1008" stroke-width="1.1"/>
+    <circle cx="44.8" cy="21.3" r=".8" fill="#FFFFFF" opacity=".75"/>
+    <!-- rib creases on the leaf -->
+    <g fill="none" stroke="#9A7A48" stroke-width=".9" opacity=".45">
+      <path d="M22.36 41.84L7.22 25.89M25.21 39.76L14.55 20.51M28.49 38.45L22.99 17.15M32 38V16M35.51 38.45L41.01 17.15M38.79 39.76L49.45 20.51M41.64 41.84L56.78 25.89"/>
+    </g>
+    <rect x="0" y="0" width="64" height="64" fill="url(#menu-shadeR)"/>
+    <!-- red band along the top edge -->
+    <path d="M1.47 32.92A36 36 0 0 1 62.53 32.92L59.98 34.51A33 33 0 0 0 4.02 34.51Z" fill="url(#menu-band)" stroke="#2A1008" stroke-width="1.2"/>
+    <path d="M32 17.6A33.2 33.2 0 0 0 10 26.6" fill="none" stroke="#FFC0A8" stroke-width=".8" opacity=".55"/>
+  </g>
+  <path d="M1.47 32.92A36 36 0 0 1 62.53 32.92L43.87 44.58A14 14 0 0 0 20.13 44.58Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M8 29.5A28.5 28.5 0 0 1 20.5 19.6" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".7"/>
+
+  <!-- guard sticks -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M32 52L1.47 32.92M32 52L62.53 32.92" stroke="#2A1008" stroke-width="4"/>
+    <path d="M32 52L1.47 32.92M32 52L62.53 32.92" stroke="url(#menu-wood)" stroke-width="2.2"/>
+    <path d="M28 49.6L4.5 34.9" stroke="#FFE0B0" stroke-width=".8" opacity=".7"/>
+  </g>
+
+  <!-- pivot rivet -->
+  <circle cx="32" cy="52" r="3.2" fill="url(#menu-gold)" stroke="#2A1008" stroke-width="1.6"/>
+  <circle cx="31" cy="51" r=".9" fill="#FFFFFF" opacity=".9"/>
+
+  <!-- tassel -->
+  <path d="M32 55V57.8" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M32 55V57.8" fill="none" stroke="#C21E10" stroke-width="1" stroke-linecap="round"/>
+  <path d="M30.2 59.4L29.5 63H34.5L33.8 59.4Z" fill="url(#menu-tassel)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="32" cy="58.4" r="1.6" fill="url(#menu-gold)" stroke="#2A1008" stroke-width="1.1"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="320" viewBox="0 0 32 160">
+  <defs>
+    <radialGradient id="fx_beam-soft" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(16 80) scale(16 80)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#F6F4FA" stop-opacity=".4"/>
+      <stop offset=".85" stop-color="#ECE8F2" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#E8E4EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fx_beam-mid" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(16 80) scale(11 78)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
+      <stop offset=".6" stop-color="#FFFFFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fx_beam-core" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(16 80) scale(4.5 72)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset=".65" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="32" height="160" fill="url(#fx_beam-soft)"/>
+  <rect x="0" y="0" width="32" height="160" fill="url(#fx_beam-mid)"/>
+  <rect x="0" y="0" width="32" height="160" fill="url(#fx_beam-core)"/>
+</svg>

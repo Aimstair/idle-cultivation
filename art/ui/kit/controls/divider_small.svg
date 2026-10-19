@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="20" viewBox="0 0 200 10">
+  <defs>
+    <linearGradient id="divider_small-line" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="divider_small-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="divider_small-jade" cx=".38" cy=".32" r=".8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <!-- left half: tapered gold line with an end bead (mirrored for the right) -->
+    <g id="divider_small-half">
+      <path d="M6 5 Q50 3.3 94 5 Q50 6.7 6 5 Z" fill="url(#divider_small-line)" stroke="#2A1008" stroke-width="1" stroke-linejoin="round"/>
+      <path d="M10 4.5 H70" fill="none" stroke="#FFF6C8" stroke-width=".6" stroke-linecap="round" opacity=".7"/>
+      <circle cx="6" cy="5" r="1.7" fill="url(#divider_small-gold)" stroke="#2A1008" stroke-width="1.1"/>
+    </g>
+  </defs>
+
+  <use href="#divider_small-half"/>
+  <use href="#divider_small-half" transform="matrix(-1 0 0 1 200 0)"/>
+
+  <!-- central jade diamond -->
+  <path d="M100 1 L105 5 L100 9 L95 5 Z" fill="url(#divider_small-jade)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M100 2.4 L97 5 L100 5 Z" fill="#FFFFFF" opacity=".6"/>
+</svg>

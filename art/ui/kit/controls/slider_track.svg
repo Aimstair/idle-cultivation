@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="32" viewBox="0 0 200 16">
+<!-- 9slice: 8 -->
+  <defs>
+    <linearGradient id="slider_track-trough" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="13">
+      <stop offset="0" stop-color="#0E0302"/>
+      <stop offset="1" stop-color="#2A120A"/>
+    </linearGradient>
+    <linearGradient id="slider_track-inShadow" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="8">
+      <stop offset="0" stop-color="#000000" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="slider_track-clip"><rect x="2" y="3" width="196" height="10" rx="5"/></clipPath>
+  </defs>
+
+  <!-- inset dark trough with gold rim -->
+  <rect x="2" y="3" width="196" height="10" rx="5" fill="url(#slider_track-trough)" stroke="#2A1008" stroke-width="2.2"/>
+  <g clip-path="url(#slider_track-clip)">
+    <rect x="2" y="3" width="196" height="5" fill="url(#slider_track-inShadow)"/>
+  </g>
+  <rect x="2" y="3" width="196" height="10" rx="5" fill="none" stroke="#E8B657" stroke-width="1.2"/>
+  <path d="M8 13.7 H192" fill="none" stroke="#FFE7A0" stroke-width=".7" opacity=".45"/>
+</svg>

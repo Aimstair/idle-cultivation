@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="pets-disc" gradientUnits="userSpaceOnUse" cx="24" cy="25" r="31">
+      <stop offset="0" stop-color="#AC9FEA"/>
+      <stop offset=".45" stop-color="#6E5DC0"/>
+      <stop offset="1" stop-color="#352870"/>
+    </radialGradient>
+    <radialGradient id="pets-discHi" gradientUnits="userSpaceOnUse" cx="22" cy="20" r="17">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pets-fur" gradientUnits="userSpaceOnUse" cx="24" cy="28" r="30">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#F6F4FB"/>
+      <stop offset="1" stop-color="#CFC8E6"/>
+    </radialGradient>
+    <linearGradient id="pets-ear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DAD4EC"/>
+    </linearGradient>
+    <linearGradient id="pets-pink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD6E4"/>
+      <stop offset="1" stop-color="#F08AA8"/>
+    </linearGradient>
+    <radialGradient id="pets-mark" cx=".4" cy=".3" r=".9">
+      <stop offset="0" stop-color="#FF8A5A"/>
+      <stop offset=".55" stop-color="#D82A18"/>
+      <stop offset="1" stop-color="#7A1008"/>
+    </radialGradient>
+    <linearGradient id="pets-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="pets-wisp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8FDCFF"/>
+      <stop offset=".6" stop-color="#3B9BE8"/>
+      <stop offset="1" stop-color="#2E7FD0"/>
+    </linearGradient>
+    <radialGradient id="pets-wispGlow" cx=".5" cy=".55" r=".5">
+      <stop offset="0" stop-color="#8FDCFF" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#8FDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pets-red" cx=".35" cy=".3" r=".9">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backing disc -->
+  <circle cx="32" cy="33" r="22" fill="url(#pets-disc)" stroke="#2A1008" stroke-width="2.5"/>
+  <circle cx="32" cy="33" r="22" fill="url(#pets-discHi)"/>
+  <circle cx="32" cy="33" r="19.8" fill="none" stroke="#FFE7A0" stroke-opacity=".8" stroke-width="1.2"/>
+
+  <!-- spirit-flame wisps -->
+  <circle cx="7" cy="21" r="7.5" fill="url(#pets-wispGlow)"/>
+  <path d="M7 12.5C10.6 17.3 11.6 21.6 9.6 25.4C8.6 27.4 5.4 27.4 4.4 25.4C2.4 21.6 3.4 17.3 7 12.5Z" fill="url(#pets-wisp)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M7 18.2C8.4 20.2 8.7 22.3 7.8 23.9C7.3 24.7 6.1 24.7 5.7 23.9C4.9 22.3 5.3 20.2 7 18.2Z" fill="#FFFFFF" opacity=".9"/>
+  <circle cx="57.5" cy="47.5" r="4.5" fill="url(#pets-wispGlow)"/>
+  <path d="M57.5 42.5C59.6 45.3 60.1 47.8 59 50C58.4 51.2 56.6 51.2 56 50C54.9 47.8 55.4 45.3 57.5 42.5Z" fill="url(#pets-wisp)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <ellipse cx="57.5" cy="48" rx="1" ry="1.5" fill="#FFFFFF" opacity=".9"/>
+
+  <!-- cast shadow -->
+  <ellipse cx="32" cy="56.2" rx="18" ry="2" fill="#2A1008" opacity=".28"/>
+
+  <!-- ears -->
+  <g stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round" fill="url(#pets-ear)">
+    <path d="M12.5 28L18.5 5.5L29 20Z"/>
+    <path d="M51.5 28L45.5 5.5L35 20Z"/>
+  </g>
+  <path d="M15.8 25L18.8 10.5L25.6 19.8Z" fill="url(#pets-pink)"/>
+  <path d="M48.2 25L45.2 10.5L38.4 19.8Z" fill="url(#pets-pink)"/>
+  <path d="M15.6 20.5L17.6 10.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+
+  <!-- head -->
+  <path d="M32 19C42 19 51 23 52 31L56 36L52 40C51 50 42 55 32 55C22 55 13 50 12 40L8 36L12 31C13 23 22 19 32 19Z" fill="url(#pets-fur)" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- forehead sheen -->
+  <path d="M16 28C17.5 24.5 20.5 22.3 24.5 21.3" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity=".8"/>
+  <!-- flame mark -->
+  <path d="M32 21.5C34.8 24.5 35 27.5 32 29.5C29 27.5 29.2 24.5 32 21.5Z" fill="url(#pets-mark)" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M32 25C33 26.2 33 27.3 32 28C31 27.3 31 26.2 32 25Z" fill="#FFE08A" opacity=".9"/>
+  <!-- happy eyes -->
+  <path d="M19 36.5Q24 31 29 36.5" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M35 36.5Q40 31 45 36.5" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- blush -->
+  <ellipse cx="17.5" cy="42" rx="3.8" ry="2.2" fill="#FF9AB4" opacity=".7"/>
+  <ellipse cx="46.5" cy="42" rx="3.8" ry="2.2" fill="#FF9AB4" opacity=".7"/>
+  <!-- nose and mouth -->
+  <ellipse cx="32" cy="42" rx="2.1" ry="1.5" fill="#2A1008"/>
+  <ellipse cx="31.3" cy="41.5" rx=".7" ry=".45" fill="#FFFFFF" opacity=".8"/>
+  <path d="M28.5 44.2Q30.3 46.6 32 44.6Q33.7 46.6 35.5 44.2" fill="none" stroke="#2A1008" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- collar ribbon and bell -->
+  <path d="M28.6 52.2C25.6 49.6 23.8 51.2 25.2 54.4C27 55.4 28.8 54.4 28.6 52.2Z" fill="url(#pets-red)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M35.4 52.2C38.4 49.6 40.2 51.2 38.8 54.4C37 55.4 35.2 54.4 35.4 52.2Z" fill="url(#pets-red)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <circle cx="32" cy="53" r="3.5" fill="url(#pets-gold)" stroke="#2A1008" stroke-width="1.8"/>
+  <path d="M32 53.6V56.2" fill="none" stroke="#2A1008" stroke-width="1" stroke-linecap="round"/>
+  <circle cx="32" cy="53.6" r=".9" fill="#2A1008"/>
+  <ellipse cx="30.8" cy="51.6" rx="1" ry=".7" fill="#FFFFFF" opacity=".9"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5" stroke-linejoin="round">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(11 8) scale(2)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(58 27) scale(1.6)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(5 44) scale(1.5)"/>
+  </g>
+</svg>

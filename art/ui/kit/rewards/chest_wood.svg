@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="chest_wood-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C07A3E"/>
+      <stop offset=".55" stop-color="#8E4A1E"/>
+      <stop offset="1" stop-color="#5A2A10"/>
+    </linearGradient>
+    <linearGradient id="chest_wood-lid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D89050"/>
+      <stop offset=".5" stop-color="#A0582A"/>
+      <stop offset="1" stop-color="#6A3414"/>
+    </linearGradient>
+    <linearGradient id="chest_wood-iron" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E4E8F0"/>
+      <stop offset=".45" stop-color="#8E96A8"/>
+      <stop offset="1" stop-color="#464C5A"/>
+    </linearGradient>
+    <linearGradient id="chest_wood-ironV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4E8F0"/>
+      <stop offset=".5" stop-color="#8E96A8"/>
+      <stop offset="1" stop-color="#464C5A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cast shadow -->
+  <ellipse cx="40" cy="72" rx="31" ry="3" fill="#2A1008" opacity=".3"/>
+
+  <!-- body -->
+  <rect x="11" y="41" width="58" height="29" rx="3" fill="url(#chest_wood-wood)" stroke="#2A1008" stroke-width="3.1" stroke-linejoin="round"/>
+  <g fill="none" stroke="#3A190C" stroke-width="1.2" stroke-linecap="round" opacity=".55">
+    <path d="M13.5 51H66.5"/>
+    <path d="M13.5 60.5H66.5"/>
+  </g>
+  <path d="M14.2 44.5V66" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".35"/>
+
+  <!-- lid -->
+  <path d="M8 41V32C8 26.5 11.5 23.5 17 23.5H63C68.5 23.5 72 26.5 72 32V41Z" fill="url(#chest_wood-lid)" stroke="#2A1008" stroke-width="3.1" stroke-linejoin="round"/>
+  <path d="M10.5 36H69.5" fill="none" stroke="#3A190C" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+  <path d="M11.5 32.5C12 28.5 14.5 26.5 18.5 26.2" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" opacity=".75"/>
+
+  <!-- iron bands -->
+  <rect x="18" y="23" width="7.5" height="47.5" rx="1.2" fill="url(#chest_wood-iron)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="54.5" y="23" width="7.5" height="47.5" rx="1.2" fill="url(#chest_wood-iron)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M19.8 26V67" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+  <path d="M56.3 26V67" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+  <g fill="#2A1008" opacity=".7">
+    <circle cx="21.75" cy="31" r="1.1"/><circle cx="21.75" cy="47" r="1.1"/><circle cx="21.75" cy="63" r="1.1"/>
+    <circle cx="58.25" cy="31" r="1.1"/><circle cx="58.25" cy="47" r="1.1"/><circle cx="58.25" cy="63" r="1.1"/>
+  </g>
+
+  <!-- lock plate -->
+  <path d="M34 37.5H46V47.5Q46 50 43.5 50H36.5Q34 50 34 47.5Z" fill="url(#chest_wood-ironV)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M36.2 39.4H43" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+  <circle cx="40" cy="42.6" r="1.8" fill="#2A1008"/>
+  <path d="M40 42.6V46.6" stroke="#2A1008" stroke-width="2" stroke-linecap="round"/>
+</svg>

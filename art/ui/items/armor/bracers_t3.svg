@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bracers_t3-steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <linearGradient id="bracers_t3-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="bracers_t3-violet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAD8FF"/>
+      <stop offset=".5" stop-color="#9A6AE8"/>
+      <stop offset="1" stop-color="#3A1E7A"/>
+    </linearGradient>
+    <linearGradient id="bracers_t3-hole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140603"/>
+      <stop offset="1" stop-color="#4A2412"/>
+    </linearGradient>
+    <filter id="bracers_t3-glow" x="-80%" y="-40%" width="260%" height="180%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <!-- one bracer, centred on the origin -->
+    <g id="bracers_t3-b">
+      <path d="M-9.5-21L-7.5 21A7.5 2.6 0 0 0 7.5 21L9.5-21Z" fill="url(#bracers_t3-steel)" stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round"/>
+      <!-- plate seams -->
+      <path d="M-8.9-8A8.9 2.9 0 0 0 8.9-8M-8.3 4A8.3 2.8 0 0 0 8.3 4" fill="none" stroke="#7E8698" stroke-width="1" stroke-linecap="round"/>
+      <!-- gold edging -->
+      <path d="M-7.75 15.5L-7.5 21A7.5 2.6 0 0 0 7.5 21L7.75 15.5A7.75 2.6 0 0 1-7.75 15.5Z" fill="url(#bracers_t3-gold)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M-9.5-21L-9.25-15.5A9.25 3 0 0 0 9.25-15.5L9.5-21A9.5 3.2 0 0 1-9.5-21Z" fill="url(#bracers_t3-gold)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+      <!-- violet lightning inlay -->
+      <path d="M2.5-13L-4.5-1.5H.5L-2.5 12L5-2.5H.8Z" fill="#B48CFF" opacity=".8" filter="url(#bracers_t3-glow)"/>
+      <path d="M2.5-13L-4.5-1.5H.5L-2.5 12L5-2.5H.8Z" fill="url(#bracers_t3-violet)" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M1.6-10.5L-2.2-3.3" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+      <!-- opening -->
+      <ellipse cx="0" cy="-21" rx="9.5" ry="3.2" fill="url(#bracers_t3-hole)" stroke="#2A1008" stroke-width="2"/>
+      <path d="M-8-20.4A8 2.4 0 0 0 8-20.4" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+      <!-- highlight -->
+      <path d="M-7.3-13L-6.4 13" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+    </g>
+    <path id="bracers_t3-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <ellipse cx="18.5" cy="56.2" rx="9" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <ellipse cx="45.5" cy="56.2" rx="9" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <use href="#bracers_t3-b" transform="translate(18.5 32) rotate(-5)"/>
+  <use href="#bracers_t3-b" transform="translate(45.5 32) rotate(5)"/>
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#bracers_t3-spark" transform="translate(32 14) scale(1.8)"/>
+    <use href="#bracers_t3-spark" transform="translate(57 30) scale(1.3)"/>
+  </g>
+</svg>

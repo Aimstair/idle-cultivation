@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="checkbox_on-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset=".55" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="checkbox_on-inShadow" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="10">
+      <stop offset="0" stop-color="#000000" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="checkbox_on-jade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <clipPath id="checkbox_on-clip"><rect x="3" y="3" width="22" height="22" rx="5"/></clipPath>
+  </defs>
+
+  <!-- rosewood box with gold rim -->
+  <rect x="3" y="3" width="22" height="22" rx="5" fill="url(#checkbox_on-rose)" stroke="#2A1008" stroke-width="2.2"/>
+  <g clip-path="url(#checkbox_on-clip)">
+    <rect x="3" y="3" width="22" height="7" fill="url(#checkbox_on-inShadow)"/>
+  </g>
+  <rect x="4.6" y="4.6" width="18.8" height="18.8" rx="3.6" fill="none" stroke="#E8B657" stroke-width="1.3"/>
+  <!-- jade check mark -->
+  <path d="M8 14.6 L12.4 19 L21 9.8" fill="none" stroke="#2A1008" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8 14.6 L12.4 19 L21 9.8" fill="none" stroke="url(#checkbox_on-jade)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.6 15.4 L19.8 10.2" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+</svg>

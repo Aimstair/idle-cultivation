@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="1688" viewBox="0 0 390 844">
+<!-- Ground 05: Ruined Meditation Hall (Meditation Site, Earth). Hero seat: raised bagua dais, top y~532, centre x 195. Identity: collapsed ceiling with sky hole, sagging broken beam, haloed sage statue, broken pillars. Ambient animation areas: dust motes in light beams, swaying ivy. -->
+<defs>
+<linearGradient id="g05-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB4CC"/><stop offset=".18" stop-color="#D8D6C6"/><stop offset=".32" stop-color="#FBE6BC"/><stop offset=".44" stop-color="#FFEFC8"/><stop offset=".56" stop-color="#F2D49C"/><stop offset="1" stop-color="#C49C68"/></linearGradient>
+<radialGradient id="g05-sun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFFBEA"/><stop offset=".3" stop-color="#FFEFC4" stop-opacity=".8"/><stop offset=".7" stop-color="#FFE2A0" stop-opacity=".25"/><stop offset="1" stop-color="#FFD890" stop-opacity="0"/></radialGradient>
+<radialGradient id="g05-aura" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF2CC" stop-opacity=".6"/><stop offset=".55" stop-color="#F8DC9C" stop-opacity=".2"/><stop offset="1" stop-color="#F8DC9C" stop-opacity="0"/></radialGradient>
+<linearGradient id="g05-mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4DC" stop-opacity="0"/><stop offset=".5" stop-color="#FFF4DC" stop-opacity=".8"/><stop offset="1" stop-color="#FFF4DC" stop-opacity="0"/></linearGradient>
+<linearGradient id="g05-shaft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF0C4" stop-opacity=".85"/><stop offset=".6" stop-color="#FFE6A8" stop-opacity=".3"/><stop offset="1" stop-color="#FFE6A8" stop-opacity="0"/></linearGradient>
+<linearGradient id="g05-ceil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22181A"/><stop offset="1" stop-color="#4A3628"/></linearGradient>
+<linearGradient id="g05-beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8A6444"/><stop offset=".4" stop-color="#5E4030"/><stop offset="1" stop-color="#3A261E"/></linearGradient>
+<linearGradient id="g05-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8E7E68"/><stop offset=".5" stop-color="#A69478"/><stop offset="1" stop-color="#8A7A60"/></linearGradient>
+<linearGradient id="g05-far" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8CCB6"/><stop offset="1" stop-color="#C4B49A"/></linearGradient>
+<linearGradient id="g05-far2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B8A88E"/><stop offset="1" stop-color="#A8987C"/></linearGradient>
+<linearGradient id="g05-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8B696"/><stop offset=".3" stop-color="#A8967A"/><stop offset=".7" stop-color="#7A6A58"/><stop offset="1" stop-color="#4A3E36"/></linearGradient>
+<linearGradient id="g05-dais" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9A8A70"/><stop offset="1" stop-color="#5E5040"/></linearGradient>
+<linearGradient id="g05-daistop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ECE0C4"/><stop offset=".6" stop-color="#CDBC98"/><stop offset="1" stop-color="#A8967A"/></linearGradient>
+<linearGradient id="g05-pillar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C47A5A"/><stop offset=".35" stop-color="#9A4A34"/><stop offset="1" stop-color="#5A2A22"/></linearGradient>
+<linearGradient id="g05-npillar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5A2A22"/><stop offset=".4" stop-color="#3E1E1A"/><stop offset="1" stop-color="#22120E"/></linearGradient>
+<linearGradient id="g05-stone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8CCB0"/><stop offset=".5" stop-color="#A89A80"/><stop offset="1" stop-color="#6E6252"/></linearGradient>
+<linearGradient id="g05-statue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A2967E"/><stop offset=".45" stop-color="#7C705E"/><stop offset="1" stop-color="#564C40"/></linearGradient>
+<linearGradient id="g05-bronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9AA27A"/><stop offset=".5" stop-color="#6A7254"/><stop offset="1" stop-color="#3E4434"/></linearGradient>
+<linearGradient id="g05-cloth" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D8B870"/><stop offset=".5" stop-color="#B8944E"/><stop offset="1" stop-color="#8A6A36"/></linearGradient>
+<linearGradient id="g05-topdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A120E" stop-opacity=".5"/><stop offset="1" stop-color="#1A120E" stop-opacity="0"/></linearGradient>
+<linearGradient id="g05-botdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A120E" stop-opacity="0"/><stop offset="1" stop-color="#1A120E" stop-opacity=".6"/></linearGradient>
+<linearGradient id="g05-sideL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1E1610" stop-opacity=".3"/><stop offset="1" stop-color="#1E1610" stop-opacity="0"/></linearGradient>
+<linearGradient id="g05-sideR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#1E1610" stop-opacity=".3"/><stop offset="1" stop-color="#1E1610" stop-opacity="0"/></linearGradient>
+<filter id="g05-b1" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.2"/></filter>
+<filter id="g05-b3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.5"/></filter>
+<filter id="g05-b6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+<clipPath id="g05-ceilclip"><path clip-rule="evenodd" d="M0 0 H390 V232 H0 Z M96 214 L 104 172 L 92 150 L 110 120 L 104 92 L 132 76 L 150 84 L 176 62 L 204 72 L 226 58 L 252 78 L 276 72 L 288 102 L 304 120 L 296 150 L 312 176 L 300 214 Z"/></clipPath>
+<path id="g05-leaf" d="M0 0 C 2 -3 6 -3 6 0 C 6 3 3 5 0 7 C -3 5 -6 3 -6 0 C -6 -3 -2 -3 0 0 Z"/>
+<g id="g05-vine"><path d="M0 0 C 3 14 -3 28 1 42 C 4 54 -2 64 0 76" fill="none" stroke="#4A5A2E" stroke-width="1.1" stroke-linecap="round"/>
+<g fill="currentColor"><use xlink:href="#g05-leaf" transform="translate(1 8) rotate(-40) scale(.8)"/><use xlink:href="#g05-leaf" transform="translate(0 18) rotate(50) scale(.9)"/><use xlink:href="#g05-leaf" transform="translate(-1 28) rotate(-30)"/><use xlink:href="#g05-leaf" transform="translate(1 38) rotate(40) scale(.85)"/><use xlink:href="#g05-leaf" transform="translate(2 48) rotate(-50) scale(.9)"/><use xlink:href="#g05-leaf" transform="translate(-1 58) rotate(30) scale(.75)"/><use xlink:href="#g05-leaf" transform="translate(0 68) rotate(-20) scale(.7)"/><use xlink:href="#g05-leaf" transform="translate(0 76) scale(.6)"/></g>
+<g fill="#E8F0A0" opacity=".35"><use xlink:href="#g05-leaf" transform="translate(0 18) rotate(50) scale(.5)"/><use xlink:href="#g05-leaf" transform="translate(1 38) rotate(40) scale(.45)"/><use xlink:href="#g05-leaf" transform="translate(-1 58) rotate(30) scale(.4)"/></g></g>
+<g id="g05-tile"><path d="M-8 0 C -8 -6 8 -6 8 0 L 7 3 C 5 -1 -5 -1 -7 3 Z" fill="#6E6A66"/><path d="M-6 -2.6 C -3 -4.4 3 -4.4 6 -2.6" fill="none" stroke="#B4AEA4" stroke-width=".9"/></g>
+<g id="g05-rub"><path d="M-6 2 L -5 -3 L 0 -5 L 5 -3 L 6 2 L 1 4 Z" fill="#8E806C"/><path d="M-5 -3 L 0 -5 L 5 -3 L 0 -1 Z" fill="#C8BA9C"/></g>
+<g id="g05-mote"><circle r="2.4" fill="#FFE6A0" opacity=".3"/><circle r=".9" fill="#FFF6D0"/></g>
+<g id="g05-tuft" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M0 0 C -2 -6 -5 -10 -10 -14"/><path d="M0 0 C -1 -8 -1 -13 -2 -19"/><path d="M0 0 C 2 -6 5 -11 9 -15"/><path d="M0 0 C 4 -3 8 -5 13 -6"/></g>
+<g id="g05-bracket"><path d="M-14 0 H14 V4 H-14 Z M-10 4 H10 L 8 9 H -8 Z M-20 -6 H20 V0 H-20 Z M-4 9 H4 V16 H-4 Z" fill="#5A3E2C"/><path d="M-20 -6 H20 M-14 0 H14" stroke="#B48A5C" stroke-width=".8" opacity=".7"/></g>
+<g id="g05-tri"><rect x="-6" y="-3.4" width="12" height="1.3"/><rect x="-6" y="-0.6" width="5" height="1.3"/><rect x="1" y="-0.6" width="5" height="1.3"/><rect x="-6" y="2.2" width="12" height="1.3"/></g>
+</defs>
+
+<!-- SKY (seen through the broken roof and walls) -->
+<rect width="390" height="844" fill="url(#g05-sky)"/>
+<circle cx="170" cy="320" r="220" fill="url(#g05-sun)"/>
+<g fill="#FFFFFF" opacity=".55" filter="url(#g05-b3)"><ellipse cx="150" cy="120" rx="60" ry="10"/><ellipse cx="250" cy="96" rx="50" ry="8"/><ellipse cx="200" cy="180" rx="70" ry="9"/></g>
+
+<!-- FAR MOUNTAINS (through the collapsed back wall) -->
+<path d="M100 360 C 120 340 140 312 160 300 C 172 294 180 300 190 310 C 200 300 214 286 228 290 C 246 296 262 320 290 340 L 290 420 L 100 420 Z" fill="url(#g05-far)"/>
+<rect x="90" y="330" width="210" height="50" fill="url(#g05-mist)"/>
+<path d="M100 392 C 130 378 160 384 190 376 C 220 368 250 380 290 372 L 290 440 L 100 440 Z" fill="url(#g05-far2)"/>
+<g fill="#9A8A70" opacity=".7"><path d="M150 384 l3 -10 l3 10 Z"/><path d="M160 382 l2.5 -8 l2.5 8 Z"/><path d="M236 376 l3 -9 l3 9 Z"/><path d="M200 380 l1 -12 l1.6 -2 l1.6 2 l1 12 Z"/></g>
+<rect x="90" y="380" width="210" height="60" fill="url(#g05-mist)" opacity=".7"/>
+
+<!-- BACK WALL with collapsed centre -->
+<path fill-rule="evenodd" d="M0 228 H390 V474 H0 Z M118 474 L 116 440 L 124 410 L 118 380 L 128 350 L 122 318 L 134 290 L 130 262 L 150 248 L 176 254 L 196 244 L 222 252 L 246 246 L 262 262 L 268 292 L 276 322 L 270 352 L 280 384 L 274 414 L 284 446 L 282 474 Z" fill="url(#g05-wall)"/>
+<g fill="none" stroke="#6E604E" stroke-width=".9" opacity=".55">
+<path d="M0 252 H124 M0 278 H130 M0 304 H124 M0 330 H124 M0 356 H122 M0 382 H120 M0 408 H120 M0 434 H118 M0 458 H118"/>
+<path d="M262 260 H390 M268 286 H390 M272 312 H390 M272 338 H390 M276 364 H390 M276 390 H390 M276 416 H390 M282 442 H390 M282 462 H390"/>
+<path d="M20 228 V252 M60 252 V278 M30 278 V304 M80 304 V330 M14 330 V356 M54 356 V382 M100 356 V382 M34 382 V408 M74 408 V434 M20 434 V458 M96 434 V458"/>
+<path d="M300 260 V286 M340 260 V286 M290 286 V312 M370 286 V312 M318 312 V338 M354 338 V364 M300 364 V390 M330 390 V416 M372 390 V416 M310 416 V442 M350 442 V462"/>
+</g>
+<g fill="none" stroke="#E2D2B2" stroke-width=".8" opacity=".35"><path d="M0 254 H124 M0 306 H124 M0 358 H122 M0 410 H120"/><path d="M262 262 H390 M272 314 H390 M276 366 H390 M276 418 H390"/></g>
+<!-- broken edge highlight + cracks -->
+<path d="M118 474 L 116 440 L 124 410 L 118 380 L 128 350 L 122 318 L 134 290 L 130 262 L 150 248 L 176 254 L 196 244 L 222 252 L 246 246 L 262 262 L 268 292 L 276 322 L 270 352 L 280 384 L 274 414 L 284 446 L 282 474" fill="none" stroke="#FFF0C8" stroke-width="1.4" opacity=".6"/>
+<g fill="none" stroke="#4E4234" stroke-width=".9" opacity=".6"><path d="M128 350 L 104 344 L 96 360"/><path d="M134 290 L 110 296"/><path d="M276 322 L 300 330 L 306 346"/><path d="M262 262 L 286 270"/></g>
+<!-- rubble pile in the breach -->
+<path d="M110 474 C 120 450 140 436 160 440 C 180 432 210 434 232 440 C 254 436 272 450 290 474 Z" fill="#9A8A70"/>
+<g transform="translate(0 0)"><use xlink:href="#g05-rub" transform="translate(140 452) scale(1.6)"/><use xlink:href="#g05-rub" transform="translate(176 444) scale(1.3)"/><use xlink:href="#g05-rub" transform="translate(214 446) scale(1.7)"/><use xlink:href="#g05-rub" transform="translate(252 456) scale(1.4)"/><use xlink:href="#g05-rub" transform="translate(194 460) scale(1.2)"/></g>
+<!-- moss on wall foot -->
+<g fill="#7C8E4A" opacity=".55"><path d="M0 474 C 20 462 40 466 60 470 C 70 472 80 468 96 474 Z"/><path d="M300 474 C 320 464 344 466 360 470 C 372 466 384 468 390 472 L390 474 Z"/></g>
+
+<!-- HALOED SAGE STATUE (left) -->
+<g>
+<circle cx="116" cy="262" r="27" fill="#857862"/>
+<circle cx="116" cy="262" r="27" fill="none" stroke="#E6DAC0" stroke-width="1.4" opacity=".7"/>
+<circle cx="116" cy="262" r="21" fill="none" stroke="#7A6C58" stroke-width="1" opacity=".7"/>
+<g stroke="#7A6C58" stroke-width=".8" opacity=".5"><path d="M116 235 V241 M89 262 H95 M137 262 H143 M97 243 L101 247 M135 243 L131 247"/></g>
+<path d="M104 268 L 90 247" stroke="#5E5040" stroke-width="1" opacity=".6"/>
+<!-- body -->
+<path d="M70 474 C 66 452 74 432 86 424 C 88 390 88 350 94 320 C 98 302 106 292 116 290 C 126 292 134 302 138 320 C 144 350 144 390 146 424 C 158 432 166 452 162 474 Z" fill="url(#g05-statue)"/>
+<path d="M70 474 C 66 452 74 432 86 424 C 100 432 132 432 146 424 C 158 432 166 452 162 474 Z" fill="#000" opacity=".12"/>
+<path d="M86 428 C 100 438 132 438 146 428" fill="none" stroke="#3E362E" stroke-width="1.2" opacity=".6"/>
+<ellipse cx="116" cy="412" rx="15" ry="7" fill="#8A7E6A"/><path d="M103 410 C 108 406 124 406 129 410" fill="none" stroke="#C8BCA2" stroke-width="1" opacity=".7"/>
+<path d="M96 340 C 100 370 104 396 104 410 M136 340 C 132 370 128 396 128 410" fill="none" stroke="#3E362E" stroke-width="1" opacity=".5"/>
+<path d="M120 330 L 128 350 L 122 368 L 132 384" fill="none" stroke="#3A322A" stroke-width="1" opacity=".6"/>
+<path d="M92 320 C 100 340 104 380 102 420" fill="none" stroke="#6E6252" stroke-width="1" opacity=".5"/>
+<path d="M140 320 C 132 344 128 380 130 420" fill="none" stroke="#6E6252" stroke-width="1" opacity=".5"/>
+<path d="M100 300 C 108 312 124 312 132 300" fill="none" stroke="#6E6252" stroke-width="1" opacity=".6"/>
+<!-- head -->
+<path d="M105 270 C 104 258 108 250 116 249 C 124 250 128 258 127 270 C 126 280 122 286 116 287 C 110 286 106 280 105 270 Z" fill="url(#g05-statue)"/>
+<path d="M110 250 C 110 242 114 238 116 238 C 118 238 122 242 122 250 Z" fill="#8A7E6A"/>
+<path d="M104 268 C 101 270 101 276 104 279 M128 268 C 131 270 131 276 128 279" fill="none" stroke="#6E6252" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M127 262 L 122 268 L 126 274 L 121 280 L 124 286 L 127 270 Z" fill="#6E6252"/>
+<g fill="none" stroke="#5E5242" stroke-width=".9" stroke-linecap="round"><path d="M109 268 C 111 267 113 267 114 268"/><path d="M111 279 C 113 280 115 280 117 279"/></g>
+<path d="M107 262 C 107 254 110 251 114 250" fill="none" stroke="#EDE2C8" stroke-width="1.2" opacity=".7"/>
+<path d="M95 304 C 90 340 89 390 88 424 C 80 432 72 448 71 470" fill="none" stroke="#F2E2BE" stroke-width="1.4" opacity=".55"/>
+<!-- moss on statue -->
+<g fill="#86984E" opacity=".75"><path d="M98 296 C 104 290 112 292 118 294 C 112 298 104 300 98 296 Z"/><path d="M110 246 C 114 242 120 244 122 248 C 118 249 114 249 110 246 Z"/><path d="M84 470 C 86 450 92 444 100 452 C 98 462 94 468 84 470 Z"/></g>
+<path d="M140 300 C 146 296 152 302 150 312" fill="none" stroke="#5E5040" stroke-width="1" opacity=".6"/>
+</g>
+
+<!-- BROKEN PILLAR (right) -->
+<path d="M258 474 L 258 252 L 264 246 L 268 254 L 274 240 L 280 250 L 284 244 L 284 474 Z" fill="url(#g05-pillar)"/>
+<g fill="#8A7E70" opacity=".8"><path d="M266 300 L 274 296 L 276 320 L 268 326 Z"/><path d="M260 380 L 270 376 L 272 400 L 262 404 Z"/></g>
+<path d="M259 254 V474" stroke="#E8A882" stroke-width="1.2" opacity=".6"/>
+<path d="M258 252 L 264 246 L 268 254 L 274 240 L 280 250 L 284 244" fill="none" stroke="#D8C4A4" stroke-width="1" opacity=".8"/>
+<g color="#5E7A36"><use xlink:href="#g05-vine" transform="translate(270 250) scale(1 1.6)"/><use xlink:href="#g05-vine" transform="translate(262 300) scale(.9 1.3)"/></g>
+
+<!-- CEILING with hole -->
+<g clip-path="url(#g05-ceilclip)">
+<rect x="0" y="0" width="390" height="232" fill="url(#g05-ceil)"/>
+<g stroke="#2A1C16" stroke-width="5" opacity=".9"><path d="M-160 0 L 195 330 M-80 0 L 195 330 M-10 0 L 195 330 M50 0 L 195 330 M100 0 L 195 330 M150 0 L 195 330 M195 0 V330 M240 0 L 195 330 M290 0 L 195 330 M340 0 L 195 330 M400 0 L 195 330 M470 0 L 195 330 M550 0 L 195 330"/></g>
+<g stroke="#7A5A40" stroke-width="1.2" opacity=".6"><path d="M-157 0 L 197 330 M-77 0 L 197 330 M-7 0 L 197 330 M53 0 L 197 330 M103 0 L 197 330 M153 0 L 197 330 M198 0 V330 M243 0 L 197 330 M293 0 L 197 330 M343 0 L 197 330 M403 0 L 197 330 M473 0 L 197 330 M553 0 L 197 330"/></g>
+<g fill="#3A2820"><rect x="0" y="40" width="390" height="7"/><rect x="0" y="96" width="390" height="8"/><rect x="0" y="150" width="390" height="9"/><rect x="0" y="196" width="390" height="10"/></g>
+<g fill="#9A7650" opacity=".55"><rect x="0" y="40" width="390" height="1.4"/><rect x="0" y="96" width="390" height="1.4"/><rect x="0" y="150" width="390" height="1.6"/><rect x="0" y="196" width="390" height="1.8"/></g>
+</g>
+<path d="M96 214 L 104 172 L 92 150 L 110 120 L 104 92 L 132 76 L 150 84 L 176 62 L 204 72 L 226 58 L 252 78 L 276 72 L 288 102 L 304 120 L 296 150 L 312 176 L 300 214" fill="none" stroke="#FFE6B0" stroke-width="1.6" opacity=".55"/>
+<!-- broken rafters crossing the hole -->
+<g stroke-linecap="round">
+<path d="M104 160 L 150 196" stroke="#3A2820" stroke-width="5"/><path d="M104 158 L 150 194" stroke="#9A7650" stroke-width="1.2" opacity=".7"/>
+<path d="M300 140 L 262 186" stroke="#3A2820" stroke-width="5"/><path d="M299 138 L 261 184" stroke="#9A7650" stroke-width="1.2" opacity=".7"/>
+<path d="M296 196 L 250 200" stroke="#3A2820" stroke-width="4"/>
+</g>
+<!-- edge tiles hanging over the hole -->
+<g><use xlink:href="#g05-tile" transform="translate(106 176) rotate(20)"/><use xlink:href="#g05-tile" transform="translate(100 196) rotate(-10)"/><use xlink:href="#g05-tile" transform="translate(296 168) rotate(-25)"/><use xlink:href="#g05-tile" transform="translate(304 192) rotate(10)"/><use xlink:href="#g05-tile" transform="translate(150 86) rotate(15)"/><use xlink:href="#g05-tile" transform="translate(250 82) rotate(-15)"/></g>
+
+<!-- MAIN TIE-BEAM (left intact, right half sagging & broken) -->
+<path d="M0 212 H170 L 176 218 L 168 222 L 174 228 L 166 234 H0 Z" fill="url(#g05-beam)"/>
+<path d="M0 213 H168" stroke="#D8AE7C" stroke-width="1.4" opacity=".7"/>
+<g stroke="#2A1A14" stroke-width=".8" opacity=".5"><path d="M10 224 C 50 222 100 226 150 223"/><path d="M20 230 C 70 228 110 231 160 229"/></g>
+<path d="M390 210 L 390 232 L 246 280 L 238 274 L 244 268 L 234 262 L 242 254 Z" fill="url(#g05-beam)"/>
+<path d="M390 211 L 243 255" stroke="#D8AE7C" stroke-width="1.4" opacity=".7"/>
+<g stroke="#2A1A14" stroke-width=".8" opacity=".5"><path d="M380 220 C 340 232 300 246 256 262"/><path d="M384 226 C 340 240 300 254 252 270"/></g>
+<!-- vines from beams and hole -->
+<g color="#6E8A3E"><use xlink:href="#g05-vine" transform="translate(150 230) scale(.9 .6)"/><use xlink:href="#g05-vine" transform="translate(84 232) scale(1 .8)"/><use xlink:href="#g05-vine" transform="translate(242 268) scale(.9 .7)"/><use xlink:href="#g05-vine" transform="translate(290 254) scale(1 .9)"/><use xlink:href="#g05-vine" transform="translate(128 196) scale(.8 .5)"/><use xlink:href="#g05-vine" transform="translate(278 194) scale(.8 .55)"/></g>
+<g fill="#7C9A44" opacity=".85"><path d="M40 212 C 50 206 66 206 76 212 Z"/><path d="M120 212 C 128 207 140 208 148 212 Z"/><path d="M330 222 C 340 214 352 212 362 216 Z"/></g>
+
+<!-- TATTERED BANNER (right) -->
+<path d="M302 236 L 330 228 L 332 300 L 326 296 L 322 310 L 316 300 L 310 314 L 306 302 Z" fill="url(#g05-cloth)"/>
+<path d="M304 240 L 330 232" stroke="#6A4E28" stroke-width="2"/>
+<g fill="none" stroke="#8A6A36" stroke-width=".8" opacity=".6"><path d="M310 244 L 312 300"/><path d="M322 240 L 324 296"/></g>
+<circle cx="317" cy="262" r="7" fill="none" stroke="#7A2A1A" stroke-width="1.4" opacity=".55"/>
+
+<!-- SIDE PILLARS WITH BRACKETS (back) -->
+<rect x="38" y="232" width="24" height="242" fill="url(#g05-pillar)"/>
+<path d="M39 232 V474" stroke="#E8A882" stroke-width="1" opacity=".5"/>
+<g fill="#8E8070" opacity=".7"><path d="M44 300 L 56 296 L 58 330 L 46 336 Z"/><path d="M40 400 L 52 396 L 54 420 L 42 426 Z"/></g>
+<use xlink:href="#g05-bracket" transform="translate(50 216)"/>
+<rect x="328" y="232" width="24" height="242" fill="url(#g05-pillar)"/>
+<path d="M329 232 V474" stroke="#E8A882" stroke-width="1" opacity=".5"/>
+<g fill="#8E8070" opacity=".7"><path d="M334 340 L 346 336 L 348 364 L 336 370 Z"/></g>
+<use xlink:href="#g05-bracket" transform="translate(340 216)"/>
+<g fill="#B8AA8C"><rect x="34" y="466" width="32" height="10"/><rect x="324" y="466" width="32" height="10"/></g>
+
+<!-- LIGHT SHAFTS -->
+<g fill="url(#g05-shaft)" filter="url(#g05-b3)">
+<path d="M120 110 L 170 100 L 300 600 L 210 600 Z" opacity=".8"/><path d="M186 90 L 222 86 L 352 560 L 300 560 Z" opacity=".6"/><path d="M240 100 L 262 100 L 380 470 L 352 470 Z" opacity=".45"/>
+</g>
+
+<!-- FLOOR -->
+<path d="M0 474 H390 V844 H0 Z" fill="url(#g05-floor)"/>
+<g fill="none" stroke="#5E5040" stroke-width=".9" opacity=".55">
+<path d="M0 484 H390 M0 498 H390 M0 516 H390 M0 540 H390 M0 570 H390 M0 608 H390 M0 656 H390 M0 716 H390 M0 790 H390"/>
+<path d="M195 474 V844 M150 474 L 116 844 M240 474 L 274 844 M105 474 L 30 844 M285 474 L 360 844 M60 474 L -60 844 M330 474 L 450 844 M20 474 L -150 844 M370 474 L 540 844"/>
+</g>
+<g fill="none" stroke="#E6D6B4" stroke-width=".8" opacity=".3"><path d="M0 485 H390 M0 517 H390 M0 571 H390 M0 657 H390"/></g>
+<!-- cracks + missing slabs -->
+<g fill="none" stroke="#3E3428" stroke-width="1" stroke-linecap="round" opacity=".7"><path d="M30 520 L 48 530 L 44 548 L 60 560"/><path d="M350 500 L 340 516 L 352 530"/><path d="M90 600 L 110 616 L 104 640"/><path d="M300 590 L 316 604 L 310 628 L 326 646"/><path d="M60 680 L 80 700 L 74 730"/></g>
+<path d="M14 584 L 70 580 L 62 606 L 4 612 Z" fill="#4E4434"/><path d="M14 584 L 70 580 L 68 586 L 13 590 Z" fill="#2E281E"/>
+<g color="#6E8A3E"><use xlink:href="#g05-tuft" transform="translate(26 606)"/><use xlink:href="#g05-tuft" transform="translate(44 604) scale(.8)"/><use xlink:href="#g05-tuft" transform="translate(58 604) scale(.7)"/></g>
+<g fill="#7C8E4A" opacity=".5"><ellipse cx="80" cy="500" rx="22" ry="3"/><ellipse cx="320" cy="508" rx="26" ry="3"/><ellipse cx="350" cy="560" rx="20" ry="3.4"/><ellipse cx="40" cy="660" rx="30" ry="5"/><ellipse cx="350" cy="680" rx="30" ry="5"/></g>
+<!-- sun pools on the floor -->
+<g fill="#FFF0C4" opacity=".35" filter="url(#g05-b3)"><path d="M210 590 L 300 590 L 320 640 L 220 640 Z"/><path d="M300 540 L 352 540 L 366 570 L 308 570 Z"/></g>
+<rect x="0" y="440" width="390" height="70" fill="url(#g05-mist)" opacity=".55"/>
+<circle cx="195" cy="400" r="170" fill="url(#g05-aura)"/>
+
+<!-- BAGUA DAIS (hero seat) -->
+<ellipse cx="196" cy="566" rx="132" ry="14" fill="#2E241C" opacity=".45" filter="url(#g05-b6)"/>
+<path d="M77 532 L 78 546 C 100 562 150 568 195 568 C 240 568 290 562 312 546 L 313 532 Z" fill="url(#g05-dais)"/>
+<g stroke="#3E3428" stroke-width=".9" opacity=".6"><path d="M110 553 V565"/><path d="M152 560 V568"/><path d="M238 560 V568"/><path d="M280 553 V565"/></g>
+<ellipse cx="195" cy="532" rx="118" ry="22" fill="url(#g05-daistop)"/>
+<ellipse cx="195" cy="532" rx="118" ry="22" fill="none" stroke="#FFF4D8" stroke-width="1" opacity=".55"/>
+<ellipse cx="195" cy="532" rx="108" ry="19.5" fill="none" stroke="#8A7A60" stroke-width="1.2" opacity=".6"/>
+<ellipse cx="195" cy="532" rx="80" ry="14" fill="none" stroke="#8A7A60" stroke-width="1.2" opacity=".6"/>
+<g fill="#7A6A52" opacity=".55">
+<use xlink:href="#g05-tri" transform="translate(289 532) scale(.8 .9)"/><use xlink:href="#g05-tri" transform="translate(261 544) scale(.8 .9)"/><use xlink:href="#g05-tri" transform="translate(195 549) scale(.8 .9)"/><use xlink:href="#g05-tri" transform="translate(129 544) scale(.8 .9)"/><use xlink:href="#g05-tri" transform="translate(101 532) scale(.8 .9)"/><use xlink:href="#g05-tri" transform="translate(129 520) scale(.8 .9)"/><use xlink:href="#g05-tri" transform="translate(195 515) scale(.8 .9)"/><use xlink:href="#g05-tri" transform="translate(261 520) scale(.8 .9)"/>
+</g>
+<g fill="none" stroke="#5E5040" stroke-width="1" opacity=".55"><path d="M240 516 L 252 526 L 248 540 L 262 550"/><path d="M128 540 L 116 548"/></g>
+<g fill="#86984E" opacity=".7"><path d="M78 534 C 86 528 100 530 108 538 C 100 544 86 544 78 540 Z"/><path d="M296 540 C 304 534 312 534 313 538 C 310 546 300 548 296 540 Z"/></g>
+
+<!-- FOREGROUND LEFT: fallen column drums -->
+<g>
+<ellipse cx="60" cy="634" rx="70" ry="8" fill="#2E241C" opacity=".4" filter="url(#g05-b3)"/>
+<path d="M-6 586 L 96 594 L 96 630 L -6 628 Z" fill="url(#g05-stone)"/>
+<g stroke="#6E6252" stroke-width="1" opacity=".55"><path d="M-6 596 L 96 602"/><path d="M-6 606 L 96 610"/><path d="M-6 616 L 96 619"/></g>
+<path d="M-6 587 L 96 595" stroke="#F2E6C8" stroke-width="1.2" opacity=".7"/>
+<ellipse cx="96" cy="612" rx="10" ry="18" fill="#BCAE92"/>
+<ellipse cx="96" cy="612" rx="6" ry="11" fill="none" stroke="#8A7C66" stroke-width="1"/>
+<path d="M92 598 L 98 610 L 94 622" fill="none" stroke="#6E6252" stroke-width=".9"/>
+<!-- upright stump -->
+<path d="M110 640 L 110 596 L 116 590 L 122 598 L 128 588 L 136 596 L 138 640 Z" fill="url(#g05-stone)"/>
+<path d="M110 596 L 116 590 L 122 598 L 128 588 L 136 596" fill="none" stroke="#F2E6C8" stroke-width="1" opacity=".8"/>
+<g stroke="#6E6252" stroke-width=".9" opacity=".6"><path d="M116 600 V638"/><path d="M124 602 V638"/><path d="M131 600 V638"/></g>
+<g fill="#86984E" opacity=".8"><path d="M-6 588 C 10 580 30 582 40 590 C 26 594 10 594 -6 592 Z"/><path d="M108 640 C 112 630 122 628 130 636 C 124 642 116 642 108 640 Z"/></g>
+<g color="#5E7A36"><use xlink:href="#g05-vine" transform="translate(20 590) scale(.7 .5)"/><use xlink:href="#g05-tuft" transform="translate(104 640)"/><use xlink:href="#g05-tuft" transform="translate(140 640) scale(.8)"/></g>
+</g>
+
+<!-- FOREGROUND RIGHT: tiles, toppled censer, ridge beast -->
+<g>
+<ellipse cx="320" cy="628" rx="70" ry="8" fill="#2E241C" opacity=".4" filter="url(#g05-b3)"/>
+<!-- censer (ding) on its side -->
+<g transform="translate(292 600) rotate(-18)">
+<path d="M-18 -12 C -20 4 -14 16 0 18 C 14 16 20 4 18 -12 Z" fill="url(#g05-bronze)"/>
+<ellipse cx="0" cy="-12" rx="18" ry="5" fill="#4A503C"/><ellipse cx="0" cy="-12" rx="14" ry="3.4" fill="#2E3026"/>
+<path d="M-18 -10 C -24 -14 -24 -6 -18 -4" fill="none" stroke="#6A7254" stroke-width="2.4"/><path d="M18 -10 C 24 -14 24 -6 18 -4" fill="none" stroke="#6A7254" stroke-width="2.4"/>
+<path d="M-8 18 L -10 26 M8 18 L 10 26" stroke="#4A503C" stroke-width="3" stroke-linecap="round"/>
+<path d="M-14 -4 C -12 6 -6 12 0 13" fill="none" stroke="#C8D0A0" stroke-width="1" opacity=".6"/>
+<path d="M-12 2 H12" stroke="#3E4434" stroke-width=".8" opacity=".6"/>
+<g fill="#7FA890" opacity=".6"><circle cx="-6" cy="6" r="2"/><circle cx="8" cy="-2" r="1.6"/></g>
+</g>
+<path d="M270 612 C 260 616 250 620 248 626 C 262 628 276 624 284 616 Z" fill="#B8AEA0" opacity=".8"/>
+<!-- ridge-end beast ornament -->
+<g transform="translate(346 606) rotate(-28)">
+<path d="M-16 20 L -14 0 C -14 -10 -6 -18 4 -18 C 10 -22 16 -20 16 -14 C 12 -12 10 -10 12 -6 L 18 -8 L 16 0 C 16 10 12 18 10 20 Z" fill="#6E6A66"/>
+<path d="M-14 0 C -14 -10 -6 -18 4 -18 C 10 -22 16 -20 16 -14" fill="none" stroke="#B4AEA4" stroke-width="1.2"/>
+<circle cx="6" cy="-10" r="1.4" fill="#2A2420"/>
+<path d="M-12 4 C -6 2 0 4 4 8 M-12 12 C -6 10 0 12 6 16" fill="none" stroke="#4A4642" stroke-width=".9"/>
+<path d="M-16 20 L 10 20" stroke="#3E3A36" stroke-width="1.2"/>
+</g>
+<!-- scattered roof tiles -->
+<g><use xlink:href="#g05-tile" transform="translate(262 640) scale(1.4)"/><use xlink:href="#g05-tile" transform="translate(286 632) rotate(30) scale(1.3)"/><use xlink:href="#g05-tile" transform="translate(318 636) rotate(-10) scale(1.5)"/><use xlink:href="#g05-tile" transform="translate(372 628) rotate(170) scale(1.4)"/><use xlink:href="#g05-tile" transform="translate(338 644) rotate(15) scale(1.3)"/><use xlink:href="#g05-tile" transform="translate(380 650) rotate(-25) scale(1.2)"/></g>
+<g><use xlink:href="#g05-rub" transform="translate(252 620) scale(1.2)"/><use xlink:href="#g05-rub" transform="translate(370 610)"/><use xlink:href="#g05-rub" transform="translate(60 650) scale(1.3)"/><use xlink:href="#g05-rub" transform="translate(150 650)"/></g>
+<g color="#5E7A36"><use xlink:href="#g05-tuft" transform="translate(256 624)"/><use xlink:href="#g05-tuft" transform="translate(366 616) scale(.9)"/></g>
+</g>
+
+<!-- LOWER FOREGROUND (under the UI): rubble, tiles, weeds -->
+<g><use xlink:href="#g05-tile" transform="translate(40 720) scale(1.6) rotate(20)"/><use xlink:href="#g05-tile" transform="translate(340 760) scale(1.8) rotate(-20)"/><use xlink:href="#g05-rub" transform="translate(20 780) scale(2)"/><use xlink:href="#g05-rub" transform="translate(370 700) scale(1.8)"/><use xlink:href="#g05-rub" transform="translate(196 800) scale(1.5)"/></g>
+<g color="#4E6A30"><use xlink:href="#g05-tuft" transform="translate(12 700) scale(1.3)"/><use xlink:href="#g05-tuft" transform="translate(380 740) scale(1.3)"/><use xlink:href="#g05-tuft" transform="translate(120 760) scale(1.1)"/></g>
+
+<!-- GOLDEN DUST MOTES -->
+<g>
+<use xlink:href="#g05-mote" x="150" y="180"/><use xlink:href="#g05-mote" x="170" y="140"/><use xlink:href="#g05-mote" x="214" y="186"/><use xlink:href="#g05-mote" x="96" y="240"/><use xlink:href="#g05-mote" x="140" y="290"/><use xlink:href="#g05-mote" x="252" y="230"/><use xlink:href="#g05-mote" x="280" y="300"/><use xlink:href="#g05-mote" x="300" y="392"/><use xlink:href="#g05-mote" x="104" y="400"/><use xlink:href="#g05-mote" x="88" y="500"/><use xlink:href="#g05-mote" x="306" y="476"/><use xlink:href="#g05-mote" x="272" y="560"/><use xlink:href="#g05-mote" x="320" y="520"/><use xlink:href="#g05-mote" x="236" y="590"/><use xlink:href="#g05-mote" x="60" y="560"/><use xlink:href="#g05-mote" x="190" y="120"/><use xlink:href="#g05-mote" x="230" y="160"/><use xlink:href="#g05-mote" x="126" y="210"/><use xlink:href="#g05-mote" x="294" y="250"/>
+</g>
+
+<!-- NEAR FRAMING PILLARS -->
+<rect x="-4" y="0" width="26" height="660" fill="url(#g05-npillar)"/>
+<path d="M21 0 V660" stroke="#B87A52" stroke-width="1" opacity=".4"/>
+<rect x="368" y="0" width="26" height="660" fill="url(#g05-npillar)"/>
+<path d="M369 0 V660" stroke="#C48A5E" stroke-width="1.2" opacity=".45"/>
+<g fill="#3A2A1E"><rect x="-6" y="640" width="32" height="24"/><rect x="364" y="640" width="32" height="24"/></g>
+<g fill="#4E6A30" opacity=".7"><path d="M22 300 C 26 320 24 340 20 360 C 18 340 18 320 22 300 Z"/><path d="M368 420 C 364 440 366 460 370 476 C 372 460 372 440 368 420 Z"/></g>
+
+<!-- UI-ZONE TONING -->
+<rect x="0" y="0" width="390" height="150" fill="url(#g05-topdark)"/>
+<rect x="0" y="80" width="96" height="480" fill="url(#g05-sideL)"/>
+<rect x="294" y="80" width="96" height="480" fill="url(#g05-sideR)"/>
+<rect x="0" y="590" width="390" height="254" fill="url(#g05-botdark)"/>
+</svg>

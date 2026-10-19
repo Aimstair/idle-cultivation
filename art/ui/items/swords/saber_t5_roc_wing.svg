@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="saber_t5_roc_wing-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF8D8"/>
+      <stop offset=".42" stop-color="#FFD45A"/>
+      <stop offset=".58" stop-color="#E0A030"/>
+      <stop offset="1" stop-color="#8A5810"/>
+    </linearGradient>
+    <linearGradient id="saber_t5_roc_wing-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".72" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="saber_t5_roc_wing-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".5" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <radialGradient id="saber_t5_roc_wing-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="26" ry="4.6" fill="url(#saber_t5_roc_wing-shadow)" transform="translate(35.5 34.5) rotate(-45)"/>
+
+  <!-- saber: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal -->
+  <g transform="translate(34.5 31.5) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="none" stroke="#FFE7A0" stroke-width="5" opacity=".4"/>
+    <!-- curved single-edged blade -->
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="url(#saber_t5_roc_wing-blade)" stroke-width="2.4"/>
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="#B07A20" stroke-width="1.1" opacity=".85"/>
+    <path d="M-3.4 -23.5C-2.4 -16 -1.5 -4 -1.4 11" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".85"/>
+    <!-- feather barbs along the rachis -->
+    <path d="M-.4 -21L3.2 -19.6M-.6 -16L3.4 -14.4M-.8 -11L3.4 -9.4M-1 -6L3.2 -4.4M-1.1 -1L3 .6M-1.2 4L2.8 5.6" fill="none" stroke="#9A5E14" stroke-width="1" opacity=".8"/>
+    <!-- feather guard: two gold pinions sweeping back from the disc -->
+    <path d="M-4.8 14.2C-9.8 14 -13.2 11.6 -14 7.2L-11.6 8.8L-11.8 5.4L-9.6 7.8L-9 4.6L-7.2 7.6L-6 5.2C-4.8 8 -4.4 11 -4.8 14.2Z" fill="url(#saber_t5_roc_wing-gold)" stroke-width="1.9"/>
+    <path d="M4.8 14.2C9.8 14 13.2 11.6 14 7.2L11.6 8.8L11.8 5.4L9.6 7.8L9 4.6L7.2 7.6L6 5.2C4.8 8 4.4 11 4.8 14.2Z" fill="url(#saber_t5_roc_wing-gold)" stroke-width="1.9"/>
+    <path d="M-6.4 12.6L-10.6 9.4M-6 11L-8.4 8.2" fill="none" stroke="#9A5E14" stroke-width=".9" opacity=".8"/>
+    <path d="M6.4 12.6L10.6 9.4M6 11L8.4 8.2" fill="none" stroke="#9A5E14" stroke-width=".9" opacity=".8"/>
+    <path d="M-12.2 8.6C-10.6 10.4 -8.8 11.6 -7 12.4" fill="none" stroke="#FFF6C8" stroke-width=".9" opacity=".9"/>
+    <!-- disc guard -->
+    <ellipse cx="0" cy="14.4" rx="6" ry="2.1" fill="url(#saber_t5_roc_wing-gold)" stroke-width="2"/>
+    <!-- wrapped handle -->
+    <rect x="-2.3" y="16.4" width="4.6" height="10.2" rx="1" fill="url(#saber_t5_roc_wing-grip)" stroke-width="2.1"/>
+    <path d="M-2.3 19.4H2.3M-2.3 23.4H2.3" fill="none" stroke="#FFD45A" stroke-width="1"/>
+    <path d="M-1.4 17.4V18.4" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".8"/>
+    <!-- ring pommel -->
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke-width="3.8"/>
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke="url(#saber_t5_roc_wing-gold)" stroke-width="1.7"/>
+    <path d="M-2.4 28.2A3 3 0 0 1 -.6 27" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".9"/>
+  </g>
+</svg>

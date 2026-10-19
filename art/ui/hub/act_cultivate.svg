@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="368" height="368" viewBox="0 0 92 92">
+  <defs>
+    <radialGradient id="cultivate-glow" gradientUnits="userSpaceOnUse" cx="46" cy="48" r="40">
+      <stop offset="0" stop-color="#FFE4EE" stop-opacity=".6"/>
+      <stop offset=".5" stop-color="#FFC4D8" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#FFC4D8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cultivate-pad" cx=".3" cy=".22" r=".9">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".45" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <linearGradient id="cultivate-petalBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE2EC"/>
+      <stop offset=".5" stop-color="#F49CBA"/>
+      <stop offset="1" stop-color="#C84A6E"/>
+    </linearGradient>
+    <linearGradient id="cultivate-petal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#FFC4D8"/>
+      <stop offset="1" stop-color="#E0607E"/>
+    </linearGradient>
+    <linearGradient id="cultivate-petalC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#FFD8E6"/>
+      <stop offset="1" stop-color="#EC7A9A"/>
+    </linearGradient>
+    <radialGradient id="cultivate-orbGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFD75A" stop-opacity=".9"/>
+      <stop offset=".45" stop-color="#FFD75A" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFD75A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cultivate-orb" cx=".36" cy=".32" r=".78">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".3" stop-color="#FFF2BC"/>
+      <stop offset=".68" stop-color="#FFC94A"/>
+      <stop offset="1" stop-color="#CC801A"/>
+    </radialGradient>
+    <path id="cultivate-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <!-- soft self-glow of the lotus -->
+  <circle cx="46" cy="48" r="40" fill="url(#cultivate-glow)"/>
+
+  <!-- water shadow + jade lily pad -->
+  <ellipse cx="46" cy="87.6" rx="30" ry="2.6" fill="#2A1008" opacity=".3"/>
+  <path d="M46 76L42.9 87A36 10 0 1 0 23.8 84.9Z" fill="url(#cultivate-pad)" stroke="#2A1008" stroke-width="3.4" stroke-linejoin="round"/>
+  <g fill="none" stroke="#0E6A50" stroke-width="1.3" stroke-linecap="round" opacity=".4">
+    <path d="M46 76L13 77M46 76L22 71.5M46 76L70 71.5M46 76L79 77M46 76L62 86M46 76L75 83.5"/>
+  </g>
+  <path d="M14 74.2C16 71 24 68.6 33 68.6" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity=".6"/>
+
+  <!-- petals -->
+  <g stroke="#2A1008" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- back row -->
+    <g fill="url(#cultivate-petalBack)">
+      <path d="M46 72C28 70 11 58 9 42C26 44 40 56 46 72Z"/>
+      <path d="M46 72C64 70 81 58 83 42C66 44 52 56 46 72Z"/>
+      <path d="M46 72C32 66 18 46 25 25C36 32 44 50 46 72Z"/>
+      <path d="M46 72C60 66 74 46 67 25C56 32 48 50 46 72Z"/>
+    </g>
+    <!-- middle row -->
+    <g fill="url(#cultivate-petal)">
+      <path d="M46 72C34 66 24 50 30 34C40 40 45 54 46 72Z"/>
+      <path d="M46 72C58 66 68 50 62 34C52 40 47 54 46 72Z"/>
+    </g>
+    <!-- centre petal -->
+    <path d="M46 72C33 60 33 36 46 21C59 36 59 60 46 72Z" fill="url(#cultivate-petalC)"/>
+  </g>
+
+  <!-- soft veins -->
+  <g fill="none" stroke="#E0607E" stroke-width="1.2" stroke-linecap="round" opacity=".45">
+    <path d="M46 30V66M40.8 42C41.2 50 43 58 44.2 66M51.2 42C50.8 50 49 58 47.8 66"/>
+    <path d="M31.6 39C34 48 40 58 44 66M60.4 39C58 48 52 58 48 66"/>
+    <path d="M26.4 30C30 40 38 54 44 68M65.6 30C62 40 54 54 48 68"/>
+  </g>
+
+  <!-- highlights -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+    <path d="M38.6 50C38.2 40 41 30 45.4 23.6" stroke-width="1.9" opacity=".85"/>
+    <path d="M32.8 47C31 42.4 30.6 38.8 31.4 35.8" stroke-width="1.5" opacity=".75"/>
+    <path d="M27.6 29.6C30.4 33 32.6 37 34.4 41.4" stroke-width="1.3" opacity=".55"/>
+  </g>
+
+  <!-- golden core orb -->
+  <circle cx="46" cy="12" r="14" fill="url(#cultivate-orbGlow)"/>
+  <g fill="none" stroke="#FFF0B0" stroke-width="2" stroke-linecap="round" opacity=".9">
+    <path d="M52.4 5.6L54.8 3.2M39.6 5.6L37.2 3.2M55 12H58.6M37 12H33.4"/>
+  </g>
+  <circle cx="46" cy="12" r="6.5" fill="url(#cultivate-orb)" stroke="#2A1008" stroke-width="2.4"/>
+  <ellipse cx="43.8" cy="9.8" rx="1.8" ry="1.3" fill="#FFFFFF" opacity=".95"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".3" stroke-opacity=".5" stroke-linejoin="round">
+    <use href="#cultivate-spark" xlink:href="#cultivate-spark" transform="translate(14 22) scale(3.2)"/>
+    <use href="#cultivate-spark" xlink:href="#cultivate-spark" transform="translate(80 16) scale(2.6)"/>
+    <use href="#cultivate-spark" xlink:href="#cultivate-spark" transform="translate(85.5 58) scale(1.9)"/>
+    <use href="#cultivate-spark" xlink:href="#cultivate-spark" transform="translate(7 62) scale(1.6)"/>
+  </g>
+</svg>

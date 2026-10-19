@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<radialGradient id="bath_snow_lotus_cold-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2A1008" stop-opacity=".42"/><stop offset="1" stop-color="#2A1008" stop-opacity="0"/></radialGradient>
+<linearGradient id="bath_snow_lotus_cold-wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E4DEEC"/><stop offset="0.35" stop-color="#E4DEEC"/><stop offset="1" stop-color="#6E6684"/></linearGradient>
+<linearGradient id="bath_snow_lotus_cold-hoop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C4BCD4"/><stop offset="0.4" stop-color="#C4BCD4"/><stop offset="1" stop-color="#5E5674"/></linearGradient>
+<radialGradient id="bath_snow_lotus_cold-water" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#F0FBFF"/><stop offset="0.5" stop-color="#8FDCFF"/><stop offset="1" stop-color="#2E7FD0"/></radialGradient>
+<linearGradient id="bath_snow_lotus_cold-steam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#EAF6FF" stop-opacity=".9"/><stop offset="1" stop-color="#EAF6FF" stop-opacity=".25"/></linearGradient>
+<radialGradient id="bath_snow_lotus_cold-mist" gradientUnits="userSpaceOnUse" cx="32" cy="22" r="22"><stop offset="0" stop-color="#B8E4FF" stop-opacity="0.3"/><stop offset=".55" stop-color="#B8E4FF" stop-opacity="0.14"/><stop offset="1" stop-color="#B8E4FF" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="32" cy="56.5" rx="24" ry="3" fill="url(#bath_snow_lotus_cold-shadow)"/>
+<path d="M8 27L11 51A21 6 0 0 0 53 51L56 27Z" fill="url(#bath_snow_lotus_cold-wood)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M17 34.5L18.88 55 M24.5 34.5L25.44 55 M32 34.5L32 55 M39.5 34.5L38.56 55 M47 34.5L45.12 55 " fill="none" stroke="#2A1008" stroke-width="1.1" opacity=".55"/>
+<path d="M10.5 30C11 40 12.5 46 13.5 50" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>
+<path d="M8.96 36A23.04 8.16 0 0 0 55.04 36" fill="none" stroke="#2A1008" stroke-width="4.4"/>
+<path d="M8.96 36A23.04 8.16 0 0 0 55.04 36" fill="none" stroke="url(#bath_snow_lotus_cold-hoop)" stroke-width="2.6"/>
+<path d="M11.96 38.2A21.04 7.16 0 0 0 28 42.96" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+<path d="M10.4 46.5A21.6 7.65 0 0 0 53.6 46.5" fill="none" stroke="#2A1008" stroke-width="4.4"/>
+<path d="M10.4 46.5A21.6 7.65 0 0 0 53.6 46.5" fill="none" stroke="url(#bath_snow_lotus_cold-hoop)" stroke-width="2.6"/>
+<path d="M13.4 48.7A19.6 6.65 0 0 0 28 52.95" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+<ellipse cx="32" cy="27" rx="24" ry="8.5" fill="url(#bath_snow_lotus_cold-wood)" stroke="#2A1008" stroke-width="2.4"/>
+<ellipse cx="32" cy="27" rx="20.8" ry="5.9" fill="url(#bath_snow_lotus_cold-water)" stroke="#2A1008" stroke-width="1.6"/>
+<ellipse cx="26" cy="25.5" rx="7" ry="1.6" fill="#FFFFFF" opacity=".55"/>
+<path d="M18 29.5Q28 32.5 40 29.8" fill="none" stroke="#E8FBFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+<g transform="translate(40 27)"><ellipse cx="0" cy="1.2" rx="6.5" ry="2" fill="#2E7FD0" opacity=".35"/><path d="M-6 1C-5 -2 -2.5 -3 -1 -1.5L0 0.5L1 -1.5C2.5 -3 5 -2 6 1Z" fill="#DDEBFF" stroke="#2A1008" stroke-width=".9" stroke-linejoin="round"/><path d="M-3.4 .6C-3.2 -3 -1.2 -5.2 0 -6C1.2 -5.2 3.2 -3 3.4 .6Z" fill="#FFFFFF" stroke="#2A1008" stroke-width=".9" stroke-linejoin="round"/><path d="M-1.4 -.6C-1 -2.6 -.4 -3.8 0 -4.4" fill="none" stroke="#B8E4FF" stroke-width=".8" stroke-linecap="round"/><ellipse cx="0" cy=".5" rx="1.3" ry=".7" fill="#FFE07A"/></g>
+<circle cx="32" cy="20" r="22" fill="url(#bath_snow_lotus_cold-mist)"/>
+<path d="M12 20C17 17.5 23 18.5 28 17C33 15.5 39 16.5 45 15" fill="none" stroke="url(#bath_snow_lotus_cold-steam)" stroke-width="3.4" stroke-linecap="round" opacity=".95"/>
+<path d="M20 14.5C25 12.5 31 13.5 36 12C40 10.8 45 11.5 50 10" fill="none" stroke="url(#bath_snow_lotus_cold-steam)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+<path d="M34 9.5C37 8 41 8.5 44 7.2" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+<path d="M17 8.6Q17.48 10.52 19.4 11Q17.48 11.48 17 13.4Q16.52 11.48 14.6 11Q16.52 10.52 17 8.6Z" fill="#E8F6FF" opacity="0.95"/>
+<path d="M52 15.2Q52.36 16.64 53.8 17Q52.36 17.36 52 18.8Q51.64 17.36 50.2 17Q51.64 16.64 52 15.2Z" fill="#FFFFFF" opacity="0.9"/>
+<path d="M17 8.8V13.2M14.8 11H19.2M15.4 9.4L18.6 12.6M18.6 9.4L15.4 12.6" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".95"/>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="drop_elders_manual_fragment-jade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".45" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <linearGradient id="drop_elders_manual_fragment-spine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset=".6" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="drop_elders_manual_fragment-pages" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#D9BC80"/>
+    </linearGradient>
+    <linearGradient id="drop_elders_manual_fragment-torn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9CF98"/>
+      <stop offset="1" stop-color="#FFF8E4"/>
+    </linearGradient>
+    <linearGradient id="drop_elders_manual_fragment-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="drop_elders_manual_fragment-plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <clipPath id="drop_elders_manual_fragment-coverclip">
+      <path d="M12.5 8H40A2.5 2.5 0 0 1 42.5 10.5V47.5A2.5 2.5 0 0 1 40 50H12.5A2.5 2.5 0 0 1 10 47.5V10.5A2.5 2.5 0 0 1 12.5 8Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="33" cy="56.6" rx="20" ry="1.8" fill="#2A1008" opacity=".3"/>
+
+  <!-- loose torn page sliding out to the right -->
+  <path d="M28 34H55L54 38L56.6 42L53.4 45.6L55.6 50L52.6 53.4H28Z" fill="url(#drop_elders_manual_fragment-torn)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M46 39.5H51.5M46 43.5H50.5M46 47.5H51" fill="none" stroke="#B08A50" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+
+  <!-- page block -->
+  <path d="M15 11H43A2.5 2.5 0 0 1 45.5 13.5V50.5A2.5 2.5 0 0 1 43 53H15Z" fill="url(#drop_elders_manual_fragment-pages)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M16 51.6H43.6M44.3 14V49.5" fill="none" stroke="#B08A50" stroke-width=".9" opacity=".6"/>
+
+  <!-- jade cover -->
+  <path d="M12.5 8H40A2.5 2.5 0 0 1 42.5 10.5V47.5A2.5 2.5 0 0 1 40 50H12.5A2.5 2.5 0 0 1 10 47.5V10.5A2.5 2.5 0 0 1 12.5 8Z" fill="url(#drop_elders_manual_fragment-jade)"/>
+  <g clip-path="url(#drop_elders_manual_fragment-coverclip)">
+    <!-- jade veining -->
+    <path d="M14 42C22 36 26 40 36 30" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".28"/>
+    <!-- crack across the cover -->
+    <path d="M36 8L33.4 15.4L35.8 19.2L30.2 26.6L32.4 31L25.6 40.2" fill="none" stroke="#06352A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30.2 26.6L27 25.2" fill="none" stroke="#06352A" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M36.9 8.8L34.3 15.7L36.7 19.4L31.1 26.8L33.3 31.1L26.5 40.4" fill="none" stroke="#DFFFF0" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+    <!-- rosewood spine with stitched binding -->
+    <rect x="10" y="8" width="7.5" height="42" fill="url(#drop_elders_manual_fragment-spine)"/>
+    <path d="M17.5 8V50" fill="none" stroke="#2A1008" stroke-width="1.4"/>
+    <g fill="none" stroke="#FFE7A0" stroke-width="1.4" stroke-linecap="round" opacity=".9">
+      <path d="M12 13.5H16M12 24H16M12 34.5H16M12 45H16"/>
+    </g>
+  </g>
+  <path d="M12.5 8H40A2.5 2.5 0 0 1 42.5 10.5V47.5A2.5 2.5 0 0 1 40 50H12.5A2.5 2.5 0 0 1 10 47.5V10.5A2.5 2.5 0 0 1 12.5 8Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M20 10.4H30" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+
+  <!-- empty title plate with gold rim and seal medallion -->
+  <rect x="21.5" y="13" width="9" height="22" rx="1" fill="url(#drop_elders_manual_fragment-plate)" stroke="url(#drop_elders_manual_fragment-gold)" stroke-width="1.5"/>
+  <rect x="21.5" y="13" width="9" height="22" rx="1" fill="none" stroke="#2A1008" stroke-width=".7" opacity=".7"/>
+  <circle cx="26" cy="41.5" r="3.2" fill="url(#drop_elders_manual_fragment-gold)" stroke="#2A1008" stroke-width="1.4"/>
+  <circle cx="26" cy="41.5" r="1.5" fill="none" stroke="#9A5E14" stroke-width=".9"/>
+  <circle cx="25" cy="40.4" r=".7" fill="#FFFFFF" opacity=".85"/>
+
+  <!-- gold corner caps -->
+  <g fill="url(#drop_elders_manual_fragment-gold)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round">
+    <path d="M34 7.5H40.5A3 3 0 0 1 43.5 10.5V17L39.6 13.4L33.8 11.2Z"/>
+    <path d="M34 50.5H40.5A3 3 0 0 0 43.5 47.5V41L39.6 44.6L33.8 46.8Z"/>
+  </g>
+  <path d="M36 9.2H39.4" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85"/>
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(13.5 55) scale(1.4)" fill="#FFFFFF" opacity=".85"/>
+</svg>

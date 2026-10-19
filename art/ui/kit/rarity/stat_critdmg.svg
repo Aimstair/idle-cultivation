@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="stat_critdmg-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <radialGradient id="stat_critdmg-red" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".45" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <!-- small blade drawn upright -->
+    <g id="stat_critdmg-sword">
+      <path d="M16 2.2L18.2 6.4V23.6H13.8V6.4Z" fill="url(#stat_critdmg-blade)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M14.9 7V21.5" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".9"/>
+      <rect x="12.2" y="23.4" width="7.6" height="2.4" rx="1" fill="#7E8698" stroke="#2A1008" stroke-width="1.2"/>
+      <rect x="14.6" y="25.8" width="2.8" height="4.2" rx=".8" fill="#5A2A16" stroke="#2A1008" stroke-width="1.2"/>
+    </g>
+  </defs>
+  <!-- crossed blades -->
+  <use href="#stat_critdmg-sword" transform="rotate(45 16 16)"/>
+  <use href="#stat_critdmg-sword" transform="rotate(-45 16 16)"/>
+  <!-- red burst in front -->
+  <path d="M16 5L18.6 13.4L27 16L18.6 18.6L16 27L13.4 18.6L5 16L13.4 13.4Z"
+    fill="url(#stat_critdmg-red)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M16 5L18.6 13.4L27 16L18.6 18.6L16 27V16Z" fill="#5A0A04" opacity=".3"/>
+  <path d="M15.1 7.6V12.6" fill="none" stroke="#FFB49A" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+  <path d="M7.6 15.1H12.6" fill="none" stroke="#FFB49A" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+  <!-- hot core -->
+  <circle cx="16" cy="16" r="2.5" fill="#FFF2A0" stroke="#2A1008" stroke-width="1"/>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="drop_flame_ape_blood-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFA020" stop-opacity=".65"/>
+      <stop offset=".55" stop-color="#FF7A20" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#FF7A20" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop_flame_ape_blood-liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC24A"/>
+      <stop offset=".45" stop-color="#FF6A1E"/>
+      <stop offset="1" stop-color="#9E1608"/>
+    </linearGradient>
+    <radialGradient id="drop_flame_ape_blood-core" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFF8C0" stop-opacity="1"/>
+      <stop offset=".35" stop-color="#FFD060" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FFD060" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop_flame_ape_blood-glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".5"/>
+      <stop offset=".3" stop-color="#FFFFFF" stop-opacity=".1"/>
+      <stop offset=".8" stop-color="#FFFFFF" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#1A2A6E" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="drop_flame_ape_blood-empty" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE8D8" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFE8D8" stop-opacity=".25"/>
+    </linearGradient>
+    <linearGradient id="drop_flame_ape_blood-cork" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0D2A0"/>
+      <stop offset=".5" stop-color="#C48A4E"/>
+      <stop offset="1" stop-color="#7A4620"/>
+    </linearGradient>
+    <linearGradient id="drop_flame_ape_blood-charm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC890"/>
+      <stop offset=".5" stop-color="#C85A20"/>
+      <stop offset="1" stop-color="#5E2208"/>
+    </linearGradient>
+    <clipPath id="drop_flame_ape_blood-clip">
+      <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- glow halo and contact shadow -->
+  <circle cx="30" cy="40" r="20" fill="url(#drop_flame_ape_blood-halo)"/>
+  <ellipse cx="30" cy="57.3" rx="12" ry="1.6" fill="#2A1008" opacity=".3"/>
+
+  <!-- empty glass -->
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="url(#drop_flame_ape_blood-empty)"/>
+
+  <!-- molten blood with an ember -->
+  <g clip-path="url(#drop_flame_ape_blood-clip)">
+    <rect x="16" y="31" width="30" height="30" fill="url(#drop_flame_ape_blood-liquid)"/>
+    <ellipse cx="30" cy="31" rx="12" ry="2.2" fill="#FFE898"/>
+    <circle cx="30" cy="44" r="9.5" fill="url(#drop_flame_ape_blood-core)"/>
+    <path d="M30 37.5C27.6 40.2 27.2 42.2 27.9 44.4C28.8 42.9 29.6 42.6 30.2 41.2C31.8 42.4 32.6 44.2 32.2 45.6C33.6 43.2 33.2 40 30 37.5Z" fill="#FFF2A0"/>
+    <circle cx="30.2" cy="45" r="2.3" fill="#FFFFFF"/>
+    <g fill="#FFE07A" opacity=".9">
+      <circle cx="24.6" cy="49" r="1.1"/>
+      <circle cx="35.4" cy="50.5" r=".9"/>
+      <circle cx="36" cy="40" r=".7"/>
+    </g>
+  </g>
+
+  <!-- glass overlay and outline -->
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="url(#drop_flame_ape_blood-glass)"/>
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M22 31C21.2 36 21.6 42 23.8 47.5" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+  <path d="M27.6 16.5V21" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".6"/>
+
+  <!-- cork -->
+  <rect x="23" y="6.5" width="14" height="9" rx="2.2" fill="url(#drop_flame_ape_blood-cork)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M27 8.6V13.4M30.5 8.4V13.6M33.8 8.7V13.3" fill="none" stroke="#7A4620" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <path d="M25.2 8.4H28.6" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+
+  <!-- neck cord and charm (tuft of ape fur) -->
+  <path d="M24.5 17.5H35.5" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M24.5 17.5H35.5" fill="none" stroke="#A8401C" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M35.5 17.5Q43 17 46.8 21" fill="none" stroke="#2A1008" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M35.5 17.5Q43 17 46.8 21" fill="none" stroke="#A8401C" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M45.2 22L49.8 19.6L49.4 24L53 25.2L50.4 27.8L51.6 32L48 29.6L45.6 32.6L45.2 28L42.6 25.6L45.4 24.6Z" fill="url(#drop_flame_ape_blood-charm)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M47.4 24.4L48.4 28.6M46.4 25.6L46 29.2" fill="none" stroke="#5E2208" stroke-width=".9" stroke-linecap="round" opacity=".7"/>
+  <path d="M44.6 24.4C45.4 23.4 46.4 22.9 47.5 22.6" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <rect x="45.2" y="20.4" width="3.6" height="2.4" rx=".8" fill="#A8401C" stroke="#2A1008" stroke-width="1.2"/>
+
+  <!-- glint -->
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(38.6 26) scale(1.7)" fill="#FFFFFF"/>
+</svg>

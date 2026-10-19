@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="wood_spirit-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset=".55" stop-color="#E9CF98"/>
+      <stop offset="1" stop-color="#B9955C"/>
+    </linearGradient>
+    <linearGradient id="wood_spirit-end" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#D8BC84"/>
+    </linearGradient>
+    <linearGradient id="wood_spirit-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <radialGradient id="wood_spirit-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FFFD0" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#8FFFD0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="31" cy="55.5" rx="22" ry="2.6" fill="#2A1008" opacity=".3"/>
+  <ellipse cx="31" cy="34" rx="26" ry="18" fill="url(#wood_spirit-glow)"/>
+
+  <g transform="rotate(-18 32 36)">
+    <!-- log body -->
+    <path d="M50 25H15A5.5 9 0 0 0 15 43H50Z" fill="url(#wood_spirit-body)"/>
+    <!-- glowing green grain -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M17 30C24 28 30 32 38 30S46 29 49 30M16 37C22 35 28 39 36 37S45 36 49 37" stroke="#C8FFE6" stroke-width="3" opacity=".4"/>
+      <path d="M17 30C24 28 30 32 38 30S46 29 49 30M16 37C22 35 28 39 36 37S45 36 49 37" stroke="#3FC79A" stroke-width="1.3" opacity=".95"/>
+    </g>
+    <!-- end face with rings -->
+    <ellipse cx="50" cy="34" rx="5.5" ry="9" fill="url(#wood_spirit-end)" stroke="#2A1008" stroke-width="1.4"/>
+    <ellipse cx="50" cy="34" rx="3.3" ry="5.6" fill="none" stroke="#3FC79A" stroke-width="1.2" opacity=".9"/>
+    <ellipse cx="50" cy="34" rx="1.2" ry="2.2" fill="#3FC79A"/>
+    <!-- highlight -->
+    <path d="M18 27.5H44" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+    <!-- outline -->
+    <path d="M50 25H15A5.5 9 0 0 0 15 43H50" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- leaf sprout -->
+    <path d="M28 25.5C28 21 28.5 17 29 13.5" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round"/>
+    <path d="M28 25.5C28 21 28.5 17 29 13.5" fill="none" stroke="#3FC79A" stroke-width="1.6" stroke-linecap="round"/>
+    <g stroke="#2A1008" stroke-width="2" stroke-linejoin="round" fill="url(#wood_spirit-leaf)">
+      <path d="M28.6 18C23 18 20 15 19 10.5C24.5 10 28 13 28.6 18Z"/>
+      <path d="M29 14.5C29.5 9.5 32.5 6.5 37.5 6C37.2 11 34.5 14.5 29 14.5Z"/>
+    </g>
+    <path d="M21 11.5C24 12 26 13.5 27.5 16.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+    <path d="M35.5 7.5C33 9 31 11 30 13.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  </g>
+</svg>

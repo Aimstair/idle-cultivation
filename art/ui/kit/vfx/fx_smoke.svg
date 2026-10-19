@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="fx_smoke-puff" cx=".42" cy=".4" r=".55">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset=".45" stop-color="#F4F2F8" stop-opacity=".8"/>
+      <stop offset=".8" stop-color="#E6E2EE" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#DCD8E6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fx_smoke-shade" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C8C2D4" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#C8C2D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- cloud puffs -->
+  <circle cx="22" cy="38" r="20" fill="url(#fx_smoke-puff)"/>
+  <circle cx="42" cy="34" r="19" fill="url(#fx_smoke-puff)"/>
+  <circle cx="32" cy="24" r="16" fill="url(#fx_smoke-puff)"/>
+  <circle cx="30" cy="44" r="17" fill="url(#fx_smoke-puff)"/>
+  <circle cx="14" cy="28" r="11" fill="url(#fx_smoke-puff)"/>
+  <circle cx="50" cy="46" r="11" fill="url(#fx_smoke-puff)"/>
+  <!-- ink-wash shade in the lower belly -->
+  <circle cx="34" cy="42" r="16" fill="url(#fx_smoke-shade)"/>
+  <!-- tapering ink swirl inside -->
+  <g fill="none" stroke="#A39CB4" stroke-linecap="round" stroke-opacity=".5">
+    <path d="M31 38c3 0 4 3 2 5c-3 3-8 1-8-4" stroke-width="2.6"/>
+    <path d="M25 39c0-7 9-10 15-5" stroke-width="1.8"/>
+    <path d="M40 34c4 4 4 10 0 14" stroke-width="1.1"/>
+  </g>
+  <!-- top-left highlight -->
+  <ellipse cx="24" cy="25" rx="7" ry="4.5" fill="#FFFFFF" opacity=".55" transform="rotate(-25 24 25)"/>
+</svg>

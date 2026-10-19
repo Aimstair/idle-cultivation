@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 40 40">
+  <defs>
+    <radialGradient id="btn_back-rose" cx=".38" cy=".3" r=".85">
+      <stop offset="0" stop-color="#7A4020"/>
+      <stop offset=".55" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </radialGradient>
+    <linearGradient id="btn_back-base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1008"/>
+      <stop offset="1" stop-color="#0E0302"/>
+    </linearGradient>
+    <linearGradient id="btn_back-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="15">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="btn_back-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <filter id="btn_back-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+  </defs>
+
+  <!-- cast shadow and plinth -->
+  <circle cx="20" cy="22.6" r="15.8" fill="#2A1008" opacity=".4" filter="url(#btn_back-blur)"/>
+  <circle cx="20" cy="21.4" r="15.8" fill="url(#btn_back-base)" stroke="#2A1008" stroke-width="2"/>
+  <!-- rosewood face -->
+  <circle cx="20" cy="18.5" r="15.8" fill="url(#btn_back-rose)" stroke="#2A1008" stroke-width="2.5"/>
+  <ellipse cx="20" cy="10" rx="11" ry="5.5" fill="url(#btn_back-sheen)"/>
+  <!-- gold rim -->
+  <circle cx="20" cy="18.5" r="13.6" fill="none" stroke="#FFE7A0" stroke-width="1.5"/>
+  <!-- gold left arrow -->
+  <path d="M10.5 18.5 L20 9.5 V14.6 H29 V22.4 H20 V27.5 Z" fill="#1A0804" opacity=".6" transform="translate(0 1.4)"/>
+  <path d="M10.5 18.5 L20 9.5 V14.6 H29 V22.4 H20 V27.5 Z" fill="url(#btn_back-gold)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M13.5 17.6 L19 12.4" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".8"/>
+  <path d="M21.5 16.2 H27" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+</svg>

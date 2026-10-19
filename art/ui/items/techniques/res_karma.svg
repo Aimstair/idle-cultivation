@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="res_karma-petal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8A6F8"/><stop offset="0.5" stop-color="#8A5AE0"/><stop offset="1" stop-color="#3A1E7A"/></linearGradient>
+    <linearGradient id="res_karma-flame" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8EEFF"/><stop offset="0.6" stop-color="#D8B4FF"/><stop offset="1" stop-color="#9A6AE8"/></linearGradient>
+    <radialGradient id="res_karma-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#C8A6F8" stop-opacity="0.55"/><stop offset="1" stop-color="#C8A6F8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="32" cy="56.5" rx="20" ry="2.2" fill="#2A1008" opacity=".22"/>
+  <circle cx="32" cy="26" r="20" fill="url(#res_karma-glow)"/>
+  <g fill="url(#res_karma-petal)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"><path d="M32 50C21 51.5 9 45 8 37.5C17 36 27 42 32 50Z"/><path d="M32 50C43 51.5 55 45 56 37.5C47 36 37 42 32 50Z"/></g>
+  <path d="M32 8C25.5 16 20.5 24 22.5 32C24.5 39 29 41.5 32 43C35 41.5 39.5 39 41.5 32C43.5 24 38.5 16 32 8Z" fill="url(#res_karma-flame)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M32 19C29 24 27.5 28.5 28.5 32.5C29.5 36 31 38 32 39C33 38 34.5 36 35.5 32.5C36.5 28.5 35 24 32 19Z" fill="#FFFFFF" opacity=".85"/>
+  <path d="M29 17.5C27 21 25.5 24.5 25.5 28" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".9"/>
+  <g fill="url(#res_karma-petal)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"><path d="M32 50C23 50 15.5 44 15.5 35C24 35.5 30.5 42 32 50Z"/><path d="M32 50C41 50 48.5 44 48.5 35C40 35.5 33.5 42 32 50Z"/><path d="M32 50C25.5 46 23 38.5 32 30.5C41 38.5 38.5 46 32 50Z"/></g>
+  <path d="M27 42.5C26.5 38.5 28.5 35 31 32.5" fill="none" stroke="#F0E6FF" stroke-width="1.4" stroke-linecap="round" opacity=".85"/>
+  <path d="M18.5 38C21.5 38.5 24.5 40 27 42" fill="none" stroke="#F0E6FF" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+</svg>

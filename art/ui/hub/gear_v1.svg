@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="gear-disc" gradientUnits="userSpaceOnUse" cx="24" cy="25" r="31">
+      <stop offset="0" stop-color="#7FA6F0"/>
+      <stop offset=".45" stop-color="#2C4FA8"/>
+      <stop offset="1" stop-color="#14245C"/>
+    </radialGradient>
+    <radialGradient id="gear-discHi" gradientUnits="userSpaceOnUse" cx="22" cy="20" r="17">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gear-cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".6" stop-color="#F3F5FB"/>
+      <stop offset="1" stop-color="#D9E0F0"/>
+    </linearGradient>
+    <linearGradient id="gear-clothShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1A2A6E" stop-opacity="0"/>
+      <stop offset=".6" stop-color="#1A2A6E" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1A2A6E" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="gear-fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E0DCEC"/>
+    </linearGradient>
+    <linearGradient id="gear-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".45" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <linearGradient id="gear-blueH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8CC6F6"/>
+      <stop offset=".5" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <linearGradient id="gear-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A66C4"/>
+      <stop offset="1" stop-color="#16214E"/>
+    </linearGradient>
+    <linearGradient id="gear-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".35" stop-color="#C4CCDC"/>
+      <stop offset="1" stop-color="#66708A"/>
+    </linearGradient>
+    <linearGradient id="gear-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="gear-jade" cx=".35" cy=".3" r=".85">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <radialGradient id="gear-red" cx=".35" cy=".3" r=".9">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backing disc -->
+  <circle cx="32" cy="33" r="22" fill="url(#gear-disc)" stroke="#2A1008" stroke-width="2.5"/>
+  <circle cx="32" cy="33" r="22" fill="url(#gear-discHi)"/>
+  <circle cx="32" cy="33" r="19.8" fill="none" stroke="#FFE7A0" stroke-opacity=".8" stroke-width="1.2"/>
+
+  <!-- cast shadow -->
+  <ellipse cx="32" cy="55.5" rx="23" ry="2.4" fill="#2A1008" opacity=".28"/>
+
+  <!-- folded sleeves -->
+  <g stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round">
+    <path d="M12 28L5.5 31V45L12 44Z" fill="url(#gear-cloth)"/>
+    <path d="M52 28L58.5 31V45L52 44Z" fill="url(#gear-cloth)"/>
+  </g>
+  <path d="M5.5 31L8.6 29.6V44.6L5.5 45Z" fill="url(#gear-blue)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M58.5 31L55.4 29.6V44.6L58.5 45Z" fill="url(#gear-blue)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+
+  <!-- robe body -->
+  <path d="M11 26C14 21 22 17.5 32 17.5C42 17.5 50 21 53 26V51.5Q53 54 50.5 54H13.5Q11 54 11 51.5Z" fill="url(#gear-cloth)"/>
+  <path d="M11 26C14 21 22 17.5 32 17.5C42 17.5 50 21 53 26V51.5Q53 54 50.5 54H13.5Q11 54 11 51.5Z" fill="url(#gear-clothShade)"/>
+  <!-- fold creases -->
+  <path d="M17.5 47.5Q17.2 50.5 18.2 53" fill="none" stroke="#B9C2D4" stroke-width="1" stroke-linecap="round"/>
+  <path d="M46.5 47.5Q46.8 50.5 45.8 53" fill="none" stroke="#B9C2D4" stroke-width="1" stroke-linecap="round"/>
+  <!-- sash -->
+  <rect x="11" y="40" width="42" height="6.2" fill="url(#gear-blueH)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M12.5 41.3H51.5M12.5 44.9H51.5" fill="none" stroke="#FFD45A" stroke-width=".9" opacity=".8"/>
+  <!-- jade buckle -->
+  <circle cx="26" cy="43.1" r="3.2" fill="url(#gear-jade)" stroke="#2A1008" stroke-width="1.5"/>
+  <ellipse cx="25" cy="42" rx="1" ry=".7" fill="#FFFFFF" opacity=".85"/>
+  <!-- crossed lapels -->
+  <path d="M37.5 21.5H44L33.2 38H28.5Z" fill="url(#gear-blue)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M38.8 23.2L30.4 36.2" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <path d="M20 21.5H26.5L36.5 38H31Z" fill="url(#gear-blue)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M25.2 23.2L34.4 36.4" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <!-- body outline -->
+  <path d="M11 26C14 21 22 17.5 32 17.5C42 17.5 50 21 53 26V51.5Q53 54 50.5 54H13.5Q11 54 11 51.5Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- crescent-moon motif -->
+  <path d="M18.5 47.3A3 3 0 1 0 18.5 52.9A2.3 2.3 0 1 1 18.5 47.3Z" fill="url(#gear-gold)" stroke="#2A1008" stroke-width="1" stroke-linejoin="round"/>
+  <!-- fur collar -->
+  <g fill="url(#gear-fur)" stroke="#2A1008" stroke-width="2">
+    <circle cx="17" cy="24.5" r="3.3"/>
+    <circle cx="21.5" cy="21" r="3.5"/>
+    <circle cx="26.5" cy="18.6" r="3.6"/>
+    <circle cx="32" cy="17.6" r="3.7"/>
+    <circle cx="37.5" cy="18.6" r="3.6"/>
+    <circle cx="42.5" cy="21" r="3.5"/>
+    <circle cx="47" cy="24.5" r="3.3"/>
+  </g>
+  <g fill="url(#gear-fur)">
+    <circle cx="17" cy="24.5" r="3.3"/>
+    <circle cx="21.5" cy="21" r="3.5"/>
+    <circle cx="26.5" cy="18.6" r="3.6"/>
+    <circle cx="32" cy="17.6" r="3.7"/>
+    <circle cx="37.5" cy="18.6" r="3.6"/>
+    <circle cx="42.5" cy="21" r="3.5"/>
+    <circle cx="47" cy="24.5" r="3.3"/>
+  </g>
+  <g fill="#FFFFFF" opacity=".9">
+    <ellipse cx="25.4" cy="17.2" rx="1.3" ry=".8"/>
+    <ellipse cx="30.8" cy="16.2" rx="1.3" ry=".8"/>
+    <ellipse cx="20.4" cy="19.8" rx="1" ry=".7"/>
+  </g>
+
+  <!-- jian sword: blade -->
+  <path d="M5 11L9.4 18.1L38.6 44L42 40.1L12.6 14.5Z" fill="url(#gear-silver)" stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round"/>
+  <path d="M8.75 14.3L38.8 40.7" fill="none" stroke="#6E7890" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M10.4 14L35.9 36.4" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".85"/>
+  <!-- guard, grip, pommel -->
+  <g transform="translate(40.3 42) rotate(41.3)">
+    <rect x="-1.7" y="-6" width="3.4" height="12" rx="1.6" fill="url(#gear-gold)" stroke="#2A1008" stroke-width="1.9" stroke-linejoin="round"/>
+    <rect x="1.5" y="-1.8" width="9.6" height="3.6" rx=".9" fill="url(#gear-navy)" stroke="#2A1008" stroke-width="1.9" stroke-linejoin="round"/>
+    <path d="M4.3-1.6V1.6M6.6-1.6V1.6M8.9-1.6V1.6" fill="none" stroke="#2A1008" stroke-width="1" opacity=".55"/>
+    <path d="M-.8-4.6V-1.2" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".75"/>
+    <circle cx="12.6" cy="0" r="2.5" fill="url(#gear-gold)" stroke="#2A1008" stroke-width="1.8"/>
+    <circle cx="11.9" cy="-.8" r=".7" fill="#FFFFFF" opacity=".85"/>
+  </g>
+  <!-- red tassel -->
+  <path d="M49.8 51.8L50.6 53.3" fill="none" stroke="#C21E10" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M50.9 53.8C53 55.2 53.2 57.2 51.2 57.6C49.2 57.2 49.3 55.2 50.9 53.8Z" fill="url(#gear-red)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <circle cx="50.6" cy="53.3" r="1.2" fill="url(#gear-gold)" stroke="#2A1008" stroke-width=".9"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5" stroke-linejoin="round">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(13 7) scale(2.2)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(57.5 25) scale(1.6)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(6 51) scale(1.5)"/>
+  </g>
+</svg>

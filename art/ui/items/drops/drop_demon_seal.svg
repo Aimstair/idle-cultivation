@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="drop_demon_seal-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FF3A2A" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#C21E10" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#C21E10" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="drop_demon_seal-face" gradientUnits="userSpaceOnUse" cx="22" cy="30" r="34">
+      <stop offset="0" stop-color="#9A2A1C"/>
+      <stop offset=".45" stop-color="#5A0C0A"/>
+      <stop offset=".85" stop-color="#240404"/>
+      <stop offset="1" stop-color="#120202"/>
+    </radialGradient>
+    <linearGradient id="drop_demon_seal-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8503A"/>
+      <stop offset="1" stop-color="#5A0C0A"/>
+    </linearGradient>
+    <linearGradient id="drop_demon_seal-side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A0606"/>
+      <stop offset="1" stop-color="#100202"/>
+    </linearGradient>
+    <linearGradient id="drop_demon_seal-knob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7A2A24"/>
+      <stop offset=".5" stop-color="#3A0808"/>
+      <stop offset="1" stop-color="#140202"/>
+    </linearGradient>
+    <radialGradient id="drop_demon_seal-mark" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FF8A5A" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FF4A2A" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="drop_demon_seal-clip">
+      <path d="M12 25H48V55H12Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- halo and contact shadow -->
+  <circle cx="32" cy="36" r="26" fill="url(#drop_demon_seal-halo)"/>
+  <ellipse cx="32" cy="57.4" rx="20" ry="1.8" fill="#2A1008" opacity=".3"/>
+
+  <!-- knob handle -->
+  <path d="M27.5 9H36.5L39 21H25Z" fill="url(#drop_demon_seal-knob)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M29.5 11L28.6 18" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <circle cx="32" cy="8.5" r="2.8" fill="url(#drop_demon_seal-knob)" stroke="#2A1008" stroke-width="2"/>
+  <circle cx="31" cy="7.6" r=".7" fill="#FFFFFF" opacity=".8"/>
+
+  <!-- block: side, top, front -->
+  <path d="M48 25L54 19V49L48 55Z" fill="url(#drop_demon_seal-side)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M12 25L18 19H54L48 25Z" fill="url(#drop_demon_seal-top)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <rect x="12" y="25" width="36" height="30" fill="url(#drop_demon_seal-face)"/>
+  <g clip-path="url(#drop_demon_seal-clip)">
+    <!-- cracks -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 44L19 40L22 33L20 25M48 30L41 34L39 40M26 55L29 49L34 47" stroke="#FF5A2A" stroke-width="3" opacity=".5"/>
+      <path d="M12 44L19 40L22 33L20 25M48 30L41 34L39 40M26 55L29 49L34 47" stroke="#FFB080" stroke-width="1.1"/>
+      <path d="M12 44L19 40L22 33L20 25M48 30L41 34L39 40M26 55L29 49L34 47" stroke="#2A1008" stroke-width="1" opacity=".6" transform="translate(-.7 .6)"/>
+    </g>
+    <!-- glowing abstract sigil -->
+    <circle cx="32" cy="40" r="11" fill="url(#drop_demon_seal-mark)"/>
+    <g fill="none" stroke="#FF6A44" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity=".45">
+      <circle cx="32" cy="40" r="7"/>
+      <path d="M32 33V29.5M25.9 43.5L22.8 45.3M38.1 43.5L41.2 45.3"/>
+      <path d="M32 36L35.5 42H28.5Z"/>
+    </g>
+    <g fill="none" stroke="#FFD0A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="40" r="7"/>
+      <path d="M32 33V29.5M25.9 43.5L22.8 45.3M38.1 43.5L41.2 45.3"/>
+      <path d="M32 36L35.5 42H28.5Z"/>
+    </g>
+    <circle cx="32" cy="40" r="1.2" fill="#FFFFFF"/>
+  </g>
+  <rect x="12" y="25" width="36" height="30" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M14.5 28V40" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".45"/>
+  <path d="M19.5 20.8H33" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+
+  <!-- embers -->
+  <g fill="#FF8A5A">
+    <circle cx="9" cy="30" r=".9"/>
+    <circle cx="56" cy="40" r=".8"/>
+  </g>
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(50 12) scale(1.5)" fill="#FFB080"/>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="chest_wood_open-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C07A3E"/>
+      <stop offset=".55" stop-color="#8E4A1E"/>
+      <stop offset="1" stop-color="#5A2A10"/>
+    </linearGradient>
+    <linearGradient id="chest_wood_open-inner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A2010"/>
+      <stop offset=".6" stop-color="#7A4020"/>
+      <stop offset="1" stop-color="#C08048"/>
+    </linearGradient>
+    <linearGradient id="chest_wood_open-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D89050"/>
+      <stop offset="1" stop-color="#8E4A1E"/>
+    </linearGradient>
+    <linearGradient id="chest_wood_open-iron" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E4E8F0"/>
+      <stop offset=".45" stop-color="#8E96A8"/>
+      <stop offset="1" stop-color="#464C5A"/>
+    </linearGradient>
+    <linearGradient id="chest_wood_open-ironDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8E96A8"/>
+      <stop offset=".5" stop-color="#5A6070"/>
+      <stop offset="1" stop-color="#32363F"/>
+    </linearGradient>
+    <linearGradient id="chest_wood_open-ironV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4E8F0"/>
+      <stop offset=".5" stop-color="#8E96A8"/>
+      <stop offset="1" stop-color="#464C5A"/>
+    </linearGradient>
+    <radialGradient id="chest_wood_open-glow" gradientUnits="userSpaceOnUse" cx="40" cy="40" r="30">
+      <stop offset="0" stop-color="#FFF6C8" stop-opacity=".9"/>
+      <stop offset=".45" stop-color="#FFE08A" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#FFD45A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chest_wood_open-beam" gradientUnits="userSpaceOnUse" x1="0" y1="41" x2="0" y2="6">
+      <stop offset="0" stop-color="#FFF6C8" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="chest_wood_open-coin" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".5" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </radialGradient>
+  </defs>
+
+  <!-- cast shadow -->
+  <ellipse cx="40" cy="72" rx="31" ry="3" fill="#2A1008" opacity=".3"/>
+
+  <!-- open lid: inner face lit from below -->
+  <path d="M10 41L13 12C13.3 8.5 15 7 18 7H62C65 7 66.7 8.5 67 12L70 41Z" fill="url(#chest_wood_open-inner)" stroke="#2A1008" stroke-width="3.1" stroke-linejoin="round"/>
+  <path d="M13 13.5C13.2 9.5 15 8.5 18 8.5H62C65 8.5 66.8 9.5 67 13.5V15.5H13Z" fill="url(#chest_wood_open-rim)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M17 10.6H60" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>
+  <rect x="19.6" y="15.5" width="6.6" height="25.5" fill="url(#chest_wood_open-ironDark)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <rect x="53.8" y="15.5" width="6.6" height="25.5" fill="url(#chest_wood_open-ironDark)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+
+  <!-- soft light spilling out -->
+  <path d="M16 41L25 6H55L64 41Z" fill="url(#chest_wood_open-beam)"/>
+  <circle cx="40" cy="40" r="30" fill="url(#chest_wood_open-glow)"/>
+
+  <!-- coins peeking over the rim -->
+  <g stroke="#2A1008" stroke-width="1.8" fill="url(#chest_wood_open-coin)">
+    <circle cx="30" cy="40" r="4.4"/>
+    <circle cx="50" cy="40" r="4.4"/>
+    <circle cx="40" cy="38" r="4.8"/>
+    <circle cx="35" cy="42.5" r="4.2"/>
+    <circle cx="45" cy="42.5" r="4.2"/>
+  </g>
+  <g fill="#FFFFFF" opacity=".85">
+    <ellipse cx="38.4" cy="36.3" rx="1.4" ry=".9"/>
+    <ellipse cx="28.6" cy="38.4" rx="1.1" ry=".7"/>
+    <ellipse cx="48.6" cy="38.4" rx="1.1" ry=".7"/>
+  </g>
+
+  <!-- body -->
+  <rect x="11" y="41" width="58" height="29" rx="3" fill="url(#chest_wood_open-wood)" stroke="#2A1008" stroke-width="3.1" stroke-linejoin="round"/>
+  <g fill="none" stroke="#3A190C" stroke-width="1.2" stroke-linecap="round" opacity=".55">
+    <path d="M13.5 51H66.5"/>
+    <path d="M13.5 60.5H66.5"/>
+  </g>
+  <path d="M14.2 44.5V66" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".35"/>
+  <path d="M12.5 42.5H67.5" fill="none" stroke="#FFE7A0" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+
+  <!-- iron bands on the body -->
+  <rect x="18" y="40" width="7.5" height="30.5" rx="1.2" fill="url(#chest_wood_open-iron)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="54.5" y="40" width="7.5" height="30.5" rx="1.2" fill="url(#chest_wood_open-iron)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M19.8 43V67" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+  <path d="M56.3 43V67" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+  <g fill="#2A1008" opacity=".7">
+    <circle cx="21.75" cy="47" r="1.1"/><circle cx="21.75" cy="63" r="1.1"/>
+    <circle cx="58.25" cy="47" r="1.1"/><circle cx="58.25" cy="63" r="1.1"/>
+  </g>
+
+  <!-- lock plate -->
+  <path d="M34 42H46V51.5Q46 54 43.5 54H36.5Q34 54 34 51.5Z" fill="url(#chest_wood_open-ironV)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M36.2 43.9H43" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+  <circle cx="40" cy="47" r="1.8" fill="#2A1008"/>
+  <path d="M40 47V50.8" stroke="#2A1008" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5" stroke-linejoin="round">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(9 18) scale(2.6)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(72 24) scale(2)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(40 3.5) scale(1.6)"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="472" height="84" viewBox="0 0 236 42">
+  <defs>
+    <linearGradient id="ribbon_location-jade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B4F6DA"/>
+      <stop offset=".45" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <linearGradient id="ribbon_location-tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E8A68"/>
+      <stop offset=".5" stop-color="#0E6A50"/>
+      <stop offset="1" stop-color="#06291F"/>
+    </linearGradient>
+    <radialGradient id="ribbon_location-blue" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".45" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </radialGradient>
+    <linearGradient id="ribbon_location-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <filter id="ribbon_location-blur" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <path id="ribbon_location-body" d="M50 6 H186 Q191 20 186 34 H50 Q45 20 50 6 Z"/>
+  </defs>
+
+  <!-- cast shadow -->
+  <g transform="translate(0 2)" fill="#2A1008" opacity=".4" filter="url(#ribbon_location-blur)">
+    <path d="M14 12 H56 V36 H14 L22 24 Z M212 12 H180 V36 H212 L204 24 Z"/>
+    <use href="#ribbon_location-body"/>
+    <circle cx="40" cy="20" r="18"/>
+  </g>
+
+  <!-- folded tails (the left one pokes out from behind the medallion) -->
+  <g fill="url(#ribbon_location-tail)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M14 12 H56 V36 H14 L22 24 Z"/>
+    <path d="M222 12 H180 V36 H222 L214 24 Z"/>
+  </g>
+  <path d="M50 34 L58 28.5 L58 34 Z M186 34 L178 28.5 L178 34 Z" fill="#06291F" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M15.5 13.6 H54" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".3"/>
+  <path d="M182 13.6 H220.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".3"/>
+
+  <!-- jade ribbon body -->
+  <use href="#ribbon_location-body" fill="url(#ribbon_location-jade)" stroke="#2A1008" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M53 7.6 H183" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>
+  <path d="M53 9.4 H183 M53 30.6 H183" fill="none" stroke="#FFE7A0" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+
+  <!-- element medallion (empty centre) -->
+  <circle cx="40" cy="20" r="18" fill="url(#ribbon_location-blue)" stroke="#2A1008" stroke-width="2.6"/>
+  <circle cx="40" cy="20" r="14" fill="none" stroke="#2A1008" stroke-width="3.6"/>
+  <circle cx="40" cy="20" r="14" fill="none" stroke="url(#ribbon_location-gold)" stroke-width="2.2"/>
+  <path d="M26.9 15.2 A14 14 0 0 1 36.5 6.4" fill="none" stroke="#FFF6C8" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+</svg>

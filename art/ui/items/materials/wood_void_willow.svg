@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="wood_void_willow-branch" gradientUnits="userSpaceOnUse" x1="12" y1="54" x2="48" y2="14">
+      <stop offset="0" stop-color="#2A1C3A"/>
+      <stop offset=".5" stop-color="#4E3A64"/>
+      <stop offset="1" stop-color="#7A6490"/>
+    </linearGradient>
+    <linearGradient id="wood_void_willow-leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A3AB0"/>
+      <stop offset=".45" stop-color="#A880F0"/>
+      <stop offset="1" stop-color="#F0E6FF"/>
+    </linearGradient>
+    <radialGradient id="wood_void_willow-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C8B0FF" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#9A6AE8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- slender drooping leaf: base at origin, glowing tip at +13 (hangs down) -->
+    <path id="wood_void_willow-lf" d="M0 0C-2.8 3 -2.8 9 0 13.5C2.8 9 2.8 3 0 0Z"/>
+  </defs>
+
+  <ellipse cx="34" cy="56" rx="18" ry="2.4" fill="#2A1008" opacity=".3"/>
+  <ellipse cx="36" cy="36" rx="24" ry="19" fill="url(#wood_void_willow-glow)"/>
+
+  <!-- drooping twigs -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M27 36C29 40 27 45 29 50M34 29C36 34 34 39 37 45M40 22C43 27 41 33 44 40M46 16C50 21 48 27 52 33M22 42C21 46 20 49 19 52" stroke="#2A1008" stroke-width="3.2"/>
+    <path d="M27 36C29 40 27 45 29 50M34 29C36 34 34 39 37 45M40 22C43 27 41 33 44 40M46 16C50 21 48 27 52 33M22 42C21 46 20 49 19 52" stroke="#4A3860" stroke-width="1.4"/>
+  </g>
+
+  <!-- branch -->
+  <path d="M12 54C22 44 30 30 48 14" fill="none" stroke="#2A1008" stroke-width="6.6" stroke-linecap="round"/>
+  <path d="M12 54C22 44 30 30 48 14" fill="none" stroke="url(#wood_void_willow-branch)" stroke-width="4"/>
+  <path d="M14 51.5C21 44 27 35 36 25" fill="none" stroke="#B8A8D0" stroke-width="1.1" stroke-linecap="round" opacity=".6"/>
+  <circle cx="48" cy="14" r="2.2" fill="#9A6AE8" stroke="#2A1008" stroke-width="1.6"/>
+
+  <!-- glowing leaves hanging from the twigs -->
+  <g fill="url(#wood_void_willow-leaf)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round">
+    <use href="#wood_void_willow-lf" transform="translate(28 41) rotate(14)"/>
+    <use href="#wood_void_willow-lf" transform="translate(29 50) rotate(-6) scale(.9)"/>
+    <use href="#wood_void_willow-lf" transform="translate(35 35) rotate(10) scale(.95)"/>
+    <use href="#wood_void_willow-lf" transform="translate(37 45) rotate(-8)"/>
+    <use href="#wood_void_willow-lf" transform="translate(42 28) rotate(12) scale(.9)"/>
+    <use href="#wood_void_willow-lf" transform="translate(44 40) rotate(-6) scale(1.05)"/>
+    <use href="#wood_void_willow-lf" transform="translate(49 22) rotate(14) scale(.85)"/>
+    <use href="#wood_void_willow-lf" transform="translate(52 33) rotate(-4) scale(.95)"/>
+    <use href="#wood_void_willow-lf" transform="translate(20 47) rotate(-10) scale(.8)"/>
+  </g>
+  <!-- leaf highlights -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85">
+    <path d="M27 44.5C26.5 47 26.5 49 27.5 51"/>
+    <path d="M43 44C42.5 46.5 42.8 49 44 51"/>
+    <path d="M41 30.5C40.5 33 40.8 35.5 42 37.5"/>
+  </g>
+  <!-- stray void motes -->
+  <g fill="#EAD8FF">
+    <circle cx="14" cy="38" r="1.2"/>
+    <circle cx="56" cy="47" r="1.1"/>
+    <circle cx="30" cy="16" r="1"/>
+  </g>
+</svg>

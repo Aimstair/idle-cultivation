@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="drop_bandit_treasure_map-roll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset=".45" stop-color="#EFD9A8"/>
+      <stop offset="1" stop-color="#B08A50"/>
+    </linearGradient>
+    <linearGradient id="drop_bandit_treasure_map-flap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#E2C588"/>
+    </linearGradient>
+    <linearGradient id="drop_bandit_treasure_map-end" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#D9BC80"/>
+    </linearGradient>
+    <linearGradient id="drop_bandit_treasure_map-cord" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#7A0E06"/>
+    </linearGradient>
+    <linearGradient id="drop_bandit_treasure_map-cordV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8452A"/>
+      <stop offset="1" stop-color="#7A0E06"/>
+    </linearGradient>
+    <radialGradient id="drop_bandit_treasure_map-wax" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="33" cy="50" rx="22" ry="2.6" fill="#2A1008" opacity=".28" transform="rotate(-14 33 50)"/>
+
+  <g transform="rotate(-14 32 33)">
+    <!-- unrolled flap with the red X peeking out -->
+    <path d="M44 25.5H54.2C56.4 25.5 56.6 27.4 56 29.6L54.2 42.2H44Z" fill="url(#drop_bandit_treasure_map-flap)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M45.4 38.6C46.4 37.4 47.6 36.6 48.8 36.2" fill="none" stroke="#2A1008" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.6 1.6" opacity=".6"/>
+    <path d="M47.6 30L52.8 35.4M52.8 30L47.6 35.4" fill="none" stroke="#C21E10" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M54.2 42.2C55.6 41.4 56.4 40 55.6 38.8" fill="none" stroke="#2A1008" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- rolled body -->
+    <path d="M10 25H45V41H10Z" fill="url(#drop_bandit_treasure_map-roll)"/>
+    <path d="M12 26.4H44.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+    <path d="M12 38.6H44" fill="none" stroke="#8A6830" stroke-width="1" stroke-linecap="round" opacity=".45"/>
+    <path d="M45 25V41" fill="none" stroke="#8A6830" stroke-width="1.1" opacity=".5"/>
+    <path d="M10 25H45V41H10Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+
+    <!-- left end: spiral of rolled layers -->
+    <ellipse cx="10" cy="33" rx="3.8" ry="8" fill="url(#drop_bandit_treasure_map-end)" stroke="#2A1008" stroke-width="2.2"/>
+    <ellipse cx="10" cy="33" rx="2" ry="4.6" fill="none" stroke="#8A6830" stroke-width="1" opacity=".7"/>
+    <circle cx="10.2" cy="33.4" r="1.1" fill="#6A4A20"/>
+
+    <!-- bandit-red cord wrapped round the roll, with knot and tails -->
+    <path d="M26 24.5V41.5" fill="none" stroke="#2A1008" stroke-width="5.2" stroke-linecap="round"/>
+    <path d="M26 24.5V41.5" fill="none" stroke="url(#drop_bandit_treasure_map-cord)" stroke-width="3"/>
+    <path d="M24.9 27L27.1 29M24.9 31L27.1 33M24.9 35L27.1 37" fill="none" stroke="#5A0A04" stroke-width=".8" stroke-linecap="round" opacity=".6"/>
+    <path d="M26 36.5Q22.5 42 21 48" fill="none" stroke="#2A1008" stroke-width="4.2" stroke-linecap="round"/>
+    <path d="M27 36.5Q29.5 43 32.6 48.5" fill="none" stroke="#2A1008" stroke-width="4.2" stroke-linecap="round"/>
+    <path d="M26 36.5Q22.5 42 21 48" fill="none" stroke="url(#drop_bandit_treasure_map-cordV)" stroke-width="2.1" stroke-linecap="round"/>
+    <path d="M27 36.5Q29.5 43 32.6 48.5" fill="none" stroke="url(#drop_bandit_treasure_map-cordV)" stroke-width="2.1" stroke-linecap="round"/>
+    <path d="M19 47L21 46.4L23 47L22.6 50.4L21.1 51.6L19.6 50.4Z" fill="#C21E10" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M30.6 47.6L32.6 47L34.6 47.6L34.2 51L32.7 52.2L31.2 51Z" fill="#C21E10" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- wax seal over the knot -->
+    <circle cx="26.5" cy="34.5" r="4.3" fill="url(#drop_bandit_treasure_map-wax)" stroke="#2A1008" stroke-width="1.8"/>
+    <circle cx="26.5" cy="34.5" r="2.6" fill="none" stroke="#FFD45A" stroke-width=".8" opacity=".85"/>
+    <circle cx="26.5" cy="34.5" r="1" fill="#FFD45A"/>
+    <circle cx="25.2" cy="33.1" r=".8" fill="#FFFFFF" opacity=".85"/>
+  </g>
+</svg>

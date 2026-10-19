@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 80 80">
+  <defs>
+    <radialGradient id="chest_jade-body" gradientUnits="userSpaceOnUse" cx="28" cy="46" r="50">
+      <stop offset="0" stop-color="#9AEFCB"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <radialGradient id="chest_jade-lid" gradientUnits="userSpaceOnUse" cx="22" cy="26" r="52">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <linearGradient id="chest_jade-silver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <linearGradient id="chest_jade-silverV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <radialGradient id="chest_jade-gem" cx=".35" cy=".3" r=".85">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+  </defs>
+
+  <!-- cast shadow -->
+  <ellipse cx="40" cy="72" rx="32" ry="3" fill="#2A1008" opacity=".3"/>
+
+  <!-- body -->
+  <rect x="10" y="41" width="60" height="29" rx="3" fill="url(#chest_jade-body)" stroke="#2A1008" stroke-width="3.1" stroke-linejoin="round"/>
+  <path d="M13.2 46V66" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>
+  <!-- silver corner brackets -->
+  <g fill="none" stroke="#E4E8F0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 62V66.5H18"/>
+    <path d="M66.5 62V66.5H62"/>
+  </g>
+
+  <!-- lid -->
+  <path d="M7 41V32C7 26.5 10.5 23.5 16 23.5H64C69.5 23.5 73 26.5 73 32V41Z" fill="url(#chest_jade-lid)" stroke="#2A1008" stroke-width="3.1" stroke-linejoin="round"/>
+  <path d="M10.5 32.5C11 28.5 13.5 26.5 17.5 26.2" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" opacity=".8"/>
+  <!-- silver cloud boss on the lid -->
+  <path d="M30 24C30 20.5 33.5 19.3 36 21.3C36.5 18 43.5 18 44 21.3C46.5 19.3 50 20.5 50 24Z" fill="url(#chest_jade-silverV)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <ellipse cx="38" cy="20.6" rx="1.4" ry=".9" fill="#FFFFFF" opacity=".9"/>
+
+  <!-- silver hinge band along the lid base -->
+  <rect x="7" y="38.4" width="66" height="5.2" rx="1.6" fill="url(#chest_jade-silverV)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M9.5 39.9H70.5" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".7"/>
+
+  <!-- silver vertical bands -->
+  <rect x="16" y="23" width="7.5" height="47.5" rx="1.2" fill="url(#chest_jade-silver)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="56.5" y="23" width="7.5" height="47.5" rx="1.2" fill="url(#chest_jade-silver)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M17.8 26V67" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+  <path d="M58.3 26V67" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+  <g fill="#2A1008" opacity=".55">
+    <circle cx="19.75" cy="31" r="1.1"/><circle cx="19.75" cy="50" r="1.1"/><circle cx="19.75" cy="64" r="1.1"/>
+    <circle cx="60.25" cy="31" r="1.1"/><circle cx="60.25" cy="50" r="1.1"/><circle cx="60.25" cy="64" r="1.1"/>
+  </g>
+
+  <!-- silver lock with a jade gem -->
+  <path d="M33 38.5H47V47Q47 51.5 42.5 51.5H37.5Q33 51.5 33 47Z" fill="url(#chest_jade-silverV)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M35.2 40.6H41" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <circle cx="40" cy="45" r="3.2" fill="url(#chest_jade-gem)" stroke="#2A1008" stroke-width="1.5"/>
+  <ellipse cx="38.9" cy="43.9" rx="1.1" ry=".7" fill="#FFFFFF" opacity=".9"/>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ore_spirit_crystal-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4DEEC"/>
+      <stop offset="1" stop-color="#A69EB8"/>
+    </linearGradient>
+    <linearGradient id="ore_spirit_crystal-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A69EB8"/>
+      <stop offset="1" stop-color="#6E6684"/>
+    </linearGradient>
+    <linearGradient id="ore_spirit_crystal-front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9C94AE"/>
+      <stop offset="1" stop-color="#574F6A"/>
+    </linearGradient>
+    <radialGradient id="ore_spirit_crystal-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FDCFF" stop-opacity=".7"/>
+      <stop offset=".6" stop-color="#8FDCFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#8FDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ore_spirit_crystal-fL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B8ECFF"/>
+      <stop offset="1" stop-color="#3B8FDA"/>
+    </linearGradient>
+    <linearGradient id="ore_spirit_crystal-fC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#C8F0FF"/>
+      <stop offset="1" stop-color="#8FDCFF"/>
+    </linearGradient>
+    <linearGradient id="ore_spirit_crystal-fR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6FBCF2"/>
+      <stop offset="1" stop-color="#2E7FD0"/>
+    </linearGradient>
+    <!-- hexagonal crystal column, base centred at origin, tip at -34 -->
+    <g id="ore_spirit_crystal-xtal">
+      <path d="M-6 -26L-2 -24L-2 0L-6 0Z" fill="url(#ore_spirit_crystal-fL)"/>
+      <path d="M-2 -24L2 -24L2 0L-2 0Z" fill="url(#ore_spirit_crystal-fC)"/>
+      <path d="M2 -24L6 -26L6 0L2 0Z" fill="url(#ore_spirit_crystal-fR)"/>
+      <path d="M0 -34L-6 -26L-2 -24Z" fill="#D8F4FF"/>
+      <path d="M0 -34L-2 -24L2 -24Z" fill="#FFFFFF"/>
+      <path d="M0 -34L2 -24L6 -26Z" fill="#8FDCFF"/>
+      <g fill="none" stroke="#2A1008" stroke-width="1.1" stroke-linejoin="round" opacity=".7">
+        <path d="M-6 -26L-2 -24L2 -24L6 -26"/>
+        <path d="M-2 -24V0M2 -24V0"/>
+        <path d="M0 -34L-2 -24M0 -34L2 -24"/>
+      </g>
+      <path d="M-4.5 -22V-8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+      <path d="M0 -34L6 -26L6 0L-6 0L-6 -26Z" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <ellipse cx="32" cy="57" rx="20" ry="2.4" fill="#2A1008" opacity=".3"/>
+  <circle cx="32" cy="30" r="24" fill="url(#ore_spirit_crystal-glow)"/>
+
+  <!-- side crystals -->
+  <use href="#ore_spirit_crystal-xtal" transform="translate(21 46) rotate(-28) scale(.72)"/>
+  <use href="#ore_spirit_crystal-xtal" transform="translate(43.5 46) rotate(26) scale(.62)"/>
+  <!-- main crystal -->
+  <use href="#ore_spirit_crystal-xtal" transform="translate(32 46)"/>
+
+  <!-- rock base -->
+  <path d="M16 39L32 37L48 39L54 45L50 54L32 57L14 54L10 45Z" fill="url(#ore_spirit_crystal-top)"/>
+  <path d="M10 45L16 39L21 46L14 54Z" fill="url(#ore_spirit_crystal-left)"/>
+  <path d="M21 46L43 47L54 45L50 54L32 57L14 54Z" fill="url(#ore_spirit_crystal-front)"/>
+  <g fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M16 39L21 46L14 54"/>
+    <path d="M21 46L43 47L54 45"/>
+  </g>
+  <path d="M12.5 45L16.5 41" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".5"/>
+  <path d="M16 39L32 37L48 39L54 45L50 54L32 57L14 54L10 45Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

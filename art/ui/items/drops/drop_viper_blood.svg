@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="drop_viper_blood-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3FC79A" stop-opacity=".62"/>
+      <stop offset=".55" stop-color="#3FC79A" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#3FC79A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop_viper_blood-liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8CF5C8"/>
+      <stop offset=".5" stop-color="#2DBA86"/>
+      <stop offset="1" stop-color="#0A4A38"/>
+    </linearGradient>
+    <radialGradient id="drop_viper_blood-core" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#D8FFEE" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#D8FFEE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop_viper_blood-glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".5"/>
+      <stop offset=".3" stop-color="#FFFFFF" stop-opacity=".1"/>
+      <stop offset=".8" stop-color="#FFFFFF" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#1A2A6E" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="drop_viper_blood-empty" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCEFFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#DCEFFF" stop-opacity=".25"/>
+    </linearGradient>
+    <linearGradient id="drop_viper_blood-cork" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0D2A0"/>
+      <stop offset=".5" stop-color="#C48A4E"/>
+      <stop offset="1" stop-color="#7A4620"/>
+    </linearGradient>
+    <linearGradient id="drop_viper_blood-charm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <clipPath id="drop_viper_blood-clip">
+      <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- glow halo and contact shadow -->
+  <circle cx="30" cy="40" r="20" fill="url(#drop_viper_blood-halo)"/>
+  <ellipse cx="30" cy="57.3" rx="12" ry="1.6" fill="#2A1008" opacity=".3"/>
+
+  <!-- empty glass -->
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="url(#drop_viper_blood-empty)"/>
+
+  <!-- blood -->
+  <g clip-path="url(#drop_viper_blood-clip)">
+    <rect x="16" y="31" width="30" height="30" fill="url(#drop_viper_blood-liquid)"/>
+    <ellipse cx="30" cy="31" rx="12" ry="2.2" fill="#A8FFD8"/>
+    <circle cx="30" cy="44" r="9" fill="url(#drop_viper_blood-core)"/>
+    <g fill="#E6FFF4" opacity=".85">
+      <circle cx="25" cy="48.5" r="1.3"/>
+      <circle cx="34.5" cy="42" r=".9"/>
+      <circle cx="27" cy="38" r=".7"/>
+    </g>
+  </g>
+
+  <!-- glass overlay and outline -->
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="url(#drop_viper_blood-glass)"/>
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M22 31C21.2 36 21.6 42 23.8 47.5" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+  <path d="M27.6 16.5V21" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".6"/>
+
+  <!-- cork -->
+  <rect x="23" y="6.5" width="14" height="9" rx="2.2" fill="url(#drop_viper_blood-cork)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M27 8.6V13.4M30.5 8.4V13.6M33.8 8.7V13.3" fill="none" stroke="#7A4620" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <path d="M25.2 8.4H28.6" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+
+  <!-- neck cord and charm (snake scale) -->
+  <path d="M24.5 17.5H35.5" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M24.5 17.5H35.5" fill="none" stroke="#2F7A52" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M35.5 17.5Q43 17 46.8 21" fill="none" stroke="#2A1008" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M35.5 17.5Q43 17 46.8 21" fill="none" stroke="#2F7A52" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M47.5 20.5C43.4 23.6 43.2 28.2 47.5 31.4C51.8 28.2 51.6 23.6 47.5 20.5Z" fill="url(#drop_viper_blood-charm)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M47.5 22.6V29.4" fill="none" stroke="#0E6A50" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+  <path d="M45.4 24.6C45.7 23.4 46.2 22.5 46.8 21.9" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85"/>
+
+  <!-- glint -->
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(38.6 26) scale(1.7)" fill="#FFFFFF"/>
+</svg>

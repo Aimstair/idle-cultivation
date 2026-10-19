@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="fish_jade_koi-tray" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0C8"/>
+      <stop offset=".6" stop-color="#E2C084"/>
+      <stop offset="1" stop-color="#B88E4C"/>
+    </linearGradient>
+    <linearGradient id="fish_jade_koi-trayside" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A87C3C"/>
+      <stop offset="1" stop-color="#6A4A1E"/>
+    </linearGradient>
+    <clipPath id="fish_jade_koi-tc"><ellipse cx="32" cy="45" rx="25" ry="9"/></clipPath>
+    <linearGradient id="fish_jade_koi-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".6" stop-color="#EAF4EE"/>
+      <stop offset="1" stop-color="#B8D0C4"/>
+    </linearGradient>
+    <linearGradient id="fish_jade_koi-jade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <linearGradient id="fish_jade_koi-fin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8FFF4"/>
+      <stop offset="1" stop-color="#3FC79A"/>
+    </linearGradient>
+    <radialGradient id="fish_jade_koi-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FFFD0" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#8FFFD0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- woven bamboo tray -->
+  <ellipse cx="32" cy="57" rx="24" ry="2.4" fill="#2A1008" opacity=".3"/>
+  <path d="M7 45A25 9 0 0 0 57 45V48.5A25 9 0 0 1 7 48.5Z" fill="url(#fish_jade_koi-trayside)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <ellipse cx="32" cy="45" rx="25" ry="9" fill="url(#fish_jade_koi-tray)"/>
+  <g clip-path="url(#fish_jade_koi-tc)" fill="none" stroke="#8A6630" stroke-width="1" opacity=".45">
+    <path d="M8 40L24 56M14 38L32 56M20 36.5L40 56M26 36L48 55M32 36L54 52M38 36.5L58 50M44 37L60 46"/>
+    <path d="M56 40L40 56M50 38L32 56M44 36.5L24 56M38 36L16 55M32 36L10 52M26 36.5L6 50M20 37L4 46"/>
+  </g>
+  <ellipse cx="32" cy="45" rx="22" ry="6.8" fill="none" stroke="#8A6630" stroke-width="1.2" opacity=".7"/>
+  <ellipse cx="32" cy="45" rx="25" ry="9" fill="none" stroke="#2A1008" stroke-width="2.4"/>
+  <path d="M11 42C15 39 20 37.5 25 37" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+  <ellipse cx="32" cy="32" rx="26" ry="16" fill="url(#fish_jade_koi-glow)"/>
+  <ellipse cx="33" cy="44" rx="20" ry="4" fill="#2A1008" opacity=".22"/>
+
+  <!-- koi: flowing fins first -->
+  <path d="M45 33C48.5 27 53 22 58 21C55 27 55 32 55 35C56 39 56.5 43.5 57.5 46.5C52 44.5 48 40 45 34.5Z" fill="url(#fish_jade_koi-fin)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M22 24.5C27 16.5 38 15.5 44.5 25Z" fill="url(#fish_jade_koi-fin)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- body -->
+  <path d="M10 33C11 25.5 19 22 29.5 22.5C38.5 23 45 28 46 33C45 38.5 39 44 29.5 44.5C19.5 45 11 41 10 33Z" fill="url(#fish_jade_koi-body)"/>
+  <!-- jade markings -->
+  <g fill="url(#fish_jade_koi-jade)" stroke="#2A1008" stroke-width="1.1" stroke-linejoin="round" opacity=".95">
+    <path d="M25 24.5C30 22.5 36 24 40 27.5C36 31 29 31.5 24 29Z"/>
+    <path d="M14 34C17 30.5 21.5 31.5 24 35C21 38.5 16.5 38.5 14 34Z"/>
+    <path d="M33 37C36 34.5 40 35 43 37.5C40 40.5 35.5 40.5 33 37Z"/>
+  </g>
+  <!-- jade scale arcs -->
+  <g fill="none" stroke="#3FC79A" stroke-width=".9" opacity=".7">
+    <path d="M26 34A3 3 0 0 0 32 34M20 40A3 3 0 0 0 26 40M26 40A3 3 0 0 0 32 40M38 31A3 3 0 0 0 44 31"/>
+  </g>
+  <!-- gill -->
+  <path d="M21 26.5C19 30.5 19 36.5 21 40.5" fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+  <!-- pectoral veil fin -->
+  <path d="M22 39.5C26 42 29.5 46 26.5 49.5C22 47.5 19.5 43.5 22 39.5Z" fill="url(#fish_jade_koi-fin)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- eye, mouth, barbels -->
+  <circle cx="17" cy="31" r="2.4" fill="#FFFFFF" stroke="#2A1008" stroke-width="1.2"/>
+  <circle cx="17.5" cy="31.3" r="1.2" fill="#2A1008"/>
+  <path d="M10.5 35.5L13.5 36" fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M11 36.5L8 39" fill="none" stroke="#2A1008" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M16 26.5C21 24 27 23.5 33 24" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".95"/>
+  <!-- outline -->
+  <path d="M10 33C11 25.5 19 22 29.5 22.5C38.5 23 45 28 46 33C45 38.5 39 44 29.5 44.5C19.5 45 11 41 10 33Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

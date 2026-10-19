@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="thunder_essence-glass" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".55"/>
+      <stop offset=".6" stop-color="#B8E4FF" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#3B7FE0" stop-opacity=".35"/>
+    </radialGradient>
+    <radialGradient id="thunder_essence-ball" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".3" stop-color="#EAD8FF"/>
+      <stop offset=".65" stop-color="#9A6AE8" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#3A1E7A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="thunder_essence-cork" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C07A3E"/>
+      <stop offset="1" stop-color="#6A3414"/>
+    </linearGradient>
+    <radialGradient id="thunder_essence-seal" cx=".4" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="32" cy="57" rx="14" ry="2.4" fill="#2A1008" opacity=".3"/>
+
+  <!-- vial body (neck + bulb) -->
+  <path d="M27 18V26C20 29 17 34 17 40A15 15 0 0 0 47 40C47 34 44 29 37 26V18Z" fill="#3A1E7A" opacity=".55"/>
+  <path d="M27 18V26C20 29 17 34 17 40A15 15 0 0 0 47 40C47 34 44 29 37 26V18Z" fill="url(#thunder_essence-glass)"/>
+
+  <!-- lightning ball -->
+  <circle cx="32" cy="40" r="12" fill="url(#thunder_essence-ball)"/>
+  <circle cx="32" cy="40" r="4.5" fill="#FFFFFF"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 40L26 35L27.5 31.5M32 40L39 36L38 32M32 40L24 44L25 48M32 40L38.5 45.5L36.5 49.5" stroke="#9A6AE8" stroke-width="2.6" opacity=".8"/>
+    <path d="M32 40L26 35L27.5 31.5M32 40L39 36L38 32M32 40L24 44L25 48M32 40L38.5 45.5L36.5 49.5" stroke="#FFFFFF" stroke-width="1.2"/>
+  </g>
+
+  <!-- glass highlight -->
+  <path d="M22 34C22.5 31.5 24.5 29 27.5 27.5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+  <path d="M20.5 42C21 46 23 49.5 26 51.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+
+  <!-- vial outline -->
+  <path d="M27 18V26C20 29 17 34 17 40A15 15 0 0 0 47 40C47 34 44 29 37 26V18" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- red wax seal band -->
+  <path d="M25 17.5H39V22.5H25Z" fill="url(#thunder_essence-seal)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M27 19.3H33" fill="none" stroke="#FFB0A0" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+
+  <!-- cork -->
+  <path d="M26.5 9.5Q26.5 8 28 8H36Q37.5 8 37.5 9.5V17.5H26.5Z" fill="url(#thunder_essence-cork)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M29 10.5V15.5" fill="none" stroke="#FFF0B0" stroke-width="1.2" stroke-linecap="round" opacity=".75"/>
+</svg>

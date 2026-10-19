@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="drop_salamander_heart-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFA020" stop-opacity=".65"/>
+      <stop offset=".55" stop-color="#FF6A1A" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#FF6A1A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="drop_salamander_heart-obsidian" gradientUnits="userSpaceOnUse" cx="22" cy="20" r="34">
+      <stop offset="0" stop-color="#6A5A7C"/>
+      <stop offset=".35" stop-color="#2E2438"/>
+      <stop offset=".75" stop-color="#140E1A"/>
+      <stop offset="1" stop-color="#06040A"/>
+    </radialGradient>
+    <radialGradient id="drop_salamander_heart-core" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFF8D0"/>
+      <stop offset=".3" stop-color="#FFD040"/>
+      <stop offset=".65" stop-color="#FF6A1A" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FF6A1A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="drop_salamander_heart-under" gradientUnits="userSpaceOnUse" cx="32" cy="34" r="20">
+      <stop offset="0" stop-color="#FF7A1A" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="drop_salamander_heart-clip">
+      <path d="M32 54C21 45 12 38 12 26.5C12 19 17.5 13 24.5 13C28 13 31 15 32 18C33 15 36 13 39.5 13C46.5 13 52 19 52 26.5C52 38 43 45 32 54Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- heat halo and contact shadow -->
+  <circle cx="32" cy="34" r="26" fill="url(#drop_salamander_heart-halo)"/>
+  <ellipse cx="32" cy="57.3" rx="14" ry="1.7" fill="#2A1008" opacity=".3"/>
+
+  <!-- obsidian heart -->
+  <path d="M32 54C21 45 12 38 12 26.5C12 19 17.5 13 24.5 13C28 13 31 15 32 18C33 15 36 13 39.5 13C46.5 13 52 19 52 26.5C52 38 43 45 32 54Z" fill="url(#drop_salamander_heart-obsidian)"/>
+  <g clip-path="url(#drop_salamander_heart-clip)">
+    <!-- inner heat -->
+    <circle cx="32" cy="34" r="20" fill="url(#drop_salamander_heart-under)"/>
+    <!-- facet lines -->
+    <g fill="none" stroke="#9A8AB0" stroke-width="1" stroke-linecap="round" opacity=".28">
+      <path d="M18 20L24 28L17 34M46 20L40 28L47 34M24 28L32 24L40 28"/>
+    </g>
+    <!-- molten cracks -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 30L26 36L23 44M32 30L38 35L42 42M32 30L31 22M26 36L20 36M38 35L44 31" stroke="#FF6A1A" stroke-width="3.6" opacity=".55"/>
+      <path d="M32 30L26 36L23 44M32 30L38 35L42 42M32 30L31 22M26 36L20 36M38 35L44 31" stroke="#FFD040" stroke-width="1.5"/>
+      <path d="M31 22L31.5 17M23 44L28 48" stroke="#FFD040" stroke-width="1.1" opacity=".8"/>
+    </g>
+    <!-- glowing core -->
+    <circle cx="32" cy="31" r="7.5" fill="url(#drop_salamander_heart-core)"/>
+    <circle cx="32" cy="31" r="2.6" fill="#FFFFFF"/>
+  </g>
+  <path d="M32 54C21 45 12 38 12 26.5C12 19 17.5 13 24.5 13C28 13 31 15 32 18C33 15 36 13 39.5 13C46.5 13 52 19 52 26.5C52 38 43 45 32 54Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- glassy highlight -->
+  <path d="M16.5 24C17 19.5 20 16.5 24 15.8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+  <path d="M38.5 15.6C41 15.6 43 16.4 44.6 17.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+
+  <!-- embers -->
+  <g fill="#FFC844">
+    <circle cx="55" cy="22" r="1.1"/>
+    <circle cx="9.5" cy="34" r=".9"/>
+    <circle cx="50" cy="46" r=".8"/>
+  </g>
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(13 14) scale(1.6)" fill="#FFF2A0"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="pendant_t1-wood" gradientUnits="userSpaceOnUse" cx="27" cy="29" r="20">
+      <stop offset="0" stop-color="#F0B070"/>
+      <stop offset=".55" stop-color="#BC7040"/>
+      <stop offset="1" stop-color="#6E3618"/>
+    </radialGradient>
+    <linearGradient id="pendant_t1-cord" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8D4A8"/>
+      <stop offset="1" stop-color="#B89A68"/>
+    </linearGradient>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="50" rx="13" ry="1.6" fill="#2A1008" opacity=".25"/>
+
+  <!-- hemp cord -->
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="url(#pendant_t1-cord)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17.5 7.3L23 12" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".8"/>
+
+  <!-- carved wooden disc -->
+  <circle cx="32" cy="34.5" r="14" fill="url(#pendant_t1-wood)" stroke="#2A1008" stroke-width="2.4"/>
+  <!-- carved rings -->
+  <circle cx="32" cy="34.5" r="9.6" fill="none" stroke="#6E3618" stroke-width="1.3"/>
+  <path d="M24 29.5A9.6 9.6 0 0 1 37 25.8" fill="none" stroke="#F0C088" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <circle cx="32" cy="34.5" r="4.2" fill="#C07A3E" stroke="#6E3618" stroke-width="1.3"/>
+  <ellipse cx="30.6" cy="32.8" rx="1.4" ry=".9" fill="#F0C088" opacity=".9"/>
+  <!-- wood grain -->
+  <path d="M21 39.5Q27 36.5 24 31M43 29Q37.5 33 40.5 38.5" fill="none" stroke="#6A3414" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <!-- cord hole and knot -->
+  <circle cx="32" cy="23.2" r="1.7" fill="#3A190C" stroke="#2A1008" stroke-width="1"/>
+  <circle cx="32" cy="19.8" r="2.3" fill="url(#pendant_t1-cord)" stroke="#2A1008" stroke-width="1.3"/>
+  <!-- highlight -->
+  <path d="M21.5 29.5Q24 23.5 30.5 21.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+</svg>

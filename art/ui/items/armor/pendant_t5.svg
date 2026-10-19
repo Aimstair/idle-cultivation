@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="pendant_t5-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="pendant_t5-obsidian" gradientUnits="userSpaceOnUse" cx="27" cy="29" r="17">
+      <stop offset="0" stop-color="#7A7A92"/>
+      <stop offset=".5" stop-color="#2E2E3C"/>
+      <stop offset="1" stop-color="#0A0A12"/>
+    </radialGradient>
+    <radialGradient id="pendant_t5-ember" cx=".35" cy=".3" r=".85">
+      <stop offset="0" stop-color="#FFF8D8"/>
+      <stop offset=".35" stop-color="#FFE060"/>
+      <stop offset=".7" stop-color="#FFA020"/>
+      <stop offset="1" stop-color="#C21E10"/>
+    </radialGradient>
+    <linearGradient id="pendant_t5-molten" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8301A"/>
+      <stop offset=".5" stop-color="#FFA020"/>
+      <stop offset="1" stop-color="#FFF2A0"/>
+    </linearGradient>
+    <filter id="pendant_t5-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <path id="pendant_t5-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="57.4" rx="8" ry="1.3" fill="#2A1008" opacity=".25"/>
+
+  <!-- gold silk cord -->
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="url(#pendant_t5-gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17.5 7.3L23 12" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".8"/>
+
+  <!-- molten tassel (behind the disc) -->
+  <path d="M32 46V49" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M29.6 50.5L28.6 57H35.4L34.4 50.5Z" fill="#FFA020" opacity=".6" filter="url(#pendant_t5-glow)"/>
+  <path d="M29.6 50.5L28.6 57H35.4L34.4 50.5Z" fill="url(#pendant_t5-molten)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M31.2 52V55.5M33 52V55.5" fill="none" stroke="#C21E10" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+  <circle cx="32" cy="49.4" r="1.8" fill="url(#pendant_t5-gold)" stroke="#2A1008" stroke-width="1.1"/>
+
+  <!-- molten glow -->
+  <circle cx="32" cy="34.5" r="13" fill="#FFA020" opacity=".65" filter="url(#pendant_t5-glow)"/>
+  <!-- gold frame -->
+  <circle cx="32" cy="34.5" r="14" fill="url(#pendant_t5-gold)" stroke="#2A1008" stroke-width="2.4"/>
+  <!-- obsidian disc -->
+  <circle cx="32" cy="34.5" r="10.4" fill="url(#pendant_t5-obsidian)" stroke="#2A1008" stroke-width="1.4"/>
+  <!-- ring of gold roc feathers around the ember -->
+  <g fill="url(#pendant_t5-gold)" stroke="#2A1008" stroke-width="1" stroke-linejoin="round">
+    <path d="M32 25.2Q34 28 32 30.4Q30 28 32 25.2Z"/>
+    <path d="M40.05 29.85Q39.5 33.3 36.8 34.4Q36.9 31 40.05 29.85Z"/>
+    <path d="M40.05 39.15Q36.9 38 36.8 34.6Q39.5 35.7 40.05 39.15Z"/>
+    <path d="M32 43.8Q30 41 32 38.6Q34 41 32 43.8Z"/>
+    <path d="M23.95 39.15Q24.5 35.7 27.2 34.6Q27.1 38 23.95 39.15Z"/>
+    <path d="M23.95 29.85Q27.1 31 27.2 34.4Q24.5 33.3 23.95 29.85Z"/>
+  </g>
+  <!-- ember heart -->
+  <circle cx="32" cy="34.5" r="5" fill="#FFA020" opacity=".9" filter="url(#pendant_t5-glow)"/>
+  <circle cx="32" cy="34.5" r="4.2" fill="url(#pendant_t5-ember)" stroke="#2A1008" stroke-width="1.3"/>
+  <ellipse cx="30.6" cy="32.8" rx="1.4" ry=".9" fill="#FFFFFF" opacity=".95"/>
+  <!-- frame bevel and highlight -->
+  <circle cx="32" cy="34.5" r="12.2" fill="none" stroke="#FFE7A0" stroke-width=".9" opacity=".7"/>
+  <path d="M21.5 29.5Q24 23.5 30.5 21.8" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".95"/>
+  <!-- gold knot -->
+  <circle cx="32" cy="20" r="2.4" fill="url(#pendant_t5-gold)" stroke="#2A1008" stroke-width="1.3"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#pendant_t5-spark" transform="translate(13 24) scale(1.8)"/>
+    <use href="#pendant_t5-spark" transform="translate(51 40) scale(1.4)"/>
+    <use href="#pendant_t5-spark" transform="translate(47 16) scale(1.2)"/>
+  </g>
+  <g fill="#FFF2A0">
+    <use href="#pendant_t5-spark" transform="translate(16 44) scale(1.3)"/>
+    <use href="#pendant_t5-spark" transform="translate(50 29) scale(1.1)"/>
+  </g>
+</svg>

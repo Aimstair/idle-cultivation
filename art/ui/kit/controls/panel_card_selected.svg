@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="144" viewBox="0 0 120 72">
+<!-- 9slice: 16 -->
+  <defs>
+    <linearGradient id="panel_card_selected-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="15">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel_card_selected-shade" gradientUnits="userSpaceOnUse" x1="0" y1="57" x2="0" y2="68">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".38"/>
+    </linearGradient>
+    <linearGradient id="panel_card_selected-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <filter id="panel_card_selected-blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <filter id="panel_card_selected-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+    <clipPath id="panel_card_selected-clip"><rect x="4" y="4" width="112" height="64" rx="8"/></clipPath>
+    <g id="panel_card_selected-stud">
+      <circle r="2.7" fill="url(#panel_card_selected-goldSmall)" stroke="#2A1008" stroke-width="1.2"/>
+      <circle cx="-.9" cy="-.9" r=".8" fill="#FFFFFF" opacity=".85"/>
+    </g>
+  </defs>
+
+  <!-- cast shadow -->
+  <rect x="4" y="5.8" width="112" height="64" rx="8" fill="#2A1008" opacity=".4" filter="url(#panel_card_selected-blur)"/>
+  <!-- outer jade glow -->
+  <rect x="4" y="4" width="112" height="64" rx="8" fill="none" stroke="#3FC79A" stroke-width="3.6" opacity=".8" filter="url(#panel_card_selected-glow)"/>
+
+  <!-- rosewood body -->
+  <rect x="4" y="4" width="112" height="64" rx="8" fill="#3A190C" stroke="#2A1008" stroke-width="2.6" stroke-linejoin="round"/>
+  <g clip-path="url(#panel_card_selected-clip)">
+    <rect x="4" y="4" width="112" height="11" fill="url(#panel_card_selected-sheen)"/>
+    <rect x="4" y="57" width="112" height="11" fill="url(#panel_card_selected-shade)"/>
+    <!-- inner jade glow -->
+    <rect x="4" y="4" width="112" height="64" rx="8" fill="none" stroke="#3FC79A" stroke-width="7" opacity=".35" filter="url(#panel_card_selected-glow)"/>
+  </g>
+  <path d="M13 5.3 H107" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".4"/>
+
+  <!-- glowing jade rim -->
+  <rect x="6.6" y="6.6" width="106.8" height="58.8" rx="5.8" fill="none" stroke="#0E6A50" stroke-width="2.6" opacity=".9"/>
+  <rect x="6.6" y="6.6" width="106.8" height="58.8" rx="5.8" fill="none" stroke="#8FEFC8" stroke-width="1.3"/>
+
+  <!-- gold corner studs -->
+  <use href="#panel_card_selected-stud" transform="translate(10.2 10.2)"/>
+  <use href="#panel_card_selected-stud" transform="translate(109.8 10.2)"/>
+  <use href="#panel_card_selected-stud" transform="translate(10.2 61.8)"/>
+  <use href="#panel_card_selected-stud" transform="translate(109.8 61.8)"/>
+</svg>

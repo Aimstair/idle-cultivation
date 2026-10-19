@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="pendant_t2-jade" gradientUnits="userSpaceOnUse" cx="26" cy="27" r="22">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".4" stop-color="#D8F6E8"/>
+      <stop offset=".8" stop-color="#8ED8B8"/>
+      <stop offset="1" stop-color="#3FA880"/>
+    </radialGradient>
+    <linearGradient id="pendant_t2-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".45" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <linearGradient id="pendant_t2-silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="57.4" rx="8" ry="1.3" fill="#2A1008" opacity=".25"/>
+
+  <!-- blue silk cord -->
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 6L32 19.5L48 6" fill="none" stroke="url(#pendant_t2-blue)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17.5 7.3L23 12" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".8"/>
+
+  <!-- blue tassel (behind the disc) -->
+  <path d="M32 46V49" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M29.6 50.5L28.6 57H35.4L34.4 50.5Z" fill="url(#pendant_t2-blue)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M31.2 52V55.5M33 52V55.5" fill="none" stroke="#1A2A6E" stroke-width=".8" stroke-linecap="round" opacity=".8"/>
+  <circle cx="32" cy="49.4" r="1.8" fill="url(#pendant_t2-silver)" stroke="#2A1008" stroke-width="1.1"/>
+
+  <!-- white-jade bi disc -->
+  <path fill-rule="evenodd" d="M18 34.5A14 14 0 1 0 46 34.5A14 14 0 1 0 18 34.5ZM28 34.5A4 4 0 1 0 36 34.5A4 4 0 1 0 28 34.5Z" fill="url(#pendant_t2-jade)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- grain-pattern ring -->
+  <circle cx="32" cy="34.5" r="9.2" fill="none" stroke="#3FA880" stroke-width="1.5" stroke-dasharray="1.8 2.4" stroke-linecap="round" opacity=".6"/>
+  <circle cx="32" cy="34.5" r="6.3" fill="none" stroke="#3FA880" stroke-width="1" opacity=".5"/>
+  <!-- highlight -->
+  <path d="M21.5 29.5Q24 23.5 30.5 21.8" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".95"/>
+  <!-- silver knot -->
+  <circle cx="32" cy="20" r="2.4" fill="url(#pendant_t2-silver)" stroke="#2A1008" stroke-width="1.3"/>
+</svg>

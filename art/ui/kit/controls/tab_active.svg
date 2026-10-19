@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="80" viewBox="0 0 96 40">
+<!-- 9slice: 14 -->
+  <defs>
+    <linearGradient id="tab_active-face" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="40">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".12" stop-color="#E8B657"/>
+      <stop offset=".3" stop-color="#8A4A1E"/>
+      <stop offset=".55" stop-color="#5A2A16"/>
+      <stop offset="1" stop-color="#3A190C"/>
+    </linearGradient>
+    <linearGradient id="tab_active-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="11">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="tab_active-glow" x="-10%" y="-20%" width="120%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <path id="tab_active-shape" d="M3 40 V13 Q3 3 13 3 H83 Q93 3 93 13 V40"/>
+    <clipPath id="tab_active-clip"><use href="#tab_active-shape"/></clipPath>
+  </defs>
+
+  <!-- outline (open at the bottom so the tab merges into the window) -->
+  <use href="#tab_active-shape" fill="none" stroke="#2A1008" stroke-width="2.8" stroke-linejoin="round"/>
+  <use href="#tab_active-shape" fill="url(#tab_active-face)"/>
+  <g clip-path="url(#tab_active-clip)">
+    <rect x="3" y="3" width="90" height="8" fill="url(#tab_active-sheen)"/>
+    <path d="M4.8 40 V13.5 Q4.8 4.8 13.5 4.8 H82.5 Q91.2 4.8 91.2 13.5 V40" fill="none" stroke="#FFD45A" stroke-width="3.5" opacity=".55" filter="url(#tab_active-glow)"/>
+  </g>
+  <!-- gold rim -->
+  <path d="M4.8 40 V13.5 Q4.8 4.8 13.5 4.8 H82.5 Q91.2 4.8 91.2 13.5 V40" fill="none" stroke="#FFE7A0" stroke-width="1.4"/>
+  <path d="M14 3.9 H82" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".6"/>
+</svg>

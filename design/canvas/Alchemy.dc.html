@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Alchemy furnace</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E7%82%BC%E4%B8%B9%E9%87%91">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#2E2A3A}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.rb{border-radius:50%;border:3px solid #3A2A2A;display:grid;place-items:center;box-shadow:0 3px 0 #3A2A2A;text-decoration:none;cursor:pointer;padding:0;position:relative}
+.rc{width:52px;height:52px;border-radius:14px;border:3px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;position:relative;box-shadow:0 3px 0 #3A2A2A;cursor:pointer;padding:0}
+.bdg{position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);font-family:"Baloo 2",sans-serif;font-weight:800;font-size:10px;background:#2E2A3A;color:#FFFDF8;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 5px;white-space:nowrap}
+.ing{display:flex;flex-direction:column;align-items:center;gap:2px;font-family:"Baloo 2",sans-serif;font-weight:800;font-size:11.5px}
+.ingi{width:42px;height:42px;border-radius:12px;border:2.5px solid #3A2A2A;background:#FFF8EA;display:grid;place-items:center}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:#F4EAD3">
+
+  <div style="position:absolute;left:12px;right:12px;top:12px;display:flex;align-items:center;gap:10px">
+    <a href="Main.dc.html" class="rb" aria-label="Back to home" style="width:42px;height:42px;background:#FFFDF8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
+    <span class="brush" style="width:44px;height:44px;border:3px solid #B83E2B;border-radius:6px;color:#B83E2B;display:grid;place-items:center;font-size:18px;line-height:.92;text-align:center;transform:rotate(-4deg)">炼<br>丹</span>
+    <div style="display:flex;flex-direction:column;gap:3px;flex:1">
+      <span class="disp" style="font-weight:800;font-size:19px;line-height:1">Alchemy 24</span>
+      <span style="height:8px;border-radius:999px;border:2px solid #3A2A2A;background:#FFFDF8;position:relative;overflow:hidden"><span style="position:absolute;inset:0;width:62%;background:#C9954C"></span></span>
+    </div>
+    <button class="rb" aria-label="Furnace: Bronze Furnace, upgrade" style="width:42px;height:42px;background:#FFFDF8"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6A1E" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+  </div>
+
+  <!-- FURNACE -->
+  <svg width="390" height="250" viewBox="0 0 390 250" style="position:absolute;left:0;top:66px" aria-hidden="true">
+    <defs><radialGradient id="fire" cx="50%" cy="80%" r="60%"><stop offset="0" stop-color="#FFE7A6"/><stop offset=".5" stop-color="#F2643B"/><stop offset="1" stop-color="#F2643B" stop-opacity="0"/></radialGradient></defs>
+    <g fill="none" stroke="#B7AED0" stroke-width="3" stroke-linecap="round" opacity=".9"><path d="M170 54 q-12 -16 4 -28 q14 -12 0 -24"/><path d="M200 50 q-10 -14 4 -24"/><path d="M226 56 q-12 -16 4 -28"/></g>
+    <circle cx="195" cy="48" r="16" fill="#FFF4C9" stroke="#E8B54A" stroke-width="3"/>
+    <circle cx="195" cy="48" r="26" fill="none" stroke="#F2C14E" stroke-width="2" stroke-dasharray="3 6"/>
+    <ellipse cx="195" cy="214" rx="96" ry="20" fill="url(#fire)"/>
+    <path d="M110 92 H280 L268 186 Q195 214 122 186Z" fill="#B9773F" stroke="#3A2A2A" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M100 82 H290 V100 H100Z" fill="#8F5E3B" stroke="#3A2A2A" stroke-width="3.5"/>
+    <path d="M130 120 H260 M134 150 H256" stroke="#7A4E2C" stroke-width="3"/>
+    <circle cx="195" cy="140" r="18" fill="#E8B54A" stroke="#3A2A2A" stroke-width="3"/>
+    <path d="M187 140 h16 M195 132 v16" stroke="#3A2A2A" stroke-width="2.5"/>
+    <path d="M128 196 L118 230 M262 196 L272 230 M195 210 V236" stroke="#3A2A2A" stroke-width="7" stroke-linecap="round"/>
+    <g fill="#F2643B"><path d="M160 226 q6 -18 12 0z"/><path d="M190 230 q6 -22 12 0z"/><path d="M220 226 q6 -18 12 0z"/></g>
+  </svg>
+
+  <!-- current craft ring -->
+  <div style="position:absolute;right:16px;top:96px;display:flex;flex-direction:column;align-items:center;gap:3px">
+    <div style="position:relative;width:62px;height:62px">
+      <svg width="62" height="62" viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="26" fill="#FFFDF8" stroke="#3A2A2A" stroke-width="3"/><circle cx="31" cy="31" r="26" fill="none" stroke="#3FA58C" stroke-width="6" stroke-dasharray="66 164" transform="rotate(-90 31 31)" stroke-linecap="round"/><circle cx="31" cy="32" r="11" fill="#E0533D" stroke="#3A2A2A" stroke-width="2"/><path d="M26 29 q5 -5 10 0" stroke="#fff" stroke-width="2" fill="none"/></svg>
+    </div>
+    <span class="disp" style="font-weight:800;font-size:12px;background:#FFFDF8;border:2px solid #3A2A2A;border-radius:999px;padding:0 7px">4/10 · 1:12</span>
+  </div>
+
+  <!-- RECIPE GRID -->
+  <div style="position:absolute;left:12px;right:12px;top:330px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;justify-items:center">
+    <button class="rc" aria-label="Golden Core Pill, selected" style="box-shadow:0 0 0 3px #E8B54A,0 3px 0 3px #3A2A2A"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="17" r="11" fill="#F2C14E" stroke="#3A2A2A" stroke-width="2.2"/><circle cx="16" cy="17" r="4" fill="#FFF4C9"/></svg><span class="bdg" style="background:#B83E2B">gate</span></button>
+    <button class="rc" aria-label="Qi Gathering Pill"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="17" r="10" fill="#9FE6F0" stroke="#3A2A2A" stroke-width="2.2"/><path d="M11 17 q5 -6 10 0" stroke="#fff" stroke-width="2" fill="none"/></svg><span class="bdg">12</span></button>
+    <button class="rc" aria-label="Healing Pill"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="17" r="10" fill="#E0533D" stroke="#3A2A2A" stroke-width="2.2"/><path d="M11 14 q5 -5 10 0" stroke="#fff" stroke-width="2" fill="none"/></svg><span class="bdg">31</span></button>
+    <button class="rc" aria-label="Meridian Mending Pill"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="17" r="10" fill="#8C7BD9" stroke="#3A2A2A" stroke-width="2.2"/><path d="M10 17 h12 M16 11 v12" stroke="#fff" stroke-width="2.4"/></svg><span class="bdg">2</span></button>
+    <button class="rc" aria-label="Medicinal Bath"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 14h24l-2 10a4 4 0 0 1-4 3H10a4 4 0 0 1-4-3z" fill="#C9954C" stroke="#3A2A2A" stroke-width="2"/><path d="M5 14c4-3 18-3 22 0" fill="#9FD3C2" stroke="#3A2A2A" stroke-width="2"/></svg><span class="bdg">5</span></button>
+    <button class="rc" aria-label="Heart-Calming Pill, requires Alchemy 28" style="background:#E8E2F4;border-style:dashed"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A92AE" stroke-width="3" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span class="bdg" style="background:#9A92AE">28</span></button>
+  </div>
+
+  <!-- SELECTED RECIPE -->
+  <div style="position:absolute;left:12px;right:12px;top:412px;background:#FFFDF8;border:3px solid #3A2A2A;border-radius:18px;box-shadow:0 5px 0 #3A2A2A;padding:12px;display:flex;flex-direction:column;gap:10px">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span class="brush" style="width:30px;height:30px;border:2.5px solid #B83E2B;border-radius:5px;color:#B83E2B;display:grid;place-items:center;font-size:13px;line-height:.9;text-align:center">金<br>丹</span>
+      <span class="disp" style="font-weight:800;font-size:18px;flex:1">Golden Core Pill</span>
+      <span style="display:flex;align-items:center;gap:4px;font-size:12px;font-weight:800;color:#6B6478"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B6478" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 3h6"/></svg>20m</span>
+    </div>
+    <div style="display:flex;justify-content:space-between">
+      <span class="ing"><span class="ingi"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 26 Q8 14 14 6 M16 26 Q16 12 22 4 M22 26 Q24 16 28 10" stroke="#4E9A5A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M8 26 h18" stroke="#B83E2B" stroke-width="3"/></svg></span><span style="color:#277864">48/20</span></span>
+      <span class="ing"><span class="ingi"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 26 Q6 22 6 12 Q12 16 16 6 Q20 16 26 12 Q26 22 16 26Z" fill="#F2643B" stroke="#3A2A2A" stroke-width="2"/></svg></span><span style="color:#277864">7/5</span></span>
+      <span class="ing"><span class="ingi"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 L24 12 L16 29 L8 12Z" fill="#B9E3F2" stroke="#3A2A2A" stroke-width="2"/></svg></span><span style="color:#B83E2B">2/3</span></span>
+      <span class="ing"><span class="ingi"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 20 Q16 4 26 20 Q16 28 6 20Z" fill="#A9CBE6" stroke="#3A2A2A" stroke-width="2"/><path d="M10 18 q6 -6 12 0" stroke="#fff" stroke-width="2" fill="none"/></svg></span><span style="color:#277864">1/1</span></span>
+      <span class="ing" title="Success chance"><span class="ingi" style="background:#EAF6F1"><span class="disp" style="font-weight:800;font-size:15px;color:#277864">65%</span></span><span style="color:#6B6478">success</span></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <div style="display:flex;height:12px;border:2px solid #3A2A2A;border-radius:999px;overflow:hidden" aria-label="Quality odds: Low 28%, Mid 50%, High 18%, Perfect 4%">
+        <span style="width:28%;background:#C9C1D9"></span><span style="width:50%;background:#6CC4A1"></span><span style="width:18%;background:#8C6BE0"></span><span style="width:4%;background:#F2C14E"></span>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:10.5px;font-weight:800;color:#6B6478"><span>Low</span><span style="color:#277864">Mid</span><span style="color:#6E5DC0">High</span><span style="color:#8A6A1E">Perfect</span></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;color:#B83E2B">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B83E2B" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Need 1 more Spirit Crystal (Mining 25 or Old Sect Ruins)
+    </div>
+  </div>
+
+  <!-- BREWING QUEUE -->
+  <div style="position:absolute;left:12px;right:12px;bottom:120px;display:flex;align-items:center;gap:10px;background:rgba(255,253,248,.85);border:2.5px dashed #C9954C;border-radius:14px;padding:6px 10px">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6A1E" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg>
+    <span title="Brewing now: Healing Pill, 4 of 10" style="width:38px;height:38px;border-radius:10px;border:2.5px solid #3FA58C;background:#FFFDF8;display:grid;place-items:center;position:relative"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="17" r="10" fill="#E0533D" stroke="#3A2A2A" stroke-width="2.2"/></svg><span style="position:absolute;right:-6px;bottom:-6px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10px;background:#3FA58C;color:#fff;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 4px">4/10</span></span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9A92AE" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    <span title="Next: Qi Gathering Pill ×5" style="width:38px;height:38px;border-radius:10px;border:2.5px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;position:relative"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="17" r="10" fill="#9FE6F0" stroke="#3A2A2A" stroke-width="2.2"/></svg><span style="position:absolute;right:-6px;bottom:-6px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10px;background:#2E2A3A;color:#fff;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 4px">×5</span></span>
+    <span title="Then: Medicinal Bath ×2" style="width:38px;height:38px;border-radius:10px;border:2.5px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;position:relative"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 14h24l-2 10a4 4 0 0 1-4 3H10a4 4 0 0 1-4-3z" fill="#C9954C" stroke="#3A2A2A" stroke-width="2"/></svg><span style="position:absolute;right:-6px;bottom:-6px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10px;background:#2E2A3A;color:#fff;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 4px">×2</span></span>
+    <span style="flex:1"></span>
+    <span style="display:flex;flex-direction:column;align-items:flex-end;line-height:1.1"><span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px">2h 05m</span><span style="font-size:10.5px;font-weight:800;color:#6B6478">until queue ends</span></span>
+  </div>
+
+  <!-- CRAFT CONTROLS -->
+  <div style="position:absolute;left:0;right:0;bottom:26px;display:flex;justify-content:center;align-items:center;gap:14px">
+    <button class="rb" aria-label="Fewer" style="width:44px;height:44px;background:#FFFDF8"><svg width="18" height="18" viewBox="0 0 24 24" stroke="#3A2A2A" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+    <span class="disp" style="font-weight:800;font-size:26px;width:40px;text-align:center">×1</span>
+    <button class="rb" aria-label="More" style="width:44px;height:44px;background:#FFFDF8"><svg width="18" height="18" viewBox="0 0 24 24" stroke="#3A2A2A" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+    <button class="rb" aria-label="Brew: missing ingredients" style="width:76px;height:76px;background:#C9C1D9;box-shadow:0 6px 0 #9A92AE"><svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="#FFFDF8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 14h20l-2 9a3 3 0 0 1-3 2H11a3 3 0 0 1-3-2z"/><path d="M5 14h22M12 9c0-2 2-2 2-4M18 9c0-2 2-2 2-4"/></svg></button>
+    <button class="rb" aria-label="Queue" style="width:44px;height:44px;background:#FFFDF8"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg><span style="position:absolute;right:-4px;top:-4px;font-size:10px;font-weight:800;background:#2E2A3A;color:#fff;border-radius:999px;padding:0 4px;border:1.5px solid #FBF6EC">2</span></button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12">
+  <defs>
+    <radialGradient id="bead_grey-stone" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#E4DEEC"/>
+      <stop offset=".45" stop-color="#A69EB8"/>
+      <stop offset="1" stop-color="#524A62"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="6" cy="11.1" rx="3.6" ry=".7" fill="#2A1008" opacity=".28"/>
+  <circle cx="6" cy="5.7" r="4.6" fill="url(#bead_grey-stone)" stroke="#2A1008" stroke-width=".8"/>
+  <ellipse cx="4.5" cy="3.9" rx="1.2" ry=".8" fill="#FFFFFF" opacity=".7" transform="rotate(-35 4.5 3.9)"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="manual_fragment-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#E9CF98"/>
+    </linearGradient>
+    <linearGradient id="manual_fragment-burn" gradientUnits="userSpaceOnUse" x1="33" y1="31" x2="49" y2="49">
+      <stop offset="0" stop-color="#5A2A16" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#5A2A16" stop-opacity=".45"/>
+      <stop offset=".55" stop-color="#2A1008" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#0A0402"/>
+    </linearGradient>
+    <clipPath id="manual_fragment-clip">
+      <path d="M13 11L25 13L33 9L46 11L50 19L48 28L53 37L50 46L41 55L30 53L21 56L12 46L15 36L11 24Z"/>
+    </clipPath>
+  </defs>
+
+  <ellipse cx="32" cy="57" rx="18" ry="2.4" fill="#2A1008" opacity=".3"/>
+
+  <!-- torn page -->
+  <path d="M13 11L25 13L33 9L46 11L50 19L48 28L53 37L50 46L41 55L30 53L21 56L12 46L15 36L11 24Z" fill="url(#manual_fragment-paper)"/>
+
+  <!-- faint brush strokes (abstract) -->
+  <g fill="none" stroke="#3A2A20" stroke-linecap="round" opacity=".55" clip-path="url(#manual_fragment-clip)">
+    <path d="M20 20C26 18.5 32 19.5 38 18" stroke-width="2.2"/>
+    <path d="M19 26.5C24 26 28 27 31 25.5" stroke-width="1.8"/>
+    <path d="M18 33C24 31.5 30 33.5 36 31.5" stroke-width="2.4"/>
+    <path d="M18 39.5C22 39 26 40 29 38.5" stroke-width="1.8"/>
+    <path d="M19 46C23 45 27 46 30 45" stroke-width="1.6"/>
+    <path d="M43 16C42 22 43 27 41.5 32" stroke-width="2" opacity=".7"/>
+  </g>
+
+  <!-- burnt edge, bottom-right -->
+  <g clip-path="url(#manual_fragment-clip)">
+    <path d="M30 24L58 24L58 60L20 60Z" fill="url(#manual_fragment-burn)"/>
+  </g>
+  <path d="M46 26C49 31 52 38 49.5 45C47.5 50 44 53 40 55" fill="none" stroke="#E8301A" stroke-width="3.2" stroke-linecap="round" opacity=".6"/>
+  <path d="M46 26C49 31 52 38 49.5 45C47.5 50 44 53 40 55" fill="none" stroke="#FFA020" stroke-width="1.8" stroke-linecap="round" opacity=".95"/>
+  <path d="M48 34C50 38 50 43 48 47" fill="none" stroke="#FFF2A0" stroke-width="1" stroke-linecap="round"/>
+  <circle cx="44" cy="51" r="1.4" fill="#FFF2A0"/>
+
+  <!-- highlight -->
+  <path d="M16 15L24 16.5" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".9"/>
+
+  <!-- outline -->
+  <path d="M13 11L25 13L33 9L46 11L50 19L48 28L53 37L50 46L41 55L30 53L21 56L12 46L15 36L11 24Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

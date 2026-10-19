@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="saber_t3_frostbite-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F8FDFF"/>
+      <stop offset=".42" stop-color="#BCEEFF"/>
+      <stop offset=".58" stop-color="#7CCFF6"/>
+      <stop offset="1" stop-color="#2E7FD0"/>
+    </linearGradient>
+    <linearGradient id="saber_t3_frostbite-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#C4D6EC"/>
+      <stop offset="1" stop-color="#5E7498"/>
+    </linearGradient>
+    <linearGradient id="saber_t3_frostbite-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".5" stop-color="#5C96D8"/>
+      <stop offset="1" stop-color="#24427A"/>
+    </linearGradient>
+    <linearGradient id="saber_t3_frostbite-ice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#8FDCFF"/>
+    </linearGradient>
+    <radialGradient id="saber_t3_frostbite-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="26" ry="4.6" fill="url(#saber_t3_frostbite-shadow)" transform="translate(35.5 34.5) rotate(-45)"/>
+
+  <g transform="translate(34.5 31.5) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cold glow -->
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="none" stroke="#B8ECFF" stroke-width="5" opacity=".42"/>
+    <!-- frost crystals along the spine -->
+    <path d="M-2.6 -2L-6.4 -3.6L-3 -6.2ZM-3 -9.5L-7.6 -12.4L-3.6 -14.6ZM-3.6 -17L-7 -20.6L-4 -22Z" fill="url(#saber_t3_frostbite-ice)" stroke-width="1.6"/>
+    <!-- icy blade -->
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="url(#saber_t3_frostbite-blade)" stroke-width="2.4"/>
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="#2E7FD0" stroke-width="1.1" opacity=".8"/>
+    <path d="M-3.4 -23.5C-2.4 -16 -1.5 -4 -1.4 11" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".9"/>
+    <path d="M.4 -8L1.8 -4.4M1 -17L2.4 -13.4" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".8"/>
+    <!-- frosted silver disc guard -->
+    <ellipse cx="0" cy="14.4" rx="6" ry="2.1" fill="url(#saber_t3_frostbite-silver)" stroke-width="2"/>
+    <!-- pale blue wrap -->
+    <rect x="-2.3" y="16.4" width="4.6" height="10.2" rx="1" fill="url(#saber_t3_frostbite-grip)" stroke-width="2.1"/>
+    <path d="M-1.8 18.6L1.8 19.8M-1.8 21.2L1.8 22.4M-1.8 23.8L1.8 25" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/>
+    <!-- silver ring pommel -->
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke-width="3.8"/>
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke="url(#saber_t3_frostbite-silver)" stroke-width="1.7"/>
+    <path d="M-2.4 28.2A3 3 0 0 1 -.6 27" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".9"/>
+  </g>
+</svg>

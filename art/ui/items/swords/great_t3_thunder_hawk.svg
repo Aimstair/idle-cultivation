@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="great_t3_thunder_hawk-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".42" stop-color="#D4DAE6"/>
+      <stop offset=".58" stop-color="#AEB6C8"/>
+      <stop offset="1" stop-color="#6E7688"/>
+    </linearGradient>
+    <linearGradient id="great_t3_thunder_hawk-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".72" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="great_t3_thunder_hawk-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9A6AE8"/>
+      <stop offset=".5" stop-color="#5A3AA8"/>
+      <stop offset="1" stop-color="#2A1460"/>
+    </linearGradient>
+    <radialGradient id="great_t3_thunder_hawk-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+    <!-- one gold hawk wing (left side) -->
+    <g id="great_t3_thunder_hawk-wing" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-2.5 8.2C-6.5 7.6 -10 5.6 -15 3.4L-13 7.2L-16.2 8.2L-12.8 10.6L-14.8 13.2C-9 13.8 -5 13.6 -2.5 13.4Z" fill="url(#great_t3_thunder_hawk-gold)" stroke-width="2.1"/>
+      <path d="M-5.5 9.8L-10.6 7.8M-5.5 11.6L-11 10.8" fill="none" stroke="#9A5E14" stroke-width=".9" opacity=".85"/>
+      <path d="M-5 8.8L-9 7" fill="none" stroke="#FFF6C8" stroke-width="1" opacity=".9"/>
+    </g>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="27" ry="5" fill="url(#great_t3_thunder_hawk-shadow)" transform="translate(34 35) rotate(-45)"/>
+
+  <g transform="translate(32 32) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <!-- broad steel blade -->
+    <path d="M0 -31L6.8 -21L6.2 7.5H-6.2L-6.8 -21Z" fill="url(#great_t3_thunder_hawk-blade)" stroke-width="2.4"/>
+    <path d="M-1.6 -19V6H1.6V-19Z" fill="#8C96AC" opacity=".5" stroke="none"/>
+    <path d="M-4.6 -19V5" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".9"/>
+    <!-- violet lightning inlay -->
+    <path d="M.4 -24L2.2 -17L-1.4 -11L2 -4L-1 3L1.4 6.5" fill="none" stroke="#9A6AE8" stroke-width="3" opacity=".55"/>
+    <path d="M.4 -24L2.2 -17L-1.4 -11L2 -4L-1 3L1.4 6.5" fill="none" stroke="#C8A4FF" stroke-width="1.4"/>
+    <path d="M.6 -23L2 -17.6M-1 -10.4L1.6 -5" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".9"/>
+    <!-- hawk-wing guard -->
+    <use href="#great_t3_thunder_hawk-wing" xlink:href="#great_t3_thunder_hawk-wing"/>
+    <use href="#great_t3_thunder_hawk-wing" xlink:href="#great_t3_thunder_hawk-wing" transform="scale(-1 1)"/>
+    <path d="M-3.2 7.4H3.2V13.8H-3.2Z" fill="url(#great_t3_thunder_hawk-gold)" stroke-width="2"/>
+    <circle cx="0" cy="10.6" r="1.5" fill="#9A6AE8" stroke-width="1.2"/>
+    <!-- violet grip with gold band -->
+    <rect x="-2.6" y="13.3" width="5.2" height="13.6" rx="1.2" fill="url(#great_t3_thunder_hawk-grip)" stroke-width="2.1"/>
+    <path d="M-2 15.6L2 17.2M-2 18.6L2 20.2M-2 21.6L2 23.2M-2 24.6L2 26.2" fill="none" stroke="#2A1460" stroke-width="1"/>
+    <rect x="-3.2" y="19.6" width="6.4" height="1.9" fill="url(#great_t3_thunder_hawk-gold)" stroke-width="1.4"/>
+    <!-- gold pommel -->
+    <path d="M-3.5 27.2H3.5L4.1 30.2L0 33.4L-4.1 30.2Z" fill="url(#great_t3_thunder_hawk-gold)" stroke-width="2.1"/>
+    <path d="M-2.2 28.6L-.6 28.2" fill="none" stroke="#FFF6C8" stroke-width="1" opacity=".9"/>
+  </g>
+</svg>

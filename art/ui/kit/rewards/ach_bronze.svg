@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ach_bronze-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D2B0"/>
+      <stop offset=".35" stop-color="#D08A50"/>
+      <stop offset=".75" stop-color="#9A5A2A"/>
+      <stop offset="1" stop-color="#5A2E12"/>
+    </linearGradient>
+    <linearGradient id="ach_bronze-metalRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2E12"/>
+      <stop offset=".35" stop-color="#9A5A2A"/>
+      <stop offset=".75" stop-color="#D08A50"/>
+      <stop offset="1" stop-color="#F0C8A0"/>
+    </linearGradient>
+    <linearGradient id="ach_bronze-tab" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6D2B0"/>
+      <stop offset=".5" stop-color="#C87A40"/>
+      <stop offset="1" stop-color="#7A4018"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cast shadow -->
+  <circle cx="33" cy="34" r="27" fill="#2A1008" opacity=".22"/>
+
+  <!-- outer slope (lit top) -->
+  <path fill-rule="evenodd" fill="url(#ach_bronze-metal)" d="M5 32A27 27 0 1 1 59 32A27 27 0 1 1 5 32ZM12 32A20 20 0 1 0 52 32A20 20 0 1 0 12 32Z"/>
+  <!-- inner slope (reversed light) -->
+  <path fill-rule="evenodd" fill="url(#ach_bronze-metalRev)" d="M8.5 32A23.5 23.5 0 1 1 55.5 32A23.5 23.5 0 1 1 8.5 32ZM12 32A20 20 0 1 0 52 32A20 20 0 1 0 12 32Z"/>
+  <circle cx="32" cy="32" r="23.5" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".45"/>
+  <path d="M12.5 22.5A21.5 21.5 0 0 1 22 13" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>
+
+  <!-- outlines -->
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#2A1008" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#2A1008" stroke-width="1.8"/>
+
+  <!-- rivets -->
+  <g fill="#3A190C" opacity=".75">
+    <circle cx="15.4" cy="15.4" r="1.5"/><circle cx="48.6" cy="15.4" r="1.5"/>
+    <circle cx="15.4" cy="48.6" r="1.5"/><circle cx="48.6" cy="48.6" r="1.5"/>
+  </g>
+
+  <!-- plain top tab -->
+  <path d="M26 8.5C26 4.5 29 3 32 3C35 3 38 4.5 38 8.5Z" fill="url(#ach_bronze-tab)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="30.4" cy="5.2" rx="1.4" ry=".9" fill="#FFFFFF" opacity=".8"/>
+</svg>

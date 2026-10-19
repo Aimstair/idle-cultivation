@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ore_iron-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9C96AC"/>
+      <stop offset="1" stop-color="#5E586E"/>
+    </linearGradient>
+    <linearGradient id="ore_iron-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5E586E"/>
+      <stop offset="1" stop-color="#2E2A3A"/>
+    </linearGradient>
+    <linearGradient id="ore_iron-front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#564F66"/>
+      <stop offset="1" stop-color="#241F2E"/>
+    </linearGradient>
+    <linearGradient id="ore_iron-vein" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#8E96A8"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="32" cy="56.5" rx="20" ry="2.6" fill="#2A1008" opacity=".3"/>
+
+  <!-- rock chunk: top / left / front faces -->
+  <path d="M15 27L28 19L45 22L55 33L40 38L21 40Z" fill="url(#ore_iron-top)"/>
+  <path d="M9 40L15 27L21 40L17 53Z" fill="url(#ore_iron-left)"/>
+  <path d="M21 40L40 38L55 33L52 47L35 56L17 53Z" fill="url(#ore_iron-front)"/>
+  <g fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M15 27L21 40L17 53"/>
+    <path d="M21 40L40 38L55 33"/>
+    <path d="M40 38L35 56"/>
+  </g>
+
+  <!-- silvery veins -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 36L28 29L37 32L47 26" stroke="#2A1008" stroke-width="3.4" opacity=".5"/>
+    <path d="M19 36L28 29L37 32L47 26" stroke="url(#ore_iron-vein)" stroke-width="2"/>
+    <path d="M24 50L31 44.5L44 46.5" stroke="#2A1008" stroke-width="3.2" opacity=".5"/>
+    <path d="M24 50L31 44.5L44 46.5" stroke="#B4BCCC" stroke-width="1.8"/>
+    <path d="M44 46.5L48 41" stroke="#2A1008" stroke-width="3" opacity=".5"/>
+    <path d="M44 46.5L48 41" stroke="#B4BCCC" stroke-width="1.6"/>
+    <path d="M13 44L16 48.5" stroke="#2A1008" stroke-width="2.8" opacity=".5"/>
+    <path d="M13 44L16 48.5" stroke="#A0A8BA" stroke-width="1.4"/>
+  </g>
+
+  <!-- glints -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+    <path d="M28.5 29.5L31 28.6" stroke-width="1.2" opacity=".95"/>
+    <path d="M17 29L24 24.5" stroke-width="1.2" opacity=".5"/>
+    <path d="M30 45L33 44.8" stroke-width="1" opacity=".75"/>
+  </g>
+
+  <!-- silhouette outline -->
+  <path d="M9 40L15 27L28 19L45 22L55 33L52 47L35 56L17 53Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

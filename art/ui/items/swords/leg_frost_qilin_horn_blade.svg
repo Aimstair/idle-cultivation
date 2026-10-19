@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="leg_frost_qilin_horn_blade-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".42" stop-color="#E8F8FF"/>
+      <stop offset=".58" stop-color="#B0E2FF"/>
+      <stop offset="1" stop-color="#4A90D8"/>
+    </linearGradient>
+    <linearGradient id="leg_frost_qilin_horn_blade-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".72" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="leg_frost_qilin_horn_blade-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#C4D6EC"/>
+      <stop offset="1" stop-color="#5E7498"/>
+    </linearGradient>
+    <linearGradient id="leg_frost_qilin_horn_blade-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".5" stop-color="#5C96D8"/>
+      <stop offset="1" stop-color="#24427A"/>
+    </linearGradient>
+    <linearGradient id="leg_frost_qilin_horn_blade-flameO" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8FDCFF"/>
+      <stop offset="1" stop-color="#2E7FD0"/>
+    </linearGradient>
+    <radialGradient id="leg_frost_qilin_horn_blade-gem" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#8FDCFF"/>
+      <stop offset="1" stop-color="#2E7FD0"/>
+    </radialGradient>
+    <radialGradient id="leg_frost_qilin_horn_blade-aura" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C8F0FF" stop-opacity=".6"/>
+      <stop offset=".55" stop-color="#8FDCFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#8FDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="leg_frost_qilin_horn_blade-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- radiant aura + contact shadow -->
+  <ellipse cx="0" cy="0" rx="29" ry="12" fill="url(#leg_frost_qilin_horn_blade-aura)" transform="translate(33.5 31) rotate(-45)"/>
+  <ellipse cx="0" cy="0" rx="26" ry="4.6" fill="url(#leg_frost_qilin_horn_blade-shadow)" transform="translate(35.5 34.5) rotate(-45)"/>
+
+  <!-- frost mist, no outline -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" opacity=".55">
+    <path d="M18.5 26.5Q24 22.5 30 25" stroke-width="2.6"/>
+    <path d="M39 11.5Q45 8.5 50.5 11.5" stroke-width="2.2"/>
+    <path d="M44 33Q49.5 30 54 33" stroke-width="2.2"/>
+    <path d="M12 37.5Q16 35 20 37" stroke-width="1.8"/>
+  </g>
+
+  <g transform="translate(34.5 31) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <!-- slender, gently curved horn blade -->
+    <path d="M-3.4 -29C-2.4 -22 -1.8 -6 -2.1 13L2.1 13C2.6 -6 4 -16 3.8 -21C3.6 -25 1.2 -28 -3.4 -29Z" fill="none" stroke="#B8ECFF" stroke-width="5" opacity=".45"/>
+    <path d="M-3.4 -29C-2.4 -22 -1.8 -6 -2.1 13L2.1 13C2.6 -6 4 -16 3.8 -21C3.6 -25 1.2 -28 -3.4 -29Z" fill="url(#leg_frost_qilin_horn_blade-blade)" stroke-width="2.4"/>
+    <!-- spiral grooves of the horn -->
+    <path d="M-2 9.5Q.6 7.6 2.3 6.2M-2 3.5Q.6 1.6 2.4 .2M-2 -2.5Q.6 -4.4 2.6 -5.8M-2.1 -8.5Q.5 -10.4 3 -11.8M-2.3 -14.5Q.4 -16.4 3.4 -17.8M-2.6 -20.5Q0 -22.4 2.6 -23.6" fill="none" stroke="#4A90D8" stroke-width="1.1" opacity=".85"/>
+    <path d="M-1.6 7Q.6 5.6 1.8 4.6M-1.6 1Q.6 -.4 1.9 -1.4M-1.7 -5Q.6 -6.4 2.1 -7.4M-1.9 -11Q.4 -12.4 2.5 -13.4M-2.2 -17Q.2 -18.4 2.6 -19.4" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".9"/>
+    <!-- ornate gold-silver guard -->
+    <path d="M-7 13.4Q-3.5 15.6 0 15.2Q3.5 15.6 7 13.4Q8.4 15.6 7 17.8Q0 19.8 -7 17.8Q-8.4 15.6 -7 13.4Z" fill="url(#leg_frost_qilin_horn_blade-gold)" stroke-width="2.1"/>
+    <path d="M-5 15.6L-2.2 15.1" fill="none" stroke="#FFF6C8" stroke-width="1" opacity=".9"/>
+    <circle cx="0" cy="16.2" r="1.5" fill="url(#leg_frost_qilin_horn_blade-gem)" stroke-width="1.2"/>
+    <!-- pale blue silk grip with silver bands -->
+    <rect x="-2.1" y="18.4" width="4.2" height="8.2" rx="1" fill="url(#leg_frost_qilin_horn_blade-grip)" stroke-width="2.1"/>
+    <path d="M-2.1 20.8H2.1M-2.1 23.6H2.1" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".85"/>
+    <!-- silver pommel with ice gem -->
+    <circle cx="0" cy="28.8" r="2.8" fill="url(#leg_frost_qilin_horn_blade-silver)" stroke-width="2.1"/>
+    <circle cx="-.3" cy="28.6" r="1.1" fill="url(#leg_frost_qilin_horn_blade-gem)" stroke="none"/>
+  </g>
+
+  <!-- small blue flame at the guard (canvas space, pointing up) -->
+  <g transform="translate(21.5 41.5)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 4.2C-3 4.2 -4.4 2 -4 0C-3.7 -1.8 -2.4 -2.8 -2 -4.6C-1.2 -3 -.4 -2.8 0 -4.4C.4 -6.2 .6 -7.4 1.4 -9C2.2 -6.8 3.6 -4.6 3.8 -2.4C4.2 .2 3 4.2 0 4.2Z" fill="url(#leg_frost_qilin_horn_blade-flameO)" stroke-width="1.7"/>
+    <path d="M0 4.2C-1.6 4.2 -2.4 2.6 -2 1.2C-1.6 -.2 -.4 -1.2 .6 -2.8C1.4 -1.2 2.2 .2 2.2 1.4C2.2 2.8 1.4 4.2 0 4.2Z" fill="#FFFFFF" stroke="none" opacity=".9"/>
+  </g>
+</svg>

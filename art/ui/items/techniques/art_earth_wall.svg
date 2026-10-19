@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="art_earth_wall-tile" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#E8C07A"/><stop offset="0.5" stop-color="#B8782E"/><stop offset="1" stop-color="#7E4A16"/></radialGradient>
+    <radialGradient id="art_earth_wall-sheen" cx="0.25" cy="0.18" r="0.6"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="art_earth_wall-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset="0.45" stop-color="#FFD45A"/><stop offset="0.8" stop-color="#D69A2A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+    <clipPath id="art_earth_wall-clip"><rect x="9.5" y="9.5" width="45" height="45" rx="6"/></clipPath>
+    <linearGradient id="art_earth_wall-stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4DEEC"/><stop offset="0.5" stop-color="#A69EB8"/><stop offset="1" stop-color="#6E6684"/></linearGradient><linearGradient id="art_earth_wall-blk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#FFF8E4"/><stop offset="1" stop-color="#D8CFC0"/></linearGradient>
+  </defs>
+  <ellipse cx="33" cy="58" rx="22" ry="2" fill="#2A1008" opacity=".22"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_earth_wall-tile)" stroke="#2A1008" stroke-width="2.5"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_earth_wall-sheen)"/>
+  <g clip-path="url(#art_earth_wall-clip)">
+    <path d="M8 49H56V56H8Z" fill="url(#art_earth_wall-stone)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+    <g fill="url(#art_earth_wall-blk)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"><rect x="13" y="41" width="12.6" height="8.5" rx="1.4"/><rect x="25.6" y="41" width="12.6" height="8.5" rx="1.4"/><rect x="38.2" y="41" width="12.6" height="8.5" rx="1.4"/><rect x="6.7" y="32.5" width="12.6" height="8.5" rx="1.4"/><rect x="19.3" y="32.5" width="12.6" height="8.5" rx="1.4"/><rect x="31.9" y="32.5" width="12.6" height="8.5" rx="1.4"/><rect x="44.5" y="32.5" width="12.6" height="8.5" rx="1.4"/><rect x="13" y="24" width="12.6" height="8.5" rx="1.4"/><rect x="25.6" y="24" width="12.6" height="8.5" rx="1.4"/><rect x="38.2" y="24" width="12.6" height="8.5" rx="1.4"/><rect x="19.3" y="16.5" width="12.6" height="7.5" rx="1.4"/></g>
+    <path d="M44.5 32.5V41M38.2 24V32.5M31.9 16.5V24" fill="none" stroke="#2A1008" stroke-width="1.2" opacity=".35"/>
+    <path d="M15 43.5H20M21.5 35H26.5M15 26.5H20M28 26.5H33" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".9"/>
+    <path d="M11 20L15.5 14.5L20 20M39 15L43.5 9.5L48 15" fill="none" stroke="#FFF8E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+    <path d="M34 13L38 9.5" fill="none" stroke="#FFF8E4" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <g fill="#FFF8E4" stroke="#2A1008" stroke-width="1.2"><circle cx="10" cy="47" r="2.4"/><circle cx="14" cy="49.5" r="1.7"/><circle cx="54" cy="47.5" r="2.4"/><circle cx="50" cy="49.8" r="1.6"/></g>
+  </g>
+  <rect x="9.5" y="9.5" width="45" height="45" rx="6" fill="none" stroke="url(#art_earth_wall-gold)" stroke-width="1.6"/>
+  <path d="M11.5 20V15Q11.5 11.5 15 11.5H20" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+</svg>

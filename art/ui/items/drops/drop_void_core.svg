@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="drop_void_core-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#9A6AE8" stop-opacity=".6"/>
+      <stop offset=".55" stop-color="#9A6AE8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#9A6AE8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="drop_void_core-sphere" gradientUnits="userSpaceOnUse" cx="26" cy="23" r="22">
+      <stop offset="0" stop-color="#A48AE0"/>
+      <stop offset=".3" stop-color="#5A3AA0"/>
+      <stop offset=".7" stop-color="#22104A"/>
+      <stop offset="1" stop-color="#08030E"/>
+    </radialGradient>
+    <radialGradient id="drop_void_core-rimlight" gradientUnits="userSpaceOnUse" cx="40" cy="40" r="16">
+      <stop offset=".6" stop-color="#9A6AE8" stop-opacity="0"/>
+      <stop offset="1" stop-color="#C8A4FF" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="drop_void_core-eye" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".35" stop-color="#EAD8FF" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#9A6AE8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="drop_void_core-float" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="drop_void_core-clip">
+      <circle cx="32" cy="30" r="15"/>
+    </clipPath>
+  </defs>
+
+  <!-- halo and floating shadow -->
+  <circle cx="32" cy="31" r="27" fill="url(#drop_void_core-halo)"/>
+  <ellipse cx="32" cy="56" rx="13" ry="2.6" fill="url(#drop_void_core-float)"/>
+
+  <!-- back half of the ring -->
+  <g transform="rotate(-18 32 33)">
+    <path d="M8 33A24 7 0 0 1 56 33" fill="none" stroke="#9A6AE8" stroke-width="4.4" stroke-linecap="round" opacity=".35"/>
+    <path d="M8 33A24 7 0 0 1 56 33" fill="none" stroke="#C8A4FF" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- the void sphere -->
+  <circle cx="32" cy="30" r="15" fill="url(#drop_void_core-sphere)"/>
+  <g clip-path="url(#drop_void_core-clip)">
+    <circle cx="40" cy="40" r="16" fill="url(#drop_void_core-rimlight)"/>
+    <!-- inner spiral of the void -->
+    <path d="M33 31C36 28 34 23 29 24.5C24 26 24.5 33 30 35.5C36 38 42 33.5 40.5 27" fill="none" stroke="#6A4AB8" stroke-width="1.5" stroke-linecap="round" opacity=".7"/>
+    <!-- trapped stars -->
+    <g fill="#FFFFFF">
+      <circle cx="24" cy="36" r=".8"/>
+      <circle cx="39" cy="22" r=".7"/>
+      <circle cx="36.5" cy="38.5" r=".6"/>
+      <circle cx="21.5" cy="26" r=".6"/>
+    </g>
+    <circle cx="32" cy="30" r="5" fill="url(#drop_void_core-eye)"/>
+  </g>
+  <circle cx="32" cy="30" r="15" fill="none" stroke="#2A1008" stroke-width="2.5"/>
+  <path d="M20.5 25.5C21.5 21 24.5 18 28.5 17" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+
+  <!-- front half of the ring -->
+  <g transform="rotate(-18 32 33)">
+    <path d="M8 33A24 7 0 0 0 56 33" fill="none" stroke="#9A6AE8" stroke-width="4.4" stroke-linecap="round" opacity=".4"/>
+    <path d="M8 33A24 7 0 0 0 56 33" fill="none" stroke="#EAD8FF" stroke-width="1.8" stroke-linecap="round"/>
+    <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".6">
+      <path d="M18 36.6L19.6 38.2L18 39.8L16.4 38.2Z"/>
+      <path d="M32 38.4L33.6 40L32 41.6L30.4 40Z"/>
+      <path d="M46 36.6L47.6 38.2L46 39.8L44.4 38.2Z"/>
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(50 14) scale(2)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(12 19) scale(1.5)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(52 50) scale(1.3)"/>
+  </g>
+</svg>

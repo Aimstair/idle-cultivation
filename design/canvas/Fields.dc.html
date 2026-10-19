@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Spirit Fields</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E7%81%B5%E7%94%B0">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#2E2A3A}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.rb{border-radius:50%;border:3px solid #3A2A2A;display:grid;place-items:center;box-shadow:0 3px 0 #3A2A2A;text-decoration:none;cursor:pointer;padding:0;position:relative}
+.plot{height:104px;border-radius:16px;border:3px solid #3A2A2A;background:linear-gradient(180deg,#9A6B45 0,#7E5435 100%);box-shadow:inset 0 6px 0 rgba(255,255,255,.12),0 5px 0 #4A3324;position:relative;display:grid;place-items:center;cursor:pointer;padding:0}
+.furrow{position:absolute;left:10px;right:10px;height:3px;border-radius:2px;background:#6A452B}
+.tm{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);font-family:"Baloo 2",sans-serif;font-weight:800;font-size:11px;background:#FFFDF8;border:2px solid #3A2A2A;border-radius:999px;padding:0 7px;white-space:nowrap}
+.seed{width:52px;height:52px;border-radius:14px;border:3px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;position:relative;box-shadow:0 3px 0 #3A2A2A;cursor:pointer;padding:0}
+.cnt{position:absolute;right:-6px;bottom:-6px;font-family:"Baloo 2",sans-serif;font-weight:800;font-size:10.5px;background:#2E2A3A;color:#fff;border:1.5px solid #FBF6EC;border-radius:999px;padding:0 5px}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:linear-gradient(180deg,#DCEBDD 0,#EEF3E4 40%,#E6DCC2 100%)">
+
+  <svg width="390" height="200" viewBox="0 0 390 200" style="position:absolute;left:0;top:40px" aria-hidden="true">
+    <path d="M0 120 Q60 70 120 100 Q180 40 250 96 Q310 60 390 90 V200 H0Z" fill="#C9DDC2"/>
+    <path d="M0 150 Q90 120 180 140 T390 130 V200 H0Z" fill="#B5CFA8"/>
+    <g stroke="#FFFFFF" stroke-width="5" fill="none" opacity=".7" stroke-linecap="round"><path d="M20 112 Q120 96 220 110"/><path d="M200 140 Q300 124 380 136"/></g>
+  </svg>
+
+  <div style="position:absolute;left:12px;right:12px;top:12px;display:flex;align-items:center;gap:10px">
+    <a href="Alchemy.dc.html" class="rb" aria-label="Back" style="width:42px;height:42px;background:#FFFDF8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
+    <span class="brush" style="width:44px;height:44px;border:3px solid #B83E2B;border-radius:6px;color:#B83E2B;display:grid;place-items:center;font-size:18px;line-height:.92;text-align:center;transform:rotate(-4deg);background:rgba(251,246,236,.8)">灵<br>田</span>
+    <div style="display:flex;flex-direction:column;gap:3px;flex:1">
+      <span class="disp" style="font-weight:800;font-size:19px;line-height:1">Farming 18</span>
+      <span style="height:8px;border-radius:999px;border:2px solid #3A2A2A;background:#FFFDF8;position:relative;overflow:hidden"><span style="position:absolute;inset:0;width:40%;background:#4CAF7A"></span></span>
+    </div>
+    <span style="display:flex;align-items:center;gap:4px;background:#FFFDF8;border:2.5px solid #3A2A2A;border-radius:999px;padding:2px 9px 2px 4px" title="Pill Residue fertilizer: +15% yield, −10% grow time">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10h14l-2 10H7z" fill="#C9954C" stroke="#3A2A2A" stroke-width="1.8"/><circle cx="9" cy="8" r="2" fill="#8C7BD9" stroke="#3A2A2A" stroke-width="1.2"/><circle cx="14" cy="6" r="2" fill="#E0533D" stroke="#3A2A2A" stroke-width="1.2"/></svg>
+      <span class="disp" style="font-weight:800;font-size:13px">6</span>
+    </span>
+  </div>
+
+  <!-- PLOT GRID -->
+  <div style="position:absolute;left:16px;right:16px;top:206px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 14px">
+    <!-- ready -->
+    <button class="plot" aria-label="Spirit Grass, ready to harvest" style="box-shadow:0 0 0 4px #F7DE8C,0 0 20px #F2C14E,0 5px 0 #4A3324">
+      <span class="furrow" style="top:30px"></span><span class="furrow" style="top:58px"></span>
+      <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><g stroke="#3A2A2A" stroke-width="2" stroke-linejoin="round"><path d="M18 56 Q14 34 22 16 Q26 34 24 56Z" fill="#8FE0A9"/><path d="M30 56 Q30 30 36 8 Q42 30 38 56Z" fill="#A8F0BC"/><path d="M42 56 Q46 36 52 20 Q52 38 48 56Z" fill="#8FE0A9"/></g><g fill="#FFF4C9"><circle cx="14" cy="14" r="3"/><circle cx="52" cy="10" r="2.5"/><circle cx="34" cy="4" r="2"/></g></svg>
+      <span class="tm" style="background:#E8B54A">Ready</span>
+    </button>
+    <button class="plot" aria-label="Fire Lotus, 1 hour 12 minutes">
+      <span class="furrow" style="top:30px"></span><span class="furrow" style="top:58px"></span>
+      <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 46 V26" stroke="#4E9A5A" stroke-width="4"/><path d="M26 30 Q14 26 16 14 Q22 20 26 12 Q30 20 36 14 Q38 26 26 30Z" fill="#F2643B" stroke="#3A2A2A" stroke-width="2"/></svg>
+      <span class="tm">1h 12m</span>
+    </button>
+    <button class="plot" aria-label="Fire Lotus, 2 hours 40 minutes">
+      <span class="furrow" style="top:30px"></span><span class="furrow" style="top:58px"></span>
+      <svg width="40" height="40" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 46 V30" stroke="#4E9A5A" stroke-width="4"/><path d="M26 32 Q18 28 20 22 Q24 26 26 20 Q28 26 32 22 Q34 28 26 32Z" fill="#F7A07E" stroke="#3A2A2A" stroke-width="2"/></svg>
+      <span class="tm">2h 40m</span>
+    </button>
+
+    <button class="plot" aria-label="Spirit Rice, 18 minutes">
+      <span class="furrow" style="top:30px"></span><span class="furrow" style="top:58px"></span>
+      <svg width="54" height="54" viewBox="0 0 54 54" aria-hidden="true"><g stroke="#3A2A2A" stroke-width="1.8"><path d="M16 48 Q16 26 22 12" fill="none"/><path d="M28 48 Q30 24 36 10" fill="none"/><path d="M38 48 Q40 30 44 18" fill="none"/></g><g fill="#F2DDB2" stroke="#3A2A2A" stroke-width="1.4"><ellipse cx="22" cy="14" rx="3" ry="5"/><ellipse cx="36" cy="12" rx="3" ry="5"/><ellipse cx="44" cy="20" rx="3" ry="5"/></g></svg>
+      <span class="tm">18m</span>
+    </button>
+    <button class="plot" aria-label="Empty plot: plant a seed" style="background:linear-gradient(180deg,#A47650,#8A5E3D)">
+      <span class="furrow" style="top:30px"></span><span class="furrow" style="top:58px"></span>
+      <span style="width:42px;height:42px;border-radius:50%;background:#FFFDF8;border:3px dashed #3A2A2A;display:grid;place-items:center"><svg width="20" height="20" viewBox="0 0 24 24" stroke="#277864" stroke-width="3.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+    </button>
+    <button class="plot" aria-label="Spirit Grass, fertilized, 6 minutes">
+      <span class="furrow" style="top:30px"></span><span class="furrow" style="top:58px"></span>
+      <svg width="52" height="52" viewBox="0 0 64 64" aria-hidden="true"><g stroke="#3A2A2A" stroke-width="2" stroke-linejoin="round"><path d="M22 56 Q20 40 26 26 Q28 40 28 56Z" fill="#8FE0A9"/><path d="M34 56 Q34 38 40 22 Q44 40 40 56Z" fill="#A8F0BC"/></g></svg>
+      <span style="position:absolute;left:6px;top:6px;width:22px;height:22px;border-radius:50%;background:#FFFDF8;border:2px solid #3A2A2A;display:grid;place-items:center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10h14l-2 10H7z" fill="#C9954C" stroke="#3A2A2A" stroke-width="2"/></svg></span>
+      <span class="tm">6m</span>
+    </button>
+
+    <button class="plot" aria-label="Locked plot: 60,000 Spirit Stones" style="background:#CDBFA6;box-shadow:0 5px 0 #A8977A;border-style:dashed">
+      <span style="display:flex;flex-direction:column;align-items:center;gap:2px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B5A40" stroke-width="3" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span style="display:flex;align-items:center;gap:3px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 L14 4.5 V11.5 L8 15 L2 11.5 V4.5Z" fill="#9FD6EE" stroke="#3A2A2A" stroke-width="1.2"/></svg>60K</span></span>
+    </button>
+    <button class="plot" aria-label="Locked plot: 250,000 Spirit Stones" style="background:#CDBFA6;box-shadow:0 5px 0 #A8977A;border-style:dashed;opacity:.8">
+      <span style="display:flex;flex-direction:column;align-items:center;gap:2px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B5A40" stroke-width="3" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span style="display:flex;align-items:center;gap:3px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 L14 4.5 V11.5 L8 15 L2 11.5 V4.5Z" fill="#9FD6EE" stroke="#3A2A2A" stroke-width="1.2"/></svg>250K</span></span>
+    </button>
+    <button class="plot" aria-label="Locked plot" style="background:#CDBFA6;box-shadow:0 5px 0 #A8977A;border-style:dashed;opacity:.6">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B5A40" stroke-width="3" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+    </button>
+  </div>
+
+  <!-- mutation hint between plot 1 and 2 -->
+  <span title="Neighbouring different herbs can mutate into a rarer seed" style="position:absolute;left:118px;top:240px;width:26px;height:26px;border-radius:50%;background:#FFFDF8;border:2px solid #8C6BE0;display:grid;place-items:center;z-index:2"><svg width="14" height="14" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0 L7.6 4.4 L12 6 L7.6 7.6 L6 12 L4.4 7.6 L0 6 L4.4 4.4Z" fill="#8C6BE0"/></svg></span>
+
+  <!-- HARVEST BAG + SOIL -->
+  <div style="position:absolute;left:12px;right:12px;top:592px;display:flex;align-items:center;gap:8px;background:rgba(255,253,248,.9);border:2.5px solid #3A2A2A;border-radius:14px;padding:6px 10px">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="#8F5E3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12h16l-2 15H10z" fill="#E8D2B2"/><path d="M12 12c0-4 2-6 4-6s4 2 4 6"/></svg>
+    <span title="Spirit Grass" style="display:flex;align-items:center;gap:2px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 26 Q8 14 14 6 M16 26 Q16 12 22 4 M22 26 Q24 16 28 10" stroke="#4E9A5A" stroke-width="3" fill="none" stroke-linecap="round"/></svg>48</span>
+    <span title="Spirit Rice" style="display:flex;align-items:center;gap:2px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="5" ry="9" fill="#F2DDB2" stroke="#3A2A2A" stroke-width="2"/></svg>22</span>
+    <span title="Fire Lotus" style="display:flex;align-items:center;gap:2px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 26 Q6 22 6 12 Q12 16 16 6 Q20 16 26 12 Q26 22 16 26Z" fill="#F2643B" stroke="#3A2A2A" stroke-width="2"/></svg>7</span>
+    <span style="flex:1"></span>
+    <span title="Fertile soil: 8% mutation chance" style="display:flex;align-items:center;gap:4px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;background:#E9E4F5;border:2px solid #8C6BE0;border-radius:999px;padding:0 8px"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0 L7.6 4.4 L12 6 L7.6 7.6 L6 12 L4.4 7.6 L0 6 L4.4 4.4Z" fill="#8C6BE0"/></svg>Fertile 8%</span>
+  </div>
+
+  <!-- SEED BAG -->
+  <div style="position:absolute;left:12px;right:12px;bottom:110px;display:flex;justify-content:space-between;align-items:center">
+    <button class="seed" aria-label="Spirit Grass seeds, 14"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="18" rx="7" ry="9" fill="#C9E8B8" stroke="#3A2A2A" stroke-width="2"/><path d="M16 10 Q20 4 24 6" stroke="#4E9A5A" stroke-width="2.4" fill="none"/></svg><span class="cnt">14</span></button>
+    <button class="seed" aria-label="Spirit Rice seeds, 6"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="18" rx="7" ry="9" fill="#F2DDB2" stroke="#3A2A2A" stroke-width="2"/><path d="M16 10 Q20 4 24 6" stroke="#4E9A5A" stroke-width="2.4" fill="none"/></svg><span class="cnt">6</span></button>
+    <button class="seed" aria-label="Fire Lotus seeds, 3"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="18" rx="7" ry="9" fill="#F7A07E" stroke="#3A2A2A" stroke-width="2"/><path d="M16 10 Q20 4 24 6" stroke="#4E9A5A" stroke-width="2.4" fill="none"/></svg><span class="cnt">3</span></button>
+    <button class="seed" aria-label="Purple Cloud Grass seeds, needs Farming 30" style="background:#E8E2F4;border-style:dashed"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A92AE" stroke-width="3" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span class="cnt" style="background:#9A92AE">30</span></button>
+    <span style="width:2px;height:48px;background:#C9B79A"></span>
+    <button class="seed" aria-label="Fertilize all with Pill Residue" style="background:#FFF4D6"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10h14l-2 10H7z" fill="#C9954C" stroke="#3A2A2A" stroke-width="1.8"/><circle cx="9" cy="8" r="2" fill="#8C7BD9" stroke="#3A2A2A" stroke-width="1.2"/><circle cx="14" cy="6" r="2" fill="#E0533D" stroke="#3A2A2A" stroke-width="1.2"/></svg></button>
+  </div>
+
+  <!-- HARVEST + PLANT ALL -->
+  <div style="position:absolute;left:0;right:0;bottom:24px;display:flex;justify-content:center;gap:18px">
+    <button class="rb" aria-label="Plant all empty plots" style="width:58px;height:58px;background:#FFFDF8"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="#4E9A5A" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M16 28V14M16 16c-6 0-9-4-9-9 6 0 9 4 9 9zM16 14c0-5 3-9 9-9 0 5-3 9-9 9z"/></svg></button>
+    <button class="rb" aria-label="Harvest all ready plots" style="width:70px;height:70px;background:#E8B54A;box-shadow:0 0 0 4px #FFF4C9,0 5px 0 4px #3A2A2A"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#3A2A2A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10c6-6 14-6 20 0"/><path d="M26 10 12 26"/><path d="M8 26l4-4"/></svg><span style="position:absolute;right:-4px;top:-4px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;background:#B83E2B;color:#fff;border:2px solid #FBF6EC;border-radius:999px;padding:0 6px">1</span></button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="seal_06_ns-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".32" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="seal_06_ns-goldRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A5E14"/>
+      <stop offset=".35" stop-color="#D69A2A"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#FFF0B0"/>
+    </linearGradient>
+    <radialGradient id="seal_06_ns-red" cx="0.3" cy="0.25" r="0.95">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <radialGradient id="seal_06_ns-jade" cx="0.36" cy="0.32" r="0.8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <radialGradient id="seal_06_ns-pearl" cx="0.38" cy="0.34" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".3" stop-color="#FFF2BC"/>
+      <stop offset=".68" stop-color="#FFC94A"/>
+      <stop offset="1" stop-color="#CC801A"/>
+    </radialGradient>
+  </defs>
+
+  <path fill-rule="evenodd" fill="url(#seal_06_ns-gold)" d="M7.5 3 H56.5 A4.5 4.5 0 0 1 61 7.5 V56.5 A4.5 4.5 0 0 1 56.5 61 H7.5 A4.5 4.5 0 0 1 3 56.5 V7.5 A4.5 4.5 0 0 1 7.5 3Z M9.66 8.4 H54.34 A1.2599999999999998 1.2599999999999998 0 0 1 55.6 9.66 V54.34 A1.2599999999999998 1.2599999999999998 0 0 1 54.34 55.6 H9.66 A1.2599999999999998 1.2599999999999998 0 0 1 8.4 54.34 V9.66 A1.2599999999999998 1.2599999999999998 0 0 1 9.66 8.4Z"/>
+  <path fill-rule="evenodd" fill="url(#seal_06_ns-goldRev)" d="M8.688 5.970000000000001 H55.312 A2.718 2.718 0 0 1 58.03 8.688 V55.312 A2.718 2.718 0 0 1 55.312 58.03 H8.688 A2.718 2.718 0 0 1 5.970000000000001 55.312 V8.688 A2.718 2.718 0 0 1 8.688 5.970000000000001Z M9.66 8.4 H54.34 A1.2599999999999998 1.2599999999999998 0 0 1 55.6 9.66 V54.34 A1.2599999999999998 1.2599999999999998 0 0 1 54.34 55.6 H9.66 A1.2599999999999998 1.2599999999999998 0 0 1 8.4 54.34 V9.66 A1.2599999999999998 1.2599999999999998 0 0 1 9.66 8.4Z"/>
+  <path d="M8.688 5.970000000000001 H55.312 A2.718 2.718 0 0 1 58.03 8.688 V55.312 A2.718 2.718 0 0 1 55.312 58.03 H8.688 A2.718 2.718 0 0 1 5.970000000000001 55.312 V8.688 A2.718 2.718 0 0 1 8.688 5.970000000000001Z" fill="none" stroke="#FFFFFF" stroke-width=".8" opacity=".5"/>
+  <path d="M7.5 3 H56.5 A4.5 4.5 0 0 1 61 7.5 V56.5 A4.5 4.5 0 0 1 56.5 61 H7.5 A4.5 4.5 0 0 1 3 56.5 V7.5 A4.5 4.5 0 0 1 7.5 3Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M9.66 8.4 H54.34 A1.2599999999999998 1.2599999999999998 0 0 1 55.6 9.66 V54.34 A1.2599999999999998 1.2599999999999998 0 0 1 54.34 55.6 H9.66 A1.2599999999999998 1.2599999999999998 0 0 1 8.4 54.34 V9.66 A1.2599999999999998 1.2599999999999998 0 0 1 9.66 8.4Z" fill="none" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <rect x="8.4" y="8.4" width="47.2" height="47.2" rx="1.6" fill="url(#seal_06_ns-red)"/>
+  <rect x="12" y="12" width="40" height="40" rx="1" fill="none" stroke="#FFE2D2" stroke-width="1.1" opacity=".85"/>
+  <rect x="12" y="12" width="40" height="40" rx="1" fill="none" stroke="#FFE7A0" stroke-width=".6" opacity=".7" transform="translate(1.2 1.2)"/>
+  <path d="M12 10 H30" fill="none" stroke="#FFC8B4" stroke-width="1.1" stroke-linecap="round" opacity=".5"/>
+  <circle cx="32" cy="5.8" r="3.8" fill="url(#seal_06_ns-pearl)" stroke="#2A1008" stroke-width="1.6"/>
+  <ellipse cx="30.6" cy="4.6" rx="1" ry=".7" transform="rotate(-35 30.6 4.6)" fill="#FFFFFF" opacity=".95"/>
+  <g transform="translate(6.6 6.6)"><circle r="4.6" fill="url(#seal_06_ns-jade)" stroke="#2A1008" stroke-width="1.7"/><circle cx="-1.5" cy="-1.5" r="1.05" fill="#FFFFFF" opacity=".9"/></g><g transform="translate(57.4 6.6)"><circle r="4.6" fill="url(#seal_06_ns-jade)" stroke="#2A1008" stroke-width="1.7"/><circle cx="-1.5" cy="-1.5" r="1.05" fill="#FFFFFF" opacity=".9"/></g>
+  <g transform="translate(6.6 57.4)"><circle r="4.6" fill="url(#seal_06_ns-jade)" stroke="#2A1008" stroke-width="1.7"/><circle cx="-1.5" cy="-1.5" r="1.05" fill="#FFFFFF" opacity=".9"/></g><g transform="translate(57.4 57.4)"><circle r="4.6" fill="url(#seal_06_ns-jade)" stroke="#2A1008" stroke-width="1.7"/><circle cx="-1.5" cy="-1.5" r="1.05" fill="#FFFFFF" opacity=".9"/></g>
+</svg>

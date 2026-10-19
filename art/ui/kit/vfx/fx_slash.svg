@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 160 80">
+  <defs>
+    <linearGradient id="fx_slash-fade" gradientUnits="userSpaceOnUse" x1="4" y1="0" x2="158" y2="0">
+      <stop offset="0" stop-color="#E4E0EC" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#F0EDF5" stop-opacity=".4"/>
+      <stop offset=".7" stop-color="#FAF9FD" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="fx_slash-edge" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="158" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".6" stop-color="#FFFFFF" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="fx_slash-ghost" gradientUnits="userSpaceOnUse" x1="10" y1="0" x2="150" y2="0">
+      <stop offset="0" stop-color="#E4E0EC" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+  <!-- ghost trail behind the main crescent -->
+  <path d="M10 78C44 30 102 10 150 30C106 24 60 44 10 78Z" fill="url(#fx_slash-ghost)"/>
+  <!-- main crescent: sharp leading edge right, fading tail left -->
+  <path d="M4 74C36 16 104 -4 158 20C108 18 56 38 4 74Z" fill="url(#fx_slash-fade)"/>
+  <!-- bright leading edge along the outer arc -->
+  <path d="M60 36C86 10 124 2 158 20" fill="none" stroke="url(#fx_slash-edge)" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- inner light streak -->
+  <path d="M40 54C74 26 112 14 150 22" fill="none" stroke="url(#fx_slash-edge)" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<radialGradient id="bath_purple_cloud-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2A1008" stop-opacity=".42"/><stop offset="1" stop-color="#2A1008" stop-opacity="0"/></radialGradient>
+<linearGradient id="bath_purple_cloud-wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A1A10"/><stop offset=".35" stop-color="#8A1A10"/><stop offset="1" stop-color="#3A0604"/></linearGradient>
+<linearGradient id="bath_purple_cloud-hoop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFD45A"/><stop offset=".4" stop-color="#FFD45A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+<radialGradient id="bath_purple_cloud-water" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#EAD8FF"/><stop offset=".5" stop-color="#9A6AE8"/><stop offset="1" stop-color="#3A1E7A"/></radialGradient>
+<linearGradient id="bath_purple_cloud-steam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".25"/></linearGradient>
+<radialGradient id="bath_purple_cloud-mist" gradientUnits="userSpaceOnUse" cx="32" cy="22" r="22"><stop offset="0" stop-color="#EAD8FF" stop-opacity="0.3"/><stop offset=".55" stop-color="#EAD8FF" stop-opacity="0.14"/><stop offset="1" stop-color="#EAD8FF" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="32" cy="56.5" rx="24" ry="3" fill="url(#bath_purple_cloud-shadow)"/>
+<path d="M8 27L11 51A21 6 0 0 0 53 51L56 27Z" fill="url(#bath_purple_cloud-wood)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M17 34.5L18.88 55 M24.5 34.5L25.44 55 M32 34.5L32 55 M39.5 34.5L38.56 55 M47 34.5L45.12 55 " fill="none" stroke="#2A1008" stroke-width="1.1" opacity=".55"/>
+<path d="M10.5 30C11 40 12.5 46 13.5 50" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>
+<path d="M8.96 36A23.04 8.16 0 0 0 55.04 36" fill="none" stroke="#2A1008" stroke-width="4.4"/>
+<path d="M8.96 36A23.04 8.16 0 0 0 55.04 36" fill="none" stroke="url(#bath_purple_cloud-hoop)" stroke-width="2.6"/>
+<path d="M11.96 38.2A21.04 7.16 0 0 0 28 42.96" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+<path d="M10.4 46.5A21.6 7.65 0 0 0 53.6 46.5" fill="none" stroke="#2A1008" stroke-width="4.4"/>
+<path d="M10.4 46.5A21.6 7.65 0 0 0 53.6 46.5" fill="none" stroke="url(#bath_purple_cloud-hoop)" stroke-width="2.6"/>
+<path d="M13.4 48.7A19.6 6.65 0 0 0 28 52.95" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+<ellipse cx="32" cy="27" rx="24" ry="8.5" fill="url(#bath_purple_cloud-wood)" stroke="#2A1008" stroke-width="2.4"/>
+<ellipse cx="32" cy="27" rx="20.8" ry="5.9" fill="url(#bath_purple_cloud-water)" stroke="#2A1008" stroke-width="1.6"/>
+<ellipse cx="26" cy="25.5" rx="7" ry="1.6" fill="#FFFFFF" opacity=".55"/>
+<path d="M18 29.5Q28 32.5 40 29.8" fill="none" stroke="#EAD8FF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+<circle cx="32" cy="20" r="22" fill="url(#bath_purple_cloud-mist)"/>
+<path d="M18 16C14 16 13 10.5 18 9.5C18.5 5 26 4 28 8C30 4 38 4 39 9C44 7.5 48 12 45 16Z" fill="url(#bath_purple_cloud-steam)" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round" opacity=".95"/>
+<path d="M36 13.5C38 10 44 10 45 13" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".9"/>
+<path d="M48 20.5C46 20.5 45.5 17.5 48 17C48.5 14.5 53 14.5 53 17.5C55 17.5 55.5 20.5 53 20.5Z" fill="url(#bath_purple_cloud-steam)" stroke="#FFFFFF" stroke-width="1" opacity=".9"/>
+</svg>

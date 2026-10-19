@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="great_t4_wyrm_bone-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFDF4"/>
+      <stop offset=".42" stop-color="#EDE4CA"/>
+      <stop offset=".58" stop-color="#CDBB90"/>
+      <stop offset="1" stop-color="#7C6A46"/>
+    </linearGradient>
+    <linearGradient id="great_t4_wyrm_bone-bronze" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E0A870"/>
+      <stop offset=".5" stop-color="#9A6034"/>
+      <stop offset="1" stop-color="#4A2810"/>
+    </linearGradient>
+    <linearGradient id="great_t4_wyrm_bone-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B0583A"/>
+      <stop offset=".5" stop-color="#7A3218"/>
+      <stop offset="1" stop-color="#3E1408"/>
+    </linearGradient>
+    <radialGradient id="great_t4_wyrm_bone-eye" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFB090"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <radialGradient id="great_t4_wyrm_bone-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="27" ry="5" fill="url(#great_t4_wyrm_bone-shadow)" transform="translate(34 35) rotate(-45)"/>
+
+  <!-- greatsword: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal -->
+  <g transform="translate(32 32) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <!-- broad heavy blade -->
+    <path d="M0 -31L6.8 -21L6.2 7.5H-6.2L-6.8 -21Z" fill="url(#great_t4_wyrm_bone-blade)" stroke-width="2.4"/>
+    <path d="M-1.5 -19V6H1.5V-19Z" fill="#B8A478" opacity=".5" stroke="none"/>
+    <path d="M-4.4 -19V5" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".85"/>
+    <!-- wyrm-scale ridges -->
+    <path d="M-5.4 -16Q0 -12.6 5.4 -16M-5.2 -10Q0 -6.6 5.2 -10M-5.2 -4Q0 -.6 5.2 -4M-5 2Q0 5.4 5 2" fill="none" stroke="#A89468" stroke-width="1.1" opacity=".9"/>
+    <path d="M-4.6 -16.6Q-2 -15 .4 -14.4M-4.4 -10.6Q-2 -9 .4 -8.4" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".8"/>
+    <!-- bronze guard set with a wyrm eye -->
+    <path d="M-13.5 7.6H13.5Q15.2 10.2 13.5 12.8H-13.5Q-15.2 10.2 -13.5 7.6Z" fill="url(#great_t4_wyrm_bone-bronze)" stroke-width="2.3"/>
+    <path d="M-12 9.4H-8" fill="none" stroke="#FFE6C4" stroke-width="1" opacity=".8"/>
+    <circle cx="0" cy="10.2" r="1.9" fill="url(#great_t4_wyrm_bone-eye)" stroke-width="1.3"/>
+    <path d="M0 8.8V11.6" fill="none" stroke="#2A1008" stroke-width=".8"/>
+    <!-- long two-handed grip -->
+    <rect x="-2.6" y="13.3" width="5.2" height="13.6" rx="1.2" fill="url(#great_t4_wyrm_bone-grip)" stroke-width="2.1"/>
+    <path d="M-2 15.6L2 17.2M-2 18.6L2 20.2M-2 21.6L2 23.2M-2 24.6L2 26.2" fill="none" stroke="#3E1408" stroke-width="1"/>
+    <rect x="-3.2" y="19.6" width="6.4" height="1.9" fill="url(#great_t4_wyrm_bone-bronze)" stroke-width="1.4"/>
+    <!-- heavy pommel -->
+    <path d="M-3.5 27.2H3.5L4.1 30.2L0 33.4L-4.1 30.2Z" fill="url(#great_t4_wyrm_bone-bronze)" stroke-width="2.1"/>
+    <path d="M-2.2 28.6L-.6 28.2" fill="none" stroke="#FFE6C4" stroke-width="1" opacity=".85"/>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebirth</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E8%BD%AE%E5%9B%9E">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#FBF6EC}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.gain{background:rgba(255,253,248,.07);border:2px solid #6B6390;border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;gap:2px}
+.lbl{font-size:10.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#B3AAC2}
+.li{display:flex;gap:6px;align-items:flex-start;font-size:12px;font-weight:700;line-height:1.3}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:#221E2E;display:flex;flex-direction:column;align-items:center">
+  <svg width="390" height="844" viewBox="0 0 390 844" style="position:absolute;inset:0" aria-hidden="true">
+    <defs><radialGradient id="halo" cx="50%" cy="22%" r="55%"><stop offset="0" stop-color="#8C6BE0" stop-opacity=".45"/><stop offset="1" stop-color="#8C6BE0" stop-opacity="0"/></radialGradient></defs>
+    <rect width="390" height="844" fill="url(#halo)"/>
+    <g fill="#FBF6EC" opacity=".55"><circle cx="40" cy="60" r="1.5"/><circle cx="350" cy="90" r="1.2"/><circle cx="300" cy="30" r="1"/><circle cx="70" cy="220" r="1.2"/><circle cx="330" cy="260" r="1.5"/></g>
+  </svg>
+
+  <a href="Main.dc.html" aria-label="Close" style="position:absolute;right:14px;top:14px;width:36px;height:36px;border-radius:50%;border:2.5px solid #6B6390;background:rgba(255,255,255,.06);display:grid;place-items:center;z-index:3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FBF6EC" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></a>
+
+  <!-- WHEEL -->
+  <div style="position:relative;width:210px;height:210px;margin-top:26px">
+    <svg width="210" height="210" viewBox="0 0 210 210" aria-hidden="true">
+      <circle cx="105" cy="105" r="96" fill="none" stroke="#E8B54A" stroke-width="4"/>
+      <circle cx="105" cy="105" r="84" fill="#2E2840" stroke="#3A2A2A" stroke-width="3"/>
+      <circle cx="105" cy="105" r="84" fill="none" stroke="#8C6BE0" stroke-width="2" stroke-dasharray="3 6"/>
+      <g stroke="#E8B54A" stroke-width="5" stroke-linecap="round"><path d="M105 25 V185"/><path d="M36 65 L174 145"/><path d="M36 145 L174 65"/></g>
+      <g fill="#E8B54A" stroke="#3A2A2A" stroke-width="2"><circle cx="105" cy="13" r="7"/><circle cx="105" cy="197" r="7"/><circle cx="25" cy="59" r="7"/><circle cx="185" cy="59" r="7"/><circle cx="25" cy="151" r="7"/><circle cx="185" cy="151" r="7"/></g>
+      <circle cx="105" cy="105" r="40" fill="#FBF3E1" stroke="#3A2A2A" stroke-width="3.5"/>
+    </svg>
+    <span class="brush" style="position:absolute;inset:0;display:grid;place-items:center;font-size:30px;color:#B83E2B;line-height:.95;text-align:center">轮<br>回</span>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:10px;text-align:center;position:relative">
+    <span class="disp" style="font-weight:800;font-size:26px">Reincarnate</span>
+    <span style="font-size:12.5px;font-weight:700;color:#B3AAC2;max-width:300px">Your soul remembers. Your body and cultivation begin again, stronger than before.</span>
+  </div>
+
+  <div style="width:350px;display:flex;flex-direction:column;gap:10px;margin-top:14px;position:relative">
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+      <div class="gain"><span class="lbl" style="color:#9FE6CF">Qi ×</span><span class="disp" style="font-weight:800;font-size:22px;color:#9FE6CF;line-height:1">×3.00</span><span style="font-size:11px;font-weight:700;color:#B3AAC2">from ×1.50 (+1.50)</span></div>
+      <div class="gain"><span class="lbl" style="color:#C9C1F0">Body ×</span><span class="disp" style="font-weight:800;font-size:22px;color:#C9C1F0;line-height:1">×4.78</span><span style="font-size:11px;font-weight:700;color:#B3AAC2">from ×2.17 (+2.61)</span></div>
+      <div class="gain"><span class="lbl" style="color:#F2D27A">Karma</span><span class="disp" style="font-weight:800;font-size:22px;color:#F2D27A;line-height:1">+11</span><span style="font-size:11px;font-weight:700;color:#B3AAC2">5 Qi · 6 Body</span></div>
+    </div>
+    <div style="font-size:12px;font-weight:700;color:#B3AAC2;text-align:center">Reaching Nascent Soul 9 again takes about <b style="color:#FBF6EC">7 days</b> (this life took 14).</div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+      <div style="background:rgba(255,253,248,.05);border:2px solid #6B6390;border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;gap:5px">
+        <span class="lbl">Left behind</span>
+        <span class="li"><span style="color:#E0533D">✕</span>Realm, level, Qi and HP</span>
+        <span class="li"><span style="color:#E0533D">✕</span>Body stage</span>
+        <span class="li"><span style="color:#E0533D">✕</span>90% of Spirit Stones</span>
+        <span class="li"><span style="color:#E0533D">✕</span>Maps, grounds, dungeon tiers</span>
+      </div>
+      <div style="background:rgba(255,253,248,.05);border:2px solid #6B6390;border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;gap:5px">
+        <span class="lbl">Your soul keeps</span>
+        <span class="li"><span style="color:#6CC4A1">✓</span>All gear and swords</span>
+        <span class="li"><span style="color:#6CC4A1">✓</span>Skills, pets, techniques</span>
+        <span class="li"><span style="color:#6CC4A1">✓</span>Exercise mastery</span>
+        <span class="li"><span style="color:#6CC4A1">✓</span>Karma, perks, purchases</span>
+      </div>
+    </div>
+
+    <button style="margin-top:4px;position:relative;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:19px;color:#2E2A3A;background:#E8B54A;border:3px solid #3A2A2A;border-radius:16px;padding:12px;box-shadow:0 5px 0 #A07A25;cursor:pointer;overflow:hidden">
+      <span style="position:absolute;left:0;top:0;bottom:0;width:38%;background:rgba(255,255,255,.35)"></span>
+      <span style="position:relative">Hold to Reincarnate</span>
+    </button>
+    <span style="font-size:11px;font-weight:700;color:#B3AAC2;text-align:center">Hold for 2 seconds. The fill shows your progress.</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

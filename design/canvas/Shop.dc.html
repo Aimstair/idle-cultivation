@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E5%AE%9D%E9%98%81%E6%9C%88">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#2E2A3A}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.rb{border-radius:50%;border:3px solid #3A2A2A;display:grid;place-items:center;box-shadow:0 3px 0 #3A2A2A;text-decoration:none;cursor:pointer;padding:0;position:relative}
+.st{width:52px;height:52px;border-radius:16px;border:3px solid #3A2A2A;display:grid;place-items:center;box-shadow:0 4px 0 #3A2A2A;cursor:pointer;padding:0;position:relative}
+.offer{background:#FFFDF8;border:3px solid #3A2A2A;border-radius:18px;box-shadow:0 5px 0 #3A2A2A;padding:10px;display:flex;flex-direction:column;align-items:center;gap:4px;position:relative;text-align:center}
+.price{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:16px;background:#277864;color:#fff;border:2.5px solid #3A2A2A;border-radius:12px;padding:2px 14px;box-shadow:0 3px 0 #1C5649;width:100%;box-sizing:border-box}
+.tagx{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:12px;line-height:1.15}
+.sub{font-size:10.5px;font-weight:700;color:#6B6478;line-height:1.2}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:linear-gradient(180deg,#2E2A3A 0,#4A3F63 30%,#F4EAD3 30%)">
+
+  <div style="position:absolute;left:12px;right:12px;top:12px;display:flex;align-items:center;gap:10px">
+    <a href="Main.dc.html" class="rb" aria-label="Back to home" style="width:42px;height:42px;background:#FFFDF8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
+    <span class="brush" style="width:44px;height:44px;border:3px solid #E8B54A;border-radius:6px;color:#F2D27A;display:grid;place-items:center;font-size:18px;line-height:.92;text-align:center;transform:rotate(-4deg)">宝<br>阁</span>
+    <span class="disp" style="font-weight:800;font-size:20px;flex:1;color:#FBF6EC">Treasure Pavilion</span>
+    <span style="display:flex;align-items:center;gap:4px;background:#1B1826;border:2.5px solid #3A2A2A;border-radius:10px;padding:2px 8px"><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="#6CC4A1" stroke="#FFFDF8" stroke-width="1.2"/><circle cx="8" cy="8" r="2.2" fill="#1B1826"/></svg><span class="disp" style="font-weight:800;font-size:14px;color:#FBF6EC">320</span></span>
+  </div>
+
+  <!-- section icons -->
+  <div style="position:absolute;left:0;right:0;top:70px;display:flex;justify-content:center;gap:10px">
+    <button class="st" aria-label="Featured, selected" style="background:#E8B54A;box-shadow:0 0 0 3px #FFF4C9,0 4px 0 3px #1B1826"><svg width="26" height="26" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0 L7.6 4.4 L12 6 L7.6 7.6 L6 12 L4.4 7.6 L0 6 L4.4 4.4Z" fill="#FFF4C9" stroke="#3A2A2A" stroke-width=".8"/></svg></button>
+    <button class="st" aria-label="Jade" style="background:#FFFDF8"><svg width="26" height="26" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="#6CC4A1" stroke="#3A2A2A" stroke-width="1.2"/><circle cx="8" cy="8" r="2.2" fill="#FBF6EC" stroke="#3A2A2A"/></svg></button>
+    <button class="st" aria-label="Sword Pavilion" style="background:#FFFDF8"><svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="#3A2A2A" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 26 26 6M8 6l18 20M4 22l6 6M22 28l6-6"/></svg></button>
+    <button class="st" aria-label="Wardrobe and cosmetics" style="background:#FFFDF8"><svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="#B83E2B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 9a3 3 0 1 1 3-3M16 9v3L4 22h24L16 12"/></svg></button>
+    <button class="st" aria-label="Event shop" style="background:#FFFDF8"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="9" ry="11" fill="#F2C14E" stroke="#3A2A2A" stroke-width="2.2"/><path d="M10 9h12M10 23h12M16 5v22" stroke="#B83E2B" stroke-width="2"/></svg><span style="position:absolute;right:-4px;top:-4px;width:13px;height:13px;border-radius:50%;background:#B83E2B;border:2px solid #FBF6EC"></span></button>
+  </div>
+
+  <!-- MONTHLY CARD BANNER (hero) -->
+  <div style="position:absolute;left:12px;right:12px;top:142px;background:linear-gradient(135deg,#F2D27A,#E8B54A);border:3.5px solid #3A2A2A;border-radius:18px;box-shadow:0 6px 0 #A07A25;padding:12px;display:flex;gap:12px;align-items:center;overflow:hidden">
+    <div style="position:relative;width:86px;height:86px;flex:none">
+      <svg width="86" height="86" viewBox="0 0 86 86" aria-hidden="true"><rect x="8" y="14" width="70" height="58" rx="10" fill="#FFF4D6" stroke="#3A2A2A" stroke-width="3"/><circle cx="43" cy="43" r="18" fill="#6CC4A1" stroke="#3A2A2A" stroke-width="3"/><circle cx="43" cy="43" r="6" fill="#FFF4D6" stroke="#3A2A2A" stroke-width="2.5"/><path d="M8 30 h70" stroke="#B83E2B" stroke-width="3"/></svg>
+      <span class="brush" style="position:absolute;right:-6px;top:-6px;width:28px;height:28px;border:2.5px solid #B83E2B;border-radius:4px;background:#FFF4D6;color:#B83E2B;display:grid;place-items:center;font-size:17px;transform:rotate(10deg)">月</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:3px;flex:1;min-width:0">
+      <span class="disp" style="font-weight:800;font-size:19px;line-height:1">Monthly Jade Card</span>
+      <span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:2px">
+        <span style="display:inline-flex;align-items:center;gap:3px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;background:#FFFDF8;border:2px solid #3A2A2A;border-radius:999px;padding:0 7px 0 2px"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="#6CC4A1" stroke="#3A2A2A" stroke-width="1.2"/></svg>100/day</span>
+        <span style="display:inline-flex;align-items:center;gap:3px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;background:#FFFDF8;border:2px solid #3A2A2A;border-radius:999px;padding:0 7px 0 2px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 3 3 7 0 10-3-3-3-7 0-10z" fill="#3FA58C" stroke="#3A2A2A" stroke-width="1.6"/></svg>+10%</span>
+      </span>
+      <span class="price" style="margin-top:4px">$4.99 / 30 days</span>
+    </div>
+  </div>
+
+  <!-- OFFER GRID -->
+  <div style="position:absolute;left:12px;right:12px;top:300px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+    <div class="offer">
+      <span style="position:absolute;left:-3px;top:10px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:11px;background:#B83E2B;color:#fff;border:2px solid #3A2A2A;border-radius:0 8px 8px 0;padding:0 7px">ONCE</span>
+      <svg width="74" height="62" viewBox="0 0 74 62" aria-hidden="true"><path d="M10 24h54v32H10z" fill="#3FA58C" stroke="#3A2A2A" stroke-width="3"/><path d="M10 24 Q37 0 64 24" fill="#89D4B6" stroke="#3A2A2A" stroke-width="3"/><circle cx="37" cy="36" r="6" fill="#E8B54A" stroke="#3A2A2A" stroke-width="2.4"/><path d="M58 8 L64 2" stroke="#F2C14E" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="tagx">Starter Pack</span><span class="sub">Spirit gear set · 3 Qi pills · 300 Jade</span>
+      <span class="price">$0.99</span>
+    </div>
+    <div class="offer">
+      <svg width="74" height="62" viewBox="0 0 74 62" aria-hidden="true"><path d="M4 58 L22 18 L36 34 L48 10 L70 58Z" fill="#9C97B5" stroke="#3A2A2A" stroke-width="3" stroke-linejoin="round"/><path d="M28 58 Q37 38 46 58Z" fill="#2E2A3A" stroke="#3A2A2A" stroke-width="2"/><circle cx="37" cy="50" r="3" fill="#F2C14E"/></svg>
+      <span class="tagx">Immortal Cave</span><span class="sub">Offline 8h → 12h · +1 worker · forever</span>
+      <span class="price">$9.99</span>
+    </div>
+    <div class="offer">
+      <svg width="74" height="62" viewBox="0 0 74 62" aria-hidden="true"><rect x="12" y="10" width="50" height="38" rx="7" fill="#FFFDF8" stroke="#3A2A2A" stroke-width="3"/><path d="M32 22l12 7-12 7z" fill="#3A2A2A"/><path d="M8 54 L66 6" stroke="#B83E2B" stroke-width="5" stroke-linecap="round"/></svg>
+      <span class="tagx">Remove Ads</span><span class="sub">Every ad reward, instantly</span>
+      <span class="price">$4.99</span>
+    </div>
+    <div class="offer">
+      <svg width="74" height="62" viewBox="0 0 74 62" aria-hidden="true"><g stroke="#3A2A2A" stroke-width="2.4"><circle cx="26" cy="38" r="15" fill="#6CC4A1"/><circle cx="46" cy="34" r="15" fill="#89D4B6"/><circle cx="36" cy="22" r="15" fill="#6CC4A1"/></g><g fill="#FBF6EC" stroke="#3A2A2A" stroke-width="2"><circle cx="26" cy="38" r="4"/><circle cx="46" cy="34" r="4"/><circle cx="36" cy="22" r="4"/></g></svg>
+      <span class="tagx">Jade · 330</span><span class="sub">+10% bonus</span>
+      <span class="price">$4.99</span>
+    </div>
+  </div>
+
+  <!-- FREE CHEST + JADE PACKS -->
+  <div style="position:absolute;left:12px;right:12px;top:668px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px">
+    <div style="background:#EAF6F1;border:2.5px solid #277864;border-radius:14px;box-shadow:0 3px 0 #277864;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;position:relative">
+      <span style="position:absolute;right:-5px;top:-5px;width:13px;height:13px;border-radius:50%;background:#B83E2B;border:2px solid #FBF6EC"></span>
+      <svg width="36" height="30" viewBox="0 0 28 22" aria-hidden="true"><path d="M2 9h24v11H2z" fill="#3FA58C" stroke="#3A2A2A" stroke-width="2"/><path d="M2 9 Q14 -2 26 9" fill="#89D4B6" stroke="#3A2A2A" stroke-width="2"/><circle cx="14" cy="13" r="2.5" fill="#E8B54A" stroke="#3A2A2A" stroke-width="1.4"/></svg>
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px">Daily gift</span>
+      <span style="display:flex;align-items:center;gap:3px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;background:#277864;color:#fff;border:2px solid #3A2A2A;border-radius:8px;padding:0 6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="#fff"/></svg>Free</span>
+    </div>
+    <div style="background:#FFFDF8;border:2.5px solid #3A2A2A;border-radius:14px;box-shadow:0 3px 0 #3A2A2A;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px">
+      <svg width="30" height="30" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="#6CC4A1" stroke="#3A2A2A" stroke-width="1.2"/><circle cx="8" cy="8" r="2.2" fill="#FBF6EC" stroke="#3A2A2A"/></svg>
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px">60</span>
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;background:#277864;color:#fff;border:2px solid #3A2A2A;border-radius:8px;padding:0 6px">$0.99</span>
+    </div>
+    <div style="background:#FFFDF8;border:2.5px solid #3A2A2A;border-radius:14px;box-shadow:0 3px 0 #3A2A2A;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px">
+      <svg width="34" height="30" viewBox="0 0 22 16" aria-hidden="true"><circle cx="8" cy="9" r="6" fill="#6CC4A1" stroke="#3A2A2A" stroke-width="1.2"/><circle cx="14" cy="7" r="6" fill="#89D4B6" stroke="#3A2A2A" stroke-width="1.2"/></svg>
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px">700</span>
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;background:#277864;color:#fff;border:2px solid #3A2A2A;border-radius:8px;padding:0 6px">$9.99</span>
+    </div>
+    <div style="background:#FFF4D6;border:2.5px solid #3A2A2A;border-radius:14px;box-shadow:0 3px 0 #3A2A2A;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;position:relative">
+      <span style="position:absolute;left:50%;top:-9px;transform:translateX(-50%);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:9.5px;background:#B83E2B;color:#fff;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 5px;white-space:nowrap">BEST</span>
+      <svg width="36" height="30" viewBox="0 0 26 18" aria-hidden="true"><circle cx="7" cy="11" r="6" fill="#6CC4A1" stroke="#3A2A2A" stroke-width="1.2"/><circle cx="19" cy="11" r="6" fill="#6CC4A1" stroke="#3A2A2A" stroke-width="1.2"/><circle cx="13" cy="7" r="6" fill="#89D4B6" stroke="#3A2A2A" stroke-width="1.2"/></svg>
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px">3,800</span>
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;background:#277864;color:#fff;border:2px solid #3A2A2A;border-radius:8px;padding:0 6px">$49.99</span>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center">
+    <button style="font:inherit;font-size:12px;font-weight:800;color:#6B6478;background:none;border:0;text-decoration:underline;cursor:pointer">Restore purchases</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

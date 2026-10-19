@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="64" viewBox="0 0 24 32">
+  <defs>
+    <radialGradient id="fx_droplet-body" gradientUnits="userSpaceOnUse" cx="9" cy="19" r="13">
+      <stop offset="0" stop-color="#D8F4FF"/>
+      <stop offset=".35" stop-color="#8FDCFF"/>
+      <stop offset=".75" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1E3FA8"/>
+    </radialGradient>
+    <linearGradient id="fx_droplet-rim" gradientUnits="userSpaceOnUse" x1="12" y1="12" x2="12" y2="31">
+      <stop offset="0" stop-color="#B8E4FF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#B8E4FF" stop-opacity=".7"/>
+    </linearGradient>
+  </defs>
+  <!-- drop body -->
+  <path d="M12 1.5C12 1.5 22 15.5 22 21A10 10 0 0 1 2 21C2 15.5 12 1.5 12 1.5Z" fill="url(#fx_droplet-body)"/>
+  <!-- bottom refraction rim -->
+  <path d="M5.2 25.5A8.4 8.4 0 0 0 20.4 21.6C20.6 25.4 17 29.6 12 29.6C9 29.6 6.6 28 5.2 25.5Z" fill="url(#fx_droplet-rim)"/>
+  <!-- highlights -->
+  <ellipse cx="8.6" cy="18.5" rx="1.9" ry="3.6" fill="#FFFFFF" opacity=".9" transform="rotate(-18 8.6 18.5)"/>
+  <circle cx="14.5" cy="25.5" r="1" fill="#FFFFFF" opacity=".7"/>
+</svg>

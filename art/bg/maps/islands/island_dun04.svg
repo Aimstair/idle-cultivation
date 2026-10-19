@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="360" viewBox="0 0 200 180">
+<defs>
+<radialGradient id="island_dun04-uGlow" cx="100" cy="128" r="96" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 128) scale(1 .5) translate(-100 -128)"><stop offset="0" stop-color="#E4F6D2" stop-opacity=".85"/><stop offset=".5" stop-color="#E4F6D2" stop-opacity=".35"/><stop offset="1" stop-color="#E4F6D2" stop-opacity="0"/></radialGradient>
+<linearGradient id="island_dun04-uBody" x1="14" y1="80" x2="186" y2="140" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B3BE93"/><stop offset=".38" stop-color="#7D8B66"/><stop offset=".72" stop-color="#4B5844"/><stop offset="1" stop-color="#2D3729"/></linearGradient>
+<linearGradient id="island_dun04-uShade" x1="0" y1="92" x2="0" y2="176" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2D3729" stop-opacity=".05"/><stop offset=".25" stop-color="#2D3729" stop-opacity="0"/><stop offset="1" stop-color="#2D3729" stop-opacity=".6"/></linearGradient>
+<linearGradient id="island_dun04-uFacet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B3BE93"/><stop offset="1" stop-color="#7D8B66"/></linearGradient>
+<linearGradient id="island_dun04-uLip" x1="0" y1="80" x2="0" y2="104" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6A5A3A"/><stop offset="1" stop-color="#463A26"/></linearGradient>
+<linearGradient id="island_dun04-uMoss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A2C86E"/><stop offset="1" stop-color="#6F9B4C"/></linearGradient>
+<linearGradient id="island_dun04-face" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#B6C47A"/><stop offset="1" stop-color="#6E7E44"/></linearGradient>
+<radialGradient id="island_dun04-sheen" cx="0.3" cy="0.25" r="0.55"><stop offset="0" stop-color="#FFF2B0" stop-opacity="0.45"/><stop offset="1" stop-color="#FFF2B0" stop-opacity="0"/></radialGradient>
+<linearGradient id="island_dun04-lip" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7A8448"/><stop offset="0.45" stop-color="#4A5430"/><stop offset="1" stop-color="#4A5430" stop-opacity="1"/></linearGradient>
+<linearGradient id="island_dun04-shadeR" x1="0" y1="0" x2="1" y2="0"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.22"/></linearGradient>
+<clipPath id="island_dun04-faceclip"><ellipse cx="100" cy="74" rx="86" ry="22"/></clipPath>
+<linearGradient id="island_dun04-cage" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B8D4A0"/><stop offset="1" stop-color="#4E6A44"/></linearGradient>
+<radialGradient id="island_dun04-glass" cx="0.35" cy="0.3" r="0.7"><stop offset="0" stop-color="#E8F4D8" stop-opacity="0.55"/><stop offset="1" stop-color="#6A8A5A" stop-opacity="0.35"/></radialGradient>
+<radialGradient id="island_dun04-pet" cx="0.5" cy="0.8" r="0.8"><stop offset="0" stop-color="#F0B0D0"/><stop offset="0.5" stop-color="#A050A0"/><stop offset="1" stop-color="#5A2A6A"/></radialGradient>
+<linearGradient id="island_dun04-bronze" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C8A060"/><stop offset="0.5" stop-color="#8A6A3A"/><stop offset="1" stop-color="#4A3418"/></linearGradient>
+<radialGradient id="island_dun04-fglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFE070" stop-opacity="0.8"/><stop offset="1" stop-color="#FFE070" stop-opacity="0"/></radialGradient>
+<radialGradient id="island_dun04-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFF6C8" stop-opacity="0.7"/><stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/></radialGradient>
+</defs>
+<g id="island_dun04-under">
+<ellipse cx="100" cy="128" rx="100" ry="52" fill="url(#island_dun04-uGlow)"/>
+<!-- falling rock bits (behind) -->
+<path d="M57,150 l4,-2 3,3 -2,4 -4,0 z" fill="#4B5844" opacity=".8"/>
+<path d="M146,146 l3,-1 2,3 -2,3 -3,-1 z" fill="#4B5844" opacity=".75"/>
+<!-- hanging side lobes -->
+<path d="M30,98 L44,104 L52,118 L48,132 L44,146 L40,138 L36,124 L30,112 Z" fill="url(#island_dun04-uBody)"/>
+<path d="M36,110 L44,106 L49,118 L45,132 L43,142 L40,128 Z" fill="#2D3729" opacity=".28"/>
+<path d="M150,102 L170,98 L166,112 L160,124 L156,134 L152,124 L148,112 Z" fill="url(#island_dun04-uBody)"/>
+<path d="M158,104 L168,100 L163,114 L156,132 L155,118 Z" fill="#2D3729" opacity=".35"/>
+<!-- main body -->
+<path d="M14,74 C14,84 18,90 24,96 L30,104 L28,110 L38,116 L44,126 L52,130 L56,142 L66,146 L70,156 L80,159 L86,168 L95,170 L100,176 L106,169 L115,165 L120,156 L130,151 L135,140 L145,135 L150,124 L160,118 L166,107 L175,100 L181,91 C185,85 186,80 186,74 Z" fill="url(#island_dun04-uBody)"/>
+<!-- lit facets (left, light from top-left) -->
+<path d="M24,96 L46,102 L58,120 L52,130 L44,126 L38,116 L28,110 L30,104 Z" fill="url(#island_dun04-uFacet)" opacity=".85"/>
+<path d="M58,104 L82,110 L86,128 L74,136 L62,130 L58,120 Z" fill="url(#island_dun04-uFacet)" opacity=".6"/>
+<path d="M62,132 L74,136 L80,150 L70,156 L66,146 L56,142 Z" fill="url(#island_dun04-uFacet)" opacity=".45"/>
+<path d="M86,128 L100,134 L98,152 L88,156 L80,150 L74,136 Z" fill="#7D8B66" opacity=".5"/>
+<!-- shadow facets (right) -->
+<path d="M118,108 L142,104 L150,124 L145,135 L132,128 Z" fill="#2D3729" opacity=".22"/>
+<path d="M100,134 L118,126 L132,128 L130,151 L120,156 L110,150 Z" fill="#2D3729" opacity=".3"/>
+<path d="M110,150 L120,156 L115,165 L106,169 L100,176 L98,152 Z" fill="#2D3729" opacity=".38"/>
+<path d="M112,150 L124,148 L122,160 L117,170 L113,162 Z" fill="url(#island_dun04-uBody)"/>
+<path d="M117,149 L124,148 L122,160 L117,170 Z" fill="#2D3729" opacity=".35"/>
+<g fill="none" stroke="#B3BE93" stroke-linecap="round" stroke-linejoin="round" opacity=".55" stroke-width=".9"><path d="M58,104 L82,110"/><path d="M62,132 L74,136 L86,128"/><path d="M86,128 L100,134"/></g>
+<!-- overall bottom darkening -->
+<path d="M14,74 C14,84 18,90 24,96 L30,104 L28,110 L38,116 L44,126 L52,130 L56,142 L66,146 L70,156 L80,159 L86,168 L95,170 L100,176 L106,169 L115,165 L120,156 L130,151 L135,140 L145,135 L150,124 L160,118 L166,107 L175,100 L181,91 C185,85 186,80 186,74 Z" fill="url(#island_dun04-uShade)"/>
+<!-- strata and cracks -->
+<g fill="none" stroke="#2A3326" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32,108 C50,113 66,112 84,118 S118,116 136,114 S160,110 170,104" stroke-width="1.2" opacity=".45"/>
+<path d="M46,126 C60,130 74,128 88,134 S114,132 128,130 S142,128 150,124" stroke-width="1.1" opacity=".42"/>
+<path d="M62,142 C74,146 86,144 96,150 S116,146 128,146" stroke-width="1" opacity=".4"/>
+<path d="M78,156 C88,160 98,158 112,160" stroke-width=".9" opacity=".38"/>
+<path d="M58,104 L62,116 L58,120" stroke-width="1" opacity=".5"/>
+<path d="M86,128 L88,140 L84,146" stroke-width="1" opacity=".45"/>
+<path d="M100,134 L102,146 L99,152 L101,162" stroke-width="1" opacity=".5"/>
+<path d="M132,128 L128,138 L131,146" stroke-width="1" opacity=".45"/>
+<path d="M118,108 L114,118" stroke-width=".9" opacity=".4"/>
+</g>
+<!-- rim highlights on lit edges -->
+<path d="M24,96 L30,104 L28,110 L38,116 L44,126" fill="none" stroke="#B3BE93" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+<path d="M56,142 L66,146 L70,156" fill="none" stroke="#B3BE93" stroke-width=".9" stroke-linecap="round" opacity=".5"/>
+<!-- soil lip under the cap -->
+<path d="M14,74 C16,88 52,98 100,98 C148,98 184,88 186,74 L186,82 C184,98 150,108 100,108 C50,108 16,98 14,82 Z" fill="url(#island_dun04-uLip)"/>
+<path d="M16,84 C30,96 60,104 100,104 C140,104 170,96 184,84" fill="none" stroke="#463A26" stroke-width="1.2" opacity=".55"/>
+<path d="M15,78 C20,90 56,99.5 100,99.5 C144,99.5 180,90 185,78" fill="none" stroke="#6A5A3A" stroke-width="1.6" opacity=".9"/>
+<!-- pebbles in the lip -->
+<g fill="#7D8B66" opacity=".9"><ellipse cx="44" cy="101" rx="3" ry="1.9"/><ellipse cx="88" cy="105" rx="2.4" ry="1.6"/><ellipse cx="136" cy="104" rx="3.2" ry="1.9"/><ellipse cx="166" cy="96" rx="2.2" ry="1.5"/><ellipse cx="112" cy="106" rx="1.6" ry="1.1"/></g>
+<!-- dangling roots -->
+<g fill="none" stroke="#4E3B26" stroke-linecap="round" stroke-linejoin="round">
+<path d="M38,100 C36,110 40,116 36,126 C34,132 37,136 35,140" stroke-width="1.6"/>
+<path d="M36,126 C32,128 31,132 32,135" stroke-width=".9"/>
+<path d="M72,105 C74,114 70,120 73,130" stroke-width="1.4"/>
+<path d="M73,121 C77,124 77,128 79,130" stroke-width=".8"/>
+<path d="M124,105 C122,114 127,120 124,130 C122,136 125,140 124,146" stroke-width="1.5"/>
+<path d="M124,130 C120,133 120,136 118,138" stroke-width=".8"/>
+<path d="M160,98 C163,106 160,112 163,120" stroke-width="1.3"/>
+<path d="M104,106 C104,112 102,116 104,120" stroke-width="1"/>
+</g>
+<!-- moss cushions and drips along the lip -->
+<g fill="url(#island_dun04-uMoss)">
+<path d="M46,102 C48,99 60,100 64,104 C64,107 62,107 61,109 C61,114 60,118 58.5,118 C57,118 57,113 56.6,110 C55.8,112 55.6,121 53.8,121 C52,121 52.4,113 52,108 C50.6,108 50.8,112 49.4,112 C48,112 48.6,106 46,104 Z"/>
+<path d="M136,105 C139,102 150,101 154,103 C154,106 152,106 151.6,108 C151.4,112 150.6,115 149.4,115 C148.2,115 148.4,111 148,109 C147.4,111 147.4,117 145.8,117 C144.2,117 144.6,111 144,108 C142,108 141.6,110 140.4,110 C139.2,110 139.6,107 136,106.6 Z"/>
+<path d="M86,106 C89,104 96,104 99,106.4 C98,108 97.4,108.4 97,111 C96.6,114 95.4,114.6 94.8,112 C94.4,110 93.2,110 92.6,112.4 C92,114 90.6,113 90.6,110 C90,108.6 88,108 86,107.6 Z" opacity=".95"/>
+<path d="M168,96 C171,93 178,90 181,90 C180,93 178.6,94 178,97 C177.4,101 176,102 175.4,100 C175,98 174,99 173.6,101.6 C173,103 171.6,102 171.8,99 C170.6,98 169,98 168,97.4 Z" opacity=".95"/>
+<path d="M20,90 C24,93 30,97 34,99 C32,101 30.6,101 30,104 C29.4,106 28,106 27.8,103.4 C27,101 25,100 24,98 C22,96 20.4,94 20,90 Z" opacity=".95"/>
+</g>
+<!-- falling rock bits (below tip) -->
+<path d="M86,172 l3,-2 3,2 -1,3 -4,0 z" fill="#4B5844" opacity=".85"/>
+<path d="M112,173 l2,-1.5 2.5,1.5 -1,2.5 -3,0 z" fill="#4B5844" opacity=".7"/>
+<path d="M126,163 l2.2,-1 1.8,2 -1.4,2 -2.4,-.6 z" fill="#7D8B66" opacity=".7"/>
+<path d="M74,165 l1.8,-1 1.6,1.6 -1.2,1.6 -2,-.4 z" fill="#7D8B66" opacity=".6"/>
+<circle cx="100" cy="178.5" r="1.2" fill="#4B5844" opacity=".5"/>
+</g>
+<g id="island_dun04-top">
+<path d="M14 74 A86 22 0 1 1 186 74 A86 22 0 1 1 14 74Z" fill="url(#island_dun04-face)"/>
+<g clip-path="url(#island_dun04-faceclip)"><g transform="translate(0 -10)">
+<path d="M50 104 C66 94 84 90 100 88 C120 86 140 84 160 80" fill="none" stroke="#C8B890" stroke-width="5" stroke-opacity="0.6" stroke-linecap="round"/>
+<path d="M58 99 l6 -3 M72 94 l6 -2 M88 90 l6 -1 M110 87 l6 -1 M130 85 l6 -1" stroke="#8A7A5A" stroke-width="0.6" opacity="0.6"/></g><path d="M14 74 A86 22 0 1 1 186 74 A86 22 0 1 1 14 74Z" fill="url(#island_dun04-sheen)"/><path d="M14 74 A86 22 0 1 1 186 74 A86 22 0 1 1 14 74Z" fill="url(#island_dun04-shadeR)"/></g>
+<path d="M18 68 C30 58 62 52.5 100 52.5 C130 52.5 152 55 168 60" fill="none" stroke="#FFF6C8" stroke-opacity="0.6" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M15 77 C22 90 60 96 100 96 C140 96 178 90 185 77" fill="none" stroke="#2A1008" stroke-opacity="0.3" stroke-width="1.3" stroke-linecap="round"/>
+<path d="M18.8 81.8 L19.9 85.8 L21.0 81.8 L22.0 87.0 L23.0 81.8 L24.2 85.8 L25.2 81.8Z" fill="#8A9A56"/><path d="M27.1 85.6 L28.5 90.5 L29.7 85.6 L31.0 92.0 L32.3 85.6 L33.7 90.5 L34.9 85.6Z" fill="#6E7E44"/><path d="M35.4 88.3 L37.0 94.0 L38.5 88.3 L40.0 95.7 L41.5 88.3 L43.2 94.0 L44.6 88.3Z" fill="#8A9A56"/><path d="M45.5 90.2 L46.7 94.7 L47.8 90.2 L49.0 96.0 L50.2 90.2 L51.5 94.7 L52.5 90.2Z" fill="#6E7E44"/><path d="M53.8 91.7 L55.2 97.0 L56.6 91.7 L58.0 98.6 L59.4 91.7 L61.0 97.0 L62.2 91.7Z" fill="#8A9A56"/><path d="M63.8 92.8 L64.9 96.8 L66.0 92.8 L67.0 98.0 L68.0 92.8 L69.2 96.8 L70.2 92.8Z" fill="#6E7E44"/><path d="M72.1 93.6 L73.5 98.5 L74.7 93.6 L76.0 100.0 L77.3 93.6 L78.7 98.5 L79.9 93.6Z" fill="#8A9A56"/><path d="M80.4 94.2 L82.0 99.9 L83.5 94.2 L85.0 101.6 L86.5 94.2 L88.2 99.9 L89.6 94.2Z" fill="#6E7E44"/><path d="M90.5 94.4 L91.7 98.9 L92.8 94.4 L94.0 100.2 L95.2 94.4 L96.5 98.9 L97.5 94.4Z" fill="#8A9A56"/><path d="M98.8 94.5 L100.2 99.8 L101.6 94.5 L103.0 101.4 L104.4 94.5 L106.0 99.8 L107.2 94.5Z" fill="#6E7E44"/><path d="M108.8 94.3 L109.9 98.3 L111.0 94.3 L112.0 99.5 L113.0 94.3 L114.2 98.3 L115.2 94.3Z" fill="#8A9A56"/><path d="M117.1 93.8 L118.5 98.7 L119.7 93.8 L121.0 100.2 L122.3 93.8 L123.7 98.7 L124.9 93.8Z" fill="#6E7E44"/><path d="M125.4 93.1 L127.0 98.9 L128.5 93.1 L130.0 100.6 L131.5 93.1 L133.2 98.9 L134.6 93.1Z" fill="#8A9A56"/><path d="M135.4 92.1 L136.7 96.5 L137.8 92.1 L139.0 97.9 L140.2 92.1 L141.5 96.5 L142.6 92.1Z" fill="#6E7E44"/><path d="M143.8 90.8 L145.2 96.1 L146.6 90.8 L148.0 97.7 L149.4 90.8 L151.0 96.1 L152.2 90.8Z" fill="#8A9A56"/><path d="M153.8 89.0 L154.9 93.0 L156.0 89.0 L157.0 94.2 L158.0 89.0 L159.2 93.0 L160.2 89.0Z" fill="#6E7E44"/><path d="M162.1 86.6 L163.5 91.5 L164.7 86.6 L166.0 92.9 L167.3 86.6 L168.7 91.5 L169.9 86.6Z" fill="#8A9A56"/><path d="M170.4 83.3 L172.0 89.0 L173.5 83.3 L175.0 90.7 L176.5 83.3 L178.2 89.0 L179.6 83.3Z" fill="#6E7E44"/>
+<g id="island_dun04-props" transform="translate(100 74) scale(0.93) translate(-100 -84)">
+<ellipse cx="90" cy="34" rx="70" ry="30" fill="url(#island_dun04-sun)"/>
+<!-- giant flower back -->
+<path d="M150 86 C151.8 57.0 156 38 156 28" fill="none" stroke="#4E7A3A" stroke-width="1.7600000000000002" stroke-linecap="round"/>
+<path d="M152.4 63.0 C143.6 57.0 139.20000000000002 63.0 139.20000000000002 65.0 C145.8 66.0 150.20000000000002 65.0 152.4 63.0Z" fill="#6A9A4A"/>
+<g transform="translate(156 28) scale(1.1)">
+<path d="M0 0 C-6 -2 -12 -8 -10 -12 C-6 -10 -3 -8 0 -4 C3 -8 6 -10 10 -12 C12 -8 6 -2 0 0Z" fill="url(#island_dun04-pet)"/>
+<path d="M0 -2 C-4 -6 -4 -12 0 -15 C4 -12 4 -6 0 -2Z" fill="url(#island_dun04-pet)"/>
+<path d="M-12 -4 C-8 -4 -4 -2 0 0 C-4 1 -9 0 -12 -4Z M12 -4 C8 -4 4 -2 0 0 C4 1 9 0 12 -4Z" fill="#8A3A8A"/>
+<circle cx="0" cy="-3" r="2.2" fill="#FFD45A"/>
+</g>
+<!-- greenhouse cage -->
+<ellipse cx="76" cy="92" rx="30" ry="5" fill="#2E3A1E" opacity="0.25"/>
+<path d="M50 92 L50 58 C50 36 102 36 102 58 L102 92Z" fill="url(#island_dun04-glass)"/>
+<path d="M50 92 L50 58 C50 36 102 36 102 58 L102 92" fill="none" stroke="url(#island_dun04-cage)" stroke-width="1.8"/>
+<path d="M58 92 L58 52 M67 92 L67 46 M76 92 L76 44 M85 92 L85 46 M94 92 L94 52 M50 66 L102 66 M50 79 L102 79 M53 50 C62 42 90 42 99 50" fill="none" stroke="url(#island_dun04-cage)" stroke-width="1"/>
+<path d="M76 44 L76 34" stroke="#4E6A44" stroke-width="1.4"/><circle cx="76" cy="33" r="1.8" fill="#D69A2A"/>
+<path d="M54 60 C56 50 62 46 68 44" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="1.2" stroke-linecap="round"/>
+<!-- vines over cage -->
+<path d="M50 70 C56 62 52 52 60 44 C66 40 72 42 76 38 M102 64 C96 58 100 50 92 46" fill="none" stroke="#4E7A3A" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="56" cy="56" r="1.6" fill="#6A9A4A" opacity="1"/>
+<circle cx="60" cy="46" r="1.5" fill="#6A9A4A" opacity="1"/>
+<circle cx="70" cy="41" r="1.4" fill="#6A9A4A" opacity="1"/>
+<circle cx="98" cy="54" r="1.5" fill="#6A9A4A" opacity="1"/>
+<circle cx="94" cy="48" r="1.3" fill="#6A9A4A" opacity="1"/>
+<circle cx="52" cy="66" r="1.4" fill="#6A9A4A" opacity="1"/>
+<!-- glowing herbs inside -->
+<path d="M66 92 c-2 -6 -1 -10 0 -12 M66 92 c2 -5 4 -8 6 -9 M82 92 c-1 -6 0 -9 1 -11 M82 92 c3 -4 5 -6 7 -6" fill="none" stroke="#8ACC5A" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="66" cy="80" r="1.4" fill="#E8FF9A" opacity="0.95"/>
+<circle cx="72" cy="83" r="1.2" fill="#E8FF9A" opacity="0.95"/>
+<circle cx="83" cy="81" r="1.4" fill="#E8FF9A" opacity="0.95"/>
+<circle cx="89" cy="86" r="1.2" fill="#E8FF9A" opacity="0.95"/>
+<!-- giant flowers front -->
+<path d="M36 90 C34.2 60.0 30 40 30 30" fill="none" stroke="#4E7A3A" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M33.6 66.0 C25.6 60.0 21.6 66.0 21.6 68.0 C27.6 69.0 31.6 68.0 33.6 66.0Z" fill="#6A9A4A"/>
+<g transform="translate(30 30) scale(1.0)">
+<path d="M0 0 C-6 -2 -12 -8 -10 -12 C-6 -10 -3 -8 0 -4 C3 -8 6 -10 10 -12 C12 -8 6 -2 0 0Z" fill="url(#island_dun04-pet)"/>
+<path d="M0 -2 C-4 -6 -4 -12 0 -15 C4 -12 4 -6 0 -2Z" fill="url(#island_dun04-pet)"/>
+<path d="M-12 -4 C-8 -4 -4 -2 0 0 C-4 1 -9 0 -12 -4Z M12 -4 C8 -4 4 -2 0 0 C4 1 9 0 12 -4Z" fill="#8A3A8A"/>
+<circle cx="0" cy="-3" r="2.2" fill="#FFD45A"/>
+</g>
+<path d="M116 94 C117.2 70.0 120 56 120 46" fill="none" stroke="#4E7A3A" stroke-width="1.2800000000000002" stroke-linecap="round"/>
+<path d="M117.6 76.0 C111.19999999999999 70.0 108.0 76.0 108.0 78.0 C112.8 79.0 116.0 78.0 117.6 76.0Z" fill="#6A9A4A"/>
+<g transform="translate(120 46) scale(0.8)">
+<path d="M0 0 C-6 -2 -12 -8 -10 -12 C-6 -10 -3 -8 0 -4 C3 -8 6 -10 10 -12 C12 -8 6 -2 0 0Z" fill="url(#island_dun04-pet)"/>
+<path d="M0 -2 C-4 -6 -4 -12 0 -15 C4 -12 4 -6 0 -2Z" fill="url(#island_dun04-pet)"/>
+<path d="M-12 -4 C-8 -4 -4 -2 0 0 C-4 1 -9 0 -12 -4Z M12 -4 C8 -4 4 -2 0 0 C4 1 9 0 12 -4Z" fill="#8A3A8A"/>
+<circle cx="0" cy="-3" r="2.2" fill="#FFD45A"/>
+</g>
+<!-- pill furnace -->
+<ellipse cx="148" cy="80" rx="14" ry="10" fill="url(#island_dun04-fglow)"/>
+<ellipse cx="150" cy="96" rx="16" ry="3.5" fill="#2E3A1E" opacity="0.3"/>
+<path d="M138 84 C136 92 140 96 150 96 C160 96 164 92 162 84Z" fill="url(#island_dun04-bronze)"/>
+<path d="M140 96 l-2 4 M150 96 l0 4 M160 96 l2 4" stroke="#4A3418" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="136" y="81" width="28" height="3.5" rx="1" fill="#A88048"/>
+<path d="M140 81 C142 76 158 76 160 81Z" fill="#8A6A3A"/><circle cx="150" cy="75.5" r="1.6" fill="#C8A060"/>
+<path d="M136 83 c-3 0 -4 -3 -2 -4 M164 83 c3 0 4 -3 2 -4" fill="none" stroke="#8A6A3A" stroke-width="1"/>
+<path d="M148 84 l3 6 l-2 3" stroke="#2A1A08" stroke-width="0.7" fill="none"/>
+<path d="M144 88 C146 86 154 86 156 88" stroke="#FFC850" stroke-width="1" fill="none"/>
+<!-- toppled planter -->
+<path d="M164 98 L176 92 L180 98 L170 103Z" fill="#B87A50"/><path d="M176 92 C180 90 182 92 180 98" fill="#5A3A2A"/>
+<!-- giant leaves / lily pads -->
+<path d="M18 92 C20 84 32 82 38 88 C34 92 26 94 18 92Z" fill="#5E8A40"/>
+<path d="M118 102 C122 96 134 96 136 100 C130 104 124 104 118 102Z" fill="#6A9A4A"/>
+<path d="M25.3 96 Q26.2 92.4 27.6 90.6 Q28.0 93.3 28.5 89.7 Q29.4 93.3 31.1 91.5 Q30.7 94.2 31.1 96Z" fill="#5E8A3A" opacity="1"/>
+<path d="M105.6 98 Q106.4 94.8 107.6 93.2 Q108.0 95.6 108.5 92.4 Q109.3 95.6 110.8 94.0 Q110.4 96.4 110.8 98Z" fill="#5E8A3A" opacity="1"/>
+<path d="M169.6 88 Q170.4 84.8 171.6 83.2 Q172.0 85.6 172.5 82.4 Q173.3 85.6 174.8 84.0 Q174.4 86.4 174.8 88Z" fill="#5E8A3A" opacity="1"/>
+<!-- spores -->
+<circle cx="30" cy="40" r="1" fill="#FFE890" opacity="0.9"/>
+<circle cx="46" cy="24" r="0.8" fill="#FFE890" opacity="0.9"/>
+<circle cx="120" cy="20" r="0.9" fill="#FFE890" opacity="0.9"/>
+<circle cx="170" cy="40" r="1" fill="#FFE890" opacity="0.9"/>
+<circle cx="160" cy="60" r="0.8" fill="#FFE890" opacity="0.9"/>
+<circle cx="104" cy="34" r="0.8" fill="#FFE890" opacity="0.9"/>
+<circle cx="22" cy="66" r="0.7" fill="#FFE890" opacity="0.9"/>
+<circle cx="180" cy="20" r="0.7" fill="#FFE890" opacity="0.9"/>
+<circle cx="96" cy="14" r="0.7" fill="#FFE890" opacity="0.9"/>
+</g>
+</g>
+</svg>

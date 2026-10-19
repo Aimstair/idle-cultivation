@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 40 40">
+  <defs>
+    <radialGradient id="el_fire-body" cx=".4" cy=".35" r=".8">
+      <stop offset="0" stop-color="#FFB040"/>
+      <stop offset=".5" stop-color="#F0481C"/>
+      <stop offset="1" stop-color="#8E1810"/>
+    </radialGradient>
+    <radialGradient id="el_fire-core" cx=".38" cy=".32" r=".8">
+      <stop offset="0" stop-color="#FFD070"/>
+      <stop offset=".55" stop-color="#FF7A28"/>
+      <stop offset="1" stop-color="#C8301A"/>
+    </radialGradient>
+    <linearGradient id="el_fire-tip" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFF2A0"/>
+      <stop offset=".5" stop-color="#FFA020"/>
+      <stop offset="1" stop-color="#E8301A"/>
+    </linearGradient>
+    <!-- flame tip: base at origin, leaning up and to the right -->
+    <path id="el_fire-flame" d="M-2.8 0C-3.4-3.6-2.2-6.4 1-9C2.2-6 3.2-3.2 2.8 0Z"/>
+  </defs>
+
+  <!-- upward flame tips around the rim (behind the body) -->
+  <g fill="url(#el_fire-tip)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round">
+    <use href="#el_fire-flame" transform="translate(20 10.5)"/>
+    <use href="#el_fire-flame" transform="translate(27.4 13.2) rotate(25) scale(.85)"/>
+    <use href="#el_fire-flame" transform="translate(12.6 13.2) rotate(-25) scale(.85)"/>
+    <use href="#el_fire-flame" transform="translate(31.2 19.6) rotate(50) scale(.7)"/>
+    <use href="#el_fire-flame" transform="translate(8.8 19.6) rotate(-50) scale(.7)"/>
+    <use href="#el_fire-flame" transform="translate(30 27.8) rotate(75) scale(.55)"/>
+    <use href="#el_fire-flame" transform="translate(10 27.8) rotate(-75) scale(.55)"/>
+  </g>
+  <path d="M19.2 7.8C19.4 6.2 20 5 20.8 4" fill="none" stroke="#FFF8D0" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+
+  <!-- round vermilion body -->
+  <circle cx="20" cy="22" r="13" fill="url(#el_fire-body)" stroke="#2A1008" stroke-width="1.7"/>
+  <!-- clear centre disc -->
+  <circle cx="20" cy="22" r="11" fill="url(#el_fire-core)" stroke="#2A1008" stroke-width="1.1"/>
+  <circle cx="20" cy="22" r="9.9" fill="none" stroke="#FFE060" stroke-width=".8" opacity=".6"/>
+  <path d="M12.6 18.2C13.6 15.4 15.6 13.4 18 12.6" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+</svg>

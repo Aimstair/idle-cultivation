@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="great_t5_salamander-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A7488"/>
+      <stop offset=".42" stop-color="#3A3446"/>
+      <stop offset=".58" stop-color="#1E1A28"/>
+      <stop offset="1" stop-color="#0A0810"/>
+    </linearGradient>
+    <linearGradient id="great_t5_salamander-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".72" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="great_t5_salamander-lacquer" cx=".3" cy=".2" r="1">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="great_t5_salamander-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5A4A4E"/>
+      <stop offset=".5" stop-color="#2E2428"/>
+      <stop offset="1" stop-color="#140C10"/>
+    </linearGradient>
+    <radialGradient id="great_t5_salamander-aura" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFA020" stop-opacity=".4"/>
+      <stop offset=".55" stop-color="#E8301A" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#E8301A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="great_t5_salamander-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="27" ry="10" fill="url(#great_t5_salamander-aura)" transform="translate(33 32) rotate(-45)"/>
+
+  <ellipse cx="0" cy="0" rx="27" ry="5" fill="url(#great_t5_salamander-shadow)" transform="translate(34 35) rotate(-45)"/>
+
+  <!-- greatsword: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal -->
+  <g transform="translate(32 32) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 -31L6.8 -21L6.2 7.5H-6.2L-6.8 -21Z" fill="none" stroke="#FF8A30" stroke-width="5.4" opacity=".38"/>
+    <!-- broad heavy blade -->
+    <path d="M0 -31L6.8 -21L6.2 7.5H-6.2L-6.8 -21Z" fill="url(#great_t5_salamander-blade)" stroke-width="2.4"/>
+    <path d="M-1.5 -19V6H1.5V-19Z" fill="#4A4458" opacity=".5" stroke="none"/>
+    <path d="M-4.4 -19V5" fill="none" stroke="#C8C0D8" stroke-width="1.1" opacity=".85"/>
+    <!-- molten veins -->
+    <path d="M-.4 -25L1.6 -19L-1.8 -13L2 -6L-1.4 0L1.6 6M-3.6 -8L-1.8 -13M2 -6L4.2 -3" fill="none" stroke="#FFA020" stroke-width="2.8" opacity=".55"/>
+    <path d="M-.4 -25L1.6 -19L-1.8 -13L2 -6L-1.4 0L1.6 6M-3.6 -8L-1.8 -13M2 -6L4.2 -3" fill="none" stroke="#FFF2A0" stroke-width="1.1"/>
+    <!-- salamander-head guard: red lacquer, blade issuing from the mouth, ember eyes, clawed ends -->
+    <path d="M-13.5 7.6H-5.4C-4.2 5 4.2 5 5.4 7.6H13.5Q15.2 10.2 13.5 12.8H-13.5Q-15.2 10.2 -13.5 7.6Z" fill="url(#great_t5_salamander-lacquer)" stroke-width="2.3"/>
+    <path d="M-12 9.4H-8.4" fill="none" stroke="#FFB090" stroke-width="1" opacity=".85"/>
+    <circle cx="-3.6" cy="9.8" r="1.4" fill="#FFA020" stroke-width="1.1"/>
+    <circle cx="3.6" cy="9.8" r="1.4" fill="#FFA020" stroke-width="1.1"/>
+    <circle cx="-4" cy="9.4" r=".45" fill="#FFF2A0" stroke="none"/>
+    <circle cx="3.2" cy="9.4" r=".45" fill="#FFF2A0" stroke="none"/>
+    <!-- long two-handed grip -->
+    <rect x="-2.6" y="13.3" width="5.2" height="13.6" rx="1.2" fill="url(#great_t5_salamander-grip)" stroke-width="2.1"/>
+    <path d="M-2 15.6L2 17.2M-2 18.6L2 20.2M-2 21.6L2 23.2M-2 24.6L2 26.2" fill="none" stroke="#140C10" stroke-width="1"/>
+    <rect x="-3.2" y="19.6" width="6.4" height="1.9" fill="url(#great_t5_salamander-gold)" stroke-width="1.4"/>
+    <!-- heavy pommel -->
+    <path d="M-3.5 27.2H3.5L4.1 30.2L0 33.4L-4.1 30.2Z" fill="url(#great_t5_salamander-gold)" stroke-width="2.1"/>
+    <path d="M-2.2 28.6L-.6 28.2" fill="none" stroke="#FFF6C8" stroke-width="1" opacity=".85"/>
+  </g>
+</svg>

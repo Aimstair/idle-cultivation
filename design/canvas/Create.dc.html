@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Character creation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E5%90%AF%E7%A8%8B">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#2E2A3A}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.rb{border-radius:50%;border:3px solid #3A2A2A;display:grid;place-items:center;box-shadow:0 3px 0 #3A2A2A;cursor:pointer;padding:0;position:relative;background:#FFFDF8}
+.opt{width:44px;height:44px;border-radius:12px;border:2.5px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;cursor:pointer;padding:0}
+.sw{width:32px;height:32px;border-radius:50%;border:3px solid #3A2A2A;cursor:pointer;padding:0}
+.row{display:flex;align-items:center;gap:8px}
+.ri{width:26px;display:grid;place-items:center;flex:none}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:linear-gradient(180deg,#E8E2F4 0,#FBF6EC 55%)">
+
+  <div style="position:absolute;left:0;right:0;top:22px;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center">
+    <span style="font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#6E5DC0">Reborn as a mortal</span>
+    <span class="disp" style="font-weight:800;font-size:24px;line-height:1">Your new body</span>
+  </div>
+
+  <!-- PREVIEW -->
+  <svg width="390" height="330" viewBox="0 0 390 330" style="position:absolute;left:0;top:70px" aria-hidden="true">
+    <defs><radialGradient id="pv" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF4D6"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0"/></radialGradient></defs>
+    <ellipse cx="195" cy="170" rx="150" ry="140" fill="url(#pv)"/>
+    <ellipse cx="195" cy="300" rx="90" ry="14" fill="#3A2A2A" opacity=".15"/>
+    <g stroke="#3A2A2A" stroke-width="3" stroke-linejoin="round">
+      <path d="M150 196 Q195 176 240 196 L254 294 Q195 310 136 294Z" fill="{{robe}}"/>
+      <path d="M144 246 H246" stroke="#6CC4A1" stroke-width="8"/>
+      <path d="M150 200 Q126 230 124 272 L138 274 Q142 240 160 220Z" fill="{{robe}}"/>
+      <path d="M240 200 Q264 230 266 272 L252 274 Q248 240 230 220Z" fill="{{robe}}"/>
+      <path d="M238 70 Q290 90 272 160 Q262 120 244 108Z" fill="{{hair}}"/>
+      <circle cx="195" cy="128" r="62" fill="#F7D9C4"/>
+      <path d="M133 132 Q131 62 195 60 Q261 62 257 132 Q246 96 216 90 Q197 110 166 102 Q147 110 133 132Z" fill="{{hair}}"/>
+    </g>
+    <path d="M246 70 L266 58" stroke="#B88A5A" stroke-width="6" stroke-linecap="round"/>
+    <g fill="#3A2A2A"><ellipse cx="174" cy="136" rx="6" ry="8"/><ellipse cx="216" cy="136" rx="6" ry="8"/></g>
+    <g fill="#FFFFFF"><circle cx="176" cy="132" r="2.4"/><circle cx="218" cy="132" r="2.4"/></g>
+    <path d="M186 160 Q195 166 204 160" stroke="#3A2A2A" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <circle cx="160" cy="152" r="7" fill="#F4A9A0" opacity=".55"/><circle cx="230" cy="152" r="7" fill="#F4A9A0" opacity=".55"/>
+  </svg>
+  <button class="rb" aria-label="Previous body" style="position:absolute;left:18px;top:220px;width:44px;height:44px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <button class="rb" aria-label="Next body" style="position:absolute;right:18px;top:220px;width:44px;height:44px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+
+  <!-- OPTIONS -->
+  <div style="position:absolute;left:16px;right:16px;top:412px;background:#FFFDF8;border:3px solid #3A2A2A;border-radius:18px;box-shadow:0 5px 0 #3A2A2A;padding:12px;display:flex;flex-direction:column;gap:12px">
+    <div class="row" aria-label="Hair style">
+      <span class="ri"><svg width="22" height="22" viewBox="0 0 24 24" fill="#2E2A3A" aria-hidden="true"><path d="M4 14 Q4 3 12 3 Q20 3 20 14 Q17 8 12 8 Q7 8 4 14Z"/></svg></span>
+      <button class="opt" aria-label="Ponytail, selected" style="border-color:#277864;box-shadow:0 0 0 2px #CFEBE2"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="15" cy="18" r="10" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="1.6"/><path d="M5 18 Q5 6 15 6 Q25 6 25 18 Q22 11 15 11 Q8 11 5 18Z" fill="#2E2A3A"/><path d="M24 8 Q31 12 28 22 Q26 15 23 13Z" fill="#2E2A3A"/></svg></button>
+      <button class="opt" aria-label="Twin buns"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="18" r="10" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="1.6"/><path d="M6 18 Q6 8 16 8 Q26 8 26 18 Q23 12 16 12 Q9 12 6 18Z" fill="#2E2A3A"/><circle cx="8" cy="7" r="4" fill="#2E2A3A"/><circle cx="24" cy="7" r="4" fill="#2E2A3A"/></svg></button>
+      <button class="opt" aria-label="Long and loose"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 30 V16 Q5 5 16 5 Q27 5 27 16 V30Z" fill="#2E2A3A"/><circle cx="16" cy="17" r="9" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="1.6"/><path d="M7 15 Q8 8 16 8 Q24 8 25 15 Q20 11 16 12 Q12 11 7 15Z" fill="#2E2A3A"/></svg></button>
+      <button class="opt" aria-label="Top knot"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="19" r="10" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="1.6"/><path d="M6 19 Q6 9 16 9 Q26 9 26 19 Q23 13 16 13 Q9 13 6 19Z" fill="#2E2A3A"/><circle cx="16" cy="6" r="4" fill="#2E2A3A"/></svg></button>
+      <button class="opt" aria-label="Short"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="18" r="10" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="1.6"/><path d="M6 17 Q6 6 16 6 Q26 6 26 17 Q24 12 20 12 L16 15 L12 12 Q8 12 6 17Z" fill="#2E2A3A"/></svg></button>
+    </div>
+    <div class="row" aria-label="Hair color">
+      <span class="ri"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#3A2A2A" stroke-width="2.4"/><path d="M12 3 a9 9 0 0 1 0 18z" fill="#3A2A2A"/></svg></span>
+      <button class="sw" onClick="{{h1}}" aria-label="Ink black" style="background:#2E2A3A;{{h1s}}"></button>
+      <button class="sw" onClick="{{h2}}" aria-label="Chestnut" style="background:#7A4E2C;{{h2s}}"></button>
+      <button class="sw" onClick="{{h3}}" aria-label="Silver white" style="background:#E6E8EE;{{h3s}}"></button>
+      <button class="sw" onClick="{{h4}}" aria-label="Jade green" style="background:#3FA58C;{{h4s}}"></button>
+      <button class="sw" onClick="{{h5}}" aria-label="Plum" style="background:#6E3E7A;{{h5s}}"></button>
+      <button class="sw" onClick="{{h6}}" aria-label="Crimson" style="background:#9E2F2A;{{h6s}}"></button>
+    </div>
+    <div class="row" aria-label="Robe color">
+      <span class="ri"><svg width="22" height="22" viewBox="0 0 36 36" aria-hidden="true"><path d="M8 6 L18 10 L28 6 L32 12 L26 16 V32 H10 V16 L4 12Z" fill="#F7F3EA" stroke="#3A2A2A" stroke-width="2.4" stroke-linejoin="round"/></svg></span>
+      <button class="sw" onClick="{{r1}}" aria-label="Plain white" style="background:#F7F3EA;{{r1s}}"></button>
+      <button class="sw" onClick="{{r2}}" aria-label="Pale blue" style="background:#CFE3F2;{{r2s}}"></button>
+      <button class="sw" onClick="{{r3}}" aria-label="Lavender" style="background:#DCD3F2;{{r3s}}"></button>
+      <button class="sw" onClick="{{r4}}" aria-label="Peach" style="background:#F6D6C2;{{r4s}}"></button>
+      <button class="sw" onClick="{{r5}}" aria-label="Moss" style="background:#CFE2C4;{{r5s}}"></button>
+    </div>
+    <div class="row">
+      <span class="ri"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg></span>
+      <label for="cname" style="position:absolute;left:-9999px">Name</label>
+      <input id="cname" value="Lin Yue" style="flex:1;min-width:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;border:2.5px solid #3A2A2A;border-radius:12px;padding:4px 10px;background:#FBF6EC;color:#2E2A3A">
+      <button class="opt" aria-label="Random name"><svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="#6E5DC0" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="20" height="20" rx="5"/><g fill="#6E5DC0" stroke="none"><circle cx="12" cy="12" r="2"/><circle cx="20" cy="20" r="2"/><circle cx="16" cy="16" r="2"/></g></svg></button>
+    </div>
+  </div>
+
+  <!-- BEGIN -->
+  <div style="position:absolute;left:0;right:0;bottom:28px;display:flex;justify-content:center">
+    <a href="Intro.dc.html" aria-label="Begin your journey" style="display:flex;align-items:center;gap:10px;background:linear-gradient(180deg,#F2C14E,#E8B54A);border:3.5px solid #3A2A2A;border-radius:20px;padding:8px 24px 8px 10px;box-shadow:0 0 0 4px #FFF4C9,0 6px 0 #A07A25;text-decoration:none;color:#2E2A3A">
+      <span class="brush" style="width:44px;height:44px;border-radius:12px;background:#B83E2B;border:2.5px solid #3A2A2A;color:#FFF4C9;display:grid;place-items:center;font-size:18px;line-height:.9;text-align:center">启<br>程</span>
+      <span class="disp" style="font-weight:800;font-size:24px">Begin</span>
+    </a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p){ super(p); this.state = { h: 0, r: 0 }; }
+  renderVals() {
+    const hairs = ['#2E2A3A','#7A4E2C','#E6E8EE','#3FA58C','#6E3E7A','#9E2F2A'];
+    const robes = ['#F7F3EA','#CFE3F2','#DCD3F2','#F6D6C2','#CFE2C4'];
+    const sel = 'box-shadow:0 0 0 3px #FFFDF8,0 0 0 5.5px #277864';
+    const v = { hair: hairs[this.state.h], robe: robes[this.state.r] };
+    hairs.forEach((_, i) => { v['h' + (i + 1)] = () => this.setState({ h: i }); v['h' + (i + 1) + 's'] = this.state.h === i ? sel : ''; });
+    robes.forEach((_, i) => { v['r' + (i + 1)] = () => this.setState({ r: i }); v['r' + (i + 1) + 's'] = this.state.r === i ? sel : ''; });
+    return v;
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="boots_t3-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <linearGradient id="boots_t3-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="boots_t3-sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C4C8D6"/>
+    </linearGradient>
+    <!-- one boot, toe to the right -->
+    <g id="boots_t3-boot">
+      <!-- cloud wing at the heel -->
+      <g transform="translate(11 43.5) rotate(-30) scale(.85)">
+        <path d="M-4.5 1.5C-7 1.5-7-2.5-4-2.2C-3.8-5.2 .8-5.6 1.5-2.8C4.2-4.2 7.2-.4 5 1.5Z" fill="#FFFFFF" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M-3.2-1.6Q-1.4-3.4 .6-3" fill="none" stroke="#CFD6E4" stroke-width="1.4" stroke-linecap="round"/>
+      </g>
+      <path d="M12 13H28V33Q28 39.5 34 41L44 42.5Q51 43.5 50.5 49.5L50.3 53H12Z" fill="url(#boots_t3-silver)" stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round"/>
+      <!-- gold toe cap -->
+      <path d="M41 42L44 42.5Q51 43.5 50.5 49.5L50.3 53H41Z" fill="url(#boots_t3-gold)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M12 53H50.3Q52.3 53 52.3 55Q52.3 57 50.3 57H12Z" fill="url(#boots_t3-sole)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+      <!-- gold top band -->
+      <path d="M12 13H28V18H12Z" fill="url(#boots_t3-gold)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M13.5 14.5H22" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".85"/>
+      <path d="M14.3 20.3V38" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".9"/>
+      <path d="M14 54.4H47" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+    </g>
+    <path id="boots_t3-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <ellipse cx="33" cy="57.6" rx="21" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <!-- back boot -->
+  <g transform="translate(6 -6)">
+    <use href="#boots_t3-boot"/>
+    <path d="M12 13H28V33Q28 39.5 34 41L44 42.5Q51 43.5 50.5 49.5L50.3 53Q52.3 53 52.3 55Q52.3 57 50.3 57H12Z" fill="#3A1E7A" opacity=".2"/>
+  </g>
+  <!-- front boot -->
+  <use href="#boots_t3-boot"/>
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#boots_t3-spark" transform="translate(40 14) scale(1.8)"/>
+    <use href="#boots_t3-spark" transform="translate(56 42) scale(1.3)"/>
+  </g>
+</svg>

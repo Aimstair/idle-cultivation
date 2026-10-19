@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<radialGradient id="pill_dao_heart-pg" cx=".36" cy=".32" r=".78"><stop offset="0" stop-color="#B8E4FF"/><stop offset=".42" stop-color="#3B7FE0"/><stop offset="1" stop-color="#1A2A6E"/></radialGradient>
+<clipPath id="pill_dao_heart-pc"><circle cx="32" cy="32" r="17"/></clipPath>
+<radialGradient id="pill_dao_heart-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2A1008" stop-opacity=".42"/><stop offset="1" stop-color="#2A1008" stop-opacity="0"/></radialGradient>
+<radialGradient id="pill_dao_heart-halo" gradientUnits="userSpaceOnUse" cx="32" cy="32" r="25"><stop offset="0" stop-color="#6FB0FF" stop-opacity="0.6"/><stop offset=".55" stop-color="#6FB0FF" stop-opacity="0.27"/><stop offset="1" stop-color="#6FB0FF" stop-opacity="0"/></radialGradient>
+<linearGradient id="pill_dao_heart-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE7A0"/><stop offset=".5" stop-color="#FFD45A"/><stop offset="1" stop-color="#B8761C"/></linearGradient>
+</defs>
+<ellipse cx="32" cy="54.5" rx="17" ry="3" fill="url(#pill_dao_heart-shadow)"/>
+<circle cx="32" cy="32" r="25" fill="url(#pill_dao_heart-halo)"/>
+<circle cx="32" cy="32" r="22.5" fill="none" stroke="#D8F0FF" stroke-width="1.2" opacity=".55"/>
+<circle cx="32" cy="32" r="17" fill="url(#pill_dao_heart-pg)"/>
+<g clip-path="url(#pill_dao_heart-pc)">
+<circle cx="20" cy="24" r="1.0" fill="#FFFFFF" opacity="0.9"/><circle cx="44" cy="22" r="0.8" fill="#FFFFFF" opacity="0.85"/><circle cx="46" cy="36" r="1.1" fill="#FFFFFF" opacity="0.9"/><circle cx="21" cy="40" r="0.8" fill="#FFFFFF" opacity="0.8"/><circle cx="38" cy="44" r="0.9" fill="#FFFFFF" opacity="0.85"/><circle cx="27" cy="18" r="0.7" fill="#FFFFFF" opacity="0.8"/><circle cx="41" cy="17" r="0.6" fill="#FFFFFF" opacity="0.7"/>
+<g transform="translate(32 28.5)">
+<path d="M0 -7.6A7.6 7.6 0 1 1 -0.01 -7.6Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#D8F0FF" stroke-width="1.9" transform="translate(-0.6 -0.6)" opacity=".95"/><path d="M0 4.4C-1.3 3.1 -4.6 .8 -4.6 -1.6A2.4 2.4 0 0 1 0 -2.5A2.4 2.4 0 0 1 4.6 -1.6C4.6 .8 1.3 3.1 0 4.4Z" fill="#D8F0FF" transform="translate(-0.6 -0.6)" opacity=".95"/>
+<path d="M0 -7.6A7.6 7.6 0 1 1 -0.01 -7.6Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#10204E" stroke-width="1.9" transform="translate(0.6 0.6)" opacity=".9"/><path d="M0 4.4C-1.3 3.1 -4.6 .8 -4.6 -1.6A2.4 2.4 0 0 1 0 -2.5A2.4 2.4 0 0 1 4.6 -1.6C4.6 .8 1.3 3.1 0 4.4Z" fill="#10204E" transform="translate(0.6 0.6)" opacity=".9"/>
+<path d="M0 -7.6A7.6 7.6 0 1 1 -0.01 -7.6Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#2A5CC0" stroke-width="1.48"/><path d="M0 4.4C-1.3 3.1 -4.6 .8 -4.6 -1.6A2.4 2.4 0 0 1 0 -2.5A2.4 2.4 0 0 1 4.6 -1.6C4.6 .8 1.3 3.1 0 4.4Z" fill="#2A5CC0"/>
+</g>
+<path d="M14.61 36.5A17.39 5.2 0 0 0 49.39 36.5" fill="none" stroke="#2A1008" stroke-width="3.6"/>
+<path d="M14.61 36.5A17.39 5.2 0 0 0 49.39 36.5" fill="none" stroke="url(#pill_dao_heart-gold)" stroke-width="2.1"/>
+<path d="M17.61 37.9A15.39 4.2 0 0 0 30 40.9" fill="none" stroke="#FFF6C8" stroke-width=".8" stroke-linecap="round" opacity=".85"/>
+</g>
+<path d="M47.25 34.14A15.4 15.4 0 0 1 29.33 47.17" fill="none" stroke="#D8F0FF" stroke-width="1.5" stroke-linecap="round" opacity=".38"/>
+<circle cx="32" cy="32" r="17" fill="none" stroke="#2A1008" stroke-width="2.4"/>
+<ellipse cx="25.2" cy="24.52" rx="5.1" ry="2.89" transform="rotate(-38 25.2 24.52)" fill="#FFFFFF" opacity=".88"/>
+</svg>

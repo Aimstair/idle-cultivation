@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="56" viewBox="0 0 390 28">
+  <defs>
+    <linearGradient id="sheet_handle-rose" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="28">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset=".6" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#2E140A"/>
+    </linearGradient>
+    <linearGradient id="sheet_handle-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="14">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sheet_handle-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <path id="sheet_handle-shape" d="M1.6 28 V14 Q1.6 4 11.6 4 H378.4 Q388.4 4 388.4 14 V28"/>
+    <clipPath id="sheet_handle-clip"><use href="#sheet_handle-shape"/></clipPath>
+  </defs>
+
+  <!-- rosewood strip (open at the bottom: the sheet body continues below) -->
+  <use href="#sheet_handle-shape" fill="none" stroke="#2A1008" stroke-width="3.2" stroke-linejoin="round"/>
+  <use href="#sheet_handle-shape" fill="url(#sheet_handle-rose)"/>
+  <g clip-path="url(#sheet_handle-clip)">
+    <rect x="1.6" y="4" width="386.8" height="10" fill="url(#sheet_handle-sheen)"/>
+  </g>
+  <!-- gold top line -->
+  <path d="M3.4 28 V14.4 Q3.4 5.8 12 5.8 H378 Q386.6 5.8 386.6 14.4 V28" fill="none" stroke="#E8B657" stroke-width="1.6"/>
+  <path d="M14 5 H376" fill="none" stroke="#FFF6C8" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+
+  <!-- grab handle -->
+  <rect x="171" y="11.5" width="48" height="6.5" rx="3.25" fill="#1A0804" opacity=".7" transform="translate(0 1.2)"/>
+  <rect x="171" y="11.5" width="48" height="6.5" rx="3.25" fill="url(#sheet_handle-gold)" stroke="#2A1008" stroke-width="1.6"/>
+  <path d="M176 13.4 H200" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".75"/>
+  <!-- small gold beads either side -->
+  <circle cx="162" cy="14.75" r="1.8" fill="url(#sheet_handle-gold)" stroke="#2A1008" stroke-width="1.1"/>
+  <circle cx="228" cy="14.75" r="1.8" fill="url(#sheet_handle-gold)" stroke="#2A1008" stroke-width="1.1"/>
+</svg>

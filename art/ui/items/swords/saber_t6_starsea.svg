@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="saber_t6_starsea-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5C7CC8"/>
+      <stop offset=".42" stop-color="#2A3E8E"/>
+      <stop offset=".58" stop-color="#182460"/>
+      <stop offset="1" stop-color="#0A0E2E"/>
+    </linearGradient>
+    <linearGradient id="saber_t6_starsea-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#C4D0E0"/>
+      <stop offset="1" stop-color="#5E6C86"/>
+    </linearGradient>
+    <linearGradient id="saber_t6_starsea-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B5FB8"/>
+      <stop offset=".5" stop-color="#1A2A6E"/>
+      <stop offset="1" stop-color="#0C1030"/>
+    </linearGradient>
+    <linearGradient id="saber_t6_starsea-galaxy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6EDCFF"/>
+      <stop offset=".5" stop-color="#C8A4FF"/>
+      <stop offset="1" stop-color="#FF9ADC"/>
+    </linearGradient>
+    <radialGradient id="saber_t6_starsea-aura" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FDCFF" stop-opacity=".45"/>
+      <stop offset=".55" stop-color="#3B7FE0" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#3B7FE0" stop-opacity="0"/>
+    </radialGradient>
+    <path id="saber_t6_starsea-star" d="M0 -2.2C.3 -.6 .6 -.3 2.2 0C.6 .3 .3 .6 0 2.2C-.3 .6 -.6 .3 -2.2 0C-.6 -.3 -.3 -.6 0 -2.2Z" fill="#FFFFFF"/>
+    <radialGradient id="saber_t6_starsea-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="27" ry="10" fill="url(#saber_t6_starsea-aura)" transform="translate(35 31) rotate(-45)"/>
+
+  <ellipse cx="0" cy="0" rx="26" ry="4.6" fill="url(#saber_t6_starsea-shadow)" transform="translate(35.5 34.5) rotate(-45)"/>
+
+  <!-- saber: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal -->
+  <g transform="translate(34.5 31.5) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="none" stroke="#6EDCFF" stroke-width="5.2" opacity=".42"/>
+    <!-- curved single-edged blade -->
+    <path d="M-4.8 -29C-3.2 -23 -2 -4 -2.4 13L2.6 13C3.4 -4 5.6 -13 5.6 -19C5.6 -24 1.8 -28 -4.8 -29Z" fill="url(#saber_t6_starsea-blade)" stroke-width="2.4"/>
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="#C8A4FF" stroke-width="1.1" opacity=".85"/>
+    <path d="M-3.4 -23.5C-2.4 -16 -1.5 -4 -1.4 11" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".85"/>
+    <!-- galaxy shimmer along the edge -->
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="url(#saber_t6_starsea-galaxy)" stroke-width="3.2" opacity=".45"/>
+    <path d="M1.2 11.5C2 -4 3.9 -12 3.9 -18.5C3.9 -22 2.2 -25.2 -1.6 -27" fill="none" stroke="url(#saber_t6_starsea-galaxy)" stroke-width="1.4" opacity=".95"/>
+    <use href="#saber_t6_starsea-star" xlink:href="#saber_t6_starsea-star" transform="translate(.4 -14) scale(.6)"/>
+    <use href="#saber_t6_starsea-star" xlink:href="#saber_t6_starsea-star" transform="translate(1.2 -3) scale(.5)"/>
+    <use href="#saber_t6_starsea-star" xlink:href="#saber_t6_starsea-star" transform="translate(.4 6) scale(.55)"/>
+    <circle cx="-1.6" cy="-9" r=".5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="2.4" cy="-20" r=".5" fill="#FFFFFF" stroke="none"/>
+    <!-- disc guard -->
+    <ellipse cx="0" cy="14.4" rx="6" ry="2.1" fill="url(#saber_t6_starsea-silver)" stroke-width="2"/>
+    <!-- wrapped handle -->
+    <rect x="-2.3" y="16.4" width="4.6" height="10.2" rx="1" fill="url(#saber_t6_starsea-grip)" stroke-width="2.1"/>
+    <path d="M-2.3 19.4H2.3M-2.3 23.4H2.3" fill="none" stroke="#DDE6F4" stroke-width="1"/>
+    <path d="M-1.4 17.4V18.4" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".8"/>
+    <!-- ring pommel -->
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke-width="3.8"/>
+    <circle cx="0" cy="29.8" r="3" fill="none" stroke="url(#saber_t6_starsea-silver)" stroke-width="1.7"/>
+    <path d="M-2.4 28.2A3 3 0 0 1 -.6 27" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".9"/>
+  </g>
+  <use href="#saber_t6_starsea-star" xlink:href="#saber_t6_starsea-star" transform="translate(55 9.6) scale(1.05)"/>
+</svg>

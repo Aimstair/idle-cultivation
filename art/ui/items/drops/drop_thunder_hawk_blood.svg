@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="drop_thunder_hawk_blood-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#9A6AE8" stop-opacity=".65"/>
+      <stop offset=".55" stop-color="#9A6AE8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#9A6AE8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop_thunder_hawk_blood-liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D4B4FF"/>
+      <stop offset=".5" stop-color="#8A56E0"/>
+      <stop offset="1" stop-color="#26125A"/>
+    </linearGradient>
+    <radialGradient id="drop_thunder_hawk_blood-core" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#F0E4FF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#F0E4FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop_thunder_hawk_blood-glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".5"/>
+      <stop offset=".3" stop-color="#FFFFFF" stop-opacity=".1"/>
+      <stop offset=".8" stop-color="#FFFFFF" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#1A2A6E" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="drop_thunder_hawk_blood-empty" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EADCFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#EADCFF" stop-opacity=".25"/>
+    </linearGradient>
+    <linearGradient id="drop_thunder_hawk_blood-cork" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0D2A0"/>
+      <stop offset=".5" stop-color="#C48A4E"/>
+      <stop offset="1" stop-color="#7A4620"/>
+    </linearGradient>
+    <linearGradient id="drop_thunder_hawk_blood-charm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEE6FF"/>
+      <stop offset=".5" stop-color="#8878B8"/>
+      <stop offset="1" stop-color="#3A2A66"/>
+    </linearGradient>
+    <clipPath id="drop_thunder_hawk_blood-clip">
+      <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- glow halo and contact shadow -->
+  <circle cx="30" cy="40" r="20" fill="url(#drop_thunder_hawk_blood-halo)"/>
+  <ellipse cx="30" cy="57.3" rx="12" ry="1.6" fill="#2A1008" opacity=".3"/>
+
+  <!-- empty glass -->
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="url(#drop_thunder_hawk_blood-empty)"/>
+
+  <!-- violet blood crackling with lightning -->
+  <g clip-path="url(#drop_thunder_hawk_blood-clip)">
+    <rect x="16" y="31" width="30" height="30" fill="url(#drop_thunder_hawk_blood-liquid)"/>
+    <ellipse cx="30" cy="31" rx="12" ry="2.2" fill="#EAD8FF"/>
+    <circle cx="30" cy="44" r="8.5" fill="url(#drop_thunder_hawk_blood-core)"/>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M25 36L29 41.5L26.6 42.6L31.5 50" stroke="#FFF2A0" stroke-width="2.6" opacity=".45"/>
+      <path d="M25 36L29 41.5L26.6 42.6L31.5 50" stroke="#FFFFFF" stroke-width="1.2"/>
+      <path d="M37 38L34.4 43L36.6 43.6L34 48.5" stroke="#FFF2A0" stroke-width="2.2" opacity=".45"/>
+      <path d="M37 38L34.4 43L36.6 43.6L34 48.5" stroke="#FFFFFF" stroke-width="1.1"/>
+    </g>
+    <g fill="#F4ECFF" opacity=".85">
+      <circle cx="23.6" cy="46.5" r=".9"/>
+      <circle cx="38.6" cy="47.5" r=".8"/>
+    </g>
+  </g>
+
+  <!-- glass overlay and outline -->
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="url(#drop_thunder_hawk_blood-glass)"/>
+  <path d="M25.5 14H34.5V22.5L41.5 29V45A11.5 11.5 0 0 1 18.5 45V29L25.5 22.5Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M22 31C21.2 36 21.6 42 23.8 47.5" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+  <path d="M27.6 16.5V21" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".6"/>
+
+  <!-- cork -->
+  <rect x="23" y="6.5" width="14" height="9" rx="2.2" fill="url(#drop_thunder_hawk_blood-cork)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M27 8.6V13.4M30.5 8.4V13.6M33.8 8.7V13.3" fill="none" stroke="#7A4620" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <path d="M25.2 8.4H28.6" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+
+  <!-- neck cord and charm (hawk feather) -->
+  <path d="M24.5 17.5H35.5" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M24.5 17.5H35.5" fill="none" stroke="#5A4A8A" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M35.5 17.5Q43 17 46.8 21" fill="none" stroke="#2A1008" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M35.5 17.5Q43 17 46.8 21" fill="none" stroke="#5A4A8A" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M48.4 19.6C43.6 22.4 42.6 28.6 44.8 33.6C49.6 31.4 51.8 25.2 48.4 19.6Z" fill="url(#drop_thunder_hawk_blood-charm)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M48 21.6C46.6 25 45.6 29 44.8 33.4" fill="none" stroke="#3A2A66" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <path d="M46.8 24.6L49.4 25.6M46 27.6L48.4 28.8" fill="none" stroke="#3A2A66" stroke-width=".8" stroke-linecap="round" opacity=".55"/>
+  <path d="M45.4 24.4C45.8 23.2 46.6 22.2 47.4 21.4" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85"/>
+
+  <!-- glint -->
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(38.6 26) scale(1.7)" fill="#FFFFFF"/>
+</svg>

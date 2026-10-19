@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="seal_05_gc-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".32" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="seal_05_gc-goldRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A5E14"/>
+      <stop offset=".35" stop-color="#D69A2A"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#FFF0B0"/>
+    </linearGradient>
+    <radialGradient id="seal_05_gc-red" cx="0.3" cy="0.25" r="0.95">
+      <stop offset="0" stop-color="#FF7A50"/>
+      <stop offset=".55" stop-color="#D0281A"/>
+      <stop offset="1" stop-color="#7A1008"/>
+    </radialGradient>
+    <radialGradient id="seal_05_gc-pearl" cx="0.38" cy="0.34" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".3" stop-color="#FFF2BC"/>
+      <stop offset=".68" stop-color="#FFC94A"/>
+      <stop offset="1" stop-color="#CC801A"/>
+    </radialGradient>
+    <radialGradient id="seal_05_gc-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD75A" stop-opacity=".7"/>
+      <stop offset=".5" stop-color="#FFD75A" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#FFD75A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <path fill-rule="evenodd" fill="url(#seal_05_gc-gold)" d="M7 3 H57 A4 4 0 0 1 61 7 V57 A4 4 0 0 1 57 61 H7 A4 4 0 0 1 3 57 V7 A4 4 0 0 1 7 3Z M8.84 7.6 H55.16 A1.2400000000000002 1.2400000000000002 0 0 1 56.4 8.84 V55.16 A1.2400000000000002 1.2400000000000002 0 0 1 55.16 56.4 H8.84 A1.2400000000000002 1.2400000000000002 0 0 1 7.6 55.16 V8.84 A1.2400000000000002 1.2400000000000002 0 0 1 8.84 7.6Z"/>
+  <path fill-rule="evenodd" fill="url(#seal_05_gc-goldRev)" d="M8.012 5.529999999999999 H55.988 A2.482 2.482 0 0 1 58.47 8.012 V55.988 A2.482 2.482 0 0 1 55.988 58.47 H8.012 A2.482 2.482 0 0 1 5.529999999999999 55.988 V8.012 A2.482 2.482 0 0 1 8.012 5.529999999999999Z M8.84 7.6 H55.16 A1.2400000000000002 1.2400000000000002 0 0 1 56.4 8.84 V55.16 A1.2400000000000002 1.2400000000000002 0 0 1 55.16 56.4 H8.84 A1.2400000000000002 1.2400000000000002 0 0 1 7.6 55.16 V8.84 A1.2400000000000002 1.2400000000000002 0 0 1 8.84 7.6Z"/>
+  <path d="M8.012 5.529999999999999 H55.988 A2.482 2.482 0 0 1 58.47 8.012 V55.988 A2.482 2.482 0 0 1 55.988 58.47 H8.012 A2.482 2.482 0 0 1 5.529999999999999 55.988 V8.012 A2.482 2.482 0 0 1 8.012 5.529999999999999Z" fill="none" stroke="#FFFFFF" stroke-width=".8" opacity=".5"/>
+  <path d="M7 3 H57 A4 4 0 0 1 61 7 V57 A4 4 0 0 1 57 61 H7 A4 4 0 0 1 3 57 V7 A4 4 0 0 1 7 3Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M8.84 7.6 H55.16 A1.2400000000000002 1.2400000000000002 0 0 1 56.4 8.84 V55.16 A1.2400000000000002 1.2400000000000002 0 0 1 55.16 56.4 H8.84 A1.2400000000000002 1.2400000000000002 0 0 1 7.6 55.16 V8.84 A1.2400000000000002 1.2400000000000002 0 0 1 8.84 7.6Z" fill="none" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <rect x="7.6" y="7.6" width="48.8" height="48.8" rx="1.6" fill="url(#seal_05_gc-red)"/>
+  <rect x="11.6" y="11.6" width="40.8" height="40.8" rx="1" fill="none" stroke="#FFE2D2" stroke-width="1.1" opacity=".85"/>
+  <path d="M11 9.6 H30" fill="none" stroke="#FFC8B4" stroke-width="1.1" stroke-linecap="round" opacity=".5"/>
+  <circle cx="32" cy="6.4" r="11" fill="url(#seal_05_gc-glow)"/>
+  <circle cx="32" cy="6.4" r="5.2" fill="url(#seal_05_gc-pearl)" stroke="#2A1008" stroke-width="2"/>
+  <ellipse cx="30" cy="4.6" rx="1.4" ry=".9" transform="rotate(-35 30 4.6)" fill="#FFFFFF" opacity=".95"/>
+</svg>

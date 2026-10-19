@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 280 56">
+<!-- 9slice: 24 -->
+  <defs>
+    <linearGradient id="toast_frame-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset=".55" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="toast_frame-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="toast_frame-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="20">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="toast_frame-shade" gradientUnits="userSpaceOnUse" x1="0" y1="38" x2="0" y2="52">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="toast_frame-jade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <rect id="toast_frame-shape" x="2.5" y="2.5" width="275" height="51" rx="20"/>
+    <clipPath id="toast_frame-clip"><use href="#toast_frame-shape"/></clipPath>
+  </defs>
+
+  <!-- rosewood glass pill -->
+  <use href="#toast_frame-shape" fill="none" stroke="#2A1008" stroke-width="3.2" stroke-linejoin="round"/>
+  <use href="#toast_frame-shape" fill="url(#toast_frame-rose)" opacity=".92"/>
+  <g clip-path="url(#toast_frame-clip)">
+    <rect x="0" y="2" width="280" height="18" fill="url(#toast_frame-sheen)"/>
+    <rect x="0" y="38" width="280" height="16" fill="url(#toast_frame-shade)"/>
+  </g>
+  <!-- gold rim -->
+  <rect x="4.7" y="4.7" width="270.6" height="46.6" rx="18" fill="none" stroke="url(#toast_frame-gold)" stroke-width="1.6"/>
+
+  <!-- jade accent bar (left corner column; uniform vertically) -->
+  <rect x="9.5" y="13" width="4.2" height="30" rx="2.1" fill="url(#toast_frame-jade)" stroke="#2A1008" stroke-width="1.2"/>
+  <path d="M10.7 15.5V40.5" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".55"/>
+</svg>

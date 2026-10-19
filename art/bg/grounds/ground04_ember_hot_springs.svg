@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="1688" viewBox="0 0 390 844">
+<!-- Ground 04: Ember Hot Springs (Training Ground, Waterfall Endurance). Training floor: basalt flagstone slab, top y~530, centre x 195. Prop: hot waterfall at x 250-292, y 228-518, right of the hero. Ambient animation areas: waterfall, rising steam, drifting embers. -->
+<defs>
+<linearGradient id="g04-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A1C3E"/><stop offset=".1" stop-color="#462A56"/><stop offset=".19" stop-color="#7C3A5E"/><stop offset=".26" stop-color="#C05A58"/><stop offset=".31" stop-color="#EC8E5C"/><stop offset=".35" stop-color="#FFC07E"/><stop offset=".42" stop-color="#F7A46C"/><stop offset="1" stop-color="#5A2428"/></linearGradient>
+<radialGradient id="g04-sun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF4D0"/><stop offset=".18" stop-color="#FFD9A0" stop-opacity=".8"/><stop offset=".5" stop-color="#FFA868" stop-opacity=".3"/><stop offset="1" stop-color="#FF8A50" stop-opacity="0"/></radialGradient>
+<radialGradient id="g04-aura" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFE6C0" stop-opacity=".55"/><stop offset=".55" stop-color="#FFC690" stop-opacity=".18"/><stop offset="1" stop-color="#FFC690" stop-opacity="0"/></radialGradient>
+<linearGradient id="g04-mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE2CC" stop-opacity="0"/><stop offset=".5" stop-color="#FFE8D6" stop-opacity=".75"/><stop offset="1" stop-color="#FFE2CC" stop-opacity="0"/></linearGradient>
+<linearGradient id="g04-shaft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE2B0" stop-opacity=".7"/><stop offset=".6" stop-color="#FFD8A8" stop-opacity=".25"/><stop offset="1" stop-color="#FFD8A8" stop-opacity="0"/></linearGradient>
+<linearGradient id="g04-far" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C47C80"/><stop offset="1" stop-color="#B0686E"/></linearGradient>
+<linearGradient id="g04-volc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E5068"/><stop offset=".55" stop-color="#A65E6C"/><stop offset="1" stop-color="#C47A76"/></linearGradient>
+<linearGradient id="g04-midhill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9A4A48"/><stop offset="1" stop-color="#6E3034"/></linearGradient>
+<linearGradient id="g04-hill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9554A"/><stop offset=".5" stop-color="#83393A"/><stop offset="1" stop-color="#4E1E24"/></linearGradient>
+<linearGradient id="g04-cliff" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9C4840"/><stop offset=".55" stop-color="#6A2A2C"/><stop offset="1" stop-color="#3C1820"/></linearGradient>
+<linearGradient id="g04-cliffrim" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB078" stop-opacity=".75"/><stop offset=".25" stop-color="#E07850" stop-opacity=".35"/><stop offset="1" stop-color="#E07850" stop-opacity="0"/></linearGradient>
+<linearGradient id="g04-lip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C46A54"/><stop offset=".6" stop-color="#8A3A34"/><stop offset="1" stop-color="#5A2226"/></linearGradient>
+<radialGradient id="g04-pool" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#B8F4E6"/><stop offset=".45" stop-color="#5CC8BC"/><stop offset="1" stop-color="#22807E"/></radialGradient>
+<linearGradient id="g04-bigpool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8EDCD0"/><stop offset=".5" stop-color="#4AAEA8"/><stop offset="1" stop-color="#2A7C7C"/></linearGradient>
+<linearGradient id="g04-fall" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFC890" stop-opacity=".75"/><stop offset=".18" stop-color="#C8F4EA" stop-opacity=".9"/><stop offset=".5" stop-color="#F4FFFB"/><stop offset=".8" stop-color="#9ADCD4" stop-opacity=".9"/><stop offset="1" stop-color="#4AA6A2" stop-opacity=".7"/></linearGradient>
+<linearGradient id="g04-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6A4648"/><stop offset=".5" stop-color="#42282E"/><stop offset="1" stop-color="#26161C"/></linearGradient>
+<linearGradient id="g04-floortop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B88A80"/><stop offset=".5" stop-color="#9A6C68"/><stop offset="1" stop-color="#6E4A4C"/></linearGradient>
+<linearGradient id="g04-fgrock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6E2E2E"/><stop offset=".5" stop-color="#461C22"/><stop offset="1" stop-color="#240E14"/></linearGradient>
+<linearGradient id="g04-fgwater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5EBCB2"/><stop offset=".6" stop-color="#2A807E"/><stop offset="1" stop-color="#164E52"/></linearGradient>
+<linearGradient id="g04-plume" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E08A70" stop-opacity=".7"/><stop offset=".4" stop-color="#8A5070" stop-opacity=".55"/><stop offset="1" stop-color="#5A3A5E" stop-opacity="0"/></linearGradient>
+<linearGradient id="g04-topdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A0E22" stop-opacity=".55"/><stop offset="1" stop-color="#1A0E22" stop-opacity="0"/></linearGradient>
+<linearGradient id="g04-botdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14080C" stop-opacity="0"/><stop offset="1" stop-color="#14080C" stop-opacity=".6"/></linearGradient>
+<linearGradient id="g04-sideL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#20101A" stop-opacity=".32"/><stop offset="1" stop-color="#20101A" stop-opacity="0"/></linearGradient>
+<linearGradient id="g04-sideR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#20101A" stop-opacity=".32"/><stop offset="1" stop-color="#20101A" stop-opacity="0"/></linearGradient>
+<radialGradient id="g04-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFB060" stop-opacity=".9"/><stop offset="1" stop-color="#FF7A30" stop-opacity="0"/></radialGradient>
+<filter id="g04-b1" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.4"/></filter>
+<filter id="g04-b3" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5"/></filter>
+<filter id="g04-b6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+<!-- terrace pool, rx 50 at scale 1 -->
+<g id="g04-tp">
+<path d="M-53 0 C -53 11 -30 18 0 18 C 30 18 53 11 53 0 Z" fill="url(#g04-lip)"/>
+<path d="M-53 0 C -53 6 -44 10 -34 13 L -30 18 C -42 16 -53 10 -53 0 Z" fill="#000" opacity=".15"/>
+<g stroke="#F2D2BC" stroke-width="1.1" stroke-linecap="round" opacity=".35"><path d="M-42 9 v6"/><path d="M-30 12 v7"/><path d="M-16 14 v5"/><path d="M-2 15 v6"/><path d="M14 14 v5"/><path d="M28 12 v6"/><path d="M40 9 v5"/></g>
+<path d="M-50 4 C -40 10 -20 13 0 13 C 20 13 40 10 50 4" fill="none" stroke="#E6A88C" stroke-width="1" opacity=".5"/>
+<ellipse rx="50" ry="8" fill="url(#g04-pool)"/>
+<ellipse cx="-10" cy="-1.5" rx="24" ry="2.4" fill="#FFD8AE" opacity=".45"/>
+<ellipse rx="49.5" ry="7.6" fill="none" stroke="#E2FFF6" stroke-width=".8" opacity=".7"/>
+</g>
+<path id="g04-pad" d="M-26 3 C -28 -1 -24 -5 -19 -4 C -17 -8 -11 -10 -7 -7 C -4 -12 4 -13 8 -9 C 12 -12 19 -10 20 -6 C 25 -7 29 -2 27 2 C 24 4 18 3 14 5 C 6 6 -4 4 -10 6 C -16 6 -22 5 -26 3 Z"/>
+<g id="g04-pine-pad"><use xlink:href="#g04-pad" fill="currentColor"/><path d="M-24 3 C -14 6 6 5 26 2 C 20 6 -10 8 -24 3 Z" fill="#000" opacity=".25"/><path d="M-18 -3 C -12 -7 -4 -8 2 -7 C 8 -10 14 -8 19 -5" fill="none" stroke="#FFC08A" stroke-width="1.2" stroke-linecap="round" opacity=".35"/><path d="M-20 3 l2 2 M-12 4 l1.5 2.4 M-4 5 l1 2.4 M5 5 l1 2.4 M14 4 l1.5 2" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></g>
+<g id="g04-puff"><circle r="10"/><circle cx="10" cy="-4" r="8"/><circle cx="-10" cy="-2" r="7.5"/><circle cx="2" cy="-11" r="7.5"/></g>
+<g id="g04-emb"><circle r="2.8" fill="#FF8A3A" opacity=".3"/><circle r="1.1" fill="#FFE2A0"/></g>
+<g id="g04-tuft" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M0 0 C -2 -6 -6 -11 -11 -15"/><path d="M0 0 C -1 -8 -2 -14 -3 -20"/><path d="M0 0 C 2 -7 4 -12 9 -18"/><path d="M0 0 C 4 -4 9 -7 14 -8"/></g>
+</defs>
+
+<!-- SKY -->
+<rect width="390" height="844" fill="url(#g04-sky)"/>
+<g filter="url(#g04-b1)">
+<path d="M-10 118 C 60 108 140 114 210 106 C 270 100 330 106 400 100 L400 110 C 330 118 260 116 200 122 C 130 128 60 124 -10 130 Z" fill="#B0566A" opacity=".45"/>
+<path d="M40 176 C 100 168 170 172 230 164 C 290 158 340 166 400 160 L400 170 C 330 178 270 176 220 182 C 150 190 90 186 40 188 Z" fill="#F09A78" opacity=".5"/>
+<path d="M-10 212 C 40 206 90 210 140 204 L 160 208 C 110 216 50 216 -10 220 Z" fill="#FFB688" opacity=".5"/>
+<path d="M250 206 C 300 200 350 204 400 198 L400 206 C 350 212 300 212 260 214 Z" fill="#FFC090" opacity=".55"/>
+<path d="M20 146 C 60 140 110 144 150 140 L 156 146 C 110 150 60 152 20 152 Z" fill="#D27070" opacity=".4"/>
+</g>
+<path d="M60 176 C 120 170 180 172 230 166" fill="none" stroke="#FFD2A0" stroke-width="1" opacity=".5"/>
+
+<!-- SETTING SUN -->
+<circle cx="236" cy="272" r="240" fill="url(#g04-sun)"/>
+<circle cx="236" cy="272" r="48" fill="#FFE4B4" opacity=".35"/>
+<circle cx="236" cy="272" r="24" fill="#FFF3D6" opacity=".95"/>
+
+<!-- FAR VOLCANO + PLUME -->
+<g filter="url(#g04-b3)" opacity=".85">
+<circle cx="132" cy="186" r="12" fill="url(#g04-plume)"/><circle cx="140" cy="166" r="15" fill="#8A5272" opacity=".5"/><circle cx="154" cy="146" r="18" fill="#7A4A6C" opacity=".42"/><circle cx="172" cy="124" r="22" fill="#6A4266" opacity=".34"/><circle cx="196" cy="104" r="26" fill="#5E3C60" opacity=".26"/><circle cx="124" cy="176" r="10" fill="#C87070" opacity=".5"/><circle cx="150" cy="170" r="10" fill="#D07A6E" opacity=".35"/>
+</g>
+<path d="M-10 330 C 20 304 60 262 96 222 C 106 212 114 204 120 199 L 146 198 C 154 206 166 220 182 238 C 210 270 240 300 270 330 Z" fill="url(#g04-volc)"/>
+<ellipse cx="133" cy="199" rx="15" ry="4" fill="#FFB060" opacity=".85" filter="url(#g04-b1)"/>
+<g fill="none" stroke="#FF9A5A" stroke-linecap="round" opacity=".5"><path d="M128 202 C 124 220 116 236 112 258" stroke-width="1.2"/><path d="M140 202 C 146 222 154 240 166 262" stroke-width="1"/><path d="M134 202 C 134 214 132 226 136 240" stroke-width=".8"/></g>
+<g fill="none" stroke="#7A3E58" stroke-width=".8" opacity=".5"><path d="M110 214 C 96 240 80 270 60 300"/><path d="M152 212 C 170 240 196 272 226 304"/><path d="M122 206 C 112 236 100 270 90 310"/></g>
+<path d="M146 198 C 160 214 178 234 200 258" fill="none" stroke="#FFC898" stroke-width="1.2" opacity=".55"/>
+
+<!-- FAR RANGE -->
+<path d="M0 300 C 30 290 60 296 90 288 C 120 280 150 292 180 296 C 210 298 236 290 262 280 C 290 270 320 282 350 274 C 368 270 382 272 390 270 L390 380 L0 380 Z" fill="url(#g04-far)"/>
+<g fill="#A85E68" opacity=".8"><path d="M300 278 l3 -8 l3 8 Z"/><path d="M310 280 l2.5 -7 l2.5 7 Z"/><path d="M60 294 l3 -9 l3 9 Z"/><path d="M72 292 l2.5 -7 l2.5 7 Z"/></g>
+<rect x="0" y="262" width="390" height="90" fill="url(#g04-mist)" opacity=".7"/>
+
+<!-- MID HILLS -->
+<path d="M0 334 C 40 322 90 326 130 318 C 170 310 214 322 250 316 C 290 308 340 320 390 312 L390 460 L0 460 Z" fill="url(#g04-midhill)"/>
+<g fill="none" stroke="#B85E50" stroke-width="1" opacity=".45"><path d="M20 340 C 60 334 100 336 130 330"/><path d="M180 330 C 210 334 240 328 270 324"/><path d="M300 324 C 330 322 360 326 390 320"/></g>
+<g fill="none" stroke="#FF8A40" stroke-linecap="round"><path d="M150 330 L 160 342 L 156 356" stroke-width=".9" opacity=".6"/><path d="M208 336 L 214 346" stroke-width=".8" opacity=".5"/></g>
+<rect x="0" y="326" width="390" height="80" fill="url(#g04-mist)" opacity=".85"/>
+
+<!-- MAIN SPRING (behind the floor) -->
+<path d="M140 450 C 170 436 220 432 260 436 C 300 440 330 452 344 466 L 344 530 L 136 530 C 132 500 132 470 140 450 Z" fill="#7A3436"/>
+<path d="M140 444 C 170 432 220 428 260 432 C 300 436 330 448 344 462" fill="none" stroke="#C8705A" stroke-width="1.6" opacity=".6"/>
+<path d="M146 456 C 170 446 212 442 256 446 C 290 450 316 458 330 466 C 316 488 290 506 250 516 C 210 524 170 522 150 514 C 138 500 138 470 146 456 Z" fill="url(#g04-bigpool)"/>
+<path d="M146 456 C 170 446 210 442 256 446 C 290 450 316 458 330 466" fill="none" stroke="#E4FFF6" stroke-width="1.2" opacity=".7"/>
+<g fill="#FFD6A8" opacity=".35"><ellipse cx="226" cy="458" rx="40" ry="3"/><ellipse cx="216" cy="472" rx="30" ry="2.4"/><ellipse cx="236" cy="486" rx="22" ry="2"/></g>
+<g fill="none" stroke="#CFF8EE" stroke-width=".9" opacity=".45"><path d="M150 476 C 170 472 190 474 206 472"/><path d="M262 488 C 280 484 296 480 308 476"/><path d="M160 500 C 190 504 220 504 248 498"/></g>
+
+<!-- LEFT TERRACE HILL -->
+<path d="M0 246 C 24 240 56 240 86 248 C 112 254 134 266 152 284 C 168 300 178 324 184 352 C 190 384 182 412 166 432 C 150 452 140 490 136 560 L0 560 Z" fill="url(#g04-hill)"/>
+<path d="M0 246 C 24 240 56 240 86 248 C 112 254 134 266 152 284 C 168 300 178 324 184 352" fill="none" stroke="#FFB884" stroke-width="1.6" opacity=".55"/>
+<g fill="none" stroke="#5A2026" stroke-width="1" opacity=".45"><path d="M0 300 C 40 296 80 300 120 306"/><path d="M0 372 C 50 368 110 372 168 380"/><path d="M0 436 C 60 432 120 438 176 446"/></g>
+<use xlink:href="#g04-tp" transform="translate(66 262) scale(.85 .8)"/>
+<use xlink:href="#g04-tp" transform="translate(112 288) scale(.72 .85)"/>
+<use xlink:href="#g04-tp" transform="translate(48 304) scale(1 .95)"/>
+<use xlink:href="#g04-tp" transform="translate(136 330) scale(.72 .95)"/>
+<use xlink:href="#g04-tp" transform="translate(70 350) scale(1.25 1.05)"/>
+<use xlink:href="#g04-tp" transform="translate(150 392) scale(.6 1)"/>
+<use xlink:href="#g04-tp" transform="translate(56 404) scale(1.3 1.1)"/>
+<use xlink:href="#g04-tp" transform="translate(120 452) scale(1.1 1.2)"/>
+<!-- overflow trickles between terraces -->
+<g fill="none" stroke="#C8F4EA" stroke-width="1.4" stroke-linecap="round" opacity=".55"><path d="M96 268 C 98 276 98 282 100 286"/><path d="M140 296 C 142 310 140 320 138 326"/><path d="M90 316 C 92 330 92 340 90 346"/><path d="M152 340 C 154 360 154 376 152 388"/></g>
+
+<!-- RIGHT CLIFF + HOT WATERFALL -->
+<path d="M236 560 C 240 520 238 470 242 430 C 246 390 240 352 244 318 C 246 290 236 268 240 246 C 242 236 248 230 254 228 L 288 226 C 298 222 306 214 320 212 C 336 210 348 216 362 210 C 374 206 384 208 390 206 L390 560 Z" fill="url(#g04-cliff)"/>
+<path d="M236 560 C 240 520 238 470 242 430 C 246 390 240 352 244 318 C 246 290 236 268 240 246 C 242 236 248 230 254 228 L 300 228 L300 560 Z" fill="url(#g04-cliffrim)"/>
+<path d="M240 246 C 236 268 246 290 244 318 C 240 352 246 390 242 430 C 238 470 240 520 236 560" fill="none" stroke="#FFC08A" stroke-width="1.6" opacity=".6"/>
+<path d="M288 226 C 298 222 306 214 320 212 C 336 210 348 216 362 210 C 374 206 384 208 390 206" fill="none" stroke="#FFC08A" stroke-width="1.4" opacity=".5"/>
+<!-- strata -->
+<g fill="none" stroke="#3E1418" stroke-linecap="round" opacity=".5"><path d="M296 246 C 320 242 350 246 390 240" stroke-width="1.4"/><path d="M294 274 C 324 268 356 274 390 268" stroke-width="1.2"/><path d="M294 306 C 330 300 360 306 390 300" stroke-width="1.4"/><path d="M294 340 C 326 334 362 340 390 334" stroke-width="1.2"/><path d="M294 380 C 330 374 358 380 390 374" stroke-width="1.4"/><path d="M294 424 C 326 418 360 424 390 418" stroke-width="1.2"/><path d="M294 468 C 330 462 358 468 390 462" stroke-width="1.4"/><path d="M244 300 L 252 298"/><path d="M243 360 L 252 358"/><path d="M242 420 L 251 418"/></g>
+<g fill="none" stroke="#C2685A" stroke-linecap="round" opacity=".35"><path d="M296 249 C 320 245 350 249 390 243"/><path d="M294 309 C 330 303 360 309 390 303"/><path d="M294 383 C 330 377 358 383 390 377"/><path d="M294 471 C 330 465 358 471 390 465"/></g>
+<g fill="none" stroke="#2E0E14" stroke-width="1" opacity=".5"><path d="M318 248 L 322 272 L 316 300"/><path d="M352 276 L 348 304 L 354 334"/><path d="M330 344 L 334 378"/><path d="M370 384 L 366 420 L 372 460"/><path d="M314 430 L 318 466"/></g>
+<!-- ember seams -->
+<g fill="none" stroke="#FF6A20" stroke-width="4" stroke-linecap="round" opacity=".5" filter="url(#g04-b3)"><path d="M320 286 L 330 296 L 326 312 L 338 326"/><path d="M300 400 L 310 412 L 306 428"/><path d="M356 430 L 362 446 L 356 470 L 364 488"/><path d="M60 470 L 70 482 L 66 500"/></g>
+<g fill="none" stroke="#FFB050" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M320 286 L 330 296 L 326 312 L 338 326"/><path d="M300 400 L 310 412 L 306 428"/><path d="M356 430 L 362 446 L 356 470 L 364 488"/><path d="M60 470 L 70 482 L 66 500"/></g>
+<!-- wet recess behind the fall -->
+<path d="M250 232 C 248 300 246 400 244 520 L 296 520 C 296 400 294 300 292 232 Z" fill="#3A161C" opacity=".75"/>
+<!-- the fall -->
+<path d="M256 230 C 256 300 254 420 250 518 L 292 518 C 290 420 288 300 286 230 Z" fill="url(#g04-fall)"/>
+<g fill="none" stroke="#FFFFFF" stroke-linecap="round" opacity=".55"><path d="M262 236 C 262 320 260 420 258 512" stroke-width="1.2"/><path d="M270 236 C 270 330 270 430 268 512" stroke-width="2"/><path d="M277 236 C 278 330 278 430 278 512" stroke-width="1"/><path d="M283 236 C 284 320 285 420 286 512" stroke-width="1.4"/></g>
+<g fill="none" stroke="#5AB6AE" stroke-linecap="round" opacity=".45"><path d="M266 260 C 266 330 265 400 264 470" stroke-width=".8" stroke-dasharray="14 10"/><path d="M281 250 C 282 330 282 410 282 480" stroke-width=".8" stroke-dasharray="18 12"/></g>
+<path d="M257 236 C 256 320 254 420 251 512" fill="none" stroke="#FFCF9A" stroke-width="1.6" opacity=".7"/>
+<ellipse cx="271" cy="230" rx="17" ry="4" fill="#E8FFF8"/>
+<path d="M254 230 C 262 224 280 224 288 230" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/>
+<!-- splash pool -->
+<ellipse cx="272" cy="518" rx="42" ry="9" fill="url(#g04-pool)"/>
+<g fill="#F4FFFB" opacity=".85"><ellipse cx="271" cy="516" rx="26" ry="5"/></g>
+<g fill="#FFFFFF" opacity=".7"><circle cx="246" cy="506" r="2"/><circle cx="296" cy="504" r="2.2"/><circle cx="240" cy="496" r="1.4"/><circle cx="302" cy="494" r="1.5"/><circle cx="256" cy="498" r="1.6"/><circle cx="290" cy="500" r="1.6"/></g>
+<g fill="none" stroke="#E6FFF8" stroke-width=".9" opacity=".6"><ellipse cx="272" cy="520" rx="34" ry="6"/><ellipse cx="272" cy="522" rx="40" ry="7.4"/></g>
+
+<!-- PINES -->
+<g fill="none" stroke="#3A1820" stroke-linecap="round">
+<path d="M28 256 C 34 236 46 222 66 214 C 86 206 104 202 128 196" stroke-width="5"/>
+<path d="M60 216 C 56 206 54 196 48 188" stroke-width="3"/>
+<path d="M96 204 C 108 212 124 216 142 214" stroke-width="2.6"/>
+<path d="M332 220 C 326 206 316 196 300 190 C 286 184 272 186 258 180" stroke-width="4.5"/>
+<path d="M306 192 C 304 182 306 176 312 170" stroke-width="2.4"/>
+<path d="M284 186 C 278 196 270 202 258 204" stroke-width="2.2"/>
+</g>
+<path d="M28 256 C 34 236 46 222 66 214" fill="none" stroke="#FFB27A" stroke-width="1.2" opacity=".5"/>
+<path d="M300 190 C 286 184 272 186 258 180" fill="none" stroke="#FFB27A" stroke-width="1.1" opacity=".5"/>
+<g color="#3E2028">
+<use xlink:href="#g04-pine-pad" transform="translate(128 192) scale(1.15 .9)"/><use xlink:href="#g04-pine-pad" transform="translate(146 198) scale(.55)"/><use xlink:href="#g04-pine-pad" transform="translate(104 198) scale(.95 .85)"/><use xlink:href="#g04-pine-pad" transform="translate(114 186) scale(.6)"/><use xlink:href="#g04-pine-pad" transform="translate(48 186) scale(.8 .75)"/><use xlink:href="#g04-pine-pad" transform="translate(40 178) scale(.45)"/><use xlink:href="#g04-pine-pad" transform="translate(142 214) scale(.75 .7)"/><use xlink:href="#g04-pine-pad" transform="translate(156 220) scale(.4)"/><use xlink:href="#g04-pine-pad" transform="translate(72 210) scale(.7 .65)"/><use xlink:href="#g04-pine-pad" transform="translate(84 204) scale(.45)"/>
+<use xlink:href="#g04-pine-pad" transform="translate(256 178) scale(-1 .9)"/><use xlink:href="#g04-pine-pad" transform="translate(240 184) scale(-.5 .5)"/><use xlink:href="#g04-pine-pad" transform="translate(312 168) scale(-.8 .75)"/><use xlink:href="#g04-pine-pad" transform="translate(320 160) scale(-.45)"/><use xlink:href="#g04-pine-pad" transform="translate(256 204) scale(-.75 .7)"/><use xlink:href="#g04-pine-pad" transform="translate(244 208) scale(-.4)"/><use xlink:href="#g04-pine-pad" transform="translate(284 188) scale(-.85 .8)"/><use xlink:href="#g04-pine-pad" transform="translate(272 180) scale(-.5)"/>
+</g>
+
+<!-- GOD RAYS -->
+<g fill="url(#g04-shaft)" filter="url(#g04-b3)" opacity=".7">
+<path d="M226 270 L 246 270 L 150 620 L 96 620 Z"/><path d="M232 270 L 248 270 L 300 620 L 262 620 Z" opacity=".7"/><path d="M220 272 L 232 272 L 40 560 L 10 560 Z" opacity=".5"/>
+</g>
+
+<!-- STEAM CLOUDS -->
+<g fill="#FFEEE2" filter="url(#g04-b6)">
+<use xlink:href="#g04-puff" transform="translate(70 252) scale(1.4)" opacity=".4"/><use xlink:href="#g04-puff" transform="translate(54 300) scale(1.8)" opacity=".35"/><use xlink:href="#g04-puff" transform="translate(130 320) scale(1.4)" opacity=".35"/><use xlink:href="#g04-puff" transform="translate(84 344) scale(2)" opacity=".3"/>
+<use xlink:href="#g04-puff" transform="translate(272 300) scale(1.3)" opacity=".28"/><use xlink:href="#g04-puff" transform="translate(268 400) scale(1.4)" opacity=".25"/>
+<use xlink:href="#g04-puff" transform="translate(272 496) scale(2.4)" opacity=".55"/><use xlink:href="#g04-puff" transform="translate(300 470) scale(1.8)" opacity=".4"/><use xlink:href="#g04-puff" transform="translate(240 474) scale(1.6)" opacity=".35"/>
+<use xlink:href="#g04-puff" transform="translate(160 446) scale(2.2)" opacity=".4"/><use xlink:href="#g04-puff" transform="translate(214 436) scale(2)" opacity=".3"/>
+</g>
+<rect x="0" y="420" width="390" height="110" fill="url(#g04-mist)" opacity=".45"/>
+<circle cx="195" cy="420" r="160" fill="url(#g04-aura)"/>
+
+<!-- TRAINING FLOOR (basalt flagstones) -->
+<ellipse cx="196" cy="572" rx="124" ry="12" fill="#1A0A10" opacity=".5" filter="url(#g04-b6)"/>
+<path d="M84 530 L 86 556 C 110 568 150 574 196 574 C 242 574 282 568 306 556 L 308 530 Z" fill="url(#g04-floor)"/>
+<g fill="none" stroke="#1C0C12" stroke-width="1" opacity=".55"><path d="M120 548 L 118 568"/><path d="M160 552 L 160 573"/><path d="M200 553 L 202 574"/><path d="M242 551 L 240 572"/><path d="M280 546 L 282 564"/></g>
+<path d="M96 554 C 120 564 160 570 196 570" fill="none" stroke="#FF8A3A" stroke-width="1" opacity=".55"/>
+<ellipse cx="196" cy="530" rx="112" ry="15" fill="url(#g04-floortop)"/>
+<g fill="none" stroke="#5A3438" stroke-width=".9" opacity=".6"><path d="M108 526 C 140 520 170 518 196 518 C 224 518 254 520 284 526"/><path d="M96 534 C 130 540 170 542 196 542 C 226 542 262 540 296 534"/><path d="M140 518 L 132 544"/><path d="M180 516 L 176 545"/><path d="M220 516 L 222 545"/><path d="M258 519 L 264 543"/><path d="M118 530 L 112 538"/><path d="M278 530 L 286 537"/></g>
+<g fill="#E6C2B4" opacity=".28"><path d="M140 520 L 180 517 L 177 528 L 136 530 Z"/><path d="M222 517 L 256 519 L 260 530 L 222 529 Z"/></g>
+<ellipse cx="196" cy="530" rx="112" ry="15" fill="none" stroke="#FFC898" stroke-width="1" opacity=".45"/>
+<g fill="#9EE6DC" opacity=".5"><ellipse cx="270" cy="532" rx="16" ry="2.5"/><ellipse cx="124" cy="536" rx="10" ry="1.8"/></g>
+
+<!-- FOREGROUND LEFT: steaming pool, rocks, bucket -->
+<path d="M0 548 C 30 540 80 544 120 552 C 140 556 148 570 134 584 C 110 600 60 606 0 604 Z" fill="#5A2228"/>
+<path d="M0 556 C 30 550 76 552 112 560 C 130 566 132 576 118 584 C 92 596 50 598 0 596 Z" fill="url(#g04-fgwater)"/>
+<path d="M0 556 C 30 550 76 552 112 560 C 130 566 132 576 118 584" fill="none" stroke="#D8FFF4" stroke-width="1" opacity=".6"/>
+<g fill="#FFC898" opacity=".3"><ellipse cx="60" cy="566" rx="30" ry="2.4"/><ellipse cx="80" cy="578" rx="20" ry="1.8"/></g>
+<g fill="none" stroke="#BFF2E6" stroke-width=".8" opacity=".5"><path d="M20 572 C 34 570 48 572 58 570"/><path d="M70 588 C 84 586 96 584 104 580"/></g>
+<path d="M0 600 C 40 604 90 600 140 588 C 150 604 146 626 120 640 L0 646 Z" fill="url(#g04-fgrock)"/>
+<path d="M0 600 C 40 604 90 600 140 588" fill="none" stroke="#C0664E" stroke-width="1.4" opacity=".6"/>
+<g fill="none" stroke="#FF7A2A" stroke-width="3.5" opacity=".45" filter="url(#g04-b3)"><path d="M30 612 L 44 620 L 40 632"/><path d="M96 606 L 104 618"/></g>
+<g fill="none" stroke="#FFB050" stroke-width="1.1" stroke-linecap="round"><path d="M30 612 L 44 620 L 40 632"/><path d="M96 606 L 104 618"/></g>
+<!-- wooden bucket + ladle -->
+<g transform="translate(22 588)">
+<path d="M0 0 L 3 22 C 8 25 22 25 27 22 L 30 0 Z" fill="#7A4424"/>
+<g stroke="#4A2410" stroke-width=".8" opacity=".6"><path d="M7 1 L 8 23"/><path d="M15 1 V 24"/><path d="M23 1 L 22 23"/></g>
+<path d="M0.6 6 L 29.4 6 M1.6 16 L 28.4 16" stroke="#3A2A2A" stroke-width="1.6"/>
+<ellipse cx="15" cy="0" rx="15" ry="3.2" fill="#C07A3E"/><ellipse cx="15" cy="0.4" rx="12.5" ry="2.2" fill="#3E8E88"/>
+<path d="M2 1 L 4 20" stroke="#E0A26A" stroke-width="1" opacity=".6"/>
+<path d="M18 0 L 42 -16" stroke="#9A6A3A" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="17" cy="0.4" rx="4" ry="1.6" fill="#8A5A30"/>
+</g>
+<g color="#3E1E1E"><use xlink:href="#g04-tuft" transform="translate(66 602)"/><use xlink:href="#g04-tuft" transform="translate(126 590) scale(.8)"/></g>
+
+<!-- FOREGROUND RIGHT: rocks, towel, gourd, pool -->
+<path d="M390 546 C 360 544 320 552 290 566 C 272 576 276 590 296 598 C 330 610 370 608 390 604 Z" fill="#5A2228"/>
+<path d="M390 554 C 362 552 326 560 300 572 C 288 580 294 588 308 592 C 336 600 368 598 390 596 Z" fill="url(#g04-fgwater)"/>
+<path d="M390 554 C 362 552 326 560 300 572" fill="none" stroke="#D8FFF4" stroke-width="1" opacity=".6"/>
+<g fill="#FFC898" opacity=".3"><ellipse cx="340" cy="574" rx="26" ry="2.2"/></g>
+<path d="M250 640 C 260 610 282 596 312 596 C 340 594 370 600 390 598 L390 650 L250 650 Z" fill="url(#g04-fgrock)"/>
+<path d="M250 640 C 260 610 282 596 312 596 C 340 594 370 600 390 598" fill="none" stroke="#C0664E" stroke-width="1.4" opacity=".6"/>
+<path d="M300 600 C 318 588 344 586 362 594 C 368 604 360 616 340 618 C 318 620 300 614 300 600 Z" fill="#6E3032"/>
+<path d="M306 598 C 320 590 340 588 356 594" fill="none" stroke="#E08A6A" stroke-width="1.2" opacity=".6"/>
+<!-- folded towel -->
+<path d="M314 592 C 322 586 340 586 348 590 L 350 598 C 340 600 324 600 314 600 Z" fill="#EDE4D6"/>
+<path d="M314 592 C 322 586 340 586 348 590" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".8"/>
+<path d="M316 597 L 349 595" stroke="#B8A898" stroke-width=".8"/>
+<path d="M320 600 L 316 612 L 326 610 Z" fill="#D6CABC"/>
+<!-- gourd -->
+<g transform="translate(360 580)"><circle cx="0" cy="8" r="7" fill="#C88A3E"/><circle cx="0" cy="-2" r="4.6" fill="#D49A4A"/><rect x="-1.2" y="-9" width="2.4" height="4" fill="#6A3A1E"/><path d="M-3 -2 C -2 -5 1 -6 2 -5" stroke="#FFE2A0" stroke-width=".8" fill="none"/><path d="M-4 6 C -3 3 0 2 2 2" stroke="#FFE2A0" stroke-width=".9" fill="none" opacity=".8"/><path d="M0 -2 C 6 -4 10 0 9 6" stroke="#B02A1E" stroke-width="1" fill="none"/></g>
+<g color="#3E1E1E"><use xlink:href="#g04-tuft" transform="translate(286 604) scale(.9)"/><use xlink:href="#g04-tuft" transform="translate(378 600) scale(.8)"/></g>
+
+<!-- FOREGROUND STEAM -->
+<g fill="#FFEFE4" filter="url(#g04-b6)">
+<use xlink:href="#g04-puff" transform="translate(40 560) scale(1.6)" opacity=".45"/><use xlink:href="#g04-puff" transform="translate(90 546) scale(1.2)" opacity=".35"/><use xlink:href="#g04-puff" transform="translate(30 520) scale(1.3)" opacity=".25"/>
+<use xlink:href="#g04-puff" transform="translate(350 556) scale(1.6)" opacity=".45"/><use xlink:href="#g04-puff" transform="translate(316 540) scale(1.1)" opacity=".3"/><use xlink:href="#g04-puff" transform="translate(366 516) scale(1.3)" opacity=".25"/>
+</g>
+
+<!-- LOWER FOREGROUND (under the UI) -->
+<path d="M0 640 C 60 636 120 646 195 650 C 270 654 330 642 390 640 L390 844 L0 844 Z" fill="#2E1218"/>
+<path d="M30 690 C 80 680 150 684 200 692 C 250 700 320 696 370 686 C 380 700 360 720 320 726 C 250 734 120 734 50 722 C 20 716 14 700 30 690 Z" fill="#1E5052" opacity=".9"/>
+<path d="M30 690 C 80 680 150 684 200 692 C 250 700 320 696 370 686" fill="none" stroke="#7ACCC0" stroke-width="1" opacity=".5"/>
+<g fill="none" stroke="#FF7A2A" stroke-width="1" opacity=".5"><path d="M10 660 L 22 670 L 18 684"/><path d="M370 660 L 360 676 L 368 690"/><path d="M200 760 L 210 772"/></g>
+<g fill="none" stroke="#9ADCD2" stroke-width=".9" opacity=".35"><path d="M70 700 C 110 696 150 698 180 702"/><path d="M220 708 C 260 712 300 708 336 702"/><path d="M110 716 C 150 720 200 722 240 718"/></g>
+<g fill="#FFB884" opacity=".22"><ellipse cx="200" cy="700" rx="60" ry="3"/></g>
+<path d="M0 730 C 30 716 70 718 96 732 C 110 744 100 760 70 764 C 40 766 10 760 0 756 Z" fill="#3E161C"/><path d="M0 730 C 30 716 70 718 96 732" fill="none" stroke="#8A3C34" stroke-width="1.2" opacity=".6"/>
+<path d="M390 724 C 360 712 316 716 296 732 C 288 746 304 758 330 760 C 360 762 380 758 390 754 Z" fill="#3E161C"/><path d="M390 724 C 360 712 316 716 296 732" fill="none" stroke="#8A3C34" stroke-width="1.2" opacity=".6"/>
+<path d="M150 668 C 164 660 184 660 194 668 C 196 676 184 680 168 680 C 154 680 148 674 150 668 Z" fill="#4A1C22"/><path d="M228 672 C 240 666 256 666 262 672 C 262 680 250 682 240 682 C 230 682 226 678 228 672 Z" fill="#4A1C22"/>
+<g color="#2A1014"><use xlink:href="#g04-tuft" transform="translate(16 652) scale(1.2)"/><use xlink:href="#g04-tuft" transform="translate(372 650) scale(1.2)"/></g>
+
+<!-- EMBERS -->
+<g>
+<use xlink:href="#g04-emb" x="96" y="230"/><use xlink:href="#g04-emb" x="112" y="268"/><use xlink:href="#g04-emb" x="104" y="350"/><use xlink:href="#g04-emb" x="118" y="420"/><use xlink:href="#g04-emb" x="128" y="490"/><use xlink:href="#g04-emb" x="300" y="250"/><use xlink:href="#g04-emb" x="306" y="350"/><use xlink:href="#g04-emb" x="226" y="200"/><use xlink:href="#g04-emb" x="172" y="246"/><use xlink:href="#g04-emb" x="150" y="296"/><use xlink:href="#g04-emb" x="60" y="530"/><use xlink:href="#g04-emb" x="340" y="528"/><use xlink:href="#g04-emb" x="24" y="470"/><use xlink:href="#g04-emb" x="368" y="440"/><use xlink:href="#g04-emb" x="140" y="606"/><use xlink:href="#g04-emb" x="266" y="602"/><use xlink:href="#g04-emb" x="200" y="188"/>
+</g>
+
+<!-- UI-ZONE TONING -->
+<rect x="0" y="0" width="390" height="150" fill="url(#g04-topdark)"/>
+<rect x="0" y="80" width="96" height="480" fill="url(#g04-sideL)"/>
+<rect x="294" y="80" width="96" height="480" fill="url(#g04-sideR)"/>
+<rect x="0" y="590" width="390" height="254" fill="url(#g04-botdark)"/>
+</svg>

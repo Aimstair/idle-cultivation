@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="res_comprehension-jade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C8FFE6"/><stop offset="0.5" stop-color="#3FC79A"/><stop offset="1" stop-color="#0E6A50"/></linearGradient>
+    <linearGradient id="res_comprehension-page" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF8E4"/><stop offset="1" stop-color="#E9CF98"/></linearGradient>
+    <radialGradient id="res_comprehension-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/><stop offset="0.4" stop-color="#FFE7A0" stop-opacity="0.6"/><stop offset="1" stop-color="#FFD45A" stop-opacity="0"/></radialGradient>
+    <linearGradient id="res_comprehension-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset="0.45" stop-color="#FFD45A"/><stop offset="0.8" stop-color="#D69A2A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+  </defs>
+  <ellipse cx="32" cy="57.5" rx="23" ry="2" fill="#2A1008" opacity=".22"/>
+  <path d="M15.5 30Q32 27.5 48.5 30V51Q32 53.5 15.5 51Z" fill="url(#res_comprehension-page)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M18.5 32.5Q32 30.5 45.5 32.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+  <path d="M15.5 35C18 38 18 44 15.5 47" fill="none" stroke="#2A1008" stroke-width="1.1" opacity=".3"/>
+  <g fill="url(#res_comprehension-jade)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"><rect x="8.5" y="26" width="7" height="30" rx="3.2"/><rect x="48.5" y="26" width="7" height="30" rx="3.2"/></g>
+  <g fill="url(#res_comprehension-gold)" stroke="#2A1008" stroke-width="1.3"><circle cx="12" cy="26" r="2.2"/><circle cx="12" cy="56" r="2.2"/><circle cx="52" cy="26" r="2.2"/><circle cx="52" cy="56" r="2.2"/></g>
+  <path d="M10.5 30V51M50.5 30V51" fill="none" stroke="#E8FFF4" stroke-width="1.1" stroke-linecap="round" opacity=".8"/>
+  <circle cx="32" cy="15.5" r="11" fill="url(#res_comprehension-glow)"/>
+  <path d="M32 6.5V10M32 21V24.5M23 15.5H26.5M37.5 15.5H41M25.6 9.1L28 11.5M36 19.5L38.4 21.9M38.4 9.1L36 11.5M28 19.5L25.6 21.9" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round" opacity=".7"/>
+  <path d="M32 6.5V10M32 21V24.5M23 15.5H26.5M37.5 15.5H41M25.6 9.1L28 11.5M36 19.5L38.4 21.9M38.4 9.1L36 11.5M28 19.5L25.6 21.9" fill="none" stroke="#FFF6C8" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="32" cy="15.5" r="4" fill="#FFFFFF" stroke="#2A1008" stroke-width="1.6"/>
+  <circle cx="32" cy="15.5" r="2.2" fill="#FFD45A"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="art_lava_eruption-tile" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#FFB040"/><stop offset="0.5" stop-color="#F0481C"/><stop offset="1" stop-color="#8E1810"/></radialGradient>
+    <radialGradient id="art_lava_eruption-sheen" cx="0.25" cy="0.18" r="0.6"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="art_lava_eruption-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset="0.45" stop-color="#FFD45A"/><stop offset="0.8" stop-color="#D69A2A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+    <clipPath id="art_lava_eruption-clip"><rect x="9.5" y="9.5" width="45" height="45" rx="6"/></clipPath>
+    <linearGradient id="art_lava_eruption-lava" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFF2A0"/><stop offset="0.45" stop-color="#FFA020"/><stop offset="1" stop-color="#E8301A"/></linearGradient><linearGradient id="art_lava_eruption-rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A3A48"/><stop offset="1" stop-color="#22101C"/></linearGradient><radialGradient id="art_lava_eruption-hot" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFA020" stop-opacity=".7"/><stop offset="1" stop-color="#FFA020" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="33" cy="58" rx="22" ry="2" fill="#2A1008" opacity=".22"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_lava_eruption-tile)" stroke="#2A1008" stroke-width="2.5"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_lava_eruption-sheen)"/>
+  <g clip-path="url(#art_lava_eruption-clip)">
+    <path d="M8 46L14 44.5L20 47L26 45L32 46.5L38 45L44 47L50 44.5L56 46V56H8Z" fill="url(#art_lava_eruption-rock)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M12 48L16 51L14 55M50 48L46 51L48 55M26 49L22 52M38 49L42 52.5" fill="none" stroke="#FFA020" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+    <ellipse cx="32" cy="46" rx="16" ry="6" fill="url(#art_lava_eruption-hot)"/>
+    <path d="M21 47C23 38 19 32 23 24C25 20 27.5 25 28.5 19C29.5 13 32.5 10 34 15C36.5 10 41 14 40 20C42 24 45 21 45 27C45 33 41 38 43 47Z" fill="url(#art_lava_eruption-lava)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M27.5 47C28.5 38 29 30 32 22.5C35 30 35.5 38 36.5 47Z" fill="#FFF8E4" opacity=".95"/>
+    <path d="M24.5 36C25 30 26.5 26 28 22" fill="none" stroke="#FFF8E4" stroke-width="1.3" stroke-linecap="round" opacity=".9"/>
+    <g fill="#FFA020" stroke="#2A1008" stroke-width="1.3"><circle cx="15.5" cy="25" r="2.6"/><circle cx="49" cy="20" r="2.4"/><circle cx="13" cy="36" r="1.7"/><circle cx="51.5" cy="33" r="1.9"/><circle cx="22" cy="14" r="1.6"/><circle cx="43" cy="10" r="1.5"/></g>
+    <g fill="#FFF8E4"><circle cx="14.7" cy="24.2" r="1"/><circle cx="48.2" cy="19.3" r=".9"/><circle cx="50.9" cy="32.4" r=".7"/></g>
+  </g>
+  <rect x="9.5" y="9.5" width="45" height="45" rx="6" fill="none" stroke="url(#art_lava_eruption-gold)" stroke-width="1.6"/>
+  <path d="M11.5 20V15Q11.5 11.5 15 11.5H20" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+</svg>

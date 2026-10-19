@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 200 40">
+<!-- 9slice: 30 -->
+  <defs>
+    <linearGradient id="banner_region-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A4A22"/>
+      <stop offset=".18" stop-color="#6A3414"/>
+      <stop offset=".34" stop-color="#7A3E1A"/>
+      <stop offset=".55" stop-color="#4E2410"/>
+      <stop offset=".72" stop-color="#5A2A12"/>
+      <stop offset="1" stop-color="#2A1008"/>
+    </linearGradient>
+    <linearGradient id="banner_region-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="banner_region-goldKnot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="banner_region-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="11" x2="0" y2="18">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <rect id="banner_region-board" x="2" y="9.5" width="196" height="28" rx="3.5"/>
+    <clipPath id="banner_region-clip"><use href="#banner_region-board"/></clipPath>
+    <g id="banner_region-cord">
+      <path d="M0 0 V9.5" fill="none" stroke="#2A1008" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M0 0 V9.5" fill="none" stroke="#C21E10" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M-.35 1 V7.5" fill="none" stroke="#FF6A44" stroke-width=".6" stroke-linecap="round" opacity=".8"/>
+      <circle cy="10.2" r="2.7" fill="url(#banner_region-goldKnot)" stroke="#2A1008" stroke-width="1.3"/>
+      <ellipse cx="-.9" cy="9.2" rx=".8" ry=".5" fill="#FFFFFF" opacity=".85"/>
+    </g>
+  </defs>
+
+  <!-- cast shadow (uniform band, 9-slice safe) -->
+  <rect x="3" y="11.5" width="194" height="28" rx="3.5" fill="#2A1008" opacity=".35"/>
+
+  <!-- wood board -->
+  <use href="#banner_region-board" fill="url(#banner_region-wood)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <g clip-path="url(#banner_region-clip)">
+    <rect x="2" y="9.5" width="196" height="9" fill="url(#banner_region-sheen)"/>
+  </g>
+  <!-- gold rim -->
+  <rect x="4.6" y="12.1" width="190.8" height="22.8" rx="2.2" fill="none" stroke="url(#banner_region-gold)" stroke-width="1.5"/>
+
+  <!-- hanging cords (inside the 30-unit corner squares) -->
+  <use href="#banner_region-cord" transform="translate(16 0)"/>
+  <use href="#banner_region-cord" transform="translate(184 0)"/>
+</svg>

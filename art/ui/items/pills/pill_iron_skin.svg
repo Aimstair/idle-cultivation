@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<radialGradient id="pill_iron_skin-pg" cx=".36" cy=".32" r=".78"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".42" stop-color="#C3CBD8"/><stop offset="1" stop-color="#6C7686"/></radialGradient>
+<clipPath id="pill_iron_skin-pc"><circle cx="31" cy="29" r="14.5"/></clipPath>
+<radialGradient id="pill_iron_skin-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2A1008" stop-opacity=".42"/><stop offset="1" stop-color="#2A1008" stop-opacity="0"/></radialGradient>
+<linearGradient id="pill_iron_skin-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF8E4"/><stop offset="1" stop-color="#E9CF98"/></linearGradient>
+<linearGradient id="pill_iron_skin-paperD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E2C0"/><stop offset="1" stop-color="#C9A86A"/></linearGradient>
+<radialGradient id="pill_iron_skin-fl" gradientUnits="userSpaceOnUse" cx="15" cy="17" r="7"><stop offset="0" stop-color="#B8E4FF" stop-opacity="0.7"/><stop offset=".55" stop-color="#B8E4FF" stop-opacity="0.32"/><stop offset="1" stop-color="#B8E4FF" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="31" cy="56" rx="21" ry="3" fill="url(#pill_iron_skin-shadow)"/>
+<path d="M9 36C14 30 22 20 29 15C31 13.5 33 13.5 35 15C42 20 48 30 53 36C48 42 40 50 31 51C22 50 14 42 9 36Z" fill="url(#pill_iron_skin-paperD)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M12 36C16 31 20 26 24 22M50 36C46 31 42 26 38 22" fill="none" stroke="#C9A86A" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M27 17.5C26 13 29 9 35 7.5C40 6.3 44 8.5 45 11.5C41 11 38 12 36 14.5C35 16.3 34.5 17.5 35 18.5Z" fill="url(#pill_iron_skin-paper)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M30 16.5C30 13 32 11 36 10" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M27.5 18.5C29.5 17 32.5 17 34.5 18.5" fill="none" stroke="#2A1008" stroke-width="2" stroke-linecap="round"/>
+<circle cx="31" cy="29" r="14.5" fill="url(#pill_iron_skin-pg)"/>
+<g clip-path="url(#pill_iron_skin-pc)">
+<g transform="translate(31 29.5) scale(1)">
+<g transform="translate(0 0)">
+<path d="M0 -8L7 -5.2C7 1.2 4 5.8 0 8C-4 5.8 -7 1.2 -7 -5.2Z" fill="#FFFFFF" transform="translate(-0.8 -0.8)" opacity=".95"/>
+<path d="M0 -8L7 -5.2C7 1.2 4 5.8 0 8C-4 5.8 -7 1.2 -7 -5.2Z" fill="#434A58" transform="translate(0.8 0.8)" opacity=".9"/>
+<path d="M0 -8L7 -5.2C7 1.2 4 5.8 0 8C-4 5.8 -7 1.2 -7 -5.2Z" fill="#6C7686"/>
+</g>
+</g>
+</g>
+<path d="M43.77 30.8A12.9 12.9 0 0 1 28.76 41.7" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".38"/>
+<circle cx="31" cy="29" r="14.5" fill="none" stroke="#2A1008" stroke-width="2.4"/>
+<ellipse cx="25.2" cy="22.62" rx="4.35" ry="2.47" transform="rotate(-38 25.2 22.62)" fill="#FFFFFF" opacity=".88"/>
+<path d="M11 36C10 50 52 50 51 36C47 41 40 43.5 31 43.5C22 43.5 15 41 11 36Z" fill="url(#pill_iron_skin-paper)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M15 39C19 42 25 43.5 31 43.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M20 45.5C22 48.5 26 50 31 50M38 48.5C40.5 47.5 42.5 46.5 44.5 44.5" fill="none" stroke="#C9A86A" stroke-width="1" stroke-linecap="round" opacity=".9"/>
+<circle cx="15" cy="17" r="7" fill="url(#pill_iron_skin-fl)"/>
+<path d="M15 13.4Q15.79 16.21 18.6 17Q15.79 17.79 15 20.6Q14.21 17.79 11.4 17Q14.21 16.21 15 13.4Z" fill="#B8E4FF" opacity="0.95"/>
+<path d="M15 15.2Q15.4 16.6 16.8 17Q15.4 17.4 15 18.8Q14.6 17.4 13.2 17Q14.6 16.6 15 15.2Z" fill="#FFFFFF" opacity="0.95"/>
+</svg>

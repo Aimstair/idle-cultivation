@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="48" viewBox="0 0 128 24">
+  <defs>
+    <linearGradient id="plate_name-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset=".55" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="plate_name-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="plate_name-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="9.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="plate_name-shade" gradientUnits="userSpaceOnUse" x1="0" y1="14" x2="0" y2="21">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".3"/>
+    </linearGradient>
+    <path id="plate_name-shape" d="M12 2 H122 Q126 2 126 6 V18 Q126 22 122 22 H12 A10 10 0 0 1 12 2 Z"/>
+    <clipPath id="plate_name-clip"><use href="#plate_name-shape"/></clipPath>
+  </defs>
+
+  <use href="#plate_name-shape" fill="none" stroke="#2A1008" stroke-width="3.4" stroke-linejoin="round"/>
+  <use href="#plate_name-shape" fill="url(#plate_name-rose)"/>
+  <g clip-path="url(#plate_name-clip)">
+    <rect x="2" y="2" width="124" height="8" fill="url(#plate_name-sheen)"/>
+    <rect x="2" y="14" width="124" height="8" fill="url(#plate_name-shade)"/>
+  </g>
+  <use href="#plate_name-shape" fill="none" stroke="url(#plate_name-gold)" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>

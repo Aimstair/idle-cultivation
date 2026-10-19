@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bracers_t4-bone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFDF0"/>
+      <stop offset=".45" stop-color="#EDE2C4"/>
+      <stop offset="1" stop-color="#A89870"/>
+    </linearGradient>
+    <linearGradient id="bracers_t4-sand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF8DC"/>
+      <stop offset=".5" stop-color="#D8A050"/>
+      <stop offset="1" stop-color="#8C6622"/>
+    </linearGradient>
+    <linearGradient id="bracers_t4-sandV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8DC"/>
+      <stop offset=".5" stop-color="#E0B058"/>
+      <stop offset="1" stop-color="#A86A22"/>
+    </linearGradient>
+    <radialGradient id="bracers_t4-spirit" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#8FF0F0"/>
+      <stop offset="1" stop-color="#2A98B0"/>
+    </radialGradient>
+    <linearGradient id="bracers_t4-hole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140603"/>
+      <stop offset="1" stop-color="#4A2412"/>
+    </linearGradient>
+    <filter id="bracers_t4-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <!-- one bracer, centred on the origin -->
+    <g id="bracers_t4-b">
+      <path d="M-9.5-21L-7.5 21A7.5 2.6 0 0 0 7.5 21L9.5-21Z" fill="url(#bracers_t4-bone)" stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round"/>
+      <!-- sand-gold bands -->
+      <path d="M-7.75 15.5L-7.5 21A7.5 2.6 0 0 0 7.5 21L7.75 15.5A7.75 2.6 0 0 1-7.75 15.5Z" fill="url(#bracers_t4-sand)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M-9.5-21L-9.25-15.5A9.25 3 0 0 0 9.25-15.5L9.5-21A9.5 3.2 0 0 1-9.5-21Z" fill="url(#bracers_t4-sand)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+      <!-- wyrm scale plates (bottom first so they overlap like scales) -->
+      <g fill="url(#bracers_t4-sandV)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round">
+        <path d="M-5.8 2.2H5.8V5.4A5.8 5.6 0 0 1-5.8 5.4Z"/>
+        <path d="M-6.3-5.2H6.3V-2A6.3 6 0 0 1-6.3-2Z"/>
+        <path d="M-6.8-12.6H6.8V-9.4A6.8 6.4 0 0 1-6.8-9.4Z"/>
+      </g>
+      <g fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85">
+        <path d="M-5-11H-1.2"/>
+        <path d="M-4.6-3.6H-1"/>
+        <path d="M-4.2 3.8H-.8"/>
+      </g>
+      <!-- spirit gem -->
+      <circle cx="0" cy="-.6" r="3.2" fill="#8FF0F0" opacity=".75" filter="url(#bracers_t4-glow)"/>
+      <circle cx="0" cy="-.6" r="2.2" fill="url(#bracers_t4-spirit)" stroke="#2A1008" stroke-width="1"/>
+      <!-- opening -->
+      <ellipse cx="0" cy="-21" rx="9.5" ry="3.2" fill="url(#bracers_t4-hole)" stroke="#2A1008" stroke-width="2"/>
+      <path d="M-8-20.4A8 2.4 0 0 0 8-20.4" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+      <!-- highlight -->
+      <path d="M-7.4-13.5L-7 13" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".7"/>
+    </g>
+    <path id="bracers_t4-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <ellipse cx="18.5" cy="56.2" rx="9" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <ellipse cx="45.5" cy="56.2" rx="9" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <use href="#bracers_t4-b" transform="translate(18.5 32) rotate(-5)"/>
+  <use href="#bracers_t4-b" transform="translate(45.5 32) rotate(5)"/>
+  <!-- ghost mist wisps -->
+  <g fill="#C8FFFF" filter="url(#bracers_t4-glow)">
+    <ellipse cx="18" cy="54" rx="7" ry="1.8" opacity=".55"/>
+    <ellipse cx="46" cy="54" rx="7" ry="1.8" opacity=".55"/>
+  </g>
+  <path d="M30 24Q34 21 32 17.5" fill="none" stroke="#E8FFFF" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+  <g fill="#E8FFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#bracers_t4-spark" transform="translate(32 14) scale(1.8)"/>
+    <use href="#bracers_t4-spark" transform="translate(57 30) scale(1.3)"/>
+    <use href="#bracers_t4-spark" transform="translate(7 36) scale(1.2)"/>
+  </g>
+</svg>

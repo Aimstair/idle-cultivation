@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+  <defs>
+    <radialGradient id="fx_ring-body" gradientUnits="userSpaceOnUse" cx="64" cy="64" r="62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".52" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".78" stop-color="#F2EFF8" stop-opacity=".22"/>
+      <stop offset=".88" stop-color="#FAF9FD" stop-opacity=".6"/>
+      <stop offset=".915" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset=".945" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset=".975" stop-color="#FFFFFF" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="64" cy="64" r="62" fill="url(#fx_ring-body)"/>
+  <!-- crisp bright rim -->
+  <circle cx="64" cy="64" r="57.6" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-opacity=".95"/>
+</svg>

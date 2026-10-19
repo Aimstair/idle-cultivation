@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="seal_10_ga-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".32" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="seal_10_ga-goldRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A5E14"/>
+      <stop offset=".35" stop-color="#D69A2A"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#FFF0B0"/>
+    </linearGradient>
+    <linearGradient id="seal_10_ga-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".32" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="seal_10_ga-red" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <radialGradient id="seal_10_ga-field" cx="0.3" cy="0.25" r="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".3" stop-color="#FFF6C8"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#E0A030"/>
+    </radialGradient>
+    <radialGradient id="seal_10_ga-halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
+      <stop offset=".6" stop-color="#FFE8A0" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FFD45A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seal_10_ga-ray" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="32" fill="url(#seal_10_ga-halo)"/>
+  <rect x="2" y="2" width="60" height="60" rx="7" fill="#FFF0B0" opacity=".55"/>
+  <g fill="url(#seal_10_ga-ray)"><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(11.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(33.75 32 32)" opacity="0.6"/><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(56.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(78.75 32 32)" opacity="0.6"/><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(101.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(123.75 32 32)" opacity="0.6"/><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(146.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(168.75 32 32)" opacity="0.6"/><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(191.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(213.75 32 32)" opacity="0.6"/><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(236.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(258.75 32 32)" opacity="0.6"/><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(281.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(303.75 32 32)" opacity="0.6"/><path d="M32 32 L27.8 0 L36.2 0Z" transform="rotate(326.25 32 32)" opacity="0.95"/><path d="M32 32 L29.8 0 L34.2 0Z" transform="rotate(348.75 32 32)" opacity="0.6"/></g>
+  <path fill-rule="evenodd" fill="url(#seal_10_ga-gold)" d="M10.5 6 H53.5 A4.5 4.5 0 0 1 58 10.5 V53.5 A4.5 4.5 0 0 1 53.5 58 H10.5 A4.5 4.5 0 0 1 6 53.5 V10.5 A4.5 4.5 0 0 1 10.5 6Z M12.5 11 H51.5 A1.5 1.5 0 0 1 53 12.5 V51.5 A1.5 1.5 0 0 1 51.5 53 H12.5 A1.5 1.5 0 0 1 11 51.5 V12.5 A1.5 1.5 0 0 1 12.5 11Z"/>
+  <path fill-rule="evenodd" fill="url(#seal_10_ga-goldRev)" d="M11.6 8.75 H52.4 A2.85 2.85 0 0 1 55.25 11.6 V52.4 A2.85 2.85 0 0 1 52.4 55.25 H11.6 A2.85 2.85 0 0 1 8.75 52.4 V11.6 A2.85 2.85 0 0 1 11.6 8.75Z M12.5 11 H51.5 A1.5 1.5 0 0 1 53 12.5 V51.5 A1.5 1.5 0 0 1 51.5 53 H12.5 A1.5 1.5 0 0 1 11 51.5 V12.5 A1.5 1.5 0 0 1 12.5 11Z"/>
+  <path d="M11.6 8.75 H52.4 A2.85 2.85 0 0 1 55.25 11.6 V52.4 A2.85 2.85 0 0 1 52.4 55.25 H11.6 A2.85 2.85 0 0 1 8.75 52.4 V11.6 A2.85 2.85 0 0 1 11.6 8.75Z" fill="none" stroke="#FFFFFF" stroke-width=".8" opacity=".5"/>
+  <path d="M10.5 6 H53.5 A4.5 4.5 0 0 1 58 10.5 V53.5 A4.5 4.5 0 0 1 53.5 58 H10.5 A4.5 4.5 0 0 1 6 53.5 V10.5 A4.5 4.5 0 0 1 10.5 6Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M12.5 11 H51.5 A1.5 1.5 0 0 1 53 12.5 V51.5 A1.5 1.5 0 0 1 51.5 53 H12.5 A1.5 1.5 0 0 1 11 51.5 V12.5 A1.5 1.5 0 0 1 12.5 11Z" fill="none" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <rect x="11" y="11" width="42" height="42" rx="1.4" fill="url(#seal_10_ga-field)"/>
+  <rect x="13.6" y="13.6" width="36.8" height="36.8" rx="1" fill="none" stroke="#C21E10" stroke-width="1.2" opacity=".85"/>
+  <rect x="13.6" y="13.6" width="36.8" height="36.8" rx="1" fill="none" stroke="#FFFFFF" stroke-width=".6" opacity=".7" transform="translate(-.9 -.9)"/>
+  <g><path d="M1.6 12.6 C.2 8.8 3.4 5.4 7.4 6.6 C7.6 2.8 12.6 2.2 13.4 5.8 C14 8.6 11.2 10.2 9.6 8.8 C10.8 11.4 7.6 13.8 5.6 12 C4.6 13.8 2 14 1.6 12.6Z" fill="url(#seal_10_ga-goldSmall)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/><path d="M5.6 10.6 a1.7 1.7 0 1 1 1.9 1.6 M9.6 6.2 a1.5 1.5 0 1 1 1.8 1.4" fill="none" stroke="#9A5E14" stroke-width=".9" stroke-linecap="round"/><ellipse cx="8.8" cy="4.8" rx="1.3" ry=".8" fill="#FFFFFF" opacity=".85"/><circle cx="12.6" cy="12.2" r="2" fill="url(#seal_10_ga-red)" stroke="#2A1008" stroke-width="1"/><circle cx="11.9" cy="11.5" r=".6" fill="#FFFFFF" opacity=".9"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#FFD45A" stroke-width="1" stroke-linecap="round"/></g><g transform="translate(64 0) scale(-1 1)"><path d="M1.6 12.6 C.2 8.8 3.4 5.4 7.4 6.6 C7.6 2.8 12.6 2.2 13.4 5.8 C14 8.6 11.2 10.2 9.6 8.8 C10.8 11.4 7.6 13.8 5.6 12 C4.6 13.8 2 14 1.6 12.6Z" fill="url(#seal_10_ga-goldSmall)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/><path d="M5.6 10.6 a1.7 1.7 0 1 1 1.9 1.6 M9.6 6.2 a1.5 1.5 0 1 1 1.8 1.4" fill="none" stroke="#9A5E14" stroke-width=".9" stroke-linecap="round"/><ellipse cx="8.8" cy="4.8" rx="1.3" ry=".8" fill="#FFFFFF" opacity=".85"/><circle cx="12.6" cy="12.2" r="2" fill="url(#seal_10_ga-red)" stroke="#2A1008" stroke-width="1"/><circle cx="11.9" cy="11.5" r=".6" fill="#FFFFFF" opacity=".9"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#FFD45A" stroke-width="1" stroke-linecap="round"/></g><g transform="translate(0 64) scale(1 -1)"><path d="M1.6 12.6 C.2 8.8 3.4 5.4 7.4 6.6 C7.6 2.8 12.6 2.2 13.4 5.8 C14 8.6 11.2 10.2 9.6 8.8 C10.8 11.4 7.6 13.8 5.6 12 C4.6 13.8 2 14 1.6 12.6Z" fill="url(#seal_10_ga-goldSmall)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/><path d="M5.6 10.6 a1.7 1.7 0 1 1 1.9 1.6 M9.6 6.2 a1.5 1.5 0 1 1 1.8 1.4" fill="none" stroke="#9A5E14" stroke-width=".9" stroke-linecap="round"/><ellipse cx="8.8" cy="4.8" rx="1.3" ry=".8" fill="#FFFFFF" opacity=".85"/><circle cx="12.6" cy="12.2" r="2" fill="url(#seal_10_ga-red)" stroke="#2A1008" stroke-width="1"/><circle cx="11.9" cy="11.5" r=".6" fill="#FFFFFF" opacity=".9"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#FFD45A" stroke-width="1" stroke-linecap="round"/></g><g transform="translate(64 64) scale(-1 -1)"><path d="M1.6 12.6 C.2 8.8 3.4 5.4 7.4 6.6 C7.6 2.8 12.6 2.2 13.4 5.8 C14 8.6 11.2 10.2 9.6 8.8 C10.8 11.4 7.6 13.8 5.6 12 C4.6 13.8 2 14 1.6 12.6Z" fill="url(#seal_10_ga-goldSmall)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/><path d="M5.6 10.6 a1.7 1.7 0 1 1 1.9 1.6 M9.6 6.2 a1.5 1.5 0 1 1 1.8 1.4" fill="none" stroke="#9A5E14" stroke-width=".9" stroke-linecap="round"/><ellipse cx="8.8" cy="4.8" rx="1.3" ry=".8" fill="#FFFFFF" opacity=".85"/><circle cx="12.6" cy="12.2" r="2" fill="url(#seal_10_ga-red)" stroke="#2A1008" stroke-width="1"/><circle cx="11.9" cy="11.5" r=".6" fill="#FFFFFF" opacity=".9"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/><path d="M3.2 7.4 C1.2 8.4 .6 10.6 1.6 12.6 M2.2 6.2 C.4 5.4 -.6 3.4 .2 1.6" fill="none" stroke="#FFD45A" stroke-width="1" stroke-linecap="round"/></g>
+</svg>

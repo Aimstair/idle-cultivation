@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="seal_09_ma-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".32" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="seal_09_ma-goldRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A5E14"/>
+      <stop offset=".35" stop-color="#D69A2A"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#FFF0B0"/>
+    </linearGradient>
+    <linearGradient id="seal_09_ma-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".32" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="seal_09_ma-pink" cx="0.5" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".35" stop-color="#FFC4D8"/>
+      <stop offset=".75" stop-color="#F08AA8"/>
+      <stop offset="1" stop-color="#D04868"/>
+    </radialGradient>
+    <radialGradient id="seal_09_ma-field" cx="0.3" cy="0.25" r="0.95">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#EEF8F2"/>
+      <stop offset="1" stop-color="#B8DCC8"/>
+    </radialGradient>
+    <radialGradient id="seal_09_ma-halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".8"/>
+      <stop offset=".6" stop-color="#FFE8A0" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#FFD45A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="32" fill="url(#seal_09_ma-halo)"/>
+  <rect x="2.4" y="2.4" width="59.2" height="59.2" rx="6" fill="#FFF6C8" opacity=".55"/>
+  <path fill-rule="evenodd" fill="url(#seal_09_ma-gold)" d="M10 6 H54 A4 4 0 0 1 58 10 V54 A4 4 0 0 1 54 58 H10 A4 4 0 0 1 6 54 V10 A4 4 0 0 1 10 6Z M11.84 10.6 H52.16 A1.2400000000000002 1.2400000000000002 0 0 1 53.4 11.84 V52.16 A1.2400000000000002 1.2400000000000002 0 0 1 52.16 53.4 H11.84 A1.2400000000000002 1.2400000000000002 0 0 1 10.6 52.16 V11.84 A1.2400000000000002 1.2400000000000002 0 0 1 11.84 10.6Z"/>
+  <path fill-rule="evenodd" fill="url(#seal_09_ma-goldRev)" d="M11.012 8.53 H52.988 A2.482 2.482 0 0 1 55.47 11.012 V52.988 A2.482 2.482 0 0 1 52.988 55.47 H11.012 A2.482 2.482 0 0 1 8.53 52.988 V11.012 A2.482 2.482 0 0 1 11.012 8.53Z M11.84 10.6 H52.16 A1.2400000000000002 1.2400000000000002 0 0 1 53.4 11.84 V52.16 A1.2400000000000002 1.2400000000000002 0 0 1 52.16 53.4 H11.84 A1.2400000000000002 1.2400000000000002 0 0 1 10.6 52.16 V11.84 A1.2400000000000002 1.2400000000000002 0 0 1 11.84 10.6Z"/>
+  <path d="M11.012 8.53 H52.988 A2.482 2.482 0 0 1 55.47 11.012 V52.988 A2.482 2.482 0 0 1 52.988 55.47 H11.012 A2.482 2.482 0 0 1 8.53 52.988 V11.012 A2.482 2.482 0 0 1 11.012 8.53Z" fill="none" stroke="#FFFFFF" stroke-width=".8" opacity=".5"/>
+  <path d="M10 6 H54 A4 4 0 0 1 58 10 V54 A4 4 0 0 1 54 58 H10 A4 4 0 0 1 6 54 V10 A4 4 0 0 1 10 6Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M11.84 10.6 H52.16 A1.2400000000000002 1.2400000000000002 0 0 1 53.4 11.84 V52.16 A1.2400000000000002 1.2400000000000002 0 0 1 52.16 53.4 H11.84 A1.2400000000000002 1.2400000000000002 0 0 1 10.6 52.16 V11.84 A1.2400000000000002 1.2400000000000002 0 0 1 11.84 10.6Z" fill="none" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <rect x="10.6" y="10.6" width="42.8" height="42.8" rx="1.4" fill="url(#seal_09_ma-field)"/>
+  <rect x="13.4" y="13.4" width="37.2" height="37.2" rx="1" fill="none" stroke="#D69A2A" stroke-width=".9" opacity=".8"/>
+  <path d="M14 12.4 H30" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".9"/>
+  <g transform="translate(8.6 8.6) rotate(-45) scale(1.12)"><path d="M0 2 C-5.6 0 -7.6 -5 -3.2 -7.6 C-1.6 -6 -.6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C5.6 0 7.6 -5 3.2 -7.6 C1.6 -6 .6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C-3.6 -1 -3.6 -6.4 0 -9.4 C3.6 -6.4 3.6 -1 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><circle cy="-.4" r="1.3" fill="url(#seal_09_ma-goldSmall)" stroke="#2A1008" stroke-width=".7"/><ellipse cx="-1" cy="-6" rx=".7" ry="1.4" fill="#FFFFFF" opacity=".9"/></g><g transform="translate(55.4 8.6) rotate(45) scale(1.12)"><path d="M0 2 C-5.6 0 -7.6 -5 -3.2 -7.6 C-1.6 -6 -.6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C5.6 0 7.6 -5 3.2 -7.6 C1.6 -6 .6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C-3.6 -1 -3.6 -6.4 0 -9.4 C3.6 -6.4 3.6 -1 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><circle cy="-.4" r="1.3" fill="url(#seal_09_ma-goldSmall)" stroke="#2A1008" stroke-width=".7"/><ellipse cx="-1" cy="-6" rx=".7" ry="1.4" fill="#FFFFFF" opacity=".9"/></g><g transform="translate(8.6 55.4) rotate(-135) scale(1.12)"><path d="M0 2 C-5.6 0 -7.6 -5 -3.2 -7.6 C-1.6 -6 -.6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C5.6 0 7.6 -5 3.2 -7.6 C1.6 -6 .6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C-3.6 -1 -3.6 -6.4 0 -9.4 C3.6 -6.4 3.6 -1 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><circle cy="-.4" r="1.3" fill="url(#seal_09_ma-goldSmall)" stroke="#2A1008" stroke-width=".7"/><ellipse cx="-1" cy="-6" rx=".7" ry="1.4" fill="#FFFFFF" opacity=".9"/></g><g transform="translate(55.4 55.4) rotate(135) scale(1.12)"><path d="M0 2 C-5.6 0 -7.6 -5 -3.2 -7.6 C-1.6 -6 -.6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C5.6 0 7.6 -5 3.2 -7.6 C1.6 -6 .6 -3 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 2 C-3.6 -1 -3.6 -6.4 0 -9.4 C3.6 -6.4 3.6 -1 0 2Z" fill="url(#seal_09_ma-pink)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/><circle cy="-.4" r="1.3" fill="url(#seal_09_ma-goldSmall)" stroke="#2A1008" stroke-width=".7"/><ellipse cx="-1" cy="-6" rx=".7" ry="1.4" fill="#FFFFFF" opacity=".9"/></g>
+</svg>

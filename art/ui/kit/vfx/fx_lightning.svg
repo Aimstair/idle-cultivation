@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="320" viewBox="0 0 64 160">
+  <defs>
+    <linearGradient id="fx_lightning-glow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="160">
+      <stop offset="0" stop-color="#6C5CE0" stop-opacity=".25"/>
+      <stop offset=".15" stop-color="#6C5CE0" stop-opacity=".7"/>
+      <stop offset=".85" stop-color="#5A7CE8" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#5A7CE8" stop-opacity=".2"/>
+    </linearGradient>
+    <linearGradient id="fx_lightning-mid" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="160">
+      <stop offset="0" stop-color="#B8A8FF" stop-opacity=".4"/>
+      <stop offset=".12" stop-color="#B8A8FF" stop-opacity=".95"/>
+      <stop offset=".88" stop-color="#A8C4FF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#A8C4FF" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="fx_lightning-core" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="160">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".6"/>
+      <stop offset=".1" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset=".9" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".5"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- outer violet-blue glow -->
+    <path d="M34 3L24 46L38 52L20 100L34 104L27 157" stroke="url(#fx_lightning-glow)" stroke-width="15"/>
+    <path d="M24 46L10 76L14 78L5 100" stroke="url(#fx_lightning-glow)" stroke-width="9"/>
+    <path d="M38 52L52 80L48 82L59 108" stroke="url(#fx_lightning-glow)" stroke-width="9"/>
+    <path d="M34 104L44 128L40 130L46 146" stroke="url(#fx_lightning-glow)" stroke-width="7"/>
+    <!-- mid glow -->
+    <path d="M34 3L24 46L38 52L20 100L34 104L27 157" stroke="url(#fx_lightning-mid)" stroke-width="7"/>
+    <path d="M24 46L10 76L14 78L5 100" stroke="url(#fx_lightning-mid)" stroke-width="4"/>
+    <path d="M38 52L52 80L48 82L59 108" stroke="url(#fx_lightning-mid)" stroke-width="4"/>
+    <path d="M34 104L44 128L40 130L46 146" stroke="url(#fx_lightning-mid)" stroke-width="3"/>
+    <!-- white core -->
+    <path d="M34 3L24 46L38 52L20 100L34 104L27 157" stroke="url(#fx_lightning-core)" stroke-width="3.2"/>
+    <path d="M24 46L10 76L14 78L5 100" stroke="url(#fx_lightning-core)" stroke-width="1.6"/>
+    <path d="M38 52L52 80L48 82L59 108" stroke="url(#fx_lightning-core)" stroke-width="1.6"/>
+    <path d="M34 104L44 128L40 130L46 146" stroke="url(#fx_lightning-core)" stroke-width="1.2"/>
+  </g>
+</svg>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hub · visual target</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Nunito:wght@700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E9%87%91%E4%B8%B9%E7%AA%81%E7%A0%B4%E6%B0%B4%E6%9E%97%E6%9C%88%E6%88%98%E4%BF%AE%E7%82%BC">
+<style>
+body{margin:0;background:#1E1A2A}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#FFF3D6}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+/* thick outlined game text */
+.st{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif;font-weight:800;color:#FFFFFF;line-height:1;white-space:nowrap;text-shadow:1.6px 0 #2A1008,-1.6px 0 #2A1008,0 1.6px #2A1008,0 -1.6px #2A1008,1.2px 1.2px #2A1008,-1.2px 1.2px #2A1008,1.2px -1.2px #2A1008,-1.2px -1.2px #2A1008,0 3px 0 #2A1008}
+/* illustrated rail icon: object breaks out of a small round backing */
+.ico{position:absolute;width:64px;height:74px}
+.ico .disc{position:absolute;left:9px;top:10px;width:46px;height:46px;box-sizing:border-box;border-radius:50%;background:radial-gradient(circle at 38% 28%,rgba(255,255,255,.5),rgba(255,255,255,0) 45%),var(--d);border:2.5px solid #2A1008;box-shadow:inset 0 0 0 2px rgba(255,231,160,.8),0 3px 0 rgba(20,8,4,.45)}
+.ico>img{position:absolute;left:0;top:0;filter:drop-shadow(0 2px 0 rgba(20,8,4,.4))}
+.ico>svg{position:absolute;left:0;top:0;width:64px;height:64px;overflow:visible;filter:drop-shadow(0 2px 0 rgba(20,8,4,.4))}
+.ico .nm{position:absolute;left:50%;top:56px;transform:translateX(-50%);font-size:13px}
+.bdg{position:absolute;right:-1px;top:0;min-width:21px;height:21px;padding:0 5px;box-sizing:border-box;border-radius:11px;background:radial-gradient(circle at 35% 28%,#FF9A7A,#E01C0C 55%,#8E0A04);border:2px solid #FFFFFF;box-shadow:0 0 0 1.5px #2A1008,0 2px 0 1.5px rgba(20,8,4,.5);font:800 12.5px/17px "Baloo 2",sans-serif;color:#FFFFFF;text-align:center;z-index:3}
+.chip{position:absolute;padding:2px 6px 1px;border-radius:8px;background:linear-gradient(#3A190C,#1A0804);border:1.5px solid #E8B657;box-shadow:0 0 0 1px #2A1008;font-size:11px;z-index:3}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes breathe{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
+@keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:1}100%{transform:translateY(-200px) scale(1.1);opacity:0}}
+@keyframes drift{0%{transform:translate(0,0) rotate(0);opacity:0}10%{opacity:.95}100%{transform:translate(-160px,260px) rotate(320deg);opacity:0}}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes hover{0%,100%{transform:translateY(0) rotate(-38deg)}50%{transform:translateY(-10px) rotate(-34deg)}}
+@keyframes trail{0%,100%{opacity:.35}50%{opacity:.9}}
+@keyframes sway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes puff{0%{transform:translateY(4px) scale(.6);opacity:0}30%{opacity:.95}100%{transform:translateY(-12px) scale(1.25);opacity:0}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes twinkle{0%,100%{transform:scale(.4);opacity:.2}50%{transform:scale(1.15);opacity:1}}
+@keyframes svsweep{0%{transform:translateX(-40px)}60%,100%{transform:translateX(340px)}}
+@keyframes wobble{0%,92%,100%{transform:rotate(0)}94%{transform:rotate(-9deg)}96%{transform:rotate(8deg)}98%{transform:rotate(-4deg)}}
+.halo{position:absolute;left:105px;top:200px;width:180px;height:180px;border-radius:50%;border:2px dashed rgba(255,231,160,.85);animation:spin 18s linear infinite}
+.halo2{position:absolute;left:121px;top:216px;width:148px;height:148px;border-radius:50%;border:1.5px dotted rgba(255,246,214,.9);animation:spin 26s linear infinite reverse}
+.breath{position:absolute;left:55px;top:226px;width:280px;height:280px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,231,160,.5),rgba(255,231,160,0));animation:breathe 4s ease-in-out infinite}
+.mote{position:absolute;width:6px;height:6px;border-radius:50%;background:#FFF0B8;box-shadow:0 0 8px 2px rgba(255,224,138,.9);animation:rise 4.5s ease-out infinite}
+.mote.c{background:#B8E8FF;box-shadow:0 0 8px 2px rgba(110,180,255,.9)}
+.petal{position:absolute;width:9px;height:6px;border-radius:60% 0 60% 0;background:#F7B6C8;animation:drift 9s linear infinite}
+.pulse{animation:pulse 2.2s ease-in-out infinite}
+.fsword{position:absolute;left:276px;top:300px;width:22px;height:150px;animation:hover 3.6s ease-in-out infinite;transform-origin:50% 50%}
+.ftrail{animation:trail 3.6s ease-in-out infinite}
+.sway{transform-origin:32px 2px;animation:sway 3.2s ease-in-out infinite}
+.puff{transform-box:fill-box;transform-origin:center;animation:puff 2.6s ease-out infinite}
+.wheel{transform-origin:32px 32px;animation:spin 16s linear infinite}
+.bob{animation:bob 2.4s ease-in-out infinite}
+.tw{transform-box:fill-box;transform-origin:center;animation:twinkle 1.9s ease-in-out infinite}
+.svshine{animation:svsweep 3.4s ease-in-out infinite}
+.sway2{transform-origin:50% 8%;animation:sway 3.2s ease-in-out infinite}
+.wob{transform-origin:50% 90%;animation:wobble 4s ease-in-out infinite}
+.ring{position:absolute;border-radius:50%;border:2.5px dashed rgba(255,231,160,.9);animation:spin 10s linear infinite}
+@media (prefers-reduced-motion: reduce){.halo,.halo2,.breath,.mote,.petal,.pulse,.fsword,.ftrail,.sway,.puff,.wheel,.bob,.tw,.svshine,.wob,.ring,.sway2{animation:none!important}.mote,.petal{display:none}}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:#F6D9B8">
+
+  <!-- ===== PAINTED WORLD (unchanged) ===== -->
+  <svg width="390" height="844" viewBox="0 0 390 844" style="position:absolute;inset:0" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8E7BC9"/><stop offset=".32" stop-color="#E7A9B8"/><stop offset=".55" stop-color="#FAD9B0"/><stop offset=".8" stop-color="#FCEFD6"/><stop offset="1" stop-color="#F3E6CF"/></linearGradient>
+      <radialGradient id="sun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF8E0"/><stop offset=".4" stop-color="#FFE6A8" stop-opacity=".9"/><stop offset="1" stop-color="#FFD48A" stop-opacity="0"/></radialGradient>
+      <linearGradient id="mFar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B49BD3"/><stop offset="1" stop-color="#E9C6CF" stop-opacity=".2"/></linearGradient>
+      <linearGradient id="mMid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7E6AAE"/><stop offset="1" stop-color="#C9A9C7" stop-opacity=".3"/></linearGradient>
+      <linearGradient id="mNear" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A4C86"/><stop offset="1" stop-color="#8F7AA8" stop-opacity=".6"/></linearGradient>
+      <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFF4EC" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+      <linearGradient id="cliff" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8C7FA6"/><stop offset="1" stop-color="#4E4268"/></linearGradient>
+      <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E2EE"/><stop offset="1" stop-color="#B8ADC8"/></linearGradient>
+      <radialGradient id="aura" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFE7A0" stop-opacity=".9"/><stop offset=".5" stop-color="#F5C35A" stop-opacity=".35"/><stop offset="1" stop-color="#F5C35A" stop-opacity="0"/></radialGradient>
+      <linearGradient id="lotus" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE3EC"/><stop offset="1" stop-color="#F09BB6"/></linearGradient>
+      <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    </defs>
+    <rect width="390" height="844" fill="url(#sky)"/>
+    <circle cx="275" cy="235" r="110" fill="url(#sun)"/>
+    <circle cx="275" cy="235" r="34" fill="#FFF6DD" opacity=".95"/>
+    <g stroke="#5A4C86" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"><path d="M60 190 q8 -8 16 0 q8 -8 16 0"/><path d="M96 172 q6 -6 12 0 q6 -6 12 0"/><path d="M318 160 q6 -6 12 0 q6 -6 12 0"/></g>
+    <path d="M300 300 Q318 250 336 300 Q330 316 318 320 Q306 316 300 300Z" fill="url(#mFar)"/>
+    <path d="M316 318 V352" stroke="#FFFFFF" stroke-width="3" opacity=".7"/>
+    <path d="M40 270 Q58 228 80 270 Q72 286 60 288 Q46 284 40 270Z" fill="url(#mFar)"/>
+    <path d="M0 380 L0 320 Q30 290 56 312 Q90 250 128 300 Q160 270 190 292 Q228 236 270 288 Q306 262 340 284 Q366 270 390 284 V380Z" fill="url(#mFar)"/>
+    <g transform="translate(118 262)" fill="#6A5A92" opacity=".85"><path d="M0 18 H20 L10 8Z"/><rect x="4" y="18" width="12" height="7"/><path d="M-2 25 H22 L10 15Z"/><rect x="5" y="25" width="10" height="8"/></g>
+    <rect x="0" y="330" width="390" height="60" fill="url(#mist)"/>
+    <path d="M0 450 L0 380 Q40 344 80 372 Q120 320 166 368 Q200 344 236 366 Q280 318 322 362 Q356 344 390 360 V450Z" fill="url(#mMid)"/>
+    <rect x="0" y="410" width="390" height="60" fill="url(#mist)"/>
+    <g fill="#4A3E70" opacity=".8"><path d="M30 440 l10 -40 l10 40z"/><path d="M44 446 l8 -30 l8 30z"/><path d="M350 436 l9 -36 l9 36z"/></g>
+    <path d="M-10 844 L-10 470 Q20 440 56 470 L76 560 L62 700 L80 844Z" fill="url(#mNear)"/>
+    <path d="M400 844 L400 480 Q368 452 334 484 L318 580 L332 720 L312 844Z" fill="url(#mNear)"/>
+    <g stroke="#5A3A2E" stroke-width="4" stroke-linecap="round" fill="none"><path d="M398 118 Q350 128 316 150 Q300 160 288 176"/><path d="M340 136 Q336 116 344 104"/></g>
+    <g fill="#F7B6C8" stroke="#E58AA5" stroke-width="1"><circle cx="318" cy="146" r="6"/><circle cx="300" cy="166" r="5"/><circle cx="344" cy="104" r="6"/><circle cx="356" cy="128" r="5"/><circle cx="286" cy="178" r="4"/></g>
+    <ellipse cx="195" cy="566" rx="150" ry="36" fill="#3E3456" opacity=".35" filter="url(#blur6)"/>
+    <path d="M60 540 Q195 506 330 540 L318 580 Q195 612 72 580Z" fill="url(#cliff)"/>
+    <ellipse cx="195" cy="540" rx="135" ry="30" fill="url(#stone)" stroke="#6A5E86" stroke-width="2"/>
+    <ellipse cx="195" cy="540" rx="104" ry="22" fill="none" stroke="#9F93B6" stroke-width="2"/>
+    <g stroke="#8E82A8" stroke-width="2.4" stroke-linecap="round"><path d="M110 534 h10 M110 540 h4 M118 540 h4"/><path d="M270 534 h10 M270 540 h10"/><path d="M188 559 h12 M188 564 h12"/></g>
+    <circle cx="195" cy="400" r="150" fill="url(#aura)"/>
+    <ellipse cx="195" cy="548" rx="92" ry="12" fill="#2E2450" opacity=".35" filter="url(#blur6)"/>
+    <rect x="0" y="610" width="390" height="234" fill="#1E1428" opacity=".32"/>
+    <rect x="0" y="0" width="390" height="130" fill="#1E1428" opacity=".22"/>
+  </svg>
+
+  <!-- ===== LIVE VFX (behind the character) ===== -->
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none">
+    <span class="breath"></span><span class="halo"></span><span class="halo2"></span>
+  </div>
+
+  <!-- ===== THE CULTIVATOR (generated master art, Sheet A2) ===== -->
+  <img src="/_blob/d8e5607b5f30819529186492d8edf8e2" alt="" width="250" height="344" class="bob" style="position:absolute;left:70px;top:208px;animation-duration:4s;filter:drop-shadow(0 0 14px rgba(255,236,190,.55))">
+  <span aria-hidden="true" class="pulse" style="position:absolute;left:171px;top:378px;width:48px;height:48px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,240,180,.85),rgba(255,214,120,0));mix-blend-mode:screen;animation-duration:3s"></span>
+
+  <!-- ===== LIVE VFX (front): flying sword, motes, petals ===== -->
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none">
+    <span class="mote" style="left:150px;top:500px;animation-delay:0s"></span>
+    <span class="mote c" style="left:236px;top:510px;animation-delay:.7s"></span>
+    <span class="mote" style="left:176px;top:490px;animation-delay:1.4s"></span>
+    <span class="mote c" style="left:214px;top:500px;animation-delay:2.1s"></span>
+    <span class="mote" style="left:126px;top:470px;animation-delay:2.8s"></span>
+    <span class="mote c" style="left:262px;top:480px;animation-delay:3.5s"></span>
+    <span class="petal" style="left:320px;top:150px;animation-delay:0s"></span>
+    <span class="petal" style="left:350px;top:110px;animation-delay:3s"></span>
+    <span class="petal" style="left:300px;top:180px;animation-delay:6s"></span>
+  </div>
+
+  <!-- ===== UI KIT: Fable SVG assets, text rendered on top ===== -->
+  <!-- portrait -->
+  <div style="position:absolute;left:4px;top:4px;width:76px;height:76px">
+    <span style="position:absolute;left:9px;top:10px;width:58px;height:56px;overflow:hidden;background:radial-gradient(circle at 50% 30%,#4E6AC0,#1A2450)"><img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="150" height="225" style="position:absolute;left:-46px;top:-14px"></span>
+    <img src="/_blob/c3f9d99f4edf916dd0a7cb1708d48df6" alt="" width="76" height="76" style="position:absolute;inset:0">
+    <span class="brush" style="position:absolute;left:-2px;bottom:-6px;width:27px;height:27px;border-radius:4px;background:radial-gradient(circle at 35% 30%,#F04A30,#9E1208);border:2px solid #FFE7A0;box-shadow:0 0 0 1.5px #2A1008;color:#FFE7A0;display:grid;place-items:center;font-size:12px;line-height:.85;text-align:center;transform:rotate(-8deg)">金<br>丹</span>
+  </div>
+  <!-- name / realm / progress -->
+  <div style="position:absolute;left:84px;top:7px;width:128px;height:24px"><img src="/_blob/399ac584622acba2291c016ab8dd0d2c" alt="" width="128" height="24" style="position:absolute;inset:0"><span style="position:absolute;left:10px;top:0;bottom:0;display:flex;align-items:center;gap:6px"><span class="brush" style="font-size:17px;color:#FFE7A0;line-height:1;text-shadow:0 2px 0 #2A1008">林月</span><span class="st" style="font-size:11px;color:#F2D9A8">Lin Yue</span></span></div>
+  <span class="st" style="position:absolute;left:88px;top:35px;font-size:13.5px;color:#FFE7A0">Golden Core 4</span>
+  <div style="position:absolute;left:84px;top:54px;width:128px;height:16px"><span style="position:absolute;left:4px;top:4px;width:89px;height:8px;border-radius:4px;background:linear-gradient(#9AFFD8,#2FC49A 55%,#0E6A50);box-shadow:0 0 6px #6FE0B4"></span><img src="/_blob/f79934828e73a8c8e25b0041c5d11628" alt="" width="128" height="16" style="position:absolute;inset:0"><span class="st" style="position:absolute;inset:0;display:grid;place-items:center;font-size:10px">74%</span></div>
+  <!-- currencies -->
+  <div style="position:absolute;left:222px;top:8px;width:108px;height:26px"><img src="/_blob/7fc2b85d7f28a509dc8a6b5788ead7f5" alt="" width="108" height="26" style="position:absolute;inset:0"><img src="/_blob/5577fd3a7a73fbe5a53552e73fbd0b54" alt="" width="32" height="32" style="position:absolute;left:-13px;top:-3px"><span class="st" style="position:absolute;right:26px;top:6px;font-size:14px">48.2K</span></div>
+  <div style="position:absolute;left:222px;top:40px;width:108px;height:26px"><img src="/_blob/7fc2b85d7f28a509dc8a6b5788ead7f5" alt="" width="108" height="26" style="position:absolute;inset:0"><img src="/_blob/403e191209b2a78ce7d3ee97eda3f0fd" alt="" width="32" height="32" style="position:absolute;left:-13px;top:-3px"><span class="st" style="position:absolute;right:26px;top:6px;font-size:14px">320</span><img src="/_blob/576bf76e071cff32d4c4a1a4f17e49d0" alt="Buy Jade" width="26" height="26" style="position:absolute;right:-6px;top:0"></div>
+  <div class="ico" style="left:332px;top:0;width:56px;height:70px"><img src="/_blob/7f33b9433ed3745197a7a6d4dcbeb913" alt="" width="56" height="56"><span class="st nm" style="top:50px;font-size:12px">Menu</span></div>
+
+  <!-- next goal bubble -->
+  <div style="position:absolute;left:98px;top:84px;width:216px;height:80px">
+    <img src="/_blob/73af0ea67d9806fb38c50003b2d37b6a" alt="" width="216" height="80" style="position:absolute;inset:0">
+    <span class="st" style="position:absolute;left:14px;width:82px;top:7px;text-align:center;font-size:11.5px">Next Goal</span>
+    <div style="position:absolute;left:14px;top:28px;width:150px;display:flex;flex-direction:column;gap:6px">
+      <span style="font-weight:800;font-size:11.5px;color:#FFF3D6;line-height:1.1">Defeat the Bamboo Viper King</span>
+      <span style="display:flex;align-items:center;gap:6px"><span style="position:relative;flex:1;height:9px;border-radius:5px;background:#120402;border:1.5px solid #8A5A1E;overflow:hidden"><span style="position:absolute;left:0;top:0;bottom:0;width:66%;background:linear-gradient(#FFE7A0,#E8A030)"></span></span><span class="st" style="font-size:11px;color:#FFE7A0">2/3</span></span>
+    </div>
+    <span style="position:absolute;left:168px;top:24px;width:30px;height:30px"><img src="/_blob/403e191209b2a78ce7d3ee97eda3f0fd" alt="" width="30" height="30"><span class="st" style="position:absolute;right:-6px;bottom:-4px;font-size:11px">×25</span></span>
+    <span style="position:absolute;left:162px;top:54px;width:44px;height:24px"><img src="/_blob/d894820f289d8b75d63eb1621e282a23" alt="" width="44" height="24" style="position:absolute;inset:0"><span class="st" style="position:absolute;inset:0;display:grid;place-items:center;font-size:12px;padding-bottom:2px">Go!</span></span>
+  </div>
+
+  <!-- left rail -->
+  <div class="ico" style="left:6px;top:90px"><img class="" src="/_blob/6062ab7bd25e491bd7f87d31623ba73c" alt="" width="64" height="64"><span class="st nm">Map</span></div>
+  <div class="ico" style="left:6px;top:166px"><img class="" src="/_blob/cccb2d14333734676064ee76456cea53" alt="" width="64" height="64"><span class="bdg">2</span><span class="st nm">Alchemy</span></div>
+  <div class="ico" style="left:6px;top:242px"><img class="" src="/_blob/83498e901920bf7428d580a9b85dd3e4" alt="" width="64" height="64"><span class="bdg">!</span><span class="st nm">Gear</span></div>
+  <div class="ico" style="left:6px;top:318px"><img class="wob" src="/_blob/c7d46eef739579a57f1fa31bbb573e1e" alt="" width="64" height="64"><span class="st nm">Pets</span></div>
+  <div class="ico" style="left:6px;top:394px"><img class="" src="/_blob/809591adf12f3f3086ad59ce42526b46" alt="" width="64" height="64"><span class="bdg">3</span><span class="st nm">Mail</span></div>
+  <div class="ico" style="left:6px;top:478px"><img class="wob" src="/_blob/6e5138f84a4e8c8d6d7b3ba95a3992c0" alt="" width="64" height="64"><span class="st" style="position:absolute;left:-2px;top:-12px;padding:3px 7px 2px;border-radius:10px;background:linear-gradient(#FFD45A,#F07A1A);border:2px solid #2A1008;font-size:10.5px;transform:rotate(-8deg);z-index:3">Best Value!</span><span class="st nm">Starter</span></div>
+
+  <!-- right rail -->
+  <div class="ico" style="right:6px;top:90px"><img class="" src="/_blob/e84dcfde426934a738e849a03a28f758" alt="" width="64" height="64"><span class="bdg">2</span><span class="st nm">Quests</span></div>
+  <div class="ico" style="right:6px;top:166px"><img class="" src="/_blob/1f5b3abd9187ea8a8f60d365af25b6ff" alt="" width="64" height="64"><span class="st" style="position:absolute;left:50%;top:-6px;transform:translateX(-50%);padding:2px 6px 1px;border-radius:8px;background:linear-gradient(#9AFF6A,#2FA01A);border:2px solid #2A1008;font-size:10px;z-index:3">FREE</span><span class="st nm">Shop</span></div>
+  <div class="ico" style="right:6px;top:242px"><img class="sway2" src="/_blob/e0cc9196b12095158f6aaaa99a63000b" alt="" width="64" height="64"><span class="chip st" style="left:50%;top:-6px;transform:translateX(-50%);font-size:10px;color:#FFE7A0">1d 13h</span><span class="st nm">Event</span></div>
+  <div class="ico" style="right:6px;top:318px"><img class="" src="/_blob/2745b04a9b0cf6fe4ec2eadea9b0e63c" alt="" width="64" height="64"><span class="st nm">Rebirth</span></div>
+  <div class="ico" style="right:6px;top:394px"><img class="" src="/_blob/4e3bbd9444aa0c73398e2ebbdb2c0d8d" alt="" width="64" height="64"><span class="st nm">Ranks</span></div>
+
+  <!-- HP / Qi pillars -->
+  <div aria-label="HP" style="position:absolute;left:76px;top:296px;width:24px;height:206px">
+    <span style="position:absolute;left:3px;right:3px;top:8px;bottom:4px;border-radius:4px;background:#1A0804;border:2px solid #E8B657;box-shadow:0 0 0 1.5px #2A1008;overflow:hidden"><span style="position:absolute;left:0;right:0;bottom:0;height:88%;background:rgba(240,120,110,.3)"></span><span style="position:absolute;left:0;right:0;bottom:0;height:74%;background:linear-gradient(90deg,#8E140A,#F0503A 45%,#A81A0E)"></span><span style="position:absolute;left:3px;top:0;bottom:0;width:3px;background:rgba(255,255,255,.35)"></span></span>
+    <img src="/_blob/b5f41157c4ff93ead35ecedaace1d17c" alt="" width="30" height="30" style="position:absolute;left:-3px;top:-20px">
+  </div>
+  <div aria-label="Qi" style="position:absolute;right:76px;top:296px;width:24px;height:206px">
+    <span class="pulse" style="position:absolute;inset:-12px;border-radius:14px;background:radial-gradient(closest-side,rgba(127,230,238,.8),rgba(127,230,238,0))"></span>
+    <span style="position:absolute;left:3px;right:3px;top:8px;bottom:4px;border-radius:4px;background:#1A0804;border:2px solid #E8B657;box-shadow:0 0 0 1.5px #2A1008;overflow:hidden"><span style="position:absolute;inset:0;background:linear-gradient(90deg,#0E6E78,#8FF0F6 45%,#1A8E98)"></span><span style="position:absolute;left:3px;top:0;bottom:0;width:3px;background:rgba(255,255,255,.5)"></span></span>
+    <img src="/_blob/6b3db8712fc81758092d9d1bfbfa0036" alt="" width="30" height="30" style="position:absolute;left:-3px;top:-22px">
+  </div>
+
+  <!-- location ribbon -->
+  <div style="position:absolute;left:50%;top:560px;transform:translateX(-50%);width:236px;height:62px">
+    <img src="/_blob/5fa1bdf6a24869178655a966d6564250" alt="" width="236" height="42" style="position:absolute;left:0;top:0">
+    <span class="brush" style="position:absolute;left:22px;top:2px;width:36px;height:36px;display:grid;place-items:center;font-size:22px;color:#FFFFFF;text-shadow:0 0 2px #2A1008,0 2px 0 #2A1008">水</span>
+    <span class="st" style="position:absolute;left:62px;width:122px;top:13px;text-align:center;font-size:15px">Moonlit Lake</span>
+    <span style="position:absolute;left:62px;top:43px;display:flex;align-items:baseline;gap:7px"><span class="st" style="font-size:15px;color:#9AF6FF">+96 Qi/s</span><span class="st" style="font-size:12.5px;color:#FFE7A0">×1.32</span></span>
+  </div>
+
+  <!-- break through -->
+  <div style="position:absolute;left:50%;top:620px;transform:translateX(-50%);width:270px;height:106px">
+    <span class="pulse" style="position:absolute;left:20px;right:20px;top:22px;bottom:26px;border-radius:30px;background:rgba(255,200,110,.9);filter:blur(16px)"></span>
+    <img src="/_blob/525c21183bd78eb361b80cf728f41ed2" alt="" width="270" height="106" style="position:absolute;inset:0">
+    <svg width="270" height="106" viewBox="0 0 270 106" style="position:absolute;inset:0" aria-hidden="true">
+      <defs><linearGradient id="btTxt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset=".5" stop-color="#FFD45A"/><stop offset="1" stop-color="#D69A2A"/></linearGradient></defs>
+      <text x="72" y="64" text-anchor="middle" font-family="Ma Shan Zheng, Kaiti SC, serif" font-size="38" fill="url(#btTxt)" stroke="#2A1008" stroke-width="5" paint-order="stroke">突破</text>
+      <text x="179" y="50" text-anchor="middle" font-family="Baloo 2, Nunito, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" stroke="#4A0A04" stroke-width="5.5" paint-order="stroke">Break Through</text>
+      <text x="179" y="67" text-anchor="middle" font-family="Baloo 2, Nunito, sans-serif" font-weight="800" font-size="12" fill="#FFE7A0" stroke="#4A0A04" stroke-width="3.5" paint-order="stroke">→ Golden Core 5</text>
+    </svg>
+  </div>
+
+  <!-- auto -->
+  <div class="ico" style="right:4px;top:660px;width:56px;height:66px"><img src="/_blob/1e4c496ca7878ee7b89997c88a3973d7" alt="" width="56" height="56"><span class="st nm" style="top:48px;font-size:12px">Auto</span></div>
+
+  <!-- activities -->
+  <div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:118px;background:linear-gradient(rgba(26,8,4,0),rgba(26,8,4,.82) 40%,#1A0804)"></div>
+  <img src="/_blob/0cceae436ae8089344b4a87a0b773119" alt="" width="390" height="16" style="position:absolute;left:0;bottom:98px">
+  <div style="position:absolute;left:22px;bottom:8px;width:88px;height:102px"><img src="/_blob/31c716eae0c54cdb85b314c6bbfd1271" alt="" width="80" height="80" style="position:absolute;left:4px;top:2px;opacity:.95"><span class="chip st" style="right:-4px;top:0;color:#FFD9C8">Peak Z2</span><span class="st" style="position:absolute;left:50%;bottom:2px;transform:translateX(-50%);font-size:15px;color:#FFD9C8">Battle</span></div>
+  <div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:104px;height:114px">
+    <span class="pulse" style="position:absolute;left:2px;top:2px;width:100px;height:100px;border-radius:50%;background:radial-gradient(closest-side,rgba(160,255,214,.9),rgba(63,199,154,.35) 60%,rgba(63,199,154,0))"></span>
+    <span class="ring" style="left:10px;top:10px;width:84px;height:84px;box-sizing:border-box"></span>
+    <img class="bob" src="/_blob/ceab8a5090c2dff5dd050eceb500d00b" alt="" width="92" height="92" style="position:absolute;left:6px;top:2px">
+    <span class="chip st" style="right:-8px;top:6px;color:#B8FFE0">×1.32</span>
+    <span class="st" style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);font-size:16px;color:#C8FFE6">Cultivate</span>
+  </div>
+  <div style="position:absolute;right:22px;bottom:8px;width:88px;height:102px"><img src="/_blob/34063c1836703951c98627949d5178ba" alt="" width="80" height="80" style="position:absolute;left:4px;top:2px;opacity:.95"><span class="chip st" style="right:-4px;top:0;color:#DCD6F5">×1.10</span><span class="st" style="position:absolute;left:50%;bottom:2px;transform:translateX(-50%);font-size:15px;color:#DCD6F5">Train</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="herb_spirit_rice-grain" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".35" stop-color="#FFF6C8"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#C98A22"/>
+    </radialGradient>
+    <linearGradient id="herb_spirit_rice-leaf" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5E8A2A"/>
+      <stop offset="1" stop-color="#C8E070"/>
+    </linearGradient>
+    <radialGradient id="herb_spirit_rice-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFE68A" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FFE68A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="herb_spirit_rice-string" cx=".4" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <g id="herb_spirit_rice-g">
+      <ellipse rx="2" ry="2.9" fill="url(#herb_spirit_rice-grain)" stroke="#2A1008" stroke-width="1.3"/>
+    </g>
+  </defs>
+
+  <ellipse cx="32" cy="57" rx="14" ry="2.2" fill="#2A1008" opacity=".3"/>
+  <ellipse cx="32" cy="24" rx="26" ry="18" fill="url(#herb_spirit_rice-glow)"/>
+
+  <!-- stems below the tie -->
+  <path d="M27 48L25.5 56M30.5 48L30 57M34 48L35 57M37 48L39 56" fill="none" stroke="#2A1008" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M27 48L25.5 56M30.5 48L30 57M34 48L35 57M37 48L39 56" fill="none" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- leaf -->
+  <path d="M33 45C36 36 42 30 49 27C43 33 38 39 35 45Z" fill="url(#herb_spirit_rice-leaf)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- stalks -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M30 46C29 36 27 28 24 20M32 45C33 34 35 24 38 14M35 46C38 38 44 32 50 28M29 46C26 40 20 36 14 36" stroke="#2A1008" stroke-width="3.4"/>
+    <path d="M30 46C29 36 27 28 24 20M32 45C33 34 35 24 38 14M35 46C38 38 44 32 50 28M29 46C26 40 20 36 14 36" stroke="#E0B840" stroke-width="1.6"/>
+  </g>
+
+  <!-- grain heads -->
+  <use href="#herb_spirit_rice-g" transform="translate(24 20) rotate(-30)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(22 16.5) rotate(-45)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(19 14) rotate(-65)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(15 13.5) rotate(-90)"/>
+
+  <use href="#herb_spirit_rice-g" transform="translate(38 14) rotate(20)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(41 11) rotate(45)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(44.5 9.5) rotate(70)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(48 10.5) rotate(100)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(50.5 13.5) rotate(130)"/>
+
+  <use href="#herb_spirit_rice-g" transform="translate(50 28) rotate(45)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(53 25) rotate(20)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(54.5 21) rotate(0)"/>
+
+  <use href="#herb_spirit_rice-g" transform="translate(14 36) rotate(-60)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(11 33) rotate(-30)"/>
+  <use href="#herb_spirit_rice-g" transform="translate(10 29) rotate(0)"/>
+
+  <!-- highlights -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".9">
+    <path d="M40 10.5L41 9.5"/>
+    <path d="M21.5 15.5L22.5 14.5"/>
+    <path d="M28.5 36C28.3 32 27.5 28 26.5 25"/>
+  </g>
+
+  <!-- red string tie -->
+  <path d="M24.5 43.5C29 45.5 35 45.5 39.5 43.5L40.5 49.5C35 51.5 29 51.5 23.5 49.5Z" fill="url(#herb_spirit_rice-string)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M25.5 45.3C29.5 47 34.5 47 38.5 45.3" fill="none" stroke="#FFB0A0" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <path d="M26 49.5L23 55M28 49.5L27.5 55.5" fill="none" stroke="#2A1008" stroke-width="3" stroke-linecap="round"/>
+  <path d="M26 49.5L23 55M28 49.5L27.5 55.5" fill="none" stroke="#E0401E" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="27" cy="47.5" r="2.2" fill="#FF6A44" stroke="#2A1008" stroke-width="1.6"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216" height="52" viewBox="0 0 108 26">
+  <defs>
+    <linearGradient id="bar_currency-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A0804"/>
+      <stop offset=".55" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#2E130A"/>
+    </linearGradient>
+    <linearGradient id="bar_currency-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="bar_currency-innerShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity=".6"/>
+      <stop offset=".7" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bar_currency-innerLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".2"/>
+    </linearGradient>
+    <path id="bar_currency-shape" d="M13 2 H95 A11 11 0 0 1 95 24 H13 A11 11 0 0 1 13 2 Z"/>
+  </defs>
+
+  <use href="#bar_currency-shape" fill="none" stroke="#2A1008" stroke-width="3.4" stroke-linejoin="round"/>
+  <use href="#bar_currency-shape" fill="url(#bar_currency-rose)"/>
+  <!-- inset trough: shadow at the top, soft light at the bottom edge -->
+  <path d="M13.2 3.4 H94.8 A9.6 9.6 0 0 1 94.8 22.6 H13.2 A9.6 9.6 0 0 1 13.2 3.4 Z"
+    fill="none" stroke="url(#bar_currency-innerShadow)" stroke-width="1.8"/>
+  <path d="M13.2 3.4 H94.8 A9.6 9.6 0 0 1 94.8 22.6 H13.2 A9.6 9.6 0 0 1 13.2 3.4 Z"
+    fill="none" stroke="url(#bar_currency-innerLight)" stroke-width="1.2"/>
+  <use href="#bar_currency-shape" fill="none" stroke="url(#bar_currency-gold)" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>

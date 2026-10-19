@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="fx_glow-outer" gradientUnits="userSpaceOnUse" cx="32" cy="32" r="32">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset=".22" stop-color="#FFFFFF" stop-opacity=".88"/>
+      <stop offset=".5" stop-color="#F6F4FA" stop-opacity=".4"/>
+      <stop offset=".78" stop-color="#ECE8F2" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#E8E4EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fx_glow-core" gradientUnits="userSpaceOnUse" cx="32" cy="32" r="13">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset=".45" stop-color="#FFFFFF" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="32" fill="url(#fx_glow-outer)"/>
+  <circle cx="32" cy="32" r="13" fill="url(#fx_glow-core)"/>
+</svg>

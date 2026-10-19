@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="st_burn-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8A5C"/>
+      <stop offset=".45" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </linearGradient>
+    <linearGradient id="st_burn-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A1A12"/>
+      <stop offset="1" stop-color="#1C0806"/>
+    </linearGradient>
+    <radialGradient id="st_burn-sheen" cx="0.3" cy="0.22" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="st_burn-fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFF2A0"/>
+      <stop offset=".45" stop-color="#FFA020"/>
+      <stop offset="1" stop-color="#E8301A"/>
+    </linearGradient>
+    <linearGradient id="st_burn-core" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF2A0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- chip: coloured rim + dark face -->
+  <rect x="1.3" y="1.3" width="29.4" height="29.4" rx="7.6" fill="url(#st_burn-rim)" stroke="#2A1008" stroke-width="1.3"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_burn-face)" stroke="#2A1008" stroke-width=".8"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_burn-sheen)"/>
+  
+  <path d="M8 2.6 H24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <path d="M2.6 8 V24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".35"/>
+
+  <!-- pictogram -->
+  <path d="M16.5 5.2 C17.2 9.4 21.2 11.4 22.8 15.4 C24.9 20.6 21.3 26.5 16 26.5 C10.5 26.5 7 21.4 8.9 16.4 C9.8 14 11.7 12.8 11.3 9.8 C13 10.9 14 12.5 13.9 14.4 C15.7 12.2 16.9 9.2 16.5 5.2Z" fill="url(#st_burn-fire)" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M16.3 14.4 C16.7 17.1 19.1 18.1 19.5 20.8 C19.9 23.5 17.9 25 16 25 C13.9 25 12.2 23.3 12.8 20.9 C13.1 19.4 14.3 18.6 14.2 17.1 C15.2 17.9 15.6 18.8 15.5 19.7 C16.4 18.1 16.6 16.3 16.3 14.4Z" fill="url(#st_burn-core)"/>
+  <ellipse cx="11.4" cy="17.6" rx=".9" ry="1.9" transform="rotate(18 11.4 17.6)" fill="#FFFFFF" opacity=".75"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="wood_ironwood-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6A3A22"/>
+      <stop offset=".5" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="wood_ironwood-sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".18" stop-color="#CFD6E4" stop-opacity=".55"/>
+      <stop offset=".34" stop-color="#CFD6E4" stop-opacity=".12"/>
+      <stop offset=".6" stop-color="#CFD6E4" stop-opacity="0"/>
+      <stop offset=".85" stop-color="#7E8698" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#7E8698" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="wood_ironwood-end" cx=".4" cy=".35" r=".75">
+      <stop offset="0" stop-color="#8E5A3A"/>
+      <stop offset="1" stop-color="#3A190C"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="31" cy="55.5" rx="22" ry="2.6" fill="#2A1008" opacity=".3"/>
+
+  <g transform="rotate(-18 32 36)">
+    <!-- log body -->
+    <path d="M50 24H15A6 10 0 0 0 15 44H50Z" fill="url(#wood_ironwood-body)"/>
+    <path d="M50 24H15A6 10 0 0 0 15 44H50Z" fill="url(#wood_ironwood-sheen)"/>
+    <!-- dense bark grain -->
+    <g fill="none" stroke="#1A0804" stroke-width="1.1" stroke-linecap="round" opacity=".8">
+      <path d="M14 34H48M16 39.5H48M17 29.5H48"/>
+    </g>
+    <g fill="none" stroke="#8E5A3A" stroke-width=".9" stroke-linecap="round" opacity=".55">
+      <path d="M15 36.5H48M18 41.5H48M18 32H48"/>
+    </g>
+    <!-- end face with tight rings -->
+    <ellipse cx="50" cy="34" rx="6" ry="10" fill="url(#wood_ironwood-end)" stroke="#2A1008" stroke-width="1.4"/>
+    <g fill="none" stroke="#C07A3E" stroke-width="1" opacity=".85">
+      <ellipse cx="50" cy="34" rx="4.4" ry="7.4"/>
+      <ellipse cx="50" cy="34" rx="2.8" ry="4.8"/>
+    </g>
+    <ellipse cx="50" cy="34" rx="1.2" ry="2.2" fill="#C07A3E"/>
+    <path d="M47.5 27.5C46.5 30 46.2 32 46.3 34" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+    <!-- metallic highlight -->
+    <path d="M18 27H44" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".85"/>
+    <!-- outline -->
+    <path d="M50 24H15A6 10 0 0 0 15 44H50" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+</svg>

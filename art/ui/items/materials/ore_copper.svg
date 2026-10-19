@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ore_copper-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4DEEC"/>
+      <stop offset="1" stop-color="#A69EB8"/>
+    </linearGradient>
+    <linearGradient id="ore_copper-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A69EB8"/>
+      <stop offset="1" stop-color="#6E6684"/>
+    </linearGradient>
+    <linearGradient id="ore_copper-front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9C94AE"/>
+      <stop offset="1" stop-color="#574F6A"/>
+    </linearGradient>
+    <linearGradient id="ore_copper-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC890"/>
+      <stop offset=".35" stop-color="#E88A3C"/>
+      <stop offset=".75" stop-color="#B85A1E"/>
+      <stop offset="1" stop-color="#6E300C"/>
+    </linearGradient>
+    <linearGradient id="ore_copper-metal2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0A860"/>
+      <stop offset=".6" stop-color="#C0641E"/>
+      <stop offset="1" stop-color="#5E2608"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="32" cy="56.5" rx="20" ry="2.6" fill="#2A1008" opacity=".3"/>
+
+  <!-- rock chunk: top / left / front faces -->
+  <path d="M15 27L28 19L45 22L55 33L40 38L21 40Z" fill="url(#ore_copper-top)"/>
+  <path d="M9 40L15 27L21 40L17 53Z" fill="url(#ore_copper-left)"/>
+  <path d="M21 40L40 38L55 33L52 47L35 56L17 53Z" fill="url(#ore_copper-front)"/>
+  <g fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M15 27L21 40L17 53"/>
+    <path d="M21 40L40 38L55 33"/>
+    <path d="M40 38L35 56"/>
+  </g>
+
+  <!-- copper nuggets -->
+  <g stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round">
+    <path d="M24 31L31 25L40 27L44 33L36 36.5L26 35.5Z" fill="url(#ore_copper-metal)"/>
+    <path d="M27 45L38 42L45 46.5L40 52.5L30 51.5Z" fill="url(#ore_copper-metal2)"/>
+    <path d="M13 42L17 40L18.5 46L14.5 48Z" fill="url(#ore_copper-metal2)"/>
+    <path d="M47 36L51 34.5L50 41L46.5 42Z" fill="url(#ore_copper-metal)"/>
+  </g>
+  <path d="M34 28L39 29.5L36 33" fill="none" stroke="#2A1008" stroke-width=".9" stroke-linecap="round" opacity=".6"/>
+  <path d="M34 44L40 46" fill="none" stroke="#2A1008" stroke-width=".9" stroke-linecap="round" opacity=".6"/>
+
+  <!-- glints -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+    <path d="M27 30.5L31.5 27.5" stroke-width="1.4" opacity=".9"/>
+    <path d="M30.5 46L35 44.8" stroke-width="1.1" opacity=".7"/>
+    <path d="M17 29L24 24.5" stroke-width="1.2" opacity=".55"/>
+  </g>
+
+  <!-- silhouette outline -->
+  <path d="M9 40L15 27L28 19L45 22L55 33L52 47L35 56L17 53Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

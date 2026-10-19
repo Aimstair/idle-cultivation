@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="robe_t3-cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".6" stop-color="#F3F5FB"/>
+      <stop offset="1" stop-color="#D9E0F0"/>
+    </linearGradient>
+    <linearGradient id="robe_t3-shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A1E7A" stop-opacity="0"/>
+      <stop offset=".6" stop-color="#3A1E7A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3A1E7A" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="robe_t3-violet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAD8FF"/>
+      <stop offset=".45" stop-color="#9A6AE8"/>
+      <stop offset="1" stop-color="#3A1E7A"/>
+    </linearGradient>
+    <linearGradient id="robe_t3-sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6A48B0"/>
+      <stop offset=".5" stop-color="#3A1E7A"/>
+      <stop offset="1" stop-color="#241250"/>
+    </linearGradient>
+    <linearGradient id="robe_t3-silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <linearGradient id="robe_t3-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <!-- silver cloud embroidery glyph -->
+    <g id="robe_t3-cloud">
+      <path d="M-4.5 1.5C-7 1.5-7-2.5-4-2.2C-3.8-5.2 .8-5.6 1.5-2.8C4.2-4.2 7.2-.4 5 1.5Z" fill="url(#robe_t3-silver)" stroke="#7E8698" stroke-width="1" stroke-linejoin="round"/>
+      <path d="M5 1.5Q8.5 1.6 9.2-.8" fill="none" stroke="#7E8698" stroke-width="1" stroke-linecap="round"/>
+      <path d="M-3.2-1.6Q-1.4-3.4 .6-3" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round"/>
+    </g>
+    <path id="robe_t3-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="57.2" rx="17" ry="1.6" fill="#2A1008" opacity=".25"/>
+
+  <!-- violet sleeves -->
+  <g stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round">
+    <path d="M25 11L7 14L6 31Q14 31.5 23 29.5Z" fill="url(#robe_t3-violet)"/>
+    <path d="M39 11L57 14L58 31Q50 31.5 41 29.5Z" fill="url(#robe_t3-violet)"/>
+  </g>
+  <path d="M39 11L57 14L58 31Q50 31.5 41 29.5Z" fill="url(#robe_t3-shade)"/>
+  <!-- silver cuffs -->
+  <g stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round" fill="url(#robe_t3-silver)">
+    <path d="M7 14L11.5 13.2L10.8 30.6L6 31Z"/>
+    <path d="M57 14L52.5 13.2L53.2 30.6L58 31Z"/>
+  </g>
+  <path d="M23 12.6L11.5 14.9" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".9"/>
+  <!-- sleeve clouds -->
+  <use href="#robe_t3-cloud" transform="translate(15.5 23.5) scale(.72)"/>
+  <use href="#robe_t3-cloud" transform="translate(48 23.5) scale(.72)"/>
+
+  <!-- white body -->
+  <path d="M22 10H42L48 56Q32 58.5 16 56Z" fill="url(#robe_t3-cloth)"/>
+  <path d="M22 10H42L48 56Q32 58.5 16 56Z" fill="url(#robe_t3-shade)"/>
+  <!-- violet hem band -->
+  <path d="M16.5 52H47.5L48 56Q32 58.5 16 56Z" fill="url(#robe_t3-violet)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- body clouds -->
+  <use href="#robe_t3-cloud" transform="translate(23 46) scale(.8)"/>
+  <use href="#robe_t3-cloud" transform="translate(41.5 46) scale(.8)"/>
+  <!-- inner collar -->
+  <path d="M27 10L32 19L37 10Z" fill="#FFFFFF" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- crossed violet lapels (under, then over) -->
+  <path d="M22 10H27L32 19L29.5 23.5Z" fill="url(#robe_t3-violet)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M37 10H42L28.5 34H23.5Z" fill="url(#robe_t3-violet)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M37.8 12L26.2 31" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85"/>
+  <!-- body outline -->
+  <path d="M22 10H42L48 56Q32 58.5 16 56Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- thunder-pattern sash -->
+  <path d="M19 33H45L45.8 39H18.2Z" fill="url(#robe_t3-sash)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M20.2 34.3h3.2v3.4h-2.2v-2h1.2M24.6 34.3h3.2v3.4h-2.2v-2h1.2M36.2 34.3h3.2v3.4h-2.2v-2h1.2M40.6 34.3h3.2v3.4h-2.2v-2h1.2" fill="none" stroke="#FFD45A" stroke-width="1" stroke-linejoin="miter"/>
+  <g fill="url(#robe_t3-sash)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M29.5 39.5L27.5 50.5L30.5 51L32 39.5Z"/>
+    <path d="M34.5 39.5L36.5 50.5L33.5 51L32 39.5Z"/>
+  </g>
+  <path d="M29 41.5L28.2 49M35 41.5L35.8 49" fill="none" stroke="#FFD45A" stroke-width=".9" stroke-linecap="round" opacity=".8"/>
+  <!-- gold clasp with violet gem -->
+  <circle cx="32" cy="36" r="3.8" fill="url(#robe_t3-gold)" stroke="#2A1008" stroke-width="1.4"/>
+  <circle cx="32" cy="36" r="1.7" fill="#9A6AE8" stroke="#3A1E7A" stroke-width=".7"/>
+  <ellipse cx="30.6" cy="34.4" rx="1" ry=".6" fill="#FFFFFF" opacity=".9"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#robe_t3-spark" transform="translate(11 8.5) scale(2)"/>
+    <use href="#robe_t3-spark" transform="translate(53 37) scale(1.5)"/>
+  </g>
+</svg>

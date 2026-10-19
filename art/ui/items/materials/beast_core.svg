@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="beast_core-gem" cx=".36" cy=".32" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".3" stop-color="#FFF6D0"/>
+      <stop offset=".65" stop-color="#F2C96A"/>
+      <stop offset="1" stop-color="#B07020"/>
+    </radialGradient>
+    <radialGradient id="beast_core-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFF0B0" stop-opacity=".7"/>
+      <stop offset=".55" stop-color="#FFE08A" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#FFE08A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="beast_core-inner" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#FFF6D0" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#FFF6D0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beast_core-shade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset=".45" stop-color="#8A4E10" stop-opacity="0"/>
+      <stop offset="1" stop-color="#8A4E10" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="32" cy="56.5" rx="15" ry="2.4" fill="#2A1008" opacity=".3"/>
+  <circle cx="32" cy="32" r="27" fill="url(#beast_core-glow)"/>
+
+  <!-- gem -->
+  <circle cx="32" cy="32" r="19" fill="url(#beast_core-gem)"/>
+  <circle cx="32" cy="32" r="19" fill="url(#beast_core-shade)"/>
+
+  <!-- facets: octagonal table and crown lines -->
+  <g fill="none" stroke="#2A1008" stroke-width="1.1" stroke-linejoin="round" opacity=".55">
+    <path d="M27.4 20.9L36.6 20.9L43.1 27.4L43.1 36.6L36.6 43.1L27.4 43.1L20.9 36.6L20.9 27.4Z"/>
+    <path d="M27.4 20.9L24.7 14.4M36.6 20.9L39.3 14.4M43.1 27.4L49.6 24.7M43.1 36.6L49.6 39.3M36.6 43.1L39.3 49.6M27.4 43.1L24.7 49.6M20.9 36.6L14.4 39.3M20.9 27.4L14.4 24.7"/>
+  </g>
+
+  <!-- swirling inner light -->
+  <circle cx="32" cy="32" r="11" fill="url(#beast_core-inner)"/>
+  <path d="M26 36C25 30 29 25.5 34.5 26.5C39 27.5 40 32.5 37 35C34.5 37 31 36 30.5 33.5C30 31.5 32 30 33.5 30.8" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" opacity=".35"/>
+  <path d="M26 36C25 30 29 25.5 34.5 26.5C39 27.5 40 32.5 37 35C34.5 37 31 36 30.5 33.5C30 31.5 32 30 33.5 30.8" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".95"/>
+
+  <!-- highlight -->
+  <path d="M20 26C21.5 21 25 18 29.5 17" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+
+  <!-- outline -->
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#2A1008" stroke-width="2.4"/>
+</svg>

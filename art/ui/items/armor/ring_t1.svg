@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ring_t1-copper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD8B8"/>
+      <stop offset=".35" stop-color="#D87A42"/>
+      <stop offset=".75" stop-color="#8E4018"/>
+      <stop offset="1" stop-color="#4A1E0A"/>
+    </linearGradient>
+    <linearGradient id="ring_t1-copperHi" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#4A1E0A" stop-opacity=".3"/>
+    </linearGradient>
+    <radialGradient id="ring_t1-stone" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="53.4" rx="18" ry="1.8" fill="#2A1008" opacity=".25"/>
+
+  <!-- band seen at 3/4: thick in front, thin at the back -->
+  <path fill-rule="evenodd" d="M11 37A21 14 0 1 0 53 37A21 14 0 1 0 11 37ZM17 35.5A15 9 0 1 0 47 35.5A15 9 0 1 0 17 35.5Z" fill="url(#ring_t1-copper)" stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round"/>
+  <path fill-rule="evenodd" d="M11 37A21 14 0 1 0 53 37A21 14 0 1 0 11 37ZM17 35.5A15 9 0 1 0 47 35.5A15 9 0 1 0 17 35.5Z" fill="url(#ring_t1-copperHi)"/>
+  <!-- inner wall of the far side -->
+  <path d="M17 35.5A15 9 0 0 1 47 35.5A15 6.8 0 0 0 17 35.5Z" fill="#5A2410" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- highlights -->
+  <path d="M14 32.5Q18.5 26.5 26.5 24.6" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".85"/>
+  <path d="M23 48Q32 50.5 41 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".35"/>
+
+  <!-- bezel and small green stone -->
+  <ellipse cx="32" cy="20.5" rx="7" ry="7.4" fill="url(#ring_t1-copper)" stroke="#2A1008" stroke-width="2.2"/>
+  <circle cx="32" cy="20.5" r="4.8" fill="url(#ring_t1-stone)" stroke="#2A1008" stroke-width="1.3"/>
+  <ellipse cx="30.4" cy="18.6" rx="1.5" ry="1" fill="#FFFFFF" opacity=".95"/>
+  <path d="M27 17.2Q28.5 14.4 31.5 13.7" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".75"/>
+</svg>

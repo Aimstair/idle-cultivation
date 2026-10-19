@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="rod_copper-blank" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4CC"/><stop offset="0.35" stop-color="#E0C070"/><stop offset="0.75" stop-color="#A8843A"/><stop offset="1" stop-color="#5A3E10"/></linearGradient>
+<linearGradient id="rod_copper-grip" gradientUnits="userSpaceOnUse" x1="14" y1="46" x2="19" y2="51"><stop offset="0" stop-color="#D89258"/><stop offset="0.5" stop-color="#B06A30"/><stop offset="1" stop-color="#6A3414"/></linearGradient>
+<linearGradient id="rod_copper-fit" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE2C0"/><stop offset="0.5" stop-color="#E08A48"/><stop offset="1" stop-color="#6A3010"/></linearGradient>
+</defs>
+<ellipse cx="31" cy="55.5" rx="18" ry="2" fill="#2A1008" opacity=".25"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#FFF8E4" stroke-width="1" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#FFF8E4" stroke-width="1" stroke-linecap="round"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="#FFF8E4" stroke="#2A1008" stroke-width="1.8"/>
+<path d="M50.5 32.8A3.3 3.3 0 0 1 57.1 32.8Z" fill="#E03E2C"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="none" stroke="#2A1008" stroke-width="1.8"/>
+<ellipse cx="52.6" cy="31.2" rx="1" ry=".6" transform="rotate(-38 52.6 31.2)" fill="#FFFFFF" opacity=".85"/>
+<path d="M13 53L23 43" fill="none" stroke="#2A1008" stroke-width="9.8" stroke-linecap="round"/>
+<path d="M13 53L23 43" fill="none" stroke="url(#rod_copper-grip)" stroke-width="5.4" stroke-linecap="round"/>
+<g fill="none" stroke="#2A1008" stroke-width="1.1" stroke-linecap="round" opacity=".7"><path d="M14.6 48.6L17.4 51.4M16.8 46.4L19.6 49.2M19 44.2L21.8 47"/></g>
+<path d="M13.4 50.6L20.6 43.4" fill="none" stroke="#FFE7C0" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="#2A1008" stroke-width="4.6" stroke-linecap="round"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="url(#rod_copper-fit)" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="29.5" cy="49.5" r="4.6" fill="url(#rod_copper-fit)" stroke="#2A1008" stroke-width="2.2"/>
+<circle cx="29.5" cy="49.5" r="1.6" fill="#2A1008" opacity=".85"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="url(#rod_copper-fit)" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M26.6 47.2A3.6 3.6 0 0 1 29.6 45.9" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M20.33 42.42L23.67 45.58L54.8 10.75L53.2 9.25Z" fill="url(#rod_copper-blank)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+<g stroke="#8A5A1C" stroke-width="1.4" stroke-linecap="round" opacity=".8"><path d="M29.4 36.1L31.6 38.1"/><path d="M37.2 27.6L39 29.3"/><path d="M45 19.1L46.4 20.5"/></g>
+<g stroke="#FFF0C0" stroke-width=".8" stroke-linecap="round" opacity=".8"><path d="M30.2 35.3L32.2 37.1"/><path d="M38 26.8L39.6 28.3"/></g>
+<path d="M23.2 42L52.4 10.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="url(#rod_copper-fit)" stroke-width="1.3"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="url(#rod_copper-fit)" stroke-width="1.3"/>
+<circle cx="53.6" cy="10.6" r="2" fill="url(#rod_copper-fit)" stroke="#2A1008" stroke-width="2"/>
+<circle cx="52.9" cy="9.9" r=".6" fill="#FFFFFF" opacity=".9"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 200 40">
+<!-- 9slice: 12 -->
+  <defs>
+    <linearGradient id="field_input-paper" gradientUnits="userSpaceOnUse" x1="0" y1="7" x2="0" y2="33">
+      <stop offset="0" stop-color="#F3E2C0"/>
+      <stop offset="1" stop-color="#FFF8E4"/>
+    </linearGradient>
+    <linearGradient id="field_input-inTop" gradientUnits="userSpaceOnUse" x1="0" y1="7" x2="0" y2="14">
+      <stop offset="0" stop-color="#5A2A16" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#5A2A16" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="field_input-inLeft" gradientUnits="userSpaceOnUse" x1="6" y1="0" x2="12" y2="0">
+      <stop offset="0" stop-color="#5A2A16" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#5A2A16" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="field_input-clip"><rect x="6" y="7" width="188" height="26" rx="4"/></clipPath>
+  </defs>
+
+  <!-- rosewood border -->
+  <rect x="2" y="3" width="196" height="34" rx="7" fill="#3A190C" stroke="#2A1008" stroke-width="2.4"/>
+  <path d="M3.6 30 V9.6 A6 6 0 0 1 9.6 3.6 H190" fill="none" stroke="#6A3414" stroke-width="1" stroke-linecap="round"/>
+  <path d="M196.4 10 V30.4 A6 6 0 0 1 190.4 36.4 H10" fill="none" stroke="#120402" stroke-width="1" stroke-linecap="round"/>
+  <!-- inset parchment -->
+  <rect x="6" y="7" width="188" height="26" rx="4" fill="url(#field_input-paper)"/>
+  <g clip-path="url(#field_input-clip)">
+    <rect x="6" y="7" width="188" height="7" fill="url(#field_input-inTop)"/>
+    <rect x="6" y="7" width="6" height="26" fill="url(#field_input-inLeft)"/>
+  </g>
+  <rect x="6" y="7" width="188" height="26" rx="4" fill="none" stroke="#1A0804" stroke-width="1.2"/>
+  <rect x="7.3" y="8.3" width="185.4" height="23.4" rx="3.2" fill="none" stroke="#B8812A" stroke-width=".8" opacity=".8"/>
+</svg>

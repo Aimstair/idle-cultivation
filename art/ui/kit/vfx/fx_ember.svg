@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+  <defs>
+    <radialGradient id="fx_ember-halo" gradientUnits="userSpaceOnUse" cx="12" cy="15" r="11">
+      <stop offset="0" stop-color="#FFA020" stop-opacity=".55"/>
+      <stop offset=".6" stop-color="#E8301A" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#E8301A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fx_ember-body" gradientUnits="userSpaceOnUse" cx="11" cy="15.5" r="9">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".22" stop-color="#FFF2A0"/>
+      <stop offset=".55" stop-color="#FFA020"/>
+      <stop offset=".85" stop-color="#E8301A"/>
+      <stop offset="1" stop-color="#B41A10"/>
+    </radialGradient>
+  </defs>
+  <!-- soft heat halo -->
+  <circle cx="12" cy="15" r="11" fill="url(#fx_ember-halo)"/>
+  <!-- teardrop -->
+  <path d="M12 1.5C12 1.5 19.5 11 19.5 15.5A7.5 7.5 0 0 1 4.5 15.5C4.5 11 12 1.5 12 1.5Z" fill="url(#fx_ember-body)"/>
+  <!-- tiny top-left glint -->
+  <ellipse cx="9.2" cy="12.6" rx="1.2" ry="2" fill="#FFFFFF" opacity=".6" transform="rotate(20 9.2 12.6)"/>
+</svg>

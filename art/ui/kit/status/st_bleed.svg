@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="st_bleed-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8A5C"/>
+      <stop offset=".45" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </linearGradient>
+    <linearGradient id="st_bleed-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A1A12"/>
+      <stop offset="1" stop-color="#1C0806"/>
+    </linearGradient>
+    <radialGradient id="st_bleed-sheen" cx="0.3" cy="0.22" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="st_bleed-steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <radialGradient id="st_bleed-blood" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+
+  <!-- chip: coloured rim + dark face -->
+  <rect x="1.3" y="1.3" width="29.4" height="29.4" rx="7.6" fill="url(#st_bleed-rim)" stroke="#2A1008" stroke-width="1.3"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_bleed-face)" stroke="#2A1008" stroke-width=".8"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_bleed-sheen)"/>
+  
+  <path d="M8 2.6 H24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <path d="M2.6 8 V24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".35"/>
+
+  <!-- pictogram -->
+  <path d="M7 9.4 L9.2 7.2 L25.4 21.4 L24 24.6Z" fill="url(#st_bleed-steel)" stroke="#2A1008" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M8.6 8.4 L22.6 20.6" fill="none" stroke="#FFFFFF" stroke-width=".7" stroke-linecap="round" opacity=".8"/>
+  <path d="M0-4.2C1.6-1.4 3.2.2 3.2 2.2A3.2 3.2 0 0 1-3.2 2.2C-3.2.2-1.6-1.4 0-4.2Z" transform="translate(21.4 11.6) scale(.95)" fill="url(#st_bleed-blood)" stroke="#2A1008" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M0-4.2C1.6-1.4 3.2.2 3.2 2.2A3.2 3.2 0 0 1-3.2 2.2C-3.2.2-1.6-1.4 0-4.2Z" transform="translate(11.6 19.2) scale(1.25)" fill="url(#st_bleed-blood)" stroke="#2A1008" stroke-width=".95" stroke-linejoin="round"/>
+  <ellipse cx="10" cy="19.4" rx=".8" ry="1.4" transform="rotate(20 10 19.4)" fill="#FFFFFF" opacity=".75"/>
+  <ellipse cx="20.3" cy="12" rx=".6" ry="1" transform="rotate(20 20.3 12)" fill="#FFFFFF" opacity=".75"/>
+</svg>

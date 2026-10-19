@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 72 72">
+  <defs>
+    <linearGradient id="rarity_spirit-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <linearGradient id="rarity_spirit-rimRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E6A50"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#B4F4DA"/>
+    </linearGradient>
+    <linearGradient id="rarity_spirit-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <radialGradient id="rarity_spirit-well" gradientUnits="userSpaceOnUse" cx="30" cy="28" r="42">
+      <stop offset="0" stop-color="#3A1A0E"/>
+      <stop offset=".6" stop-color="#1E0A05"/>
+      <stop offset="1" stop-color="#120402"/>
+    </radialGradient>
+    <linearGradient id="rarity_spirit-inset" gradientUnits="userSpaceOnUse" x1="0" y1="8" x2="0" y2="20">
+      <stop offset="0" stop-color="#000000" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="rarity_spirit-wellclip">
+      <path d="M13 8H59A5 5 0 0 1 64 13V59A5 5 0 0 1 59 64H13A5 5 0 0 1 8 59V13A5 5 0 0 1 13 8Z"/>
+    </clipPath>
+    <!-- leaf notch: base at origin, tip pointing up (-y) -->
+    <g id="rarity_spirit-notch">
+      <path d="M0 1.5C-3.3-2-3.5-7.2 0-10.5C3.5-7.2 3.3-2 0 1.5Z" fill="url(#rarity_spirit-leaf)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M0-1.2V-8.4" fill="none" stroke="#0E6A50" stroke-width="1" stroke-linecap="round" opacity=".75"/>
+      <path d="M-1.5-4.4C-1.2-5.8-.9-7-.5-8.2" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".8"/>
+    </g>
+  </defs>
+
+  <!-- dark inner well with inset shadow -->
+  <path d="M13 8H59A5 5 0 0 1 64 13V59A5 5 0 0 1 59 64H13A5 5 0 0 1 8 59V13A5 5 0 0 1 13 8Z" fill="url(#rarity_spirit-well)"/>
+  <rect x="8" y="8" width="56" height="56" fill="url(#rarity_spirit-inset)" clip-path="url(#rarity_spirit-wellclip)"/>
+
+  <!-- jade rim: outer slope and inner slope -->
+  <path fill-rule="evenodd" fill="url(#rarity_spirit-rim)"
+    d="M12 3H60A9 9 0 0 1 69 12V60A9 9 0 0 1 60 69H12A9 9 0 0 1 3 60V12A9 9 0 0 1 12 3Z
+       M12.2 5.6H59.8A6.6 6.6 0 0 1 66.4 12.2V59.8A6.6 6.6 0 0 1 59.8 66.4H12.2A6.6 6.6 0 0 1 5.6 59.8V12.2A6.6 6.6 0 0 1 12.2 5.6Z"/>
+  <path fill-rule="evenodd" fill="url(#rarity_spirit-rimRev)"
+    d="M12.2 5.6H59.8A6.6 6.6 0 0 1 66.4 12.2V59.8A6.6 6.6 0 0 1 59.8 66.4H12.2A6.6 6.6 0 0 1 5.6 59.8V12.2A6.6 6.6 0 0 1 12.2 5.6Z
+       M13 8H59A5 5 0 0 1 64 13V59A5 5 0 0 1 59 64H13A5 5 0 0 1 8 59V13A5 5 0 0 1 13 8Z"/>
+  <path d="M12.2 5.6H59.8A6.6 6.6 0 0 1 66.4 12.2V59.8A6.6 6.6 0 0 1 59.8 66.4H12.2A6.6 6.6 0 0 1 5.6 59.8V12.2A6.6 6.6 0 0 1 12.2 5.6Z"
+    fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".4"/>
+
+  <!-- outlines -->
+  <path d="M12 3H60A9 9 0 0 1 69 12V60A9 9 0 0 1 60 69H12A9 9 0 0 1 3 60V12A9 9 0 0 1 12 3Z"
+    fill="none" stroke="#2A1008" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M12.5 7H59.5A5.5 5.5 0 0 1 65 12.5V59.5A5.5 5.5 0 0 1 59.5 65H12.5A5.5 5.5 0 0 1 7 59.5V12.5A5.5 5.5 0 0 1 12.5 7Z"
+    fill="none" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- leaf notches at the four corners, tips pointing outward -->
+  <use href="#rarity_spirit-notch" transform="translate(9 9) rotate(-45)"/>
+  <use href="#rarity_spirit-notch" transform="translate(63 9) rotate(45)"/>
+  <use href="#rarity_spirit-notch" transform="translate(63 63) rotate(135)"/>
+  <use href="#rarity_spirit-notch" transform="translate(9 63) rotate(-135)"/>
+</svg>

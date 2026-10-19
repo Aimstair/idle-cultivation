@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="rod_iron-blank" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E0A878"/><stop offset="0.35" stop-color="#9A5A2E"/><stop offset="0.75" stop-color="#5A2C14"/><stop offset="1" stop-color="#2A140A"/></linearGradient>
+<linearGradient id="rod_iron-grip" gradientUnits="userSpaceOnUse" x1="14" y1="46" x2="19" y2="51"><stop offset="0" stop-color="#8A4A26"/><stop offset="0.5" stop-color="#5A2A14"/><stop offset="1" stop-color="#2E1208"/></linearGradient>
+<linearGradient id="rod_iron-fit" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4EAF4"/><stop offset="0.5" stop-color="#7A8294"/><stop offset="1" stop-color="#1A1C24"/></linearGradient>
+<linearGradient id="rod_iron-leather" gradientUnits="userSpaceOnUse" x1="15" y1="47" x2="20" y2="52"><stop offset="0" stop-color="#C8824A"/><stop offset="0.5" stop-color="#9A5228"/><stop offset="1" stop-color="#5A2A10"/></linearGradient>
+</defs>
+<ellipse cx="31" cy="55.5" rx="18" ry="2" fill="#2A1008" opacity=".25"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#E4EAF4" stroke-width="1" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#E4EAF4" stroke-width="1" stroke-linecap="round"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="#E4EAF4" stroke="#2A1008" stroke-width="1.8"/>
+<path d="M50.5 32.8A3.3 3.3 0 0 1 57.1 32.8Z" fill="#C21E10"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="none" stroke="#2A1008" stroke-width="1.8"/>
+<ellipse cx="52.6" cy="31.2" rx="1" ry=".6" transform="rotate(-38 52.6 31.2)" fill="#FFFFFF" opacity=".85"/>
+<path d="M13 53L23 43" fill="none" stroke="#2A1008" stroke-width="9.8" stroke-linecap="round"/>
+<path d="M13 53L23 43" fill="none" stroke="url(#rod_iron-grip)" stroke-width="5.4" stroke-linecap="round"/>
+<path d="M15 51L21 45" fill="none" stroke="#2A1008" stroke-width="10.6" stroke-linecap="butt"/>
+<path d="M15 51L21 45" fill="none" stroke="url(#rod_iron-leather)" stroke-width="6.6" stroke-linecap="butt"/>
+<g fill="none" stroke="#2A1008" stroke-width="1.1" stroke-linecap="round" opacity=".75"><path d="M15.4 47.6L19.4 51.6M18.2 44.8L22.2 48.8"/></g>
+<g fill="#FFE7C0" opacity=".7"><circle cx="16.2" cy="49" r=".55"/><circle cx="19" cy="46.2" r=".55"/></g>
+<path d="M15.8 48.2L20.2 43.8" fill="none" stroke="#FFE7C0" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="#2A1008" stroke-width="4.6" stroke-linecap="round"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="url(#rod_iron-fit)" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="29.5" cy="49.5" r="4.6" fill="url(#rod_iron-fit)" stroke="#2A1008" stroke-width="2.2"/>
+<circle cx="29.5" cy="49.5" r="1.6" fill="#2A1008" opacity=".85"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="url(#rod_iron-fit)" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M26.6 47.2A3.6 3.6 0 0 1 29.6 45.9" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M20.33 42.42L23.67 45.58L54.8 10.75L53.2 9.25Z" fill="url(#rod_iron-blank)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M28 38.5L29.6 40M42 23.5L43.4 24.9" fill="none" stroke="#CFD6E4" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+<path d="M23.2 42L52.4 10.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="url(#rod_iron-fit)" stroke-width="1.3"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="url(#rod_iron-fit)" stroke-width="1.3"/>
+<circle cx="53.6" cy="10.6" r="2" fill="url(#rod_iron-fit)" stroke="#2A1008" stroke-width="2"/>
+<circle cx="52.9" cy="9.9" r=".6" fill="#FFFFFF" opacity=".9"/>
+</svg>

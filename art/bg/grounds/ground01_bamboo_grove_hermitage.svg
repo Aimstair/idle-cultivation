@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="1688" viewBox="0 0 390 844">
+<!-- Ground 01: Bamboo Grove Hermitage (Meditation Site, Wood). Hero seat: moss rock, top y~536, centre x 195. Hut raised on a rock ledge right of the hero head (roof y 172-248, moon window at 292,257). -->
+<defs>
+<linearGradient id="g01-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9D90C8"/><stop offset=".2" stop-color="#D6B6C6"/><stop offset=".38" stop-color="#F6DEC4"/><stop offset=".55" stop-color="#F7E9CF"/><stop offset=".72" stop-color="#DCE1C6"/><stop offset="1" stop-color="#B5C6AE"/></linearGradient>
+<radialGradient id="g01-sun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFFAEA"/><stop offset=".3" stop-color="#FFEEC4" stop-opacity=".85"/><stop offset=".65" stop-color="#FFE2B0" stop-opacity=".35"/><stop offset="1" stop-color="#FFD9A0" stop-opacity="0"/></radialGradient>
+<radialGradient id="g01-aura" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF4D2" stop-opacity=".6"/><stop offset=".5" stop-color="#F7DC98" stop-opacity=".22"/><stop offset="1" stop-color="#F7DC98" stop-opacity="0"/></radialGradient>
+<linearGradient id="g01-mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFF8EE" stop-opacity=".82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<linearGradient id="g01-shaft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6D8" stop-opacity=".8"/><stop offset=".55" stop-color="#FFF6D8" stop-opacity=".34"/><stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/></linearGradient>
+<linearGradient id="g01-farhill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B6CAAE"/><stop offset="1" stop-color="#9DB598"/></linearGradient>
+<linearGradient id="g01-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#90AC7A"/><stop offset=".5" stop-color="#6E8C5C"/><stop offset="1" stop-color="#4C6842"/></linearGradient>
+<linearGradient id="g01-rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B6B5BE"/><stop offset=".55" stop-color="#6B6C78"/><stop offset="1" stop-color="#42434F"/></linearGradient>
+<linearGradient id="g01-rocktop" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EDECF0"/><stop offset="1" stop-color="#B8B6C6"/></linearGradient>
+<linearGradient id="g01-moss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A2C67E"/><stop offset="1" stop-color="#5F8A4C"/></linearGradient>
+<linearGradient id="g01-ledge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9AA49A"/><stop offset=".6" stop-color="#7C8A80"/><stop offset="1" stop-color="#A8B8A2"/></linearGradient>
+<linearGradient id="g01-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCCDAA"/><stop offset="1" stop-color="#AB9874"/></linearGradient>
+<linearGradient id="g01-thatch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E0C68E"/><stop offset=".6" stop-color="#B08E58"/><stop offset="1" stop-color="#86653A"/></linearGradient>
+<radialGradient id="g01-win" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFE6B0"/><stop offset=".45" stop-color="#D9A86A" stop-opacity=".75"/><stop offset="1" stop-color="#384844"/></radialGradient>
+<linearGradient id="g01-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E8E88"/><stop offset="1" stop-color="#1F3A38"/></linearGradient>
+<linearGradient id="g01-stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A3AF9E"/><stop offset="1" stop-color="#4A5850"/></linearGradient>
+<linearGradient id="g01-bank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A5438"/><stop offset="1" stop-color="#1C2E22"/></linearGradient>
+<linearGradient id="g01-topdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16261F" stop-opacity=".5"/><stop offset="1" stop-color="#16261F" stop-opacity="0"/></linearGradient>
+<linearGradient id="g01-botdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1613" stop-opacity="0"/><stop offset="1" stop-color="#0B1613" stop-opacity=".5"/></linearGradient>
+<linearGradient id="g01-sideL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1A2A22" stop-opacity=".28"/><stop offset="1" stop-color="#1A2A22" stop-opacity="0"/></linearGradient>
+<linearGradient id="g01-sideR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#1A2A22" stop-opacity=".28"/><stop offset="1" stop-color="#1A2A22" stop-opacity="0"/></linearGradient>
+<filter id="g01-blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+<filter id="g01-blur3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3.5"/></filter>
+<!-- one bamboo culm, 1 unit wide, 1000 tall; use with scale(width 1) -->
+<g id="g01-stalk">
+<rect x="-0.5" y="0" width="1" height="1000" fill="currentColor"/>
+<rect x="0.16" y="0" width="0.3" height="1000" fill="#FFFFFF" opacity=".22"/>
+<rect x="-0.5" y="0" width="0.18" height="1000" fill="#000000" opacity=".12"/>
+<g fill="#000000" opacity=".2"><rect x="-0.6" y="14" width="1.2" height="3"/><rect x="-0.6" y="62" width="1.2" height="3"/><rect x="-0.6" y="110" width="1.2" height="3"/><rect x="-0.6" y="158" width="1.2" height="3"/><rect x="-0.6" y="206" width="1.2" height="3"/><rect x="-0.6" y="254" width="1.2" height="3"/><rect x="-0.6" y="302" width="1.2" height="3"/><rect x="-0.6" y="350" width="1.2" height="3"/><rect x="-0.6" y="398" width="1.2" height="3"/><rect x="-0.6" y="446" width="1.2" height="3"/><rect x="-0.6" y="494" width="1.2" height="3"/><rect x="-0.6" y="542" width="1.2" height="3"/><rect x="-0.6" y="590" width="1.2" height="3"/><rect x="-0.6" y="638" width="1.2" height="3"/><rect x="-0.6" y="686" width="1.2" height="3"/><rect x="-0.6" y="734" width="1.2" height="3"/><rect x="-0.6" y="782" width="1.2" height="3"/><rect x="-0.6" y="830" width="1.2" height="3"/><rect x="-0.6" y="878" width="1.2" height="3"/></g>
+<g fill="#FFFFFF" opacity=".3"><rect x="-0.5" y="17" width="1" height="1.2"/><rect x="-0.5" y="65" width="1" height="1.2"/><rect x="-0.5" y="113" width="1" height="1.2"/><rect x="-0.5" y="161" width="1" height="1.2"/><rect x="-0.5" y="209" width="1" height="1.2"/><rect x="-0.5" y="257" width="1" height="1.2"/><rect x="-0.5" y="305" width="1" height="1.2"/><rect x="-0.5" y="353" width="1" height="1.2"/><rect x="-0.5" y="401" width="1" height="1.2"/><rect x="-0.5" y="449" width="1" height="1.2"/><rect x="-0.5" y="497" width="1" height="1.2"/><rect x="-0.5" y="545" width="1" height="1.2"/><rect x="-0.5" y="593" width="1" height="1.2"/><rect x="-0.5" y="641" width="1" height="1.2"/><rect x="-0.5" y="689" width="1" height="1.2"/><rect x="-0.5" y="737" width="1" height="1.2"/><rect x="-0.5" y="785" width="1" height="1.2"/><rect x="-0.5" y="833" width="1" height="1.2"/><rect x="-0.5" y="881" width="1" height="1.2"/></g>
+</g>
+<path id="g01-leaf" d="M0 0 C 7 -4.5 17 -4.2 26 0 C 17 4.2 7 4.5 0 0 Z" fill="currentColor"/>
+<g id="g01-lc">
+<path d="M0 0 L-13 -5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><use xlink:href="#g01-leaf" transform="rotate(-70) scale(.85)"/><use xlink:href="#g01-leaf" transform="rotate(-40) scale(1.05)"/><use xlink:href="#g01-leaf" transform="rotate(-12) scale(1.15)"/><use xlink:href="#g01-leaf" transform="rotate(14) scale(1.1)"/><use xlink:href="#g01-leaf" transform="rotate(42)"/><use xlink:href="#g01-leaf" transform="rotate(72) scale(.85)"/>
+</g>
+<g id="g01-tuft" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+<path d="M0 0 C -2 -8 -6 -14 -12 -20"/><path d="M0 0 C -1 -10 -2 -18 -4 -26"/><path d="M0 0 C 2 -9 4 -16 10 -24"/><path d="M0 0 C 4 -6 9 -10 16 -12"/><path d="M0 0 C -5 -4 -10 -6 -16 -8"/>
+</g>
+</defs>
+
+<!-- SKY + DAWN SUN -->
+<rect width="390" height="844" fill="url(#g01-sky)"/>
+<circle cx="186" cy="250" r="210" fill="url(#g01-sun)"/>
+<circle cx="186" cy="250" r="46" fill="#FFF3D0" opacity=".4"/>
+<circle cx="186" cy="250" r="24" fill="#FFFAEC" opacity=".95"/>
+
+<!-- FAR BAMBOO (pale, cool) -->
+<g color="#C8D5CB" opacity=".55">
+<use xlink:href="#g01-stalk" transform="translate(20 -10) scale(3 1)"/><use xlink:href="#g01-stalk" transform="translate(47 -30) scale(2.4 1)"/><use xlink:href="#g01-stalk" transform="translate(70 -5) scale(3.3 1)"/><use xlink:href="#g01-stalk" transform="translate(99 -22) scale(2.2 1)"/><use xlink:href="#g01-stalk" transform="translate(131 -14) scale(2.8 1)"/><use xlink:href="#g01-stalk" transform="translate(158 -34) scale(2.4 1)"/><use xlink:href="#g01-stalk" transform="translate(183 -8) scale(3.2 1)"/><use xlink:href="#g01-stalk" transform="translate(214 -26) scale(2.2 1)"/><use xlink:href="#g01-stalk" transform="translate(237 -16) scale(2.9 1)"/><use xlink:href="#g01-stalk" transform="translate(266 -2) scale(2.5 1)"/><use xlink:href="#g01-stalk" transform="translate(289 -30) scale(3.1 1)"/><use xlink:href="#g01-stalk" transform="translate(318 -12) scale(2.3 1)"/><use xlink:href="#g01-stalk" transform="translate(343 -24) scale(2.9 1)"/><use xlink:href="#g01-stalk" transform="translate(366 -6) scale(2.5 1)"/><use xlink:href="#g01-stalk" transform="translate(384 -18) scale(3.1 1)"/>
+<use xlink:href="#g01-stalk" transform="translate(110 0) rotate(4) scale(2.6 1)"/><use xlink:href="#g01-stalk" transform="translate(300 0) rotate(-5) scale(2.4 1)"/>
+</g>
+<g color="#BCCDC0" opacity=".6">
+<use xlink:href="#g01-lc" transform="translate(20 120) rotate(30) scale(1.5)"/><use xlink:href="#g01-lc" transform="translate(70 90) rotate(50) scale(1.6)"/><use xlink:href="#g01-lc" transform="translate(131 140) rotate(20) scale(1.4)"/><use xlink:href="#g01-lc" transform="translate(183 100) rotate(70) scale(1.5)"/><use xlink:href="#g01-lc" transform="translate(237 150) rotate(120) scale(1.4)"/><use xlink:href="#g01-lc" transform="translate(289 110) rotate(130) scale(1.6)"/><use xlink:href="#g01-lc" transform="translate(343 160) rotate(150) scale(1.5)"/><use xlink:href="#g01-lc" transform="translate(384 120) rotate(170) scale(1.5)"/><use xlink:href="#g01-lc" transform="translate(47 260) rotate(40) scale(1.3)"/><use xlink:href="#g01-lc" transform="translate(158 300) rotate(10) scale(1.2)"/><use xlink:href="#g01-lc" transform="translate(318 320) rotate(160) scale(1.3)"/><use xlink:href="#g01-lc" transform="translate(366 250) rotate(150) scale(1.3)"/>
+</g>
+<!-- far mist + far mossy slope -->
+<rect x="0" y="380" width="390" height="120" fill="url(#g01-mist)"/>
+<path d="M0 470 C 60 450 130 462 200 456 C 270 450 330 462 390 452 L390 540 L0 540 Z" fill="url(#g01-farhill)"/>
+<rect x="0" y="440" width="390" height="90" fill="url(#g01-mist)" opacity=".7"/>
+
+<!-- MID BAMBOO (behind the hut) -->
+<g color="#83A289" opacity=".9">
+<use xlink:href="#g01-stalk" transform="translate(8 -24) scale(5 1)" color="#7A9A82"/><use xlink:href="#g01-stalk" transform="translate(30 -10) scale(4.5 1)" color="#7A9A82"/><use xlink:href="#g01-stalk" transform="translate(54 -30) scale(5.5 1)" color="#7A9A82"/><use xlink:href="#g01-stalk" transform="translate(338 -14) scale(5 1)" color="#7A9A82"/><use xlink:href="#g01-stalk" transform="translate(360 -34) scale(4.6 1)" color="#7A9A82"/><use xlink:href="#g01-stalk" transform="translate(386 -4) scale(5.5 1)" color="#7A9A82"/><use xlink:href="#g01-stalk" transform="translate(93 -26) scale(5.4 1)" color="#8AA88F"/><use xlink:href="#g01-stalk" transform="translate(118 -20) scale(6 1)"/><use xlink:href="#g01-stalk" transform="translate(146 -40) scale(5 1)"/><use xlink:href="#g01-stalk" transform="translate(250 -12) scale(5.2 1)"/><use xlink:href="#g01-stalk" transform="translate(276 -32) scale(6.4 1)"/><use xlink:href="#g01-stalk" transform="translate(302 -8) scale(5.2 1)"/>
+</g>
+
+<!-- HERMITAGE HUT (raised on a mossy rock ledge, right of the hero's head) -->
+<g id="g01-hut">
+<!-- rock ledge -->
+<path d="M216 514 C 208 462 222 444 214 420 C 206 396 220 380 222 360 C 224 338 222 316 236 304 L 246 300 L 334 298 C 346 312 340 332 348 348 C 358 370 344 390 352 412 C 360 436 346 458 352 514 Z" fill="url(#g01-ledge)"/>
+<g fill="none" stroke="#56645A" stroke-width="1.3" stroke-linecap="round" opacity=".4"><path d="M216 420 C 236 412 252 418 266 410 C 286 400 316 414 350 410"/><path d="M222 360 C 244 352 262 360 284 352 C 304 346 326 354 346 348"/></g>
+<g fill="#FFFFFF" opacity=".12"><path d="M236 304 C 250 318 248 340 262 352 C 246 352 232 346 224 338 C 226 322 230 310 236 304 Z"/><path d="M224 364 C 238 376 236 396 250 412 C 236 414 224 410 216 402 C 220 388 220 374 224 364 Z"/></g>
+<g fill="none" stroke="#5E6E64" stroke-width="1.2" stroke-linecap="round" opacity=".45"><path d="M222 334 C 250 330 290 332 338 326"/><path d="M216 372 C 248 366 296 370 342 364"/><path d="M212 410 C 252 404 300 408 346 402"/><path d="M262 300 L 258 336 M 300 332 L 304 368 M 244 368 L 238 410"/></g>
+<path d="M246 300 L 334 298 C 336 312 338 324 340 334 C 316 322 278 318 232 322 C 236 310 240 304 246 300 Z" fill="#8DB46E" opacity=".8"/>
+<path d="M218 336 C 214 360 212 380 210 400 C 220 384 228 360 232 322 Z" fill="#6F9A58" opacity=".7"/>
+
+<!-- veranda + stilts -->
+<g fill="#6E5230"><rect x="232" y="294" width="3" height="16"/><rect x="262" y="294" width="3" height="10"/><rect x="300" y="294" width="3" height="10"/></g>
+<rect x="212" y="292" width="122" height="5" fill="#9C7E52"/><rect x="212" y="292" width="122" height="1.5" fill="#E2CB98" opacity=".8"/>
+<g fill="#8C7A56"><rect x="214" y="276" width="2.4" height="17"/><rect x="226" y="277" width="2.4" height="16"/><rect x="213" y="281" width="16" height="2"/></g>
+<!-- walls -->
+<rect x="224" y="228" width="96" height="65" fill="url(#g01-wall)"/>
+<g stroke="#B5A17A" stroke-width="1" opacity=".6"><path d="M232 232 V292 M240 232 V292 M266 232 V292 M270 232 V292 M314 232 V292"/><path d="M224 246 H320 M224 278 H320"/></g>
+<rect x="224" y="228" width="96" height="9" fill="#000000" opacity=".2"/>
+<rect x="224" y="228" width="4" height="65" fill="#FFF6DC" opacity=".35"/>
+<rect x="238" y="252" width="18" height="40" fill="#3F463E"/><rect x="238" y="252" width="18" height="2" fill="#6B6E5C"/>
+<path d="M244 254 h7 v36 h-7 Z" fill="#FFE6B0" opacity=".14"/>
+<!-- moon-gate window -->
+<circle cx="292" cy="257" r="14.5" fill="url(#g01-win)"/><circle cx="292" cy="257" r="11" fill="#FFE6B0" opacity=".22"/>
+<g stroke="#5A4A32" stroke-width=".8" opacity=".55"><path d="M292 243 V271 M278 257 H306 M282 247 L302 267 M302 247 L282 267"/></g>
+<circle cx="292" cy="257" r="16" fill="none" stroke="#8A7A5A" stroke-width="1"/><circle cx="292" cy="257" r="14.6" fill="none" stroke="#F1E6CC" stroke-width="2.4"/>
+<circle cx="292" cy="257" r="26" fill="#FFE2A6" opacity=".12" filter="url(#g01-blur3)"/>
+<!-- thatched roof -->
+<path d="M190 240 C 208 232 224 216 236 178 L302 174 C 312 208 330 226 348 232 C 302 246 232 248 190 240 Z" fill="url(#g01-thatch)"/>
+<g fill="none" stroke="#7A5A30" stroke-width="1.4" stroke-linecap="round" opacity=".32"><path d="M228 188 C 224 206 216 222 204 236"/><path d="M244 182 C 242 202 238 222 230 242"/><path d="M262 180 C 262 200 262 222 260 244"/><path d="M280 180 C 282 200 286 222 292 242"/><path d="M296 182 C 302 202 312 220 326 236"/><path d="M308 196 C 318 212 330 222 342 230"/></g>
+<g fill="none" stroke="#F7E6B6" stroke-width="1" stroke-linecap="round" opacity=".35"><path d="M236 186 C 232 204 226 218 216 232"/><path d="M253 182 C 252 202 249 222 245 242"/><path d="M271 180 C 272 202 274 222 276 244"/></g>
+<path d="M190 240 C 232 248 302 246 348 232" fill="none" stroke="#6E5230" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
+<path d="M190 240 C 208 232 224 216 236 178" fill="none" stroke="#FFF2CC" stroke-width="1.8" stroke-linecap="round" opacity=".75"/>
+<path d="M232 176 L306 172" stroke="#6B4E2A" stroke-width="5" stroke-linecap="round"/><path d="M232 174 L306 170" stroke="#F2DDAA" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>
+<g stroke="#6B4E2A" stroke-width="2.2" stroke-linecap="round"><path d="M240 176 L232 166 M 300 172 L 308 162"/></g>
+<!-- hanging lantern + incense wisp -->
+<path d="M214 236 V246" stroke="#5A4A32" stroke-width=".8"/><ellipse cx="214" cy="251" rx="4" ry="5.5" fill="#E8B060"/><ellipse cx="214" cy="250" rx="2" ry="3" fill="#FFF0C8" opacity=".85"/>
+<path d="M318 172 C 312 160 324 150 318 138 C 312 126 324 116 318 104" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".28" filter="url(#g01-blur3)"/>
+</g>
+<rect x="0" y="420" width="390" height="80" fill="url(#g01-mist)" opacity=".75"/>
+<!-- mid bamboo in front of hut -->
+<g color="#7E9C84" opacity=".92"><use xlink:href="#g01-stalk" transform="translate(176 -18) scale(4.6 1)"/><use xlink:href="#g01-stalk" transform="translate(72 -36) scale(5 1)"/></g>
+<g color="#86A68C" opacity=".8">
+<use xlink:href="#g01-lc" transform="translate(118 196) rotate(25) scale(1.3)"/><use xlink:href="#g01-lc" transform="translate(93 246) rotate(-5) scale(1.2)"/><use xlink:href="#g01-lc" transform="translate(146 176) rotate(45) scale(1.1)"/><use xlink:href="#g01-lc" transform="translate(118 300) rotate(15) scale(1.1)"/><use xlink:href="#g01-lc" transform="translate(302 330) rotate(170)"/><use xlink:href="#g01-lc" transform="translate(72 360) rotate(20) scale(1.1)"/><use xlink:href="#g01-lc" transform="translate(176 150) rotate(60) scale(1.1)"/>
+</g>
+
+<!-- LIGHT SHAFTS -->
+<g fill="url(#g01-shaft)" filter="url(#g01-blur3)" opacity=".9">
+<path d="M226 -10 L284 -10 L132 600 L76 600 Z"/><path d="M300 -10 L334 -10 L214 600 L172 600 Z"/><path d="M160 -10 L190 -10 L54 600 L30 600 Z"/><path d="M352 -10 L372 -10 L290 600 L268 600 Z" opacity=".5"/>
+</g>
+<rect x="0" y="476" width="390" height="70" fill="url(#g01-mist)" opacity=".6"/>
+
+<!-- CLEARING GROUND -->
+<path d="M0 522 C 80 502 140 508 195 506 C 260 504 330 500 390 520 L390 760 L0 760 Z" fill="url(#g01-ground)"/>
+<g fill="#A3BE8A" opacity=".45"><ellipse cx="90" cy="530" rx="34" ry="6"/><ellipse cx="300" cy="528" rx="40" ry="6"/><ellipse cx="195" cy="560" rx="120" ry="12"/></g><g fill="#58784C" opacity=".4"><ellipse cx="60" cy="612" rx="30" ry="6"/><ellipse cx="330" cy="604" rx="36" ry="7"/><ellipse cx="150" cy="628" rx="40" ry="6"/><ellipse cx="250" cy="618" rx="30" ry="5"/><ellipse cx="200" cy="646" rx="60" ry="6"/></g><g fill="#9DB886" opacity=".5"><ellipse cx="110" cy="606" rx="22" ry="4"/><ellipse cx="282" cy="628" rx="26" ry="4.5"/></g><g fill="url(#g01-stone)"><ellipse cx="72" cy="634" rx="7" ry="3.5"/><ellipse cx="322" cy="640" rx="6" ry="3"/><ellipse cx="236" cy="604" rx="5" ry="2.5"/></g>
+<circle cx="195" cy="420" r="165" fill="url(#g01-aura)"/>
+
+<!-- MEDITATION ROCK (hero seat) -->
+<ellipse cx="198" cy="586" rx="102" ry="12" fill="#16261E" opacity=".42" filter="url(#g01-blur6)"/>
+<path d="M112 538 C 104 548 102 566 118 578 C 140 586 178 588 200 586 C 236 588 262 584 272 576 C 286 566 288 548 278 538 Z" fill="url(#g01-rock)"/>
+<path d="M112 538 C 104 548 102 566 118 578 L 152 580 C 138 566 134 550 140 540 Z" fill="#000000" opacity=".14"/>
+<path d="M228 540 C 250 552 262 566 262 580 C 270 576 284 562 278 538 Z" fill="#DAD5E0" opacity=".3"/>
+<path d="M278 538 C 288 550 286 566 272 576" fill="none" stroke="#ECE8F2" stroke-width="1.4" stroke-linecap="round" opacity=".55"/>
+<g fill="none" stroke="#2E2A40" stroke-width="1" stroke-linecap="round" opacity=".4"><path d="M164 554 L 172 568 L 168 582"/><path d="M212 560 L 220 572"/></g>
+<ellipse cx="195" cy="536" rx="84" ry="12" fill="url(#g01-rocktop)"/>
+<ellipse cx="195" cy="536" rx="84" ry="12" fill="none" stroke="#6C6684" stroke-width="1" opacity=".5"/>
+<path d="M114 538 C 126 524 160 522 186 528 C 176 538 150 546 126 545 C 116 544 111 541 114 538 Z" fill="url(#g01-moss)" opacity=".92"/>
+<path d="M238 530 C 256 526 272 530 278 538 C 268 546 248 544 238 538 Z" fill="#8DB46E" opacity=".85"/>
+<path d="M114 538 C 106 550 106 566 118 578 C 126 568 132 556 138 544 Z" fill="#6F9A58" opacity=".85"/>
+<path d="M200 586 C 220 584 236 586 250 582 C 240 576 222 574 206 578 Z" fill="#5F8A4C" opacity=".6"/>
+<g fill="#9CC27A" opacity=".7"><circle cx="146" cy="530" r="3"/><circle cx="208" cy="528" r="2.4"/><circle cx="226" cy="542" r="2.2"/><circle cx="262" cy="560" r="3"/><circle cx="130" cy="570" r="2.6"/></g>
+<ellipse cx="104" cy="586" rx="12" ry="6" fill="url(#g01-stone)"/><ellipse cx="292" cy="582" rx="10" ry="5" fill="url(#g01-stone)"/>
+<g color="#5C8450"><use xlink:href="#g01-tuft" transform="translate(100 596) scale(.9)"/><use xlink:href="#g01-tuft" transform="translate(294 592) scale(.9) scale(-1 1)"/></g>
+
+<!-- FOREGROUND: STREAM + BANKS -->
+<path d="M390 604 C 320 612 290 640 240 652 C 196 662 160 662 120 690 C 84 714 40 722 0 728 L0 792 C 50 784 110 770 150 744 C 196 716 240 706 290 690 C 330 678 366 664 390 650 Z" fill="url(#g01-water)"/>
+<path d="M390 604 C 320 612 290 640 240 652 C 196 662 160 662 120 690 C 84 714 40 722 0 728" fill="none" stroke="#2A4634" stroke-width="2.4" opacity=".6"/>
+<g fill="none" stroke="#A9CFC4" stroke-width="1.6" stroke-linecap="round" opacity=".35"><path d="M340 626 C 310 636 280 646 250 654"/><path d="M212 666 C 180 676 146 690 112 712"/><path d="M92 738 C 60 752 30 762 6 766"/><path d="M360 642 C 346 648 332 652 318 656"/><path d="M176 712 C 160 720 146 728 132 736"/></g>
+<g fill="#FFFFFF" opacity=".6"><circle cx="300" cy="648" r="1.1"/><circle cx="262" cy="664" r="1"/><circle cx="140" cy="700" r="1.2"/><circle cx="60" cy="748" r="1"/></g>
+<!-- stepping stones -->
+<g fill="none" stroke="#C9DDD2" stroke-width="1" opacity=".35"><ellipse cx="150" cy="708" rx="24" ry="12"/><ellipse cx="190" cy="690" rx="27" ry="13"/><ellipse cx="232" cy="672" rx="24" ry="12"/><ellipse cx="268" cy="656" rx="22" ry="10"/></g>
+<g fill="url(#g01-stone)"><ellipse cx="150" cy="706" rx="18" ry="9"/><ellipse cx="190" cy="690" rx="20" ry="10"/><ellipse cx="232" cy="672" rx="18" ry="9"/><ellipse cx="268" cy="656" rx="16" ry="8"/></g>
+<g fill="#BFC9B8" opacity=".6"><ellipse cx="150" cy="703" rx="12" ry="4"/><ellipse cx="190" cy="686" rx="14" ry="4.5"/><ellipse cx="232" cy="669" rx="12" ry="4"/><ellipse cx="268" cy="653" rx="10" ry="3.5"/></g>
+<!-- near bank -->
+<path d="M0 792 C 50 784 110 770 150 744 C 196 716 240 706 290 690 C 330 678 366 664 390 650 L390 844 L0 844 Z" fill="url(#g01-bank)"/>
+<path d="M0 792 C 50 784 110 770 150 744 C 196 716 240 706 290 690 C 330 678 366 664 390 650" fill="none" stroke="#4E6E48" stroke-width="2" opacity=".5"/>
+<g color="#3E6040"><use xlink:href="#g01-tuft" transform="translate(30 804) scale(1.3)"/><use xlink:href="#g01-tuft" transform="translate(74 788) scale(1.1)"/><use xlink:href="#g01-tuft" transform="translate(124 768)"/><use xlink:href="#g01-tuft" transform="translate(302 702) scale(1.2)"/><use xlink:href="#g01-tuft" transform="translate(352 684) scale(1.1)"/><use xlink:href="#g01-tuft" transform="translate(220 724) scale(.9)"/></g>
+<g color="#4A7048"><use xlink:href="#g01-tuft" transform="translate(340 606)"/><use xlink:href="#g01-tuft" transform="translate(250 650) scale(.9)"/><use xlink:href="#g01-tuft" transform="translate(110 690) scale(.9)"/><use xlink:href="#g01-tuft" transform="translate(60 716)"/></g>
+<g color="#C5BE78" opacity=".7"><use xlink:href="#g01-leaf" transform="translate(40 820) rotate(-20) scale(.7)"/><use xlink:href="#g01-leaf" transform="translate(100 800) rotate(30) scale(.6)"/><use xlink:href="#g01-leaf" transform="translate(330 740) rotate(160) scale(.7)"/><use xlink:href="#g01-leaf" transform="translate(360 790) rotate(200) scale(.6)"/><use xlink:href="#g01-leaf" transform="translate(70 600) rotate(10) scale(.6)"/><use xlink:href="#g01-leaf" transform="translate(320 598) rotate(190) scale(.6)"/></g>
+<g color="#C9CC80" opacity=".85"><use xlink:href="#g01-leaf" transform="translate(160 726) rotate(10) scale(.8)"/><use xlink:href="#g01-leaf" transform="translate(290 668) rotate(160) scale(.7)"/></g>
+
+<!-- DRIFTING LEAVES (ambient animation area) -->
+<g opacity=".9">
+<use xlink:href="#g01-leaf" transform="translate(104 212) rotate(-30) scale(.9)" color="#D6DF9C"/><use xlink:href="#g01-leaf" transform="translate(130 248) rotate(20) scale(.8)" color="#BFD089"/><use xlink:href="#g01-leaf" transform="translate(96 300) rotate(-60) scale(.9)" color="#E3DAA0"/><use xlink:href="#g01-leaf" transform="translate(120 332) rotate(40) scale(.75)" color="#D6DF9C"/><use xlink:href="#g01-leaf" transform="translate(84 268) rotate(10) scale(.7)" color="#BFD089"/><use xlink:href="#g01-leaf" transform="translate(262 232) rotate(200) scale(.85)" color="#D6DF9C"/><use xlink:href="#g01-leaf" transform="translate(286 196) rotate(150) scale(.8)" color="#E3DAA0"/><use xlink:href="#g01-leaf" transform="translate(272 290) rotate(230) scale(.75)" color="#BFD089"/><use xlink:href="#g01-leaf" transform="translate(252 178) rotate(170) scale(.7)" color="#D6DF9C"/>
+</g>
+
+<!-- NEAR FRAMING BAMBOO -->
+<g color="#3A5848">
+<use xlink:href="#g01-stalk" transform="translate(14 -20) scale(13 1)"/><use xlink:href="#g01-stalk" transform="translate(40 -46) scale(10 1)" color="#40604E"/><use xlink:href="#g01-stalk" transform="translate(63 -8) scale(7.5 1)" color="#46664F" opacity=".9"/><use xlink:href="#g01-stalk" transform="translate(28 0) rotate(-4) scale(5 1)" color="#4A6A54"/>
+<use xlink:href="#g01-stalk" transform="translate(376 -30) scale(14 1)"/><use xlink:href="#g01-stalk" transform="translate(351 -4) scale(10.5 1)" color="#3E5E4C"/><use xlink:href="#g01-stalk" transform="translate(327 -40) scale(7.5 1)" color="#44644F" opacity=".9"/><use xlink:href="#g01-stalk" transform="translate(362 0) rotate(4) scale(5 1)" color="#4A6A54"/>
+</g>
+<g color="#3E5C4A"><use xlink:href="#g01-lc" transform="translate(40 90) rotate(30) scale(1.5)"/><use xlink:href="#g01-lc" transform="translate(120 100) rotate(60) scale(1.4)"/><use xlink:href="#g01-lc" transform="translate(250 100) rotate(120) scale(1.4)"/><use xlink:href="#g01-lc" transform="translate(340 92) rotate(150) scale(1.5)"/></g>
+<g color="#2E4A3C">
+<use xlink:href="#g01-lc" transform="translate(-4 40) rotate(10) scale(2)"/><use xlink:href="#g01-lc" transform="translate(28 -6) rotate(50) scale(2.2)"/><use xlink:href="#g01-lc" transform="translate(66 56) rotate(25) scale(1.8)"/><use xlink:href="#g01-lc" transform="translate(104 8) rotate(70) scale(1.9)"/><use xlink:href="#g01-lc" transform="translate(148 44) rotate(40) scale(1.6)"/><use xlink:href="#g01-lc" transform="translate(196 -4) rotate(90) scale(1.9)"/><use xlink:href="#g01-lc" transform="translate(238 50) rotate(120) scale(1.6)"/><use xlink:href="#g01-lc" transform="translate(284 6) rotate(110) scale(2)"/><use xlink:href="#g01-lc" transform="translate(326 46) rotate(145) scale(1.8)"/><use xlink:href="#g01-lc" transform="translate(364 -2) rotate(150) scale(2.1)"/><use xlink:href="#g01-lc" transform="translate(396 56) rotate(170) scale(2)"/>
+<use xlink:href="#g01-lc" transform="translate(40 190) rotate(30) scale(1.5)"/><use xlink:href="#g01-lc" transform="translate(14 300) rotate(20) scale(1.6)"/><use xlink:href="#g01-lc" transform="translate(63 400) rotate(100) scale(1.3)"/><use xlink:href="#g01-lc" transform="translate(40 500) rotate(30) scale(1.3)"/>
+<use xlink:href="#g01-lc" transform="translate(351 200) rotate(150) scale(1.5)"/><use xlink:href="#g01-lc" transform="translate(376 310) rotate(160) scale(1.6)"/><use xlink:href="#g01-lc" transform="translate(327 410) rotate(60) scale(1.3)"/><use xlink:href="#g01-lc" transform="translate(351 500) rotate(150) scale(1.3)"/>
+</g>
+
+<!-- UI-ZONE TONING -->
+<rect x="0" y="0" width="390" height="150" fill="url(#g01-topdark)"/>
+<rect x="0" y="80" width="96" height="480" fill="url(#g01-sideL)"/>
+<rect x="294" y="80" width="96" height="480" fill="url(#g01-sideR)"/>
+<rect x="0" y="590" width="390" height="254" fill="url(#g01-botdark)"/>
+</svg>

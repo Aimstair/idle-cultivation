@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="art_void_collapse-tile" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#E8C07A"/><stop offset="0.5" stop-color="#B8782E"/><stop offset="1" stop-color="#7E4A16"/></radialGradient>
+    <radialGradient id="art_void_collapse-sheen" cx="0.25" cy="0.18" r="0.6"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="art_void_collapse-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset="0.45" stop-color="#FFD45A"/><stop offset="0.8" stop-color="#D69A2A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+    <clipPath id="art_void_collapse-clip"><rect x="9.5" y="9.5" width="45" height="45" rx="6"/></clipPath>
+    <linearGradient id="art_void_collapse-stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F0F8"/><stop offset="0.5" stop-color="#C8C0D4"/><stop offset="1" stop-color="#8A8098"/></linearGradient><radialGradient id="art_void_collapse-vortex" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A0414"/><stop offset="0.55" stop-color="#3A1E7A"/><stop offset="1" stop-color="#9A6AE8"/></radialGradient>
+  </defs>
+  <ellipse cx="33" cy="58" rx="22" ry="2" fill="#2A1008" opacity=".22"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_void_collapse-tile)" stroke="#2A1008" stroke-width="2.5"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_void_collapse-sheen)"/>
+  <g clip-path="url(#art_void_collapse-clip)">
+    <path d="M8 27L56 27L56 56L8 56Z" fill="url(#art_void_collapse-stone)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M8 30L14 31L13 34M56 33L50 32L51 36M18 27L21 30L17 32M46 27L43 30L47 32" fill="none" stroke="#2A1008" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+    <ellipse cx="32" cy="41" rx="17.5" ry="9.2" fill="url(#art_void_collapse-vortex)" stroke="#2A1008" stroke-width="2"/>
+    <path d="M33.0 41.0 L33.2 41.1 L33.4 41.3 L33.5 41.5 L33.4 41.8 L33.2 42.0 L32.9 42.2 L32.5 42.4 L31.9 42.6 L31.2 42.7 L30.5 42.7 L29.7 42.6 L29.0 42.4 L28.2 42.2 L27.6 41.8 L27.1 41.4 L26.8 40.8 L26.8 40.3 L26.9 39.7 L27.3 39.1 L27.9 38.6 L28.8 38.1 L29.9 37.7 L31.2 37.4 L32.6 37.2 L34.1 37.3 L35.6 37.4 L37.1 37.8 L38.4 38.3 L39.6 38.9 L40.4 39.7 L41.0 40.6 L41.3 41.6 L41.1 42.6 L40.6 43.5 L39.6 44.5 L38.3 45.3 L36.7 46.0 L34.7 46.5 L32.6 46.8 L30.3 46.9 L28.0 46.7 L25.8 46.3 L23.7 45.7 L21.9 44.8 L20.4 43.7" fill="none" stroke="#EAD8FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+    <g fill="url(#art_void_collapse-stone)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"><path d="M-3 -2L3 -2.5L2.5 2L-2.5 2.5Z" transform="translate(19 35.5) rotate(35)"/><path d="M-3 -2L3 -2.5L2.5 2L-2.5 2.5Z" transform="translate(45.5 35.5) rotate(-35)"/><path d="M-3 -2L3 -2.5L2.5 2L-2.5 2.5Z" transform="translate(31 48.5) rotate(-10)"/><path d="M-2 -1.5L2 -2L1.5 1.5L-1.5 2Z" transform="translate(24 30) rotate(50)"/><path d="M-2 -1.5L2 -2L1.5 1.5L-1.5 2Z" transform="translate(40 30) rotate(-50)"/></g>
+    <path d="M12 29.5C18 28.8 24 28.5 30 28.6" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".95"/>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(32 41) scale(2.2)" fill="#FFFFFF" opacity="1"/><path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(40 36) scale(1.4)" fill="#EAD8FF" opacity="1"/><path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(24 45) scale(1.3)" fill="#EAD8FF" opacity="1"/>
+    <g fill="#EAD8FF" opacity=".9"><circle cx="20" cy="21" r="1.2"/><circle cx="44" cy="19" r="1.2"/><circle cx="32" cy="16" r="1"/></g>
+  </g>
+  <rect x="9.5" y="9.5" width="45" height="45" rx="6" fill="none" stroke="url(#art_void_collapse-gold)" stroke-width="1.6"/>
+  <path d="M11.5 20V15Q11.5 11.5 15 11.5H20" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+</svg>

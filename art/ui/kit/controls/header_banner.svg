@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="88" viewBox="0 0 220 44">
+<!-- 9slice: 40 (horizontal stretch only) -->
+  <defs>
+    <linearGradient id="header_banner-red" gradientUnits="userSpaceOnUse" x1="0" y1="5" x2="0" y2="37">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </linearGradient>
+    <linearGradient id="header_banner-tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B81E0E"/>
+      <stop offset="1" stop-color="#4A0803"/>
+    </linearGradient>
+    <linearGradient id="header_banner-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="6.5" x2="0" y2="18">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="header_banner-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <filter id="header_banner-blur" x="-10%" y="-20%" width="120%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <!-- folded swallow tail (left; mirrored for the right). Stays inside the 40-unit end zone. -->
+    <g id="header_banner-end">
+      <path d="M5 10.5 H30 V42 H5 L12.5 26.25 Z" fill="url(#header_banner-tail)" stroke="#2A1008" stroke-width="2.6" stroke-linejoin="round"/>
+      <path d="M27 12.6 H7.2 L14.6 26.25 L7.2 39.9 H27" fill="none" stroke="#E8B657" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M24 38 L24 42 L31 38 Z" fill="#2A0402"/>
+    </g>
+    <g id="header_banner-capEnd">
+      <rect x="24.6" y="3.6" width="4.4" height="34.8" rx="1.2" fill="url(#header_banner-gold)" stroke="#2A1008" stroke-width="1.4"/>
+      <path d="M26.2 6 V12" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".75"/>
+    </g>
+  </defs>
+
+  <!-- cast shadow -->
+  <g fill="#2A1008" opacity=".4" filter="url(#header_banner-blur)">
+    <path d="M5 13 H30 V44 H5 L12.5 28.5 Z"/>
+    <path d="M215 13 H190 V44 H215 L207.5 28.5 Z"/>
+    <rect x="26" y="7.5" width="168" height="32"/>
+  </g>
+
+  <!-- tails -->
+  <use href="#header_banner-end"/>
+  <use href="#header_banner-end" transform="matrix(-1 0 0 1 220 0)"/>
+
+  <!-- red lacquer band -->
+  <rect x="26" y="5" width="168" height="32" fill="url(#header_banner-red)" stroke="#2A1008" stroke-width="2.8" stroke-linejoin="round"/>
+  <rect x="26" y="5" width="168" height="13" fill="url(#header_banner-sheen)"/>
+  <!-- gold edges -->
+  <rect x="28.6" y="7.6" width="162.8" height="26.8" fill="none" stroke="#FFE7A0" stroke-width="1.4"/>
+  <path d="M29 8.4 H191" fill="none" stroke="#FFFFFF" stroke-width=".8" opacity=".5"/>
+  <!-- gold end caps -->
+  <use href="#header_banner-capEnd"/>
+  <use href="#header_banner-capEnd" transform="matrix(-1 0 0 1 220 0)"/>
+</svg>

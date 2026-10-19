@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="art_lightning_spear-tile" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#C8D0DE"/><stop offset="0.5" stop-color="#7E8698"/><stop offset="1" stop-color="#464D5E"/></radialGradient>
+    <radialGradient id="art_lightning_spear-sheen" cx="0.25" cy="0.18" r="0.6"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="art_lightning_spear-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset="0.45" stop-color="#FFD45A"/><stop offset="0.8" stop-color="#D69A2A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+    <clipPath id="art_lightning_spear-clip"><rect x="9.5" y="9.5" width="45" height="45" rx="6"/></clipPath>
+    <linearGradient id="art_lightning_spear-blade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#CFD6E4"/><stop offset="1" stop-color="#7E8698"/></linearGradient>
+  </defs>
+  <ellipse cx="33" cy="58" rx="22" ry="2" fill="#2A1008" opacity=".22"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_lightning_spear-tile)" stroke="#2A1008" stroke-width="2.5"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_lightning_spear-sheen)"/>
+  <g clip-path="url(#art_lightning_spear-clip)">
+    <g transform="translate(32 32) rotate(-45)">
+      <path d="M-26 -7H-15M-29 0H-23M-26 7H-15" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round" opacity=".45"/>
+      <path d="M-26 -7H-15M-29 0H-23M-26 7H-15" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+      <rect x="-24" y="-1.7" width="33" height="3.4" rx="1.3" fill="#FFF8E4" stroke="#2A1008" stroke-width="1.6"/>
+      <path d="M-22 -4L-15 1.5L-9 -5L-2 1.5L4 -4" fill="none" stroke="#8FDCFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+      <path d="M-22 -4L-15 1.5L-9 -5L-2 1.5L4 -4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="6" y="-2.8" width="4.5" height="5.6" rx="1" fill="url(#art_lightning_spear-gold)" stroke="#2A1008" stroke-width="1.4"/>
+      <path d="M9 -4.8L23.5 0L9 4.8L11.5 0Z" fill="url(#art_lightning_spear-blade)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M11 -2.4L19 -.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".95"/>
+    </g>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(49 13) scale(3.4)" fill="#E8F4FF" opacity="1"/>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(42 10.5) scale(2)" fill="#E8F4FF" opacity="1"/>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(53 22) scale(2)" fill="#E8F4FF" opacity="1"/>
+  </g>
+  <rect x="9.5" y="9.5" width="45" height="45" rx="6" fill="none" stroke="url(#art_lightning_spear-gold)" stroke-width="1.6"/>
+  <path d="M11.5 20V15Q11.5 11.5 15 11.5H20" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+</svg>

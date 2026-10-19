@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="el_wood-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5CD9A8"/>
+      <stop offset=".5" stop-color="#2BA37A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <radialGradient id="el_wood-core" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".55" stop-color="#5CD9A8"/>
+      <stop offset="1" stop-color="#1E8A62"/>
+    </radialGradient>
+    <clipPath id="el_wood-clip">
+      <path d="M20 1.6C38 8 38 32 20 38.4C2 32 2 8 20 1.6Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- leaf body (rim band colour) -->
+  <path d="M20 1.6C38 8 38 32 20 38.4C2 32 2 8 20 1.6Z" fill="url(#el_wood-rim)"/>
+  <!-- leaf veins on the rim band, slanting toward the tip -->
+  <g clip-path="url(#el_wood-clip)" fill="none" stroke="#B4F4DA" stroke-width="1.1" stroke-linecap="round" opacity=".8">
+    <path d="M26.2 11.2L29.4 7.6M29.4 15.8L33 12.4M30.4 21.6L34 18.6M29.4 27.2L32.8 24.6M26.2 31.8L29.2 29.4"/>
+    <path d="M13.8 11.2L10.6 7.6M10.6 15.8L7 12.4M9.6 21.6L6 18.6M10.6 27.2L7.2 24.6M13.8 31.8L10.8 29.4"/>
+  </g>
+
+  <!-- clear lighter centre leaf (half-width 10.5 at the middle) -->
+  <path d="M20 1.6C38 8 38 32 20 38.4C2 32 2 8 20 1.6Z" transform="translate(20 20) scale(.78) translate(-20 -20)"
+    fill="url(#el_wood-core)" stroke="#2A1008" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M12.8 15.5C13.6 12.2 15.4 9.6 17.6 7.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+
+  <!-- outline -->
+  <path d="M20 1.6C38 8 38 32 20 38.4C2 32 2 8 20 1.6Z" fill="none" stroke="#2A1008" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M7.6 12.4C9.6 8.4 13.6 4.6 18.4 2.6" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".7"/>
+</svg>

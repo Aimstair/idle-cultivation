@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 76 76">
+  <defs>
+    <linearGradient id="frame_portrait-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="frame_portrait-goldRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A5E14"/>
+      <stop offset=".35" stop-color="#D69A2A"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#FFF0B0"/>
+    </linearGradient>
+    <linearGradient id="frame_portrait-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <radialGradient id="frame_portrait-jade" cx=".36" cy=".32" r=".8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <g id="frame_portrait-gem">
+      <circle r="4.9" fill="url(#frame_portrait-jade)" stroke="#2A1008" stroke-width="1.8"/>
+      <circle cx="-1.6" cy="-1.6" r="1.1" fill="#FFFFFF" opacity=".85"/>
+    </g>
+  </defs>
+
+  <!-- outer frame slope (lit top), with the window cut out -->
+  <path fill-rule="evenodd" fill="url(#frame_portrait-gold)"
+    d="M15.5 4.5 H60.5 A12 12 0 0 1 72.5 16.5 V59.5 A12 12 0 0 1 60.5 71.5 H15.5 A12 12 0 0 1 3.5 59.5 V16.5 A12 12 0 0 1 15.5 4.5 Z
+       M16 10 H60 A7 7 0 0 1 67 17 V59 A7 7 0 0 1 60 66 H16 A7 7 0 0 1 9 59 V17 A7 7 0 0 1 16 10 Z"/>
+  <!-- inner bevel slope (reversed light), window cut out -->
+  <path fill-rule="evenodd" fill="url(#frame_portrait-goldRev)"
+    d="M15.8 7.3 H60.2 A9.5 9.5 0 0 1 69.7 16.8 V59.2 A9.5 9.5 0 0 1 60.2 68.7 H15.8 A9.5 9.5 0 0 1 6.3 59.2 V16.8 A9.5 9.5 0 0 1 15.8 7.3 Z
+       M16 10 H60 A7 7 0 0 1 67 17 V59 A7 7 0 0 1 60 66 H16 A7 7 0 0 1 9 59 V17 A7 7 0 0 1 16 10 Z"/>
+  <!-- bevel ridge highlight -->
+  <path d="M15.8 7.3 H60.2 A9.5 9.5 0 0 1 69.7 16.8 V59.2 A9.5 9.5 0 0 1 60.2 68.7 H15.8 A9.5 9.5 0 0 1 6.3 59.2 V16.8 A9.5 9.5 0 0 1 15.8 7.3 Z"
+    fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".45"/>
+  <!-- outlines: outer silhouette and window edge (stroke stays outside the window) -->
+  <path d="M15.5 4.5 H60.5 A12 12 0 0 1 72.5 16.5 V59.5 A12 12 0 0 1 60.5 71.5 H15.5 A12 12 0 0 1 3.5 59.5 V16.5 A12 12 0 0 1 15.5 4.5 Z"
+    fill="none" stroke="#2A1008" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M16 9 H60 A8 8 0 0 1 68 17 V59 A8 8 0 0 1 60 67 H16 A8 8 0 0 1 8 59 V17 A8 8 0 0 1 16 9 Z"
+    fill="none" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- gold cloud crest at the top centre -->
+  <path d="M25 9 C25 4.2 30 2.6 33.5 5 C34.2 1.2 41.8 1.2 42.5 5 C46 2.6 51 4.2 51 9 Z"
+    fill="url(#frame_portrait-goldSmall)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="36.4" cy="4.2" rx="1.7" ry="1.1" fill="#FFFFFF" opacity=".85"/>
+
+  <!-- jade corner gems: top-left, top-right, bottom-right (bottom-left left plain for the realm seal) -->
+  <use href="#frame_portrait-gem" transform="translate(6.3 7.3)"/>
+  <use href="#frame_portrait-gem" transform="translate(69.7 7.3)"/>
+  <use href="#frame_portrait-gem" transform="translate(69.7 68.7)"/>
+</svg>

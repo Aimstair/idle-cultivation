@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="rod_ice_jade-blank" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.35" stop-color="#DDFBF2"/><stop offset="0.75" stop-color="#7ADCC8"/><stop offset="1" stop-color="#2C9C8A"/></linearGradient>
+<linearGradient id="rod_ice_jade-grip" gradientUnits="userSpaceOnUse" x1="14" y1="46" x2="19" y2="51"><stop offset="0" stop-color="#9AB4C8"/><stop offset="0.5" stop-color="#5E7488"/><stop offset="1" stop-color="#2E3C4C"/></linearGradient>
+<linearGradient id="rod_ice_jade-fit" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#CFD6E4"/><stop offset="1" stop-color="#7E8698"/></linearGradient>
+<radialGradient id="rod_ice_jade-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#C8FFE6" stop-opacity="0.7"/><stop offset="0.5" stop-color="#C8FFE6" stop-opacity="0.25"/><stop offset="1" stop-color="#C8FFE6" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="31" cy="55.5" rx="18" ry="2" fill="#2A1008" opacity=".25"/>
+<circle cx="44" cy="22" r="18" fill="url(#rod_ice_jade-glow)"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#E8FFFB" stroke-width="1" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#E8FFFB" stroke-width="1" stroke-linecap="round"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="#FFFFFF" stroke="#2A1008" stroke-width="1.8"/>
+<path d="M50.5 32.8A3.3 3.3 0 0 1 57.1 32.8Z" fill="#7ADCC8"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="none" stroke="#2A1008" stroke-width="1.8"/>
+<ellipse cx="52.6" cy="31.2" rx="1" ry=".6" transform="rotate(-38 52.6 31.2)" fill="#FFFFFF" opacity=".85"/>
+<path d="M13 53L23 43" fill="none" stroke="#2A1008" stroke-width="9.8" stroke-linecap="round"/>
+<path d="M13 53L23 43" fill="none" stroke="url(#rod_ice_jade-grip)" stroke-width="5.4" stroke-linecap="round"/>
+<g stroke="#2A1008" stroke-width="5" stroke-linecap="butt" fill="none"><path d="M16.1 50.9L18.9 48.1"/><path d="M11.2 52.2L14.2 49.2"/></g>
+<path d="M16.6 50.4L18.4 48.6" fill="none" stroke="url(#rod_ice_jade-fit)" stroke-width="6.8" stroke-linecap="butt"/>
+<path d="M13 53L15.2 50.8" fill="none" stroke="#2A1008" stroke-width="9.8" stroke-linecap="round"/>
+<path d="M13 53L15.2 50.8" fill="none" stroke="url(#rod_ice_jade-fit)" stroke-width="5.4" stroke-linecap="round"/>
+<path d="M16.4 48.4L17.6 47.2" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="#2A1008" stroke-width="4.6" stroke-linecap="round"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="url(#rod_ice_jade-fit)" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="29.5" cy="49.5" r="4.6" fill="url(#rod_ice_jade-fit)" stroke="#2A1008" stroke-width="2.2"/>
+<circle cx="29.5" cy="49.5" r="1.6" fill="#2A1008" opacity=".85"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="url(#rod_ice_jade-fit)" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M26.6 47.2A3.6 3.6 0 0 1 29.6 45.9" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M20.33 42.42L23.67 45.58L54.8 10.75L53.2 9.25Z" fill="url(#rod_ice_jade-blank)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+<g fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85"><path d="M31 35.4L33.6 37.6M32.2 34.4L33.8 36.9M33.2 33.6L34.3 36.3"/><path d="M41 24.8L43.4 27M42.1 23.8L43.6 26.3M43 23L44 25.7"/><path d="M48.6 16.6L50.4 18.2"/></g>
+<path d="M26 39.2Q38 29 50 14.6" fill="none" stroke="#2C9C8A" stroke-width="1" stroke-linecap="round" opacity=".35"/>
+<path d="M23.2 42L52.4 10.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="url(#rod_ice_jade-fit)" stroke-width="1.3"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="url(#rod_ice_jade-fit)" stroke-width="1.3"/>
+<circle cx="53.6" cy="10.6" r="2" fill="url(#rod_ice_jade-fit)" stroke="#2A1008" stroke-width="2"/>
+<circle cx="52.9" cy="9.9" r=".6" fill="#FFFFFF" opacity=".9"/>
+<path d="M27 15.3Q27.44 17.06 29.2 17.5Q27.44 17.94 27 19.7Q26.56 17.94 24.8 17.5Q26.56 17.06 27 15.3Z" fill="#FFFFFF" opacity="0.95"/>
+<path d="M57 22.5Q57.3 23.7 58.5 24Q57.3 24.3 57 25.5Q56.7 24.3 55.5 24Q56.7 23.7 57 22.5Z" fill="#FFFFFF" opacity="0.95"/>
+<path d="M44 40.7Q44.26 41.74 45.3 42Q44.26 42.26 44 43.3Q43.74 42.26 42.7 42Q43.74 41.74 44 40.7Z" fill="#FFFFFF" opacity="0.95"/>
+</svg>

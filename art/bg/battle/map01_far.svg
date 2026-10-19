@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1560" height="1120" viewBox="0 0 780 560">
+<defs>
+<linearGradient id="map01_far-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FC2AE"/><stop offset=".28" stop-color="#B8D9C6"/><stop offset=".5" stop-color="#DDE8D2"/><stop offset=".68" stop-color="#F3EEDA"/><stop offset="1" stop-color="#E8E4CD"/></linearGradient>
+<radialGradient id="map01_far-sun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF8E2" stop-opacity=".95"/><stop offset=".3" stop-color="#FFEFC6" stop-opacity=".6"/><stop offset=".65" stop-color="#FFE7B4" stop-opacity=".2"/><stop offset="1" stop-color="#FFE4A8" stop-opacity="0"/></radialGradient>
+<linearGradient id="map01_far-mA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B4CFC4"/><stop offset="1" stop-color="#D5E3D6"/></linearGradient>
+<linearGradient id="map01_far-mB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#97BAA8"/><stop offset="1" stop-color="#C3D8C6"/></linearGradient>
+<linearGradient id="map01_far-mC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7DA38F"/><stop offset="1" stop-color="#AFC8B4"/></linearGradient>
+<linearGradient id="map01_far-mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6F6EA" stop-opacity="0"/><stop offset=".5" stop-color="#F6F6EA" stop-opacity=".85"/><stop offset="1" stop-color="#F6F6EA" stop-opacity="0"/></linearGradient>
+<linearGradient id="map01_far-gnd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C7D8C3"/><stop offset="1" stop-color="#9DB89D"/></linearGradient>
+<filter id="map01_far-blur" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="map01_far-blur2" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
+<g id="map01_far-bam" fill="none" stroke-linecap="round"><path d="M0 0 V-26" stroke-width="1.2"/><path d="M0 -26 l-4 -3 M0 -26 l4 -2 M0 -26 l-1 -5 M0 -19 l5 -3 M0 -19 l-5 -2 M0 -12 l5 -2 M0 -12 l-4 -3" stroke-width="1.1"/></g>
+<g id="map01_far-t">
+<rect x="0" y="0" width="780" height="560" fill="url(#map01_far-sky)"/>
+<circle cx="168" cy="92" r="250" fill="url(#map01_far-sun)"/>
+<circle cx="168" cy="92" r="46" fill="#FFF7E0" opacity=".45" filter="url(#map01_far-blur)"/>
+<circle cx="168" cy="92" r="26" fill="#FFFBEE" opacity=".9"/>
+<g fill="#FFF6D8" opacity=".22" filter="url(#map01_far-blur)"><path d="M160 90 L300 420 L420 420Z"/><path d="M170 90 L520 330 L600 300Z"/><path d="M160 95 L120 420 L40 420Z"/></g>
+<g fill="none" stroke="#6E8A80" stroke-width="1.1" stroke-linecap="round" opacity=".55"><path d="M560 118 q5 -5 10 0 q5 -5 10 0"/><path d="M588 106 q4 -4 8 0 q4 -4 8 0"/></g>
+<path fill="url(#map01_far-mA)" d="M0 232 C30 232 44 204 80 196 C120 188 150 216 200 222 C250 228 282 168 326 158 C366 150 392 196 440 210 C480 222 520 186 560 176 C600 166 640 206 690 218 C730 227 760 232 780 232 V400 H0Z"/>
+<rect x="0" y="196" width="780" height="70" fill="url(#map01_far-mist)" opacity=".8"/>
+<path fill="url(#map01_far-mB)" d="M0 268 C30 268 50 234 100 228 C150 222 180 262 230 266 C280 270 300 232 350 226 C400 220 430 254 480 258 C530 262 560 232 610 226 C660 220 700 262 740 266 C760 268 770 268 780 268 V430 H0Z"/>
+<g stroke="#8EB2A0" opacity=".6">
+<use xlink:href="#map01_far-bam" transform="translate(85.3 233.2) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(90.8 232.2) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(93.7 231.3) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(99.2 230.4) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(102.1 230.4) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(107.6 231.3) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(110.5 232.2) scale(0.8)"/>
+<use xlink:href="#map01_far-bam" transform="translate(333.2 231.6) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(338.7 230.7) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(341.6 229.8) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(347.1 228.9) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(350 228) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(355.5 228.9) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(358.4 229.8) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(363.9 230.7) scale(0.8)"/>
+<use xlink:href="#map01_far-bam" transform="translate(595.3 231.2) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(600.8 230.2) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(603.7 229.3) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(609.2 228.4) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(612.1 228.4) scale(0.8)"/><use xlink:href="#map01_far-bam" transform="translate(617.6 229.3) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(620.5 230.2) scale(0.8)"/>
+</g>
+<rect x="0" y="236" width="780" height="76" fill="url(#map01_far-mist)" opacity=".9"/>
+<path fill="url(#map01_far-mC)" d="M0 312 C30 312 60 292 110 290 C160 288 190 310 240 312 C290 314 310 294 360 292 C410 290 440 312 490 314 C540 316 570 294 620 292 C670 290 700 310 740 312 C760 313 770 312 780 312 V470 H0Z"/>
+<g stroke="#6F967F" opacity=".7">
+<use xlink:href="#map01_far-bam" transform="translate(89.3 295.6) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(95.4 294.8) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(98.5 294) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(104.6 293.2) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(107.7 292.4) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(113.8 292.4) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(116.9 293.2) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(123 294) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(126.1 294.8) scale(1.1)"/>
+<use xlink:href="#map01_far-bam" transform="translate(337 298) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(343.1 297.2) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(346.2 296.4) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(352.3 295.6) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(355.4 294.8) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(361.5 294) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(364.6 294.8) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(370.7 295.6) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(373.8 296.4) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(379.9 297.2) scale(0.9)"/>
+<use xlink:href="#map01_far-bam" transform="translate(599.3 297.6) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(605.4 296.8) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(608.5 296) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(614.6 295.2) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(617.7 294.4) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(623.8 294.4) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(626.9 295.2) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(633 296) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(636.1 296.8) scale(1.1)"/>
+<use xlink:href="#map01_far-bam" transform="translate(230.8 313.6) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(236.9 312.8) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(240 312) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(246.1 312.8) scale(0.9)"/>
+<use xlink:href="#map01_far-bam" transform="translate(480.8 315.6) scale(0.9)"/><use xlink:href="#map01_far-bam" transform="translate(486.9 314.8) scale(1)"/><use xlink:href="#map01_far-bam" transform="translate(490 314) scale(1.1)"/><use xlink:href="#map01_far-bam" transform="translate(496.1 314.8) scale(0.9)"/>
+</g>
+<rect x="0" y="372" width="780" height="188" fill="url(#map01_far-gnd)"/>
+<rect x="0" y="300" width="780" height="110" fill="url(#map01_far-mist)"/>
+<g fill="#F7F7EC" opacity=".55" filter="url(#map01_far-blur)"><ellipse cx="140" cy="352" rx="150" ry="16"/><ellipse cx="470" cy="340" rx="190" ry="18"/><ellipse cx="740" cy="356" rx="120" ry="14"/></g>
+</g>
+</defs>
+<use xlink:href="#map01_far-t" x="-780"/>
+<use xlink:href="#map01_far-t"/>
+<use xlink:href="#map01_far-t" x="780"/>
+</svg>

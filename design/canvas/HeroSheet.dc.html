@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hero master sheet</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Nunito:wght@600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#16131F}
+.hs{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#EDE6F7}
+.h{font-family:"Baloo 2","Nunito",sans-serif;font-weight:800}
+.cap{font-size:12px;font-weight:700;color:#A79CC4;letter-spacing:.04em;text-transform:uppercase}
+.panel{position:absolute;border-radius:16px;background:#221D30;border:1.5px solid #3A3350}
+.lb{position:absolute;border:1.5px dashed var(--c);border-radius:4px;background:color-mix(in srgb,var(--c) 10%,transparent)}
+.lb b{position:absolute;left:-1.5px;top:-17px;font:800 10.5px/15px "Baloo 2",sans-serif;color:#16131F;background:var(--c);padding:0 5px;border-radius:3px;white-space:nowrap}
+.pv{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:#FFFFFF;border:2.5px solid #E8402A;box-shadow:0 0 0 2px #16131F}
+.sw{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700}
+.sw i{width:26px;height:26px;border-radius:7px;border:1.5px solid rgba(255,255,255,.18);flex:none}
+.ck{display:flex;gap:8px;font-size:12.5px;line-height:1.35;font-weight:600;color:#D9D1EA}
+.ck span:first-child{flex:none;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font:800 11px/1 "Baloo 2",sans-serif;color:#16131F}
+.ok{background:#5FD3A0}.wn{background:#F5C35A}
+</style>
+</helmet>
+<div class="hs" style="width:1240px;height:980px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 30% 0,#2A2340,#16131F 70%)">
+
+  <div style="position:absolute;left:28px;top:22px;display:flex;align-items:baseline;gap:14px">
+    <span class="h" style="font-size:30px;color:#FFFFFF">林月 · Hero master</span>
+    <span style="font-size:14px;font-weight:700;color:#A79CC4">Sheet A · approved candidates · reincarnated swordsman</span>
+  </div>
+
+  <!-- A1 clean -->
+  <div class="panel" style="left:24px;top:76px;width:384px;height:880px">
+    <div style="position:absolute;left:16px;top:14px" class="cap">A1 · Stand (rig master)</div>
+    <div style="position:absolute;left:12px;top:40px;width:360px;height:540px;border-radius:12px;background:linear-gradient(#E7A9B8,#FAD9B0)">
+      <img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="Hero standing, front view" width="360" height="540" style="position:absolute;inset:0">
+    </div>
+    <div style="position:absolute;left:16px;top:598px;right:16px">
+      <div class="cap" style="margin-bottom:10px">Costume palette (sampled)</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 12px">
+        <span class="sw"><i style="background:#181C38"></i>Night navy #181C38</span>
+        <span class="sw"><i style="background:#272E53"></i>Ink indigo #272E53</span>
+        <span class="sw"><i style="background:#2D48A0"></i>Royal blue #2D48A0</span>
+        <span class="sw"><i style="background:#7F92C8"></i>Sky shade #7F92C8</span>
+        <span class="sw"><i style="background:#B9B6CC"></i>Silver #B9B6CC</span>
+        <span class="sw"><i style="background:#F7F6FA"></i>Snow #F7F6FA</span>
+        <span class="sw"><i style="background:#F2E6E3"></i>Skin #F2E6E3</span>
+        <span class="sw"><i style="background:#D6A443"></i>Gold · sword only</span>
+      </div>
+      <div style="margin-top:12px;font-size:12px;line-height:1.4;color:#A79CC4">Cool palette, so the warm sky and the gold UI frame him without blending. Gold stays on the sword fittings only.</div>
+    </div>
+  </div>
+
+  <!-- Layer map -->
+  <div class="panel" style="left:424px;top:76px;width:384px;height:880px">
+    <div style="position:absolute;left:16px;top:14px" class="cap">Layer split for code animation</div>
+    <div style="position:absolute;left:12px;top:40px;width:360px;height:540px;border-radius:12px;background:#2C2640">
+      <img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="360" height="540" style="position:absolute;inset:0;opacity:.42;filter:saturate(.4)">
+      <span class="lb" style="--c:#B79CFF;left:42px;top:2px;width:123px;height:255px"><b>hair_back</b></span>
+      <span class="lb" style="--c:#7FE0FF;left:56px;top:197px;width:91px;height:169px"><b>arm_L</b></span>
+      <span class="lb" style="--c:#7FE0FF;left:214px;top:197px;width:91px;height:169px"><b style="left:auto;right:-1.5px">arm_R</b></span>
+      <span class="lb" style="--c:#9AF0B8;left:102px;top:214px;width:110px;height:177px"><b style="top:auto;bottom:-17px">torso</b></span>
+      <span class="lb" style="--c:#F5C35A;left:224px;top:232px;width:68px;height:236px"><b style="top:auto;bottom:-17px;left:auto;right:-1.5px">weapon</b></span>
+      <span class="lb" style="--c:#F7A6C0;left:49px;top:400px;width:257px;height:136px"><b style="top:2px;left:4px">legs + coat hem</b></span>
+      <span class="lb" style="--c:#FFD6A0;left:116px;top:81px;width:127px;height:123px"><b style="left:auto;right:-1.5px">head</b></span>
+      <span class="lb" style="--c:#FFFFFF;left:130px;top:137px;width:102px;height:28px"><b style="top:auto;bottom:-17px">eyes ×6</b></span>
+      <span class="lb" style="--c:#FFE7A0;left:151px;top:25px;width:67px;height:49px"><b style="left:auto;right:-1.5px;top:-17px">headpiece</b></span>
+      <span class="pv" style="left:180px;top:70px"></span>
+      <span class="pv" style="left:180px;top:200px"></span>
+      <span class="pv" style="left:130px;top:207px"></span>
+      <span class="pv" style="left:232px;top:207px"></span>
+      <span class="pv" style="left:246px;top:260px"></span>
+      <span class="pv" style="left:180px;top:338px"></span>
+    </div>
+    <div style="position:absolute;left:16px;right:16px;top:598px;display:flex;flex-direction:column;gap:8px;font-size:12.5px;line-height:1.4;color:#D9D1EA">
+      <div class="cap">Idle motion per layer</div>
+      <div><b style="color:#B79CFF">hair_back</b> sways ±3° from the top of the head, 0.4 s behind the head (follow-through)</div>
+      <div><b style="color:#F7A6C0">coat hem</b> flutters with a slow sine, 2° offset</div>
+      <div><b style="color:#9AF0B8">torso</b> breathes: scaleY 1.00 → 1.015, 3 s</div>
+      <div><b style="color:#FFFFFF">eyes</b> blink every 3–6 s (random); swap to focused in battle</div>
+      <div><b style="color:#F5C35A">weapon</b> is its own asset; equipping a new sword swaps only this layer</div>
+      <div style="display:flex;align-items:center;gap:6px;color:#A79CC4"><span class="pv" style="position:relative;margin:0"></span> pivot points</div>
+    </div>
+  </div>
+
+  <!-- A2 + checks -->
+  <div class="panel" style="left:824px;top:76px;width:392px;height:880px">
+    <div style="position:absolute;left:16px;top:14px" class="cap">A2 · Meditate (hub)</div>
+    <div style="position:absolute;left:12px;top:40px;width:200px;height:300px;border-radius:12px;background:linear-gradient(#E7A9B8,#FAD9B0);overflow:hidden">
+      <img src="/_blob/eff678e7f3f639de545e53e187711f3d" alt="Hero meditating" width="200" height="300" style="position:absolute;inset:0">
+    </div>
+    <div style="position:absolute;left:224px;top:14px" class="cap">Silhouette</div>
+    <div style="position:absolute;left:224px;top:40px;width:156px;height:300px;border-radius:12px;background:#EDE6F7;display:grid;place-items:center">
+      <img src="/_blob/935ee7f6c68b31d3dba9bf405892007c" alt="Solid silhouette" width="156" height="234">
+    </div>
+
+    <div style="position:absolute;left:16px;top:356px" class="cap">Readability: battle · map · marker</div>
+    <div style="position:absolute;left:12px;top:380px;width:368px;height:140px;border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr">
+      <div style="background:#3E3456;display:flex;align-items:flex-end;justify-content:center;gap:8px;padding-bottom:8px">
+        <img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="80" height="120"><img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="48" height="72"><img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="27" height="40">
+      </div>
+      <div style="background:#F3E2C8;display:flex;align-items:flex-end;justify-content:center;gap:8px;padding-bottom:8px">
+        <img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="80" height="120"><img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="48" height="72"><img src="/_blob/596b3a318c0bca1ae5b20edee59441a8" alt="" width="27" height="40">
+      </div>
+    </div>
+
+    <div style="position:absolute;left:16px;right:16px;top:538px;display:flex;flex-direction:column;gap:9px">
+      <div class="cap">Review</div>
+      <div class="ck"><span class="ok">✓</span><span>Same person as A2: face, eyes, silver streak (same side), crescent crown, fur collar, moon medallion</span></div>
+      <div class="ck"><span class="ok">✓</span><span>Clean cutout: no baked glow, edges hold on light and dark</span></div>
+      <div class="ck"><span class="ok">✓</span><span>Arms, hands and legs clear of the body, so it splits into layers</span></div>
+      <div class="ck"><span class="ok">✓</span><span>Reads at 72 px; silhouette hooks: ponytail, crown, fur cuffs, flared coat</span></div>
+      <div class="ck"><span class="wn">!</span><span>Brows are knitted hard, so idle reads sulky. Keep this for battle; idle needs the calm, quietly smug face (A4)</span></div>
+      <div class="ck"><span class="wn">!</span><span>A2 is more painterly than A1. <b>A1 is the style master</b>; regenerate A2 from it (no lotus, no glow)</span></div>
+      <div class="ck"><span class="wn">!</span><span>Crown differs (A2 adds a hairpin rod). A1's crown is canon</span></div>
+      <div class="ck"><span class="wn">!</span><span>Sword covers the robe: generate it alone so the torso layer behind it is complete</span></div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1240,"height":980}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="twin_t1_viper_fangs-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EAFFF4"/>
+      <stop offset=".45" stop-color="#7ED8B4"/>
+      <stop offset=".55" stop-color="#4CB08A"/>
+      <stop offset="1" stop-color="#156A4E"/>
+    </linearGradient>
+    <linearGradient id="twin_t1_viper_fangs-iron" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8BEC8"/>
+      <stop offset=".5" stop-color="#6E7684"/>
+      <stop offset="1" stop-color="#34384A"/>
+    </linearGradient>
+    <linearGradient id="twin_t1_viper_fangs-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6AAE7A"/>
+      <stop offset=".5" stop-color="#3E7A4E"/>
+      <stop offset="1" stop-color="#1E4028"/>
+    </linearGradient>
+    <radialGradient id="twin_t1_viper_fangs-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+    <!-- one fang blade, point-up, origin at the crossing point -->
+    <g id="twin_t1_viper_fangs-sword" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-3.2 11C-2.6 -2 -1.8 -20 -5.5 -28C1.5 -22 4.4 -6 3.2 11Z" fill="url(#twin_t1_viper_fangs-blade)" stroke-width="2.4"/>
+      <path d="M-.4 9C.4 -3 .2 -14 -3 -24" fill="none" stroke="#156A4E" stroke-width="1.1" opacity=".8"/>
+      <path d="M-2 8.5C-1.6 -1 -1.4 -12 -3.6 -20" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/>
+      <ellipse cx="0" cy="12.6" rx="5.2" ry="1.9" fill="url(#twin_t1_viper_fangs-iron)" stroke-width="1.9"/>
+      <rect x="-2.4" y="14.4" width="4.8" height="8.4" rx="1" fill="url(#twin_t1_viper_fangs-grip)" stroke-width="2"/>
+      <path d="M-2.4 16.4Q-1.2 15.2 0 16.4Q1.2 15.2 2.4 16.4M-2.4 18.6Q-1.2 17.4 0 18.6Q1.2 17.4 2.4 18.6M-2.4 20.8Q-1.2 19.6 0 20.8Q1.2 19.6 2.4 20.8" fill="none" stroke="#1E4028" stroke-width=".9"/>
+      <circle cx="0" cy="24.6" r="2.2" fill="url(#twin_t1_viper_fangs-iron)" stroke-width="1.9"/>
+      <circle cx="-.7" cy="23.9" r=".6" fill="#FFFFFF" stroke="none"/>
+    </g>
+  </defs>
+
+  <circle cx="33" cy="35" r="20" fill="url(#twin_t1_viper_fangs-shadow)"/>
+
+  <!-- back blade (mirrored), then front blade on the main diagonal -->
+  <use href="#twin_t1_viper_fangs-sword" xlink:href="#twin_t1_viper_fangs-sword" transform="translate(32 32) rotate(-45) scale(-1 1) translate(0 -1)"/>
+  <use href="#twin_t1_viper_fangs-sword" xlink:href="#twin_t1_viper_fangs-sword" transform="translate(32 32) rotate(45) translate(0 -1)"/>
+</svg>

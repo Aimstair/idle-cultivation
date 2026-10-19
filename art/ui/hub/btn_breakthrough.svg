@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="212" viewBox="0 0 270 106">
+  <defs>
+    <linearGradient id="btn_breakthrough-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="btn_breakthrough-goldRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A5E14"/>
+      <stop offset=".35" stop-color="#D69A2A"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#FFF0B0"/>
+    </linearGradient>
+    <linearGradient id="btn_breakthrough-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <radialGradient id="btn_breakthrough-red" gradientUnits="userSpaceOnUse" cx="135" cy="20" r="75"
+      gradientTransform="translate(135 20) scale(1.7 1) translate(-135 -20)">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <radialGradient id="btn_breakthrough-redSmall" cx=".4" cy=".2" r=".9">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="btn_breakthrough-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="25" x2="0" y2="50">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="btn_breakthrough-pearl" cx=".38" cy=".34" r=".75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".3" stop-color="#FFF2BC"/>
+      <stop offset=".68" stop-color="#FFC94A"/>
+      <stop offset="1" stop-color="#CC801A"/>
+    </radialGradient>
+    <radialGradient id="btn_breakthrough-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFD75A" stop-opacity=".7"/>
+      <stop offset=".5" stop-color="#FFD75A" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#FFD75A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="btn_breakthrough-fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFF2A0"/>
+      <stop offset=".5" stop-color="#FFA020"/>
+      <stop offset="1" stop-color="#E8301A"/>
+    </linearGradient>
+    <filter id="btn_breakthrough-blur" x="-10%" y="-20%" width="120%" height="150%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+    <clipPath id="btn_breakthrough-panelClip">
+      <rect x="26" y="24" width="218" height="54" rx="10"/>
+    </clipPath>
+    <!-- plaque body: bevelled bar with ruyi cloud-scroll heads at both ends -->
+    <path id="btn_breakthrough-body" d="M30 16 H240 C250 16 258 20 257 27 C256 33 250 34 251 38 C266 40 268 62 251 64 C250 68 256 69 257 75 C258 82 250 86 240 86 H30 C20 86 12 82 13 75 C14 69 20 68 19 64 C2 62 4 40 19 38 C20 34 14 33 13 27 C12 20 20 16 30 16 Z"/>
+    <!-- carved scroll ornament for the right end (mirrored for the left) -->
+    <g id="btn_breakthrough-scroll">
+      <path d="M262.6 51.6 C262.6 47.1 259.1 45.1 256.1 46.1 C252.1 47.4 251.1 52.1 253.6 55.1 C255.6 57.4 259.1 56.6 259.6 54.1 C260 52.1 258.1 51.1 257.1 52.1 M247.6 25.6 C251.6 22.6 255.6 24.6 254.6 28.6 M247.6 77.6 C251.6 80.6 255.6 78.6 254.6 74.6"
+        fill="none" stroke="#FFE7A0" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/>
+      <path d="M262 51 C262 46.5 258.5 44.5 255.5 45.5 C251.5 46.8 250.5 51.5 253 54.5 C255 56.8 258.5 56 259 53.5 C259.4 51.5 257.5 50.5 256.5 51.5 M247 25 C251 22 255 24 254 28 M247 77 C251 80 255 78 254 74"
+        fill="none" stroke="#8A4A1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <!-- left flame wisp (mirrored for the right) -->
+    <g id="btn_breakthrough-flame">
+      <path d="M131 21 C124 21 117 19 117 16 C116 12 113 8 115 4 C117 8 120 9.5 121.5 9 C120 6 122 2.5 125.5 1.8 C125 6 127 9 130 10.5 C134 13 135 19 131 21 Z"
+        fill="url(#btn_breakthrough-fire)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M130 20 C123 19.5 118.5 16 118.5 12.5 C120 14 122 14.5 123.5 13 C125 11 127 11 129 12 C132 14 133 18 130 20 Z"
+        fill="#FFF2A0" opacity=".85"/>
+    </g>
+    <!-- left knot and tassel (mirrored for the right) -->
+    <g id="btn_breakthrough-tassel">
+      <path d="M40 85 V89.5" fill="none" stroke="#2A1008" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M40 85 V89.5" fill="none" stroke="#E8B657" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M36.5 97.5 H43.5 L45 104.4 H35 Z" fill="url(#btn_breakthrough-redSmall)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M38.4 99.5 V103.2 M41.6 99.5 V103.2" fill="none" stroke="#5A0A04" stroke-width=".9" stroke-linecap="round"/>
+      <path d="M40 88.4 L44.8 93.4 L40 98.4 L35.2 93.4 Z" fill="url(#btn_breakthrough-goldSmall)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="38.4" cy="91.8" r="1" fill="#FFFFFF" opacity=".8"/>
+    </g>
+  </defs>
+
+  <!-- cast shadow -->
+  <use href="#btn_breakthrough-body" transform="translate(0 4)" fill="#2A1008" opacity=".45" filter="url(#btn_breakthrough-blur)"/>
+
+  <!-- tassels hang behind the plaque bottom -->
+  <use href="#btn_breakthrough-tassel"/>
+  <use href="#btn_breakthrough-tassel" transform="matrix(-1 0 0 1 270 0)"/>
+
+  <!-- outer gold frame (lit top, shaded bottom) -->
+  <use href="#btn_breakthrough-body" fill="url(#btn_breakthrough-gold)" stroke="#2A1008" stroke-width="3" stroke-linejoin="round"/>
+  <!-- carved cloud scrolls on the ends -->
+  <use href="#btn_breakthrough-scroll"/>
+  <use href="#btn_breakthrough-scroll" transform="matrix(-1 0 0 1 270 0)"/>
+  <!-- inner bevel slope (reversed light) -->
+  <rect x="23" y="21" width="224" height="60" rx="12" fill="url(#btn_breakthrough-goldRev)"/>
+  <!-- bevel ridge highlight -->
+  <path d="M36 20.6 H234" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+
+  <!-- red lacquer panel -->
+  <rect x="26" y="24" width="218" height="54" rx="10" fill="url(#btn_breakthrough-red)" stroke="#2A1008" stroke-width="2.2"/>
+  <g clip-path="url(#btn_breakthrough-panelClip)">
+    <rect x="26" y="24" width="218" height="28" fill="url(#btn_breakthrough-sheen)"/>
+  </g>
+  <!-- thin inner gold line and faint divider -->
+  <rect x="29.5" y="27.2" width="211" height="47.6" rx="7.5" fill="none" stroke="#FFE7A0" stroke-width="1" opacity=".55"/>
+  <path d="M116 33 V69" fill="none" stroke="#FFE7A0" stroke-width="1" stroke-linecap="round" opacity=".4"/>
+
+  <!-- flaming golden pearl crest -->
+  <circle cx="135" cy="13" r="17" fill="url(#btn_breakthrough-glow)"/>
+  <use href="#btn_breakthrough-flame"/>
+  <use href="#btn_breakthrough-flame" transform="matrix(-1 0 0 1 270 0)"/>
+  <circle cx="135" cy="12" r="9.5" fill="url(#btn_breakthrough-pearl)" stroke="#2A1008" stroke-width="2.4"/>
+  <ellipse cx="131.4" cy="8.4" rx="2.8" ry="2.1" fill="#FFFFFF"/>
+
+  <!-- glints on the gold frame -->
+  <path d="M38 15.6 L39 18.4 L41.8 19.4 L39 20.4 L38 23.2 L37 20.4 L34.2 19.4 L37 18.4 Z" fill="#FFFFFF" opacity=".9"/>
+  <path d="M255 21.4 L255.8 23.6 L258 24.4 L255.8 25.2 L255 27.4 L254.2 25.2 L252 24.4 L254.2 23.6 Z" fill="#FFFFFF" opacity=".8"/>
+</svg>

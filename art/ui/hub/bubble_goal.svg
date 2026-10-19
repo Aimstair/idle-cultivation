@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="160" viewBox="0 0 216 80">
+  <defs>
+    <linearGradient id="bubble_goal-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2A16" stop-opacity=".94"/>
+      <stop offset=".5" stop-color="#3A190C" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#1A0804" stop-opacity=".96"/>
+    </linearGradient>
+    <linearGradient id="bubble_goal-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".16"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bubble_goal-topSheen" gradientUnits="userSpaceOnUse" x1="0" y1="12" x2="0" y2="24">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bubble_goal-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <radialGradient id="bubble_goal-red" gradientUnits="userSpaceOnUse" cx="55" cy="3" r="30"
+      gradientTransform="translate(55 3) scale(1.8 1) translate(-55 -3)">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="bubble_goal-plateSheen" gradientUnits="userSpaceOnUse" x1="0" y1="3.5" x2="0" y2="10">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <path id="bubble_goal-panel" d="M16 12 H194 Q206 12 206 24 V33 L212.5 40 L206 47 V65 Q206 77 194 77 H16 Q4 77 4 65 V24 Q4 12 16 12 Z"/>
+    <path id="bubble_goal-plate" d="M14 2.5 H96 L91.5 12.25 L96 22 H14 L18.5 12.25 Z"/>
+    <clipPath id="bubble_goal-panelClip"><use href="#bubble_goal-panel"/></clipPath>
+    <clipPath id="bubble_goal-plateClip"><use href="#bubble_goal-plate"/></clipPath>
+  </defs>
+
+  <!-- rosewood glass panel with gold border -->
+  <use href="#bubble_goal-panel" fill="none" stroke="#2A1008" stroke-width="5.2" stroke-linejoin="round"/>
+  <use href="#bubble_goal-panel" fill="url(#bubble_goal-rose)"/>
+  <g clip-path="url(#bubble_goal-panelClip)">
+    <use href="#bubble_goal-panel" fill="url(#bubble_goal-glass)"/>
+    <rect x="4" y="12" width="210" height="12" fill="url(#bubble_goal-topSheen)"/>
+    <!-- header plate cast shadow on the panel -->
+    <use href="#bubble_goal-plate" transform="translate(1 2.5)" fill="#1A0804" opacity=".55"/>
+  </g>
+  <use href="#bubble_goal-panel" fill="none" stroke="url(#bubble_goal-gold)" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- faint inner jade line -->
+  <rect x="8.5" y="16.5" width="193" height="56" rx="8" fill="none" stroke="#6FE0B4" stroke-width="1" opacity=".42"/>
+
+  <!-- red ribbon header plate -->
+  <use href="#bubble_goal-plate" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linejoin="round"/>
+  <use href="#bubble_goal-plate" fill="url(#bubble_goal-red)"/>
+  <g clip-path="url(#bubble_goal-plateClip)">
+    <rect x="14" y="3" width="82" height="7" fill="url(#bubble_goal-plateSheen)"/>
+  </g>
+  <use href="#bubble_goal-plate" fill="none" stroke="#FFE7A0" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

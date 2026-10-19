@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="herb_spirit_grass-blade" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0E6A50"/>
+      <stop offset=".45" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#C8FFE6"/>
+    </linearGradient>
+    <radialGradient id="herb_spirit_grass-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FFFD0" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#8FFFD0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="herb_spirit_grass-string" cx=".4" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="32" cy="57" rx="14" ry="2.2" fill="#2A1008" opacity=".3"/>
+  <ellipse cx="32" cy="28" rx="24" ry="20" fill="url(#herb_spirit_grass-glow)"/>
+
+  <!-- stems below the tie -->
+  <path d="M27 48L25.5 56M30.5 48L30 57M34 48L35 57M37 48L39 56" fill="none" stroke="#2A1008" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M27 48L25.5 56M30.5 48L30 57M34 48L35 57M37 48L39 56" fill="none" stroke="#2E9A74" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- blades -->
+  <g fill="url(#herb_spirit_grass-blade)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M32 46C31 36 30.5 28 32 18C33.5 28 33.5 36 34 46Z"/>
+    <path d="M29 46C27 36 20 28 11 22C21 26 29 34 33 46Z"/>
+    <path d="M35 46C39 36 46 28 55 24C46 30 40 38 37 46Z"/>
+    <path d="M31 45C30 32 28 22 23 11C30 20 34 32 35 45Z"/>
+    <path d="M33 45C35 33 38 22 45 11C41 24 38 34 36.5 45Z"/>
+  </g>
+  <!-- highlights -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".85">
+    <path d="M30.5 36C29.5 29 28 22 25 15"/>
+    <path d="M26 38C23 32 19 28 15 24.5"/>
+  </g>
+
+  <!-- red string tie -->
+  <path d="M24.5 43.5C29 45.5 35 45.5 39.5 43.5L40.5 49.5C35 51.5 29 51.5 23.5 49.5Z" fill="url(#herb_spirit_grass-string)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M25.5 45.3C29.5 47 34.5 47 38.5 45.3" fill="none" stroke="#FFB0A0" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <path d="M26 49.5L23 55M28 49.5L27.5 55.5" fill="none" stroke="#2A1008" stroke-width="3" stroke-linecap="round"/>
+  <path d="M26 49.5L23 55M28 49.5L27.5 55.5" fill="none" stroke="#E0401E" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="27" cy="47.5" r="2.2" fill="#FF6A44" stroke="#2A1008" stroke-width="1.6"/>
+</svg>

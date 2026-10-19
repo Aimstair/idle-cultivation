@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="dao_pattern_stone-front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6E6684"/>
+      <stop offset=".5" stop-color="#3A3448"/>
+      <stop offset="1" stop-color="#1A1624"/>
+    </linearGradient>
+    <linearGradient id="dao_pattern_stone-side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E2838"/>
+      <stop offset="1" stop-color="#100C16"/>
+    </linearGradient>
+    <linearGradient id="dao_pattern_stone-top" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A69EB8"/>
+      <stop offset="1" stop-color="#6E6684"/>
+    </linearGradient>
+    <radialGradient id="dao_pattern_stone-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFD45A" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFD45A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="33" cy="57" rx="19" ry="2.4" fill="#2A1008" opacity=".3"/>
+
+  <!-- tablet faces -->
+  <path d="M16 16L22 10H40L46 16V55H16Z" fill="url(#dao_pattern_stone-front)"/>
+  <path d="M46 16V55L49 52V13Z" fill="url(#dao_pattern_stone-side)"/>
+  <path d="M22 10H40L43 7H25Z" fill="url(#dao_pattern_stone-top)"/>
+  <path d="M40 10L46 16L49 13L43 7Z" fill="#8A8298"/>
+  <g fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M22 10H40L46 16V55M40 10L43 7M46 16L49 13"/>
+  </g>
+
+  <!-- gold dao pattern -->
+  <ellipse cx="31" cy="33" rx="14" ry="20" fill="url(#dao_pattern_stone-glow)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 20C30 18 37 25 31 30S22 40 30 44S40 48 40 50M31 30C37 30 40 25 40 20M30 44C24 44 21 49 22 53" stroke="#D69A2A" stroke-width="3.8" opacity=".5"/>
+    <path d="M22 20C30 18 37 25 31 30S22 40 30 44S40 48 40 50M31 30C37 30 40 25 40 20M30 44C24 44 21 49 22 53" stroke="#FFD45A" stroke-width="1.7"/>
+    <path d="M22 20C30 18 37 25 31 30M30 44S40 48 40 50" stroke="#FFF6C8" stroke-width=".7" opacity=".9"/>
+  </g>
+  <g fill="#FFF6C8" stroke="#D69A2A" stroke-width="1">
+    <circle cx="22" cy="20" r="1.8"/>
+    <circle cx="40" cy="20" r="1.8"/>
+    <circle cx="31" cy="30" r="1.8"/>
+    <circle cx="30" cy="44" r="1.8"/>
+    <circle cx="40" cy="50" r="1.8"/>
+    <circle cx="22" cy="53" r="1.5"/>
+  </g>
+
+  <!-- bevel highlight -->
+  <path d="M17.5 17L22.5 12H38" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".7"/>
+  <path d="M17.5 22V50" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".25"/>
+
+  <!-- silhouette outline -->
+  <path d="M16 16L22 10L25 7H43L49 13V52L46 55H16Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

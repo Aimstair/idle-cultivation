@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fx_blade-lit" gradientUnits="userSpaceOnUse" x1="4" y1="20" x2="28" y2="4">
+      <stop offset="0" stop-color="#CFD6E4"/>
+      <stop offset=".6" stop-color="#F2F5FA"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="fx_blade-dark" gradientUnits="userSpaceOnUse" x1="10" y1="30" x2="28" y2="4">
+      <stop offset="0" stop-color="#5E6678"/>
+      <stop offset=".5" stop-color="#7E8698"/>
+      <stop offset="1" stop-color="#B4BCCC"/>
+    </linearGradient>
+  </defs>
+  <!-- lit facet -->
+  <path d="M29 3L3 22L8.5 25.5Z" fill="url(#fx_blade-lit)"/>
+  <!-- shaded facet -->
+  <path d="M29 3L8.5 25.5L11.5 30Z" fill="url(#fx_blade-dark)"/>
+  <!-- bright cutting edge -->
+  <path d="M28.2 3.6L3.6 21.6" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".95"/>
+  <!-- tip glint -->
+  <circle cx="28" cy="4" r="1.3" fill="#FFFFFF"/>
+</svg>

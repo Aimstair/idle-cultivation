@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="64" viewBox="0 0 64 32">
+  <defs>
+    <linearGradient id="toggle_off-track" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A0804"/>
+      <stop offset=".6" stop-color="#2E140A"/>
+      <stop offset="1" stop-color="#3A190C"/>
+    </linearGradient>
+    <linearGradient id="toggle_off-inShadow" gradientUnits="userSpaceOnUse" x1="0" y1="6" x2="0" y2="13">
+      <stop offset="0" stop-color="#000000" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="toggle_off-knob" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </radialGradient>
+    <filter id="toggle_off-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+    <clipPath id="toggle_off-trackClip"><rect x="2" y="6" width="60" height="20" rx="10"/></clipPath>
+  </defs>
+
+  <!-- dark rosewood track (inset) -->
+  <rect x="2" y="6" width="60" height="20" rx="10" fill="url(#toggle_off-track)" stroke="#2A1008" stroke-width="2.2"/>
+  <g clip-path="url(#toggle_off-trackClip)">
+    <rect x="2" y="6" width="60" height="7" fill="url(#toggle_off-inShadow)"/>
+  </g>
+  <rect x="3.6" y="7.6" width="56.8" height="16.8" rx="8.4" fill="none" stroke="#9A6A32" stroke-width="1.1" opacity=".75"/>
+  <path d="M20 23.6 H50" fill="none" stroke="#7A4020" stroke-width=".9" stroke-linecap="round" opacity=".6"/>
+
+  <!-- silver knob on the left -->
+  <circle cx="16" cy="17.6" r="12" fill="#2A1008" opacity=".45" filter="url(#toggle_off-blur)"/>
+  <circle cx="16" cy="16" r="12" fill="url(#toggle_off-knob)" stroke="#2A1008" stroke-width="2.2"/>
+  <circle cx="16" cy="16" r="9.8" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".6"/>
+  <ellipse cx="12.2" cy="11.6" rx="3" ry="2" fill="#FFFFFF" opacity=".9"/>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ring_t6-void" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A5EB0"/>
+      <stop offset=".4" stop-color="#2E1A60"/>
+      <stop offset=".8" stop-color="#120A2A"/>
+      <stop offset="1" stop-color="#06030F"/>
+    </linearGradient>
+    <linearGradient id="ring_t6-voidHi" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="ring_t6-navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6E8ED8"/>
+      <stop offset=".4" stop-color="#2A3E8E"/>
+      <stop offset="1" stop-color="#0A0E2E"/>
+    </linearGradient>
+    <linearGradient id="ring_t6-crystal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5C7CC8"/>
+      <stop offset=".45" stop-color="#182460"/>
+      <stop offset="1" stop-color="#0A0E2E"/>
+    </linearGradient>
+    <filter id="ring_t6-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <path id="ring_t6-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="53.4" rx="18" ry="1.8" fill="#2A1008" opacity=".25"/>
+
+  <!-- black-violet band seen at 3/4 -->
+  <path fill-rule="evenodd" d="M11 37A21 14 0 1 0 53 37A21 14 0 1 0 11 37ZM17 35.5A15 9 0 1 0 47 35.5A15 9 0 1 0 17 35.5Z" fill="url(#ring_t6-void)" stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round"/>
+  <path fill-rule="evenodd" d="M11 37A21 14 0 1 0 53 37A21 14 0 1 0 11 37ZM17 35.5A15 9 0 1 0 47 35.5A15 9 0 1 0 17 35.5Z" fill="url(#ring_t6-voidHi)"/>
+  <!-- inner wall of the far side -->
+  <path d="M17 35.5A15 9 0 0 1 47 35.5A15 6.8 0 0 0 17 35.5Z" fill="#1E1040" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- glowing violet cracks around the band -->
+  <path d="M14 40L18 43.5L17 46M50 40L46 43.5L47 46M28 48.5L31 46.5L34 48.8" fill="none" stroke="#9A6AE8" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity=".8" filter="url(#ring_t6-glow)"/>
+  <path d="M14 40L18 43.5L17 46M50 40L46 43.5L47 46M28 48.5L31 46.5L34 48.8" fill="none" stroke="#C8A4FF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- star specks on the band -->
+  <g fill="#FFFFFF">
+    <circle cx="23" cy="46.5" r=".9"/>
+    <circle cx="40" cy="47.5" r=".8"/>
+    <circle cx="13" cy="33" r=".7" opacity=".8"/>
+  </g>
+  <!-- highlights -->
+  <path d="M14 32.5Q18.5 26.5 26.5 24.6" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".95"/>
+  <path d="M23 48Q32 50.5 41 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".4"/>
+
+  <!-- star-sea crystal in a navy bezel -->
+  <ellipse cx="32" cy="20.5" rx="8.6" ry="9" fill="#C8A4FF" opacity=".8" filter="url(#ring_t6-glow)"/>
+  <ellipse cx="32" cy="20.5" rx="7.8" ry="8.2" fill="url(#ring_t6-navy)" stroke="#2A1008" stroke-width="2.2"/>
+  <path d="M32 13L38 17V24L32 28L26 24V17Z" fill="url(#ring_t6-crystal)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M32 13L32 28M26 17L38 24M38 17L26 24" fill="none" stroke="#5C7CC8" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+  <!-- violet crack through the crystal -->
+  <path d="M33.4 15L30.2 20L33 21.2L30.4 25.8" fill="none" stroke="#9A6AE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity=".8" filter="url(#ring_t6-glow)"/>
+  <path d="M33.4 15L30.2 20L33 21.2L30.4 25.8" fill="none" stroke="#E0CCFF" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="35.2" cy="18.5" r=".8" fill="#FFFFFF"/>
+  <circle cx="28.6" cy="23" r=".7" fill="#FFFFFF"/>
+  <ellipse cx="30" cy="16.2" rx="1.4" ry=".9" fill="#FFFFFF" opacity=".95"/>
+  <path d="M26.3 17.5Q27.8 14 31.2 13" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+
+  <!-- starlight -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#ring_t6-spark" transform="translate(22 10.5) scale(1.8)"/>
+    <use href="#ring_t6-spark" transform="translate(43 12) scale(1.4)"/>
+    <use href="#ring_t6-spark" transform="translate(45 26) scale(1.3)"/>
+  </g>
+  <g fill="#C8A4FF">
+    <use href="#ring_t6-spark" transform="translate(19 20) scale(1.2)"/>
+    <use href="#ring_t6-spark" transform="translate(51 46) scale(1.1)"/>
+  </g>
+</svg>

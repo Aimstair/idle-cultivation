@@ -1,0 +1,23 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# secrets
+.env
+*.key
+
+# drop-folder tool: regenerable caches and per-machine working files
+art/_review/_bg/
+art/_review/attach/
+art/_review/next.html
+art/_review/next.json
+art/_inbox/*
+!art/_inbox/.gitkeep
+!art/_inbox/processed/
+art/_inbox/processed/*
+!art/_inbox/processed/.gitkeep
+__pycache__/
+*.pyc

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home · Cultivate</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E9%87%91%E4%B8%B9%E6%B0%B4%E7%AA%81%E7%A0%B4">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#2E2A3A}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.med{width:56px;height:56px;border-radius:50%;border:3px solid #3A2A2A;display:grid;place-items:center;position:relative;box-shadow:inset 0 -6px 0 rgba(0,0,0,.18),inset 0 4px 0 rgba(255,255,255,.35),0 4px 0 #3A2A2A;text-decoration:none;cursor:pointer;padding:0}
+.ring{position:absolute;inset:-6px;border-radius:50%;border:3px solid #E8B54A;pointer-events:none}
+.dot{position:absolute;right:-2px;top:-2px;width:14px;height:14px;border-radius:50%;background:#B83E2B;border:2.5px solid #FBF6EC}
+.timer{position:absolute;bottom:-12px;left:50%;transform:translateX(-50%);font-family:"Baloo 2",sans-serif;font-weight:800;font-size:10.5px;color:#FFFDF8;background:#2E2A3A;border:2px solid #3A2A2A;border-radius:999px;padding:0 6px;white-space:nowrap}
+.sq{width:38px;height:38px;border-radius:11px;border:2.5px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;box-shadow:0 3px 0 #3A2A2A;cursor:pointer;position:relative;padding:0}
+.chipc{display:flex;align-items:center;gap:4px;background:#2E2A3A;border:2.5px solid #3A2A2A;border-radius:10px;padding:2px 4px 2px 3px;height:28px;box-sizing:border-box}
+.plus{width:22px;height:22px;border-radius:7px;background:#3FA58C;border:2px solid #3A2A2A;display:grid;place-items:center}
+.gauge{position:absolute;width:20px;border-radius:999px;border:3px solid #3A2A2A;background:#EFE8DA;overflow:visible}
+.tile{border:3px solid #3A2A2A;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:6px 2px;cursor:pointer;position:relative;box-shadow:0 4px 0 #3A2A2A}
+button:focus-visible,a:focus-visible{outline:3px solid #5FD3E0;outline-offset:3px}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:#FBF6EC">
+
+  <!-- BACKDROP: ink mountains behind the hub -->
+  <svg width="390" height="844" viewBox="0 0 390 844" style="position:absolute;inset:0" aria-hidden="true">
+    <defs>
+      <linearGradient id="hubsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8E2F4"/><stop offset=".6" stop-color="#F6F1EA"/><stop offset="1" stop-color="#EFE6D3"/></linearGradient>
+      <radialGradient id="aura" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#F7DE8C" stop-opacity=".7"/><stop offset="1" stop-color="#F7DE8C" stop-opacity="0"/></radialGradient>
+      <radialGradient id="core" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF4C9"/><stop offset=".35" stop-color="#F2C14E" stop-opacity=".95"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    </defs>
+    <rect width="390" height="844" fill="url(#hubsky)"/>
+    <circle cx="300" cy="150" r="34" fill="#FFF8E6" stroke="#E9DFC9" stroke-width="2"/>
+    <path d="M0 420 L0 330 Q40 290 76 316 Q120 230 168 300 Q200 270 228 292 Q278 210 318 286 Q350 262 390 290 V420Z" fill="#E4DDF0"/>
+    <path d="M0 470 L0 380 Q50 340 96 372 Q150 320 200 366 Q250 336 290 364 Q340 330 390 360 V470Z" fill="#D2C9E4"/>
+    <path d="M0 520 Q90 498 195 512 T390 504 V844 H0Z" fill="#F4EEE1"/>
+    <g stroke="#B7AED0" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"><path d="M110 196 q8 -14 20 -4 q6 -10 16 -2 q10 -2 10 8 h-44"/><path d="M220 238 q8 -12 18 -3 q6 -9 15 -1 q9 -1 8 7 h-41"/></g>
+    <!-- aura + halo -->
+    <ellipse cx="195" cy="400" rx="128" ry="112" fill="url(#aura)"/>
+    <circle cx="195" cy="340" r="58" fill="none" stroke="#F2C14E" stroke-width="3.5" opacity=".8"/>
+    <circle cx="195" cy="340" r="68" fill="none" stroke="#F2C14E" stroke-width="1.4" stroke-dasharray="3 8" opacity=".75"/>
+    <!-- lotus cushion -->
+    <path d="M100 486 Q195 462 290 486 Q195 514 100 486Z" fill="#F4C6D3" stroke="#3A2A2A" stroke-width="3"/>
+    <path d="M124 480 Q148 450 174 474 M216 474 Q242 450 266 480 M168 472 Q195 440 222 472" fill="#F9DCE4" stroke="#3A2A2A" stroke-width="3" stroke-linejoin="round"/>
+    <!-- meditator -->
+    <path d="M136 476 Q195 448 254 476 Q244 498 195 500 Q146 498 136 476Z" fill="#F2EEE6" stroke="#3A2A2A" stroke-width="3"/>
+    <path d="M160 464 Q162 404 195 398 Q228 404 230 464Z" fill="#F7F3EA" stroke="#3A2A2A" stroke-width="3"/>
+    <path d="M168 432 H222" stroke="#6CC4A1" stroke-width="9"/>
+    <circle cx="195" cy="418" r="18" fill="url(#core)"/><circle cx="195" cy="418" r="5.5" fill="#FFF4C9" stroke="#E8B54A" stroke-width="2"/>
+    <ellipse cx="166" cy="464" rx="14" ry="9" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="2.6"/><ellipse cx="224" cy="464" rx="14" ry="9" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="2.6"/>
+    <path d="M232 302 Q276 320 260 368 Q252 340 236 330Z" fill="#2E2A3A" stroke="#3A2A2A" stroke-width="2"/>
+    <circle cx="195" cy="340" r="48" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="3"/>
+    <path d="M147 344 Q146 290 195 288 Q246 288 243 344 Q234 316 210 312 Q196 328 172 322 Q156 328 147 344Z" fill="#2E2A3A"/>
+    <path d="M228 294 L246 284" stroke="#B88A5A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M171 348 Q178 354 185 348 M205 348 Q212 354 219 348" stroke="#3A2A2A" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <path d="M190 366 Q195 370 200 366" stroke="#3A2A2A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <circle cx="165" cy="358" r="5" fill="#F4A9A0" opacity=".55"/><circle cx="225" cy="358" r="5" fill="#F4A9A0" opacity=".55"/>
+    <g fill="#F2C14E"><circle cx="118" cy="330" r="3.5"/><circle cx="276" cy="300" r="3"/><circle cx="262" cy="420" r="2.5"/><circle cx="128" cy="420" r="2.5"/></g>
+    <g fill="#5FD3E0"><circle cx="282" cy="380" r="2.6"/><circle cx="108" cy="380" r="2.2"/></g>
+  </svg>
+
+  <!-- TOP BAR -->
+  <div style="position:absolute;left:10px;right:10px;top:12px;display:flex;align-items:center;gap:6px">
+    <a href="Character.dc.html" aria-label="Profile and realm" style="position:relative;width:46px;height:46px;border-radius:12px;background:#F7D9C4;border:3px solid #3A2A2A;box-shadow:0 3px 0 #3A2A2A;flex:none;overflow:hidden">
+      <svg width="40" height="40" viewBox="0 0 44 44" aria-hidden="true"><path d="M6 24 Q6 6 22 6 Q38 6 38 24 Q34 14 22 14 Q10 14 6 24Z" fill="#2E2A3A"/><circle cx="16" cy="25" r="2" fill="#2E2A3A"/><circle cx="28" cy="25" r="2" fill="#2E2A3A"/><path d="M18 31 Q22 34 26 31" stroke="#3A2A2A" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+    </a>
+    <div style="display:flex;flex-direction:column;gap:2px;flex:1;min-width:0">
+      <div style="display:flex;align-items:center;gap:4px"><span class="brush" style="font-size:15px;color:#B83E2B;line-height:1">金丹</span><span class="disp" style="font-weight:800;font-size:13px;line-height:1">Golden Core 4</span></div>
+      <div style="height:10px;border-radius:999px;border:2px solid #3A2A2A;background:#EFE8DA;position:relative;overflow:hidden"><span style="position:absolute;inset:0;width:100%;background:linear-gradient(90deg,#E8B54A,#F2C14E)"></span></div>
+    </div>
+    <div class="chipc"><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 L14 4.5 V11.5 L8 15 L2 11.5 V4.5Z" fill="#9FD6EE" stroke="#FFFDF8" stroke-width="1.2"/></svg><span class="disp" style="font-weight:800;font-size:13px;color:#FFFDF8">48.2K</span></div>
+    <div class="chipc"><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="#6CC4A1" stroke="#FFFDF8" stroke-width="1.2"/><circle cx="8" cy="8" r="2.2" fill="#2E2A3A"/></svg><span class="disp" style="font-weight:800;font-size:13px;color:#FFFDF8">320</span><a href="Rebirth.dc.html" class="plus" aria-label="Get Jade"><svg width="12" height="12" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a></div>
+  </div>
+
+  <!-- second row: status + small icons -->
+  <div style="position:absolute;left:10px;right:10px;top:68px;display:flex;align-items:center;gap:8px">
+    <span style="display:flex;align-items:center;gap:5px;background:{{chipBg}};border:2.5px solid #3A2A2A;border-radius:999px;padding:3px 10px 3px 5px;color:#fff">
+      <span style="width:8px;height:8px;border-radius:50%;background:#FFF4C9"></span>
+      <span class="disp" style="font-weight:800;font-size:12px">{{chipTitle}}</span>
+    </span>
+    <span style="flex:1"></span>
+    <button class="sq" aria-label="Mail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 7l9 7 9-7"/></svg><span class="dot" style="width:11px;height:11px"></span></button>
+    <button class="sq" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14"/></svg></button>
+  </div>
+
+  <!-- LEFT RAIL: your journey -->
+  <div style="position:absolute;left:12px;top:142px;display:flex;flex-direction:column;gap:22px">
+    <a href="World.dc.html" class="med" aria-label="Adventure" style="background:#B83E2B">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#FFFDF8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h18a2 2 0 0 1 0 4H8v16a2 2 0 0 1-4 0V8a2 2 0 0 1 2-2z"/><path d="M12 14l3 3 3-3 4 4M12 22h8" stroke-dasharray="2 3"/></svg>
+      <span class="dot"></span>
+    </a>
+    <a href="Routine.dc.html" class="med" aria-label="Skills and crafting" style="background:#C9954C">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#FFFDF8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 14h20l-2 9a3 3 0 0 1-3 2H11a3 3 0 0 1-3-2z"/><path d="M5 14h22M12 9c0-2 2-2 2-4M18 9c0-2 2-2 2-4M10 28h12"/></svg>
+      <span class="timer">3/3</span>
+    </a>
+    <a href="Character.dc.html" class="med" aria-label="Character and equipment" style="background:#6E5DC0">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#FFFDF8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4l5 4 5-4 7 5-4 5v14H8V14L4 9z"/><path d="M16 8v20M12 18h8"/></svg>
+    </a>
+    <a href="Character.dc.html" class="med" aria-label="Pets" style="background:#3FA58C">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="#FFFDF8" stroke="#3A2A2A" stroke-width="1.5" aria-hidden="true"><ellipse cx="16" cy="21" rx="7" ry="6"/><circle cx="8" cy="13" r="3"/><circle cx="13" cy="8" r="3"/><circle cx="19" cy="8" r="3"/><circle cx="24" cy="13" r="3"/></svg>
+    </a>
+  </div>
+
+  <!-- RIGHT RAIL: the world around you -->
+  <div style="position:absolute;right:12px;top:142px;display:flex;flex-direction:column;gap:22px">
+    <button class="med" aria-label="Quests" style="background:#E8B54A">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#3A2A2A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5h16v20a3 3 0 0 1-3 3H8z" fill="#FFF8E6"/><path d="M5 5h6v4H5zM12 13h8M12 18h8"/><circle cx="22" cy="24" r="4" fill="#B83E2B" stroke="#3A2A2A"/></svg>
+      <span class="dot"></span>
+    </button>
+    <a href="Rebirth.dc.html" class="med" aria-label="Shop" style="background:#277864">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11" fill="#6CC4A1" stroke="#FFFDF8" stroke-width="2.4"/><circle cx="16" cy="16" r="4" fill="#277864" stroke="#FFFDF8" stroke-width="2"/><path d="M16 5v3M16 24v3M5 16h3M24 16h3" stroke="#FFFDF8" stroke-width="2"/></svg>
+    </a>
+    <button class="med" aria-label="Events" style="background:#E0533D">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#3A2A2A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M16 2v3M16 27v3"/><ellipse cx="16" cy="16" rx="9" ry="11" fill="#F2C14E"/><path d="M10 9h12M10 23h12M16 5v22" stroke="#B83E2B"/></svg>
+      <span class="timer">1d 13h</span>
+    </button>
+    <a href="Rebirth.dc.html" class="med" aria-label="Rebirth" style="background:#2E2A3A">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#E8B54A" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="4" fill="#E8B54A"/><path d="M16 5v22M6.5 10.5l19 11M6.5 21.5l19-11"/></svg>
+      <span class="ring"></span>
+    </a>
+  </div>
+
+  <!-- ACTIVE BUFFS (left, under the rail) -->
+  <div style="position:absolute;left:16px;top:484px;display:flex;flex-direction:column;gap:16px" aria-label="Active buffs">
+    <span title="Qi Gathering Pill: +50% Qi, 22 minutes left" style="width:44px;height:44px;border-radius:50%;border:2.5px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;position:relative;box-shadow:0 3px 0 #3A2A2A">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="17" r="10" fill="#9FE6F0" stroke="#3A2A2A" stroke-width="2.2"/><path d="M11 17 q5 -6 10 0" stroke="#fff" stroke-width="2" fill="none"/></svg>
+      <span style="position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10px;background:#277864;color:#fff;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 5px">22m</span>
+    </span>
+    <span title="Medicinal Bath: ×3 Tempering while Training, 18 minutes left" style="width:44px;height:44px;border-radius:50%;border:2.5px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;position:relative;box-shadow:0 3px 0 #3A2A2A">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 14h24l-2 10a4 4 0 0 1-4 3H10a4 4 0 0 1-4-3z" fill="#C9954C" stroke="#3A2A2A" stroke-width="2"/><path d="M5 14c4-3 18-3 22 0" fill="#9FD3C2" stroke="#3A2A2A" stroke-width="2"/></svg>
+      <span style="position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10px;background:#6E5DC0;color:#fff;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 5px">18m</span>
+    </span>
+  </div>
+  <!-- NEXT UNLOCK teaser (right, under the rail) -->
+  <div title="Next unlock: Pets at Nascent Soul" style="position:absolute;right:12px;top:478px;width:62px;display:flex;flex-direction:column;align-items:center;gap:3px">
+    <span style="width:52px;height:52px;border-radius:50%;border:3px dashed #3A2A2A;background:#E9E4F5;display:grid;place-items:center;position:relative">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="#C9C1D9" stroke="#3A2A2A" stroke-width="1.5" aria-hidden="true"><ellipse cx="16" cy="21" rx="7" ry="6"/><circle cx="8" cy="13" r="3"/><circle cx="13" cy="8" r="3"/><circle cx="19" cy="8" r="3"/><circle cx="24" cy="13" r="3"/></svg>
+      <span style="position:absolute;right:-5px;top:-5px;width:20px;height:20px;border-radius:50%;background:#FFFDF8;border:2px solid #3A2A2A;display:grid;place-items:center"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+    </span>
+    <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10.5px;line-height:1.05;text-align:center;background:rgba(255,253,248,.92);border:1.5px solid #3A2A2A;border-radius:7px;padding:1px 4px">Pets<br>at NS</span>
+  </div>
+
+  <!-- VESSEL GAUGES flanking the cultivator -->
+  <a href="Body.dc.html" aria-label="Body: HP 85%, open Body cultivation" style="position:absolute;left:84px;top:290px;width:30px;height:200px;display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none">
+    <span class="gauge" style="position:relative;height:170px"><span style="position:absolute;left:0;right:0;bottom:0;height:88%;background:#F3C9C1;border-radius:999px"></span><span style="position:absolute;left:0;right:0;bottom:0;height:74%;background:#E0533D;border-radius:999px"></span><span style="position:absolute;left:-7px;right:-7px;top:0;height:3px;background:#3A2A2A;border-radius:2px"></span></span>
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 6-8 11-8 11z" fill="#E0533D" stroke="#3A2A2A" stroke-width="2"/></svg>
+  </a>
+  <div aria-label="Qi vessel full, ready to break through" style="position:absolute;right:84px;top:290px;width:30px;height:200px;display:flex;flex-direction:column;align-items:center;gap:4px">
+    <span class="gauge" style="position:relative;height:170px;box-shadow:0 0 0 3px #F7DE8C,0 0 16px #F2C14E"><span style="position:absolute;left:0;right:0;bottom:0;height:100%;background:linear-gradient(0deg,#3FA58C,#5FD3E0);border-radius:999px"></span><span style="position:absolute;left:-7px;right:-7px;top:0;height:3px;background:#3A2A2A;border-radius:2px"></span><span style="position:absolute;left:-6px;right:-6px;top:20%;height:2px;background:#B83E2B"></span></span>
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 3 3 7 0 10-3-3-3-7 0-10z" fill="#3FA58C" stroke="#3A2A2A" stroke-width="2"/><path d="M4 11c4 0 7 2 8 6-4 0-7-2-8-6zM20 11c-4 0-7 2-8 6 4 0 7-2 8-6z" fill="#5FD3E0" stroke="#3A2A2A" stroke-width="2"/></svg>
+  </div>
+
+  <!-- Qi rate + site pill under the cushion -->
+  <a href="Lake.dc.html" aria-label="Meditation site: Moonlit Lake Pavilion, times 1.32" style="position:absolute;left:50%;top:516px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:#FFFDF8;border:2.5px solid #3A2A2A;border-radius:999px;padding:3px 10px 3px 4px;box-shadow:0 3px 0 #3A2A2A;text-decoration:none;color:#2E2A3A;white-space:nowrap">
+    <span class="brush" style="width:22px;height:22px;border-radius:50%;border:2px solid #3A2A2A;background:#DDF0FA;display:grid;place-items:center;font-size:13px">水</span>
+    <span class="disp" style="font-weight:800;font-size:14px;color:#277864">{{qiRate}}</span>
+    <span style="font-size:11px;font-weight:800;color:#6B6478">×1.32</span>
+  </a>
+
+  <!-- HERO ACTION: Break Through -->
+  <a href="Breakthrough.dc.html" aria-label="Break through to Golden Core 5" style="position:absolute;left:50%;top:568px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;background:linear-gradient(180deg,#F2C14E,#E8B54A);border:3.5px solid #3A2A2A;border-radius:20px;padding:8px 22px 8px 12px;box-shadow:0 0 0 4px #FFF4C9,0 6px 0 #A07A25,0 0 26px #F2C14E;text-decoration:none;color:#2E2A3A">
+    <span class="brush" style="width:44px;height:44px;border-radius:12px;background:#B83E2B;border:2.5px solid #3A2A2A;color:#FFF4C9;display:grid;place-items:center;font-size:18px;line-height:.9;text-align:center">突<br>破</span>
+    <span style="display:flex;flex-direction:column;line-height:1">
+      <span class="disp" style="font-weight:800;font-size:24px">Break Through</span>
+      <span style="font-size:11.5px;font-weight:800;color:#5E4A16">→ Golden Core 5</span>
+    </span>
+  </a>
+
+  <!-- ACTIVITY TILES -->
+  <div style="position:absolute;left:10px;right:10px;bottom:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) 54px;gap:8px;align-items:stretch">
+    <button class="tile" onClick="{{pickBattle}}" aria-label="Battle at Thunder Peak, Zone 2" style="{{battleStyle}}">
+      <svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 4h9v9L12 29 3 20z"/><path d="M7 16l9 9M4 28l4-4"/></svg>
+      <span style="font-size:10.5px;font-weight:800;opacity:.9">Peak Z2</span>
+    </button>
+    <button class="tile" onClick="{{pickMeditate}}" aria-label="Meditate at Moonlit Lake Pavilion" style="{{meditateStyle}}">
+      <svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 5c3.4 3.4 3.4 8.6 0 12-3.4-3.4-3.4-8.6 0-12z"/><path d="M4 15c5.4.3 9.4 3.2 12 8-5.4-.3-9.4-3.2-12-8zM28 15c-5.4.3-9.4 3.2-12 8 5.4-.3 9.4-3.2 12-8z"/><path d="M7 27h18"/></svg>
+      <span style="font-size:10.5px;font-weight:800;opacity:.9">×1.32</span>
+    </button>
+    <button class="tile" onClick="{{pickTrain}}" aria-label="Train at Pass Fort Drill Yard" style="{{trainStyle}}">
+      <svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 25c0-7 4-12 11-12s11 5 11 12z"/><path d="M11 13V9a5 5 0 0 1 10 0v4"/></svg>
+      <span style="font-size:10.5px;font-weight:800;opacity:.9">×1.10</span>
+    </button>
+    <a href="Routine.dc.html" aria-label="Routine: Grind and Grow (paused)" style="border:3px solid #3A2A2A;border-radius:16px;background:#FFFDF8;display:grid;place-items:center;box-shadow:0 4px 0 #3A2A2A;position:relative">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6E5DC0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
+      <span style="position:absolute;bottom:-8px;font-size:9.5px;font-weight:800;background:#E8E2F4;border:2px solid #3A2A2A;border-radius:999px;padding:0 5px">paused</span>
+    </a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p){ super(p); this.state = { act: 'meditate' }; }
+  renderVals() {
+    const a = this.state.act;
+    const on = (bg, glow) => 'background:' + bg + ';color:#FFFDF8;box-shadow:0 0 0 3px ' + glow + ',0 4px 0 #3A2A2A;transform:translateY(-2px)';
+    const off = 'background:#FFFDF8;color:#6B6478';
+    const meta = {
+      battle: { bg: '#B83E2B', title: 'Battling · Thunder Peak', rate: '+9.6 Qi/s' },
+      meditate: { bg: '#277864', title: 'Meditating · Moonlit Lake', rate: '+96 Qi/s' },
+      train: { bg: '#6E5DC0', title: 'Training · Drill Yard', rate: '+9.6 Qi/s' }
+    }[a];
+    return {
+      battleStyle: a === 'battle' ? on('#B83E2B', '#F6D3CC') : off,
+      meditateStyle: a === 'meditate' ? on('#277864', '#CFEBE2') : off,
+      trainStyle: a === 'train' ? on('#6E5DC0', '#E3DDF7') : off,
+      chipBg: meta.bg, chipTitle: meta.title, qiRate: meta.rate,
+      pickBattle: () => this.setState({ act: 'battle' }),
+      pickMeditate: () => this.setState({ act: 'meditate' }),
+      pickTrain: () => this.setState({ act: 'train' })
+    };
+  }
+}
+</script>
+</body>
+</html>

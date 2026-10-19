@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="st_regen-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <linearGradient id="st_regen-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#245040"/>
+      <stop offset="1" stop-color="#0B1A14"/>
+    </linearGradient>
+    <radialGradient id="st_regen-sheen" cx="0.3" cy="0.22" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="st_regen-jade" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- chip: coloured rim + dark face -->
+  <rect x="1.3" y="1.3" width="29.4" height="29.4" rx="7.6" fill="url(#st_regen-rim)" stroke="#2A1008" stroke-width="1.3"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_regen-face)" stroke="#2A1008" stroke-width=".8"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_regen-sheen)"/>
+  
+  <path d="M8 2.6 H24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <path d="M2.6 8 V24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".35"/>
+
+  <!-- pictogram -->
+  <path d="M12.6 9 H19.4 V13.6 H24 V20.4 H19.4 V25 H12.6 V20.4 H8 V13.6 H12.6Z" fill="url(#st_regen-jade)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M13.8 10.4 V13.6 M9.4 15 H12.4" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".85"/>
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(9.4 7.2) scale(1.6)" fill="#E8FFF4" stroke="#2A1008" stroke-width=".5" stroke-linejoin="round"/>
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(22.4 6.6) scale(2.1)" fill="#E8FFF4" stroke="#2A1008" stroke-width=".5" stroke-linejoin="round"/>
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(25.6 11.4) scale(1.2)" fill="#E8FFF4" stroke="#2A1008" stroke-width=".5" stroke-linejoin="round"/>
+</svg>

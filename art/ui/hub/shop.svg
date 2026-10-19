@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="shop-disc" gradientUnits="userSpaceOnUse" cx="24" cy="25" r="31">
+      <stop offset="0" stop-color="#5CC9A4"/>
+      <stop offset=".45" stop-color="#1F8F6E"/>
+      <stop offset="1" stop-color="#0B4A38"/>
+    </radialGradient>
+    <radialGradient id="shop-dischi" gradientUnits="userSpaceOnUse" cx="22" cy="21" r="17">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shop-jade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <linearGradient id="shop-crystal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#8FDCFF"/>
+      <stop offset="1" stop-color="#2E7FD0"/>
+    </linearGradient>
+    <linearGradient id="shop-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".65" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="shop-goldd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".4" stop-color="#E8B23C"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="shop-shadeR" gradientUnits="userSpaceOnUse" x1="34" y1="0" x2="52" y2="0">
+      <stop offset="0" stop-color="#5A2608" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5A2608" stop-opacity=".5"/>
+    </linearGradient>
+    <clipPath id="shop-ingotclip">
+      <path d="M10 34C9 47 19 55 32 55C45 55 55 47 54 34C51 42 41 44.5 32 44.5C23 44.5 13 42 10 34Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- backing disc -->
+  <circle cx="32" cy="33" r="22" fill="url(#shop-disc)" stroke="#2A1008" stroke-width="2.5"/>
+  <circle cx="32" cy="33" r="22" fill="url(#shop-dischi)"/>
+  <circle cx="32" cy="33" r="19.8" fill="none" stroke="#FFE7A0" stroke-opacity=".8" stroke-width="1.2"/>
+
+  <!-- spirit crystal (back right) -->
+  <path d="M43 8L50.5 15.5V30.5L43 38L35.5 30.5V15.5Z" fill="url(#shop-crystal)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M43 13L47.2 17.2V28.8L43 33L38.8 28.8V17.2Z" fill="#FFFFFF" opacity=".3"/>
+  <g fill="none" stroke="#2E7FD0" stroke-width="1" opacity=".55" stroke-linecap="round">
+    <path d="M43 13L38.8 17.2M43 13L47.2 17.2M43 33L38.8 28.8M43 33L47.2 28.8"/>
+    <path d="M35.5 15.5L38.8 17.2M50.5 15.5L47.2 17.2M35.5 30.5L38.8 28.8M50.5 30.5L47.2 28.8"/>
+  </g>
+  <path d="M47.5 17.5V29" fill="none" stroke="#1A4A9E" stroke-width="1.2" opacity=".45" stroke-linecap="round"/>
+  <path d="M38.2 17L40.8 14.3" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+  <ellipse cx="39.8" cy="20.5" rx="1.1" ry="1.9" fill="#FFFFFF" opacity=".6" transform="rotate(20 39.8 20.5)"/>
+
+  <!-- jade bi disc (back left) -->
+  <path d="M17.5 13a11.5 11.5 0 1 0 .01 0ZM17.5 20.5a4 4 0 1 1-.01 0Z" fill="url(#shop-jade)" fill-rule="evenodd" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="17.5" cy="24.5" r="7.8" fill="none" stroke="#0E6A50" stroke-width="1" opacity=".5"/>
+  <path d="M17.5 16.9a7.6 7.6 0 0 0-7.4 6" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".7"/>
+  <path d="M10.1 28.5a7.8 7.8 0 0 0 11.2 4.8" fill="none" stroke="#0E6A50" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+
+  <!-- yuanbao ingot (front) -->
+  <ellipse cx="32" cy="56" rx="19" ry="2.4" fill="#2A1008" opacity=".28"/>
+  <path d="M20.5 46C20.5 29 43.5 29 43.5 46Z" fill="url(#shop-gold)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M23.6 41.4C24.8 38.2 27.6 36.2 30.8 35.9" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".9"/>
+  <path d="M10 34C9 47 19 55 32 55C45 55 55 47 54 34C51 42 41 44.5 32 44.5C23 44.5 13 42 10 34Z" fill="url(#shop-gold)"/>
+  <g clip-path="url(#shop-ingotclip)">
+    <rect x="0" y="0" width="64" height="64" fill="url(#shop-shadeR)"/>
+    <path d="M10 34C13 42 23 44.5 32 44.5C41 44.5 51 42 54 34C51 46 42 48.5 32 48.5C22 48.5 13 46 10 34Z" fill="#9A5E14" opacity=".4"/>
+    <path d="M12.5 39.5C17 45 25 46.6 32 46.6C39 46.6 47 45 51.5 39.5" fill="none" stroke="#FFE7A0" stroke-width="1" opacity=".75"/>
+  </g>
+  <path d="M10 34C9 47 19 55 32 55C45 55 55 47 54 34C51 42 41 44.5 32 44.5C23 44.5 13 42 10 34Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M12.4 42C13 46.8 16 50.4 20.4 52.4" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".7"/>
+  <path d="M11.4 38.4L11.6 39.4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5" stroke-linejoin="round">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(7.5 11) scale(2.7)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(56.5 36) scale(1.5)"/>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="flying_t4_ghost_light-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#E4FDFF"/>
+      <stop offset=".55" stop-color="#A8ECF8"/>
+      <stop offset="1" stop-color="#3EA6C6"/>
+    </linearGradient>
+    <linearGradient id="flying_t4_ghost_light-fit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#BFE6EE"/>
+      <stop offset="1" stop-color="#4E7E8A"/>
+    </linearGradient>
+    <linearGradient id="flying_t4_ghost_light-ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8FFFF"/>
+      <stop offset=".55" stop-color="#6EE0F0"/>
+      <stop offset="1" stop-color="#178AA6"/>
+    </linearGradient>
+    <linearGradient id="flying_t4_ghost_light-trail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8FF4FF" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#8FF4FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="flying_t4_ghost_light-under" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8FF4FF" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#8FF4FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="flying_t4_ghost_light-wisp" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".6" stop-color="#8FF4FF" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#8FF4FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- flying sword: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal; it floats (no contact shadow) -->
+  <g transform="translate(36 27) rotate(45)">
+    <!-- faint glow beneath the blade -->
+    <ellipse cx="3.6" cy="-8" rx="4.5" ry="21" fill="url(#flying_t4_ghost_light-under)"/>
+    <!-- spirit trail streaming behind the hilt -->
+    <path d="M-3 6C-3 18 -1.6 28 0 34C1.6 28 3 18 3 6Z" fill="url(#flying_t4_ghost_light-trail)"/>
+    <path d="M0 -28L1.9 -22L1.7 9H-1.7L-1.9 -22Z" fill="none" stroke="#B8F8FF" stroke-width="5" opacity=".38"/>
+    <g stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+      <!-- flowing silk ribbon -->
+      <path d="M.6 20.2C-2.6 23.4 2.8 25.6 1.4 29.4C0 33 4.2 34.2 3.4 37.6" fill="none" stroke-width="4"/>
+      <path d="M.6 20.2C-2.6 23.4 2.8 25.6 1.4 29.4C0 33 4.2 34.2 3.4 37.6" fill="none" stroke="url(#flying_t4_ghost_light-ribbon)" stroke-width="2"/>
+      <path d="M.2 21C-1 22.4 -1 23.4 -.2 24.2" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".8"/>
+      <path d="M.2 20.4C-1 24 -3.6 27 -4.4 31.5" fill="none" stroke-width="3.2"/>
+      <path d="M.2 20.4C-1 24 -3.6 27 -4.4 31.5" fill="none" stroke="url(#flying_t4_ghost_light-ribbon)" stroke-width="1.3"/>
+      <!-- slim blade -->
+      <path d="M0 -28L1.9 -22L1.7 9H-1.7L-1.9 -22Z" fill="url(#flying_t4_ghost_light-blade)" stroke-width="2.4"/>
+      <path d="M0 -22V8" fill="none" stroke="#5EC0D8" stroke-width="1" opacity=".8"/>
+      <path d="M-1 -20V7" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".85"/>
+      <path d="M.4 -16L1.2 -12.4M.5 -6L1.3 -2.4M.3 2L1.1 5.6" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".9"/>
+      <!-- small ornamental hilt: petal guard, bare tang, bead -->
+      <path d="M-4.6 9.2Q0 11.4 4.6 9.2L3.4 12.4Q0 13.4 -3.4 12.4Z" fill="url(#flying_t4_ghost_light-fit)" stroke-width="2"/>
+      <path d="M-3 10.6L-1.2 10.2" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".85"/>
+      <rect x="-1.2" y="13" width="2.4" height="4.2" rx=".6" fill="url(#flying_t4_ghost_light-fit)" stroke-width="2"/>
+      <circle cx="0" cy="18.8" r="1.9" fill="url(#flying_t4_ghost_light-fit)" stroke-width="2"/>
+      <circle cx="-.6" cy="18.2" r=".6" fill="#FFFFFF" stroke="none"/>
+    </g>
+  </g>
+  <!-- ghost-light wisps drifting around the blade -->
+  <circle cx="26" cy="20" r="2.6" fill="url(#flying_t4_ghost_light-wisp)"/>
+  <circle cx="50" cy="26" r="2.2" fill="url(#flying_t4_ghost_light-wisp)"/>
+  <circle cx="20" cy="31" r="1.7" fill="url(#flying_t4_ghost_light-wisp)"/>
+</svg>

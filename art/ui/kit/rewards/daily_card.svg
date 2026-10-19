@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="160" viewBox="0 0 64 80">
+  <defs>
+    <linearGradient id="daily_card-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset=".55" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="daily_card-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="daily_card-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <linearGradient id="daily_card-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset=".6" stop-color="#F6E6BE"/>
+      <stop offset="1" stop-color="#E9CF98"/>
+    </linearGradient>
+    <linearGradient id="daily_card-strip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9CF98" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#E9CF98" stop-opacity=".25"/>
+    </linearGradient>
+    <radialGradient id="daily_card-lacquer" cx=".35" cy=".3" r=".9">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+  </defs>
+
+  <!-- cast shadow -->
+  <rect x="5.5" y="10" width="56" height="68" rx="4" fill="#2A1008" opacity=".25"/>
+
+  <!-- rosewood frame -->
+  <rect x="4" y="8" width="56" height="68" rx="4" fill="url(#daily_card-rose)" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M6.5 14V70" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".2"/>
+  <rect x="6.3" y="10.3" width="51.4" height="63.4" rx="2.6" fill="none" stroke="url(#daily_card-gold)" stroke-width="1.2"/>
+
+  <!-- parchment face -->
+  <rect x="9.5" y="13.5" width="45" height="57" rx="1.5" fill="url(#daily_card-paper)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- top strip for the day label -->
+  <path d="M9.5 15A1.5 1.5 0 0 1 11 13.5H53A1.5 1.5 0 0 1 54.5 15V26.5H9.5Z" fill="url(#daily_card-strip)"/>
+  <path d="M12 26.5H52" fill="none" stroke="#B8812A" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+  <path d="M30.5 26.5L32 25L33.5 26.5L32 28Z" fill="#B8812A" opacity=".85"/>
+  <!-- small gold corner brackets around the clear centre -->
+  <g fill="none" stroke="#D69A2A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+    <path d="M12.5 33V30H15.5"/><path d="M51.5 33V30H48.5"/>
+    <path d="M12.5 64.5V67.5H15.5"/><path d="M51.5 64.5V67.5H48.5"/>
+  </g>
+
+  <!-- hanging red tassel at the top-right -->
+  <circle cx="57" cy="5.5" r="2.6" fill="url(#daily_card-goldSmall)" stroke="#2A1008" stroke-width="1.4"/>
+  <path d="M57 8V12" fill="none" stroke="#C21E10" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M53.5 13H60.5L61.5 24Q57 26.5 52.5 24Z" fill="url(#daily_card-lacquer)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <g fill="none" stroke="#7A0E06" stroke-width=".9" stroke-linecap="round" opacity=".8">
+    <path d="M55 16V23"/><path d="M57 16V23.6"/><path d="M59 16V23"/>
+  </g>
+  <rect x="54.2" y="11.6" width="5.6" height="3.2" rx="1.2" fill="url(#daily_card-goldSmall)" stroke="#2A1008" stroke-width="1.2"/>
+  <ellipse cx="56.1" cy="4.6" rx=".9" ry=".6" fill="#FFFFFF" opacity=".9"/>
+</svg>

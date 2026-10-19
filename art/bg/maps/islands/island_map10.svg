@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="360" viewBox="0 0 200 180">
+<!-- island_map10: floating island, shared underside tinted Earth -->
+<defs>
+<radialGradient id="island_map10-uGlow" cx="100" cy="128" r="96" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 128) scale(1 .5) translate(-100 -128)"><stop offset="0" stop-color="#FFF0D2" stop-opacity=".85"/><stop offset=".5" stop-color="#FFF0D2" stop-opacity=".35"/><stop offset="1" stop-color="#FFF0D2" stop-opacity="0"/></radialGradient>
+<linearGradient id="island_map10-uBody" x1="14" y1="80" x2="186" y2="140" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E0BC86"/><stop offset=".38" stop-color="#AD8050"/><stop offset=".72" stop-color="#72502F"/><stop offset="1" stop-color="#44301E"/></linearGradient>
+<linearGradient id="island_map10-uShade" x1="0" y1="92" x2="0" y2="176" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#44301E" stop-opacity=".05"/><stop offset=".25" stop-color="#44301E" stop-opacity="0"/><stop offset="1" stop-color="#44301E" stop-opacity=".6"/></linearGradient>
+<linearGradient id="island_map10-uFacet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E0BC86"/><stop offset="1" stop-color="#AD8050"/></linearGradient>
+<linearGradient id="island_map10-uLip" x1="0" y1="80" x2="0" y2="104" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7A5634"/><stop offset="1" stop-color="#4E3620"/></linearGradient>
+<linearGradient id="island_map10-uMoss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BAC66E"/><stop offset="1" stop-color="#8E9C52"/></linearGradient>
+<radialGradient id="island_map10-cap" cx="78" cy="64" r="100" gradientUnits="userSpaceOnUse" gradientTransform="translate(78 64) scale(1 .32) translate(-78 -64)"><stop offset="0" stop-color="#7C8A84"/><stop offset=".5" stop-color="#4E5A56"/><stop offset="1" stop-color="#262E2E"/></radialGradient><radialGradient id="island_map10-ghost" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#8AF0E8" stop-opacity="0.9"/><stop offset="1" stop-color="#8AF0E8" stop-opacity="0"/></radialGradient><radialGradient id="island_map10-lan" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#D8F4FF" stop-opacity="0.8"/><stop offset="1" stop-color="#D8F4FF" stop-opacity="0"/></radialGradient>
+<linearGradient id="island_map10-tomb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9AA8A2"/><stop offset=".5" stop-color="#6A7672"/><stop offset="1" stop-color="#3A4442"/></linearGradient>
+<linearGradient id="island_map10-mound" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E6E64"/><stop offset="1" stop-color="#2E3834"/></linearGradient>
+<linearGradient id="island_map10-mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8F0EA" stop-opacity="0"/><stop offset=".5" stop-color="#C8F0EA" stop-opacity=".5"/><stop offset="1" stop-color="#C8F0EA" stop-opacity="0"/></linearGradient>
+<path id="island_map10-flame" d="M0,4 C-3,4 -3.4,0 -1.6,-2 C-1,-3.4 -.4,-5 0,-7 C.8,-5 2.6,-3.4 2.8,-1 C3,2 2,4 0,4Z"/>
+</defs>
+<g id="island_map10-under">
+<ellipse cx="100" cy="128" rx="100" ry="52" fill="url(#island_map10-uGlow)"/>
+<!-- falling rock bits (behind) -->
+<path d="M57,150 l4,-2 3,3 -2,4 -4,0 z" fill="#72502F" opacity=".8"/>
+<path d="M146,146 l3,-1 2,3 -2,3 -3,-1 z" fill="#72502F" opacity=".75"/>
+<!-- hanging side lobes -->
+<path d="M30,98 L44,104 L52,118 L48,132 L44,146 L40,138 L36,124 L30,112 Z" fill="url(#island_map10-uBody)"/>
+<path d="M36,110 L44,106 L49,118 L45,132 L43,142 L40,128 Z" fill="#44301E" opacity=".28"/>
+<path d="M150,102 L170,98 L166,112 L160,124 L156,134 L152,124 L148,112 Z" fill="url(#island_map10-uBody)"/>
+<path d="M158,104 L168,100 L163,114 L156,132 L155,118 Z" fill="#44301E" opacity=".35"/>
+<!-- main body -->
+<path d="M14,74 C14,84 18,90 24,96 L30,104 L28,110 L38,116 L44,126 L52,130 L56,142 L66,146 L70,156 L80,159 L86,168 L95,170 L100,176 L106,169 L115,165 L120,156 L130,151 L135,140 L145,135 L150,124 L160,118 L166,107 L175,100 L181,91 C185,85 186,80 186,74 Z" fill="url(#island_map10-uBody)"/>
+<!-- lit facets (left, light from top-left) -->
+<path d="M24,96 L46,102 L58,120 L52,130 L44,126 L38,116 L28,110 L30,104 Z" fill="url(#island_map10-uFacet)" opacity=".85"/>
+<path d="M58,104 L82,110 L86,128 L74,136 L62,130 L58,120 Z" fill="url(#island_map10-uFacet)" opacity=".6"/>
+<path d="M62,132 L74,136 L80,150 L70,156 L66,146 L56,142 Z" fill="url(#island_map10-uFacet)" opacity=".45"/>
+<path d="M86,128 L100,134 L98,152 L88,156 L80,150 L74,136 Z" fill="#AD8050" opacity=".5"/>
+<!-- shadow facets (right) -->
+<path d="M118,108 L142,104 L150,124 L145,135 L132,128 Z" fill="#44301E" opacity=".22"/>
+<path d="M100,134 L118,126 L132,128 L130,151 L120,156 L110,150 Z" fill="#44301E" opacity=".3"/>
+<path d="M110,150 L120,156 L115,165 L106,169 L100,176 L98,152 Z" fill="#44301E" opacity=".38"/>
+<path d="M112,150 L124,148 L122,160 L117,170 L113,162 Z" fill="url(#island_map10-uBody)"/>
+<path d="M117,149 L124,148 L122,160 L117,170 Z" fill="#44301E" opacity=".35"/>
+<g fill="none" stroke="#E0BC86" stroke-linecap="round" stroke-linejoin="round" opacity=".55" stroke-width=".9"><path d="M58,104 L82,110"/><path d="M62,132 L74,136 L86,128"/><path d="M86,128 L100,134"/></g>
+<!-- overall bottom darkening -->
+<path d="M14,74 C14,84 18,90 24,96 L30,104 L28,110 L38,116 L44,126 L52,130 L56,142 L66,146 L70,156 L80,159 L86,168 L95,170 L100,176 L106,169 L115,165 L120,156 L130,151 L135,140 L145,135 L150,124 L160,118 L166,107 L175,100 L181,91 C185,85 186,80 186,74 Z" fill="url(#island_map10-uShade)"/>
+<!-- strata and cracks -->
+<g fill="none" stroke="#3C2A1A" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32,108 C50,113 66,112 84,118 S118,116 136,114 S160,110 170,104" stroke-width="1.2" opacity=".45"/>
+<path d="M46,126 C60,130 74,128 88,134 S114,132 128,130 S142,128 150,124" stroke-width="1.1" opacity=".42"/>
+<path d="M62,142 C74,146 86,144 96,150 S116,146 128,146" stroke-width="1" opacity=".4"/>
+<path d="M78,156 C88,160 98,158 112,160" stroke-width=".9" opacity=".38"/>
+<path d="M58,104 L62,116 L58,120" stroke-width="1" opacity=".5"/>
+<path d="M86,128 L88,140 L84,146" stroke-width="1" opacity=".45"/>
+<path d="M100,134 L102,146 L99,152 L101,162" stroke-width="1" opacity=".5"/>
+<path d="M132,128 L128,138 L131,146" stroke-width="1" opacity=".45"/>
+<path d="M118,108 L114,118" stroke-width=".9" opacity=".4"/>
+</g>
+<!-- rim highlights on lit edges -->
+<path d="M24,96 L30,104 L28,110 L38,116 L44,126" fill="none" stroke="#E0BC86" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+<path d="M56,142 L66,146 L70,156" fill="none" stroke="#E0BC86" stroke-width=".9" stroke-linecap="round" opacity=".5"/>
+<!-- soil lip under the cap -->
+<path d="M14,74 C16,88 52,98 100,98 C148,98 184,88 186,74 L186,82 C184,98 150,108 100,108 C50,108 16,98 14,82 Z" fill="url(#island_map10-uLip)"/>
+<path d="M16,84 C30,96 60,104 100,104 C140,104 170,96 184,84" fill="none" stroke="#4E3620" stroke-width="1.2" opacity=".55"/>
+<path d="M15,78 C20,90 56,99.5 100,99.5 C144,99.5 180,90 185,78" fill="none" stroke="#7A5634" stroke-width="1.6" opacity=".9"/>
+<!-- pebbles in the lip -->
+<g fill="#AD8050" opacity=".9"><ellipse cx="44" cy="101" rx="3" ry="1.9"/><ellipse cx="88" cy="105" rx="2.4" ry="1.6"/><ellipse cx="136" cy="104" rx="3.2" ry="1.9"/><ellipse cx="166" cy="96" rx="2.2" ry="1.5"/><ellipse cx="112" cy="106" rx="1.6" ry="1.1"/></g>
+<!-- dangling roots -->
+<g fill="none" stroke="#4C3420" stroke-linecap="round" stroke-linejoin="round">
+<path d="M38,100 C36,110 40,116 36,126 C34,132 37,136 35,140" stroke-width="1.6"/>
+<path d="M36,126 C32,128 31,132 32,135" stroke-width=".9"/>
+<path d="M72,105 C74,114 70,120 73,130" stroke-width="1.4"/>
+<path d="M73,121 C77,124 77,128 79,130" stroke-width=".8"/>
+<path d="M124,105 C122,114 127,120 124,130 C122,136 125,140 124,146" stroke-width="1.5"/>
+<path d="M124,130 C120,133 120,136 118,138" stroke-width=".8"/>
+<path d="M160,98 C163,106 160,112 163,120" stroke-width="1.3"/>
+<path d="M104,106 C104,112 102,116 104,120" stroke-width="1"/>
+</g>
+<!-- moss cushions and drips along the lip -->
+<g fill="url(#island_map10-uMoss)">
+<path d="M46,102 C48,99 60,100 64,104 C64,107 62,107 61,109 C61,114 60,118 58.5,118 C57,118 57,113 56.6,110 C55.8,112 55.6,121 53.8,121 C52,121 52.4,113 52,108 C50.6,108 50.8,112 49.4,112 C48,112 48.6,106 46,104 Z"/>
+<path d="M136,105 C139,102 150,101 154,103 C154,106 152,106 151.6,108 C151.4,112 150.6,115 149.4,115 C148.2,115 148.4,111 148,109 C147.4,111 147.4,117 145.8,117 C144.2,117 144.6,111 144,108 C142,108 141.6,110 140.4,110 C139.2,110 139.6,107 136,106.6 Z"/>
+<path d="M86,106 C89,104 96,104 99,106.4 C98,108 97.4,108.4 97,111 C96.6,114 95.4,114.6 94.8,112 C94.4,110 93.2,110 92.6,112.4 C92,114 90.6,113 90.6,110 C90,108.6 88,108 86,107.6 Z" opacity=".95"/>
+<path d="M168,96 C171,93 178,90 181,90 C180,93 178.6,94 178,97 C177.4,101 176,102 175.4,100 C175,98 174,99 173.6,101.6 C173,103 171.6,102 171.8,99 C170.6,98 169,98 168,97.4 Z" opacity=".95"/>
+<path d="M20,90 C24,93 30,97 34,99 C32,101 30.6,101 30,104 C29.4,106 28,106 27.8,103.4 C27,101 25,100 24,98 C22,96 20.4,94 20,90 Z" opacity=".95"/>
+</g>
+<!-- falling rock bits (below tip) -->
+<path d="M86,172 l3,-2 3,2 -1,3 -4,0 z" fill="#72502F" opacity=".85"/>
+<path d="M112,173 l2,-1.5 2.5,1.5 -1,2.5 -3,0 z" fill="#72502F" opacity=".7"/>
+<path d="M126,163 l2.2,-1 1.8,2 -1.4,2 -2.4,-.6 z" fill="#AD8050" opacity=".7"/>
+<path d="M74,165 l1.8,-1 1.6,1.6 -1.2,1.6 -2,-.4 z" fill="#AD8050" opacity=".6"/>
+<circle cx="100" cy="178.5" r="1.2" fill="#72502F" opacity=".5"/>
+</g>
+<g id="island_map10-top">
+<ellipse cx="100" cy="74" rx="86" ry="22" fill="url(#island_map10-cap)"/>
+<path d="M15,77 C22,90 60,96 100,96 C140,96 178,90 185,77" fill="none" stroke="#8EA29A" stroke-width="1.5" stroke-linecap="round" opacity=".75"/><ellipse cx="100" cy="64" rx="84" ry="10" fill="#9ED8D0" opacity=".2"/><ellipse cx="100" cy="70" rx="34" ry="5" fill="#101818" opacity="0.4"/><g>
+<path d="M66,70 C66,52 82,40 100,40 C118,40 134,52 134,70Z" fill="url(#island_map10-mound)"/>
+<path d="M70,66 C70,52 84,42 98,41 C88,46 80,56 80,68Z" fill="#8AA090" opacity=".35"/>
+<path d="M72,56 C78,54 84,58 90,54 M110,50 C116,48 122,52 128,52" stroke="#3E5044" stroke-width="1" fill="none"/>
+<path d="M62,72 C62,62 70,58 76,58 L76,72Z" fill="url(#island_map10-tomb)"/><path d="M138,72 C138,62 130,58 124,58 L124,72Z" fill="url(#island_map10-tomb)"/>
+<rect x="80" y="50" width="40" height="22" fill="url(#island_map10-tomb)"/>
+<path d="M76,52 C86,50 92,46 100,44 C108,46 114,50 124,52Z" fill="#3A4442"/><path d="M76,52 C86,50 92,46 100,44 L100,52Z" fill="#7A8884" opacity=".7"/>
+<path d="M76,52 C74,51 73,49 74,47.6 M124,52 C126,51 127,49 126,47.6" stroke="#2A3230" stroke-width="1" fill="none"/>
+<rect x="92" y="56" width="16" height="16" fill="#1A2222"/><path d="M92,56 a8,6 0 0 1 16,0Z" fill="#1A2222"/>
+<rect x="95" y="58" width="10" height="14" fill="url(#island_map10-ghost)" opacity=".7"/>
+<rect x="84" y="56" width="5" height="12" fill="#B8C4BC"/><rect x="111" y="56" width="5" height="12" fill="#B8C4BC"/>
+<g stroke="#5A6660" stroke-width=".6"><path d="M85,59 h3 M85,62 h3 M85,65 h3 M112,59 h3 M112,62 h3 M112,65 h3"/></g>
+<rect x="78" y="72" width="44" height="3" fill="#5A6662"/><rect x="88" y="75" width="24" height="2.4" fill="#6A7672"/>
+<path d="M60,62 C62,60 66,62 66,66" stroke="#4A6050" stroke-width="1.6" fill="none"/>
+</g><path d="M30,82 C32,68.0 27,56.0 31,42.0 M30,62.0 C38,56.0 46,54.0 54,46.0 M31,52.0 C24,46.0 20,40.0 18,32.0 M42,54.0 C44,48.0 48,42.0 46,36.0 M31,42.0 C34,34.0 32,28.0 36,22.0" stroke="#151A1C" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M25,82 C28,80 32,80 36,82" stroke="#151A1C" stroke-width="2" fill="none"/><path d="M170,80 C168,66.7 173,55.3 169,42.0 M170,61.0 C162,55.3 154,53.400000000000006 146,45.800000000000004 M169,51.5 C176,45.800000000000004 180,40.1 182,32.5 M158,53.400000000000006 C156,47.7 152,42.0 154,36.300000000000004 M169,42.0 C166,34.400000000000006 168,28.700000000000003 164,23.0" stroke="#151A1C" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M175,80 C172,78 168,78 164,80" stroke="#151A1C" stroke-width="2" fill="none"/><path d="M42,58 C46,62 52,62 56,60" stroke="#8A7A5A" stroke-width=".6" fill="none"/><path d="M158,58 C154,62 148,62 144,60" stroke="#8A7A5A" stroke-width=".6" fill="none"/><rect x="43.8" y="60" width="2.4" height="6" fill="#E8D890"/><path d="M44.4,61.4 h1.2 M44.4,63 h1.2" stroke="#B83A2A" stroke-width=".5"/><rect x="48.8" y="61.6" width="2.4" height="6" fill="#E8D890"/><path d="M49.4,63.0 h1.2 M49.4,64.6 h1.2" stroke="#B83A2A" stroke-width=".5"/><rect x="52.8" y="60.6" width="2.4" height="6" fill="#E8D890"/><path d="M53.4,62.0 h1.2 M53.4,63.6 h1.2" stroke="#B83A2A" stroke-width=".5"/><rect x="153.8" y="60" width="2.4" height="6" fill="#E8D890"/><path d="M154.4,61.4 h1.2 M154.4,63 h1.2" stroke="#B83A2A" stroke-width=".5"/><rect x="148.8" y="61.6" width="2.4" height="6" fill="#E8D890"/><path d="M149.4,63.0 h1.2 M149.4,64.6 h1.2" stroke="#B83A2A" stroke-width=".5"/><rect x="144.8" y="60.6" width="2.4" height="6" fill="#E8D890"/><path d="M145.4,62.0 h1.2 M145.4,63.6 h1.2" stroke="#B83A2A" stroke-width=".5"/><rect x="20.8" y="40" width="2.4" height="6" fill="#E8D890"/><path d="M21.4,41.4 h1.2 M21.4,43 h1.2" stroke="#B83A2A" stroke-width=".5"/><rect x="174.8" y="36" width="2.4" height="6" fill="#E8D890"/><path d="M175.4,37.4 h1.2 M175.4,39 h1.2" stroke="#B83A2A" stroke-width=".5"/><path d="M54,40 L54,44" stroke="#8A7A5A" stroke-width=".5"/><circle cx="54" cy="47" r="7" fill="url(#island_map10-lan)"/><ellipse cx="54" cy="47" rx="2.2" ry="3" fill="#DCF4FF"/><path d="M51.8,47 h4.4" stroke="#7AA0B0" stroke-width=".4"/><path d="M146,40 L146,44" stroke="#8A7A5A" stroke-width=".5"/><circle cx="146" cy="47" r="7" fill="url(#island_map10-lan)"/><ellipse cx="146" cy="47" rx="2.2" ry="3" fill="#DCF4FF"/><path d="M143.8,47 h4.4" stroke="#7AA0B0" stroke-width=".4"/><path d="M20,24 L20,28" stroke="#8A7A5A" stroke-width=".5"/><circle cx="20" cy="31" r="7" fill="url(#island_map10-lan)"/><ellipse cx="20" cy="31" rx="2.2" ry="3" fill="#DCF4FF"/><path d="M17.8,31 h4.4" stroke="#7AA0B0" stroke-width=".4"/><circle cx="66" cy="38" r="7.700000000000001" fill="url(#island_map10-ghost)" opacity=".7"/><use xlink:href="#island_map10-flame" transform="translate(66 38) scale(1.1)" fill="#7AE6E0"/><use xlink:href="#island_map10-flame" transform="translate(66 39) scale(0.55)" fill="#E8FFFC"/><circle cx="136" cy="34" r="7" fill="url(#island_map10-ghost)" opacity=".7"/><use xlink:href="#island_map10-flame" transform="translate(136 34) scale(1)" fill="#7AE6E0"/><use xlink:href="#island_map10-flame" transform="translate(136 35) scale(0.5)" fill="#E8FFFC"/><circle cx="100" cy="26" r="8.4" fill="url(#island_map10-ghost)" opacity=".7"/><use xlink:href="#island_map10-flame" transform="translate(100 26) scale(1.2)" fill="#7AE6E0"/><use xlink:href="#island_map10-flame" transform="translate(100 27) scale(0.6)" fill="#E8FFFC"/><circle cx="48" cy="72" r="5.6000000000000005" fill="url(#island_map10-ghost)" opacity=".7"/><use xlink:href="#island_map10-flame" transform="translate(48 72) scale(0.8)" fill="#7AE6E0"/><use xlink:href="#island_map10-flame" transform="translate(48 73) scale(0.4)" fill="#E8FFFC"/><circle cx="156" cy="70" r="5.6000000000000005" fill="url(#island_map10-ghost)" opacity=".7"/><use xlink:href="#island_map10-flame" transform="translate(156 70) scale(0.8)" fill="#7AE6E0"/><use xlink:href="#island_map10-flame" transform="translate(156 71) scale(0.4)" fill="#E8FFFC"/><circle cx="120" cy="82" r="4.8999999999999995" fill="url(#island_map10-ghost)" opacity=".7"/><use xlink:href="#island_map10-flame" transform="translate(120 82) scale(0.7)" fill="#7AE6E0"/><use xlink:href="#island_map10-flame" transform="translate(120 83) scale(0.35)" fill="#E8FFFC"/><circle cx="80" cy="84" r="4.8999999999999995" fill="url(#island_map10-ghost)" opacity=".7"/><use xlink:href="#island_map10-flame" transform="translate(80 84) scale(0.7)" fill="#7AE6E0"/><use xlink:href="#island_map10-flame" transform="translate(80 85) scale(0.35)" fill="#E8FFFC"/><g transform="translate(140 86) rotate(-10)"><path d="M-10,-3 L9,-4 L11,1 L-9,3Z" fill="#4A2E26"/><path d="M-10,-3 L9,-4 L9,-2.4 L-10,-1.4Z" fill="#7A4A3A"/></g><path d="M60,90 C66,86 70,88 76,86 M110,92 C116,90 120,92 124,90" stroke="#151A1C" stroke-width="1.2" fill="none"/><g fill="#E8E4D0" opacity=".85"><rect x="96" y="88" width="2.4" height="1.6" transform="rotate(20 97 89)"/><rect x="70" y="80" width="2" height="1.4" transform="rotate(-30 71 81)"/><rect x="128" y="48" width="2" height="1.4" transform="rotate(40 129 49)"/></g><ellipse cx="60" cy="76" rx="36" ry="4" fill="#C8F0EA" opacity=".3"/><ellipse cx="146" cy="78" rx="34" ry="3.6" fill="#C8F0EA" opacity=".28"/><ellipse cx="100" cy="90" rx="50" ry="3" fill="#C8F0EA" opacity=".2"/><path d="M18.8,81.8 L19.9,85.8 L21.0,81.8 L22.0,87.0 L23.0,81.8 L24.2,85.8 L25.2,81.8Z" fill="#3E4A44" opacity="1"/><path d="M27.1,85.6 L28.5,90.5 L29.7,85.6 L31.0,92.0 L32.3,85.6 L33.7,90.5 L34.9,85.6Z" fill="#2E3A36" opacity="1"/><path d="M35.4,88.3 L37.0,94.0 L38.5,88.3 L40.0,95.7 L41.5,88.3 L43.2,94.0 L44.6,88.3Z" fill="#3E4A44" opacity="1"/><path d="M45.5,90.2 L46.7,94.7 L47.8,90.2 L49.0,96.0 L50.2,90.2 L51.5,94.7 L52.5,90.2Z" fill="#2E3A36" opacity="1"/><path d="M53.8,91.7 L55.2,97.0 L56.6,91.7 L58.0,98.6 L59.4,91.7 L61.0,97.0 L62.2,91.7Z" fill="#3E4A44" opacity="1"/><path d="M63.8,92.8 L64.9,96.8 L66.0,92.8 L67.0,98.0 L68.0,92.8 L69.2,96.8 L70.2,92.8Z" fill="#2E3A36" opacity="1"/><path d="M72.1,93.6 L73.5,98.5 L74.7,93.6 L76.0,100.0 L77.3,93.6 L78.7,98.5 L79.9,93.6Z" fill="#3E4A44" opacity="1"/><path d="M80.4,94.2 L82.0,99.9 L83.5,94.2 L85.0,101.6 L86.5,94.2 L88.2,99.9 L89.6,94.2Z" fill="#2E3A36" opacity="1"/><path d="M90.5,94.4 L91.7,98.9 L92.8,94.4 L94.0,100.2 L95.2,94.4 L96.5,98.9 L97.5,94.4Z" fill="#3E4A44" opacity="1"/><path d="M98.8,94.5 L100.2,99.8 L101.6,94.5 L103.0,101.4 L104.4,94.5 L106.0,99.8 L107.2,94.5Z" fill="#2E3A36" opacity="1"/><path d="M108.8,94.3 L109.9,98.3 L111.0,94.3 L112.0,99.5 L113.0,94.3 L114.2,98.3 L115.2,94.3Z" fill="#3E4A44" opacity="1"/><path d="M117.1,93.8 L118.5,98.7 L119.7,93.8 L121.0,100.2 L122.3,93.8 L123.7,98.7 L124.9,93.8Z" fill="#2E3A36" opacity="1"/><path d="M125.4,93.1 L127.0,98.9 L128.5,93.1 L130.0,100.6 L131.5,93.1 L133.2,98.9 L134.6,93.1Z" fill="#3E4A44" opacity="1"/><path d="M135.4,92.1 L136.7,96.5 L137.8,92.1 L139.0,97.9 L140.2,92.1 L141.5,96.5 L142.6,92.1Z" fill="#2E3A36" opacity="1"/><path d="M143.8,90.8 L145.2,96.1 L146.6,90.8 L148.0,97.7 L149.4,90.8 L151.0,96.1 L152.2,90.8Z" fill="#3E4A44" opacity="1"/><path d="M153.8,89.0 L154.9,93.0 L156.0,89.0 L157.0,94.2 L158.0,89.0 L159.2,93.0 L160.2,89.0Z" fill="#2E3A36" opacity="1"/><path d="M162.1,86.6 L163.5,91.5 L164.7,86.6 L166.0,92.9 L167.3,86.6 L168.7,91.5 L169.9,86.6Z" fill="#3E4A44" opacity="1"/><path d="M170.4,83.3 L172.0,89.0 L173.5,83.3 L175.0,90.7 L176.5,83.3 L178.2,89.0 L179.6,83.3Z" fill="#2E3A36" opacity="1"/>
+</g>
+</svg>

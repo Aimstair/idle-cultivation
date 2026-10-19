@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<radialGradient id="pill_meridian_mending-ag" cx=".36" cy=".32" r=".78"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".42" stop-color="#F3F5F9"/><stop offset="1" stop-color="#B7BFCC"/></radialGradient>
+<clipPath id="pill_meridian_mending-ac"><circle cx="41.5" cy="30.5" r="12.5"/></clipPath>
+<radialGradient id="pill_meridian_mending-bg" cx=".36" cy=".32" r=".78"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".42" stop-color="#F3F5F9"/><stop offset="1" stop-color="#B7BFCC"/></radialGradient>
+<clipPath id="pill_meridian_mending-bc"><circle cx="23.5" cy="37.5" r="12.5"/></clipPath>
+<radialGradient id="pill_meridian_mending-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2A1008" stop-opacity=".42"/><stop offset="1" stop-color="#2A1008" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="33" cy="52.5" rx="22" ry="3" fill="url(#pill_meridian_mending-shadow)"/>
+<circle cx="41.5" cy="30.5" r="12.5" fill="url(#pill_meridian_mending-ag)"/>
+<circle cx="41.5" cy="30.5" r="12.5" fill="#2A1008" opacity="0.08"/>
+<g clip-path="url(#pill_meridian_mending-ac)">
+<g transform="translate(41.5 30.5)">
+<g transform="translate(0 0)">
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#C8FFE6" stroke-width="2.2" transform="translate(-0.5 -0.5)" opacity=".95"/>
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#083E30" stroke-width="2.2" transform="translate(0.5 0.5)" opacity=".9"/>
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#1F9A74" stroke-width="1.72"/>
+</g>
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke="none"/>
+<circle cx="-4.5" cy="-2.2" r="1.9" fill="#3FC79A" stroke="#0E6A50" stroke-width=".8"/>
+<circle cx="2" cy="-5" r="1.9" fill="#3FC79A" stroke="#0E6A50" stroke-width=".8"/>
+</g>
+</g>
+<path d="M52.29 32.02A10.9 10.9 0 0 1 39.61 41.23" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".38"/>
+<circle cx="41.5" cy="30.5" r="12.5" fill="none" stroke="#2A1008" stroke-width="2.3"/>
+<ellipse cx="36.5" cy="25" rx="3.75" ry="2.12" transform="rotate(-38 36.5 25)" fill="#FFFFFF" opacity=".88"/>
+<circle cx="23.5" cy="37.5" r="12.5" fill="url(#pill_meridian_mending-bg)"/>
+<g clip-path="url(#pill_meridian_mending-bc)">
+<g transform="translate(23.5 37.5)">
+<g transform="translate(0 0)">
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#C8FFE6" stroke-width="2.2" transform="translate(-0.5 -0.5)" opacity=".95"/>
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#083E30" stroke-width="2.2" transform="translate(0.5 0.5)" opacity=".9"/>
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#1F9A74" stroke-width="1.72"/>
+</g>
+<path d="M-9 4C-5 -4 0 -2 2 -5C4 -8 7 -4 9 -6" fill="none" stroke="none"/>
+<circle cx="-4.5" cy="-2.2" r="1.9" fill="#3FC79A" stroke="#0E6A50" stroke-width=".8"/>
+<circle cx="2" cy="-5" r="1.9" fill="#3FC79A" stroke="#0E6A50" stroke-width=".8"/>
+</g>
+</g>
+<path d="M34.29 39.02A10.9 10.9 0 0 1 21.61 48.23" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".38"/>
+<circle cx="23.5" cy="37.5" r="12.5" fill="none" stroke="#2A1008" stroke-width="2.3"/>
+<ellipse cx="18.5" cy="32" rx="3.75" ry="2.12" transform="rotate(-38 18.5 32)" fill="#FFFFFF" opacity=".88"/>
+<g transform="translate(33 15)"><circle r="5.5" fill="#3FC79A" opacity=".35"/><path d="M0 -4.5V4.5M-4.5 0H4.5" fill="none" stroke="#2A1008" stroke-width="3.6" stroke-linecap="round"/><path d="M0 -4.5V4.5M-4.5 0H4.5" fill="none" stroke="#3FC79A" stroke-width="2"/><path d="M0 -4V-1M-4 0H-1" fill="none" stroke="#C8FFE6" stroke-width=".9" stroke-linecap="round"/></g>
+</svg>

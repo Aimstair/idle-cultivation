@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="st_freeze-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8A5C"/>
+      <stop offset=".45" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </linearGradient>
+    <linearGradient id="st_freeze-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A1A12"/>
+      <stop offset="1" stop-color="#1C0806"/>
+    </linearGradient>
+    <radialGradient id="st_freeze-sheen" cx="0.3" cy="0.22" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- chip: coloured rim + dark face -->
+  <rect x="1.3" y="1.3" width="29.4" height="29.4" rx="7.6" fill="url(#st_freeze-rim)" stroke="#2A1008" stroke-width="1.3"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_freeze-face)" stroke="#2A1008" stroke-width=".8"/>
+  <rect x="4.2" y="4.2" width="23.6" height="23.6" rx="5" fill="url(#st_freeze-sheen)"/>
+  
+  <path d="M8 2.6 H24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+  <path d="M2.6 8 V24" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".35"/>
+
+  <!-- pictogram -->
+  <g transform="translate(16 16)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#2A1008" stroke-width="3.4"><g transform="rotate(0)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g><g transform="rotate(60)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g><g transform="rotate(120)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g></g>
+    <g stroke="#3B7FE0" stroke-width="2.3"><g transform="rotate(0)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g><g transform="rotate(60)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g><g transform="rotate(120)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g></g>
+    <g stroke="#DAF3FF" stroke-width="1.1"><g transform="rotate(0)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g><g transform="rotate(60)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g><g transform="rotate(120)"><path d="M0-9.4V9.4M0-5.4L-2.4-7.6M0-5.4L2.4-7.6M0 5.4L-2.4 7.6M0 5.4L2.4 7.6"/></g></g>
+    <circle r="2.4" fill="#FFFFFF" stroke="#3B7FE0" stroke-width=".9"/>
+  </g>
+</svg>

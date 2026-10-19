@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="boots_t4-sand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8DC"/>
+      <stop offset=".45" stop-color="#E0B058"/>
+      <stop offset="1" stop-color="#8C6622"/>
+    </linearGradient>
+    <linearGradient id="boots_t4-bone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF0"/>
+      <stop offset=".5" stop-color="#EDE2C4"/>
+      <stop offset="1" stop-color="#A89870"/>
+    </linearGradient>
+    <linearGradient id="boots_t4-sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF0"/>
+      <stop offset="1" stop-color="#C8B890"/>
+    </linearGradient>
+    <radialGradient id="boots_t4-spirit" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#8FF0F0"/>
+      <stop offset="1" stop-color="#2A98B0"/>
+    </radialGradient>
+    <filter id="boots_t4-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <!-- one boot, toe to the right -->
+    <g id="boots_t4-boot">
+      <!-- ghost-mist wing at the heel -->
+      <g transform="translate(11 43.5) rotate(-30) scale(.85)">
+        <path d="M-4.5 1.5C-7 1.5-7-2.5-4-2.2C-3.8-5.2 .8-5.6 1.5-2.8C4.2-4.2 7.2-.4 5 1.5Z" fill="#8FF0F0" opacity=".8" filter="url(#boots_t4-glow)"/>
+        <path d="M-4.5 1.5C-7 1.5-7-2.5-4-2.2C-3.8-5.2 .8-5.6 1.5-2.8C4.2-4.2 7.2-.4 5 1.5Z" fill="#E8FFFF" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M-3.2-1.6Q-1.4-3.4 .6-3" fill="none" stroke="#8FF0F0" stroke-width="1.4" stroke-linecap="round"/>
+      </g>
+      <path d="M12 13H28V33Q28 39.5 34 41L44 42.5Q51 43.5 50.5 49.5L50.3 53H12Z" fill="url(#boots_t4-sand)" stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round"/>
+      <!-- wyrm scale plates on the shaft (lower first) -->
+      <g fill="url(#boots_t4-bone)" stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round">
+        <path d="M13.5 26H26.5V28A6.5 5 0 0 1 13.5 28Z"/>
+        <path d="M13 19.5H27V21.5A7 5.4 0 0 1 13 21.5Z"/>
+      </g>
+      <path d="M14.8 20.8H19.5M15.3 27.3H19.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".9"/>
+      <!-- bone toe cap -->
+      <path d="M41 42L44 42.5Q51 43.5 50.5 49.5L50.3 53H41Z" fill="url(#boots_t4-bone)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M12 53H50.3Q52.3 53 52.3 55Q52.3 57 50.3 57H12Z" fill="url(#boots_t4-sole)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+      <!-- bone top band with spirit gem -->
+      <path d="M12 13H28V18H12Z" fill="url(#boots_t4-bone)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M13.5 14.5H19" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+      <circle cx="24" cy="15.5" r="2.6" fill="#8FF0F0" opacity=".8" filter="url(#boots_t4-glow)"/>
+      <circle cx="24" cy="15.5" r="1.8" fill="url(#boots_t4-spirit)" stroke="#2A1008" stroke-width=".9"/>
+      <path d="M14.3 34V38" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+      <path d="M14 54.4H47" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".9"/>
+    </g>
+    <path id="boots_t4-spark" d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z"/>
+  </defs>
+
+  <ellipse cx="33" cy="57.6" rx="21" ry="1.4" fill="#2A1008" opacity=".25"/>
+  <!-- back boot -->
+  <g transform="translate(6 -6)">
+    <use href="#boots_t4-boot"/>
+    <path d="M12 13H28V33Q28 39.5 34 41L44 42.5Q51 43.5 50.5 49.5L50.3 53Q52.3 53 52.3 55Q52.3 57 50.3 57H12Z" fill="#5A3410" opacity=".22"/>
+  </g>
+  <!-- front boot -->
+  <use href="#boots_t4-boot"/>
+  <!-- drifting mist -->
+  <ellipse cx="30" cy="56" rx="14" ry="1.8" fill="#C8FFFF" opacity=".5" filter="url(#boots_t4-glow)"/>
+  <g fill="#E8FFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5">
+    <use href="#boots_t4-spark" transform="translate(40 14) scale(1.8)"/>
+    <use href="#boots_t4-spark" transform="translate(56 42) scale(1.3)"/>
+    <use href="#boots_t4-spark" transform="translate(8 30) scale(1.2)"/>
+  </g>
+</svg>

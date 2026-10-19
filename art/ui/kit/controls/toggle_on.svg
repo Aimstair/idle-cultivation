@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="64" viewBox="0 0 64 32">
+  <defs>
+    <linearGradient id="toggle_on-track" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E8A68"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#2AA07C"/>
+    </linearGradient>
+    <linearGradient id="toggle_on-inShadow" gradientUnits="userSpaceOnUse" x1="0" y1="6" x2="0" y2="13">
+      <stop offset="0" stop-color="#042218" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#042218" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="toggle_on-knob" cx=".36" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </radialGradient>
+    <filter id="toggle_on-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+    <clipPath id="toggle_on-trackClip"><rect x="2" y="6" width="60" height="20" rx="10"/></clipPath>
+  </defs>
+
+  <!-- jade track (inset) -->
+  <rect x="2" y="6" width="60" height="20" rx="10" fill="url(#toggle_on-track)" stroke="#2A1008" stroke-width="2.2"/>
+  <g clip-path="url(#toggle_on-trackClip)">
+    <rect x="2" y="6" width="60" height="7" fill="url(#toggle_on-inShadow)"/>
+  </g>
+  <rect x="3.6" y="7.6" width="56.8" height="16.8" rx="8.4" fill="none" stroke="#E8B657" stroke-width="1.1" opacity=".9"/>
+  <path d="M14 23.6 H44" fill="none" stroke="#C8FFE6" stroke-width=".9" stroke-linecap="round" opacity=".5"/>
+
+  <!-- gold knob on the right -->
+  <circle cx="48" cy="17.6" r="12" fill="#2A1008" opacity=".45" filter="url(#toggle_on-blur)"/>
+  <circle cx="48" cy="16" r="12" fill="url(#toggle_on-knob)" stroke="#2A1008" stroke-width="2.2"/>
+  <circle cx="48" cy="16" r="9.8" fill="none" stroke="#FFE7A0" stroke-width=".9" opacity=".8"/>
+  <ellipse cx="44.2" cy="11.6" rx="3" ry="2" fill="#FFFFFF" opacity=".85"/>
+  <!-- sun glint -->
+  <path d="M53 7.2 L53.9 9.8 L56.5 10.7 L53.9 11.6 L53 14.2 L52.1 11.6 L49.5 10.7 L52.1 9.8 Z" fill="#FFFFFF" opacity=".95"/>
+</svg>

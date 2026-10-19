@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="ranks-disc" gradientUnits="userSpaceOnUse" cx="24" cy="25" r="31">
+      <stop offset="0" stop-color="#F0C060"/>
+      <stop offset=".45" stop-color="#C98A1E"/>
+      <stop offset="1" stop-color="#7A4E0A"/>
+    </radialGradient>
+    <radialGradient id="ranks-dischi" gradientUnits="userSpaceOnUse" cx="22" cy="21" r="17">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ranks-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".65" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="ranks-goldh" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="48" y2="0">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="ranks-shade" gradientUnits="userSpaceOnUse" x1="0" y1="18" x2="0" y2="38">
+      <stop offset="0" stop-color="#5A2608" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5A2608" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="ranks-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset=".55" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="ranks-mouth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A1608"/>
+      <stop offset="1" stop-color="#7A4210"/>
+    </linearGradient>
+    <radialGradient id="ranks-star" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".7" stop-color="#F4F0FF"/>
+      <stop offset="1" stop-color="#CFD6E4"/>
+    </radialGradient>
+    <clipPath id="ranks-cupclip">
+      <path d="M16.5 14.5C16.5 29 23 38 32 38C41 38 47.5 29 47.5 14.5Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- backing disc -->
+  <circle cx="32" cy="33" r="22" fill="url(#ranks-disc)" stroke="#2A1008" stroke-width="2.5"/>
+  <circle cx="32" cy="33" r="22" fill="url(#ranks-dischi)"/>
+  <circle cx="32" cy="33" r="19.8" fill="none" stroke="#FFE7A0" stroke-opacity=".8" stroke-width="1.2"/>
+
+  <!-- wooden base -->
+  <ellipse cx="32" cy="57" rx="17" ry="2.2" fill="#2A1008" opacity=".3"/>
+  <rect x="17.5" y="49.5" width="29" height="7" rx="2.2" fill="url(#ranks-wood)" stroke="#2A1008" stroke-width="2.4"/>
+  <path d="M20 51.3H30" fill="none" stroke="#C07A3E" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+  <rect x="27" y="51.6" width="10" height="3.2" rx=".8" fill="url(#ranks-gold)" stroke="#2A1008" stroke-width="1.1"/>
+
+  <!-- foot and stem -->
+  <path d="M22.5 49.5L25 45H39L41.5 49.5Z" fill="url(#ranks-gold)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M29.6 45L30.6 38H33.4L34.4 45Z" fill="url(#ranks-gold)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M31.2 39.5L30.8 44" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".6"/>
+  <path d="M25.6 46.4H32" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+
+  <!-- handles -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M17 18C7.5 17.5 5.5 31 17.5 31.5M47 18C56.5 17.5 58.5 31 46.5 31.5" stroke="#2A1008" stroke-width="6.4"/>
+    <path d="M17 18C7.5 17.5 5.5 31 17.5 31.5M47 18C56.5 17.5 58.5 31 46.5 31.5" stroke="url(#ranks-gold)" stroke-width="3.8"/>
+    <path d="M14 19.4C10 20.4 9.5 26 11.8 28.4" stroke="#FFF6C8" stroke-width="1.1" opacity=".75"/>
+    <path d="M51 20C54 22 54.4 26.6 52.4 29" stroke="#9A5E14" stroke-width="1" opacity=".6"/>
+  </g>
+
+  <!-- cup -->
+  <path d="M16.5 14.5C16.5 29 23 38 32 38C41 38 47.5 29 47.5 14.5Z" fill="url(#ranks-goldh)"/>
+  <g clip-path="url(#ranks-cupclip)">
+    <rect x="0" y="0" width="64" height="64" fill="url(#ranks-shade)"/>
+    <path d="M16 32.5H48" stroke="#9A5E14" stroke-width="1.2" opacity=".45"/>
+    <path d="M16 31.2H48" stroke="#FFE7A0" stroke-width=".8" opacity=".55"/>
+  </g>
+  <path d="M16.5 14.5C16.5 29 23 38 32 38C41 38 47.5 29 47.5 14.5Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M19.4 19C19.6 25.5 21.8 30.5 25 33.8" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity=".75"/>
+
+  <!-- mouth -->
+  <ellipse cx="32" cy="14.5" rx="15.5" ry="2.4" fill="url(#ranks-mouth)" stroke="#2A1008" stroke-width="2"/>
+  <ellipse cx="32" cy="14.5" rx="15.5" ry="2.4" fill="none" stroke="#FFD45A" stroke-width=".9" opacity=".6"/>
+  <path d="M19 13.6C22 12.6 27 12.2 32 12.2" fill="none" stroke="#FFF6C8" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+
+  <!-- star -->
+  <path d="M32 17.5L33.65 21.73L38.18 21.99L34.66 24.87L35.82 29.26L32 26.8L28.18 29.26L29.34 24.87L25.82 21.99L30.35 21.73Z" fill="url(#ranks-star)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M30.4 21.9L31.5 19.4" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5" stroke-linejoin="round">
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(9 9.5) scale(2.7)"/>
+    <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(57.5 40) scale(1.6)"/>
+  </g>
+</svg>

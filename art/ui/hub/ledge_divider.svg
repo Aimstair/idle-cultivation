@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="32" viewBox="0 0 390 16">
+  <defs>
+    <linearGradient id="ledge_divider-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="ledge_divider-line" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A0"/>
+      <stop offset=".5" stop-color="#E8B657"/>
+      <stop offset="1" stop-color="#B8812A"/>
+    </linearGradient>
+    <!-- left half: tapered line, end bead, cloud swirl (mirrored for the right) -->
+    <g id="ledge_divider-half">
+      <path d="M10 8 Q85 4.8 160 8 Q85 11.2 10 8 Z" fill="url(#ledge_divider-line)" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M14 7.4 H120" fill="none" stroke="#FFF6C8" stroke-width=".7" stroke-linecap="round" opacity=".7"/>
+      <circle cx="10" cy="8" r="2.4" fill="url(#ledge_divider-gold)" stroke="#2A1008" stroke-width="1.4"/>
+      <path d="M162 8 C162 3 170 2 174 5 C177 7.5 175 11 171.5 10 C169 9.3 169.5 6.8 171.5 7.2 M174 8 C178 8 178 13 183 13 C187 13 188 8 186 8"
+        fill="none" stroke="#2A1008" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M162 8 C162 3 170 2 174 5 C177 7.5 175 11 171.5 10 C169 9.3 169.5 6.8 171.5 7.2 M174 8 C178 8 178 13 183 13 C187 13 188 8 186 8"
+        fill="none" stroke="url(#ledge_divider-line)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <use href="#ledge_divider-half"/>
+  <use href="#ledge_divider-half" transform="matrix(-1 0 0 1 390 0)"/>
+
+  <!-- central gold diamond -->
+  <path d="M195 1.6 L203 8 L195 14.4 L187 8 Z" fill="url(#ledge_divider-gold)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M195 3.6 L190 8 L195 8 Z" fill="#FFFFFF" opacity=".5"/>
+</svg>

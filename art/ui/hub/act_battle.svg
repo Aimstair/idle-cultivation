@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="320" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="battle-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#CFD6E4"/>
+      <stop offset=".55" stop-color="#AEB6C8"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+    <linearGradient id="battle-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".72" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="battle-goldRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="battle-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4668B8"/>
+      <stop offset=".5" stop-color="#22336E"/>
+      <stop offset="1" stop-color="#141E4A"/>
+    </linearGradient>
+    <radialGradient id="battle-crest" cx=".34" cy=".28" r=".8">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="battle-tassel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".6" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#7A1008"/>
+    </linearGradient>
+    <linearGradient id="battle-flameO" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFA020"/>
+      <stop offset=".55" stop-color="#F0501C"/>
+      <stop offset="1" stop-color="#E8301A"/>
+    </linearGradient>
+    <linearGradient id="battle-flameI" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFF2A0"/>
+      <stop offset="1" stop-color="#FFA020"/>
+    </linearGradient>
+
+    <!-- one jian, drawn point-up with its origin at the crest centre -->
+    <g id="battle-sword" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+      <!-- blade -->
+      <path d="M0 -46L3 -38L2.6 21.5H-2.6L-3 -38Z" fill="url(#battle-blade)" stroke-width="2.6"/>
+      <path d="M0 -40V20" fill="none" stroke="#8E98AE" stroke-width="1.1"/>
+      <path d="M-1.6 -35V16" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/>
+      <!-- guard -->
+      <path d="M-7.6 21Q-3.8 23.8 0 23.2Q3.8 23.8 7.6 21L7.6 26Q0 28.2 -7.6 26Z" fill="url(#battle-gold)" stroke-width="2.2"/>
+      <path d="M-5.6 23.2L-2.6 22.8" fill="none" stroke="#FFF6C8" stroke-width="1" opacity=".8"/>
+      <!-- grip -->
+      <rect x="-2.3" y="26.5" width="4.6" height="9" rx="1.1" fill="url(#battle-grip)" stroke-width="2.2"/>
+      <path d="M-1.8 29L1.8 30.4M-1.8 32L1.8 33.4" fill="none" stroke="#7A98E6" stroke-width="1" opacity=".7"/>
+      <!-- pommel -->
+      <circle cx="0" cy="37.4" r="3.1" fill="url(#battle-gold)" stroke-width="2.1"/>
+      <circle cx="-1" cy="36.4" r=".8" fill="#FFF6C8" stroke="none"/>
+    </g>
+
+    <!-- hanging red tassel -->
+    <g id="battle-tassel-g" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M0 0V2.2" fill="none" stroke-width="2.4"/>
+      <path d="M0 0V2.2" fill="none" stroke="#FFD45A" stroke-width="1"/>
+      <path d="M0 2.2C-2.8 4.2 -3.6 6.8 -2.6 8.6C-1.4 9.5 1.4 9.5 2.6 8.6C3.6 6.8 2.8 4.2 0 2.2Z" fill="url(#battle-tassel)" stroke-width="1.8"/>
+      <path d="M-.9 4.6L-1.4 7.6M.9 4.6L1.4 7.6" fill="none" stroke="#5A0A04" stroke-width="1" stroke-opacity=".8"/>
+    </g>
+  </defs>
+
+  <!-- crossed swords, behind the crest -->
+  <use href="#battle-sword" xlink:href="#battle-sword" transform="translate(40 40) rotate(-45)"/>
+  <use href="#battle-sword" xlink:href="#battle-sword" transform="translate(40 40) rotate(45)"/>
+  <use href="#battle-tassel-g" xlink:href="#battle-tassel-g" transform="translate(66.4 69.4)"/>
+  <use href="#battle-tassel-g" xlink:href="#battle-tassel-g" transform="translate(13.6 69.4)"/>
+
+  <!-- red lacquer crest -->
+  <circle cx="40" cy="40" r="20" fill="url(#battle-crest)" stroke="#2A1008" stroke-width="3.1"/>
+  <!-- gold inner ring -->
+  <circle cx="40" cy="40" r="15.4" fill="none" stroke="#2A1008" stroke-width="3.6" opacity=".9"/>
+  <circle cx="40" cy="40" r="15.4" fill="none" stroke="url(#battle-goldRing)" stroke-width="2.1"/>
+  <path d="M29.6 33.4A12.4 12.4 0 0 1 34.8 28.8" fill="none" stroke="#FFF6C8" stroke-width="1" stroke-linecap="round" opacity=".85"/>
+
+  <!-- flame -->
+  <g transform="translate(0 1.6)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M40 50.5C34 50.5 30.5 46.5 31 42C31.4 38.6 34 36.5 34.6 33C36 36 37.4 36.6 38 34C38.4 31.3 38.6 29.2 40 26.5C41.4 29.2 43.2 31.6 43 34.5C43.4 36.6 44.8 36 45.6 33C47 36.5 49 39 49 42.5C49.4 46.8 46 50.5 40 50.5Z" fill="url(#battle-flameO)" stroke-width="1.7"/>
+    <path d="M40 50.5C36.4 50.5 34.6 47.6 35 44.8C35.4 42 37.6 40 40 37C42.4 40 44.6 42.2 45 44.8C45.4 47.6 43.6 50.5 40 50.5Z" fill="url(#battle-flameI)" stroke="none"/>
+    <path d="M40 50.5C38 50.5 37.2 49 37.4 47.6C37.6 46 39 45 40 43.5C41 45 42.4 46 42.6 47.6C42.8 49 42 50.5 40 50.5Z" fill="#FFFBE0" stroke="none"/>
+  </g>
+
+  <!-- lacquer gloss -->
+  <path d="M25.2 33.6Q27.4 26.4 34 23.4" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+  <circle cx="24.6" cy="37.2" r="1" fill="#FFFFFF" opacity=".6"/>
+</svg>

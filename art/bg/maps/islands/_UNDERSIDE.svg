@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="360" viewBox="0 0 200 180">
+<!--
+SHARED FLOATING-ISLAND UNDERSIDE (reference; this file is rendered with the Earth tint).
+Reuse the <defs> gradients and the <g id="*-under"> group EXACTLY (same geometry) in every island file,
+renaming the id prefix "_UNDERSIDE-" to the island file's base name (e.g. "island_dun01-"), and
+substituting the tint tokens below. Every colour in the defs and in the group is one of these tokens;
+in this file they appear as the Earth hex values (all unique), so swap each Earth hex for the same token
+of your element (simple find/replace of the 11 hex codes).
+
+Canvas: viewBox 0 0 200 180, width 400 height 360, transparent.
+Draw order: <defs> ... </defs>, then this under group, then the island TOP:
+  the top must start with a ground cap that covers the underside's top edge:
+  ground cap ellipse = cx 100, cy 74, rx 86, ry 22 (y 52..96, x 14..186). The soil lip below the
+  cap (y 74..108) and everything under it belong to the underside. Top props may hang over the lip
+  (grass tufts, icicles, water spill) but keep the rock body visible.
+
+Tint tokens per element (lit, mid, dark, deep = rock facets light->shadow; line = strata/cracks;
+lipT/lipB = soil lip top/bottom; moss/mossHi = moss drips; root = dangling roots; glow = drop glow):
+  Wood  lit=#B3BE93 mid=#7D8B66 dark=#4B5844 deep=#2D3729 line=#2A3326 lipT=#6A5A3A lipB=#463A26 moss=#6F9B4C mossHi=#A2C86E root=#4E3B26 glow=#E4F6D2
+  Fire  lit=#E0A47C mid=#AE5E3E dark=#743528 deep=#44201A line=#3C1C16 lipT=#7A3E28 lipB=#4E2618 moss=#C88A4C mossHi=#F0B868 root=#4A2818 glow=#FFE0C0
+  Water lit=#C2D0DC mid=#8398AC dark=#506378 deep=#2E3A4C line=#2A3444 lipT=#5E5A52 lipB=#3C3A36 moss=#6EA49A mossHi=#A0D2C6 root=#3E3630 glow=#DCEEFF
+  Metal lit=#D4D8E0 mid=#979DAB dark=#5C6272 deep=#353947 line=#2F323E lipT=#6A6054 lipB=#443E38 moss=#8EA088 mossHi=#BCCAB0 root=#463A30 glow=#EEF1F8
+  Earth lit=#E0BC86 mid=#AD8050 dark=#72502F deep=#44301E line=#3C2A1A lipT=#7A5634 lipB=#4E3620 moss=#8E9C52 mossHi=#BAC66E root=#4C3420 glow=#FFF0D2
+
+Token template of the defs (substitute {token}):
+<radialGradient id="_UNDERSIDE-uGlow" cx="100" cy="128" r="96" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 128) scale(1 .5) translate(-100 -128)"><stop offset="0" stop-color="{glow}" stop-opacity=".85"/><stop offset=".5" stop-color="{glow}" stop-opacity=".35"/><stop offset="1" stop-color="{glow}" stop-opacity="0"/></radialGradient>
+<linearGradient id="_UNDERSIDE-uBody" x1="14" y1="80" x2="186" y2="140" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="{lit}"/><stop offset=".38" stop-color="{mid}"/><stop offset=".72" stop-color="{dark}"/><stop offset="1" stop-color="{deep}"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uShade" x1="0" y1="92" x2="0" y2="176" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="{deep}" stop-opacity=".05"/><stop offset=".25" stop-color="{deep}" stop-opacity="0"/><stop offset="1" stop-color="{deep}" stop-opacity=".6"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uFacet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{lit}"/><stop offset="1" stop-color="{mid}"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uLip" x1="0" y1="80" x2="0" y2="104" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="{lipT}"/><stop offset="1" stop-color="{lipB}"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uMoss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{mossHi}"/><stop offset="1" stop-color="{moss}"/></linearGradient>
+-->
+<defs>
+<radialGradient id="_UNDERSIDE-uGlow" cx="100" cy="128" r="96" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 128) scale(1 .5) translate(-100 -128)"><stop offset="0" stop-color="#FFF0D2" stop-opacity=".85"/><stop offset=".5" stop-color="#FFF0D2" stop-opacity=".35"/><stop offset="1" stop-color="#FFF0D2" stop-opacity="0"/></radialGradient>
+<linearGradient id="_UNDERSIDE-uBody" x1="14" y1="80" x2="186" y2="140" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E0BC86"/><stop offset=".38" stop-color="#AD8050"/><stop offset=".72" stop-color="#72502F"/><stop offset="1" stop-color="#44301E"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uShade" x1="0" y1="92" x2="0" y2="176" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#44301E" stop-opacity=".05"/><stop offset=".25" stop-color="#44301E" stop-opacity="0"/><stop offset="1" stop-color="#44301E" stop-opacity=".6"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uFacet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E0BC86"/><stop offset="1" stop-color="#AD8050"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uLip" x1="0" y1="80" x2="0" y2="104" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7A5634"/><stop offset="1" stop-color="#4E3620"/></linearGradient>
+<linearGradient id="_UNDERSIDE-uMoss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BAC66E"/><stop offset="1" stop-color="#8E9C52"/></linearGradient>
+</defs>
+<g id="_UNDERSIDE-under">
+<ellipse cx="100" cy="128" rx="100" ry="52" fill="url(#_UNDERSIDE-uGlow)"/>
+<!-- falling rock bits (behind) -->
+<path d="M57,150 l4,-2 3,3 -2,4 -4,0 z" fill="#72502F" opacity=".8"/>
+<path d="M146,146 l3,-1 2,3 -2,3 -3,-1 z" fill="#72502F" opacity=".75"/>
+<!-- hanging side lobes -->
+<path d="M30,98 L44,104 L52,118 L48,132 L44,146 L40,138 L36,124 L30,112 Z" fill="url(#_UNDERSIDE-uBody)"/>
+<path d="M36,110 L44,106 L49,118 L45,132 L43,142 L40,128 Z" fill="#44301E" opacity=".28"/>
+<path d="M150,102 L170,98 L166,112 L160,124 L156,134 L152,124 L148,112 Z" fill="url(#_UNDERSIDE-uBody)"/>
+<path d="M158,104 L168,100 L163,114 L156,132 L155,118 Z" fill="#44301E" opacity=".35"/>
+<!-- main body -->
+<path d="M14,74 C14,84 18,90 24,96 L30,104 L28,110 L38,116 L44,126 L52,130 L56,142 L66,146 L70,156 L80,159 L86,168 L95,170 L100,176 L106,169 L115,165 L120,156 L130,151 L135,140 L145,135 L150,124 L160,118 L166,107 L175,100 L181,91 C185,85 186,80 186,74 Z" fill="url(#_UNDERSIDE-uBody)"/>
+<!-- lit facets (left, light from top-left) -->
+<path d="M24,96 L46,102 L58,120 L52,130 L44,126 L38,116 L28,110 L30,104 Z" fill="url(#_UNDERSIDE-uFacet)" opacity=".85"/>
+<path d="M58,104 L82,110 L86,128 L74,136 L62,130 L58,120 Z" fill="url(#_UNDERSIDE-uFacet)" opacity=".6"/>
+<path d="M62,132 L74,136 L80,150 L70,156 L66,146 L56,142 Z" fill="url(#_UNDERSIDE-uFacet)" opacity=".45"/>
+<path d="M86,128 L100,134 L98,152 L88,156 L80,150 L74,136 Z" fill="#AD8050" opacity=".5"/>
+<!-- shadow facets (right) -->
+<path d="M118,108 L142,104 L150,124 L145,135 L132,128 Z" fill="#44301E" opacity=".22"/>
+<path d="M100,134 L118,126 L132,128 L130,151 L120,156 L110,150 Z" fill="#44301E" opacity=".3"/>
+<path d="M110,150 L120,156 L115,165 L106,169 L100,176 L98,152 Z" fill="#44301E" opacity=".38"/>
+<path d="M112,150 L124,148 L122,160 L117,170 L113,162 Z" fill="url(#_UNDERSIDE-uBody)"/>
+<path d="M117,149 L124,148 L122,160 L117,170 Z" fill="#44301E" opacity=".35"/>
+<g fill="none" stroke="#E0BC86" stroke-linecap="round" stroke-linejoin="round" opacity=".55" stroke-width=".9"><path d="M58,104 L82,110"/><path d="M62,132 L74,136 L86,128"/><path d="M86,128 L100,134"/></g>
+<!-- overall bottom darkening -->
+<path d="M14,74 C14,84 18,90 24,96 L30,104 L28,110 L38,116 L44,126 L52,130 L56,142 L66,146 L70,156 L80,159 L86,168 L95,170 L100,176 L106,169 L115,165 L120,156 L130,151 L135,140 L145,135 L150,124 L160,118 L166,107 L175,100 L181,91 C185,85 186,80 186,74 Z" fill="url(#_UNDERSIDE-uShade)"/>
+<!-- strata and cracks -->
+<g fill="none" stroke="#3C2A1A" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32,108 C50,113 66,112 84,118 S118,116 136,114 S160,110 170,104" stroke-width="1.2" opacity=".45"/>
+<path d="M46,126 C60,130 74,128 88,134 S114,132 128,130 S142,128 150,124" stroke-width="1.1" opacity=".42"/>
+<path d="M62,142 C74,146 86,144 96,150 S116,146 128,146" stroke-width="1" opacity=".4"/>
+<path d="M78,156 C88,160 98,158 112,160" stroke-width=".9" opacity=".38"/>
+<path d="M58,104 L62,116 L58,120" stroke-width="1" opacity=".5"/>
+<path d="M86,128 L88,140 L84,146" stroke-width="1" opacity=".45"/>
+<path d="M100,134 L102,146 L99,152 L101,162" stroke-width="1" opacity=".5"/>
+<path d="M132,128 L128,138 L131,146" stroke-width="1" opacity=".45"/>
+<path d="M118,108 L114,118" stroke-width=".9" opacity=".4"/>
+</g>
+<!-- rim highlights on lit edges -->
+<path d="M24,96 L30,104 L28,110 L38,116 L44,126" fill="none" stroke="#E0BC86" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+<path d="M56,142 L66,146 L70,156" fill="none" stroke="#E0BC86" stroke-width=".9" stroke-linecap="round" opacity=".5"/>
+<!-- soil lip under the cap -->
+<path d="M14,74 C16,88 52,98 100,98 C148,98 184,88 186,74 L186,82 C184,98 150,108 100,108 C50,108 16,98 14,82 Z" fill="url(#_UNDERSIDE-uLip)"/>
+<path d="M16,84 C30,96 60,104 100,104 C140,104 170,96 184,84" fill="none" stroke="#4E3620" stroke-width="1.2" opacity=".55"/>
+<path d="M15,78 C20,90 56,99.5 100,99.5 C144,99.5 180,90 185,78" fill="none" stroke="#7A5634" stroke-width="1.6" opacity=".9"/>
+<!-- pebbles in the lip -->
+<g fill="#AD8050" opacity=".9"><ellipse cx="44" cy="101" rx="3" ry="1.9"/><ellipse cx="88" cy="105" rx="2.4" ry="1.6"/><ellipse cx="136" cy="104" rx="3.2" ry="1.9"/><ellipse cx="166" cy="96" rx="2.2" ry="1.5"/><ellipse cx="112" cy="106" rx="1.6" ry="1.1"/></g>
+<!-- dangling roots -->
+<g fill="none" stroke="#4C3420" stroke-linecap="round" stroke-linejoin="round">
+<path d="M38,100 C36,110 40,116 36,126 C34,132 37,136 35,140" stroke-width="1.6"/>
+<path d="M36,126 C32,128 31,132 32,135" stroke-width=".9"/>
+<path d="M72,105 C74,114 70,120 73,130" stroke-width="1.4"/>
+<path d="M73,121 C77,124 77,128 79,130" stroke-width=".8"/>
+<path d="M124,105 C122,114 127,120 124,130 C122,136 125,140 124,146" stroke-width="1.5"/>
+<path d="M124,130 C120,133 120,136 118,138" stroke-width=".8"/>
+<path d="M160,98 C163,106 160,112 163,120" stroke-width="1.3"/>
+<path d="M104,106 C104,112 102,116 104,120" stroke-width="1"/>
+</g>
+<!-- moss cushions and drips along the lip -->
+<g fill="url(#_UNDERSIDE-uMoss)">
+<path d="M46,102 C48,99 60,100 64,104 C64,107 62,107 61,109 C61,114 60,118 58.5,118 C57,118 57,113 56.6,110 C55.8,112 55.6,121 53.8,121 C52,121 52.4,113 52,108 C50.6,108 50.8,112 49.4,112 C48,112 48.6,106 46,104 Z"/>
+<path d="M136,105 C139,102 150,101 154,103 C154,106 152,106 151.6,108 C151.4,112 150.6,115 149.4,115 C148.2,115 148.4,111 148,109 C147.4,111 147.4,117 145.8,117 C144.2,117 144.6,111 144,108 C142,108 141.6,110 140.4,110 C139.2,110 139.6,107 136,106.6 Z"/>
+<path d="M86,106 C89,104 96,104 99,106.4 C98,108 97.4,108.4 97,111 C96.6,114 95.4,114.6 94.8,112 C94.4,110 93.2,110 92.6,112.4 C92,114 90.6,113 90.6,110 C90,108.6 88,108 86,107.6 Z" opacity=".95"/>
+<path d="M168,96 C171,93 178,90 181,90 C180,93 178.6,94 178,97 C177.4,101 176,102 175.4,100 C175,98 174,99 173.6,101.6 C173,103 171.6,102 171.8,99 C170.6,98 169,98 168,97.4 Z" opacity=".95"/>
+<path d="M20,90 C24,93 30,97 34,99 C32,101 30.6,101 30,104 C29.4,106 28,106 27.8,103.4 C27,101 25,100 24,98 C22,96 20.4,94 20,90 Z" opacity=".95"/>
+</g>
+<!-- falling rock bits (below tip) -->
+<path d="M86,172 l3,-2 3,2 -1,3 -4,0 z" fill="#72502F" opacity=".85"/>
+<path d="M112,173 l2,-1.5 2.5,1.5 -1,2.5 -3,0 z" fill="#72502F" opacity=".7"/>
+<path d="M126,163 l2.2,-1 1.8,2 -1.4,2 -2.4,-.6 z" fill="#AD8050" opacity=".7"/>
+<path d="M74,165 l1.8,-1 1.6,1.6 -1.2,1.6 -2,-.4 z" fill="#AD8050" opacity=".6"/>
+<circle cx="100" cy="178.5" r="1.2" fill="#72502F" opacity=".5"/>
+</g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="node_stage_locked-stone" gradientUnits="userSpaceOnUse" cx="19" cy="18" r="22">
+      <stop offset="0" stop-color="#B9B3C6"/>
+      <stop offset=".5" stop-color="#857E96"/>
+      <stop offset="1" stop-color="#4E4860"/>
+    </radialGradient>
+    <radialGradient id="node_stage_locked-inset" gradientUnits="userSpaceOnUse" cx="26" cy="25" r="15">
+      <stop offset=".78" stop-color="#1A0F24" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1A0F24" stop-opacity=".45"/>
+    </radialGradient>
+    <linearGradient id="node_stage_locked-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9CFDB"/>
+      <stop offset=".35" stop-color="#9AA2B4"/>
+      <stop offset="1" stop-color="#4E5566"/>
+    </linearGradient>
+    <linearGradient id="node_stage_locked-rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A2A16"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+    <linearGradient id="node_stage_locked-silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#CFD6E4"/>
+      <stop offset="1" stop-color="#7E8698"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="24" cy="45" rx="15" ry="2.1" fill="#2A1008" opacity=".28"/>
+
+  <!-- dull stone rim -->
+  <circle cx="24" cy="23" r="18" fill="url(#node_stage_locked-rim)" stroke="#2A1008" stroke-width="1.9"/>
+  <path d="M8.6 30.2 A16.6 16.6 0 0 0 36 35.4" fill="none" stroke="#2A2630" stroke-width="1.1" stroke-linecap="round" opacity=".45"/>
+  <!-- grey stone centre (clear for the stage number) -->
+  <circle cx="24" cy="23" r="14.8" fill="url(#node_stage_locked-stone)" stroke="#2A1008" stroke-width="1.3"/>
+  <circle cx="24" cy="23" r="14.8" fill="url(#node_stage_locked-inset)"/>
+  <!-- cracks -->
+  <path d="M14.5 15.5 L17.8 19.4 L17 22.6" fill="none" stroke="#2A1008" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+  <path d="M31.5 11.6 L30.2 14.8" fill="none" stroke="#2A1008" stroke-width=".9" stroke-linecap="round" opacity=".4"/>
+  <!-- muted rim highlight -->
+  <path d="M9.4 16.2 A16.4 16.4 0 0 1 17.2 7.6" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".55"/>
+
+  <!-- padlock emblem on a rosewood disc -->
+  <circle cx="36" cy="35" r="6.2" fill="url(#node_stage_locked-rose)" stroke="#2A1008" stroke-width="1.5"/>
+  <circle cx="36" cy="35" r="4.7" fill="none" stroke="#9AA2B4" stroke-opacity=".5" stroke-width=".7"/>
+  <path d="M34 34.6 V33 A2 2 0 0 1 38 33 V34.6" fill="none" stroke="#2A1008" stroke-width="2.9" stroke-linecap="round"/>
+  <path d="M34 34.6 V33 A2 2 0 0 1 38 33 V34.6" fill="none" stroke="url(#node_stage_locked-silver)" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="32.6" y="34.4" width="6.8" height="4.8" rx="1.1" fill="url(#node_stage_locked-silver)" stroke="#2A1008" stroke-width="1.1"/>
+  <circle cx="36" cy="36.5" r=".8" fill="#2A1008"/>
+  <path d="M36 36.6 V38.1" stroke="#2A1008" stroke-width=".9" stroke-linecap="round"/>
+</svg>

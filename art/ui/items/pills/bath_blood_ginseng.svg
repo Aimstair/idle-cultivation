@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<radialGradient id="bath_blood_ginseng-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2A1008" stop-opacity=".42"/><stop offset="1" stop-color="#2A1008" stop-opacity="0"/></radialGradient>
+<linearGradient id="bath_blood_ginseng-wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5A2A16"/><stop offset="0.35" stop-color="#5A2A16"/><stop offset="1" stop-color="#1A0804"/></linearGradient>
+<linearGradient id="bath_blood_ginseng-hoop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFD9B0"/><stop offset="0.4" stop-color="#FFD9B0"/><stop offset="1" stop-color="#8A4218"/></linearGradient>
+<radialGradient id="bath_blood_ginseng-water" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#FF6A44"/><stop offset="0.5" stop-color="#C21E10"/><stop offset="1" stop-color="#5A0A04"/></radialGradient>
+<linearGradient id="bath_blood_ginseng-steam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFE8D8" stop-opacity=".9"/><stop offset="1" stop-color="#FFE8D8" stop-opacity=".25"/></linearGradient>
+<radialGradient id="bath_blood_ginseng-mist" gradientUnits="userSpaceOnUse" cx="32" cy="22" r="22"><stop offset="0" stop-color="#FF9A78" stop-opacity="0.3"/><stop offset=".55" stop-color="#FF9A78" stop-opacity="0.14"/><stop offset="1" stop-color="#FF9A78" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="32" cy="56.5" rx="24" ry="3" fill="url(#bath_blood_ginseng-shadow)"/>
+<path d="M8 27L11 51A21 6 0 0 0 53 51L56 27Z" fill="url(#bath_blood_ginseng-wood)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M17 34.5L18.88 55 M24.5 34.5L25.44 55 M32 34.5L32 55 M39.5 34.5L38.56 55 M47 34.5L45.12 55 " fill="none" stroke="#2A1008" stroke-width="1.1" opacity=".55"/>
+<path d="M10.5 30C11 40 12.5 46 13.5 50" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>
+<path d="M9.6 29.5C10.4 38 12 45 13.8 50.5" fill="none" stroke="#FF8A60" stroke-width="1.2" stroke-linecap="round" opacity=".35"/>
+<path d="M8.96 36A23.04 8.16 0 0 0 55.04 36" fill="none" stroke="#2A1008" stroke-width="4.4"/>
+<path d="M8.96 36A23.04 8.16 0 0 0 55.04 36" fill="none" stroke="url(#bath_blood_ginseng-hoop)" stroke-width="2.6"/>
+<path d="M11.96 38.2A21.04 7.16 0 0 0 28 42.96" fill="none" stroke="#FFF0DC" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+<path d="M10.4 46.5A21.6 7.65 0 0 0 53.6 46.5" fill="none" stroke="#2A1008" stroke-width="4.4"/>
+<path d="M10.4 46.5A21.6 7.65 0 0 0 53.6 46.5" fill="none" stroke="url(#bath_blood_ginseng-hoop)" stroke-width="2.6"/>
+<path d="M13.4 48.7A19.6 6.65 0 0 0 28 52.95" fill="none" stroke="#FFF0DC" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+<ellipse cx="32" cy="27" rx="24" ry="8.5" fill="url(#bath_blood_ginseng-wood)" stroke="#2A1008" stroke-width="2.4"/>
+<ellipse cx="32" cy="27" rx="20.8" ry="5.9" fill="url(#bath_blood_ginseng-water)" stroke="#2A1008" stroke-width="1.6"/>
+<ellipse cx="26" cy="25.5" rx="7" ry="1.6" fill="#FFFFFF" opacity=".55"/>
+<path d="M18 29.5Q28 32.5 40 29.8" fill="none" stroke="#FF9A78" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+<g transform="translate(38 26.5)"><ellipse cx="0" cy="2" rx="6.5" ry="1.8" fill="#3A0604" opacity=".45"/><path d="M-2.6 -3.2C-1 -4.6 1.6 -4.6 2.8 -3C4.4 -1 4 1.5 5.6 3.4M2.8 -3C3.4 -.6 1.4 1.2 1.8 3.6M-2.6 -3.2C-3.6 -1 -2.6 1 -4.8 3.2M-1 -1.2C-1.4 1 -.6 2.2 -1 3.8" fill="none" stroke="#2A1008" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M-2.6 -3.2C-1 -4.6 1.6 -4.6 2.8 -3C4.4 -1 4 1.5 5.6 3.4M2.8 -3C3.4 -.6 1.4 1.2 1.8 3.6M-2.6 -3.2C-3.6 -1 -2.6 1 -4.8 3.2M-1 -1.2C-1.4 1 -.6 2.2 -1 3.8" fill="none" stroke="#E8CFA0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M-1.6 -3.4C-.4 -4.2 1.2 -4 2 -3.2" fill="none" stroke="#FFF4DC" stroke-width=".8" stroke-linecap="round"/><path d="M0 -4.6V-7" fill="none" stroke="#0E6A50" stroke-width="1.4" stroke-linecap="round"/><circle cx="-1.4" cy="-7.2" r="1.1" fill="#E03E2C" stroke="#2A1008" stroke-width=".6"/><circle cx="1.4" cy="-7.4" r="1.1" fill="#E03E2C" stroke="#2A1008" stroke-width=".6"/><circle cx="0" cy="-8.8" r="1.1" fill="#FF6A44" stroke="#2A1008" stroke-width=".6"/></g>
+<circle cx="32" cy="20" r="22" fill="url(#bath_blood_ginseng-mist)"/>
+<path d="M22 20C19 16 24 13 21 8.5" fill="none" stroke="url(#bath_blood_ginseng-steam)" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M32 19C28.5 14.5 35 12 31.5 6.5" fill="none" stroke="url(#bath_blood_ginseng-steam)" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M42 20C39.5 16.5 44 14 41.5 9.5" fill="none" stroke="url(#bath_blood_ginseng-steam)" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

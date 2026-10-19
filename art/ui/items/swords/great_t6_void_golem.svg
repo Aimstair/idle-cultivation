@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="great_t6_void_golem-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E4DEEC"/>
+      <stop offset=".42" stop-color="#B0A6C4"/>
+      <stop offset=".58" stop-color="#7E7494"/>
+      <stop offset="1" stop-color="#46405A"/>
+    </linearGradient>
+    <linearGradient id="great_t6_void_golem-stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D8D0E4"/>
+      <stop offset=".5" stop-color="#8A8098"/>
+      <stop offset="1" stop-color="#4A4458"/>
+    </linearGradient>
+    <radialGradient id="great_t6_void_golem-core" cx=".4" cy=".35" r=".75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".4" stop-color="#C8A4FF"/>
+      <stop offset="1" stop-color="#5A2EB0"/>
+    </radialGradient>
+    <linearGradient id="great_t6_void_golem-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A4AB8"/>
+      <stop offset=".5" stop-color="#30186A"/>
+      <stop offset="1" stop-color="#120A30"/>
+    </linearGradient>
+    <radialGradient id="great_t6_void_golem-aura" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C8A4FF" stop-opacity=".45"/>
+      <stop offset=".55" stop-color="#9A6AE8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#9A6AE8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="great_t6_void_golem-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="28" ry="11" fill="url(#great_t6_void_golem-aura)" transform="translate(33 32) rotate(-45)"/>
+
+  <ellipse cx="0" cy="0" rx="27" ry="5" fill="url(#great_t6_void_golem-shadow)" transform="translate(34 35) rotate(-45)"/>
+
+  <!-- greatsword: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal -->
+  <g transform="translate(32 32) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 -31L6.8 -21L6.2 7.5H-6.2L-6.8 -21Z" fill="none" stroke="#9A6AE8" stroke-width="5.2" opacity=".36"/>
+    <!-- broad heavy blade -->
+    <path d="M0 -31L6.8 -21L6.2 7.5H-6.2L-6.8 -21Z" fill="url(#great_t6_void_golem-blade)" stroke-width="2.4"/>
+    <path d="M-1.5 -19V6H1.5V-19Z" fill="#6E6684" opacity=".5" stroke="none"/>
+    <path d="M-4.4 -19V5" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".85"/>
+    <!-- chiselled slab facets -->
+    <path d="M4.2 -18V4" fill="none" stroke="#46405A" stroke-width="1" opacity=".7"/>
+    <!-- glowing core rune (abstract) with cracks of void light -->
+    <path d="M0 -3L.8 1L-.6 5M0 -17L-.8 -21" fill="none" stroke="#9A6AE8" stroke-width="2.4" opacity=".55"/>
+    <path d="M0 -3L.8 1L-.6 5M0 -17L-.8 -21" fill="none" stroke="#E6D6FF" stroke-width="1"/>
+    <circle cx="0" cy="-10" r="4.6" fill="#9A6AE8" opacity=".4" stroke="none"/>
+    <path d="M0 -15L3.4 -10L0 -5L-3.4 -10Z" fill="url(#great_t6_void_golem-core)" stroke-width="1.6"/>
+    <path d="M0 -13L1.8 -10L0 -7L-1.8 -10Z" fill="none" stroke="#FFFFFF" stroke-width=".8" opacity=".9"/>
+    <!-- carved stone guard -->
+    <path d="M-13.5 7.6H13.5Q15.2 10.2 13.5 12.8H-13.5Q-15.2 10.2 -13.5 7.6Z" fill="url(#great_t6_void_golem-stone)" stroke-width="2.3"/>
+    <path d="M-12 9.2H-8" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".8"/>
+    <path d="M-8.6 8.4V11.8M8.6 8.4V11.8M-4 8.4V11.8M4 8.4V11.8" fill="none" stroke="#46405A" stroke-width="1" opacity=".8"/>
+    <!-- long two-handed grip -->
+    <rect x="-2.6" y="13.3" width="5.2" height="13.6" rx="1.2" fill="url(#great_t6_void_golem-grip)" stroke-width="2.1"/>
+    <path d="M-2 15.6L2 17.2M-2 18.6L2 20.2M-2 21.6L2 23.2M-2 24.6L2 26.2" fill="none" stroke="#120A30" stroke-width="1"/>
+    <rect x="-3.2" y="19.6" width="6.4" height="1.9" fill="url(#great_t6_void_golem-stone)" stroke-width="1.4"/>
+    <!-- heavy pommel -->
+    <path d="M-3.5 27.2H3.5L4.1 30.2L0 33.4L-4.1 30.2Z" fill="url(#great_t6_void_golem-stone)" stroke-width="2.1"/>
+    <path d="M-2.2 28.6L-.6 28.2" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".85"/>
+  </g>
+</svg>

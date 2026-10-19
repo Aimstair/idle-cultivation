@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="48" viewBox="0 0 44 24">
+  <defs>
+    <radialGradient id="btn_go-red" gradientUnits="userSpaceOnUse" cx="22" cy="3" r="14"
+      gradientTransform="translate(22 3) scale(1.6 1) translate(-22 -3)">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".55" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="btn_go-sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".04"/>
+    </linearGradient>
+    <linearGradient id="btn_go-base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A190C"/>
+      <stop offset="1" stop-color="#1A0804"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark base (press depth) -->
+  <rect x="3" y="4.5" width="38" height="17.5" rx="6.5" fill="url(#btn_go-base)" stroke="#2A1008" stroke-width="1.6"/>
+  <!-- red lacquer cap with gold rim -->
+  <rect x="3" y="2" width="38" height="17.5" rx="6.5" fill="none" stroke="#2A1008" stroke-width="3.4"/>
+  <rect x="3" y="2" width="38" height="17.5" rx="6.5" fill="url(#btn_go-red)"/>
+  <rect x="6" y="3.6" width="32" height="6" rx="3" fill="url(#btn_go-sheen)"/>
+  <rect x="3" y="2" width="38" height="17.5" rx="6.5" fill="none" stroke="#FFE7A0" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="herb_fire_lotus-petal" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFF2A0"/>
+      <stop offset=".4" stop-color="#FFA020"/>
+      <stop offset="1" stop-color="#E8301A"/>
+    </linearGradient>
+    <linearGradient id="herb_fire_lotus-petalB" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFB040"/>
+      <stop offset=".5" stop-color="#E84A1A"/>
+      <stop offset="1" stop-color="#9A1408"/>
+    </linearGradient>
+    <linearGradient id="herb_fire_lotus-pad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </linearGradient>
+    <radialGradient id="herb_fire_lotus-core" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#FFF2A0"/>
+      <stop offset="1" stop-color="#FFB030"/>
+    </radialGradient>
+    <radialGradient id="herb_fire_lotus-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFA020" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FFA020" stop-opacity="0"/>
+    </radialGradient>
+    <!-- flame-tipped petal, base at origin -->
+    <path id="herb_fire_lotus-p" d="M0 0C-7 -4 -9.5 -13 -5.5 -20C-4 -22.5 -2.5 -23.5 -2 -25.5C-.5 -23.5 1 -25 2 -28C2.5 -24 4 -22 5.5 -19.5C9.5 -13 7 -4 0 0Z"/>
+  </defs>
+
+  <ellipse cx="32" cy="56.5" rx="16" ry="2.4" fill="#2A1008" opacity=".3"/>
+  <circle cx="32" cy="30" r="24" fill="url(#herb_fire_lotus-glow)"/>
+
+  <!-- lotus pad -->
+  <path d="M14 50C20 43 44 43 50 50C44 56 20 56 14 50Z" fill="url(#herb_fire_lotus-pad)" stroke="#2A1008" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M18 49.5C24 46.5 32 46 40 47" fill="none" stroke="#C8FFE6" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+
+  <!-- back petals -->
+  <g fill="url(#herb_fire_lotus-petalB)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round">
+    <use href="#herb_fire_lotus-p" transform="translate(32 46) rotate(-80) scale(.78)"/>
+    <use href="#herb_fire_lotus-p" transform="translate(32 46) rotate(80) scale(.78)"/>
+    <use href="#herb_fire_lotus-p" transform="translate(32 46) rotate(-40) scale(.92)"/>
+    <use href="#herb_fire_lotus-p" transform="translate(32 46) rotate(40) scale(.92)"/>
+    <use href="#herb_fire_lotus-p" transform="translate(32 46) scale(1)"/>
+  </g>
+  <!-- front petals -->
+  <g fill="url(#herb_fire_lotus-petal)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round">
+    <use href="#herb_fire_lotus-p" transform="translate(32 49) rotate(-38) scale(.64)"/>
+    <use href="#herb_fire_lotus-p" transform="translate(32 49) rotate(38) scale(.64)"/>
+    <use href="#herb_fire_lotus-p" transform="translate(32 49) scale(.68)"/>
+  </g>
+  <!-- highlights -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".85">
+    <path d="M29.5 44C28 39 28.5 34.5 30.5 30.5"/>
+    <path d="M20 39C17.5 35 17.5 31.5 19 28.5"/>
+  </g>
+
+  <!-- glowing core -->
+  <ellipse cx="32" cy="46" rx="6" ry="3.4" fill="url(#herb_fire_lotus-core)" stroke="#2A1008" stroke-width="1.6"/>
+  <g fill="#E8301A">
+    <circle cx="29.5" cy="45.5" r=".9"/>
+    <circle cx="32.5" cy="44.8" r=".9"/>
+    <circle cx="35" cy="46" r=".9"/>
+  </g>
+</svg>

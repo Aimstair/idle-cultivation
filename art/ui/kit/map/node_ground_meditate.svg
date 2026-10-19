@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 56 56">
+  <defs>
+    <radialGradient id="node_ground_meditate-glow" cx=".5" cy=".5" r=".5">
+      <stop offset=".66" stop-color="#8FF0C8" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#3FC79A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="node_ground_meditate-plaque" gradientUnits="userSpaceOnUse" cx="22" cy="21" r="27">
+      <stop offset="0" stop-color="#7FE3BC"/>
+      <stop offset=".5" stop-color="#2FA67E"/>
+      <stop offset="1" stop-color="#0A4F3C"/>
+    </radialGradient>
+    <linearGradient id="node_ground_meditate-petal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#C8FFE6"/>
+      <stop offset="1" stop-color="#3FC79A"/>
+    </linearGradient>
+    <linearGradient id="node_ground_meditate-petalOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6FFF4"/>
+      <stop offset=".5" stop-color="#8FE6C0"/>
+      <stop offset="1" stop-color="#1E8A68"/>
+    </linearGradient>
+    <linearGradient id="node_ground_meditate-leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E8A68"/>
+      <stop offset="1" stop-color="#06291F"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="28" cy="27" r="27" fill="url(#node_ground_meditate-glow)"/>
+  <!-- ground shadow -->
+  <ellipse cx="28" cy="49.4" rx="16" ry="2.2" fill="#2A1008" opacity=".32"/>
+
+  <!-- jade plaque -->
+  <circle cx="28" cy="27" r="19" fill="url(#node_ground_meditate-plaque)" stroke="#2A1008" stroke-width="2.2"/>
+  <circle cx="28" cy="27" r="16.8" fill="none" stroke="#FFE7A0" stroke-opacity=".8" stroke-width="1.1"/>
+  <path d="M12.6 20 A17.2 17.2 0 0 1 20.8 11.4" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".75"/>
+
+  <!-- lotus -->
+  <g stroke="#2A1008" stroke-width="1.3" stroke-linejoin="round">
+    <path d="M14 33.5 Q28 42 42 33.5 Q28 37 14 33.5 Z" fill="url(#node_ground_meditate-leaf)"/>
+    <path d="M28 33 C20.5 34 14.5 29.5 13.5 23.5 C19.5 23 26 27.5 28 33 Z" fill="url(#node_ground_meditate-petalOuter)"/>
+    <path d="M28 33 C35.5 34 41.5 29.5 42.5 23.5 C36.5 23 30 27.5 28 33 Z" fill="url(#node_ground_meditate-petalOuter)"/>
+    <path d="M28 33 C21.5 30.5 18.5 23.5 20.5 17 C25.5 19.5 28 26 28 33 Z" fill="url(#node_ground_meditate-petal)"/>
+    <path d="M28 33 C34.5 30.5 37.5 23.5 35.5 17 C30.5 19.5 28 26 28 33 Z" fill="url(#node_ground_meditate-petal)"/>
+    <path d="M28 13.5 C33 18 33.5 27 28 33 C22.5 27 23 18 28 13.5 Z" fill="url(#node_ground_meditate-petal)"/>
+  </g>
+  <!-- highlights -->
+  <path d="M26.3 17.5 C25.2 20 25 23.5 25.6 26.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".9"/>
+  <path d="M21.6 19.4 C21.4 22 22 24.6 23.4 27" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".75"/>
+  <path d="M15.6 24.6 C18.2 25 20.6 26 22.8 27.6" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+  <path d="M0-1Q.18-.18 1 0Q.18.18 0 1Q-.18.18-1 0Q-.18-.18 0-1Z" transform="translate(42 13) scale(2.2)" fill="#FFFFFF" stroke="#2A1008" stroke-width=".35" stroke-opacity=".5"/>
+</svg>

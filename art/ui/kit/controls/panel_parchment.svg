@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 160 160">
+<!-- 9slice: 28 -->
+  <defs>
+    <linearGradient id="panel_parchment-paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#E9CF98"/>
+    </linearGradient>
+    <linearGradient id="panel_parchment-inTop" gradientUnits="userSpaceOnUse" x1="0" y1="11" x2="0" y2="20">
+      <stop offset="0" stop-color="#5A2A16" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#5A2A16" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel_parchment-inLeft" gradientUnits="userSpaceOnUse" x1="11" y1="0" x2="19" y2="0">
+      <stop offset="0" stop-color="#5A2A16" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#5A2A16" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel_parchment-inBottom" gradientUnits="userSpaceOnUse" x1="0" y1="141" x2="0" y2="149">
+      <stop offset="0" stop-color="#5A2A16" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5A2A16" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="panel_parchment-goldSmall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".4" stop-color="#FFD45A"/>
+      <stop offset=".75" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <filter id="panel_parchment-blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <clipPath id="panel_parchment-paperClip"><rect x="11" y="11" width="138" height="138" rx="4.5"/></clipPath>
+    <!-- small gold corner cap (top-left; mirrored for the others), inside the 28-unit corner square -->
+    <g id="panel_parchment-cap">
+      <path d="M6.5 23 V10.5 Q6.5 6.5 10.5 6.5 H23 Q25.2 6.5 25.2 8.6 Q25.2 10.8 23 10.8 H13 Q10.8 10.8 10.8 13 V23 Q10.8 25.2 8.6 25.2 Q6.5 25.2 6.5 23 Z"
+        fill="url(#panel_parchment-goldSmall)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M8.6 21 V10.6 Q8.6 8.6 10.6 8.6 H21" fill="none" stroke="#FFF6C8" stroke-width=".9" stroke-linecap="round" opacity=".85"/>
+      <circle cx="23" cy="8.6" r=".9" fill="#8A4A1E"/>
+      <circle cx="8.6" cy="23" r=".9" fill="#8A4A1E"/>
+    </g>
+  </defs>
+
+  <!-- cast shadow -->
+  <rect x="4" y="6.5" width="152" height="152" rx="10" fill="#2A1008" opacity=".35" filter="url(#panel_parchment-blur)"/>
+
+  <!-- thin rosewood border -->
+  <rect x="4" y="4" width="152" height="152" rx="10" fill="#3A190C" stroke="#2A1008" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M6.2 136 V14 A7.8 7.8 0 0 1 14 6.2 H136" fill="none" stroke="#7A4020" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M153.8 24 V146 A7.8 7.8 0 0 1 146 153.8 H24" fill="none" stroke="#120402" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- gold line -->
+  <rect x="10" y="10" width="140" height="140" rx="5" fill="none" stroke="#E8B657" stroke-width="1.8"/>
+  <path d="M9.4 136 V14.6 A5.2 5.2 0 0 1 14.6 9.4 H136" fill="none" stroke="#FFF0B0" stroke-width=".8" stroke-linecap="round" opacity=".8"/>
+
+  <!-- parchment -->
+  <rect x="11" y="11" width="138" height="138" rx="4.5" fill="url(#panel_parchment-paper)"/>
+  <g clip-path="url(#panel_parchment-paperClip)">
+    <rect x="11" y="11" width="138" height="9" fill="url(#panel_parchment-inTop)"/>
+    <rect x="11" y="11" width="8" height="138" fill="url(#panel_parchment-inLeft)"/>
+    <rect x="11" y="141" width="138" height="8" fill="url(#panel_parchment-inBottom)"/>
+  </g>
+  <rect x="11" y="11" width="138" height="138" rx="4.5" fill="none" stroke="#8A5A2A" stroke-width=".8"/>
+
+  <!-- gold corner caps -->
+  <use href="#panel_parchment-cap"/>
+  <use href="#panel_parchment-cap" transform="matrix(-1 0 0 1 160 0)"/>
+  <use href="#panel_parchment-cap" transform="matrix(1 0 0 -1 0 160)"/>
+  <use href="#panel_parchment-cap" transform="matrix(-1 0 0 -1 160 160)"/>
+</svg>

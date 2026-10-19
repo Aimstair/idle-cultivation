@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="rod_starsilver-blank" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.35" stop-color="#EEF2F8"/><stop offset="0.75" stop-color="#B4C0D4"/><stop offset="1" stop-color="#5E6C86"/></linearGradient>
+<linearGradient id="rod_starsilver-grip" gradientUnits="userSpaceOnUse" x1="14" y1="46" x2="19" y2="51"><stop offset="0" stop-color="#5C7CC8"/><stop offset="0.5" stop-color="#2A3E8E"/><stop offset="1" stop-color="#121C4C"/></linearGradient>
+<linearGradient id="rod_starsilver-fit" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8E4FF"/><stop offset="0.5" stop-color="#3B7FE0"/><stop offset="1" stop-color="#1A2A6E"/></linearGradient>
+<radialGradient id="rod_starsilver-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#B8E4FF" stop-opacity="0.7"/><stop offset="0.5" stop-color="#B8E4FF" stop-opacity="0.25"/><stop offset="1" stop-color="#B8E4FF" stop-opacity="0"/></radialGradient>
+<linearGradient id="rod_starsilver-ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#CFD6E4"/><stop offset="1" stop-color="#7E8698"/></linearGradient>
+</defs>
+<ellipse cx="31" cy="55.5" rx="18" ry="2" fill="#2A1008" opacity=".25"/>
+<circle cx="44" cy="22" r="18" fill="url(#rod_starsilver-glow)"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+<path d="M53.6 10.6C54.6 16 54.4 22 53.8 29.6" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#2A1008" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M53.8 36.2V42.5C53.8 45.5 50.4 46 49.6 43.6" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="#FFFFFF" stroke="#2A1008" stroke-width="1.8"/>
+<path d="M50.5 32.8A3.3 3.3 0 0 1 57.1 32.8Z" fill="#3B7FE0"/>
+<circle cx="53.8" cy="32.8" r="3.3" fill="none" stroke="#2A1008" stroke-width="1.8"/>
+<ellipse cx="52.6" cy="31.2" rx="1" ry=".6" transform="rotate(-38 52.6 31.2)" fill="#FFFFFF" opacity=".85"/>
+<path d="M13 53L23 43" fill="none" stroke="#2A1008" stroke-width="9.8" stroke-linecap="round"/>
+<path d="M13 53L23 43" fill="none" stroke="url(#rod_starsilver-grip)" stroke-width="5.4" stroke-linecap="round"/>
+<g stroke="#2A1008" stroke-width="5" stroke-linecap="butt" fill="none"><path d="M16.1 50.9L18.9 48.1"/><path d="M11.2 52.2L14.2 49.2"/></g>
+<path d="M16.6 50.4L18.4 48.6" fill="none" stroke="url(#rod_starsilver-ring)" stroke-width="6.8" stroke-linecap="butt"/>
+<path d="M13 53L15.2 50.8" fill="none" stroke="#2A1008" stroke-width="9.8" stroke-linecap="round"/>
+<path d="M13 53L15.2 50.8" fill="none" stroke="url(#rod_starsilver-ring)" stroke-width="5.4" stroke-linecap="round"/>
+<path d="M16.4 48.4L17.6 47.2" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="#2A1008" stroke-width="4.6" stroke-linecap="round"/>
+<path d="M24.5 44.5L28 48" fill="none" stroke="url(#rod_starsilver-fit)" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="29.5" cy="49.5" r="4.6" fill="url(#rod_starsilver-fit)" stroke="#2A1008" stroke-width="2.2"/>
+<circle cx="29.5" cy="49.5" r="1.6" fill="#2A1008" opacity=".85"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="#2A1008" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M29.5 49.5L33.4 52.2" fill="none" stroke="url(#rod_starsilver-fit)" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M26.6 47.2A3.6 3.6 0 0 1 29.6 45.9" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".8"/>
+<path d="M20.33 42.42L23.67 45.58L54.8 10.75L53.2 9.25Z" fill="url(#rod_starsilver-blank)" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M25 40.6Q38 29 51 13.4" fill="none" stroke="#3B7FE0" stroke-width="1.6" stroke-linecap="round" opacity=".35"/>
+<path d="M23.2 42L52.4 10.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+<g fill="#FFFFFF"><circle cx="31.2" cy="33.6" r=".7"/><circle cx="39.8" cy="24.4" r=".9"/><circle cx="47" cy="16.6" r=".7"/><circle cx="35.5" cy="29.3" r=".55"/><circle cx="50.4" cy="14.2" r=".55"/></g>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="36.3" cy="31.4" r="1.9" fill="none" stroke="url(#rod_starsilver-fit)" stroke-width="1.3"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="#2A1008" stroke-width="2.8"/>
+<circle cx="44.4" cy="22.6" r="1.9" fill="none" stroke="url(#rod_starsilver-fit)" stroke-width="1.3"/>
+<circle cx="53.6" cy="10.6" r="2" fill="url(#rod_starsilver-fit)" stroke="#2A1008" stroke-width="2"/>
+<circle cx="52.9" cy="9.9" r=".6" fill="#FFFFFF" opacity=".9"/>
+<path d="M27 15.3Q27.44 17.06 29.2 17.5Q27.44 17.94 27 19.7Q26.56 17.94 24.8 17.5Q26.56 17.06 27 15.3Z" fill="#FFFFFF" opacity="0.95"/>
+<path d="M57 22.5Q57.3 23.7 58.5 24Q57.3 24.3 57 25.5Q56.7 24.3 55.5 24Q56.7 23.7 57 22.5Z" fill="#FFFFFF" opacity="0.95"/>
+<path d="M44 40.7Q44.26 41.74 45.3 42Q44.26 42.26 44 43.3Q43.74 42.26 42.7 42Q43.74 41.74 44 40.7Z" fill="#FFFFFF" opacity="0.95"/>
+</svg>

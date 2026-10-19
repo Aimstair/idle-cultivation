@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="node_tower-lacquer" gradientUnits="userSpaceOnUse" cx="26" cy="30" r="34">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".45" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#5A0A04"/>
+    </radialGradient>
+    <linearGradient id="node_tower-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="node_tower-stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4DEEC"/>
+      <stop offset=".5" stop-color="#A69EB8"/>
+      <stop offset="1" stop-color="#6E6684"/>
+    </linearGradient>
+    <radialGradient id="node_tower-fire" cx=".5" cy=".7" r=".7">
+      <stop offset="0" stop-color="#FFF2A0"/>
+      <stop offset=".5" stop-color="#FFA020"/>
+      <stop offset="1" stop-color="#E8301A"/>
+    </radialGradient>
+    <radialGradient id="node_tower-beacon" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFF2A0" stop-opacity=".8"/>
+      <stop offset=".5" stop-color="#FFA020" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#FFA020" stop-opacity="0"/>
+    </radialGradient>
+    <g id="node_tower-roof">
+      <path d="M-20 0 C-12 -1.5 -7 -6 0 -6 C7 -6 12 -1.5 20 0 C17 2.4 9 3.4 0 3.4 C-9 3.4 -17 2.4 -20 0 Z" fill="url(#node_tower-gold)" stroke="#2A1008" stroke-width="1.7" stroke-linejoin="round"/>
+      <path d="M-13 -1.2 C-9 -2.6 -5 -4.6 -1 -4.8" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".85"/>
+    </g>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="32" cy="60.8" rx="21" ry="2.4" fill="#2A1008" opacity=".36"/>
+
+  <!-- stone base -->
+  <rect x="13" y="54.5" width="38" height="5.4" rx="1.6" fill="url(#node_tower-stone)" stroke="#2A1008" stroke-width="2.2"/>
+  <path d="M15 56 H49" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".55"/>
+
+  <!-- tier 1 -->
+  <rect x="19" y="45.5" width="26" height="10" fill="url(#node_tower-lacquer)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="29.5" y="48.5" width="5" height="7" fill="#2A1008"/>
+  <path d="M20.8 47.4 H26" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+  <use href="#node_tower-roof" transform="translate(32 45.5)"/>
+  <!-- tier 2 -->
+  <rect x="22" y="36" width="20" height="9.5" fill="url(#node_tower-lacquer)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="30" y="38.5" width="4" height="4.5" rx=".6" fill="#2A1008"/>
+  <path d="M23.8 37.8 H27.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+  <use href="#node_tower-roof" transform="translate(32 36) scale(.82)"/>
+  <!-- tier 3 -->
+  <rect x="25" y="27.5" width="14" height="8.5" fill="url(#node_tower-lacquer)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="30.5" y="29.5" width="3" height="3.5" rx=".5" fill="#2A1008"/>
+  <use href="#node_tower-roof" transform="translate(32 27.5) scale(.64)"/>
+
+  <!-- spire + beacon -->
+  <circle cx="32" cy="10.5" r="9" fill="url(#node_tower-beacon)"/>
+  <path d="M32 23.6 V15" fill="none" stroke="#2A1008" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M32 23.6 V15" fill="none" stroke="url(#node_tower-gold)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M28 15.5 H36" fill="none" stroke="#2A1008" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M28 15.5 H36" fill="none" stroke="url(#node_tower-gold)" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M32 4.6 C34.6 7 35.8 9 35.6 11.2 A3.6 3.6 0 0 1 28.4 11.2 C28.2 9 29.4 7 32 4.6 Z" fill="url(#node_tower-fire)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M31.5 8.2 C30.6 9.4 30.4 10.6 30.8 11.6" fill="none" stroke="#FFF8D0" stroke-width="1" stroke-linecap="round" opacity=".9"/>
+</svg>

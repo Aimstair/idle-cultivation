@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="leg_thunder_hawks_talon-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FBF6FF"/>
+      <stop offset=".42" stop-color="#DCC4FF"/>
+      <stop offset=".58" stop-color="#A878F0"/>
+      <stop offset="1" stop-color="#4A2290"/>
+    </linearGradient>
+    <linearGradient id="leg_thunder_hawks_talon-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".72" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="leg_thunder_hawks_talon-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9A6AE8"/>
+      <stop offset=".5" stop-color="#5A3AA8"/>
+      <stop offset="1" stop-color="#2A1460"/>
+    </linearGradient>
+    <radialGradient id="leg_thunder_hawks_talon-orb" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#C8A4FF"/>
+      <stop offset="1" stop-color="#3A1E7A"/>
+    </radialGradient>
+    <linearGradient id="leg_thunder_hawks_talon-tassel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAD8FF"/>
+      <stop offset=".55" stop-color="#9A6AE8"/>
+      <stop offset="1" stop-color="#3A1E7A"/>
+    </linearGradient>
+    <radialGradient id="leg_thunder_hawks_talon-aura" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C8A4FF" stop-opacity=".6"/>
+      <stop offset=".55" stop-color="#9A6AE8" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#9A6AE8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="leg_thunder_hawks_talon-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- radiant aura + contact shadow -->
+  <ellipse cx="0" cy="0" rx="29" ry="12" fill="url(#leg_thunder_hawks_talon-aura)" transform="translate(34 30) rotate(-45)"/>
+  <ellipse cx="0" cy="0" rx="26" ry="4.6" fill="url(#leg_thunder_hawks_talon-shadow)" transform="translate(36 34) rotate(-45)"/>
+
+  <g transform="translate(34.5 28.5) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <!-- violet crystal blade with a gold edge line -->
+    <path d="M0 -29L2.8 -22.5L2.5 13H-2.5L-2.8 -22.5Z" fill="none" stroke="#C8A4FF" stroke-width="5.2" opacity=".45"/>
+    <path d="M0 -29L2.8 -22.5L2.5 13H-2.5L-2.8 -22.5Z" fill="url(#leg_thunder_hawks_talon-blade)" stroke-width="2.4"/>
+    <path d="M0 -23V11" fill="none" stroke="#FFD45A" stroke-width="1.1"/>
+    <path d="M-1.5 -21V10" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".9"/>
+    <path d="M.6 -17L1.9 -13.4L.5 -10.4L1.9 -6.8" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".95"/>
+    <!-- gold guard base -->
+    <path d="M-7.2 15.2Q-3.6 17.4 0 17Q3.6 17.4 7.2 15.2L7.2 19.4Q0 21.4 -7.2 19.4Z" fill="url(#leg_thunder_hawks_talon-gold)" stroke-width="2.1"/>
+    <path d="M-5 17.4L-2.2 16.9" fill="none" stroke="#FFF6C8" stroke-width="1" opacity=".9"/>
+    <!-- lightning orb -->
+    <circle cx="0" cy="12.6" r="3.6" fill="url(#leg_thunder_hawks_talon-orb)" stroke-width="1.8"/>
+    <path d="M.4 10.2L-.9 12.8H.9L-.4 15.2" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+    <!-- hawk talon gripping the orb -->
+    <path d="M-6.4 16.8C-8.2 13.2 -6.6 9.6 -2.6 8.6C-4.8 10.6 -5 13.2 -3.4 15.8Z" fill="url(#leg_thunder_hawks_talon-gold)" stroke-width="1.8"/>
+    <path d="M6.4 16.8C8.2 13.2 6.6 9.6 2.6 8.6C4.8 10.6 5 13.2 3.4 15.8Z" fill="url(#leg_thunder_hawks_talon-gold)" stroke-width="1.8"/>
+    <path d="M-5.6 14.2C-5.4 12.4 -4.6 11 -3.4 10.2" fill="none" stroke="#FFF6C8" stroke-width=".9" opacity=".9"/>
+    <!-- violet silk grip with gold bands -->
+    <rect x="-2.1" y="19.9" width="4.2" height="6.2" rx="1" fill="url(#leg_thunder_hawks_talon-grip)" stroke-width="2.1"/>
+    <path d="M-2.1 22H2.1M-2.1 24.2H2.1" fill="none" stroke="#FFD45A" stroke-width="1"/>
+    <!-- gold pommel -->
+    <circle cx="0" cy="28.2" r="2.7" fill="url(#leg_thunder_hawks_talon-gold)" stroke-width="2.1"/>
+    <circle cx="-.9" cy="27.3" r=".7" fill="#FFF6C8" stroke="none"/>
+  </g>
+
+  <!-- crackling arcs around the blade (canvas space) -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 10.5L43.2 12.4L41.4 14.8L44.4 16.6M26.4 22.2L29.2 23.8L27.4 26.4M48.6 24.2L50.6 26.6L48.2 28.4" stroke="#9A6AE8" stroke-width="2.6" opacity=".5"/>
+    <path d="M40 10.5L43.2 12.4L41.4 14.8L44.4 16.6M26.4 22.2L29.2 23.8L27.4 26.4M48.6 24.2L50.6 26.6L48.2 28.4" stroke="#F4ECFF" stroke-width="1.1"/>
+  </g>
+
+  <!-- violet tassel with gold cord -->
+  <g transform="translate(14.9 48.1) rotate(-35)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 2.6V5.2" fill="none" stroke-width="2.2"/>
+    <path d="M0 2.6V5.2" fill="none" stroke="#FFD45A" stroke-width=".9"/>
+    <path d="M0 5.2C-2.3 6.8 -3.1 9 -2.2 10.4C-1.1 11.1 1.1 11.1 2.2 10.4C3.1 9 2.3 6.8 0 5.2Z" fill="url(#leg_thunder_hawks_talon-tassel)" stroke-width="1.8"/>
+    <path d="M-.8 7L-1.2 9.6M.8 7L1.2 9.6" fill="none" stroke="#3A1E7A" stroke-width=".9" stroke-opacity=".8"/>
+  </g>
+</svg>

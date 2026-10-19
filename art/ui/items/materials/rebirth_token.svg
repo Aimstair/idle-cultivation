@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="rebirth_token-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".35" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="rebirth_token-goldL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".5" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#D69A2A"/>
+    </linearGradient>
+    <radialGradient id="rebirth_token-purple" cx=".38" cy=".32" r=".8">
+      <stop offset="0" stop-color="#EAD8FF"/>
+      <stop offset=".45" stop-color="#9A6AE8"/>
+      <stop offset="1" stop-color="#3A1E7A"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="32" cy="57" rx="17" ry="2.4" fill="#2A1008" opacity=".3"/>
+
+  <!-- gold rim -->
+  <circle cx="32" cy="32" r="22" fill="url(#rebirth_token-gold)"/>
+  <!-- purple face -->
+  <circle cx="32" cy="32" r="17" fill="url(#rebirth_token-purple)" stroke="#2A1008" stroke-width="1.4"/>
+
+  <!-- samsara wheel emblem -->
+  <g fill="none" stroke="#2A1008" stroke-width="4.2" stroke-linecap="round">
+    <circle cx="32" cy="32" r="10"/>
+    <path d="M32 22V42M23.3 27L40.7 37M23.3 37L40.7 27"/>
+  </g>
+  <g fill="none" stroke="url(#rebirth_token-goldL)" stroke-width="2.2" stroke-linecap="round">
+    <circle cx="32" cy="32" r="10"/>
+    <path d="M32 22V42M23.3 27L40.7 37M23.3 37L40.7 27"/>
+  </g>
+  <circle cx="32" cy="32" r="3.6" fill="url(#rebirth_token-goldL)" stroke="#2A1008" stroke-width="1.6"/>
+
+  <!-- highlights -->
+  <path d="M17.5 24C19.5 19.5 23 16 27.5 14.5" fill="none" stroke="#FFF6C8" stroke-width="2.2" stroke-linecap="round" opacity=".95"/>
+  <path d="M24.5 20.5C26 19.5 27.5 18.8 29 18.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+
+  <!-- outline -->
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#2A1008" stroke-width="2.4"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fx_shard-tl" gradientUnits="userSpaceOnUse" x1="3" y1="3" x2="14" y2="13">
+      <stop offset="0" stop-color="#F2D494"/>
+      <stop offset="1" stop-color="#D9A648"/>
+    </linearGradient>
+    <linearGradient id="fx_shard-top" gradientUnits="userSpaceOnUse" x1="15" y1="2" x2="22" y2="13">
+      <stop offset="0" stop-color="#DCAC50"/>
+      <stop offset="1" stop-color="#BC8530"/>
+    </linearGradient>
+  </defs>
+  <!-- irregular hexagonal chunk, peak off-centre at (14,13) -->
+  <path d="M3 11L14 2L14 13Z" fill="url(#fx_shard-tl)"/>
+  <path d="M14 2L27 7L14 13Z" fill="url(#fx_shard-top)"/>
+  <path d="M27 7L29 21L14 13Z" fill="#9A6420"/>
+  <path d="M29 21L18 30L14 13Z" fill="#5A3410"/>
+  <path d="M18 30L5 26L14 13Z" fill="#784816"/>
+  <path d="M5 26L3 11L14 13Z" fill="#B07A2C"/>
+  <!-- chipped notch and small flake -->
+  <path d="M27 7L29 21L24.5 15.5Z" fill="#7A4E18"/>
+  <path d="M8.5 27.5L5 26L9.2 24.4Z" fill="#B07A2C"/>
+  <!-- glints -->
+  <path d="M8 8.5L13.6 4L13.4 10Z" fill="#FFF4D0" opacity=".5"/>
+  <circle cx="14" cy="13" r="1.1" fill="#FFF4D0" opacity=".85"/>
+</svg>

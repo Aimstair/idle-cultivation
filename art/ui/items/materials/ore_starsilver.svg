@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ore_starsilver-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7A8AAA"/>
+      <stop offset="1" stop-color="#3E4A66"/>
+    </linearGradient>
+    <linearGradient id="ore_starsilver-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3E4A66"/>
+      <stop offset="1" stop-color="#1A2034"/>
+    </linearGradient>
+    <linearGradient id="ore_starsilver-front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34425C"/>
+      <stop offset="1" stop-color="#121828"/>
+    </linearGradient>
+    <linearGradient id="ore_starsilver-vein" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#E4EAF4"/>
+      <stop offset="1" stop-color="#AEB8CC"/>
+    </linearGradient>
+    <radialGradient id="ore_starsilver-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#E4EEFF" stop-opacity=".5"/>
+      <stop offset=".6" stop-color="#CFD6E4" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#CFD6E4" stop-opacity="0"/>
+    </radialGradient>
+    <path id="ore_starsilver-star" d="M0 -3.4L.9 -.9L3.4 0L.9 .9L0 3.4L-.9 .9L-3.4 0L-.9 -.9Z"/>
+  </defs>
+
+  <ellipse cx="32" cy="56.5" rx="20" ry="2.6" fill="#2A1008" opacity=".3"/>
+  <circle cx="32" cy="36" r="24" fill="url(#ore_starsilver-glow)"/>
+
+  <!-- rock chunk: top / left / front faces -->
+  <path d="M15 27L28 19L45 22L55 33L40 38L21 40Z" fill="url(#ore_starsilver-top)"/>
+  <path d="M9 40L15 27L21 40L17 53Z" fill="url(#ore_starsilver-left)"/>
+  <path d="M21 40L40 38L55 33L52 47L35 56L17 53Z" fill="url(#ore_starsilver-front)"/>
+  <g fill="none" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M15 27L21 40L17 53"/>
+    <path d="M21 40L40 38L55 33"/>
+    <path d="M40 38L35 56"/>
+  </g>
+
+  <!-- bright silver veins -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 36L28 29L37 32L47 26" stroke="#2A1008" stroke-width="3.6" opacity=".55"/>
+    <path d="M19 36L28 29L37 32L47 26" stroke="url(#ore_starsilver-vein)" stroke-width="2.2"/>
+    <path d="M24 50L31 44.5L44 46.5L48 41" stroke="#2A1008" stroke-width="3.4" opacity=".55"/>
+    <path d="M24 50L31 44.5L44 46.5L48 41" stroke="#E4EAF4" stroke-width="2"/>
+    <path d="M13 44L16 48.5" stroke="#2A1008" stroke-width="3" opacity=".55"/>
+    <path d="M13 44L16 48.5" stroke="#CFD6E4" stroke-width="1.6"/>
+  </g>
+
+  <!-- star specks -->
+  <g fill="#FFFFFF" stroke="#8FB4FF" stroke-width=".8" stroke-linejoin="round">
+    <use href="#ore_starsilver-star" transform="translate(28 29)"/>
+    <use href="#ore_starsilver-star" transform="translate(44 46.5) scale(.9)"/>
+    <use href="#ore_starsilver-star" transform="translate(47 26) scale(.8)"/>
+    <use href="#ore_starsilver-star" transform="translate(31 44.5) scale(.7)"/>
+  </g>
+  <g fill="#FFFFFF">
+    <circle cx="37" cy="32" r="1"/>
+    <circle cx="16" cy="48" r=".9"/>
+    <circle cx="22" cy="34" r=".8"/>
+    <circle cx="40" cy="28" r=".7"/>
+  </g>
+
+  <!-- glints -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+    <path d="M17 29L24 24.5" stroke-width="1.2" opacity=".55"/>
+    <path d="M38 24L43 25" stroke-width="1" opacity=".45"/>
+  </g>
+
+  <!-- silhouette outline -->
+  <path d="M9 40L15 27L28 19L45 22L55 33L52 47L35 56L17 53Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

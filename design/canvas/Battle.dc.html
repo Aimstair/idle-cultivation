@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Battle</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E9%87%91%E4%B8%80%E4%BA%8C%E4%B8%89%E5%87%BB%E8%B4%A5">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#2E2A3A}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.rb{width:42px;height:42px;border-radius:50%;border:3px solid #3A2A2A;background:#FFFDF8;display:grid;place-items:center;box-shadow:0 3px 0 #3A2A2A;text-decoration:none;cursor:pointer;padding:0;position:relative}
+.hp{height:9px;border-radius:999px;border:2px solid #3A2A2A;background:#FFFDF8;position:relative;overflow:hidden}
+.dmg{position:absolute;font-family:"Baloo 2",sans-serif;font-weight:800;-webkit-text-stroke:2px #3A2A2A;paint-order:stroke fill}
+.zn{width:50px;height:50px;border-radius:50%;border:3px solid #3A2A2A;display:grid;place-items:center;box-shadow:0 4px 0 #3A2A2A;position:relative;cursor:pointer;padding:0}
+.lt{width:44px;height:44px;border-radius:12px;border:3px solid var(--c);background:#FFF8EA;display:grid;place-items:center;position:relative;box-shadow:0 0 0 2px #3A2A2A}
+.ct{position:absolute;right:-6px;bottom:-7px;font-family:"Baloo 2",sans-serif;font-weight:800;font-size:10px;background:#2E2A3A;color:#FFFDF8;border:1.5px solid #3A2A2A;border-radius:999px;padding:0 4px}
+.tile{border:3px solid #3A2A2A;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:6px 2px;position:relative;box-shadow:0 4px 0 #3A2A2A;text-decoration:none}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:#E6E3EE">
+
+  <!-- FULL-BLEED STAGE -->
+  <svg width="390" height="560" viewBox="0 0 364 286" preserveAspectRatio="xMidYMid slice" style="position:absolute;left:0;top:0" aria-hidden="true">
+    <defs><linearGradient id="stormsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9B5CF"/><stop offset="1" stop-color="#EFEDF3"/></linearGradient></defs>
+    <rect width="364" height="286" fill="url(#stormsky)"/>
+    <g fill="#ADA8C4"><ellipse cx="70" cy="30" rx="70" ry="20"/><ellipse cx="300" cy="34" rx="80" ry="22"/></g>
+    <path d="M232 46 L222 74 L234 74 L224 102" stroke="#FFF4C9" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+    <path d="M0 200 L0 120 L40 70 L70 110 L110 50 L160 120 L200 90 L246 140 L290 60 L330 110 L364 90 V200Z" fill="#B9B5CC"/>
+    <path d="M0 220 L0 160 Q60 130 120 168 T250 150 T364 160 V220Z" fill="#9C97B5"/>
+    <rect x="0" y="206" width="364" height="80" fill="#8E86A8"/>
+    <path d="M0 206 H364" stroke="#3A2A2A" stroke-width="2.5"/>
+    <g transform="translate(56 118)">
+      <ellipse cx="38" cy="90" rx="34" ry="7" fill="#3A2A2A" opacity=".25"/>
+      <path d="M18 52 Q38 42 58 52 L62 86 Q38 92 14 86Z" fill="#F7F3EA" stroke="#3A2A2A" stroke-width="2.5"/>
+      <path d="M20 66 H56" stroke="#6CC4A1" stroke-width="6"/>
+      <circle cx="38" cy="30" r="25" fill="#F7D9C4" stroke="#3A2A2A" stroke-width="2.5"/>
+      <path d="M13 32 Q12 4 38 4 Q64 4 63 32 Q56 16 44 14 Q36 22 24 20 Q16 24 13 32Z" fill="#2E2A3A"/>
+      <path d="M58 10 Q82 12 76 40 Q70 26 60 22Z" fill="#2E2A3A"/>
+      <path d="M44 32 Q48 29 52 32" stroke="#3A2A2A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M74 58 L124 30" stroke="#3A2A2A" stroke-width="7" stroke-linecap="round"/><path d="M74 58 L124 30" stroke="#E9EEF5" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <path d="M182 96 Q228 120 218 176" stroke="#5FD3E0" stroke-width="10" fill="none" stroke-linecap="round" opacity=".55"/>
+    <path d="M184 98 Q224 122 216 172" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <g transform="translate(236 110)">
+      <ellipse cx="50" cy="98" rx="40" ry="7" fill="#3A2A2A" opacity=".25"/>
+      <path d="M24 60 Q50 44 80 60 Q86 84 52 92 Q20 86 24 60Z" fill="#B7C2CF" stroke="#3A2A2A" stroke-width="2.5"/>
+      <path d="M30 92 L22 100 M44 92 L40 100 M62 92 L66 100 M76 88 L84 98" stroke="#3A2A2A" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="34" cy="38" r="22" fill="#D3DAE3" stroke="#3A2A2A" stroke-width="2.5"/>
+      <path d="M24 16 L16 0 M40 16 L46 0" stroke="#3A2A2A" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="26" cy="36" r="5" fill="#FFF4C9" stroke="#3A2A2A" stroke-width="2"/><circle cx="25" cy="36" r="2" fill="#3A2A2A"/>
+      <path d="M14 56 Q-6 50 -2 30 L8 40 Q4 52 16 50" fill="#E9EEF5" stroke="#3A2A2A" stroke-width="2.5" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+  <!-- TOP HUD -->
+  <div style="position:absolute;left:12px;right:12px;top:12px;display:flex;align-items:center;gap:8px">
+    <a href="Map.dc.html" aria-label="Thunder Peak, Zone 2: open the stage map" style="display:flex;align-items:center;gap:6px;background:#FFFDF8;border:3px solid #3A2A2A;border-radius:999px;padding:3px 12px 3px 4px;box-shadow:0 3px 0 #3A2A2A;text-decoration:none;color:#2E2A3A">
+      <span class="brush" style="width:26px;height:26px;border-radius:50%;border:2px solid #3A2A2A;background:#ECEFF4;display:grid;place-items:center;font-size:15px">金</span>
+      <span class="disp" style="font-weight:800;font-size:15px">Thunder Peak · 二</span>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+    <span style="flex:1"></span>
+    <button class="rb" aria-label="Combat settings: retreat point, resume point, Qi floor"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.4"/><circle cx="10" cy="17" r="2.4"/></svg></button>
+  </div>
+
+  <!-- fighter HUDs -->
+  <div style="position:absolute;left:58px;top:212px;width:104px;display:flex;flex-direction:column;gap:3px">
+    <div class="hp"><span style="position:absolute;inset:0;width:64%;background:#E0533D"></span></div>
+    <div class="hp" style="height:7px"><span style="position:absolute;inset:0;width:90%;background:linear-gradient(90deg,#3FA58C,#5FD3E0)"></span></div>
+  </div>
+  <div style="position:absolute;right:30px;top:212px;width:104px">
+    <div class="hp"><span style="position:absolute;inset:0;width:28%;background:#E0533D"></span></div>
+  </div>
+  <span class="dmg" style="left:262px;top:150px;font-size:34px;color:#F2C14E">2,184!</span>
+  <span class="dmg" style="left:318px;top:250px;font-size:20px;color:#FFFFFF">860</span>
+  <span class="dmg" style="left:30px;top:300px;font-size:18px;color:#E0533D">−312</span>
+  <span class="dmg" style="left:110px;top:170px;font-size:16px;color:#6CC4A1">+140</span>
+
+  <!-- status pills on the ground -->
+  <div style="position:absolute;left:12px;top:478px;display:flex;gap:6px">
+    <span title="Jade Rabbit heals about 1.1K HP per minute" style="display:flex;align-items:center;gap:4px;background:rgba(255,253,248,.95);border:2px solid #3A2A2A;border-radius:999px;padding:2px 8px 2px 3px;font-size:11.5px;font-weight:800">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="14" r="8" fill="#F5F7F5" stroke="#3A2A2A" stroke-width="1.8"/><path d="M8 7 Q7 1 9 1 Q11 2 10 8 M16 7 Q17 1 15 1 Q13 2 14 8" fill="#F5F7F5" stroke="#3A2A2A" stroke-width="1.6"/><circle cx="12" cy="9" r="2" fill="#6CC4A1"/></svg>+1.1K/m
+    </span>
+    <span title="Retreat at 30% HP in about 14 minutes" style="display:flex;align-items:center;gap:4px;background:rgba(255,253,248,.95);border:2px solid #3A2A2A;border-radius:999px;padding:2px 8px;font-size:11.5px;font-weight:800">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B83E2B" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M20 12H6M11 6l-6 6 6 6"/></svg>14m
+    </span>
+    <span title="7.2 kills per minute" style="display:flex;align-items:center;gap:4px;background:rgba(255,253,248,.95);border:2px solid #3A2A2A;border-radius:999px;padding:2px 8px;font-size:11.5px;font-weight:800">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M14 3h7v7L9 22l-7-7z"/></svg>7.2/m
+    </span>
+  </div>
+
+  <!-- ZONE NODES -->
+  <div style="position:absolute;left:0;right:0;top:530px;display:flex;justify-content:center;align-items:center;gap:10px">
+    <button class="zn" aria-label="Zone 1, cleared" style="background:#6CC4A1"><span class="brush" style="font-size:22px;color:#1C5649">一</span></button>
+    <span style="width:16px;height:3px;background:#3A2A2A;border-radius:2px"></span>
+    <button class="zn" aria-label="Zone 2, fighting here" style="background:#B83E2B;box-shadow:0 0 0 4px #F6D3CC,0 4px 0 4px #3A2A2A"><span class="brush" style="font-size:22px;color:#FFFDF8">二</span></button>
+    <span style="width:16px;height:3px;background:#3A2A2A;border-radius:2px"></span>
+    <button class="zn" aria-label="Zone 3" style="background:#E8E2F4"><span class="brush" style="font-size:22px;color:#6B6478">三</span></button>
+    <span style="width:16px;height:3px;background:#C9C1D9;border-radius:2px"></span>
+    <button class="zn" aria-label="Boss Thunder Hawk, clear Zone 3 first" style="width:58px;height:58px;background:#2E2A3A;box-shadow:0 0 0 3px #B83E2B,0 4px 0 3px #3A2A2A">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M3 22 Q13 6 20 17 Q27 6 37 22 Q29 17 24 24 L20 35 L16 24 Q11 17 3 22Z" fill="#B7C2CF" stroke="#FBF6EC" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      <span style="position:absolute;right:-5px;top:-5px;width:18px;height:18px;border-radius:50%;background:#FFFDF8;border:2px solid #3A2A2A;display:grid;place-items:center"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+    </button>
+  </div>
+
+  <!-- LOOT STRIP -->
+  <div style="position:absolute;left:14px;right:14px;top:620px;display:flex;align-items:center;gap:12px">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B6478" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 9h14l-1 11H6z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+    <span class="lt" style="--c:#4A8FE7;box-shadow:0 0 0 2px #3A2A2A,0 0 12px #4A8FE7" title="Frostbite Saber, Damage ×1.38"><svg width="28" height="28" viewBox="0 0 40 40" aria-hidden="true"><path d="M30 4 L36 4 L36 10 L17 29 L11 23 Z" fill="#CFE6F7" stroke="#3A2A2A" stroke-width="2.5" stroke-linejoin="round"/><path d="M9 21 L19 31" stroke="#3A2A2A" stroke-width="4" stroke-linecap="round"/></svg><span class="ct" style="background:#4A8FE7">NEW</span></span>
+    <span class="lt" style="--c:#9AA0A6" title="Thunder Crystal"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 L24 12 L16 29 L8 12Z" fill="#E1E6EE" stroke="#3A2A2A" stroke-width="2"/></svg><span class="ct">6</span></span>
+    <span class="lt" style="--c:#9AA0A6" title="Beast Core T3"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="#C9954C" stroke="#3A2A2A" stroke-width="2"/></svg><span class="ct">42</span></span>
+    <span class="lt" style="--c:#9AA0A6" title="Spirit Stones"><svg width="24" height="24" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 L14 4.5 V11.5 L8 15 L2 11.5 V4.5Z" fill="#9FD6EE" stroke="#3A2A2A" stroke-width="1.2"/></svg><span class="ct">2.9K</span></span>
+  </div>
+
+  <!-- ACTIVITY TILES -->
+  <div style="position:absolute;left:10px;right:10px;bottom:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) 54px;gap:8px">
+    <span class="tile" aria-label="Battling now" style="background:#B83E2B;color:#FFFDF8;box-shadow:0 0 0 3px #F6D3CC,0 4px 0 #3A2A2A;transform:translateY(-2px)"><svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 4h9v9L12 29 3 20z"/><path d="M7 16l9 9M4 28l4-4"/></svg><span style="font-size:10.5px;font-weight:800">Peak Z2</span></span>
+    <a href="Main.dc.html" class="tile" aria-label="Meditate" style="background:#FFFDF8;color:#6B6478"><svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 5c3.4 3.4 3.4 8.6 0 12-3.4-3.4-3.4-8.6 0-12z"/><path d="M4 15c5.4.3 9.4 3.2 12 8-5.4-.3-9.4-3.2-12-8zM28 15c-5.4.3-9.4 3.2-12 8 5.4-.3 9.4-3.2 12-8z"/><path d="M7 27h18"/></svg><span style="font-size:10.5px;font-weight:800">×1.32</span></a>
+    <a href="Body.dc.html" class="tile" aria-label="Train" style="background:#FFFDF8;color:#6B6478"><svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 25c0-7 4-12 11-12s11 5 11 12z"/><path d="M11 13V9a5 5 0 0 1 10 0v4"/></svg><span style="font-size:10.5px;font-weight:800">×1.10</span></a>
+    <a href="Routine.dc.html" aria-label="Routine" style="border:3px solid #3A2A2A;border-radius:16px;background:#FFFDF8;display:grid;place-items:center;box-shadow:0 4px 0 #3A2A2A"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6E5DC0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="art_demon_flame-tile" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#FFB040"/><stop offset="0.5" stop-color="#F0481C"/><stop offset="1" stop-color="#8E1810"/></radialGradient>
+    <radialGradient id="art_demon_flame-sheen" cx="0.25" cy="0.18" r="0.6"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="art_demon_flame-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8"/><stop offset="0.45" stop-color="#FFD45A"/><stop offset="0.8" stop-color="#D69A2A"/><stop offset="1" stop-color="#9A5E14"/></linearGradient>
+    <clipPath id="art_demon_flame-clip"><rect x="9.5" y="9.5" width="45" height="45" rx="6"/></clipPath>
+    <linearGradient id="art_demon_flame-dk" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#D82A5A"/><stop offset="0.45" stop-color="#7A1458"/><stop offset="1" stop-color="#2A0840"/></linearGradient><linearGradient id="art_demon_flame-core" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFF0F6"/><stop offset="0.6" stop-color="#FF8AB8"/><stop offset="1" stop-color="#E03A8A"/></linearGradient><radialGradient id="art_demon_flame-halo" cx="0.5" cy="0.6" r="0.5"><stop offset="0" stop-color="#3A0A4A" stop-opacity=".55"/><stop offset="1" stop-color="#3A0A4A" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="33" cy="58" rx="22" ry="2" fill="#2A1008" opacity=".22"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_demon_flame-tile)" stroke="#2A1008" stroke-width="2.5"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="url(#art_demon_flame-sheen)"/>
+  <g clip-path="url(#art_demon_flame-clip)">
+    <ellipse cx="32" cy="36" rx="22" ry="20" fill="url(#art_demon_flame-halo)"/>
+    <path d="M32 9C30 16 22 20 19 27C14 23 12 17 15 12C16 20 20 23 20 29C17 35 18 44 24 49C29 53 36 53 41 49C47 44 48 35 44 29C44 23 48 20 49 12C52 17 50 23 45 27C42 20 34 16 32 9Z" fill="url(#art_demon_flame-dk)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M32 27C29 32 26.5 36 27 41C27.5 46 29.5 49 32 50.5C34.5 49 36.5 46 37 41C37.5 36 35 32 32 27Z" fill="url(#art_demon_flame-core)" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+    <g fill="#FFF8E4" stroke="#2A1008" stroke-width="1" stroke-linejoin="round"><path d="M21 30L28.5 33.5L22.5 35.5Z"/><path d="M43 30L35.5 33.5L41.5 35.5Z"/></g>
+    <path d="M21.5 40C21 35 23 31.5 25.5 29.5" fill="none" stroke="#FF8AB8" stroke-width="1.3" stroke-linecap="round" opacity=".8"/>
+    <path d="M29.5 44C29 40 30 37 31.5 35" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" opacity=".95"/>
+    <g fill="#FF8AB8"><circle cx="13" cy="36" r="1.3"/><circle cx="52" cy="38" r="1.2"/><circle cx="24" cy="12" r="1"/><circle cx="41" cy="10" r="1"/></g>
+    <path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(48 46) scale(1.8)" fill="#FFE0F0" opacity="1"/><path d="M0-1Q.16-.16 1 0Q.16.16 0 1Q-.16.16-1 0Q-.16-.16 0-1Z" transform="translate(15 46) scale(1.5)" fill="#FFE0F0" opacity="1"/>
+  </g>
+  <rect x="9.5" y="9.5" width="45" height="45" rx="6" fill="none" stroke="url(#art_demon_flame-gold)" stroke-width="1.6"/>
+  <path d="M11.5 20V15Q11.5 11.5 15 11.5H20" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+</svg>

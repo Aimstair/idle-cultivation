@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="robe_t2-cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".6" stop-color="#F3F5FB"/>
+      <stop offset="1" stop-color="#D9E0F0"/>
+    </linearGradient>
+    <linearGradient id="robe_t2-shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1A2A6E" stop-opacity="0"/>
+      <stop offset=".6" stop-color="#1A2A6E" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1A2A6E" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="robe_t2-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".45" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <linearGradient id="robe_t2-blueH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8CC6F6"/>
+      <stop offset=".5" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <radialGradient id="robe_t2-jade" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+  </defs>
+
+  <!-- contact shadow -->
+  <ellipse cx="32" cy="57.2" rx="17" ry="1.6" fill="#2A1008" opacity=".25"/>
+
+  <!-- wide sleeves -->
+  <g stroke="#2A1008" stroke-width="2.3" stroke-linejoin="round">
+    <path d="M25 11L7 14L6 31Q14 31.5 23 29.5Z" fill="url(#robe_t2-cloth)"/>
+    <path d="M39 11L57 14L58 31Q50 31.5 41 29.5Z" fill="url(#robe_t2-cloth)"/>
+  </g>
+  <path d="M39 11L57 14L58 31Q50 31.5 41 29.5Z" fill="url(#robe_t2-shade)"/>
+  <!-- blue cuffs -->
+  <g stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round" fill="url(#robe_t2-blue)">
+    <path d="M7 14L11.5 13.2L10.8 30.6L6 31Z"/>
+    <path d="M57 14L52.5 13.2L53.2 30.6L58 31Z"/>
+  </g>
+  <path d="M23 12.6L11.5 14.9" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity=".9"/>
+
+  <!-- body -->
+  <path d="M22 10H42L48 56Q32 58.5 16 56Z" fill="url(#robe_t2-cloth)"/>
+  <path d="M22 10H42L48 56Q32 58.5 16 56Z" fill="url(#robe_t2-shade)"/>
+  <!-- blue hem band -->
+  <path d="M16.5 52H47.5L48 56Q32 58.5 16 56Z" fill="url(#robe_t2-blue)" stroke="#2A1008" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- inner collar -->
+  <path d="M27 10L32 19L37 10Z" fill="#FFFFFF" stroke="#2A1008" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- crossed blue lapels (under, then over) -->
+  <path d="M22 10H27L32 19L29.5 23.5Z" fill="url(#robe_t2-blue)" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M37 10H42L28.5 34H23.5Z" fill="url(#robe_t2-blue)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M37.8 12L26.2 31" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".75"/>
+  <!-- body outline -->
+  <path d="M22 10H42L48 56Q32 58.5 16 56Z" fill="none" stroke="#2A1008" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- blue sash with gold thread and tails -->
+  <path d="M19 33H45L45.8 39H18.2Z" fill="url(#robe_t2-blueH)" stroke="#2A1008" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M20.5 34.4H43.5" fill="none" stroke="#FFD45A" stroke-width=".9" stroke-linecap="round" opacity=".85"/>
+  <g fill="url(#robe_t2-blue)" stroke="#2A1008" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M29.5 39.5L27.5 50.5L30.5 51L32 39.5Z"/>
+    <path d="M34.5 39.5L36.5 50.5L33.5 51L32 39.5Z"/>
+  </g>
+  <!-- jade clasp -->
+  <circle cx="32" cy="36" r="3.7" fill="url(#robe_t2-jade)" stroke="#2A1008" stroke-width="1.4"/>
+  <ellipse cx="30.8" cy="34.6" rx="1.2" ry=".8" fill="#FFFFFF" opacity=".9"/>
+</svg>

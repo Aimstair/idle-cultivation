@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="100" viewBox="0 0 260 50">
+<!-- 9slice: 50 -->
+<!-- stretch horizontally only: corners are the two 50-wide tails, the band between them is uniform -->
+  <defs>
+    <linearGradient id="ribbon_reward-lacquer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF6A44"/>
+      <stop offset=".5" stop-color="#C21E10"/>
+      <stop offset="1" stop-color="#7A0E06"/>
+    </linearGradient>
+    <linearGradient id="ribbon_reward-tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A1A0C"/>
+      <stop offset=".5" stop-color="#6A0C06"/>
+      <stop offset="1" stop-color="#3A0602"/>
+    </linearGradient>
+    <linearGradient id="ribbon_reward-sheen" gradientUnits="userSpaceOnUse" x1="0" y1="9" x2="0" y2="22">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ribbon_reward-shade" gradientUnits="userSpaceOnUse" x1="0" y1="30" x2="0" y2="40">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".3"/>
+    </linearGradient>
+    <filter id="ribbon_reward-blur" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+  </defs>
+
+  <!-- cast shadow -->
+  <g transform="translate(0 2.2)" fill="#2A1008" opacity=".4" filter="url(#ribbon_reward-blur)">
+    <path d="M4 12H46V45H4L13 28.5Z M256 12H214V45H256L247 28.5Z"/>
+    <rect x="38" y="7" width="184" height="34"/>
+  </g>
+
+  <!-- folded tails with gold edges -->
+  <g fill="url(#ribbon_reward-tail)" stroke="#2A1008" stroke-width="2.6" stroke-linejoin="round">
+    <path d="M4 12H46V45H4L13 28.5Z"/>
+    <path d="M256 12H214V45H256L247 28.5Z"/>
+  </g>
+  <g fill="none" stroke="#E8B657" stroke-width="1.4" stroke-linecap="round">
+    <path d="M7.5 15.2H44"/><path d="M7.5 41.8H44"/>
+    <path d="M216 15.2H252.5"/><path d="M216 41.8H252.5"/>
+  </g>
+  <path d="M8 13.4H44 M216 13.4H252" fill="none" stroke="#FFFFFF" stroke-width=".9" stroke-linecap="round" opacity=".35"/>
+  <!-- folds under the band ends -->
+  <path d="M38 41L46 35V41Z M222 41L214 35V41Z" fill="#3A0602" stroke="#2A1008" stroke-width="1.6" stroke-linejoin="round"/>
+
+  <!-- main band (uniform along its length) -->
+  <rect x="38" y="7" width="184" height="34" fill="url(#ribbon_reward-lacquer)" stroke="#2A1008" stroke-width="2.8" stroke-linejoin="round"/>
+  <rect x="39.4" y="9" width="181.2" height="13" fill="url(#ribbon_reward-sheen)"/>
+  <rect x="39.4" y="30" width="181.2" height="9.6" fill="url(#ribbon_reward-shade)"/>
+  <g fill="none" stroke="#FFD45A" stroke-width="1.6">
+    <path d="M38 10.6H222"/><path d="M38 37.4H222"/>
+  </g>
+  <path d="M38 8.8H222" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".5"/>
+</svg>

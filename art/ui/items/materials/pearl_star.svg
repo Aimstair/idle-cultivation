@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="pearl_star-topshell" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#EEF2FF"/>
+      <stop offset=".5" stop-color="#9AACE0"/>
+      <stop offset="1" stop-color="#3A4A9E"/>
+    </linearGradient>
+    <linearGradient id="pearl_star-botshell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8EA0D8"/>
+      <stop offset=".45" stop-color="#E8EEFF"/>
+      <stop offset="1" stop-color="#7A8CC8"/>
+    </linearGradient>
+    <radialGradient id="pearl_star-pearl" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".4" stop-color="#3B7FE0"/>
+      <stop offset=".8" stop-color="#243C9A"/>
+      <stop offset="1" stop-color="#141E52"/>
+    </radialGradient>
+    <radialGradient id="pearl_star-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#B8E4FF" stop-opacity=".85"/>
+      <stop offset=".5" stop-color="#3B7FE0" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#3B7FE0" stop-opacity="0"/>
+    </radialGradient>
+    <path id="pearl_star-star" d="M0 -3L.8 -.8L3 0L.8 .8L0 3L-.8 .8L-3 0L-.8 -.8Z"/>
+  </defs>
+
+  <ellipse cx="32" cy="57" rx="22" ry="2.4" fill="#2A1008" opacity=".3"/>
+
+  <!-- top shell, opened back: scalloped edge, nacre inside -->
+  <path d="M12 36A7.5 7.5 0 0 1 14 24.6A7.5 7.5 0 0 1 19.7 15.5A7.5 7.5 0 0 1 27.8 10.6A7.5 7.5 0 0 1 36.8 10.8A7.5 7.5 0 0 1 44.9 16.1A7.5 7.5 0 0 1 50.3 25.4A7.5 7.5 0 0 1 52 36Z" fill="url(#pearl_star-topshell)"/>
+  <g fill="none" stroke="#2E3C8A" stroke-width="1" stroke-linecap="round" opacity=".55">
+    <path d="M32 38L14 24.6M32 38L19.7 15.5M32 38L27.8 10.6M32 38L36.8 10.8M32 38L44.9 16.1M32 38L50.3 25.4"/>
+  </g>
+  <path d="M12 36A7.5 7.5 0 0 1 14 24.6A7.5 7.5 0 0 1 19.7 15.5A7.5 7.5 0 0 1 27.8 10.6A7.5 7.5 0 0 1 36.8 10.8A7.5 7.5 0 0 1 44.9 16.1A7.5 7.5 0 0 1 50.3 25.4A7.5 7.5 0 0 1 52 36" fill="none" stroke="#1A2A6E" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M15.5 27C17.5 20 22.5 14.5 29 12.5" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".85"/>
+  <path d="M12 36A7.5 7.5 0 0 1 14 24.6A7.5 7.5 0 0 1 19.7 15.5A7.5 7.5 0 0 1 27.8 10.6A7.5 7.5 0 0 1 36.8 10.8A7.5 7.5 0 0 1 44.9 16.1A7.5 7.5 0 0 1 50.3 25.4A7.5 7.5 0 0 1 52 36Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- bottom shell bowl -->
+  <path d="M54 38A8 8 0 0 1 51.05 46A8 8 0 0 1 43 51.9A8 8 0 0 1 32 54A8 8 0 0 1 21 51.9A8 8 0 0 1 12.95 46A8 8 0 0 1 10 38C18 34.5 46 34.5 54 38Z" fill="url(#pearl_star-botshell)"/>
+  <g fill="none" stroke="#2E3C8A" stroke-width="1" stroke-linecap="round" opacity=".45">
+    <path d="M32 53L15 44M32 53L23 39M32 53L41 39M32 53L49 44"/>
+  </g>
+  <path d="M54 38A8 8 0 0 1 51.05 46A8 8 0 0 1 43 51.9A8 8 0 0 1 32 54A8 8 0 0 1 21 51.9A8 8 0 0 1 12.95 46A8 8 0 0 1 10 38C18 34.5 46 34.5 54 38Z" fill="none" stroke="#2A1008" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M13.5 44C17 48.5 23 51.5 30 52.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+  <ellipse cx="32" cy="46" rx="11" ry="3" fill="#2A1008" opacity=".22"/>
+
+  <!-- pearl -->
+  <circle cx="32" cy="36" r="18" fill="url(#pearl_star-glow)"/>
+  <circle cx="32" cy="37" r="10" fill="url(#pearl_star-pearl)" stroke="#2A1008" stroke-width="2.2"/>
+  <ellipse cx="28" cy="33" rx="3.2" ry="2" fill="#FFFFFF" opacity=".9" transform="rotate(-35 28 33)"/>
+  <g fill="#FFFFFF" stroke="#8FDCFF" stroke-width=".6" stroke-linejoin="round">
+    <use href="#pearl_star-star" transform="translate(35 37)"/>
+    <use href="#pearl_star-star" transform="translate(29.5 42) scale(.8)"/>
+    <use href="#pearl_star-star" transform="translate(37.5 43.5) scale(.6)"/>
+  </g>
+  <circle cx="25.5" cy="39" r=".8" fill="#FFFFFF"/>
+</svg>

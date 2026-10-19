@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>World map</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap&amp;text=%E5%87%A1%E7%95%8C%E4%BB%99">
+<style>
+body{margin:0;background:#E9E2D3}
+.ic{font-family:"Nunito",ui-rounded,system-ui,sans-serif;color:#2E2A3A}
+.disp{font-family:"Baloo 2","Nunito",ui-rounded,sans-serif}
+.brush{font-family:"Ma Shan Zheng","Kaiti SC",serif}
+.reg{position:absolute;display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;color:#2E2A3A}
+.tag{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:12px;line-height:1.1;background:#FFFDF8;border:2px solid #3A2A2A;border-radius:8px;padding:2px 7px;text-align:center;white-space:nowrap}
+.rr{font-size:10px;font-weight:800;color:#6B6478}
+.tab{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:800;color:#6B6478;text-decoration:none;padding:6px 0;flex:1}
+</style>
+</helmet>
+<div class="ic" style="width:390px;height:844px;position:relative;overflow:hidden;background:#5F8FB0;display:flex;flex-direction:column">
+  <!-- sky behind the scroll -->
+  <svg width="390" height="844" viewBox="0 0 390 844" style="position:absolute;inset:0" aria-hidden="true">
+    <defs><linearGradient id="bgsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8DCEB"/><stop offset="1" stop-color="#E9E2F2"/></linearGradient></defs>
+    <rect width="390" height="844" fill="url(#bgsky)"/>
+    <g fill="#FFFFFF" opacity=".7"><ellipse cx="40" cy="120" rx="70" ry="24"/><ellipse cx="360" cy="300" rx="70" ry="22"/><ellipse cx="30" cy="620" rx="60" ry="20"/></g>
+  </svg>
+
+  <!-- HEADER -->
+  <div style="position:relative;display:flex;align-items:center;gap:10px;padding:12px 14px 4px">
+    <a href="Main.dc.html" aria-label="Home" style="width:42px;height:42px;border-radius:50%;border:3px solid #3A2A2A;display:grid;place-items:center;box-shadow:0 3px 0 #3A2A2A;text-decoration:none;cursor:pointer;padding:0;background:#FFFDF8;flex:none"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="#277864" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 5c3.4 3.4 3.4 8.6 0 12-3.4-3.4-3.4-8.6 0-12z"/><path d="M4 15c5.4.3 9.4 3.2 12 8-5.4-.3-9.4-3.2-12-8zM28 15c-5.4.3-9.4 3.2-12 8 5.4-.3 9.4-3.2 12-8z"/></svg></a>
+    <div style="width:40px;height:40px;border-radius:50%;background:#F7D9C4;border:2.5px solid #3A2A2A;flex:none;position:relative"><span class="disp" style="position:absolute;left:-6px;bottom:-6px;font-size:10px;font-weight:800;background:#E8B54A;border:2px solid #3A2A2A;border-radius:999px;padding:0 5px">GC4</span></div>
+    <div style="flex:1"></div>
+    <div style="display:flex;border:2.5px solid #3A2A2A;border-radius:12px;overflow:hidden;background:#FFFDF8">
+      <span class="disp" style="padding:4px 10px;font-weight:800;font-size:13px;background:#277864;color:#fff;display:flex;align-items:center;gap:5px"><span class="brush" style="font-size:15px">凡界</span>Mortal Plane</span>
+      <span class="disp" style="padding:4px 10px;font-weight:700;font-size:13px;color:#9A92AE;border-left:2.5px solid #3A2A2A;display:flex;align-items:center;gap:4px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#9A92AE" stroke-width="3" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Immortal</span>
+    </div>
+  </div>
+
+  <!-- RIBBON -->
+  <div style="position:relative;display:flex;justify-content:center;margin-top:6px;z-index:3">
+    <div style="position:relative;background:#3FA58C;border:3px solid #3A2A2A;border-radius:8px;padding:4px 26px;box-shadow:0 4px 0 #1C5649">
+      <span style="position:absolute;left:-18px;top:8px;width:22px;height:24px;background:#277864;border:3px solid #3A2A2A;border-right:0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,40% 50%)"></span>
+      <span style="position:absolute;right:-18px;top:8px;width:22px;height:24px;background:#277864;border:3px solid #3A2A2A;border-left:0;clip-path:polygon(0 0,100% 0,60% 50%,100% 100%,0 100%)"></span>
+      <span class="disp" style="font-weight:800;font-size:19px;color:#FFFDF8;letter-spacing:.04em">The Path to Heaven</span>
+    </div>
+  </div>
+
+  <!-- SCROLL -->
+  <div style="position:relative;margin:-14px 12px 0;flex:1;display:flex;flex-direction:column">
+    <div style="height:16px;border-radius:8px;background:#8F5E3B;border:3px solid #3A2A2A;margin:0 -6px;position:relative;z-index:2"></div>
+    <div style="flex:1;position:relative;background:#F2E6C9;border-left:3px solid #3A2A2A;border-right:3px solid #3A2A2A;margin-top:-4px;overflow:hidden">
+      <svg width="360" height="640" viewBox="0 0 360 640" style="position:absolute;left:0;top:0" aria-hidden="true">
+        <defs><radialGradient id="gold" cx="50%" cy="0%" r="70%"><stop offset="0" stop-color="#FFE7A6" stop-opacity=".95"/><stop offset="1" stop-color="#FFE7A6" stop-opacity="0"/></radialGradient></defs>
+        <!-- faded map ink -->
+        <g stroke="#D9C79E" stroke-width="1.5" fill="none" opacity=".9">
+          <path d="M10 600 l20 -30 l16 18 l18 -34 l20 30"/><path d="M250 560 l16 -24 l14 14 l16 -28 l20 26"/><path d="M20 380 q30 -10 60 4"/><path d="M260 300 q30 -12 70 0"/>
+          <path d="M140 470 c20 -6 40 6 60 0"/><circle cx="300" cy="460" r="14"/><path d="M40 210 l14 -20 l12 12 l14 -24 l16 22"/>
+        </g>
+        <rect width="360" height="160" fill="url(#gold)"/>
+        <!-- path -->
+        <path d="M70 600 C150 600 240 590 270 540 C300 490 150 500 110 450 C70 400 220 390 260 340 C300 290 120 300 90 250 C60 200 210 190 250 150 C290 110 200 70 180 40" stroke="#8F5E3B" stroke-width="4" fill="none" stroke-dasharray="9 8" stroke-linecap="round"/>
+        <!-- cloud veil over locked regions -->
+        <g fill="#FFFFFF" stroke="#C9BFD9" stroke-width="2" opacity=".96">
+          <path d="M-10 290 q20 -30 50 -14 q16 -30 52 -14 q24 -26 56 -6 q30 -22 60 2 q26 -18 60 4 q28 -10 50 10 q30 0 52 14 V0 H-10Z"/>
+        </g>
+        <g fill="none" stroke="#B7AED0" stroke-width="2.2" stroke-linecap="round" opacity=".9"><path d="M60 230 q8 -12 20 -3 q6 -9 15 -1"/><path d="M230 190 q8 -12 20 -3 q6 -9 15 -1"/><path d="M140 110 q8 -12 20 -3 q6 -9 15 -1"/></g>
+      </svg>
+
+      <!-- REGION 1: Mortal Valley (MO–QS) -->
+      <a class="reg" href="Region.dc.html" style="left:28px;top:546px">
+        <svg width="80" height="56" viewBox="0 0 80 56" aria-hidden="true"><ellipse cx="40" cy="40" rx="36" ry="12" fill="#9BC48A" stroke="#3A2A2A" stroke-width="2.5"/><path d="M18 34 L30 22 L42 34Z" fill="#B88A5A" stroke="#3A2A2A" stroke-width="2"/><path d="M21 34 V40 H39 V34" fill="#EFE3CC" stroke="#3A2A2A" stroke-width="2"/><path d="M50 40 V18" stroke="#4E9A5A" stroke-width="4"/><path d="M58 40 V24" stroke="#4E9A5A" stroke-width="4"/></svg>
+        <span class="tag">Mortal Valley</span><span class="rr">MO–QS · ✓ cleared</span>
+      </a>
+      <!-- REGION 2: Azure Lake (FE) -->
+      <a class="reg" href="Region.dc.html" style="left:220px;top:468px">
+        <svg width="84" height="58" viewBox="0 0 84 58" aria-hidden="true"><ellipse cx="42" cy="42" rx="38" ry="13" fill="#A9CBE6" stroke="#3A2A2A" stroke-width="2.5"/><path d="M14 40 Q42 30 70 40" stroke="#fff" stroke-width="2" fill="none"/><path d="M30 30 L42 20 L54 30Z" fill="#B83E2B" stroke="#3A2A2A" stroke-width="2"/><path d="M33 30 V38 M51 30 V38" stroke="#3A2A2A" stroke-width="2.5"/><circle cx="66" cy="14" r="7" fill="#FFF8E6" stroke="#E2D8C2" stroke-width="1.5"/></svg>
+        <span class="tag">Azure Lake Province</span><span class="rr">FE · ✓ cleared</span>
+      </a>
+      <!-- REGION 3: Thunder Spine (GC) CURRENT -->
+      <a class="reg" href="Region.dc.html" style="left:40px;top:362px">
+        <div style="position:relative">
+          <svg width="96" height="72" viewBox="0 0 96 72" aria-hidden="true"><ellipse cx="48" cy="56" rx="42" ry="13" fill="#B9B5CC" stroke="#3A2A2A" stroke-width="2.5"/><path d="M14 56 L34 18 L46 34 L60 6 L84 56Z" fill="#9C97B5" stroke="#3A2A2A" stroke-width="2.5" stroke-linejoin="round"/><path d="M60 6 L54 18 L62 18 L56 30" stroke="#F2C14E" stroke-width="3" fill="none"/></svg>
+          <span style="position:absolute;right:-14px;top:-18px;width:34px;height:34px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#B83E2B;border:2.5px solid #3A2A2A;display:grid;place-items:center"><span style="width:20px;height:20px;border-radius:50%;background:#F7D9C4;border:2px solid #3A2A2A;transform:rotate(45deg)"></span></span>
+        </div>
+        <span class="tag" style="background:#2E2A3A;color:#FBF6EC">Thunder Spine Mountains</span><span class="rr" style="color:#B83E2B">GC · you are here</span>
+      </a>
+      <!-- REGION 4: Ghost Mist Wilds (NS) next, partly revealed -->
+      <div class="reg" style="left:206px;top:262px;opacity:.85">
+        <svg width="84" height="58" viewBox="0 0 84 58" aria-hidden="true"><ellipse cx="42" cy="44" rx="38" ry="12" fill="#A7B79A" stroke="#3A2A2A" stroke-width="2.5"/><path d="M20 44 V22 M34 44 V14 M50 44 V20 M64 44 V26" stroke="#5E6E58" stroke-width="5" stroke-linecap="round"/><path d="M6 34 Q42 22 78 34" stroke="#E9E6F2" stroke-width="6" fill="none" opacity=".9"/></svg>
+        <span class="tag" style="display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3A2A2A" stroke-width="3" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Ghost Mist Wilds</span><span class="rr">NS · reach Nascent Soul</span>
+      </div>
+      <!-- hidden regions above the clouds -->
+      <div style="position:absolute;left:0;right:0;top:118px;display:flex;justify-content:center">
+        <span style="font-size:11.5px;font-weight:800;color:#6B6478;background:rgba(255,253,248,.85);border:2px dashed #9A92AE;border-radius:999px;padding:3px 12px">4 more regions hidden in the clouds</span>
+      </div>
+      <!-- HEAVEN'S STAIR at top -->
+      <div class="reg" style="left:136px;top:14px">
+        <svg width="90" height="62" viewBox="0 0 90 62" aria-hidden="true"><path d="M20 60 V24 H70 V60" fill="none" stroke="#E8B54A" stroke-width="5"/><path d="M12 24 H78 L45 6Z" fill="#F2C14E" stroke="#3A2A2A" stroke-width="2.5"/><path d="M30 60 h30 M34 52 h22 M38 44 h14" stroke="#E8B54A" stroke-width="3"/></svg>
+        <span class="tag" style="background:#FFF4D6;border-color:#E8B54A">Heaven's Stair</span><span class="rr">GA · Ascension</span>
+      </div>
+    </div>
+    <div style="height:16px;border-radius:8px;background:#8F5E3B;border:3px solid #3A2A2A;margin:-4px -6px 0;position:relative"></div>
+  </div>
+  <div style="height:18px"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

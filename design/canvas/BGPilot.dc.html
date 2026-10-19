@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Background pilots</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&amp;family=Nunito:wght@600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#1E1A2A}
+.bp{width:1700px;height:980px;box-sizing:border-box;padding:24px 28px;font-family:"Nunito",sans-serif;color:#EDE6F7;background:radial-gradient(ellipse at 20% 0,#2C2442,#1A1626 60%)}
+h1{font:800 28px "Baloo 2",sans-serif;margin:0;color:#fff}
+.sub{margin:2px 0 16px;color:#A79CC4;font-weight:700;font-size:14px}
+.row{display:flex;gap:28px;align-items:flex-start}
+.cap{font:800 15px "Baloo 2",sans-serif;color:#FFE7A0;margin:0 0 6px}
+.note{font-size:12.5px;line-height:1.45;color:#C9C0DC;max-width:390px;margin-top:8px}
+img{display:block;border-radius:10px}
+</style>
+</helmet>
+<div class="bp">
+  <h1>Background pilots · drawn by Fable</h1>
+  <p class="sub">Vector ink-wash style matching the approved hub world. Rendered with the real hero and UI on top.</p>
+  <div class="row">
+    <div>
+      <p class="cap">Cultivation Ground 1 · Bamboo Grove Hermitage (hub)</p>
+      <img src="/_blob/0a04beac10add9a6c9b9b316a04682ee" alt="Hub with the Bamboo Grove Hermitage background" width="390" height="844">
+    </div>
+    <div>
+      <p class="cap">Map 1 · Misty Bamboo Grove (battle stage, 3 parallax layers)</p>
+      <img src="/_blob/cb126f4dfa1a4e8923340afd8947d68c" alt="Battle stage: screen 1, screen 2 after scrolling, and a seam check" width="1210" height="580">
+      <p class="note">Left: screen 1. Middle: after the layers scroll (far 0.2×, mid 0.5×, near 1×), showing the bamboo-arch landmark. Right: two tiles joined at the dashed line to prove the loop is seamless. The green blob stands in for a monster.<br><br><b>Fix queued:</b> the hermitage hut is mostly hidden behind the hero and HP gauge; it moves into the open right side.</p>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1700,"height":980}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

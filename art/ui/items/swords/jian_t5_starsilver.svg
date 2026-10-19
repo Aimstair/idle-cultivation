@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="jian_t5_starsilver-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".42" stop-color="#EEF2F8"/>
+      <stop offset=".58" stop-color="#C0CADC"/>
+      <stop offset="1" stop-color="#6E7A94"/>
+    </linearGradient>
+    <linearGradient id="jian_t5_starsilver-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".45" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <linearGradient id="jian_t5_starsilver-grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5C7CC8"/>
+      <stop offset=".5" stop-color="#2A3E8E"/>
+      <stop offset="1" stop-color="#121C4C"/>
+    </linearGradient>
+    <linearGradient id="jian_t5_starsilver-tassel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B8E4FF"/>
+      <stop offset=".55" stop-color="#3B7FE0"/>
+      <stop offset="1" stop-color="#1A2A6E"/>
+    </linearGradient>
+    <path id="jian_t5_starsilver-star" d="M0 -2.2C.3 -.6 .6 -.3 2.2 0C.6 .3 .3 .6 0 2.2C-.3 .6 -.6 .3 -2.2 0C-.6 -.3 -.3 -.6 0 -2.2Z" fill="#FFFFFF"/>
+    <radialGradient id="jian_t5_starsilver-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2A1008" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#2A1008" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="0" cy="0" rx="26" ry="4.6" fill="url(#jian_t5_starsilver-shadow)" transform="translate(36 34) rotate(-45)"/>
+
+  <!-- jian: point-up, rotated onto the grip-bottom-left / tip-top-right diagonal -->
+  <g transform="translate(34.5 28.5) rotate(45)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 -29L2.8 -22.5L2.5 13H-2.5L-2.8 -22.5Z" fill="none" stroke="#DDE8FF" stroke-width="5.2" opacity=".4"/>
+    <path d="M0 -29L2.8 -22.5L2.5 13H-2.5L-2.8 -22.5Z" fill="url(#jian_t5_starsilver-blade)" stroke-width="2.4"/>
+    <path d="M0 -23V12" fill="none" stroke="#8690A8" stroke-width="1.1" opacity=".8"/>
+    <path d="M-1.5 -21V11" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".95"/>
+    <!-- star specks in the starsilver -->
+    <use href="#jian_t5_starsilver-star" xlink:href="#jian_t5_starsilver-star" transform="translate(1 -14) scale(.62)" stroke="#8FDCFF" stroke-width=".5"/>
+    <use href="#jian_t5_starsilver-star" xlink:href="#jian_t5_starsilver-star" transform="translate(-.6 -4) scale(.5)" stroke="#8FDCFF" stroke-width=".5"/>
+    <use href="#jian_t5_starsilver-star" xlink:href="#jian_t5_starsilver-star" transform="translate(1.1 5.5) scale(.56)" stroke="#8FDCFF" stroke-width=".5"/>
+    <circle cx="-.8" cy="-18.4" r=".55" fill="#FFFFFF" stroke="none"/>
+    <circle cx="1.3" cy="-9.2" r=".5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="-.6" cy="1" r=".5" fill="#FFFFFF" stroke="none"/>
+    <!-- guard -->
+    <path d="M-6.8 12.4Q-3.4 14.6 0 14.2Q3.4 14.6 6.8 12.4L6.8 16.8Q0 18.8 -6.8 16.8Z" fill="url(#jian_t5_starsilver-blue)" stroke-width="2.1"/>
+    <path d="M-4.8 14.6L-2 14.1" fill="none" stroke="#FFF6C8" stroke-width="1" opacity=".9"/>
+    <!-- grip -->
+    <rect x="-2.1" y="17.3" width="4.2" height="7.6" rx="1" fill="url(#jian_t5_starsilver-grip)" stroke-width="2.1"/>
+    <path d="M-2.1 19.6H2.1M-2.1 22.4H2.1" fill="none" stroke="#DDE6F4" stroke-width="1"/>
+    <!-- pommel -->
+    <circle cx="0" cy="27" r="2.7" fill="url(#jian_t5_starsilver-blue)" stroke-width="2.1"/>
+    <circle cx="-.9" cy="26.1" r=".7" fill="#FFFFFF" stroke="none"/>
+  </g>
+
+  <!-- tassel -->
+  <g transform="translate(15.4 47.6) rotate(-35)" stroke="#2A1008" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 2.6V5.2" fill="none" stroke-width="2.2"/>
+    <path d="M0 2.6V5.2" fill="none" stroke="#DDE6F4" stroke-width=".9"/>
+    <path d="M0 5.2C-2.3 6.8 -3.1 9 -2.2 10.4C-1.1 11.1 1.1 11.1 2.2 10.4C3.1 9 2.3 6.8 0 5.2Z" fill="url(#jian_t5_starsilver-tassel)" stroke-width="1.8"/>
+    <path d="M-.8 7L-1.2 9.6M.8 7L1.2 9.6" fill="none" stroke="#1A2A6E" stroke-width=".9" stroke-opacity=".8"/>
+  </g>
+  <!-- silver glints off the blade -->
+  <use href="#jian_t5_starsilver-star" xlink:href="#jian_t5_starsilver-star" transform="translate(53.6 9.8) scale(1.1)"/>
+  <use href="#jian_t5_starsilver-star" xlink:href="#jian_t5_starsilver-star" transform="translate(44.2 24.8) scale(.7)" opacity=".9"/>
+</svg>

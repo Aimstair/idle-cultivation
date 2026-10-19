@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="slider_knob-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6C8"/>
+      <stop offset=".3" stop-color="#FFD45A"/>
+      <stop offset=".7" stop-color="#D69A2A"/>
+      <stop offset="1" stop-color="#9A5E14"/>
+    </linearGradient>
+    <linearGradient id="slider_knob-goldRev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9A5E14"/>
+      <stop offset=".35" stop-color="#D69A2A"/>
+      <stop offset=".75" stop-color="#FFD45A"/>
+      <stop offset="1" stop-color="#FFF0B0"/>
+    </linearGradient>
+    <radialGradient id="slider_knob-jade" cx=".36" cy=".32" r=".8">
+      <stop offset="0" stop-color="#C8FFE6"/>
+      <stop offset=".5" stop-color="#3FC79A"/>
+      <stop offset="1" stop-color="#0E6A50"/>
+    </radialGradient>
+    <filter id="slider_knob-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation=".9"/>
+    </filter>
+    <path id="slider_knob-oct" d="M24.63 18.4 L18.4 24.63 H9.6 L3.37 18.4 V9.6 L9.6 3.37 H18.4 L24.63 9.6 Z"/>
+  </defs>
+
+  <!-- cast shadow -->
+  <use href="#slider_knob-oct" transform="translate(0 1.4)" fill="#2A1008" opacity=".45" filter="url(#slider_knob-blur)"/>
+  <!-- bagua octagon: lit outer slope, reversed inner slope -->
+  <use href="#slider_knob-oct" fill="url(#slider_knob-gold)" stroke="#2A1008" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M21.85 17.25 L17.25 21.85 H10.75 L6.15 17.25 V10.75 L10.75 6.15 H17.25 L21.85 10.75 Z" fill="url(#slider_knob-goldRev)"/>
+  <path d="M6.15 10.75 L10.75 6.15 H17.25" fill="none" stroke="#FFFFFF" stroke-width=".8" stroke-linecap="round" opacity=".7"/>
+  <!-- jade centre -->
+  <circle cx="14" cy="14" r="4.7" fill="url(#slider_knob-jade)" stroke="#2A1008" stroke-width="1.5"/>
+  <circle cx="12.4" cy="12.3" r="1.2" fill="#FFFFFF" opacity=".85"/>
+</svg>
